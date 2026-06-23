@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#0d1117">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>BellaLingua — ללמוד איטלקית</title>
+<style>
+:root{
+  --bg1:#0d1117;--bg2:#161b22;--bg3:#21262d;--bg4:#30363d;
+  --text:#e6edf3;--text2:#8b949e;--accent:#00d4aa;--accent2:#00b894;
+  --danger:#ff4757;--warning:#ffa502;--success:#2ed573;
+  --border:#21262d;--radius:12px;--radius-sm:8px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:var(--text);min-height:100vh;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg1)}
+::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:3px}
+
+/* Top Bar */
+.topbar{position:fixed;top:0;left:0;right:0;height:56px;background:var(--bg1);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:100}
+.topbar-title{font-size:18px;font-weight:700;display:flex;align-items:center;gap:8px}
+.topbar-title span:first-child{font-size:24px}
+.hearts-display{display:flex;gap:2px;font-size:16px}
+.heart{transition:all .3s}.heart.lost{opacity:.3;filter:grayscale(1)}
+.heart.shake{animation:heartShake .4s}
+@keyframes heartShake{0%,100%{transform:scale(1)}25%{transform:scale(1.3)}50%{transform:scale(.8)}75%{transform:scale(1.1)}}
+.xp-badge{background:linear-gradient(135deg,var(--accent),var(--accent2));color:var(--bg1);padding:2px 10px;border-radius:20px;font-weight:700;font-size:13px}
+
+/* Bottom Nav */
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;height:64px;background:var(--bg1);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-around;z-index:100;padding-bottom:env(safe-area-inset-bottom)}
+.nav-item{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 12px;cursor:pointer;transition:all .2s;position:relative;min-width:56px;border:none;background:none;color:var(--text2);font-size:10px}
+.nav-item.active{color:var(--accent)}
+.nav-item.active::after{content:'';position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:24px;height:3px;background:var(--accent);border-radius:0 0 3px 3px}
+.nav-item .nav-icon{font-size:22px;line-height:1}
+.nav-item .nav-label{font-size:10px;font-weight:600}
+
+/* Pages */
+.page{display:none;padding:64px 16px 80px;min-height:100vh;animation:fadeIn .2s}
+.page.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* Cards */
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin:8px 0;transition:all .2s}
+.card:hover,.card:active{border-color:var(--accent)}
+.card-title{font-size:16px;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.card-desc{font-size:13px;color:var(--text2);line-height:1.5}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;border-radius:var(--radius-sm);border:none;font-size:15px;font-weight:600;cursor:pointer;transition:all .2s;min-height:44px;font-family:inherit}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:var(--bg1)}
+.btn-primary:active{transform:scale(.97);filter:brightness(1.1)}
+.btn-secondary{background:var(--bg3);color:var(--text);border:1px solid var(--border)}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
+.btn-danger{background:var(--danger);color:#fff}
+.btn-sm{padding:8px 14px;font-size:13px;min-height:36px}
+.btn-block{width:100%;justify-content:center}
+
+/* Stats */
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:12px 0}
+.stat-box{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 8px;text-align:center}
+.stat-val{font-size:22px;font-weight:700;color:var(--accent)}
+.stat-label{font-size:11px;color:var(--text2);margin-top:2px}
+
+/* Progress Bar */
+.progress-bar{height:8px;background:var(--bg3);border-radius:4px;overflow:hidden;margin:8px 0}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:4px;transition:width .5s ease}
+
+/* Category Grid */
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}
+.cat-item{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 8px;text-align:center;cursor:pointer;transition:all .2s;min-height:70px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.cat-item:active{transform:scale(.95);border-color:var(--accent)}
+.cat-icon{font-size:24px}
+.cat-name{font-size:11px;font-weight:600;color:var(--text)}
+.cat-count{font-size:10px;color:var(--text2)}
+
+/* Word List */
+.word-item{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border)}
+.word-item:last-child{border:none}
+.word-it{font-size:16px;font-weight:600}
+.word-he{font-size:13px;color:var(--text2)}
+.word-left{flex:1}
+.word-right{display:flex;align-items:center;gap:8px}
+.speak-btn{width:36px;height:36px;border-radius:50%;background:var(--bg3);border:1px solid var(--border);color:var(--accent);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.speak-btn:active{transform:scale(.9);background:var(--accent);color:var(--bg1)}
+.learned-badge{background:var(--accent);color:var(--bg1);font-size:10px;padding:2px 6px;border-radius:10px;font-weight:600}
+
+/* Quiz */
+.quiz-option{padding:14px 16px;background:var(--bg2);border:2px solid var(--border);border-radius:var(--radius-sm);margin:8px 0;cursor:pointer;transition:all .2s;font-size:15px;text-align:center;min-height:48px;display:flex;align-items:center;justify-content:center}
+.quiz-option:active{transform:scale(.97)}
+.quiz-option.correct{border-color:var(--success);background:rgba(46,213,115,.15);color:var(--success);animation:popIn .3s}
+.quiz-option.wrong{border-color:var(--danger);background:rgba(255,71,87,.15);color:var(--danger);animation:shake .4s}
+.quiz-option.disabled{pointer-events:none;opacity:.6}
+.quiz-option.reveal{border-color:var(--success);background:rgba(46,213,115,.1)}
+@keyframes popIn{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+
+/* Combo */
+.combo-display{text-align:center;font-size:20px;font-weight:800;margin:8px 0;animation:comboPulse .3s}
+.combo-x{color:var(--accent);font-size:28px}
+@keyframes comboPulse{0%{transform:scale(1)}50%{transform:scale(1.3)}100%{transform:scale(1)}}
+
+/* Anki Card */
+.anki-card{background:var(--bg2);border:2px solid var(--border);border-radius:16px;padding:32px 20px;margin:16px 0;min-height:250px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:all .3s;position:relative;overflow:hidden}
+.anki-card:active{transform:scale(.98)}
+.anki-card.revealed{border-color:var(--accent)}
+.anki-front{font-size:28px;font-weight:700;text-align:center;line-height:1.4}
+.anki-back{font-size:20px;color:var(--text2);text-align:center;margin-top:16px;opacity:0;transition:all .3s;transform:translateY(10px)}
+.anki-card.revealed .anki-back{opacity:1;transform:translateY(0)}
+.anki-cat{position:absolute;top:12px;left:12px;font-size:11px;background:var(--bg3);padding:4px 10px;border-radius:10px;color:var(--text2)}
+.anki-buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}
+.anki-btn{padding:12px 8px;border-radius:var(--radius-sm);border:none;font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px}
+.anki-btn:active{transform:scale(.95)}
+.anki-btn-forgot{background:rgba(255,71,87,.2);color:var(--danger)}
+.anki-btn-hard{background:rgba(255,165,2,.2);color:var(--warning)}
+.anki-btn-good{background:rgba(0,212,170,.2);color:var(--accent)}
+.anki-btn-easy{background:rgba(46,213,115,.2);color:var(--success)}
+.anki-btn-time{font-size:10px;opacity:.8}
+
+/* Sentence Practice */
+.sentence-card{background:var(--bg2);border:2px solid var(--border);border-radius:16px;padding:24px;margin:12px 0;text-align:center}
+.sentence-it{font-size:24px;font-weight:700;margin:16px 0;line-height:1.4}
+.sentence-he{font-size:16px;color:var(--text2);margin:8px 0}
+.sentence-actions{display:flex;justify-content:center;gap:16px;margin:16px 0}
+.mic-btn{width:64px;height:64px;border-radius:50%;border:3px solid var(--accent);background:transparent;color:var(--accent);font-size:28px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center}
+.mic-btn.listening{background:var(--accent);color:var(--bg1);animation:micPulse 1s infinite}
+@keyframes micPulse{0%,100%{box-shadow:0 0 0 0 rgba(0,212,170,.4)}50%{box-shadow:0 0 0 20px rgba(0,212,170,0)}}
+.sentence-result{padding:12px;border-radius:var(--radius-sm);margin:12px 0;font-weight:600;font-size:15px}
+.result-perfect{background:rgba(46,213,115,.15);color:var(--success);border:1px solid var(--success)}
+.result-good{background:rgba(0,212,170,.15);color:var(--accent);border:1px solid var(--accent)}
+.result-ok{background:rgba(255,165,2,.15);color:var(--warning);border:1px solid var(--warning)}
+.result-retry{background:rgba(255,71,87,.15);color:var(--danger);border:1px solid var(--danger)}
+.sentence-heard{font-size:14px;color:var(--text2);margin:8px 0}
+
+/* Dialogue */
+.dialogue-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin:8px 0;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:12px}
+.dialogue-card:active{transform:scale(.98);border-color:var(--accent)}
+.dialogue-icon{font-size:36px;width:50px;text-align:center}
+.dialogue-info{flex:1}
+.dialogue-title{font-size:16px;font-weight:600}
+.dialogue-desc{font-size:12px;color:var(--text2)}
+.dialogue-level{font-size:11px;background:var(--bg3);padding:2px 8px;border-radius:10px;align-self:flex-start}
+.dlg-line{padding:12px;margin:6px 0;border-radius:var(--radius-sm);position:relative}
+.dlg-npc{background:var(--bg3);margin-left:40px}
+.dlg-you{background:rgba(0,212,170,.1);border:1px solid rgba(0,212,170,.3);margin-right:40px}
+.dlg-role{font-size:11px;color:var(--accent);font-weight:600;margin-bottom:4px}
+.dlg-text-it{font-size:17px;font-weight:500;line-height:1.4}
+.dlg-text-he{font-size:13px;color:var(--text2);margin-top:4px}
+.dlg-hint{font-size:13px;color:var(--warning);font-style:italic;margin-top:4px}
+.dlg-input-area{background:var(--bg2);border:2px solid var(--border);border-radius:16px;padding:20px;margin:16px 0;text-align:center}
+.dlg-progress{display:flex;gap:4px;margin:8px 0}
+.dlg-dot{width:100%;height:4px;background:var(--bg3);border-radius:2px;transition:all .3s}
+.dlg-dot.done{background:var(--accent)}
+.dlg-dot.current{background:var(--warning);animation:dlgDotPulse 1s infinite}
+@keyframes dlgDotPulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* Achievement Badge */
+.badge{display:inline-flex;align-items:center;gap:6px;background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:6px 12px;font-size:12px;margin:4px}
+.badge.earned{background:rgba(0,212,170,.15);border-color:var(--accent);color:var(--accent)}
+
+/* Toast */
+.toast{position:fixed;top:70px;left:50%;transform:translateX(-50%) translateY(-20px);background:var(--bg3);border:1px solid var(--border);padding:10px 20px;border-radius:20px;font-size:14px;font-weight:600;z-index:200;opacity:0;transition:all .3s;pointer-events:none;white-space:nowrap}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast.success{border-color:var(--accent);color:var(--accent)}
+.toast.error{border-color:var(--danger);color:var(--danger)}
+
+/* XP Float */
+.xp-float{position:fixed;pointer-events:none;font-size:18px;font-weight:800;color:var(--accent);z-index:300;animation:xpFloat 1s forwards}
+@keyframes xpFloat{0%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:0;transform:translateY(-60px) scale(1.5)}}
+
+/* Level Badge */
+.level-badge{display:inline-flex;align-items:center;gap:6px;background:var(--bg3);padding:6px 14px;border-radius:20px;font-size:14px;font-weight:600}
+
+/* Section Title */
+.section-title{font-size:18px;font-weight:700;margin:16px 0 8px;display:flex;align-items:center;gap:8px}
+
+/* Empty State */
+.empty-state{text-align:center;padding:40px 20px;color:var(--text2)}
+.empty-icon{font-size:48px;margin-bottom:12px}
+.empty-text{font-size:16px;font-weight:600;margin-bottom:8px}
+.empty-sub{font-size:13px}
+
+/* Back Button */
+.back-btn{display:flex;align-items:center;gap:6px;padding:8px 0;color:var(--accent);font-size:14px;font-weight:600;cursor:pointer;background:none;border:none;font-family:inherit}
+</style>
+</head><body>
+<script src="data.js"></script>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="topbar-title"><span>🇮🇹</span><span>BellaLingua</span></div>
+  <div style="display:flex;align-items:center;gap:12px">
+    <div class="hearts-display" id="heartsDisplay"></div>
+    <div class="xp-badge" id="xpBadge">0 XP</div>
+  </div>
+</div>
+
+<!-- ═══ PAGE: HOME ═══ -->
+<div class="page active" id="page-home">
+  <div style="text-align:center;margin:8px 0 16px">
+    <div style="font-size:48px">🇮🇹</div>
+    <h1 style="font-size:24px;margin:4px 0">BellaLingua</h1>
+    <p style="color:var(--text2);font-size:14px">ללמוד איטלקית — בכיף! 🎉</p>
+  </div>
+  <div class="stats-row" id="homeStats"></div>
+  <div id="homeLevelBar" class="card" style="margin-top:4px"></div>
+  <div id="homeContinue"></div>
+  <div id="homeAnkiDue"></div>
+  <div id="homeDailyGoal"></div>
+</div>
+
+<!-- ═══ PAGE: LEARN ═══ -->
+<div class="page" id="page-learn">
+  <div id="learnContent"></div>
+</div>
+
+<!-- ═══ PAGE: PRACTICE ═══ -->
+<div class="page" id="page-practice">
+  <div id="practiceContent"></div>
+</div>
+
+<!-- ═══ PAGE: DIALOGUES ═══ -->
+<div class="page" id="page-dialogues">
+  <div id="dialoguesContent"></div>
+</div>
+
+<!-- ═══ PAGE: PROFILE ═══ -->
+<div class="page" id="page-profile">
+  <div id="profileContent"></div>
+</div>
+
+<!-- Bottom Nav -->
+<div class="bottom-nav">
+  <button class="nav-item active" data-page="home" onclick="goPage('home')">
+    <span class="nav-icon">🏠</span><span class="nav-label">ראשי</span>
+  </button>
+  <button class="nav-item" data-page="learn" onclick="goPage('learn')">
+    <span class="nav-icon">📖</span><span class="nav-label">למידה</span>
+  </button>
+  <button class="nav-item" data-page="practice" onclick="goPage('practice')">
+    <span class="nav-icon">🎯</span><span class="nav-label">תרגול</span>
+  </button>
+  <button class="nav-item" data-page="dialogues" onclick="goPage('dialogues')">
+    <span class="nav-icon">🗣️</span><span class="nav-label">שיחות</span>
+  </button>
+  <button class="nav-item" data-page="profile" onclick="goPage('profile')">
+    <span class="nav-icon">👤</span><span class="nav-label">פרופיל</span>
+  </button>
+</div>
+
+<script>
+// ═══════════════════════════════════════
+// STATE MANAGEMENT
+// ═══════════════════════════════════════
+const DEFAULT_STATE = {
+  xp: 0, score: 0, wordsLearned: [], streak: 0, lastDay: '',
+  character: 'marco', quizHistory: [], dailyGoal: 10, dailyDone: 0, dailyDate: '',
+  sentencesPracticed: {}, dialoguesCompleted: {}, achievements: [],
+  speechRate: 0.8, lastCategory: ''
+};
+
+let state, anki, quiz = {questions:[],current:0,score:0,type:'mixed',combo:0};
+let currentAnki = null, ankiQueue = [];
+let currentSentence = null, sentenceCat = null;
+let currentDialogue = null, dlgLine = 0, dlgScore = 0;
+let isListening = false, recognition = null;
+
+function loadState(){
+  try{ state = JSON.parse(localStorage.getItem('bellaState')) || {...DEFAULT_STATE}; }catch(e){ state = {...DEFAULT_STATE}; }
+  // Fill defaults
+  for(let k in DEFAULT_STATE) if(!(k in state)) state[k] = DEFAULT_STATE[k];
+}
+function loadAnki(){
+  try{ anki = JSON.parse(localStorage.getItem('bellaAnki')) || {}; }catch(e){ anki = {}; }
+}
+function save(){ localStorage.setItem('bellaState', JSON.stringify(state)); }
+function saveAnki(){ localStorage.setItem('bellaAnki', JSON.stringify(anki)); }
+
+loadState(); loadAnki();
+
+// ═══════════════════════════════════════
+// LEVELS & XP
+// ═══════════════════════════════════════
+const XP_LEVELS = [0, 100, 300, 700, 1500, 3000, 5000, 8000, 12000];
+const LEVEL_NAMES = ['🌱 מתחיל','🌿 יסודי','🌳 בינוני','🌺 מתקדם','🌟 שולט','💎 מומחה','👑 מאסטר','⚔️ סמוראי','🧿 אל'];
+function getLevel(xp){
+  for(let i=XP_LEVELS.length-1;i>=0;i--) if(xp>=XP_LEVELS[i]) return i;
+  return 0;
+}
+function getLevelName(xp){ return LEVEL_NAMES[getLevel(xp)]; }
+function getLevelProgress(xp){
+  const lv = getLevel(xp), cur = xp - XP_LEVELS[lv], next = XP_LEVELS[lv+1] - XP_LEVELS[lv];
+  return next > 0 ? Math.round(cur/next*100) : 100;
+}
+
+// ═══════════════════════════════════════
+// HEARTS
+// ═══════════════════════════════════════
+function getHearts(){
+  const h = JSON.parse(localStorage.getItem('bellaHearts') || '{"count":5,"regenAt":0}');
+  if(h.count < 5 && Date.now() > h.regenAt){
+    h.count = Math.min(5, h.count + 1);
+    h.regenAt = Date.now() + 30*60*1000;
+    localStorage.setItem('bellaHearts', JSON.stringify(h));
+  }
+  return h;
+}
+function useHeart(){
+  const h = getHearts();
+  h.count = Math.max(0, h.count - 1);
+  if(h.count < 5 && !h.regenAt) h.regenAt = Date.now() + 30*60*1000;
+  localStorage.setItem('bellaHearts', JSON.stringify(h));
+  renderHearts();
+}
+function renderHearts(){
+  const h = getHearts();
+  const el = document.getElementById('heartsDisplay');
+  if(!el) return;
+  el.innerHTML = '';
+  for(let i=0;i<5;i++){
+    const s = document.createElement('span');
+    s.className = 'heart' + (i >= h.count ? ' lost' : '');
+    s.textContent = i < h.count ? '❤️' : '🖤';
+    el.appendChild(s);
+  }
+}
+
+// ═══════════════════════════════════════
+// STREAK
+// ═══════════════════════════════════════
+function checkStreak(){
+  const today = new Date().toISOString().slice(0,10);
+  if(state.lastDay === today) return;
+  const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0,10);
+  if(state.lastDay === yesterday) state.streak++;
+  else if(state.lastDay !== today) state.streak = 1;
+  state.lastDay = today;
+  save();
+}
+function checkDaily(){
+  const today = new Date().toISOString().slice(0,10);
+  if(state.dailyDate !== today){ state.dailyDone = 0; state.dailyDate = today; save(); }
+}
+
+// ═══════════════════════════════════════
+// XP & ACHIEVEMENTS
+// ═══════════════════════════════════════
+function addXP(amount, x, y){
+  const oldLv = getLevel(state.xp);
+  state.xp += amount;
+  state.dailyDone = (state.dailyDone||0) + 1;
+  save();
+  const newLv = getLevel(state.xp);
+  if(newLv > oldLv) toast('🎉 עלית רמה! ' + LEVEL_NAMES[newLv], 'success');
+  checkAchievements();
+  renderXP();
+  // Float animation
+  const f = document.createElement('div');
+  f.className = 'xp-float';
+  f.textContent = '+' + amount + ' XP';
+  f.style.left = (x || window.innerWidth/2) + 'px';
+  f.style.top = (y || 100) + 'px';
+  document.body.appendChild(f);
+  setTimeout(()=>f.remove(), 1000);
+}
+
+const ACHIEVEMENTS = [
+  {id:'first_word', name:'מילה ראשונה', icon:'📝', check:()=>state.wordsLearned.length>=1},
+  {id:'ten_words', name:'10 מילים', icon:'📚', check:()=>state.wordsLearned.length>=10},
+  {id:'fifty_words', name:'50 מילים', icon:'🎓', check:()=>state.wordsLearned.length>=50},
+  {id:'hundred_words', name:'100 מילים', icon:'🏆', check:()=>state.wordsLearned.length>=100},
+  {id:'streak3', name:'רצף 3 ימים', icon:'🔥', check:()=>state.streak>=3},
+  {id:'streak7', name:'רצף שבוע', icon:'⚡', check:()=>state.streak>=7},
+  {id:'streak30', name:'רצף חודש', icon:'🌟', check:()=>state.streak>=30},
+  {id:'first_dialogue', name:'שיחה ראשונה', icon:'🗣️', check:()=>Object.keys(state.dialoguesCompleted||{}).length>=1},
+  {id:'all_dialogues', name:'כל השיחות', icon:'🎭', check:()=>Object.keys(state.dialoguesCompleted||{}).length>=8},
+  {id:'sentence5', name:'5 משפטים', icon:'🎤', check:()=>Object.keys(state.sentencesPracticed||{}).length>=5},
+  {id:'sentence50', name:'50 משפטים', icon:'🎙️', check:()=>Object.keys(state.sentencesPracticed||{}).length>=50},
+  {id:'quiz80', name:'חידון 80%+', icon:'🧠', check:()=>state.quizHistory.some(q=>q.score>=80)},
+  {id:'xp500', name:'500 XP', icon:'💎', check:()=>state.xp>=500},
+  {id:'xp2000', name:'2000 XP', icon:'👑', check:()=>state.xp>=2000},
+];
+function checkAchievements(){
+  ACHIEVEMENTS.forEach(a=>{
+    if(!state.achievements.includes(a.id) && a.check()){
+      state.achievements.push(a.id);
+      save();
+      toast('🏅 הישג חדש: ' + a.name, 'success');
+    }
+  });
+}
+function renderXP(){
+  const el = document.getElementById('xpBadge');
+  if(el) el.textContent = state.xp + ' XP';
+}
+
+// ═══════════════════════════════════════
+// SPEECH (TTS + STT)
+// ═══════════════════════════════════════
+function speak(text, lang='it-IT', rate){
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = lang;
+  u.rate = rate || state.speechRate || 0.8;
+  u.pitch = 1;
+  speechSynthesis.cancel();
+  speechSynthesis.speak(u);
+}
+function startListening(lang, callback){
+  if(!('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)){
+    toast('🎤 הדפדפן לא תומך בזיהוי דיבור', 'error');
+    return;
+  }
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  recognition = new SR();
+  recognition.lang = lang;
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 3;
+  recognition.onresult = (e) => {
+    const results = [];
+    for(let i=0;i<e.results[0].length;i++) results.push(e.results[0][i].transcript);
+    callback(results);
+  };
+  recognition.onerror = (e) => {
+    isListening = false;
+    if(e.error !== 'no-speech') toast('שגיאה: ' + e.error, 'error');
+    callback(null);
+  };
+  recognition.onend = () => { isListening = false; };
+  isListening = true;
+  recognition.start();
+}
+function stopListening(){
+  if(recognition){ recognition.stop(); isListening = false; }
+}
+function fuzzyMatch(a, b){
+  if(!a || !b) return 0;
+  const norm = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\w\s]/g,'').replace(/\s+/g,' ').trim();
+  const wa = norm(a).split(' '), wb = norm(b).split(' ');
+  let matched = 0;
+  wb.forEach(w => { if(wa.some(a => a.includes(w) || w.includes(a))) matched++; });
+  return Math.max(0, Math.min(100, Math.round(matched / Math.max(wa.length, wb.length) * 100)));
+}
+
+// ═══════════════════════════════════════
+// NAVIGATION
+// ═══════════════════════════════════════
+function goPage(p){
+  document.querySelectorAll('.page').forEach(el=>el.classList.remove('active'));
+  document.getElementById('page-'+p).classList.add('active');
+  document.querySelectorAll('.nav-item').forEach(a=>a.classList.toggle('active',a.dataset.page===p));
+  stopListening();
+  if(p==='home') renderHome();
+  if(p==='learn') renderLearn();
+  if(p==='practice') renderPractice();
+  if(p==='dialogues') renderDialogues();
+  if(p==='profile') renderProfile();
+  window.scrollTo(0,0);
+}
+function toast(msg, type=''){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast show ' + type;
+  setTimeout(()=>t.className='toast', 2500);
+}
+
+// ═══════════════════════════════════════
+// HOME PAGE
+// ═══════════════════════════════════════
+function renderHome(){
+  checkStreak(); checkDaily(); renderHearts(); renderXP();
+  const lv = getLevel(state.xp), prog = getLevelProgress(state.xp);
+  const ankiDue = getAnkiDueCount();
+
+  document.getElementById('homeStats').innerHTML = `
+    <div class="stat-box"><div class="stat-val">${state.xp}</div><div class="stat-label">XP</div></div>
+    <div class="stat-box"><div class="stat-val">${state.wordsLearned.length}</div><div class="stat-label">מילים</div></div>
+    <div class="stat-box"><div class="stat-val">🔥 ${state.streak}</div><div class="stat-label">רצף</div></div>
+    <div class="stat-box"><div class="stat-val">${Object.keys(state.sentencesPracticed||{}).length}</div><div class="stat-label">משפטים</div></div>
+  `;
+
+  document.getElementById('homeLevelBar').innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <span class="level-badge">${getLevelName(state.xp)}</span>
+      <span style="font-size:12px;color:var(--text2)">${state.xp}/${XP_LEVELS[lv+1]||'∞'} XP</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:${prog}%"></div></div>
+  `;
+
+  const cat = state.lastCategory || 'ברכות';
+  const catWords = APP_DATA.words.filter(w=>w.cat===cat);
+  document.getElementById('homeContinue').innerHTML = `
+    <div class="card" style="cursor:pointer" onclick="goPage('learn');setTimeout(()=>openCat('${cat}'),100)">
+      <div class="card-title">📖 המשך ללמוד</div>
+      <div class="card-desc">קטגוריה: ${cat} — ${catWords.length} מילים</div>
+      <button class="btn btn-primary btn-block" style="margin-top:12px">בואו נתחיל! →</button>
+    </div>
+  `;
+
+  document.getElementById('homeAnkiDue').innerHTML = ankiDue > 0 ? `
+    <div class="card" style="cursor:pointer;border-color:var(--accent)" onclick="goPage('practice');setTimeout(startAnki,200)">
+      <div class="card-title">🧠 חזרות Anki</div>
+      <div class="card-desc">${ankiDue} כרטיסים מחכים לחזרה!</div>
+      <button class="btn btn-primary btn-block" style="margin-top:12px">התחל חזרות 🔄</button>
+    </div>
+  ` : `
+    <div class="card" style="border-color:var(--success)">
+      <div class="card-title">✅ חזרות Anki</div>
+      <div class="card-desc">אין כרטיסים מחכים — מעולה!</div>
+    </div>
+  `;
+
+  const dailyPct = Math.min(100, Math.round((state.dailyDone||0)/state.dailyGoal*100));
+  document.getElementById('homeDailyGoal').innerHTML = `
+    <div class="card">
+      <div class="card-title">🎯 יעד יומי</div>
+      <div class="card-desc">${state.dailyDone||0}/${state.dailyGoal} פעילויות היום</div>
+      <div class="progress-bar"><div class="progress-fill" style="width:${dailyPct}%"></div></div>
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════
+// LEARN PAGE
+// ═══════════════════════════════════════
+let learnView = 'cats'; // 'cats' | 'words'
+let learnCat = '';
+function renderLearn(){
+  if(learnView === 'words') renderWordList();
+  else renderCatGrid();
+}
+function renderCatGrid(){
+  const cats = {};
+  APP_DATA.words.forEach(w=>{ cats[w.cat] = (cats[w.cat]||0)+1; });
+  const el = document.getElementById('learnContent');
+  el.innerHTML = `<h2 class="section-title">📖 קטגוריות</h2><div class="cat-grid" id="catGrid"></div>`;
+  const grid = document.getElementById('catGrid');
+  const icons = {'ברכות':'👋','אוכל':'🍕','פעלים':'🏃','זמן':'⏰','מספרים':'🔢','טיולים':'✈️','מקצועות':'💼','ערים איטליה':'🏙️','בית':'🏠','עבודה':'💼','תכונות':'🎭','מקומות':'📍','טבע':'🌿','אומנות':'🎨','תרבות איטלקית':'🏛️','גוף':'🦴','בגדים':'👔','רגשות':'😊','טכנולוגיה':'💻','בריאות':'💊','חינוך':'📚','מטבח איטלקי':'👨‍🍳','עסקים':'📊','משפחה':'👨‍👩‍👧','ספורט':'⚽','סלנג':'😎','חגים':'🎄','דקדוק':'✏️','צבעים':'🌈','משפטים':'💬'};
+  Object.entries(cats).forEach(([cat,count])=>{
+    const learned = APP_DATA.words.filter(w=>w.cat===cat && state.wordsLearned.includes(w.it)).length;
+    grid.innerHTML += `<div class="cat-item" onclick="openCat('${cat}')">
+      <div class="cat-icon">${icons[cat]||'📝'}</div>
+      <div class="cat-name">${cat}</div>
+      <div class="cat-count">${learned}/${count}</div>
+    </div>`;
+  });
+}
+function openCat(cat){
+  learnCat = cat; learnView = 'words'; state.lastCategory = cat; save();
+  renderWordList();
+}
+function renderWordList(){
+  const words = APP_DATA.words.filter(w=>w.cat===learnCat);
+  const el = document.getElementById('learnContent');
+  el.innerHTML = `
+    <button class="back-btn" onclick="learnView='cats';renderLearn()">→ חזרה לקטגוריות</button>
+    <h2 class="section-title">${learnCat} <span style="font-size:13px;color:var(--text2)">(${words.length})</span></h2>
+    <div id="wordList"></div>
+  `;
+  const list = document.getElementById('wordList');
+  words.forEach(w=>{
+    const learned = state.wordsLearned.includes(w.it);
+    list.innerHTML += `<div class="word-item">
+      <div class="word-left">
+        <div class="word-it">${w.it}</div>
+        <div class="word-he">${w.he}</div>
+      </div>
+      <div class="word-right">
+        ${learned ? '<span class="learned-badge">✓</span>' : ''}
+        <button class="speak-btn" onclick="speak('${w.it.replace(/'/g,"\\'")}')">🔊</button>
+      </div>
+    </div>`;
+  });
+}
+
+// ═══════════════════════════════════════
+// PRACTICE PAGE (Quiz / Anki / Sentences)
+// ═══════════════════════════════════════
+let practiceMode = 'menu'; // 'menu' | 'quiz' | 'anki' | 'sentences'
+function renderPractice(){
+  if(practiceMode === 'quiz') renderQuizPlay();
+  else if(practiceMode === 'anki') renderAnki();
+  else if(practiceMode === 'sentences') renderSentences();
+  else renderPracticeMenu();
+}
+function renderPracticeMenu(){
+  const ankiDue = getAnkiDueCount();
+  const phrases = APP_DATA.conversationPhrases || [];
+  document.getElementById('practiceContent').innerHTML = `
+    <h2 class="section-title">🎯 תרגול</h2>
+    <div class="card" style="cursor:pointer" onclick="startQuiz('mixed')">
+      <div class="card-title">🧠 חידון</div>
+      <div class="card-desc">10 שאלות — איטלקית ↔ עברית<br>❤️ חיים • 🔥 קומבו • ⭐ כוכבים</div>
+      <button class="btn btn-primary btn-block" style="margin-top:12px">התחל חידון 🚀</button>
+    </div>
+    <div class="card" style="cursor:pointer;border-color:${ankiDue>0?'var(--accent)':'var(--border)'}" onclick="startAnki()">
+      <div class="card-title">🔄 חזרות Anki</div>
+      <div class="card-desc">${ankiDue>0? ankiDue+' כרטיסים מחכים!' : 'אין חזרות כרגע — חזור מאוחר יותר'}</div>
+      <button class="btn btn-secondary btn-block" style="margin-top:12px" ${ankiDue===0?'disabled':''}>התחל חזרות</button>
+    </div>
+    <div class="card" style="cursor:pointer" onclick="startSentences()">
+      <div class="card-title">🎤 משפטים לחזור עליהם</div>
+      <div class="card-desc">${phrases.length} משפטי שיחה — שמע, חזור, קבל ציון!<br>${Object.keys(state.sentencesPracticed||{}).length}/${phrases.length} תורגלו</div>
+      <button class="btn btn-secondary btn-block" style="margin-top:12px">התחל תרגול 🎙️</button>
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════
+// QUIZ
+// ═══════════════════════════════════════
+function startQuiz(type){
+  quiz.type = type; quiz.current = 0; quiz.score = 0; quiz.combo = 0;
+  const pool = [...APP_DATA.words].sort(()=>Math.random()-.5);
+  quiz.questions = pool.slice(0,10).map(w=>{
+    const wrongs = pool.filter(x=>x.it!==w.it).sort(()=>Math.random()-.5).slice(0,3);
+    return {word:w, options:[w,...wrongs].sort(()=>Math.random()-.5), answered:false, correct:false};
+  });
+  practiceMode = 'quiz';
+  renderQuizPlay();
+}
+function renderQuizPlay(){
+  if(quiz.current >= quiz.questions.length){ renderQuizResult(); return; }
+  const q = quiz.questions[quiz.current];
+  const isItToHe = quiz.type==='it-he' || (quiz.type==='mixed' && Math.random()>.5);
+  const hearts = getHearts();
+  const comboText = quiz.combo > 1 ? `<div class="combo-display">🔥 x${quiz.combo} <span class="combo-x">קומבו!</span></div>` : '';
+  
+  document.getElementById('practiceContent').innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <span style="font-size:13px;color:var(--text2)">שאלה ${quiz.current+1}/10</span>
+      <span style="font-size:13px;color:var(--accent)">${quiz.score} נקודות</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:${quiz.current*10}%"></div></div>
+    ${comboText}
+    <div class="card" style="text-align:center;margin:16px 0">
+      <div style="font-size:14px;color:var(--text2);margin-bottom:8px">${isItToHe?'🇮🇹 → 🇮🇱':'🇮🇱 → 🇮🇹'}</div>
+      <div style="font-size:24px;font-weight:700">${isItToHe ? q.word.it : q.word.he}</div>
+      <button class="speak-btn" style="margin:12px auto" onclick="speak('${q.word.it.replace(/'/g,"\\'")}')">🔊</button>
+    </div>
+    <div id="quizOptions">
+      ${q.options.map(o=>`<div class="quiz-option" onclick="answerQuiz(this,'${(isItToHe?o.he:o.it).replace(/'/g,"\\'")}','${(isItToHe?q.word.he:q.word.it).replace(/'/g,"\\'")}',${isItToHe},${quiz.current})">${isItToHe?o.he:o.it}</div>`).join('')}
+    </div>
+    <div style="text-align:center;margin-top:8px">${'❤️'.repeat(hearts.count)}${'🖤'.repeat(5-hearts.count)}</div>
+  `;
+}
+function answerQuiz(el, chosen, correct, isItToHe, qi){
+  const q = quiz.questions[qi];
+  if(q.answered) return;
+  q.answered = true;
+  const isCorrect = chosen === correct;
+  if(isCorrect){
+    q.correct = true;
+    quiz.combo++;
+    const multiplier = Math.min(4, quiz.combo);
+    const points = 10 * multiplier;
+    quiz.score += points;
+    state.score += points;
+    addXP(points);
+    el.classList.add('correct');
+    // Mark word learned
+    if(!state.wordsLearned.includes(q.word.it)){ state.wordsLearned.push(q.word.it); save(); }
+  } else {
+    quiz.combo = 0;
+    el.classList.add('wrong');
+    useHeart();
+    // Show correct answer
+    el.parentElement.querySelectorAll('.quiz-option').forEach(o=>{
+      if(o.textContent.trim() === correct) o.classList.add('reveal');
+    });
+  }
+  el.parentElement.querySelectorAll('.quiz-option').forEach(o=>o.classList.add('disabled'));
+  setTimeout(()=>{ quiz.current++; renderQuizPlay(); }, 1200);
+}
+function renderQuizResult(){
+  const pct = Math.round(quiz.score / 100 * 100);
+  const stars = pct >= 90 ? 3 : pct >= 70 ? 2 : pct >= 50 ? 1 : 0;
+  const emoji = pct >= 80 ? '🎉' : pct >= 60 ? '👍' : pct >= 40 ? '🤔' : '💪';
+  const title = pct >= 80 ? 'Bravissimo!' : pct >= 60 ? 'Buono!' : pct >= 40 ? 'Non male!' : 'Continua!';
+  state.quizHistory.push({date:new Date().toISOString().slice(0,10), score:pct});
+  save();
+  
+  document.getElementById('practiceContent').innerHTML = `
+    <div style="text-align:center;padding:20px">
+      <div style="font-size:64px;margin:16px 0">${emoji}</div>
+      <h2 style="font-size:28px;margin:8px 0">${title}</h2>
+      <div style="font-size:20px;color:var(--accent);margin:8px 0">${quiz.score} נקודות</div>
+      <div style="font-size:32px;margin:12px 0">${'⭐'.repeat(stars)}${'☆'.repeat(3-stars)}</div>
+      <div class="progress-bar" style="max-width:200px;margin:12px auto"><div class="progress-fill" style="width:${pct}%"></div></div>
+      <div style="font-size:13px;color:var(--text2)">${pct}% דיוק</div>
+      <button class="btn btn-primary btn-block" style="margin-top:20px" onclick="startQuiz('mixed')">🔄 עוד חידון</button>
+      <button class="btn btn-secondary btn-block" style="margin-top:8px" onclick="practiceMode='menu';renderPractice()">חזרה לתרגול</button>
+    </div>
+  `;
+  practiceMode = 'menu';
+}
+
+// ═══════════════════════════════════════
+// ANKI SRS
+// ═══════════════════════════════════════
+const ANKI_INTERVALS = [60000, 600000, 3600000, 86400000, 259200000, 604800000, 1209600000, 2592000000, 7776000000]; // 1m,10m,1h,1d,3d,7d,14d,30d,90d
+
+function getAnkiDueCount(){
+  const now = Date.now();
+  return Object.values(anki).filter(a => a.nextReview <= now).length;
+}
+function buildAnkiQueue(){
+  const now = Date.now();
+  const allItems = [];
+  // Mix words and phrases
+  APP_DATA.words.forEach(w=>{
+    const key = 'w:'+w.it;
+    if(anki[key] && anki[key].nextReview <= now){
+      allItems.push({type:'word', data:w, key});
+    }
+  });
+  (APP_DATA.conversationPhrases||[]).forEach(p=>{
+    const key = 'p:'+p.it;
+    if(anki[key] && anki[key].nextReview <= now){
+      allItems.push({type:'phrase', data:p, key});
+    }
+  });
+  // Also add new cards (not yet in anki) — limit 5 new per session
+  let newCount = 0;
+  APP_DATA.words.filter(w=>!anki['w:'+w.it]).slice(0,5).forEach(w=>{
+    allItems.push({type:'word', data:w, key:'w:'+w.it, isNew:true});
+  });
+  return allItems.sort(()=>Math.random()-.5);
+}
+function startAnki(){
+  ankiQueue = buildAnkiQueue();
+  if(ankiQueue.length === 0){
+    practiceMode = 'menu'; renderPractice();
+    toast('✅ אין חזרות כרגע!', 'success');
+    return;
+  }
+  currentAnki = 0;
+  practiceMode = 'anki';
+  renderAnki();
+}
+function renderAnki(){
+  if(currentAnki >= ankiQueue.length){
+    document.getElementById('practiceContent').innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">🎉</div>
+        <div class="empty-text">סיימת את כל החזרות!</div>
+        <div class="empty-sub">חזור מאוחר יותר לעוד כרטיסים</div>
+        <button class="btn btn-primary" style="margin-top:16px" onclick="practiceMode='menu';renderPractice()">חזרה</button>
+      </div>`;
+    practiceMode = 'menu'; return;
+  }
+  const item = ankiQueue[currentAnki];
+  const a = anki[item.key] || {interval:0, ease:2.5, reps:0};
+  const showBack = item.revealed;
+  
+  let backHTML = '';
+  if(showBack){
+    const intervals = getNextIntervals(a);
+    backHTML = `
+      <div class="anki-back" style="opacity:1;transform:none">${item.data.he}</div>
+      <button class="speak-btn" style="margin:12px auto" onclick="speak('${item.data.it.replace(/'/g,"\\'")}')">🔊</button>
+      <div class="anki-buttons">
+        <button class="anki-btn anki-btn-forgot" onclick="ankiRate('forgot')">🔴<br>שכחתי<br><span class="anki-btn-time">${fmtInterval(60000)}</span></button>
+        <button class="anki-btn anki-btn-hard" onclick="ankiRate('hard')">🟠<br>קשה<br><span class="anki-btn-time">${fmtInterval(intervals.hard)}</span></button>
+        <button class="anki-btn anki-btn-good" onclick="ankiRate('good')">🟢<br>טוב<br><span class="anki-btn-time">${fmtInterval(intervals.good)}</span></button>
+        <button class="anki-btn anki-btn-easy" onclick="ankiRate('easy')">🔵<br>קל<br><span class="anki-btn-time">${fmtInterval(intervals.easy)}</span></button>
+      </div>
+    `;
+  } else {
+    backHTML = `<div style="color:var(--text2);margin-top:24px;font-size:14px">לחץ לחשוף תרגום</div>`;
+  }
+  
+  document.getElementById('practiceContent').innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <button class="back-btn" onclick="practiceMode='menu';renderPractice()">→ חזרה</button>
+      <span style="font-size:13px;color:var(--text2)">${currentAnki+1}/${ankiQueue.length}</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:${(currentAnki/ankiQueue.length)*100}%"></div></div>
+    <div class="anki-card ${showBack?'revealed':''}" onclick="revealAnki()">
+      <span class="anki-cat">${item.type==='phrase'?'💬 משפט':'📝 מילה'} • ${item.data.cat||''}</span>
+      <div class="anki-front">${item.data.it}</div>
+      ${backHTML}
+    </div>
+  `;
+  // Auto-speak
+  if(!showBack) setTimeout(()=>speak(item.data.it), 300);
+}
+function revealAnki(){
+  const item = ankiQueue[currentAnki];
+  if(!item.revealed){ item.revealed = true; renderAnki(); }
+}
+function getNextIntervals(a){
+  const cur = a.interval || 0;
+  let idx = ANKI_INTERVALS.findIndex(i => i > cur);
+  if(idx === -1) idx = ANKI_INTERVALS.length - 1;
+  return {
+    hard: ANKI_INTERVALS[Math.max(0, idx)],
+    good: ANKI_INTERVALS[Math.min(ANKI_INTERVALS.length-1, idx+1)],
+    easy: ANKI_INTERVALS[Math.min(ANKI_INTERVALS.length-1, idx+2)]
+  };
+}
+function ankiRate(rating){
+  const item = ankiQueue[currentAnki];
+  let a = anki[item.key] || {nextReview:0, interval:0, ease:2.5, reps:0, lastReview:0};
+  const intervals = getNextIntervals(a);
+  const cur = a.interval || 0;
+  let idx = ANKI_INTERVALS.findIndex(i => i > cur);
+  if(idx === -1) idx = ANKI_INTERVALS.length - 1;
+  
+  switch(rating){
+    case 'forgot': a.interval = 0; a.ease = Math.max(1.3, a.ease - 0.2); a.reps = 0; break;
+    case 'hard': a.interval = intervals.hard; a.ease = Math.max(1.3, a.ease - 0.15); a.reps++; break;
+    case 'good': a.interval = intervals.good; a.ease += 0; a.reps++; break;
+    case 'easy': a.interval = intervals.easy; a.ease += 0.15; a.reps++; break;
+  }
+  a.nextReview = Date.now() + a.interval;
+  a.lastReview = Date.now();
+  anki[item.key] = a;
+  saveAnki();
+  
+  const xp = rating==='forgot' ? 2 : rating==='hard' ? 5 : rating==='good' ? 10 : 15;
+  addXP(xp);
+  
+  if(rating !== 'forgot' && !state.wordsLearned.includes(item.data.it)){
+    state.wordsLearned.push(item.data.it); save();
+  }
+  
+  currentAnki++;
+  renderAnki();
+}
+function fmtInterval(ms){
+  if(ms < 60000) return '1 דק\'';
+  if(ms < 3600000) return Math.round(ms/60000) + ' דק\'';
+  if(ms < 86400000) return Math.round(ms/3600000) + ' שע\'';
+  return Math.round(ms/86400000) + ' ימ\'';
+}
+
+// ═══════════════════════════════════════
+// SENTENCE PRACTICE
+// ═══════════════════════════════════════
+let sentenceQueue = [], sentenceIdx = 0;
+function startSentences(cat){
+  const phrases = APP_DATA.conversationPhrases || [];
+  sentenceQueue = cat ? phrases.filter(p=>p.cat===cat) : [...phrases].sort(()=>Math.random()-.5);
+  if(sentenceQueue.length === 0){ toast('אין משפטים בקטגוריה זו','error'); return; }
+  sentenceIdx = 0;
+  sentenceCat = cat || null;
+  practiceMode = 'sentences';
+  renderSentences();
+}
+function renderSentences(){
+  if(sentenceCat === null && sentenceIdx === 0){
+    // Show category filter
+    const cats = {};
+    (APP_DATA.conversationPhrases||[]).forEach(p=>{ cats[p.cat] = (cats[p.cat]||0)+1; });
+    document.getElementById('practiceContent').innerHTML = `
+      <button class="back-btn" onclick="practiceMode='menu';renderPractice()">→ חזרה</button>
+      <h2 class="section-title">🎤 משפטים לחזור עליהם</h2>
+      <div class="card" style="cursor:pointer;border-color:var(--accent)" onclick="sentenceCat='all';startSentences()">
+        <div class="card-title">🌍 כל המשפטים</div>
+        <div class="card-desc">${APP_DATA.conversationPhrases.length} משפטים — רנדומלי</div>
+      </div>
+      ${Object.entries(cats).map(([cat,count])=>`
+        <div class="card" style="cursor:pointer" onclick="startSentences('${cat}')">
+          <div class="card-title">📂 ${cat}</div>
+          <div class="card-desc">${count} משפטים</div>
+        </div>
+      `).join('')}
+    `;
+    return;
+  }
+  if(sentenceIdx >= sentenceQueue.length){
+    document.getElementById('practiceContent').innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">🎉</div>
+        <div class="empty-text">סיימת את כל המשפטים!</div>
+        <div class="empty-sub">${Object.keys(state.sentencesPracticed||{}).length}/${APP_DATA.conversationPhrases.length} תורגלו</div>
+        <button class="btn btn-primary" style="margin-top:16px" onclick="sentenceCat=null;renderSentences()">חזרה</button>
+      </div>`;
+    return;
+  }
+  const s = sentenceQueue[sentenceIdx];
+  const practiced = state.sentencesPracticed || {};
+  const times = practiced[s.it] || 0;
+  
+  document.getElementById('practiceContent').innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <button class="back-btn" onclick="sentenceCat=null;practiceMode='sentences';renderSentences()">→ חזרה</button>
+      <span style="font-size:13px;color:var(--text2)">${sentenceIdx+1}/${sentenceQueue.length}</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:${(sentenceIdx/sentenceQueue.length)*100}%"></div></div>
+    <div class="sentence-card">
+      <div style="font-size:11px;color:var(--text2);margin-bottom:4px">📂 ${s.cat} • ${s.context||''}</div>
+      <div class="sentence-it" id="sentIt">${s.it}</div>
+      <div class="sentence-he" id="sentHe" style="opacity:0;transition:opacity .3s">${s.he}</div>
+      <div class="sentence-actions">
+        <button class="speak-btn" style="width:48px;height:48px;font-size:22px" onclick="speak('${s.it.replace(/'/g,"\\'")}', 'it-IT', 0.6)">🐢</button>
+        <button class="speak-btn" style="width:48px;height:48px;font-size:22px" onclick="speak('${s.it.replace(/'/g,"\\'")}')">🔊</button>
+        <button class="mic-btn" id="sentMic" onclick="recordSentence()">🎤</button>
+      </div>
+      <button class="btn btn-sm btn-secondary" onclick="document.getElementById('sentHe').style.opacity=1" style="margin-top:8px">👁️ הצג תרגום</button>
+      <div id="sentResult"></div>
+      <div id="sentHeard"></div>
+    </div>
+    <div style="font-size:12px;color:var(--text2);text-align:center">תורגל ${times} פעמים</div>
+  `;
+  setTimeout(()=>speak(s.it), 500);
+}
+function recordSentence(){
+  if(isListening){ stopListening(); document.getElementById('sentMic').classList.remove('listening'); return; }
+  document.getElementById('sentMic').classList.add('listening');
+  startListening('it-IT', (results)=>{
+    document.getElementById('sentMic').classList.remove('listening');
+    if(!results) return;
+    const target = sentenceQueue[sentenceIdx].it;
+    const bestMatch = results.reduce((best, r) => {
+      const score = fuzzyMatch(r, target);
+      return score > best.score ? {text:r, score} : best;
+    }, {text:'', score:0});
+    
+    const pct = bestMatch.score;
+    const cls = pct>=90?'result-perfect':pct>=70?'result-good':pct>=50?'result-ok':'result-retry';
+    const label = pct>=90?'✅ מושלם!':pct>=70?'🟢 טוב!':pct>=50?'🟡 לא רע':'🔴 נסה שוב';
+    
+    document.getElementById('sentResult').innerHTML = `<div class="sentence-result ${cls}">${label} (${pct}%)</div>`;
+    document.getElementById('sentHeard').innerHTML = `<div class="sentence-heard">🎤 שמעתי: "${bestMatch.text}"</div>`;
+    document.getElementById('sentHe').style.opacity = '1';
+    
+    if(pct >= 50){
+      const xp = pct >= 90 ? 20 : pct >= 70 ? 15 : 10;
+      addXP(xp);
+      const s = sentenceQueue[sentenceIdx];
+      if(!state.sentencesPracticed[s.it]) state.sentencesPracticed[s.it] = 0;
+      state.sentencesPracticed[s.it]++;
+      save();
+      // Also add to Anki for spaced review
+      const key = 'p:'+s.it;
+      if(!anki[key]) anki[key] = {nextReview: Date.now()+600000, interval:600000, ease:2.5, reps:1, lastReview:Date.now()};
+      saveAnki();
+    }
+    
+    if(pct >= 70){
+      setTimeout(()=>{ sentenceIdx++; renderSentences(); }, 1500);
+    }
+  });
+}
+
+// ═══════════════════════════════════════
+// DIALOGUES
+// ═══════════════════════════════════════
+function renderDialogues(){
+  if(currentDialogue !== null){ renderDialoguePlay(); return; }
+  const dialogues = APP_DATA.dialogues || [];
+  document.getElementById('dialoguesContent').innerHTML = `
+    <h2 class="section-title">🗣️ שיחות אינטראקטיביות</h2>
+    ${dialogues.map(d=>{
+      const completed = (state.dialoguesCompleted||{})[d.id];
+      return `<div class="dialogue-card" onclick="openDialogue('${d.id}')">
+        <div class="dialogue-icon">${d.icon}</div>
+        <div class="dialogue-info">
+          <div class="dialogue-title">${d.title}</div>
+          <div class="dialogue-desc">${d.desc}</div>
+        </div>
+        <span class="dialogue-level">${completed?'✅':'רמה '+d.level}</span>
+      </div>`;
+    }).join('')}
+  `;
+}
+function openDialogue(id){
+  currentDialogue = (APP_DATA.dialogues||[]).find(d=>d.id===id);
+  dlgLine = 0; dlgScore = 0;
+  renderDialoguePlay();
+}
+function renderDialoguePlay(){
+  if(!currentDialogue) return;
+  const d = currentDialogue;
+  const total = d.lines.length;
+  
+  // Already finished?
+  if(dlgLine >= total){
+    const pct = Math.round(dlgScore / total * 100);
+    if(!state.dialoguesCompleted) state.dialoguesCompleted = {};
+    state.dialoguesCompleted[d.id] = pct;
+    save();
+    addXP(pct >= 80 ? 50 : pct >= 50 ? 30 : 15);
+    checkAchievements();
+    
+    document.getElementById('dialoguesContent').innerHTML = `
+      <div style="text-align:center;padding:20px">
+        <div style="font-size:64px;margin:16px 0">${d.icon}</div>
+        <h2 style="font-size:24px;margin:8px 0">${d.title} — הסתיים!</h2>
+        <div style="font-size:20px;color:var(--accent);margin:8px 0">${dlgScore}/${total} נכון (${pct}%)</div>
+        <div style="font-size:32px;margin:12px 0">${'⭐'.repeat(pct>=80?3:pct>=50?2:pct>=30?1:0)}</div>
+        <button class="btn btn-primary btn-block" style="margin-top:16px" onclick="currentDialogue=null;dlgLine=0;openDialogue('${d.id}')">🔄 נסה שוב</button>
+        <button class="btn btn-secondary btn-block" style="margin-top:8px" onclick="currentDialogue=null;renderDialogues()">חזרה לשיחות</button>
+      </div>`;
+    return;
+  }
+  
+  const line = d.lines[dlgLine];
+  const isYou = line.role === 'you';
+  const progressDots = d.lines.map((_,i) => 
+    `<div class="dlg-dot ${i<dlgLine?'done':''} ${i===dlgLine?'current':''}"></div>`
+  ).join('');
+  
+  let lineHTML = '';
+  // Show all previous lines
+  for(let i=0; i<dlgLine; i++){
+    const prev = d.lines[i];
+    lineHTML += `<div class="dlg-${prev.role}">
+      <div class="dlg-role">${prev.role === 'you' ? '🙋 את/ה' : getDialogueRoleEmoji(prev.role)}</div>
+      <div class="dlg-text-it">${prev.it}</div>
+      <div class="dlg-text-he">${prev.he}</div>
+    </div>`;
+  }
+  
+  // Current line
+  if(isYou){
+    lineHTML += `
+      <div class="dlg-input-area">
+        <div style="font-size:14px;color:var(--accent);margin-bottom:8px">🙋 התור שלך!</div>
+        <div style="font-size:14px;color:var(--warning);margin-bottom:12px">💡 רמז: ${line.hint}</div>
+        <button class="mic-btn" id="dlgMic" onclick="recordDialogueLine()">🎤</button>
+        <div style="font-size:12px;color:var(--text2);margin-top:8px">לחץ ותגיד באיטלקית</div>
+        <div id="dlgResult"></div>
+        <div id="dlgHeard"></div>
+      </div>`;
+  } else {
+    lineHTML += `
+      <div class="dlg-npc">
+        <div class="dlg-role">${getDialogueRoleEmoji(line.role)}</div>
+        <div class="dlg-text-it">${line.it}</div>
+        <div class="dlg-text-he">${line.he}</div>
+      </div>
+      <button class="btn btn-primary btn-block" style="margin-top:8px" onclick="dlgLine++;renderDialoguePlay()">המשך →</button>`;
+    setTimeout(()=>speak(line.it), 500);
+  }
+  
+  document.getElementById('dialoguesContent').innerHTML = `
+    <button class="back-btn" onclick="currentDialogue=null;renderDialogues()">→ חזרה</button>
+    <h2 class="section-title">${d.icon} ${d.title}</h2>
+    <div class="dlg-progress">${progressDots}</div>
+    ${lineHTML}
+  `;
+}
+function getDialogueRoleEmoji(role){
+  const map = {barista:'☕ בריסטה', waiter:'🍝 מלצר', local:'🗺️ מקומי', vendor:'🛒 מוכר', clerk:'🏨 פקיד', friend:'🗣️ חבר', pharmacist:'💊 רוקח', date:'❤️ בת/בן זוג'};
+  return map[role] || role;
+}
+function recordDialogueLine(){
+  if(isListening){ stopListening(); document.getElementById('dlgMic').classList.remove('listening'); return; }
+  document.getElementById('dlgMic').classList.add('listening');
+  startListening('it-IT', (results)=>{
+    document.getElementById('dlgMic').classList.remove('listening');
+    if(!results) return;
+    const line = currentDialogue.lines[dlgLine];
+    const pct = Math.max(...results.map(r=>fuzzyMatch(r, line.it)));
+    
+    document.getElementById('dlgHeard').innerHTML = `<div class="sentence-heard">🎤 שמעתי: "${results[0]}"</div>`;
+    
+    if(pct >= 50){
+      document.getElementById('dlgResult').innerHTML = `<div class="sentence-result result-${pct>=90?'perfect':pct>=70?'good':'ok'}">${pct>=90?'✅ מושלם!':pct>=70?'🟢 טוב!':'🟡 לא רע'} (${pct}%)</div>`;
+      dlgScore++;
+      setTimeout(()=>{ dlgLine++; renderDialoguePlay(); }, 1200);
+    } else {
+      document.getElementById('dlgResult').innerHTML = `
+        <div class="sentence-result result-retry">🔴 נסה שוב (${pct}%)</div>
+        <div style="margin-top:8px;font-size:14px;color:var(--accent)">התשובה: ${line.it}</div>
+        <div style="font-size:13px;color:var(--text2)">${line.he}</div>
+        <button class="btn btn-sm btn-secondary" style="margin-top:8px" onclick="dlgLine++;renderDialoguePlay()">דלג →</button>
+      `;
+    }
+  });
+}
+
+// ═══════════════════════════════════════
+// PROFILE
+// ═══════════════════════════════════════
+function renderProfile(){
+  const chars = APP_DATA.characters || [];
+  const culture = APP_DATA.culture || [];
+  
+  document.getElementById('profileContent').innerHTML = `
+    <h2 class="section-title">🧑‍🏫 בחר דמות</h2>
+    <div style="display:flex;gap:8px;overflow-x:auto;padding:8px 0">
+      ${chars.map(c=>`
+        <div class="card" style="min-width:140px;text-align:center;cursor:pointer;${state.character===c.id?'border-color:'+c.color:''}" onclick="state.character='${c.id}';save();renderProfile();toast('✅ נבחר: ${c.name}')">
+          <div style="font-size:36px">${c.emoji}</div>
+          <div style="font-weight:600;margin:4px 0">${c.name}</div>
+          <div style="font-size:11px;color:var(--text2)">${c.role}</div>
+        </div>
+      `).join('')}
+    </div>
+    
+    <h2 class="section-title">🏅 הישגים</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:4px">
+      ${ACHIEVEMENTS.map(a=>`
+        <span class="badge ${state.achievements.includes(a.id)?'earned':''}">${a.icon} ${a.name}</span>
+      `).join('')}
+    </div>
+    
+    <h2 class="section-title">📊 סטטיסטיקות</h2>
+    <div class="card">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:14px">
+        <div>📝 מילים נלמדות: <strong>${state.wordsLearned.length}</strong></div>
+        <div>🎤 משפטים: <strong>${Object.keys(state.sentencesPracticed||{}).length}</strong></div>
+        <div>🗣️ שיחות: <strong>${Object.keys(state.dialoguesCompleted||{}).length}</strong></div>
+        <div>🧠 חידונים: <strong>${state.quizHistory.length}</strong></div>
+        <div>🔥 רצף: <strong>${state.streak}</strong></div>
+        <div>💎 XP: <strong>${state.xp}</strong></div>
+        <div>📈 רמה: <strong>${getLevelName(state.xp)}</strong></div>
+        <div>🧠 כרטיסי Anki: <strong>${Object.keys(anki).length}</strong></div>
+      </div>
+    </div>
+    
+    <h2 class="section-title">🏛️ תרבות איטלקית</h2>
+    ${culture.map(c=>`
+      <div class="card">
+        <div class="card-title">${c.icon} ${c.title}</div>
+        <div class="card-desc">${c.desc}</div>
+        ${c.region ? `<div style="font-size:11px;color:var(--accent);margin-top:4px">📍 ${c.region}</div>` : ''}
+      </div>
+    `).join('')}
+    
+    <h2 class="section-title">⚙️ הגדרות</h2>
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin:8px 0">
+        <span>🐢 מהירות דיבור</span>
+        <input type="range" min="0.5" max="1.2" step="0.1" value="${state.speechRate||0.8}" 
+          onchange="state.speechRate=parseFloat(this.value);save()" style="width:120px">
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin:8px 0">
+        <span>🎯 יעד יומי</span>
+        <select onchange="state.dailyGoal=parseInt(this.value);save()" style="background:var(--bg3);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:4px 8px">
+          ${[5,10,15,20,30].map(n=>`<option value="${n}" ${state.dailyGoal===n?'selected':''}>${n}</option>`).join('')}
+        </select>
+      </div>
+    </div>
+    
+    <button class="btn btn-danger btn-block" style="margin-top:16px" onclick="if(confirm('לאפס הכל?'))resetAll()">🔄 אפס התקדמות</button>
+  `;
+}
+function resetAll(){
+  state = {...DEFAULT_STATE};
+  anki = {};
+  localStorage.removeItem('bellaAnki');
+  localStorage.removeItem('bellaHearts');
+  save(); saveAnki();
+  toast('✅ ההתקדמות אופסה!', 'success');
+  goPage('home');
+}
+
+// ═══════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════
+checkStreak(); checkDaily(); renderHearts(); renderXP(); renderHome();
+
+// Regen hearts timer
+setInterval(()=>{ renderHearts(); }, 60000);
+</script>
+</body>
