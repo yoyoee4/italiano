@@ -10,6 +10,66 @@ const XP_PER_CORRECT = 10;
 const XP_PER_LESSON_BONUS = 20;
 const WORDS_PER_LESSON = 10;
 
+// ═══ EMOJI MAP — for image questions ═══
+const EMOJI_MAP = {
+  ciao: "👋", buongiorno: "🌅", arrivederci: "👋",
+  grazie: "🙏", prego: "🤝", scusi: "🙇", scusa: "🙇",
+  sì: "✅", no: "❌", ok: "👌",
+  uno: "1️⃣", due: "2️⃣", tre: "3️⃣", quattro: "4️⃣", cinque: "5️⃣",
+  sei: "6️⃣", sette: "7️⃣", otto: "8️⃣", nove: "9️⃣", dieci: "🔟",
+  rosso: "🔴", blu: "🔵", verde: "🟢", giallo: "🟡", bianco: "⚪",
+  nero: "⚫", viola: "🟣", arancione: "🟠", rosa: "🩷", marrone: "🟤",
+  casa: "🏠", letto: "🛏️", tavolo: "🪑", sedia: "🪑", porta: "🚪",
+  finestra: "🪟", chiave: "🔑", luce: "💡", telefono: "📞",
+  computer: "💻", televisione: "📺", libro: "📖", penna: "🖊️",
+  orologio: "⌚", soldi: "💰", occhiali: "👓", cellulare: "📱",
+  scarpe: "👟", vestito: "👗", cappotto: "🧥", borsa: "👜",
+  ombrello: "☂️", macchina: "🚗", acqua: "💧", caffè: "☕",
+  tè: "🫖", pane: "🍞", pasta: "🍝", pizza: "🍕", formaggio: "🧀",
+  frutta: "🍎", mela: "🍎", banana: "🍌", arancia: "🍊",
+  limone: "🍋", fragola: "🍓", uva: "🍇", pesca: "🍑",
+  carne: "🥩", pollo: "🍗", pesce: "🐟", uovo: "🥚",
+  torta: "🎂", cioccolato: "🍫", biscotto: "🍪", vino: "🍷",
+  birra: "🍺", latte: "🥛", zucchero: "🍬", sale: "🧂",
+  madre: "👩", padre: "👨", fratello: "👦", sorella: "👧",
+  figlio: "👶", figlia: "👶", marito: "💍", moglie: "💍",
+  nonno: "👴", nonna: "👵", zio: "👨", zia: "👩",
+  bambino: "🧒", ragazzo: "🧑", ragazza: "👩", uomo: "👨",
+  donna: "👩", amico: "🤝", famiglia: "👪",
+  cane: "🐶", gatto: "🐱", uccello: "🐦", cavallo: "🐴",
+  sole: "☀️", luna: "🌙", stella: "⭐", nuvola: "☁️",
+  pioggia: "🌧️", neve: "❄️", vento: "💨", fuoco: "🔥",
+  cuore: "❤️", fiore: "🌸", albero: "🌳", montagna: "⛰️",
+  mare: "🌊", fiume: "🏞️", isola: "🏝️",
+  ristorante: "🍽️", albergo: "🏨", banca: "🏦", ospedale: "🏥",
+  scuola: "🏫", chiesa: "⛪", stadio: "🏟️",
+  aereo: "✈️", treno: "🚂", nave: "🚢", bicicletta: "🚲",
+  piazza: "🏛️", museo: "🏛️", teatro: "🎭", cinema: "🎬",
+  musica: "🎵", canzone: "🎶", ballo: "💃",
+  gatto: "🐱", cane: "🐶", topo: "🐭", coniglio: "🐰",
+  orso: "🐻", leone: "🦁", tigre: "🐯", elefante: "🐘",
+  festa: "🎉", regalo: "🎁", palloncino: "🎈", torta: "🎂",
+  natale: "🎄", stella: "⭐", luna: "🌙",
+  letto: "🛏️", cucina: "🍳", bagno: "🚿", specchio: "🪞",
+  sapone: "🧼", spazzolino: "🪥", pettine: "🪮",
+  chiave: "🔑", calendario: "📅", foto: "📸", quadro: "🖼️",
+  pianta: "🌿",
+  soldi: "💰", portafoglio: "👛", carta: "💳",
+  mano: "✋", occhio: "👁️", naso: "👃", bocca: "👄",
+  gamba: "🦵", piede: "🦶",
+  gatto: "🐱", cane: "🐶",
+  pane: "🍞", pizza: "🍕", pasta: "🍝",
+  caffè: "☕", tè: "🫖", vino: "🍷", birra: "🍺",
+  mela: "🍎", banana: "🍌", arancia: "🍊", limone: "🍋",
+  fragola: "🍓", uva: "🍇", pesca: "🍑",
+  casa: "🏠", strada: "🛣️", città: "🏙️",
+  luna: "🌙", sole: "☀️", stella: "⭐", nuvola: "☁️",
+  bambino: "👶", neonato: "👶",
+  dottore: "🩺", infermiere: "💉",
+  poliziotto: "👮", cuoco: "👨‍🍳", artista: "🎨",
+  cantante: "🎤", attore: "🎭"
+};
+
 // ═══════════════════════════════════════
 // STATE
 // ═══════════════════════════════════════
@@ -113,8 +173,7 @@ function showXPPopup(amount) {
 }
 
 function isStageFree(stageId) {
-  if (S.isPremium) return true;
-  return stageId === 'A1-1';
+  return true; // 🔓 All stages free
 }
 
 function isStageCompleted(stageId) {
@@ -476,6 +535,19 @@ function renderLesson() {
   pageContainer.style.overflowY = 'hidden';
 
   const isHeToIt = Math.random() > 0.5;
+
+  // ═══ EMOJI QUESTION? ═══
+  var useEmoji = false;
+  var emojiIcon = '';
+  if (!isHeToIt) {
+    // Italian→Hebrew direction: possibly show emoji instead
+    var itKey = word.it.toLowerCase().replace(/[àáâãäå]/g,'a').replace(/[èéêë]/g,'e').replace(/[ìíîï]/g,'i').replace(/[òóôõö]/g,'o').replace(/[ùúûü]/g,'u').replace(/[^a-z]/g,'');
+    if (EMOJI_MAP[itKey]) {
+      useEmoji = Math.random() < 0.3; // 30% chance
+      emojiIcon = EMOJI_MAP[itKey];
+    }
+  }
+
   const question = isHeToIt ? (word.he || word.en) : word.it;
   const correctAnswer = isHeToIt ? word.it : (word.he || word.en);
 
@@ -516,6 +588,10 @@ function renderLesson() {
         ${isHeToIt ? `
           <div class="lesson-question-label">מה התרגום לאיטלקית?</div>
           <div class="lesson-word-display">${question}</div>
+        ` : useEmoji ? `
+          <div class="lesson-question-label">מה האיטלקית לתמונה?</div>
+          <div class="lesson-emoji-display">${emojiIcon}</div>
+          <button class="lesson-speak-btn" onclick="speakText('${word.it.replace(/'/g, "\\'")}')">🔊</button>
         ` : `
           <div class="lesson-question-label">מה הפירוש של המילה?</div>
           <div class="lesson-word-display">${question}</div>
@@ -886,8 +962,98 @@ function renderProfile() {
           <div style="font-weight:800;font-size:16px;margin-top:4px">משתמש Premium</div>
         </div>
       `}
+
+      <!-- ═══ ADMIN PANEL ═══ -->
+      <div class="profile-section" style="margin-top:20px;border:2px solid #ff960040;background:#fff8f0">
+        <div class="section-title" style="color:var(--orange)">🛠️ פאנל אדמין</div>
+
+        <div style="font-size:13px;color:#666;margin-bottom:12px">משתמש נוכחי: <strong>${escHtml(S.name || 'לא הוזן')}</strong></div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px;color:#555;margin-bottom:12px;direction:ltr">
+          <div>רמה: <strong>${S.level}</strong></div>
+          <div>XP: <strong>${S.xp}</strong></div>
+          <div>רצף: <strong>${S.streak} ימים</strong></div>
+          <div>שלבים הושלמו: <strong>${completedStages}/${STAGES.length}</strong></div>
+          <div>מילים ב-SRS: <strong>${totalSRS}</strong></div>
+          <div>שולט: <strong>${mastered}</strong></div>
+          <div>Premium: <strong>${S.isPremium ? '✅' : '❌'}</strong></div>
+          <div>Onboarding: <strong>${S.onboarding ? '❌ לא' : '✅ הושלם'}</strong></div>
+        </div>
+
+        <!-- Stage breakdown by level -->
+        <div style="font-weight:700;font-size:13px;margin:8px 0 4px">התקדמות לפי רמה:</div>
+        <div style="font-size:12px;color:#555">
+          ${['A1','A2','B1','B2','C1','C2'].map(function(lvl) {
+            var total = STAGES.filter(function(s) { return s.cefr === lvl; }).length;
+            var done = STAGES.filter(function(s) { return s.cefr === lvl && isStageCompleted(s.id); }).length;
+            var pct = total > 0 ? Math.round(done/total*100) : 0;
+            var barWidth = pct;
+            return '<div style="margin-bottom:4px">' +
+              '<div style="display:flex;justify-content:space-between;margin-bottom:2px">' +
+                '<span>' + lvl + '</span>' +
+                '<span>' + done + '/' + total + ' (' + pct + '%)</span>' +
+              '</div>' +
+              '<div style="background:#eee;border-radius:4px;height:6px;overflow:hidden">' +
+                '<div style="background:#58cc02;height:100%;width:' + barWidth + '%;border-radius:4px;transition:width 0.3s"></div>' +
+              '</div>' +
+            '</div>';
+          }).join('')}
+        </div>
+
+        <!-- Recent activity -->
+        <div style="font-weight:700;font-size:13px;margin:12px 0 4px">פעילות אחרונה:</div>
+        <div style="font-size:12px;color:#555">
+          <div>נוצר: <strong>${S.lastDay ? S.lastDay : 'עדיין לא'}</strong></div>
+          <div>יומן XP שבועי: <strong>[${S.weeklyXP.join(', ')}]</strong></div>
+          <div>היסטוריית רצף: <strong>${(S.streakHistory || []).length} ימים</strong></div>
+        </div>
+
+        <!-- Copy data for backup -->
+        <button class="profile-premium-btn" onclick="copyUserData()" style="background:var(--blue);margin-top:12px">📋 העתק נתוני משתמש</button>
+      </div>
     </div>
   `;
+}
+
+function copyUserData() {
+  var data = {
+    name: S.name,
+    level: S.level,
+    xp: S.xp,
+    streak: S.streak,
+    lastDay: S.lastDay,
+    completedStages: STAGES.filter(function(s) { return isStageCompleted(s.id); }).length,
+    totalStages: STAGES.length,
+    srsCount: Object.keys(S.srs).length,
+    weeklyXP: S.weeklyXP,
+    streakHistory: S.streakHistory,
+    exportedAt: new Date().toISOString()
+  };
+  var text = JSON.stringify(data, null, 2);
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).then(function() {
+      toast('📋 נתונים הועתקו!', 'ok');
+    }).catch(function() {
+      fallbackCopy(text);
+    });
+  } else {
+    fallbackCopy(text);
+  }
+}
+
+function fallbackCopy(text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); toast('📋 הועתק!', 'ok'); } catch(e) { toast('❌ לא הצליח להעתיק', 'error'); }
+  document.body.removeChild(ta);
+}
+
+function escHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
 // ═══════════════════════════════════════
@@ -1398,3 +1564,4 @@ window.startConversationPractice = startConversationPractice;
 window.selectConvRole = selectConvRole;
 window.checkConvAnswer = checkConvAnswer;
 window.exitConversationPractice = exitConversationPractice;
+window.copyUserData = copyUserData;
