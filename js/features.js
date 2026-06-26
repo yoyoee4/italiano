@@ -85,7 +85,7 @@ async function doTranslate() {
  try {
   const resp = await fetch('https://api.b.ai/v1/chat/completions', {
    method: 'POST',
-   headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer sk-dk1eflbtuz623in5dmjcdzjbvn5gbpag' },
+   headers: { 'Content-Type': 'application/json' },
    body: JSON.stringify({
     model: 'gpt-4o-mini',
     messages: [

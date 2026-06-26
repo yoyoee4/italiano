@@ -51,6 +51,10 @@ function render() {
   const container = document.getElementById('learnContent');
   if (!container) return;
 
+  // Paywall upgrade banner
+  container.innerHTML = Paywall.renderUpgradeBanner() + Paywall.renderFreeProgress();
+
+
   const tree = APP_DATA.skillTree || [];
   const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
   
@@ -72,7 +76,17 @@ function render() {
     <div style="text-align:center;margin-bottom:20px">
       <h2 style="font-size:1.3rem;font-weight:800">🗺️ מסלול קריירה</h2>
       <p style="font-size:.85rem;color:var(--text2)">התקדם מ-A1 עד C1 ודבר איטלקית שוטף!</p>
+
+    ${Paywall.renderUpgradeBanner()}
+
+    ${Paywall.renderFreeProgress()}
+
     </div>
+
+    ${Paywall.renderUpgradeBanner()}
+
+    ${Paywall.renderFreeProgress()}
+
   `;
 
   levels.forEach(lv => {
@@ -162,6 +176,12 @@ function toggleLevel(lv) {
 
 // ── OPEN NODE (lesson) ──
 function openNode(nodeId) {
+  // Paywall check
+  if (!Paywall.isNodeAccessible(APP_DATA.skillTree.find(n => n.id === nodeId) || {})) {
+    Paywall.showPaywall("מסלול זה זמין למשתמשים בלבד");
+    return;
+  }
+
   const node = APP_DATA.skillTree.find(n => n.id === nodeId);
   if (!node) return;
   

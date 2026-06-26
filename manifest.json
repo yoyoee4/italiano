@@ -1,12 +1,12 @@
 {
- "name": "VolaLingo",
- "short_name": "VolaLingo",
-  "description": "למד איטלקית כמו אפליקציה! מסלול A1→C1, הקלטות, חידונים, שירים",
+  "name": "VolaLingo",
+  "short_name": "VolaLingo",
+  "description": "למד איטלקית! 10,000 מילים, מסלול A1→C2, כרטיסיות, תרגול, הקראה וסימולציות",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#0f0d1a",
-  "theme_color": "#0f0d1a",
+  "background_color": "#ffffff",
+  "theme_color": "#58cc02",
   "dir": "rtl",
   "lang": "he",
   "icons": [
@@ -20,9 +20,8 @@
     { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
   ],
   "categories": ["education", "lifestyle"],
-  "screenshots": [],
   "shortcuts": [
-    { "name": "תרגול", "url": "/?page=practice", "icons": [{"src":"icons/icon-96.png","sizes":"96x96"}] },
-    { "name": "חדשות", "url": "/?page=explore", "icons": [{"src":"icons/icon-96.png","sizes":"96x96"}] }
+    { "name": "מסלול", "url": "/?page=tree", "icons": [{"src":"icons/icon-96.png","sizes":"96x96"}] },
+    { "name": "חזרה מרווחת", "url": "/?page=srs", "icons": [{"src":"icons/icon-96.png","sizes":"96x96"}] }
   ]
 }

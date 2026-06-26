@@ -3,128 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta name="theme-color" content="#0a0e17">
+<meta name="theme-color" content="#58cc02">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="description" content="VolaLingo — למד איטלקית כמו אפליקציה! מסלול A1→C1, הקלטות, חידונים, שירים, חדשות">
-<title>VolaLingo — למד איטלקית 🇮🇹</title>
-<link rel="manifest" href="manifest.json">
-<link rel="icon" type="image/png" href="icons/icon-192.png">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700;800;900&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<meta name="description" content="VolaLingo — למד איטלקית! 10,000 מילים, A1-C2, כרטיסיות, תרגול, הקראה">
+<meta name="keywords" content="learn Italian, Italian language app, Italian vocabulary, למידת איטלקית, אפליקציה איטלקית">
+<link rel="canonical" href="https://italiano.tickerio.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VolaLingo — למד איטלקית 🇮🇹">
+<meta property="og:description" content="10,000 מילים! מסלול A1→C2, כרטיסיות, תרגול, הקראה וסימולציות.">
+<meta property="og:image" content="https://italiano.tickerio.app/icon-512.png">
+<meta property="og:url" content="https://italiano.tickerio.app/">
+<title>VolaLingo v4 — למד איטלקית 🇮🇹</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Heebo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/v4.css">
 </head>
 <body>
 
-<!-- Ambient glow -->
-<div class="glow-blob a"></div>
-<div class="glow-blob b"></div>
-
 <!-- ═══ SPLASH ═══ -->
-<div id="splash" class="onboard-screen" style="position:fixed;inset:0;z-index:300;background:var(--bg);display:flex;align-items:center;justify-content:center">
- <div style="text-align:center">
-  <div class="onboard-emoji" style="animation:heartbeat 1.5s infinite">🇮🇹</div>
-  <div style="font-family:var(--font-it);font-size:2.2rem;font-weight:900;letter-spacing:-2px;color:var(--text)">Vola<span style="color:var(--indigo-light)">Lingo</span></div>
-  <div style="color:var(--text3);font-size:.85rem;margin-top:4px">ללמוד איטלקית — בכיף!</div>
-  <div class="progress-bar" style="width:60%;margin:20px auto 0;height:4px"><div class="progress-fill" id="splashBar" style="width:0%;transition:width 1.5s ease"></div></div>
- </div>
+<div id="splash">
+  <div class="splash-content">
+    <div class="splash-icon">🇮🇹</div>
+    <div class="splash-brand">Vola<span>Lingo</span></div>
+    <div class="splash-tagline">ללמוד איטלקית — 10,000 מילים!</div>
+    <div class="splash-bar-wrap">
+      <div class="splash-bar" id="splashBar"></div>
+    </div>
+  </div>
 </div>
 
-<!-- ═══ LOGIN ═══ -->
-<div id="loginScreen" class="onboard-screen page" style="display:none;min-height:100vh;padding-top:20vh">
- <div style="text-align:center;margin-bottom:32px">
-  <div class="onboard-emoji">🇮🇹</div>
-  <div class="onboard-title" style="font-family:var(--font-it)">Vola<span style="color:var(--indigo-light)">Lingo</span></div>
-  <div class="onboard-sub">ללמוד איטלקית כמו אפליקציה!</div>
- </div>
- <div style="max-width:360px;margin:0 auto">
-  <div class="card" style="padding:20px;margin-bottom:16px">
-   <input type="text" id="loginName" placeholder="שם (או כינוי)" autocomplete="off" maxlength="20" style="width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 14px;color:var(--text);font-size:.95rem;font-family:var(--font-he);outline:none;margin-bottom:12px">
-   <select id="loginLevel" style="width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 14px;color:var(--text);font-size:.95rem;font-family:var(--font-he);outline:none;appearance:none">
-    <option value="">רמה נוכחית...</option>
-    <option value="A1">A1 — מתחילים 🌱</option>
-    <option value="A2">A2 — בסיסי 🌿</option>
-    <option value="B1">B1 — בינוני 🌳</option>
-    <option value="B2">B2 — עצמאי 🏛️</option>
-    <option value="C1">C1 — מתקדם 🎓</option>
-   </select>
+<!-- ═══ ONBOARDING ═══ -->
+<div id="onboarding" style="display:none">
+  <div class="onb-content">
+    <div class="onb-logo">🇮🇹</div>
+    <div class="onb-brand">Vola<span>Lingo</span></div>
+    <div class="onb-tagline">ללמוד איטלקית כמו אפליקציה!</div>
+    <input id="onbName" type="text" placeholder="השם שלך" class="onb-input" dir="rtl" autocomplete="off">
+    <div class="onb-level-label">רמת התחלה:</div>
+    <div class="onb-levels">
+      <button onclick="selectOnbLevel('A1')" class="onb-lvl active" data-level="A1">A1</button>
+      <button onclick="selectOnbLevel('A2')" class="onb-lvl" data-level="A2">A2</button>
+      <button onclick="selectOnbLevel('B1')" class="onb-lvl" data-level="B1">B1</button>
+      <button onclick="selectOnbLevel('B2')" class="onb-lvl" data-level="B2">B2</button>
+      <button onclick="selectOnbLevel('C1')" class="onb-lvl" data-level="C1">C1</button>
+      <button onclick="selectOnbLevel('C2')" class="onb-lvl" data-level="C2">C2</button>
+    </div>
+    <button onclick="finishOnboarding()" class="onb-start-btn">בוא נתחיל! 🚀</button>
   </div>
-  <button class="btn btn-primary btn-block" id="loginBtn" onclick="doLogin()">🚀 התחל ללמוד!</button>
-  <div style="text-align:center;margin-top:16px;font-size:.7rem;color:var(--text3)">הפרופיל נשמר מקומית — ללא רישום</div>
- </div>
 </div>
 
 <!-- ═══ MAIN APP ═══ -->
-<div id="appScreen" style="display:none">
+<div id="app" style="display:none">
+  <!-- TOP BAR -->
+  <header id="topBar" class="top-bar"></header>
 
- <!-- TOP NAV -->
- <div class="top-nav">
-  <div class="nav-brand" onclick="goPage('profile')"><span>V</span>ola<span style="color:var(--indigo-light)">Lingo</span></div>
-  <div class="nav-stats">
-   <span class="nav-stat nav-streak" id="topStreak" onclick="goPage('profile')">🔥 <span class="val">0</span></span>
-   <span class="nav-stat nav-coins" id="topCoins" onclick="goPage('shop')">💎 <span class="val">0</span></span>
-   <span class="nav-stat nav-hearts" id="topHearts" onclick="goPage('shop')">❤️ <span class="val">5</span></span>
-  </div>
- </div>
+  <!-- SCROLLABLE CONTENT -->
+  <div id="pageContainer" class="page-container"></div>
 
- <!-- PAGE CONTENT -->
- <div id="pageContent" class="page active" style="padding:0 16px 80px;max-width:600px;margin:0 auto">
- <!-- Dynamic content injected by JS -->
- </div>
-
- <!-- BOTTOM NAV — Tickerio Style -->
- <div class="bottom-nav">
- <div class="nav-item active" data-page="learn" onclick="goPage('learn')">
- <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
- <span class="nav-label">למידה</span>
- </div>
- <div class="nav-item" data-page="practice" onclick="goPage('practice')">
- <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
- <span class="nav-label">תרגול</span>
- </div>
- <div class="nav-item nav-center" data-page="speak" onclick="goPage('speak')">
- <div class="nav-center-btn">🎙️</div>
- <span class="nav-label">הקלטה</span>
- </div>
- <div class="nav-item" data-page="games" onclick="goPage('games')">
- <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><circle cx="16" cy="10" r="1" fill="currentColor"/><circle cx="18" cy="12" r="1" fill="currentColor"/></svg>
- <span class="nav-label">משחקים</span>
- </div>
- <div class="nav-item" data-page="profile" onclick="goPage('profile')">
- <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
- <span class="nav-label">פרופיל</span>
- </div>
- </div>
+  <!-- BOTTOM NAV -->
+  <nav id="bottomNav" class="bottom-nav"></nav>
 </div>
 
-<!-- ═══ TOAST ═══ -->
-<div id="toast" style="position:fixed;top:80px;left:50%;transform:translateX(-50%);z-index:300;pointer-events:none"></div>
-
 <!-- ═══ CONFETTI CANVAS ═══ -->
-<canvas id="confettiCanvas" style="position:fixed;inset:0;z-index:250;pointer-events:none"></canvas>
+<canvas id="confettiCanvas" style="display:none"></canvas>
 
-<!-- ═══ SCRIPTS ═══ -->
-<script src="js/data.js"></script>
-<script src="js/app.js"></script>
-<script src="js/skill-tree.js"></script>
-<script src="js/practice.js"></script>
-<script src="js/content.js"></script>
-<script src="js/features.js"></script>
-<script src="js/games.js"></script>
-<script src="js/speak.js"></script>
-<script>
-// Override explore page to use Features module
-const _origGoPage = goPage;
-goPage = function(page) {
- _origGoPage(page);
- if (page === 'explore') {
-  setTimeout(() => Features.renderExploreTab(document.getElementById('exploreContent')), 50);
- }
-};
-// Init features
-Features.init();
-</script>
-
+<script src="js/data_v3.js"></script>
+<script src="js/v4.js"></script>
 </body>
 </html>

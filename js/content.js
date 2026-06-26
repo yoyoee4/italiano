@@ -6,9 +6,9 @@
 
 const Content = (() => {
 
-const BAI_API = 'https://api.b.ai';
-const BAI_KEY = 'sk-dk1eflbtuz623in5dmjcdzjbvn5gbpag';
-const BAI_MODEL = 'gpt-4o-mini'; // cheap + fast for translations
+const BAI_API = '/api';
+// API key hidden server-side
+const BAI_MODEL = 'gpt-5-nano'; // cheap + fast for translations
 
 let currentTab = 'news';
 let newsCache = [];
@@ -124,9 +124,9 @@ async function translateNewsItems(items) {
     const titles = items.map(i => i.title).join('\n');
     const descs = items.map(i => i.description?.replace(/<[^>]+>/g,'').trim() || '').join('\n---\n');
     
-    const resp = await fetch(`${BAI_API}/v1/chat/completions`, {
+    const resp = await fetch('/api/translate', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${BAI_KEY}` },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         model: BAI_MODEL,
         messages: [
@@ -147,9 +147,9 @@ async function translateNewsItems(items) {
     
     // Translate descriptions
     if (descs.replace(/---/g,'').trim()) {
-      const resp2 = await fetch(`${BAI_API}/v1/chat/completions`, {
+      const resp2 = await fetch('/api/translate', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${BAI_KEY}` },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           model: BAI_MODEL,
           messages: [

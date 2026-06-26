@@ -31,7 +31,8 @@ function defaultState() {
     dailyCompleted: false,
     shopPurchases: [],
     onboarding: true,
-    _lastNode: null
+    _lastNode: null,
+    isPremium: false
   };
 }
 
@@ -55,6 +56,13 @@ function saveAnki() { localStorage.setItem('vl_anki', JSON.stringify(anki)); }
 // INIT
 // ═══════════════════════════════════════
 window.addEventListener('DOMContentLoaded', () => {
+  // Check for premium activation
+  const urlParams = new URLSearchParams(location.search);
+  if (urlParams.get('activate') === 'premium') {
+    Paywall.activatePremium();
+    history.replaceState({}, '', location.pathname);
+  }
+
   // Register SW
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js').catch(() => {});
