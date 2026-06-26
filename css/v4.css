@@ -1390,3 +1390,271 @@ body.lesson-active .page-container {
   border-color: var(--green) !important;
   box-shadow: 0 0 0 3px #58cc0220;
 }
+
+/* ═══ SENTENCE BUILDER ═══ */
+.sent-picked-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #fff;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  min-height: 52px;
+  transition: all 0.3s ease;
+  direction: ltr;
+}
+
+.sent-picked-row.sent-correct {
+  border-color: var(--green);
+  background: #e8f5e1;
+  animation: sentPulseGreen 0.4s ease;
+}
+
+.sent-picked-row.sent-wrong {
+  border-color: var(--red);
+  background: #ffeeee;
+  animation: sentShake 0.4s ease;
+}
+
+@keyframes sentPulseGreen {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+@keyframes sentShake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+.sent-bubble {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #fff;
+  border: 2px solid var(--green);
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  direction: ltr;
+  min-width: 48px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.sent-bubble:active {
+  transform: scale(0.92);
+  background: var(--green-bg);
+}
+
+.sent-bubble.sent-bubble-used {
+  opacity: 0.3;
+  pointer-events: none;
+  transform: scale(0.9);
+  border-color: var(--text3);
+  color: var(--text3);
+}
+
+.sent-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background: var(--green);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  animation: sentChipPop 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  direction: ltr;
+  min-width: 40px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(88,204,2,0.3);
+}
+
+.sent-chip:active {
+  transform: scale(0.9);
+  background: var(--red);
+  box-shadow: 0 2px 4px rgba(255,75,75,0.3);
+}
+
+@keyframes sentChipPop {
+  0% { transform: scale(0.5); opacity: 0; }
+  60% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Sentence builder feedback */
+#sent-feedback .fb-correct,
+#sent-feedback .fb-wrong {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 0;
+}
+
+#sent-feedback .fb-correct {
+  color: var(--green);
+}
+
+#sent-feedback .fb-wrong {
+  color: var(--red);
+}
+
+#sent-feedback .fb-correct-answer {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text2);
+  margin-top: 4px;
+  direction: ltr;
+}
+
+/* Check button states */
+#sent-check-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: 0 2px 0 var(--green-dark) !important;
+}
+
+/* ═══ SPEECH PRACTICE - MIC BUTTON ═══ */
+.mic-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--purple);
+  font-size: 28px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  color: var(--purple);
+  line-height: 1;
+}
+
+.mic-btn:active {
+  transform: scale(0.9);
+}
+
+.mic-btn.listening {
+  background: var(--purple);
+  border-color: var(--purple);
+  color: #fff;
+  animation: micPulse 1s ease-in-out infinite;
+}
+
+@keyframes micPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(206, 130, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(206, 130, 255, 0);
+  }
+}
+
+#speech-mic-status {
+  font-size: 13px;
+  color: var(--text2);
+  margin-top: 8px;
+  min-height: 20px;
+}
+
+#speech-word {
+  direction: ltr;
+  text-align: center;
+}
+
+/* ═══ LISTENING COMPREHENSION ═══ */
+#listen-play-btn {
+  transition: transform 0.2s ease;
+}
+
+#listen-play-btn:active {
+  transform: scale(0.85);
+}
+
+/* Feedback styling for speech/listening practice */
+#speech-feedback .fb-correct,
+#listen-feedback .fb-correct {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--green);
+  padding: 8px 0;
+}
+
+#speech-feedback .fb-wrong,
+#listen-feedback .fb-wrong {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--red);
+  padding: 8px 0;
+}
+
+#speech-feedback .fb-correct-answer,
+#listen-feedback .fb-correct-answer {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text2);
+  margin-top: 4px;
+  direction: ltr;
+}
+
+/* Speech fallback input focus */
+#speech-fallback-input:focus {
+  border-color: var(--purple) !important;
+  box-shadow: 0 0 0 3px rgba(206, 130, 255, 0.2);
+}
+
+/* ═══ GRAMMAR TIP MODAL ═══ */
+.grammar-tip-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px 24px;
+  max-width: 380px;
+  width: 90%;
+  margin: 20px auto;
+  animation: slideUp 0.3s ease;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  border-top: 4px solid var(--green);
+}
+
+/* ═══ WEEKLY LEAGUE ═══ */
+.league-row {
+  transition: all 0.2s ease;
+}
+
+.league-row:active {
+  transform: scale(0.98);
+}
+
+.promo-zone {
+  border-right: 3px solid #58cc02;
+}
+
+.releg-zone {
+  border-right: 3px solid #ff4b4b;
+}

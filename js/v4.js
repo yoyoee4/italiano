@@ -95,7 +95,12 @@ function defaultState() {
     isPremium: false,
     weeklyXP: [0,0,0,0,0,0,0],
     totalPractice: 0,
-    streakHistory: []
+    streakHistory: [],
+    league: 'bronze',
+    leagueRank: 50,
+    weekStart: new Date().toISOString().slice(0, 10),
+    leagueXP: 0,
+    leagueCompetitors: []
   };
 }
 
@@ -160,6 +165,10 @@ function addXP(amount) {
   S.xp += amount;
   const dayIdx = new Date().getDay();
   S.weeklyXP[dayIdx] = (S.weeklyXP[dayIdx] || 0) + amount;
+  // Also add to league XP for weekly competition
+  S.leagueXP = (S.leagueXP || 0) + amount;
+  // Check league promotion
+  checkLeaguePromotion();
   save();
   showXPPopup(amount);
 }
@@ -172,10 +181,281 @@ function showXPPopup(amount) {
   setTimeout(() => pop.remove(), 1200);
 }
 
+// ═══════════════════════════════════════
+// WEEKLY LEAGUE SYSTEM
+// ═══════════════════════════════════════
+function getCurrentWeekStart() {
+  const now = new Date();
+  const day = now.getDay();
+  const diff = now.getDate() - day + (day === 0 ? -6 : 1);
+  const monday = new Date(now.setDate(diff));
+  return monday.toISOString().slice(0, 10);
+}
+
+function getDaysRemaining() {
+  const weekStart = new Date(S.weekStart);
+  const now = new Date();
+  const nextMonday = new Date(weekStart);
+  nextMonday.setDate(nextMonday.getDate() + 7);
+  const diff = nextMonday.getTime() - now.getTime();
+  return Math.max(0, Math.ceil(diff / 86400000));
+}
+
+function handleWeeklyReset() {
+  const currentWeekStart = getCurrentWeekStart();
+  if (S.weekStart !== currentWeekStart) {
+    // Calculate promotion/relegation based on rank from last week
+    var rank = S.leagueRank || 50;
+    var leagueIdx = LEAGUE_LEVELS.findIndex(function(l) { return l.id === S.league; });
+    if (rank <= 3 && leagueIdx < LEAGUE_LEVELS.length - 1) {
+      // Promote
+      S.league = LEAGUE_LEVELS[leagueIdx + 1].id;
+    } else if (rank > LEAGUE_LEVELS.length - 3 && leagueIdx > 0) {
+      // Relegate (bottom 3)
+      S.league = LEAGUE_LEVELS[leagueIdx - 1].id;
+    }
+    // Reset for new week
+    S.weekStart = currentWeekStart;
+    S.leagueXP = 0;
+    S.leagueRank = 50;
+    S.leagueCompetitors = generateCompetitors();
+    save();
+  }
+}
+
+function generateCompetitors() {
+  var names = shuffle(LEAGUE_NAMES.slice());
+  var comps = [];
+  for (var i = 0; i < 9; i++) {
+    var baseXP = S.leagueXP || 0;
+    var fakeXP = Math.max(0, Math.round(baseXP * (0.1 + Math.random() * 1.8)));
+    comps.push({
+      name: names[i % names.length],
+      xp: fakeXP,
+      trend: Math.random() > 0.5 ? 'up' : 'down'
+    });
+  }
+  return comps;
+}
+
+function checkLeaguePromotion() {
+  var leagueIdx = LEAGUE_LEVELS.findIndex(function(l) { return l.id === S.league; });
+  var league = LEAGUE_LEVELS[leagueIdx];
+  if (league && league.promoteTo && S.leagueXP >= league.minXP * 2) {
+    S.league = league.promoteTo;
+    toast('🏆 התקדמת לליגת ה-' + LEAGUE_LEVELS.find(function(l) { return l.id === S.league; }).name + '!', 'ok');
+  }
+}
+
+function showLeague() {
+  handleWeeklyReset();
+
+  var leagueIdx = LEAGUE_LEVELS.findIndex(function(l) { return l.id === S.league; });
+  var currentLeague = LEAGUE_LEVELS[leagueIdx];
+  var nextLeague = LEAGUE_LEVELS[leagueIdx + 1] || null;
+  var prevLeague = LEAGUE_LEVELS[leagueIdx - 1] || null;
+
+  // Generate/refresh competitors
+  if (!S.leagueCompetitors || S.leagueCompetitors.length === 0) {
+    S.leagueCompetitors = generateCompetitors();
+  }
+
+  // Sort competitors by XP + user rank
+  var allCompetitors = S.leagueCompetitors.slice();
+  allCompetitors.push({ name: S.name || 'את/ה', xp: S.leagueXP || 0, isUser: true });
+  allCompetitors.sort(function(a, b) { return b.xp - a.xp; });
+  var userRank = 0;
+  for (var i = 0; i < allCompetitors.length; i++) {
+    if (allCompetitors[i].isUser) {
+      userRank = i + 1;
+      break;
+    }
+  }
+  S.leagueRank = userRank;
+  save();
+
+  var nextLeagueXP = nextLeague ? nextLeague.minXP * 2 : (S.leagueXP + 500);
+  var prevLeagueXP = currentLeague.minXP;
+  var progressInLeague = Math.min(100, Math.round((S.leagueXP - prevLeagueXP) / (nextLeagueXP - prevLeagueXP) * 100));
+  if (nextLeague === null) progressInLeague = 100;
+
+  var daysLeft = getDaysRemaining();
+  var daysText = daysLeft > 1 ? daysLeft + ' ימים' : daysLeft === 1 ? 'יום אחרון!' : 'השבוע מסתיים היום!';
+
+  // Build rank medal
+  var rankMedal = userRank === 1 ? '🥇' : userRank === 2 ? '🥈' : userRank === 3 ? '🥉' : '#' + userRank;
+
+  // Build promotion/relegation zone markers
+  var promoColor = '#58cc02';
+  var relegColor = '#ff4b4b';
+
+  var html =
+    '<div class="practice-tab-container" style="max-width:500px;margin:0 auto">' +
+      '<div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">' +
+        '<button class="back-btn" onclick="renderPracticeTab()" style="background:none;border:none;font-size:24px;cursor:pointer;padding:0;color:var(--text2)">❯</button>' +
+        '<h2 style="margin:0;font-size:20px">' + currentLeague.icon + ' ליגת ה' + currentLeague.name + '</h2>' +
+      '</div>' +
+      '<div style="text-align:center;margin-bottom:16px">' +
+        '<div style="font-size:40px;margin-bottom:4px">' + currentLeague.icon + '</div>' +
+        '<div style="font-size:18px;font-weight:800;color:' + currentLeague.color + '">ליגת ה' + currentLeague.name + '</div>' +
+        '<div style="font-size:14px;color:var(--text2);margin-top:4px">' +
+          'הדירוג שלך: ' + rankMedal + ' · ⚡ ' + (S.leagueXP || 0) + ' XP' +
+        '</div>' +
+        '<div style="font-size:12px;color:var(--text2);margin-top:2px">⏱️ נשאר ' + daysText + '</div>' +
+      '</div>' +
+      // Progress bar to next league
+      (nextLeague ? '<div style="margin-bottom:16px;padding:12px 16px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow)">' +
+        '<div style="display:flex;justify-content:space-between;font-size:12px;font-weight:700;margin-bottom:4px">' +
+          '<span>' + currentLeague.icon + ' ' + currentLeague.name + '</span>' +
+          '<span>' + nextLeague.icon + ' ' + nextLeague.name + '</span>' +
+        '</div>' +
+        '<div style="background:#eee;border-radius:6px;height:12px;overflow:hidden">' +
+          '<div style="background:linear-gradient(90deg,' + currentLeague.color + ',' + nextLeague.color + ');height:100%;width:' + progressInLeague + '%;border-radius:6px;transition:width 0.5s"></div>' +
+        '</div>' +
+        '<div style="font-size:11px;color:var(--text2);text-align:center;margin-top:4px">' +
+          (progressInLeague < 100 ? '⚡ עוד ' + (nextLeagueXP - (S.leagueXP || 0)) + ' XP לעלייה' : '🎉 מוכן לעלייה!') +
+        '</div>' +
+      '</div>' : '') +
+      // Leaderboard
+      '<div style="margin-bottom:16px">' +
+        '<div style="font-size:14px;font-weight:700;color:var(--text2);margin-bottom:8px">🏆 דירוג השבוע</div>';
+
+  // Build ranking rows
+  for (var i = 0; i < allCompetitors.length; i++) {
+    var comp = allCompetitors[i];
+    var isUser = comp.isUser;
+    var rankNum = i + 1;
+    var rankIcon = rankNum === 1 ? '🥇' : rankNum === 2 ? '🥈' : rankNum === 3 ? '🥉' : rankNum;
+    var bgColor = isUser ? '#e8f5e9' : '#fff';
+    var borderColor = isUser ? '3px solid var(--green)' : '1px solid var(--border)';
+    var zoneClass = '';
+    if (rankNum <= 3) zoneClass = 'promo-zone';
+    else if (rankNum > allCompetitors.length - 3) zoneClass = 'releg-zone';
+
+    html +=
+      '<div class="league-row" style="display:flex;align-items:center;gap:10px;padding:10px 14px;margin-bottom:4px;background:' + bgColor + ';border-radius:var(--radius-xs);border:' + borderColor + ';box-shadow:0 1px 2px rgba(0,0,0,0.04);transition:var(--transition)">' +
+        '<div style="font-size:14px;font-weight:800;color:var(--text2);min-width:28px;text-align:center">' + rankIcon + '</div>' +
+        '<div style="width:32px;height:32px;border-radius:50%;background:' + (isUser ? 'var(--green)' : '#e0e0e0') + ';display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;font-weight:700;flex-shrink:0">' +
+          (isUser ? '👤' : comp.name.charAt(0)) +
+        '</div>' +
+        '<div style="flex:1;font-weight:' + (isUser ? '800' : '600') + ';font-size:14px;color:' + (isUser ? 'var(--green-dark)' : 'var(--text)') + '">' +
+          comp.name + (isUser ? ' (את/ה)' : '') +
+        '</div>' +
+        '<div style="display:flex;align-items:center;gap:4px">' +
+          '<div style="background:#eee;border-radius:4px;width:60px;height:8px;overflow:hidden">' +
+            '<div style="background:' + (isUser ? 'var(--green)' : 'var(--blue)') + ';height:100%;width:' + Math.min(100, Math.round(comp.xp / Math.max(...allCompetitors.map(function(c) { return c.xp; }), 1) * 100)) + '%;border-radius:4px"></div>' +
+          '</div>' +
+          '<span style="font-size:12px;font-weight:700;color:var(--text2);min-width:40px;text-align:left">⚡' + comp.xp + '</span>' +
+        '</div>' +
+      '</div>';
+  }
+
+  html +=
+      '</div>' +
+      // Info
+      '<div style="padding:12px 16px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:16px">' +
+        '<div style="font-size:13px;font-weight:700;margin-bottom:8px">ℹ️ איך זה עובד?</div>' +
+        '<ul style="font-size:12px;color:var(--text2);line-height:1.6;padding-right:16px">' +
+          '<li>כל XP שאתה צובר במהלך השבוע נספר בליגה</li>' +
+          '<li>שלושת הראשונים עולים ליגה 🚀</li>' +
+          '<li>שלושת האחרונים יורדים ליגה ⬇️</li>' +
+          '<li>השבוע מתאפס בכל יום שני</li>' +
+        '</ul>' +
+      '</div>' +
+    '</div>';
+
+  pageContainer.innerHTML = html;
+  pageContainer.style.overflowY = 'auto';
+  document.body.classList.remove('lesson-active');
+  bottomNav.style.display = 'block';
+}
+
+// ═══════════════════════════════════════
+// GRAMMAR TIPS SYSTEM
+// ═══════════════════════════════════════
+function getRandomGrammarTip(level) {
+  var tips = GRAMMAR_TIPS[level] || GRAMMAR_TIPS['A1'];
+  if (!tips || tips.length === 0) return null;
+  return tips[Math.floor(Math.random() * tips.length)].tip;
+}
+
+function showGrammarTip(tipText, callback) {
+  var overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.style.alignItems = 'center';
+  overlay.id = 'grammarTipOverlay';
+  overlay.innerHTML =
+    '<div class="grammar-tip-card">' +
+      '<div style="font-size:40px;text-align:center;margin-bottom:8px">📖</div>' +
+      '<div style="font-size:16px;font-weight:800;text-align:center;margin-bottom:12px;color:var(--green-dark)">טיפ דקדוקי</div>' +
+      '<div style="font-size:15px;line-height:1.6;color:var(--text);text-align:center;padding:0 8px;direction:rtl">' + tipText + '</div>' +
+      '<button class="lesson-next-btn" style="margin-top:20px;max-width:200px" onclick="dismissGrammarTip()">הבנתי! →</button>' +
+    '</div>';
+  overlay.onclick = function(e) {
+    if (e.target === overlay) dismissGrammarTip();
+  };
+  window._grammarTipCallback = callback;
+  document.body.appendChild(overlay);
+}
+
+function dismissGrammarTip() {
+  var overlay = document.getElementById('grammarTipOverlay');
+  if (overlay) overlay.remove();
+  if (typeof window._grammarTipCallback === 'function') {
+    var cb = window._grammarTipCallback;
+    window._grammarTipCallback = null;
+    cb();
+  }
+}
+
+function showAllGrammarTips() {
+  activeTab = 'practice';
+  renderBottomNav();
+  renderTopBar('home');
+  pageContainer.style.overflowY = 'auto';
+  document.body.classList.remove('lesson-active');
+
+  var html =
+    '<div class="practice-tab-container">' +
+      '<div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">' +
+        '<button class="back-btn" onclick="renderPracticeTab()" style="background:none;border:none;font-size:24px;cursor:pointer;padding:0;color:var(--text2)">❯</button>' +
+        '<h2 style="margin:0;font-size:20px">📖 טיפים דקדוקיים</h2>' +
+      '</div>' +
+      '<p style="margin-bottom:16px">כל טיפי הדקדוק לפי רמה — למידה חכמה יותר!</p>';
+
+  var levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+  var levelIcons = { A1: '🌱', A2: '☀️', B1: '⚡', B2: '🔥', C1: '🧠', C2: '👑' };
+
+  for (var li = 0; li < levels.length; li++) {
+    var lvl = levels[li];
+    var tips = GRAMMAR_TIPS[lvl];
+    if (!tips || tips.length === 0) continue;
+
+    var userLevelIdx = levels.indexOf(S.level);
+    var isUnlocked = li <= userLevelIdx;
+
+    html +=
+      '<div class="profile-section" style="opacity:' + (isUnlocked ? '1' : '0.5') + '">' +
+        '<div class="section-title">' + (levelIcons[lvl] || '📘') + ' רמה ' + lvl + (isUnlocked ? '' : ' 🔒') + '</div>';
+
+    for (var ti = 0; ti < tips.length; ti++) {
+      html +=
+        '<div style="display:flex;gap:8px;padding:8px 0;border-bottom:1px solid var(--bg);align-items:flex-start">' +
+          '<span style="color:var(--green);font-size:16px;flex-shrink:0;margin-top:2px">💡</span>' +
+          '<span style="font-size:13px;line-height:1.5;color:var(--text);direction:rtl">' + tips[ti].tip + '</span>' +
+        '</div>';
+    }
+
+    html += '</div>';
+  }
+
+  html += '</div>';
+  pageContainer.innerHTML = html;
+}
+
 function isStageFree(stageId) {
   return true; // 🔓 All stages free
 }
-
 function isStageCompleted(stageId) {
   return !!(S.stageProgress[stageId] || {}).completed;
 }
@@ -509,6 +789,17 @@ function startLesson(stageId) {
   document.body.classList.add('lesson-active');
   bottomNav.style.display = 'none';
 
+  // ═══ Show grammar tip ~40% of the time before first question ═══
+  if (Math.random() < 0.4) {
+    var tip = getRandomGrammarTip(stage.cefr || S.level);
+    if (tip) {
+      showGrammarTip(tip, function() {
+        renderLesson();
+      });
+      return;
+    }
+  }
+
   renderLesson();
 }
 
@@ -732,6 +1023,36 @@ function renderPracticeTab() {
         <span class="card-arrow">❮</span>
       </div>
 
+      <!-- SPEECH RECOGNITION -->
+      <div class="practice-card" onclick="startSpeechPractice()">
+        <div class="card-icon" style="background:#ce82ff20;color:#ce82ff">🎤</div>
+        <div class="card-info">
+          <div class="card-title">🎤 תרגול דיבור</div>
+          <div class="card-desc">אמור מילה באיטלקית וקבל משוב</div>
+        </div>
+        <span class="card-arrow">❮</span>
+      </div>
+
+      <!-- LISTENING COMPREHENSION -->
+      <div class="practice-card" onclick="startListeningPractice()">
+        <div class="card-icon" style="background:#1cb0f620;color:#1cb0f6">🎧</div>
+        <div class="card-info">
+          <div class="card-title">🎧 הבנת הנשמע</div>
+          <div class="card-desc">שמע מילה ובחר תרגום</div>
+        </div>
+        <span class="card-arrow">❮</span>
+      </div>
+
+      <!-- SENTENCE BUILDER -->
+      <div class="practice-card" onclick="startSentencePractice()">
+        <div class="card-icon" style="background:#ce82ff20;color:#ce82ff">🧩</div>
+        <div class="card-info">
+          <div class="card-title">בניית משפטים</div>
+          <div class="card-desc">גרור מילים לבניית משפט תקין</div>
+        </div>
+        <span class="card-arrow">❮</span>
+      </div>
+
       <!-- SITUATIONS -->
       <div class="practice-card" onclick="showSituations()">
         <div class="card-icon red">🏪</div>
@@ -748,6 +1069,26 @@ function renderPracticeTab() {
         <div class="card-info">
           <div class="card-title">שיחות</div>
           <div class="card-desc">דיאלוגים באיטלקית עם תרגום</div>
+        </div>
+        <span class="card-arrow">❮</span>
+      </div>
+
+      <!-- GRAMMAR TIPS -->
+      <div class="practice-card" onclick="showAllGrammarTips()">
+        <div class="card-icon" style="background:#58cc0220;color:#58cc02">📖</div>
+        <div class="card-info">
+          <div class="card-title">📖 טיפים דקדוקיים</div>
+          <div class="card-desc">כל טיפי הדקדוק לפי רמה — למידה חכמה יותר!</div>
+        </div>
+        <span class="card-arrow">❮</span>
+      </div>
+
+      <!-- WEEKLY LEAGUE -->
+      <div class="practice-card" onclick="showLeague()">
+        <div class="card-icon" style="background:#ffd70020;color:#ffd700">🏆</div>
+        <div class="card-info">
+          <div class="card-title">🏆 ליגה שבועית</div>
+          <div class="card-desc">תחרות שבועית — התחרה ועלה ליגות!</div>
         </div>
         <span class="card-arrow">❮</span>
       </div>
@@ -1529,6 +1870,714 @@ function exitConversationPractice() {
   showConversations();
 }
 
+// ═══════════════════════════════════════
+// SENTENCE BUILDER (🧩 Drag & drop)
+// ═══════════════════════════════════════
+var sentPractice = null;
+
+function startSentencePractice() {
+  activeTab = 'practice';
+  S = loadState();
+  renderBottomNav();
+  renderTopBar('home');
+  pageContainer.style.overflowY = 'auto';
+  document.body.classList.remove('lesson-active');
+
+  sentPractice = {
+    sentences: SENTENCES.slice(),
+    correct: 0,
+    total: 0,
+    current: null,
+    picked: [],
+    answered: false
+  };
+
+  sentPractice.totalSentences = Math.min(sentPractice.sentences.length, 10);
+  shuffleArray(sentPractice.sentences);
+  sentPractice.sentences = sentPractice.sentences.slice(0, sentPractice.totalSentences);
+  sentPractice.idx = 0;
+  sentPractice.done = false;
+
+  renderSentenceBuildUI();
+  loadSentence();
+}
+
+function renderSentenceBuildUI() {
+  var html =
+    '<div class="practice-tab-container" style="max-width:500px;margin:0 auto">' +
+      '<div style="display:flex;align-items:center;gap:12px;margin-bottom:4px">' +
+        '<button class="back-btn" onclick="exitSentencePractice()" style="background:none;border:none;font-size:24px;cursor:pointer;padding:0">❯</button>' +
+        '<h2 style="margin:0;font-size:18px">🧩 בניית משפטים</h2>' +
+      '</div>' +
+      '<p style="margin-bottom:12px">בנה משפט תקין מהמילה הנתונה</p>' +
+      '<div id="sent-score" style="text-align:center;font-size:13px;color:var(--text2);margin-bottom:8px"></div>' +
+      '<div id="sent-hebrew" style="text-align:center;font-size:22px;font-weight:700;direction:rtl;margin-bottom:20px;padding:16px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow)"></div>' +
+      '<div id="sent-picked-row" class="sent-picked-row" style="min-height:52px"></div>' +
+      '<div id="sent-bubbles" style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:16px;margin-bottom:16px"></div>' +
+      '<button id="sent-check-btn" class="lesson-next-btn" onclick="checkSentence()" disabled style="max-width:100%">בדוק</button>' +
+      '<div id="sent-feedback" style="margin-top:12px"></div>' +
+    '</div>';
+  pageContainer.innerHTML = html;
+}
+
+function loadSentence() {
+  if (!sentPractice || sentPractice.idx >= sentPractice.sentences.length) {
+    finishSentencePractice();
+    return;
+  }
+
+  var s = sentPractice.sentences[sentPractice.idx];
+  sentPractice.current = s;
+  sentPractice.picked = [];
+  sentPractice.answered = false;
+
+  // Update score
+  document.getElementById('sent-score').textContent = sentPractice.idx + 1 + ' / ' + sentPractice.sentences.length + ' · ✅ ' + sentPractice.correct;
+
+  // Show Hebrew question
+  document.getElementById('sent-hebrew').textContent = '🇮🇱 ' + s.he;
+
+  // Clear feedback and picked row
+  document.getElementById('sent-feedback').innerHTML = '';
+  document.getElementById('sent-picked-row').innerHTML = '';
+
+  // Shuffle the words for display
+  var shuffled = s.words.slice();
+  shuffleArray(shuffled);
+
+  // Create word bubbles
+  var bubblesDiv = document.getElementById('sent-bubbles');
+  bubblesDiv.innerHTML = '';
+  for (var i = 0; i < shuffled.length; i++) {
+    var bubble = document.createElement('div');
+    bubble.className = 'sent-bubble';
+    bubble.textContent = shuffled[i];
+    bubble.dataset.word = shuffled[i];
+    bubble.dataset.index = i;
+    bubble.onclick = function() { pickWord(this); };
+    bubblesDiv.appendChild(bubble);
+  }
+
+  // Disable check button
+  document.getElementById('sent-check-btn').disabled = true;
+}
+
+function pickWord(el) {
+  if (sentPractice.answered) return;
+  var word = el.dataset.word;
+  sentPractice.picked.push(word);
+  el.classList.add('sent-bubble-used');
+
+  // Add to picked row
+  var pickedRow = document.getElementById('sent-picked-row');
+  var chip = document.createElement('div');
+  chip.className = 'sent-chip';
+  chip.textContent = word;
+  chip.dataset.word = word;
+  chip.onclick = function() { unPickWord(this); };
+  pickedRow.appendChild(chip);
+
+  // Enable check button if all words placed
+  if (sentPractice.picked.length === sentPractice.current.words.length) {
+    document.getElementById('sent-check-btn').disabled = false;
+  }
+}
+
+function unPickWord(el) {
+  if (sentPractice.answered) return;
+  var word = el.dataset.word;
+
+  // Remove from picked array (last occurrence)
+  for (var i = sentPractice.picked.length - 1; i >= 0; i--) {
+    if (sentPractice.picked[i] === word) {
+      sentPractice.picked.splice(i, 1);
+      break;
+    }
+  }
+
+  // Remove chip
+  el.remove();
+
+  // Re-enable corresponding bubble
+  var bubbles = document.querySelectorAll('.sent-bubble');
+  for (var i = 0; i < bubbles.length; i++) {
+    if (bubbles[i].dataset.word === word && bubbles[i].classList.contains('sent-bubble-used')) {
+      bubbles[i].classList.remove('sent-bubble-used');
+      break;
+    }
+  }
+
+  // Disable check button
+  document.getElementById('sent-check-btn').disabled = true;
+}
+
+function checkSentence() {
+  if (sentPractice.answered) return;
+  sentPractice.answered = true;
+  sentPractice.total++;
+
+  var userAnswer = sentPractice.picked.join(' ');
+  var correctAnswer = sentPractice.current.words.join(' ');
+  var isCorrect = userAnswer === correctAnswer;
+
+  var feedback = document.getElementById('sent-feedback');
+  feedback.innerHTML = '';
+
+  if (isCorrect) {
+    sentPractice.correct++;
+    feedback.innerHTML = '<div class="fb-correct">✅ נכון! כל הכבוד!</div>';
+    addXP(10);
+    // Animate correct
+    document.getElementById('sent-picked-row').classList.add('sent-correct');
+  } else {
+    feedback.innerHTML = '' +
+      '<div class="fb-wrong">❌ לא נכון</div>' +
+      '<div class="fb-correct-answer">המשפט הנכון: ' + sentPractice.current.it + '</div>';
+    // Animate wrong
+    document.getElementById('sent-picked-row').classList.add('sent-wrong');
+  }
+
+  // Next button
+  var nextBtn = document.createElement('button');
+  nextBtn.className = 'lesson-next-btn';
+  nextBtn.textContent = sentPractice.idx + 1 >= sentPractice.sentences.length ? 'סיים ✅' : 'המשך ←';
+  nextBtn.style.marginTop = '12px';
+  nextBtn.style.maxWidth = '100%';
+  nextBtn.onclick = function() {
+    sentPractice.idx++;
+    document.getElementById('sent-picked-row').classList.remove('sent-correct', 'sent-wrong');
+    loadSentence();
+  };
+  feedback.appendChild(nextBtn);
+
+  // Disable check button
+  document.getElementById('sent-check-btn').disabled = true;
+}
+
+function finishSentencePractice() {
+  if (!sentPractice) return;
+  var total = sentPractice.sentences.length;
+  var correct = sentPractice.correct;
+  var pct = total > 0 ? Math.round(correct / total * 100) : 0;
+
+  var bonusXP = 0;
+  if (pct >= 80) bonusXP = 30;
+  else if (pct >= 60) bonusXP = 15;
+
+  addXP(bonusXP);
+
+  var html =
+    '<div class="practice-tab-container" style="text-align:center;padding-top:40px">' +
+      '<div style="font-size:48px;margin-bottom:12px">🎉</div>' +
+      '<h2 style="font-size:22px;font-weight:800;margin-bottom:8px">תרגול משפטים הסתיים!</h2>' +
+      '<div style="font-size:16px;color:var(--text2);margin-bottom:20px">' +
+        '✅ ' + correct + '/' + total + ' נכונים (' + pct + '%)' +
+      '</div>';
+
+  if (bonusXP > 0) {
+    html += '<div style="font-size:14px;color:var(--green);font-weight:700;margin-bottom:20px">' +
+      '🏆 תוספת XP: +' + bonusXP +
+    '</div>';
+  }
+
+  html +=
+      '<button class="lesson-next-btn" onclick="exitSentencePractice()" style="max-width:280px;margin:0 auto">חזור לתרגול</button>' +
+    '</div>';
+
+  pageContainer.innerHTML = html;
+}
+
+function exitSentencePractice() {
+  sentPractice = null;
+  renderPracticeTab();
+}
+
+// ═══════════════════════════════════════
+// SPEECH RECOGNITION PRACTICE
+// ═══════════════════════════════════════
+var speechPractice = null;
+
+function startSpeechPractice() {
+  activeTab = 'practice';
+  S = loadState();
+  renderBottomNav();
+  renderTopBar('home');
+  pageContainer.style.overflowY = 'hidden';
+  document.body.classList.remove('lesson-active');
+
+  // Get pool of words from user's current level
+  var pool = [];
+  var userLevel = S.level || 'A1';
+  var levelStages = getStagesForLevel(userLevel);
+  for (var i = 0; i < levelStages.length; i++) {
+    for (var j = 0; j < levelStages[i].words.length; j++) {
+      pool.push(levelStages[i].words[j]);
+    }
+  }
+
+  if (pool.length === 0) {
+    toast('אין מילים לתרגול. התחל ללמוד שלב קודם!', 'error');
+    return;
+  }
+
+  speechPractice = {
+    pool: pool,
+    words: shuffle(pool).slice(0, Math.min(10, pool.length)),
+    idx: 0,
+    correct: 0,
+    total: 0,
+    answered: false,
+    listening: false
+  };
+
+  renderSpeechUI();
+  loadSpeechWord();
+}
+
+function renderSpeechUI() {
+  var html =
+    '<div class="practice-tab-container" style="max-width:500px;margin:0 auto">' +
+      '<div style="display:flex;align-items:center;gap:12px;margin-bottom:4px">' +
+        '<button class="back-btn" onclick="exitSpeechPractice()" style="background:none;border:none;font-size:24px;cursor:pointer;padding:0">❯</button>' +
+        '<h2 style="margin:0;font-size:18px">🎤 תרגול דיבור</h2>' +
+      '</div>' +
+      '<p style="margin-bottom:12px;text-align:center">אמור את המילה בקול רם</p>' +
+      '<div id="speech-score" style="text-align:center;font-size:13px;color:var(--text2);margin-bottom:8px"></div>' +
+      '<div id="speech-word-area" style="text-align:center;padding:24px 16px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:16px">' +
+        '<div id="speech-word" style="font-size:28px;font-weight:800;color:var(--text);margin-bottom:12px;direction:ltr"></div>' +
+        '<button id="speak-word-btn" class="lesson-speak-btn" onclick="speakSpeechWord()" style="font-size:20px;width:44px;height:44px">🔊</button>' +
+      '</div>' +
+      '<div id="speech-mic-area" style="text-align:center;margin-bottom:16px">' +
+        '<button id="speech-mic-btn" class="mic-btn" onclick="toggleSpeechRecognition()">🎤</button>' +
+        '<div id="speech-mic-status" style="font-size:12px;color:var(--text2);margin-top:6px">לחץ על המיקרופון ודבר</div>' +
+      '</div>' +
+      '<div id="speech-input-area" style="display:none;margin-bottom:16px">' +
+        '<input id="speech-fallback-input" type="text" placeholder="הקלד את המילה באיטלקית..." style="direction:ltr;text-align:center;width:100%;padding:12px 14px;font-size:18px;border:2px solid #e0e0e0;border-radius:12px;outline:none;box-sizing:border-box;font-family:Nunito,sans-serif" onkeydown="if(event.key===\'Enter\')checkSpeechText()" autocomplete="off" autocapitalize="off" spellcheck="false">' +
+        '<button class="paywall-btn" onclick="checkSpeechText()" style="background:var(--green);padding:12px;font-size:16px;margin-top:8px">בדוק</button>' +
+      '</div>' +
+      '<div id="speech-feedback" style="margin-top:12px"></div>' +
+    '</div>';
+
+  pageContainer.innerHTML = html;
+}
+
+function loadSpeechWord() {
+  if (!speechPractice || speechPractice.idx >= speechPractice.words.length) {
+    finishSpeechPractice();
+    return;
+  }
+
+  speechPractice.answered = false;
+
+  var word = speechPractice.words[speechPractice.idx];
+  document.getElementById('speech-score').textContent = (speechPractice.idx + 1) + ' / ' + speechPractice.words.length + ' · ✅ ' + speechPractice.correct;
+  document.getElementById('speech-word').textContent = word.it + ' (' + (word.he || word.en) + ')';
+  document.getElementById('speech-feedback').innerHTML = '';
+  document.getElementById('speech-mic-status').textContent = 'לחץ על המיקרופון ודבר';
+  document.getElementById('speech-mic-btn').className = 'mic-btn';
+  document.getElementById('speech-mic-btn').disabled = false;
+  document.getElementById('speech-mic-btn').textContent = '🎤';
+
+  // Show or hide input area based on browser support
+  var hasSpeechRecognition = !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+  document.getElementById('speech-mic-area').style.display = hasSpeechRecognition ? 'block' : 'none';
+  document.getElementById('speech-input-area').style.display = hasSpeechRecognition ? 'none' : 'block';
+
+  if (!hasSpeechRecognition) {
+    setTimeout(function() {
+      var inp = document.getElementById('speech-fallback-input');
+      if (inp) { inp.value = ''; inp.focus(); }
+    }, 300);
+  }
+
+  // Auto-play the word
+  setTimeout(function() {
+    speakSpeechWord();
+  }, 400);
+}
+
+function speakSpeechWord() {
+  if (!speechPractice) return;
+  var word = speechPractice.words[speechPractice.idx];
+  speakText(word.it);
+}
+
+function toggleSpeechRecognition() {
+  if (speechPractice.listening) return;
+
+  var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SpeechRecognition) {
+    toast('דפדפן לא תומך בזיהוי קולי', 'error');
+    return;
+  }
+
+  var recognition = new SpeechRecognition();
+  recognition.lang = 'it-IT';
+  recognition.continuous = false;
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+
+  var micBtn = document.getElementById('speech-mic-btn');
+  var statusEl = document.getElementById('speech-mic-status');
+
+  speechPractice.listening = true;
+  micBtn.classList.add('listening');
+  micBtn.textContent = '🔴';
+  statusEl.textContent = '🎤 מאזין... דבר עכשיו!';
+
+  recognition.onresult = function(event) {
+    var transcript = event.results[0][0].transcript;
+    statusEl.textContent = 'שמעתי: "' + transcript + '"';
+    micBtn.classList.remove('listening');
+    micBtn.textContent = '🎤';
+    speechPractice.listening = false;
+
+    checkSpeechMatch(transcript);
+  };
+
+  recognition.onerror = function(event) {
+    micBtn.classList.remove('listening');
+    micBtn.textContent = '🎤';
+    speechPractice.listening = false;
+
+    var errorMsg = '';
+    switch (event.error) {
+      case 'no-speech': errorMsg = 'לא זוהה דיבור. נסה שוב.'; break;
+      case 'audio-capture': errorMsg = 'לא נמצא מיקרופון.'; break;
+      case 'not-allowed': errorMsg = 'אין הרשאת מיקרופון.'; break;
+      case 'network': errorMsg = 'שגיאת רשת.'; break;
+      default: errorMsg = 'שגיאה: ' + event.error;
+    }
+    statusEl.textContent = errorMsg;
+
+    // Show fallback input on error
+    document.getElementById('speech-input-area').style.display = 'block';
+    setTimeout(function() {
+      var inp = document.getElementById('speech-fallback-input');
+      if (inp) { inp.value = ''; inp.focus(); }
+    }, 300);
+  };
+
+  recognition.onend = function() {
+    if (speechPractice.listening) {
+      micBtn.classList.remove('listening');
+      micBtn.textContent = '🎤';
+      speechPractice.listening = false;
+    }
+  };
+
+  try {
+    recognition.start();
+  } catch (e) {
+    toast('שגיאה בהפעלת המיקרופון', 'error');
+    speechPractice.listening = false;
+    micBtn.classList.remove('listening');
+    micBtn.textContent = '🎤';
+  }
+}
+
+function checkSpeechMatch(spokenText) {
+  if (speechPractice.answered) return;
+  speechPractice.answered = true;
+
+  var word = speechPractice.words[speechPractice.idx];
+  var expected = normalizeText(word.it);
+  var spoken = normalizeText(spokenText);
+
+  var feedback = document.getElementById('speech-feedback');
+
+  if (spoken === expected) {
+    speechPractice.correct++;
+    speechPractice.total++;
+    feedback.innerHTML = '<div class="fb-correct">✅ נכון! כל הכבוד! 🎉</div>';
+    addXP(XP_PER_CORRECT);
+    markTodayActive();
+  } else {
+    speechPractice.total++;
+    feedback.innerHTML = '' +
+      '<div class="fb-wrong">❌ לא נכון</div>' +
+      '<div class="fb-correct-answer">המילה הנכונה: ' + word.it + ' (' + (word.he || word.en) + ')</div>';
+  }
+
+  addSpeechNextButton();
+}
+
+function checkSpeechText() {
+  if (speechPractice.answered) return;
+  var input = document.getElementById('speech-fallback-input');
+  if (!input) return;
+  checkSpeechMatch(input.value);
+}
+
+function addSpeechNextButton() {
+  var feedback = document.getElementById('speech-feedback');
+  var nextBtn = document.createElement('button');
+  nextBtn.className = 'lesson-next-btn';
+  nextBtn.textContent = speechPractice.idx + 1 >= speechPractice.words.length ? 'סיים ✅' : 'המשך ←';
+  nextBtn.style.marginTop = '12px';
+  nextBtn.onclick = function() {
+    speechPractice.idx++;
+    loadSpeechWord();
+  };
+  feedback.appendChild(nextBtn);
+}
+
+function finishSpeechPractice() {
+  if (!speechPractice) return;
+  var total = speechPractice.total;
+  var correct = speechPractice.correct;
+  var pct = total > 0 ? Math.round(correct / total * 100) : 0;
+
+  var bonusXP = 0;
+  if (pct >= 80) bonusXP = 30;
+  else if (pct >= 60) bonusXP = 15;
+
+  if (bonusXP > 0) addXP(bonusXP);
+
+  var icon = pct >= 80 ? '🎉' : pct >= 50 ? '💪' : '📚';
+  var title = pct >= 80 ? 'מצוין!' : pct >= 50 ? 'כמעט!' : 'תרגל עוד';
+
+  pageContainer.innerHTML = '' +
+    '<div class="lesson-complete">' +
+      '<div class="celebrate-icon">' + icon + '</div>' +
+      '<div class="complete-title">' + title + '</div>' +
+      '<div class="complete-sub">✅ ' + correct + '/' + total + ' (' + pct + '%)</div>' +
+      '<div class="xp-earned"><span class="xp-icon">⚡</span><span>+' + (correct * XP_PER_CORRECT + bonusXP) + ' XP</span></div>' +
+      '<button class="continue-btn" onclick="exitSpeechPractice()">חזור לתרגול 🗺️</button>' +
+    '</div>';
+
+  if (pct >= 70) fireConfetti();
+}
+
+function exitSpeechPractice() {
+  speechPractice = null;
+  bottomNav.style.display = 'block';
+  renderPracticeTab();
+}
+
+// ═══════════════════════════════════════
+// LISTENING COMPREHENSION PRACTICE
+// ═══════════════════════════════════════
+var listenPractice = null;
+
+function startListeningPractice() {
+  activeTab = 'practice';
+  S = loadState();
+  renderBottomNav();
+  renderTopBar('home');
+  pageContainer.style.overflowY = 'hidden';
+  document.body.classList.remove('lesson-active');
+
+  // Get pool of words from user's current level
+  var pool = [];
+  var userLevel = S.level || 'A1';
+  var levelStages = getStagesForLevel(userLevel);
+
+  // Collect all stages from user level and below
+  var allStages = [];
+  var levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+  var userLevelIdx = levels.indexOf(userLevel);
+  if (userLevelIdx === -1) userLevelIdx = 0;
+  for (var li = 0; li <= userLevelIdx; li++) {
+    for (var si = 0; si < STAGES.length; si++) {
+      if (STAGES[si].cefr === levels[li]) {
+        allStages.push(STAGES[si]);
+      }
+    }
+  }
+
+  // Collect words that have Hebrew translation
+  for (var i = 0; i < allStages.length; i++) {
+    var stage = allStages[i];
+    for (var j = 0; j < stage.words.length; j++) {
+      var w = stage.words[j];
+      if (w.he) {
+        pool.push({
+          stage: stage,
+          word: w
+        });
+      }
+    }
+  }
+
+  if (pool.length < 4) {
+    toast('לא מספיק מילים זמינות. למד שלב קודם!', 'error');
+    return;
+  }
+
+  listenPractice = {
+    pool: shuffle(pool),
+    questions: shuffle(pool).slice(0, Math.min(10, pool.length)),
+    idx: 0,
+    correct: 0,
+    answered: false,
+    totalQuestions: Math.min(10, pool.length)
+  };
+
+  renderListenUI();
+  loadListenQuestion();
+}
+
+function renderListenUI() {
+  var html =
+    '<div class="practice-tab-container" style="max-width:500px;margin:0 auto">' +
+      '<div style="display:flex;align-items:center;gap:12px;margin-bottom:4px">' +
+        '<button class="back-btn" onclick="exitListeningPractice()" style="background:none;border:none;font-size:24px;cursor:pointer;padding:0;color:var(--text2)">❯</button>' +
+        '<h2 style="margin:0;font-size:18px">🎧 הבנת הנשמע</h2>' +
+      '</div>' +
+      '<p style="margin-bottom:12px;text-align:center">שמע את המילה ובחר את התרגום הנכון</p>' +
+      '<div id="listen-score" style="text-align:center;font-size:13px;color:var(--text2);margin-bottom:8px"></div>' +
+      '<div id="listen-word-area" style="text-align:center;padding:32px 16px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:20px">' +
+        '<div id="listen-word-label" style="font-size:14px;color:var(--text2);margin-bottom:8px">הקשיבו למילה 👇</div>' +
+        '<button id="listen-play-btn" class="lesson-speak-btn" onclick="playListenWord()" style="font-size:28px;width:56px;height:56px">🔊</button>' +
+      '</div>' +
+      '<div id="listen-options" style="display:flex;flex-direction:column;gap:8px;margin-bottom:12px"></div>' +
+      '<div id="listen-feedback" style="margin-top:12px"></div>' +
+    '</div>';
+
+  pageContainer.innerHTML = html;
+}
+
+function loadListenQuestion() {
+  if (!listenPractice || listenPractice.idx >= listenPractice.questions.length) {
+    finishListeningPractice();
+    return;
+  }
+
+  listenPractice.answered = false;
+
+  var q = listenPractice.questions[listenPractice.idx];
+  var correctWord = q.word;
+  var correctHe = correctWord.he;
+
+  document.getElementById('listen-score').textContent = (listenPractice.idx + 1) + ' / ' + listenPractice.totalQuestions + ' · ✅ ' + listenPractice.correct;
+  document.getElementById('listen-word-label').textContent = 'הקשיבו למילה 👇';
+  document.getElementById('listen-feedback').innerHTML = '';
+
+  // Generate 3 wrong options from same stage
+  var wrongOptions = [];
+  var stageWords = q.stage.words;
+  var wrongPool = [];
+  for (var i = 0; i < stageWords.length; i++) {
+    if (stageWords[i].he && stageWords[i].he !== correctHe) {
+      wrongPool.push(stageWords[i].he);
+    }
+  }
+  shuffleArray(wrongPool);
+  for (var i = 0; i < wrongPool.length && wrongOptions.length < 3; i++) {
+    if (!wrongOptions.includes(wrongPool[i])) {
+      wrongOptions.push(wrongPool[i]);
+    }
+  }
+
+  // If not enough wrong options from same stage, get from other stages
+  if (wrongOptions.length < 3) {
+    for (var i = 0; i < listenPractice.pool.length && wrongOptions.length < 3; i++) {
+      var h = listenPractice.pool[i].word.he;
+      if (h !== correctHe && !wrongOptions.includes(h)) {
+        wrongOptions.push(h);
+      }
+    }
+  }
+
+  // Pad if still needed
+  while (wrongOptions.length < 3) {
+    wrongOptions.push('---');
+  }
+
+  var options = shuffle([correctHe].concat(wrongOptions));
+
+  var optsHtml = '';
+  for (var i = 0; i < options.length; i++) {
+    optsHtml += '<button class="option-btn" onclick="answerListenQuestion(this, \'' + escAttr(options[i]) + '\', \'' + escAttr(correctHe) + '\')">' + options[i] + '</button>';
+  }
+  document.getElementById('listen-options').innerHTML = optsHtml;
+
+  // Auto-play the word after a short delay
+  setTimeout(function() {
+    playListenWord();
+  }, 500);
+}
+
+function playListenWord() {
+  if (!listenPractice) return;
+  var q = listenPractice.questions[listenPractice.idx];
+  speakText(q.word.it);
+}
+
+function answerListenQuestion(btn, selected, correct) {
+  if (listenPractice.answered) return;
+  listenPractice.answered = true;
+
+  var opts = document.querySelectorAll('#listen-options .option-btn');
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].classList.add('disabled');
+  }
+
+  var feedback = document.getElementById('listen-feedback');
+
+  if (selected === correct) {
+    btn.classList.add('correct');
+    listenPractice.correct++;
+    feedback.innerHTML = '<div class="fb-correct">✅ נכון! 🎉</div>';
+    addXP(XP_PER_CORRECT);
+    markTodayActive();
+  } else {
+    btn.classList.add('wrong');
+    for (var i = 0; i < opts.length; i++) {
+      if (opts[i].textContent === correct) {
+        opts[i].classList.add('reveal-correct');
+      }
+    }
+    feedback.innerHTML = '' +
+      '<div class="fb-wrong">❌ לא נכון</div>' +
+      '<div class="fb-correct-answer">התשובה הנכונה: ' + correct + '</div>';
+  }
+
+  var q = listenPractice.questions[listenPractice.idx];
+  var nextBtn = document.createElement('button');
+  nextBtn.className = 'lesson-next-btn';
+  nextBtn.textContent = listenPractice.idx + 1 >= listenPractice.questions.length ? 'סיים ✅' : 'המשך ←';
+  nextBtn.onclick = function() {
+    listenPractice.idx++;
+    loadListenQuestion();
+  };
+  feedback.appendChild(nextBtn);
+}
+
+function finishListeningPractice() {
+  if (!listenPractice) return;
+  var total = listenPractice.totalQuestions;
+  var correct = listenPractice.correct;
+  var pct = total > 0 ? Math.round(correct / total * 100) : 0;
+
+  var bonusXP = 0;
+  if (pct >= 80) bonusXP = 30;
+  else if (pct >= 60) bonusXP = 15;
+
+  if (bonusXP > 0) addXP(bonusXP);
+
+  var icon = pct >= 80 ? '🎉' : pct >= 50 ? '💪' : '📚';
+  var title = pct >= 80 ? 'מצוין!' : pct >= 50 ? 'כמעט!' : 'תרגל עוד';
+
+  pageContainer.innerHTML = '' +
+    '<div class="lesson-complete">' +
+      '<div class="celebrate-icon">' + icon + '</div>' +
+      '<div class="complete-title">' + title + '</div>' +
+      '<div class="complete-sub">✅ ' + correct + '/' + total + ' (' + pct + '%)</div>' +
+      '<div class="xp-earned"><span class="xp-icon">⚡</span><span>+' + (correct * XP_PER_CORRECT + bonusXP) + ' XP</span></div>' +
+      '<button class="continue-btn" onclick="exitListeningPractice()">חזור לתרגול 🗺️</button>' +
+    '</div>';
+
+  if (pct >= 70) fireConfetti();
+}
+
+function exitListeningPractice() {
+  listenPractice = null;
+  bottomNav.style.display = 'block';
+  renderPracticeTab();
+}
+
 function normalizeText(s) {
   return String(s).toLowerCase().trim()
     .replace(/[àáâãäå]/g, 'a')
@@ -1539,6 +2588,16 @@ function normalizeText(s) {
     .replace(/[^a-z0-9\\s]/g, '')
     .replace(/\\s+/g, ' ')
     .trim();
+}
+
+function shuffleArray(arr) {
+  for (var i = arr.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
+  return arr;
 }
 
 // ═══════════════════════════════════════
@@ -1564,4 +2623,24 @@ window.startConversationPractice = startConversationPractice;
 window.selectConvRole = selectConvRole;
 window.checkConvAnswer = checkConvAnswer;
 window.exitConversationPractice = exitConversationPractice;
+window.startSentencePractice = startSentencePractice;
+window.exitSentencePractice = exitSentencePractice;
+window.checkSentence = checkSentence;
+window.pickWord = pickWord;
+window.unPickWord = unPickWord;
 window.copyUserData = copyUserData;
+window.startSpeechPractice = startSpeechPractice;
+window.exitSpeechPractice = exitSpeechPractice;
+window.toggleSpeechRecognition = toggleSpeechRecognition;
+window.checkSpeechText = checkSpeechText;
+window.speakSpeechWord = speakSpeechWord;
+window.startListeningPractice = startListeningPractice;
+window.exitListeningPractice = exitListeningPractice;
+window.playListenWord = playListenWord;
+window.answerListenQuestion = answerListenQuestion;
+window.showLeague = showLeague;
+window.showAllGrammarTips = showAllGrammarTips;
+window.showGrammarTip = showGrammarTip;
+window.dismissGrammarTip = dismissGrammarTip;
+window.getRandomGrammarTip = getRandomGrammarTip;
+window.handleWeeklyReset = handleWeeklyReset;

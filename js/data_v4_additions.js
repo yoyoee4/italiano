@@ -639,3 +639,190 @@ const CONVERSATIONS = [
     }
   }
 })();
+
+// ═══════════════════════════════════════════════════
+// GRAMMAR TIPS — organized by CEFR level
+// ═══════════════════════════════════════════════════
+var GRAMMAR_TIPS = {
+  A1: [
+    {tip: "באיטלקית, שם תואר בא אחרי שם העצם — la casa bianca (לא la bianca casa)"},
+    {tip: 'הטיית הפועל essere: io sono, tu sei, lui/lei è, noi siamo, voi siete, loro sono'},
+    {tip: 'הטיית הפועל avere: io ho, tu hai, lui/lei ha, noi abbiamo, voi avete, loro hanno'},
+    {tip: 'שמות עצם באיטלקית: זכר (il) ונקבה (la). רוב השמות ב-🅾️ הם זכר, ב-🅰️ הם נקבה'},
+    {tip: 'מילות יחס פשוטות: a (ל-), di (של), in (ב-), con (עם), per (בשביל)'},
+    {tip: "ה' הידיעה: il (זכר יחיד), lo (זכר מול s+עיצור/z), la (נקבה), l' (לפני תנועה)"},
+    {tip: 'ציווי לא רשמי: parla! (דבר!), mangia! (תאכל!), dormi! (תישן!) — צורת הגוף השלישי'}
+  ],
+  A2: [
+    {tip: "Gli articoli: il/lo/la/l' (יחיד), i/gli/le (רבים). lo לפני s+עיצור, z, ps, gn"},
+    {tip: 'הטיית פעלים בזמן הווה: -are (parlo, parli, parla, parliamo, parlate, parlano)'},
+    {tip: 'הטיית פעלים בזמן הווה: -ere (leggo, leggi, legge, leggiamo, leggete, leggono)'},
+    {tip: 'הטיית פעלים בזמן הווה: -ire (dormo, dormi, dorme, dormiamo, dormite, dormono)'},
+    {tip: 'פעלים חריגים: andare (vado), fare (faccio), bere (bevo), dire (dico), uscire (esco)'},
+    {tip: 'פעלי עזר מודליים: potere (יכול), dovere (חייב), volere (רוצה) — באים לפני הפועל'},
+    {tip: 'שמות עצם ברבים: parole → parole (נקבה), libro → libri (זכר)'}
+  ],
+  B1: [
+    {tip: 'Il passato prossimo: avere/essere + participio passato. essere לתנועה/שינוי מצב'},
+    {tip: 'Participio passato: -are→-ato, -ere→-uto, -ire→-ito. חריגים: fare→fatto, dire→detto'},
+    {tip: 'פעלים רפלקסיביים: mi alzo (אני קם), ti lavi (אתה מתרחץ), si veste (היא מתלבשת)'},
+    {tip: 'אימפרפקטו (זמן עבר מתמשך): -avo, -evi, -eva, -avamo, -avate, -avano'},
+    {tip: 'עתיד פשוט: -erò, -erai, -erà, -eremo, -erete, -eranno. חריג: essere→sarò'},
+    {tip: 'Condizionale (תנאי/בקשה מנומסת): vorrei (הייתי רוצה), potrei (יכולתי), dovrei (צריך)'},
+    {tip: 'כינויי מושא ישיר: mi, ti, lo, la, ci, vi, li, le — באים לפני הפועל'}
+  ],
+  B2: [
+    {tip: 'Congiuntivo presente: che io parli, che tu parli, che lui parli, che noi parliamo...'},
+    {tip: 'Congiuntivo משמש אחרי: credo che..., penso che..., è importante che...'},
+    {tip: 'Trapassato prossimo (עתיד מוקדם יותר בעבר): avevo parlato, ero andato'},
+    {tip: 'Condizionale composto (צריך היה/הייתי עושה): avrei parlato, sarei andato'},
+    {tip: 'פסוקית יחס: che (ש-), cui (שלו/לה/להם), il quale/la quale (האשר)'},
+    {tip: 'משפט פסיבי: viene + participio (venne costruito — נבנה), è + participio (è stato scritto)'}
+  ],
+  C1: [
+    {tip: 'Congiuntivo imperfetto: che io parlassi, che tu parlassi, che lui parlasse...'},
+    {tip: 'Periodo ipotetico (משפטי תנאי): se + congiuntivo + condizionale'},
+    {tip: 'Gerundio (בזמן ש-): parlando (בזמן דיבור), avendo parlato (לאחר שדיבר)'},
+    {tip: 'Passato remoto (עבר רחוק/ספרותי): parlai, parlasti, parlò, parlammo, parlaste, parlarono'},
+    {tip: 'Discorso indiretto (דיבור עקיף): "Ha detto che..." במקום "Ha detto: ..."'}
+  ],
+  C2: [
+    {tip: 'Congiuntivo trapassato: che io avessi parlato, che io fossi andato'},
+    {tip: 'Passato remoto (חריגים): fare→feci, dire→dissi, essere→fui, stare→stetti'},
+    {tip: 'Forma impersonale: si + verb (si parla italiano, si mangia bene qui)'},
+    {tip: 'Enclisi (כינוי מושא מחובר לפועל): dirmelo (להגיד לי את זה), farlo (לעשות את זה)'}
+  ]
+};
+
+// ═══════════════════════════════════════════════════
+// WEEKLY LEAGUE — AI competitor names (Italian-themed)
+// ═══════════════════════════════════════════════════
+var LEAGUE_NAMES = [
+  'Marco', 'Sofia', 'Luca', 'Giulia', 'Alessandro',
+  'Francesca', 'Matteo', 'Chiara', 'Leonardo', 'Isabella',
+  'Riccardo', 'Elena', 'Federico', 'Valentina', 'Antonio',
+  'Martina', 'Giovanni', 'Aurora', 'Paolo', 'Beatrice'
+];
+
+var LEAGUE_LEVELS = [
+  { id: 'bronze', name: 'Bronzo',  icon: '🥉', minXP: 0,       promoteTo: 'silver',   relegateTo: null,      color: '#cd7f32' },
+  { id: 'silver', name: 'Argento', icon: '🥈', minXP: 100,    promoteTo: 'gold',     relegateTo: 'bronze',  color: '#c0c0c0' },
+  { id: 'gold',   name: 'Oro',     icon: '🥇', minXP: 250,    promoteTo: 'sapphire', relegateTo: 'silver',  color: '#ffd700' },
+  { id: 'sapphire', name: 'Zaffiro', icon: '💎', minXP: 500, promoteTo: 'ruby',     relegateTo: 'gold',     color: '#0f52ba' },
+  { id: 'ruby',   name: 'Rubino',  icon: '🔴', minXP: 1000,   promoteTo: 'emerald',  relegateTo: 'sapphire', color: '#e0115f' },
+  { id: 'emerald', name: 'Smeraldo', icon: '🟢', minXP: 2000, promoteTo: 'diamond',  relegateTo: 'ruby',     color: '#50c878' },
+  { id: 'diamond', name: 'Diamante', icon: '👑', minXP: 4000, promoteTo: null,       relegateTo: 'emerald',  color: '#b9f2ff' }
+];
+
+// ═══════════════════════════════════════════════════
+// SENTENCE BUILDER — 100 Italian sentences (A1-C1)
+// ═══════════════════════════════════════════════════
+var SENTENCES = [
+  // ── A1 (30 sentences, 3-5 words) ──
+  {it: "Io mangio la pasta", he: "אני אוכל פסטה", words: ["Io", "mangio", "la", "pasta"]},
+  {it: "Tu bevi il caffè", he: "אתה שותה קפה", words: ["Tu", "bevi", "il", "caffè"]},
+  {it: "Lei parla italiano", he: "היא מדברת איטלקית", words: ["Lei", "parla", "italiano"]},
+  {it: "Lui è un ragazzo", he: "הוא ילד", words: ["Lui", "è", "un", "ragazzo"]},
+  {it: "Noi siamo amici", he: "אנחנו חברים", words: ["Noi", "siamo", "amici"]},
+  {it: "Voi siete studenti", he: "אתם סטודנטים", words: ["Voi", "siete", "studenti"]},
+  {it: "Loro hanno una casa", he: "יש להם בית", words: ["Loro", "hanno", "una", "casa"]},
+  {it: "Io ho un libro", he: "יש לי ספר", words: ["Io", "ho", "un", "libro"]},
+  {it: "Tu hai una penna", he: "יש לך עט", words: ["Tu", "hai", "una", "penna"]},
+  {it: "Questa è una mela", he: "זה תפוח", words: ["Questa", "è", "una", "mela"]},
+  {it: "Il gatto è nero", he: "החתול שחור", words: ["Il", "gatto", "è", "nero"]},
+  {it: "La casa è bianca", he: "הבית לבן", words: ["La", "casa", "è", "bianca"]},
+  {it: "Io vado a Roma", he: "אני הולך לרומא", words: ["Io", "vado", "a", "Roma"]},
+  {it: "Tu vieni con me", he: "אתה בא איתי", words: ["Tu", "vieni", "con", "me"]},
+  {it: "Lui corre veloce", he: "הוא רץ מהר", words: ["Lui", "corre", "veloce"]},
+  {it: "Noi giochiamo insieme", he: "אנחנו משחקים יחד", words: ["Noi", "giochiamo", "insieme"]},
+  {it: "Io compro il pane", he: "אני קונה לחם", words: ["Io", "compro", "il", "pane"]},
+  {it: "Tu leggi un giornale", he: "אתה קורא עיתון", words: ["Tu", "leggi", "un", "giornale"]},
+  {it: "Lei scrive una lettera", he: "היא כותבת מכתב", words: ["Lei", "scrive", "una", "lettera"]},
+  {it: "Loro mangiano la pizza", he: "הם אוכלים פיצה", words: ["Loro", "mangiano", "la", "pizza"]},
+  {it: "Il bambino dorme", he: "הילד ישן", words: ["Il", "bambino", "dorme"]},
+  {it: "Io vedo il mare", he: "אני רואה את הים", words: ["Io", "vedo", "il", "mare"]},
+  {it: "Tu ascolti la musica", he: "אתה מאזין למוזיקה", words: ["Tu", "ascolti", "la", "musica"]},
+  {it: "Lui lavora molto", he: "הוא עובד הרבה", words: ["Lui", "lavora", "molto"]},
+  {it: "Oggi fa caldo", he: "היום חם", words: ["Oggi", "fa", "caldo"]},
+  {it: "Io bevo l'acqua", he: "אני שותה מים", words: ["Io", "bevo", "l'acqua"]},
+  {it: "La mela è rossa", he: "התפוח אדום", words: ["La", "mela", "è", "rossa"]},
+  {it: "Il cane è piccolo", he: "הכלב קטן", words: ["Il", "cane", "è", "piccolo"]},
+  {it: "Noi cantiamo una canzone", he: "אנחנו שרים שיר", words: ["Noi", "cantiamo", "una", "canzone"]},
+  {it: "Loro ballano bene", he: "הם רוקדים יפה", words: ["Loro", "ballano", "bene"]},
+
+  // ── A2 (25 sentences, 4-6 words) ──
+  {it: "Io voglio comprare una macchina", he: "אני רוצה לקנות מכונית", words: ["Io", "voglio", "comprare", "una", "macchina"]},
+  {it: "Tu devi studiare ogni giorno", he: "אתה חייב ללמוד כל יום", words: ["Tu", "devi", "studiare", "ogni", "giorno"]},
+  {it: "Lui può parlare tre lingue", he: "הוא יכול לדבר שלוש שפות", words: ["Lui", "può", "parlare", "tre", "lingue"]},
+  {it: "Noi possiamo andare al cinema", he: "אנחנו יכולים ללכת לקולנוע", words: ["Noi", "possiamo", "andare", "al", "cinema"]},
+  {it: "Voi dovete finire il lavoro", he: "אתם חייבים לסיים את העבודה", words: ["Voi", "dovete", "finire", "il", "lavoro"]},
+  {it: "Loro vogliono viaggiare in Italia", he: "הם רוצים לטייל באיטליה", words: ["Loro", "vogliono", "viaggiare", "in", "Italia"]},
+  {it: "Io mi alzo alle sette", he: "אני קם בשבע", words: ["Io", "mi", "alzo", "alle", "sette"]},
+  {it: "Tu ti lavi i denti", he: "אתה מצחצח שיניים", words: ["Tu", "ti", "lavi", "i", "denti"]},
+  {it: "Lui si veste elegante", he: "הוא מתלבש אלגנטי", words: ["Lui", "si", "veste", "elegante"]},
+  {it: "Noi ci divertiamo al parco", he: "אנחנו נהנים בפארק", words: ["Noi", "ci", "divertiamo", "al", "parco"]},
+  {it: "Io ho comprato un regalo", he: "קניתי מתנה", words: ["Io", "ho", "comprato", "un", "regalo"]},
+  {it: "Tu hai mangiato la frutta", he: "אכלת פירות", words: ["Tu", "hai", "mangiato", "la", "frutta"]},
+  {it: "Lei ha letto un libro interessante", he: "היא קראה ספר מעניין", words: ["Lei", "ha", "letto", "un", "libro", "interessante"]},
+  {it: "Noi abbiamo visitato il museo", he: "ביקרנו במוזיאון", words: ["Noi", "abbiamo", "visitato", "il", "museo"]},
+  {it: "Loro hanno visto un film bello", he: "הם ראו סרט יפה", words: ["Loro", "hanno", "visto", "un", "film", "bello"]},
+  {it: "Ieri sera ho cucinato la cena", he: "אתמול בערב בישלתי ארוחת ערב", words: ["Ieri", "sera", "ho", "cucinato", "la", "cena"]},
+  {it: "Dove hai messo le chiavi", he: "איפה שמת את המפתחות", words: ["Dove", "hai", "messo", "le", "chiavi"]},
+  {it: "Quanto costa questo vestito", he: "כמה עולה השמלה הזאת", words: ["Quanto", "costa", "questo", "vestito"]},
+  {it: "Il ristorante apre alle otto", he: "המסעדה נפתחת בשמונה", words: ["Il", "ristorante", "apre", "alle", "otto"]},
+  {it: "Preferisci il tè o il caffè", he: "אתה מעדיף תה או קפה", words: ["Preferisci", "il", "tè", "o", "il", "caffè"]},
+  {it: "Oggi fa molto freddo fuori", he: "היום מאוד קר בחוץ", words: ["Oggi", "fa", "molto", "freddo", "fuori"]},
+  {it: "Domani andiamo a fare una passeggiata", he: "מחר נלך לטייל", words: ["Domani", "andiamo", "a", "fare", "una", "passeggiata"]},
+  {it: "Mi piace molto il gelato", he: "אני מאוד אוהב גלידה", words: ["Mi", "piace", "molto", "il", "gelato"]},
+  {it: "Loro sono appena arrivati a casa", he: "הם הרגע הגיעו הביתה", words: ["Loro", "sono", "appena", "arrivati", "a", "casa"]},
+  {it: "Io devo comprare il latte al supermercato", he: "אני חייב לקנות חלב בסופר", words: ["Io", "devo", "comprare", "il", "latte", "al", "supermercato"]},
+
+  // ── B1 (25 sentences, 4-7 words) ──
+  {it: "Se avessi tempo, viaggerei di più", he: "אם היה לי זמן, הייתי מטייל יותר", words: ["Se", "avessi", "tempo", "viaggerei", "di", "più"]},
+  {it: "Quando ero piccolo, giocavo spesso qui", he: "כשהייתי קטן, שיחקתי פה הרבה", words: ["Quando", "ero", "piccolo", "giocavo", "spesso", "qui"]},
+  {it: "Mentre cucinavo, ho sentito un rumore", he: "בזמן שבישלתי, שמעתי רעש", words: ["Mentre", "cucinavo", "ho", "sentito", "un", "rumore"]},
+  {it: "Ogni mattina faccio una doccia fredda", he: "כל בוקר אני מתקלח במקלחת קרה", words: ["Ogni", "mattina", "faccio", "una", "doccia", "fredda"]},
+  {it: "Ho bisogno di parlare con il direttore", he: "אני צריך לדבר עם המנהל", words: ["Ho", "bisogno", "di", "parlare", "con", "il", "direttore"]},
+  {it: "Puoi ripetere quello che hai detto", he: "אתה יכול לחזור על מה שאמרת", words: ["Puoi", "ripetere", "quello", "che", "hai", "detto"]},
+  {it: "Non mi piace quando piove tutto il giorno", he: "אני לא אוהב כשיורד גשם כל היום", words: ["Non", "mi", "piace", "quando", "piove", "tutto", "il", "giorno"]},
+  {it: "Il mio amico abita in centro città", he: "החבר שלי גר במרכז העיר", words: ["Il", "mio", "amico", "abita", "in", "centro", "città"]},
+  {it: "Hai già visto l'ultimo film di Moretti", he: "כבר ראית את הסרט האחרון של מורטי", words: ["Hai", "già", "visto", "l'ultimo", "film", "di", "Moretti"]},
+  {it: "Vorrei prenotare un tavolo per stasera", he: "הייתי רוצה להזמין שולחן להיום בערב", words: ["Vorrei", "prenotare", "un", "tavolo", "per", "stasera"]},
+  {it: "Potresti aiutarmi a portare le borse", he: "אתה יכול לעזור לי לשאת את התיקים", words: ["Potresti", "aiutarmi", "a", "portare", "le", "borse"]},
+  {it: "Sto cercando un regalo per mia madre", he: "אני מחפש מתנה לאמא שלי", words: ["Sto", "cercando", "un", "regalo", "per", "mia", "madre"]},
+  {it: "Vorrei imparare a suonare il pianoforte", he: "הייתי רוצה ללמוד לנגן בפסנתר", words: ["Vorrei", "imparare", "a", "suonare", "il", "pianoforte"]},
+  {it: "Mi puoi passare il sale per favore", he: "אתה יכול להעביר לי את המלח בבקשה", words: ["Mi", "puoi", "passare", "il", "sale", "per", "favore"]},
+  {it: "Che tipo di musica ascolti di solito", he: "איזה סוג מוזיקה אתה בדרך כלל שומע", words: ["Che", "tipo", "di", "musica", "ascolti", "di", "solito"]},
+  {it: "Da quanto tempo studi l'italiano", he: "כמה זמן אתה לומד איטלקית", words: ["Da", "quanto", "tempo", "studi", "l'italiano"]},
+  {it: "Ho appena finito di leggere un libro", he: "בדיוק סיימתי לקרוא ספר", words: ["Ho", "appena", "finito", "di", "leggere", "un", "libro"]},
+  {it: "Andiamo al mare se il tempo è bello", he: "נלך לים אם מזג האוויר יפה", words: ["Andiamo", "al", "mare", "se", "il", "tempo", "è", "bello"]},
+  {it: "I miei genitori vivono in campagna", he: "ההורים שלי גרים בכפר", words: ["I", "miei", "genitori", "vivono", "in", "campagna"]},
+  {it: "È importante bere molta acqua ogni giorno", he: "חשוב לשתות הרבה מים כל יום", words: ["È", "importante", "bere", "molta", "acqua", "ogni", "giorno"]},
+  {it: "Non ricordo dove ho parcheggiato la macchina", he: "אני לא זוכר איפה חניתי את האוטו", words: ["Non", "ricordo", "dove", "ho", "parcheggiato", "la", "macchina"]},
+  {it: "Quella ragazza con gli occhiali è mia sorella", he: "הבחורה ההיא עם המשקפיים היא אחותי", words: ["Quella", "ragazza", "con", "gli", "occhiali", "è", "mia", "sorella"]},
+  {it: "Ho lasciato l'ombrello a casa oggi", he: "השארתי את המטרייה בבית היום", words: ["Ho", "lasciato", "l'ombrello", "a", "casa", "oggi"]},
+  {it: "Di solito faccio colazione alle sette e mezza", he: "בדרך כלל אני אוכל ארוחת בוקר בשבע וחצי", words: ["Di", "solito", "faccio", "colazione", "alle", "sette", "e", "mezza"]},
+  {it: "Puoi venire a prendermi alla stazione", he: "אתה יכול לבוא לאסוף אותי בתחנה", words: ["Puoi", "venire", "a", "prendermi", "alla", "stazione"]},
+
+  // ── B2-C1 (20 sentences, 5-8 words) ──
+  {it: "Se avessi saputo prima, sarei venuto di sicuro", he: "אם הייתי יודע קודם, בהחלט הייתי בא", words: ["Se", "avessi", "saputo", "prima", "sarei", "venuto", "di", "sicuro"]},
+  {it: "Nonostante la pioggia, siamo andati a camminare", he: "למרות הגשם, הלכנו לטייל", words: ["Nonostante", "la", "pioggia", "siamo", "andati", "a", "camminare"]},
+  {it: "Bisogna che tu parli con il professore", he: "חייב שתדבר עם המורה", words: ["Bisogna", "che", "tu", "parli", "con", "il", "professore"]},
+  {it: "Credo che lui abbia già finito il progetto", he: "אני חושב שהוא כבר סיים את הפרויקט", words: ["Credo", "che", "lui", "abbia", "già", "finito", "il", "progetto"]},
+  {it: "È possibile che domani nevichi in montagna", he: "יתכן שמחר יירד שלג בהרים", words: ["È", "possibile", "che", "domani", "nevichi", "in", "montagna"]},
+  {it: "Volevo dirti che la riunione è stata cancellata", he: "רציתי לומר לך שהפגישה בוטלה", words: ["Volevo", "dirti", "che", "la", "riunione", "è", "stata", "cancellata"]},
+  {it: "Ti consiglio di visitare Firenze almeno una volta", he: "אני ממליץ לך לבקר בפירנצה לפחות פעם אחת", words: ["Ti", "consiglio", "di", "visitare", "Firenze", "almeno", "una", "volta"]},
+  {it: "Ho trascorso le vacanze in una piccola isola greca", he: "ביליתי את החופשה באי יווני קטן", words: ["Ho", "trascorso", "le", "vacanze", "in", "una", "piccola", "isola", "greca"]},
+  {it: "Non avrei mai immaginato una situazione del genere", he: "לעולם לא הייתי מדמיין מצב כזה", words: ["Non", "avrei", "mai", "immaginato", "una", "situazione", "del", "genere"]},
+  {it: "Sarebbe meglio se tu partissi domani mattina", he: "יהיה עדיף אם תסע מחר בבוקר", words: ["Sarebbe", "meglio", "se", "tu", "partissi", "domani", "mattina"]},
+  {it: "Sebbene fossi stanco, ho continuato a studiare", he: "למרות שהייתי עייף, המשכתי ללמוד", words: ["Sebbene", "fossi", "stanco", "ho", "continuato", "a", "studiare"]},
+  {it: "La casa che abbiamo comprato ha bisogno di restauri", he: "הבית שקנינו זקוק לשיפוצים", words: ["La", "casa", "che", "abbiamo", "comprato", "ha", "bisogno", "di", "restauri"]},
+  {it: "È un peccato che tu non possa venire alla festa", he: "חבל שאתה לא יכול לבוא למסיבה", words: ["È", "un", "peccato", "che", "tu", "non", "possa", "venire", "alla", "festa"]},
+  {it: "Mi sono dimenticato completamente del tuo compleanno", he: "שכחתי לגמרי מיום ההולדת שלך", words: ["Mi", "sono", "dimenticato", "completamente", "del", "tuo", "compleanno"]},
+  {it: "Ti sarei grato se potessi aiutarmi con questo", he: "אהיה אסיר תודה אם תוכל לעזור לי בזה", words: ["Ti", "sarei", "grato", "se", "potessi", "aiutarmi", "con", "questo"]},
+  {it: "Non sopporto quando la gente parla al telefono al cinema", he: "אני לא סובל כשאנשים מדברים בטלפון בקולנוע", words: ["Non", "sopporto", "quando", "la", "gente", "parla", "al", "telefono", "al", "cinema"]},
+  {it: "Le previsioni del tempo dicono che domani pioverà", he: "תחזית מזג האוויר אומרת שמחר יירד גשם", words: ["Le", "previsioni", "del", "tempo", "dicono", "che", "domani", "pioverà"]},
+  {it: "Sono rimasto sorpreso dalla sua reazione improvvisa", he: "נשארתי מופתע מהתגובה הפתאומית שלו", words: ["Sono", "rimasto", "sorpreso", "dalla", "sua", "reazione", "improvvisa"]},
+  {it: "Non vedo l'ora di rivederti il prossimo mese", he: "אני לא יכול לחכות לראות אותך שוב בחודש הבא", words: ["Non", "vedo", "l'ora", "di", "rivederti", "il", "prossimo", "mese"]},
+  {it: "Farei qualsiasi cosa pur di realizzare i miei sogni", he: "הייתי עושה הכל כדי להגשים את החלומות שלי", words: ["Farei", "qualsiasi", "cosa", "pur", "di", "realizzare", "i", "miei", "sogni"]}
+];
