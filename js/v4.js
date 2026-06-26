@@ -1142,7 +1142,237 @@ function openConversation(id) {
   }
 
   html += '</div>';
+
+  // Practice button
+  html += '<div style="text-align:center;margin:20px 0 30px">' +
+    '<button class="paywall-btn" onclick="startConversationPractice(\'' + conv.id + '\')" style="background:linear-gradient(135deg,#58cc02,#46a302);font-size:18px;padding:14px 32px">' +
+      '🎭 תרגל את השיחה</button>' +
+    '<p style="font-size:13px;color:#999;margin-top:8px">תתאמן על השיחה — אתה מדבר, האפליקציה עונה</p>' +
+  '</div>';
+
+  html += '</div>';
   pageContainer.innerHTML = html;
+}
+
+// ═══════════════════════════════════════
+// CONVERSATION PRACTICE
+// ═══════════════════════════════════════
+var convPractice = null;
+
+function startConversationPractice(id) {
+  var conv = CONVERSATIONS.find(function(c) { return c.id === id; });
+  if (!conv) return;
+
+  // State
+  convPractice = {
+    conv: conv,
+    role: 'A', // default
+    step: 0,
+    score: 0,
+    total: 0,
+    answered: false
+  };
+
+  renderTopBar('home');
+  pageContainer.style.overflowY = 'hidden';
+
+  // Role picker
+  var userLines = conv.lines.filter(function(l) { return l.speaker === 'A'; });
+  var botLines = conv.lines.filter(function(l) { return l.speaker === 'B'; });
+
+  pageContainer.innerHTML = '' +
+    '<div class="practice-tab-container" style="text-align:center">' +
+      '<h2>🎭 ' + conv.icon + ' ' + conv.name + '</h2>' +
+      '<p style="margin-bottom:20px">בחר איזה צד אתה רוצה לשחק:</p>' +
+
+      '<div class="practice-card" onclick="selectConvRole(\'' + conv.id + '\',\'A\')" style="cursor:pointer;text-align:right">' +
+        '<div class="card-icon" style="background:#1cb0f620;color:#1cb0f6">👤</div>' +
+        '<div class="card-info">' +
+          '<div class="card-title">דובר א (' + userLines.length + ' משפטים)</div>' +
+          '<div class="card-desc">אתה מתחיל את השיחה</div>' +
+        '</div>' +
+        '<span class="card-arrow">❮</span>' +
+      '</div>' +
+
+      '<div class="practice-card" onclick="selectConvRole(\'' + conv.id + '\',\'B\')" style="cursor:pointer;text-align:right">' +
+        '<div class="card-icon" style="background:#58cc0220;color:#58cc02">👤</div>' +
+        '<div class="card-info">' +
+          '<div class="card-title">דובר ב (' + botLines.length + ' משפטים)</div>' +
+          '<div class="card-desc">האפליקציה מתחילה, אתה עונה</div>' +
+        '</div>' +
+        '<span class="card-arrow">❮</span>' +
+      '</div>' +
+    '</div>';
+}
+
+function selectConvRole(id, role) {
+  convPractice.role = role;
+  convPractice.step = 0;
+  convPractice.score = 0;
+  convPractice.total = 0;
+  convPractice.answered = false;
+
+  // Find lines where user speaks
+  var userLines = [];
+  for (var i = 0; i < convPractice.conv.lines.length; i++) {
+    if (convPractice.conv.lines[i].speaker === role) {
+      userLines.push(i);
+    }
+  }
+  convPractice.userLineIndices = userLines;
+  convPractice.total = userLines.length;
+
+  conversationPracticeStep();
+}
+
+function conversationPracticeStep() {
+  var cp = convPractice;
+  if (!cp) return;
+
+  // If done
+  if (cp.step >= cp.total) {
+    var pct = cp.total > 0 ? Math.round(cp.score / cp.total * 100) : 0;
+    var icon = pct >= 80 ? '🎉' : pct >= 50 ? '💪' : '📚';
+    var title = pct >= 80 ? 'מצוין!' : pct >= 50 ? 'כמעט!' : 'תרגל עוד';
+
+    renderTopBar('home');
+    pageContainer.style.overflowY = 'hidden';
+
+    pageContainer.innerHTML = '' +
+      '<div class="lesson-complete">' +
+        '<div class="celebrate-icon">' + icon + '</div>' +
+        '<div class="complete-title">' + title + '</div>' +
+        '<div class="complete-sub">ענית נכון על ' + cp.score + ' מתוך ' + cp.total + '</div>' +
+        '<div class="xp-earned"><span class="xp-icon">⚡</span><span>+' + (cp.score * 10) + ' XP</span></div>' +
+        '<button class="continue-btn" onclick="exitConversationPractice()">סיים 🗺️</button>' +
+        '<button class="continue-btn" onclick="startConversationPractice(\'' + cp.conv.id + '\')" style="background:var(--green);margin-top:8px">🔄 תרגל שוב</button>' +
+      '</div>';
+
+    if (cp.score > 0) addXP(cp.score * 10);
+    return;
+  }
+
+  var lineIdx = cp.userLineIndices[cp.step];
+  var userLine = cp.conv.lines[lineIdx];
+
+  // Find the bot line before this (context)
+  var contextLines = [];
+  var startIdx = Math.max(0, lineIdx - 3);
+  for (var i = startIdx; i < lineIdx; i++) {
+    contextLines.push(cp.conv.lines[i]);
+  }
+
+  renderTopBar('home');
+  pageContainer.style.overflowY = 'hidden';
+
+  var html = '<div class="lesson-container">' +
+    '<div style="padding:16px;max-width:480px;margin:0 auto;width:100%;box-sizing:border-box">';
+
+  // Context bubbles
+  for (var i = 0; i < contextLines.length; i++) {
+    var cl = contextLines[i];
+    var isA = cl.speaker === 'A';
+    var align = isA ? 'flex-start' : 'flex-end';
+    var bg = isA ? '#f0f7ff' : '#f0fdf4';
+    html += '<div style="display:flex;flex-direction:column;align-items:' + align + ';margin-bottom:6px">' +
+      '<div style="background:' + bg + ';border-radius:12px;padding:8px 12px;max-width:80%;direction:ltr;font-size:14px;color:#555">' +
+        '<span style="font-size:12px;color:#888;display:block;margin-bottom:2px">' + (isA ? '👤 א' : '👤 ב') + '</span>' +
+        cl.it +
+      '</div>' +
+    '</div>';
+  }
+
+  // Prompt for user
+  html += '' +
+    '<div style="margin:16px 0 8px;text-align:center">' +
+      '<div style="font-size:14px;font-weight:700;color:var(--green);margin-bottom:4px">🎯 תורך לדבר!</div>' +
+      '<div style="font-size:13px;color:#999">' + (userLine.he || '') + '</div>' +
+    '</div>' +
+
+    '<div style="display:flex;gap:8px;flex-direction:column">' +
+      '<input id="convInput" type="text" placeholder="הקלד באיטלקית..." style="direction:ltr;text-align:left;width:100%;padding:12px 14px;font-size:16px;border:2px solid #e0e0e0;border-radius:12px;outline:none;box-sizing:border-box;font-family:Nunito,sans-serif" onkeydown="if(event.key===\'Enter\')checkConvAnswer()" autocomplete="off" autocapitalize="off" spellcheck="false">' +
+      '<button class="paywall-btn" onclick="checkConvAnswer()" style="background:var(--green);padding:12px;font-size:16px">בדוק →</button>' +
+    '</div>' +
+
+    '<div id="convFeedback" style="margin-top:12px"></div>' +
+  '</div></div>';
+
+  pageContainer.innerHTML = html;
+
+  // Focus input
+  setTimeout(function() {
+    var inp = document.getElementById('convInput');
+    if (inp) inp.focus();
+  }, 300);
+}
+
+function checkConvAnswer() {
+  if (convPractice.answered) return;
+  convPractice.answered = true;
+
+  var input = document.getElementById('convInput');
+  var userAnswer = input ? normalizeText(input.value) : '';
+  var lineIdx = convPractice.userLineIndices[convPractice.step];
+  var expected = normalizeText(convPractice.conv.lines[lineIdx].it);
+
+  var feedback = document.getElementById('convFeedback');
+  if (!feedback) return;
+
+  var isCorrect = false;
+  if (userAnswer === expected) {
+    isCorrect = true;
+  } else {
+    // Check word overlap
+    var userWords = userAnswer.split(/\\s+/).filter(Boolean);
+    var expWords = expected.split(/\\s+/).filter(Boolean);
+    var matchCount = 0;
+    for (var i = 0; i < userWords.length; i++) {
+      if (expWords.indexOf(userWords[i]) !== -1) matchCount++;
+    }
+    var overlap = expWords.length > 0 ? matchCount / expWords.length : 0;
+    isCorrect = overlap >= 0.6 || userAnswer === expected;
+  }
+
+  if (isCorrect) {
+    convPractice.score++;
+    feedback.innerHTML = '<div class="fb-correct">✅ נכון! (' + convPractice.conv.lines[lineIdx].it + ')</div>';
+    addXP(10);
+  } else {
+    feedback.innerHTML = '' +
+      '<div class="fb-wrong">❌ לא נכון</div>' +
+      '<div class="fb-correct-answer">התשובה הנכונה: ' + convPractice.conv.lines[lineIdx].it + '</div>';
+  }
+
+  // Next button
+  var nextBtn = document.createElement('button');
+  nextBtn.className = 'lesson-next-btn';
+  nextBtn.textContent = convPractice.step + 1 >= convPractice.total ? 'סיים ✅' : 'המשך →';
+  nextBtn.style.marginTop = '12px';
+  nextBtn.onclick = function() {
+    convPractice.step++;
+    convPractice.answered = false;
+    conversationPracticeStep();
+  };
+  feedback.after(nextBtn);
+
+  input.disabled = true;
+}
+
+function exitConversationPractice() {
+  convPractice = null;
+  showConversations();
+}
+
+function normalizeText(s) {
+  return String(s).toLowerCase().trim()
+    .replace(/[àáâãäå]/g, 'a')
+    .replace(/[èéêë]/g, 'e')
+    .replace(/[ìíîï]/g, 'i')
+    .replace(/[òóôõö]/g, 'o')
+    .replace(/[ùúûü]/g, 'u')
+    .replace(/[^a-z0-9\\s]/g, '')
+    .replace(/\\s+/g, ' ')
+    .trim();
 }
 
 // ═══════════════════════════════════════
@@ -1164,3 +1394,7 @@ window.showSituations = showSituations;
 window.openSituation = openSituation;
 window.showConversations = showConversations;
 window.openConversation = openConversation;
+window.startConversationPractice = startConversationPractice;
+window.selectConvRole = selectConvRole;
+window.checkConvAnswer = checkConvAnswer;
+window.exitConversationPractice = exitConversationPractice;

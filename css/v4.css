@@ -1370,3 +1370,9 @@ body.lesson-active .page-container {
 .phrase-card .lesson-speak-btn:hover {
   background: #1cb0f630;
 }
+
+/* ═══ CONVERSATION PRACTICE ═══ */
+#convInput:focus {
+  border-color: var(--green) !important;
+  box-shadow: 0 0 0 3px #58cc0220;
+}
