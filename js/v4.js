@@ -655,6 +655,26 @@ function renderPracticeTab() {
         </div>
         <span class="card-arrow">❮</span>
       </div>
+
+      <!-- SITUATIONS -->
+      <div class="practice-card" onclick="showSituations()">
+        <div class="card-icon red">🏪</div>
+        <div class="card-info">
+          <div class="card-title">סיטואציות יומיומיות</div>
+          <div class="card-desc">מילים וביטויים למצבים אמיתיים</div>
+        </div>
+        <span class="card-arrow">❮</span>
+      </div>
+
+      <!-- CONVERSATIONS -->
+      <div class="practice-card" onclick="showConversations()">
+        <div class="card-icon purple">💬</div>
+        <div class="card-info">
+          <div class="card-title">שיחות</div>
+          <div class="card-desc">דיאלוגים באיטלקית עם תרגום</div>
+        </div>
+        <span class="card-arrow">❮</span>
+      </div>
     </div>
   `;
 }
@@ -976,6 +996,156 @@ function escAttr(str) {
 }
 
 // ═══════════════════════════════════════
+// SITUATIONS
+// ═══════════════════════════════════════
+function showSituations() {
+  activeTab = 'practice';
+  renderBottomNav();
+  renderTopBar('home');
+  pageContainer.style.overflowY = 'auto';
+  document.body.classList.remove('lesson-active');
+
+  var html = '<div class="practice-tab-container">' +
+    '<h2>🏪 סיטואציות יומיומיות</h2>' +
+    '<p>למד מילים וביטויים שימושיים למצבים אמיתיים</p>';
+
+  for (var i = 0; i < SITUATIONS.length; i++) {
+    var s = SITUATIONS[i];
+    html += '<div class="practice-card" onclick="openSituation(\'' + s.id + '\')">' +
+      '<div class="card-icon" style="background:' + s.color + '20;color:' + s.color + '">' + s.icon + '</div>' +
+      '<div class="card-info">' +
+        '<div class="card-title">' + s.name + '</div>' +
+        '<div class="card-desc">' + (s.words ? s.words.length : 0) + ' מילים · ' + (s.phrases ? s.phrases.length : 0) + ' משפטים</div>' +
+      '</div>' +
+      '<span class="card-arrow">❮</span>' +
+    '</div>';
+  }
+
+  html += '</div>';
+  pageContainer.innerHTML = html;
+}
+
+function openSituation(id) {
+  var sit = SITUATIONS.find(function(s) { return s.id === id; });
+  if (!sit) return;
+
+  renderTopBar('home');
+  pageContainer.style.overflowY = 'auto';
+
+  var html = '<div class="practice-tab-container">' +
+    '<div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">' +
+      '<button class="back-btn" onclick="showSituations()" style="background:none;border:none;font-size:24px;cursor:pointer;padding:0">❯</button>' +
+      '<h2 style="margin:0">' + sit.icon + ' ' + sit.name + '</h2>' +
+    '</div>';
+
+  // Vocabulary section
+  html += '<div class="profile-section" style="margin-top:16px">' +
+    '<div class="section-title">📖 מילים שימושיות</div>';
+
+  for (var i = 0; i < sit.words.length; i++) {
+    var w = sit.words[i];
+    html += '<div class="situation-word-card" style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:#fff;border-radius:12px;margin-bottom:6px;box-shadow:0 1px 3px rgba(0,0,0,0.06);direction:ltr">' +
+      '<div style="display:flex;align-items:center;gap:8px">' +
+        '<button class="lesson-speak-btn" onclick="speakText(\'' + escAttr(w.it) + '\')">🔊</button>' +
+        '<span style="font-weight:700;font-size:17px;color:#333">' + w.it + '</span>' +
+      '</div>' +
+      '<span style="color:#888;font-size:15px">' + (w.he || '') + '</span>' +
+    '</div>';
+  }
+
+  html += '</div>';
+
+  // Phrases section
+  if (sit.phrases && sit.phrases.length > 0) {
+    html += '<div class="profile-section" style="margin-top:16px">' +
+      '<div class="section-title">💬 משפטים שימושיים</div>';
+
+    for (var i = 0; i < sit.phrases.length; i++) {
+      var p = sit.phrases[i];
+      html += '<div class="phrase-card" style="padding:12px 14px;background:#fff;border-radius:12px;margin-bottom:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06);direction:ltr">' +
+        '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">' +
+          '<button class="lesson-speak-btn" onclick="speakText(\'' + escAttr(p.it) + '\')">🔊</button>' +
+          '<span style="font-weight:700;font-size:17px;color:#333">' + p.it + '</span>' +
+        '</div>' +
+        '<div style="color:#888;font-size:14px;padding-right:36px">' + (p.he || '') + '</div>' +
+      '</div>';
+    }
+
+    html += '</div>';
+  }
+
+  html += '</div>';
+  pageContainer.innerHTML = html;
+}
+
+// ═══════════════════════════════════════
+// CONVERSATIONS
+// ═══════════════════════════════════════
+function showConversations() {
+  activeTab = 'practice';
+  renderBottomNav();
+  renderTopBar('home');
+  pageContainer.style.overflowY = 'auto';
+  document.body.classList.remove('lesson-active');
+
+  var html = '<div class="practice-tab-container">' +
+    '<h2>💬 שיחות</h2>' +
+    '<p>דיאלוגים קצרים באיטלקית עם תרגום לעברית</p>';
+
+  for (var i = 0; i < CONVERSATIONS.length; i++) {
+    var c = CONVERSATIONS[i];
+    html += '<div class="practice-card" onclick="openConversation(\'' + c.id + '\')">' +
+      '<div class="card-icon" style="background:#ce82ff20;color:#ce82ff">' + c.icon + '</div>' +
+      '<div class="card-info">' +
+        '<div class="card-title">' + c.name + '</div>' +
+        '<div class="card-desc">' + c.lines.length + ' שורות</div>' +
+      '</div>' +
+      '<span class="card-arrow">❮</span>' +
+    '</div>';
+  }
+
+  html += '</div>';
+  pageContainer.innerHTML = html;
+}
+
+function openConversation(id) {
+  var conv = CONVERSATIONS.find(function(c) { return c.id === id; });
+  if (!conv) return;
+
+  renderTopBar('home');
+  pageContainer.style.overflowY = 'auto';
+
+  var html = '<div class="practice-tab-container">' +
+    '<div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">' +
+      '<button class="back-btn" onclick="showConversations()" style="background:none;border:none;font-size:24px;cursor:pointer;padding:0">❯</button>' +
+      '<h2 style="margin:0">' + conv.icon + ' ' + conv.name + '</h2>' +
+    '</div>';
+
+  for (var i = 0; i < conv.lines.length; i++) {
+    var line = conv.lines[i];
+    var isA = line.speaker === 'A';
+    var align = isA ? 'flex-start' : 'flex-end';
+    var bg = isA ? '#f0f7ff' : '#f0fdf4';
+    var borderColor = isA ? '#1cb0f6' : '#58cc02';
+    var speakerLabel = isA ? '👤 א' : '👤 ב';
+
+    html += '<div style="display:flex;flex-direction:column;align-items:' + align + ';margin-bottom:8px">' +
+      '<div style="font-size:12px;color:#888;margin-bottom:2px;padding:0 4px">' + speakerLabel + '</div>' +
+      '<div style="background:' + bg + ';border-right:3px solid ' + borderColor + ';border-radius:12px;padding:10px 14px;max-width:85%;box-shadow:0 1px 2px rgba(0,0,0,0.05);direction:ltr">' +
+        '<div style="display:flex;align-items:center;gap:6px;margin-bottom:4px">' +
+          '<button class="lesson-speak-btn" onclick="speakText(\'' + escAttr(line.it) + '\')" style="font-size:14px;width:28px;height:28px">🔊</button>' +
+          '<span style="font-weight:700;font-size:16px;color:#333">' + line.it + '</span>' +
+        '</div>' +
+        '<div style="color:#888;font-size:14px">' + line.he + '</div>' +
+      '</div>' +
+    '</div>';
+  }
+
+  html += '</div>';
+  pageContainer.innerHTML = html;
+}
+
+// ═══════════════════════════════════════
 // EXPOSE GLOBALLY
 // ═══════════════════════════════════════
 window.switchTab = switchTab;
@@ -990,3 +1160,7 @@ window.closePaywall = closePaywall;
 window.startQuickPractice = startQuickPractice;
 window.startSRSReview = startSRSReview;
 window.startWeakWords = startWeakWords;
+window.showSituations = showSituations;
+window.openSituation = openSituation;
+window.showConversations = showConversations;
+window.openConversation = openConversation;

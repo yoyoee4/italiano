@@ -1344,3 +1344,29 @@ body.lesson-active .page-container {
 .empty-state .empty-icon { font-size: 48px; margin-bottom: 12px; }
 .empty-state .empty-text { font-size: 16px; font-weight: 700; color: var(--text2); margin-bottom: 8px; }
 .empty-state .empty-sub { font-size: 13px; color: var(--text3); }
+
+/* ═══ SITUATIONS & CONVERSATIONS ═══ */
+.situation-word-card:hover, .phrase-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+  transform: translateY(-1px);
+  transition: all 0.2s;
+}
+
+.situation-word-card .lesson-speak-btn,
+.phrase-card .lesson-speak-btn {
+  background: #1cb0f615;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.situation-word-card .lesson-speak-btn:hover,
+.phrase-card .lesson-speak-btn:hover {
+  background: #1cb0f630;
+}
