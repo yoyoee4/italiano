@@ -32,17 +32,17 @@ function isDone(node) {
 }
 
 function getLevelColor(lv) {
-  const colors = { A1: '#10b981', A2: '#3b82f6', B1: '#8b5cf6', B2: '#f59e0b', C1: '#ef4444' };
-  return colors[lv] || '#6366f1';
+  const colors = { A1: '#58cc02', A2: '#1cb0f6', B1: '#ce82ff' };
+  return colors[lv] || '#58cc02';
 }
 
 function getLevelEmoji(lv) {
-  const e = { A1: '🌱', A2: '🌿', B1: '🌳', B2: '🏛️', C1: '🎓' };
+  const e = { A1: '🌱', A2: '🌿', B1: '🌳' };
   return e[lv] || '📘';
 }
 
 function getLevelHe(lv) {
-  const h = { A1: 'מתחילים', A2: 'בסיסי', B1: 'בינוני', B2: 'עצמאי', C1: 'מתקדם' };
+  const h = { A1: 'מתחילים (רמת אפס)', A2: 'בסיסי', B1: 'בינוני (לקראת מבחן)' };
   return h[lv] || lv;
 }
 
@@ -51,12 +51,8 @@ function render() {
   const container = document.getElementById('learnContent');
   if (!container) return;
 
-  // Paywall upgrade banner
-  container.innerHTML = Paywall.renderUpgradeBanner() + Paywall.renderFreeProgress();
-
-
   const tree = APP_DATA.skillTree || [];
-  const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
+  const levels = ['A1', 'A2', 'B1'];
   
   // Group nodes by level
   const byLevel = {};
@@ -74,19 +70,9 @@ function render() {
 
   let html = `
     <div style="text-align:center;margin-bottom:20px">
-      <h2 style="font-size:1.3rem;font-weight:800">🗺️ מסלול קריירה</h2>
-      <p style="font-size:.85rem;color:var(--text2)">התקדם מ-A1 עד C1 ודבר איטלקית שוטף!</p>
-
-    ${Paywall.renderUpgradeBanner()}
-
-    ${Paywall.renderFreeProgress()}
-
+      <h2 style="font-size:1.3rem;font-weight:800">🗺️ מסלול הלמידה</h2>
+      <p style="font-size:.85rem;color:var(--text2)">התקדם מרמת אפס ועד מעבר מבחן B1!</p>
     </div>
-
-    ${Paywall.renderUpgradeBanner()}
-
-    ${Paywall.renderFreeProgress()}
-
   `;
 
   levels.forEach(lv => {
@@ -128,9 +114,12 @@ function render() {
         const prevDone = getNodeProgress(nodes[i - 1].id).crown >= 1;
         html += `<div class="tree-connector ${prevDone ? 'done' : ''}"></div>`;
       }
+      
+      const offsets = [0, 25, 40, 25, 0, -25, -40, -25];
+      const offsetX = offsets[i % offsets.length];
 
       html += `
-        <div class="tree-node ${statusClass}" onclick="SkillTree.openNode('${node.id}')" title="${node.name}">
+        <div class="tree-node ${statusClass}" onclick="SkillTree.openNode('${node.id}')" title="${node.name}" style="transform: translateX(${offsetX}px)">
           ${prog.crown > 0 ? `<div class="tree-crown">${prog.crown}</div>` : ''}
           <span class="node-icon">${node.icon}</span>
           <span class="node-label">${node.name}</span>
@@ -141,26 +130,18 @@ function render() {
     html += `</div></div>`;
   });
 
-  // CILS Exam section
+  // Exam prep card
   html += `
-    <div style="text-align:center;margin:24px 0 12px">
-      <h2 class="section-title"><span class="emoji">📋</span> הכנה למבחני CILS</h2>
-    </div>
-    ${['A1','A2','B1','B2','C1'].map(lv => {
-      const accessible = isLevelAccessible(lv);
-      return `
-        <div class="exam-card" style="${!accessible?'opacity:.4;pointer-events:none':''}" onclick="SkillTree.openExam('${lv}')">
-          <div class="exam-level">
-            <span style="font-size:1.5rem">${getLevelEmoji(lv)}</span>
-            <div>
-              <div style="font-weight:700">CILS ${lv}</div>
-              <div style="font-size:.75rem;color:var(--text2)">${getLevelHe(lv)}</div>
-            </div>
-          </div>
-          <div class="progress-bar"><div class="progress-fill" style="width:${accessible ? Math.min(100,getNodeProgress('exam_'+lv).crown*20) : 0}%;background:${getLevelColor(lv)}"></div></div>
+    <div style="margin:24px 0 8px">
+      <div class="exam-card" onclick="nav('exams')" style="display:flex;align-items:center;gap:14px;padding:18px">
+        <div style="font-size:2.2rem;flex-shrink:0">📋</div>
+        <div style="flex:1;min-width:0">
+          <div style="font-weight:800;font-size:1rem;margin-bottom:2px">הכנה למבחן רשמי</div>
+          <div style="font-size:.8rem;color:var(--text2)">5 סימולציות מלאות של AIL Firenze</div>
         </div>
-      `;
-    }).join('')}
+        <div style="font-size:1.2rem;color:var(--text3)">←</div>
+      </div>
+    </div>
   `;
 
   container.innerHTML = html;
@@ -176,12 +157,6 @@ function toggleLevel(lv) {
 
 // ── OPEN NODE (lesson) ──
 function openNode(nodeId) {
-  // Paywall check
-  if (!Paywall.isNodeAccessible(APP_DATA.skillTree.find(n => n.id === nodeId) || {})) {
-    Paywall.showPaywall("מסלול זה זמין למשתמשים בלבד");
-    return;
-  }
-
   const node = APP_DATA.skillTree.find(n => n.id === nodeId);
   if (!node) return;
   
@@ -224,6 +199,12 @@ function openNode(nodeId) {
         <div style="font-weight:700;font-size:.85rem;margin-top:4px">חידון</div>
         <div style="font-size:.7rem;color:var(--text3)">בדוק את עצמך</div>
       </div>
+      
+      <div class="card card-clickable" onclick="SkillTree.startLesson('${nodeId}','match')" style="text-align:center">
+        <div style="font-size:2rem">🧩</div>
+        <div style="font-weight:700;font-size:.85rem;margin-top:4px">זוגות</div>
+        <div style="font-size:.7rem;color:var(--text3)">התאמת מילים</div>
+      </div>
       <div class="card card-clickable" onclick="SkillTree.startLesson('${nodeId}','dialogue')" style="text-align:center">
         <div style="font-size:2rem">💬</div>
         <div style="font-weight:700;font-size:.85rem;margin-top:4px">שיחה</div>
@@ -237,16 +218,16 @@ function openNode(nodeId) {
     <h3 class="section-title"><span class="emoji">📝</span> מילים בנושא</h3>
   `;
   words.forEach(w => {
-    const learned = state.wordsLearned.includes(w.it);
+    const learned = state.wordsLearned.includes(w.target);
     html += `
-      <div class="word-item" onclick="speak('${w.it.replace(/'/g, "\\'")}')">
+      <div class="word-item" onclick="speak('${w.target.replace(/'/g, "\\'")}')">
         <div class="word-left">
-          <div class="word-it">${w.it}</div>
-          <div class="word-he">${w.he}</div>
+          <div class="word-it">${w.target}</div>
+          <div class="word-he">${w.native}</div>
         </div>
         <div class="word-right">
           ${learned ? '<div class="learned-badge">✓</div>' : ''}
-          <button class="speak-btn" onclick="event.stopPropagation();speak('${w.it.replace(/'/g, "\\'")}')">🔊</button>
+          <button class="speak-btn" onclick="event.stopPropagation();speak('${w.target.replace(/'/g, "\\'")}')">🔊</button>
         </div>
       </div>
     `;
@@ -257,9 +238,9 @@ function openNode(nodeId) {
     html += `<h3 class="section-title"><span class="emoji">🎤</span> משפטים</h3>`;
     sentences.forEach(s => {
       html += `
-        <div class="card" onclick="speak('${s.it.replace(/'/g, "\\'")}')">
-          <div style="font-family:var(--font-it);font-weight:600">${s.it}</div>
-          <div style="font-size:.8rem;color:var(--text2);margin-top:4px">${s.he}</div>
+        <div class="card" onclick="speak('${s.target.replace(/'/g, "\\'")}')">
+          <div style="font-family:var(--font-it);font-weight:600">${s.target}</div>
+          <div style="font-size:.8rem;color:var(--text2);margin-top:4px">${s.native}</div>
         </div>
       `;
     });
@@ -274,8 +255,8 @@ function openNode(nodeId) {
         <div style="font-size:.85rem;color:var(--text2);line-height:1.6">${node.grammar.explanation}</div>
         ${node.grammar.examples ? node.grammar.examples.map(e => `
           <div style="margin-top:8px;padding:8px;background:var(--surface2);border-radius:6px">
-            <div style="font-family:var(--font-it);font-weight:600">${e.it}</div>
-            <div style="font-size:.8rem;color:var(--text3)">${e.he}</div>
+            <div style="font-family:var(--font-it);font-weight:600">${e.target}</div>
+            <div style="font-size:.8rem;color:var(--text3)">${e.native}</div>
           </div>
         `).join('') : ''}
       </div>
@@ -288,15 +269,50 @@ function openNode(nodeId) {
 // ── GET NODE DATA ──
 function getNodeWords(node) {
   if (node.words) return node.words;
-  // Fallback: find words from APP_DATA by category
-  const cat = node.category || node.id;
-  return (APP_DATA.words || []).filter(w => w.cat === cat).slice(0, 8);
+  var cat = node.category || node.id;
+  // Try exact match first
+  var found = (APP_DATA.words || []).filter(function(w) { return w.cat === cat; });
+  if (found.length > 0) return found.slice(0, 8);
+  // Try Hebrew category match via CATEGORY_MAP
+  var heCat = window.CATEGORY_MAP && window.CATEGORY_MAP[cat];
+  if (heCat) {
+    found = (APP_DATA.words || []).filter(function(w) { return w.cat === heCat; });
+    if (found.length > 0) return found.slice(0, 8);
+  }
+  // Try catAliases
+  found = (APP_DATA.words || []).filter(function(w) {
+    return w.catAliases && w.catAliases.indexOf(cat) !== -1;
+  });
+  if (found.length > 0) return found.slice(0, 8);
+  // Try partial name match
+  found = (APP_DATA.words || []).filter(function(w) {
+    return node.name.indexOf(w.cat) !== -1 || w.cat.indexOf(node.name) !== -1;
+  });
+  return found.slice(0, 8);
 }
 
 function getNodeSentences(node) {
   if (node.sentences) return node.sentences;
-  const cat = node.category || node.id;
-  return (APP_DATA.sentences || []).filter(s => s.cat === cat).slice(0, 5);
+  var cat = node.category || node.id;
+  // Try exact match first
+  var found = (APP_DATA.sentences || []).filter(function(s) { return s.cat === cat; });
+  if (found.length > 0) return found.slice(0, 5);
+  // Try Hebrew category match via CATEGORY_MAP
+  var heCat = window.CATEGORY_MAP && window.CATEGORY_MAP[cat];
+  if (heCat) {
+    found = (APP_DATA.sentences || []).filter(function(s) { return s.cat === heCat; });
+    if (found.length > 0) return found.slice(0, 5);
+  }
+  // Try catAliases
+  found = (APP_DATA.sentences || []).filter(function(s) {
+    return s.catAliases && s.catAliases.indexOf(cat) !== -1;
+  });
+  if (found.length > 0) return found.slice(0, 5);
+  // Try partial name match
+  found = (APP_DATA.sentences || []).filter(function(s) {
+    return node.name.indexOf(s.cat) !== -1 || s.cat.indexOf(node.name) !== -1;
+  });
+  return found.slice(0, 5);
 }
 
 // ── START LESSON ──
@@ -307,6 +323,7 @@ function startLesson(nodeId, mode) {
   if (mode === 'words') Practice.startWordLesson(node);
   else if (mode === 'sentences') Practice.startSentenceLesson(node);
   else if (mode === 'quiz') Practice.startQuiz(node);
+  else if (mode === 'match') Practice.startMatchGame(node);
   else if (mode === 'dialogue') Practice.startDialogue(node);
 }
 

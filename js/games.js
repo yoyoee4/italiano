@@ -24,8 +24,8 @@ function startMemory(level) {
  clearInterval(memTimer);
  
  words.forEach(w => {
-  memCards.push({ id: w.it + '_it', pair: w.he, type: 'it', text: w.it, matched: false });
-  memCards.push({ id: w.he + '_he', pair: w.it, type: 'he', text: w.he, matched: false });
+  memCards.push({ id: w.target + '_it', pair: w.native, type: 'it', text: w.target, matched: false });
+  memCards.push({ id: w.native + '_he', pair: w.target, type: 'he', text: w.native, matched: false });
  });
  
  shuffle(memCards);
@@ -113,8 +113,8 @@ function startScramble(level) {
  scramWord = words[Math.floor(Math.random() * words.length)];
  
  // Scramble the Italian word
- const letters = scramWord.it.replace(/[']/g, '').split('');
- do { shuffle(letters); } while (letters.join('') === scramWord.it.replace(/[']/g, ''));
+ const letters = scramWord.target.replace(/[']/g, '').split('');
+ do { shuffle(letters); } while (letters.join('') === scramWord.target.replace(/[']/g, ''));
  
  scramTiles = letters.map((l, i) => ({ letter: l, id: i, used: false }));
  scramPlaced = [];
@@ -133,8 +133,8 @@ function renderScramble() {
  
  <div class="card" style="text-align:center;padding:20px;margin-bottom:16px">
   <div style="font-size:.8rem;color:var(--text3);margin-bottom:8px">🇮🇱 רמז:</div>
-  <div style="font-size:1.2rem;font-weight:600;color:var(--emerald-light)">${scramWord.he}</div>
-  <button class="btn btn-sm btn-secondary" onclick="speak('${esc(scramWord.it)}')" style="margin-top:8px">🔊 האזן</button>
+  <div style="font-size:1.2rem;font-weight:600;color:var(--emerald-light)">${scramWord.native}</div>
+  <button class="btn btn-sm btn-secondary" onclick="speak('${esc(scramWord.target)}')" style="margin-top:8px">🔊 האזן</button>
  </div>
  
  <div class="scramble-answer" id="scrambleAnswer">
@@ -175,12 +175,12 @@ function scramRemove(placedIdx) {
 
 function scramCheck() {
  const answer = scramPlaced.map(t => t.letter).join('');
- const correct = scramWord.it.replace(/[']/g, '');
+ const correct = scramWord.target.replace(/[']/g, '');
  
  if (answer === correct) {
   addXP(15);
-  toast(`✅ ${scramWord.it} — נכון! +15 XP`, 'success');
-  speak(scramWord.it);
+  toast(`✅ ${scramWord.target} — נכון! +15 XP`, 'success');
+  speak(scramWord.target);
   setTimeout(() => startScramble(), 1500);
  } else {
   toast('❌ לא נכון — נסה שוב', 'error');
@@ -188,7 +188,7 @@ function scramCheck() {
 }
 
 function scramSkip() {
- toast(`התשובה: ${scramWord.it}`, 'info');
+ toast(`התשובה: ${scramWord.target}`, 'info');
  setTimeout(() => startScramble(), 1500);
 }
 
@@ -218,7 +218,7 @@ function renderSpeedTap() {
  if (!area) return;
  
  const w = speedWords[speedIdx];
- const distractors = getDistractors(APP_DATA.words, w.he, 'he').slice(0, 3);
+ const distractors = getDistractors(APP_DATA.words, w.native, 'native').slice(0, 3);
  const options = shuffle([w, ...distractors]);
  
  area.innerHTML = `
@@ -232,13 +232,13 @@ function renderSpeedTap() {
  
  <div class="card" style="text-align:center;padding:24px;margin-bottom:16px">
   <div style="font-size:.8rem;color:var(--text3);margin-bottom:8px">🇮🇹 מה התרגום?</div>
-  <div style="font-size:1.8rem;font-family:var(--font-it);font-weight:700;color:var(--indigo-light)">${w.it}</div>
-  <button class="btn btn-sm btn-secondary" onclick="speak('${esc(w.it)}')" style="margin-top:8px">🔊</button>
+  <div style="font-size:1.8rem;font-family:var(--font-it);font-weight:700;color:var(--indigo-light)">${w.target}</div>
+  <button class="btn btn-sm btn-secondary" onclick="speak('${esc(w.target)}')" style="margin-top:8px">🔊</button>
  </div>
  
  <div class="speed-options">
   ${options.map(o => `
-   <button class="btn speed-opt" onclick="Games.speedAnswer('${esc(o.he)}','${esc(w.he)}')">${o.he}</button>
+   <button class="btn speed-opt" onclick="Games.speedAnswer('${esc(o.native)}','${esc(w.native)}')">${o.native}</button>
   `).join('')}
  </div>
  
@@ -295,7 +295,7 @@ function renderHangman() {
  const area = document.getElementById('gameArea');
  if (!area) return;
  
- const word = hangWord.it.replace(/[']/g, '');
+ const word = hangWord.target.replace(/[']/g, '');
  const revealed = word.split('').map(l => hangGuessed.includes(l) ? l : '_').join(' ');
  const won = word.split('').every(l => hangGuessed.includes(l));
  const lost = hangWrong >= hangMax;
@@ -313,26 +313,26 @@ function renderHangman() {
  
  <div class="card" style="text-align:center;padding:20px;margin-bottom:16px">
   <div style="font-size:.8rem;color:var(--text3);margin-bottom:8px">🇮🇱 רמז:</div>
-  <div style="font-size:1.1rem;color:var(--emerald-light)">${hangWord.he}</div>
+  <div style="font-size:1.1rem;color:var(--emerald-light)">${hangWord.native}</div>
  </div>
  
  <div style="text-align:center;margin-bottom:16px">
   <div style="font-family:var(--font-it);font-size:1.8rem;letter-spacing:4px;font-weight:700;color:${won ? 'var(--emerald)' : lost ? 'var(--red)' : 'var(--indigo-light)'}">
    ${revealed}
   </div>
-  ${hangWord.it.includes("'") ? `<div style="font-size:.75rem;color:var(--text3);margin-top:4px">(יש אפוסטרוף במילה)</div>` : ''}
+  ${hangWord.target.includes("'") ? `<div style="font-size:.75rem;color:var(--text3);margin-top:4px">(יש אפוסטרוף במילה)</div>` : ''}
  </div>
  
  ${won ? `
   <div class="card" style="text-align:center;padding:20px;border-color:var(--emerald)">
    <div style="font-size:2rem">🎉</div>
-   <div style="font-weight:700;color:var(--emerald)">${hangWord.it}</div>
+   <div style="font-weight:700;color:var(--emerald)">${hangWord.target}</div>
    <button class="btn btn-primary btn-sm" onclick="Games.startHangman()" style="margin-top:12px">🔄 הבא</button>
   </div>
  ` : lost ? `
   <div class="card" style="text-align:center;padding:20px;border-color:var(--red)">
    <div style="font-size:2rem">😵</div>
-   <div style="color:var(--red)">התשובה: <strong style="font-family:var(--font-it)">${hangWord.it}</strong></div>
+   <div style="color:var(--red)">התשובה: <strong style="font-family:var(--font-it)">${hangWord.target}</strong></div>
    <button class="btn btn-primary btn-sm" onclick="Games.startHangman()" style="margin-top:12px">🔄 נסה שוב</button>
   </div>
  ` : `
@@ -350,11 +350,11 @@ function hangGuess(letter) {
  if (hangGuessed.includes(letter)) return;
  hangGuessed.push(letter);
  
- const word = hangWord.it.replace(/[']/g, '');
+ const word = hangWord.target.replace(/[']/g, '');
  if (!word.includes(letter)) {
   hangWrong++;
   // Track as weak word
-  trackWeakWord(hangWord.he);
+  trackWeakWord(hangWord.native);
  } else {
   addXP(3);
  }
@@ -379,7 +379,7 @@ function renderListening() {
  if (!area) return;
  
  const w = listenWords[listenIdx];
- const distractors = getDistractors(APP_DATA.words, w.he, 'he').slice(0, 3);
+ const distractors = getDistractors(APP_DATA.words, w.native, 'native').slice(0, 3);
  const options = shuffle([w, ...distractors]);
  
  area.innerHTML = `
@@ -390,19 +390,19 @@ function renderListening() {
  
  <div class="card" style="text-align:center;padding:32px;margin-bottom:16px">
   <div style="font-size:.8rem;color:var(--text3);margin-bottom:12px">🎧 האזן ובחר את התרגום</div>
-  <button class="btn btn-primary" onclick="speak('${esc(w.it)}')" style="font-size:2rem;padding:16px 24px;border-radius:50%">🔊</button>
+  <button class="btn btn-primary" onclick="speak('${esc(w.target)}')" style="font-size:2rem;padding:16px 24px;border-radius:50%">🔊</button>
   <div style="font-size:.75rem;color:var(--text3);margin-top:8px">לחץ שוב להאזנה נוספת</div>
  </div>
  
  <div class="speed-options">
   ${options.map((o, i) => `
-   <button class="btn speed-opt" onclick="Games.listenAnswer('${esc(o.he)}','${esc(w.he)}')">${o.he}</button>
+   <button class="btn speed-opt" onclick="Games.listenAnswer('${esc(o.native)}','${esc(w.native)}')">${o.native}</button>
   `).join('')}
  </div>
  `;
  
  // Auto-play the audio
- setTimeout(() => speak(w.it), 400);
+ setTimeout(() => speak(w.target), 400);
 }
 
 function listenAnswer(chosen, correct) {
@@ -459,12 +459,12 @@ function renderFreeSpeech() {
  
  <div class="sentence-card">
   <div style="font-size:.7rem;color:var(--text3);margin-bottom:4px">🇮🇱 תרגם לאיטלקית:</div>
-  <div class="sentence-he">${s.he}</div>
+  <div class="sentence-he">${s.native}</div>
   <button class="btn btn-sm btn-secondary" onclick="Games.speechHint()" style="margin-top:8px">💡 רמז</button>
   <div id="speechHint" style="display:none;margin-top:8px">
    <div style="font-size:.7rem;color:var(--text3);margin-bottom:4px">🇮🇹 המשפט:</div>
-   <div class="sentence-it">${s.it}</div>
-   <button class="btn btn-sm btn-secondary" onclick="speak('${esc(s.it)}')" style="margin-top:4px">🔊 האזן</button>
+   <div class="sentence-it">${s.target}</div>
+   <button class="btn btn-sm btn-secondary" onclick="speak('${esc(s.target)}')" style="margin-top:4px">🔊 האזן</button>
   </div>
  </div>
  
@@ -562,11 +562,11 @@ function endFreeSpeech() {
 let buildWord = null, buildSyllables = [], buildPlaced = [];
 
 function startWordBuild(level) {
- const words = getWordsForLevel(level || 'A1').filter(w => w.it.length >= 4);
+ const words = getWordsForLevel(level || 'A1').filter(w => w.target.length >= 4);
  buildWord = words[Math.floor(Math.random() * words.length)];
  
  // Split into syllables (simple: 2-3 char chunks)
- const it = buildWord.it;
+ const it = buildWord.target;
  const mid = Math.ceil(it.length / 2);
  buildSyllables = shuffle([
   { syl: it.substring(0, mid), id: 0, used: false },
@@ -598,7 +598,7 @@ function renderWordBuild() {
  
  <div class="card" style="text-align:center;padding:20px;margin-bottom:16px">
   <div style="font-size:.8rem;color:var(--text3);margin-bottom:8px">🇮🇱 בנה באיטלקית:</div>
-  <div style="font-size:1.2rem;font-weight:600;color:var(--emerald-light)">${buildWord.he}</div>
+  <div style="font-size:1.2rem;font-weight:600;color:var(--emerald-light)">${buildWord.native}</div>
  </div>
  
  <div style="display:flex;justify-content:center;gap:8px;margin:16px 0;min-height:48px">
@@ -637,10 +637,10 @@ function buildRemove(idx) {
 
 function buildCheck() {
  const answer = buildPlaced.map(s => s.syl).join('');
- if (answer === buildWord.it) {
+ if (answer === buildWord.target) {
   addXP(12);
-  toast(`✅ ${buildWord.it} — מעולה! +12 XP`, 'success');
-  speak(buildWord.it);
+  toast(`✅ ${buildWord.target} — מעולה! +12 XP`, 'success');
+  speak(buildWord.target);
   setTimeout(() => startWordBuild(), 1500);
  } else {
   toast('❌ לא נכון — נסה שוב', 'error');
@@ -955,12 +955,12 @@ function getWordsForLevel(level) {
  // Simple heuristic: shorter words = A1, longer = higher level
  const levelMap = { A1: 7, A2: 10, B1: 14, B2: 20, C1: 99 };
  const maxLen = levelMap[level] || 7;
- return shuffle(allWords.filter(w => w.it.replace(/[']/g,'').length <= maxLen));
+ return shuffle(allWords.filter(w => w.target.replace(/[']/g,'').length <= maxLen));
 }
 
 function getSentencesForLevel(level) {
  const all = APP_DATA.sentences || [];
- return shuffle(all.filter(s => s.it && s.he));
+ return shuffle(all.filter(s => s.target && s.native));
 }
 
 function shuffle(arr) {

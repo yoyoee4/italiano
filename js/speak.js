@@ -93,8 +93,8 @@ const Speak = (() => {
   mc.innerHTML = `
    <div class="speak-card">
     <div class="speak-card-counter">${currentPhraseIdx + 1} / ${phraseBook.length}</div>
-    <div class="speak-phrase-it" id="speakPhraseIt">${p.it}</div>
-    <div class="speak-phrase-he">${p.he}</div>
+    <div class="speak-phrase-it" id="speakPhraseIt">${p.target}</div>
+    <div class="speak-phrase-he">${p.native}</div>
     <button class="speak-hear-btn" onclick="Speak.hearPhrase()">🔊 שמע</button>
     
     <div class="speak-wave-container" id="speakWaveContainer">
@@ -131,7 +131,7 @@ const Speak = (() => {
   mc.innerHTML = `
    <div class="speak-card">
     <div class="speak-card-counter">${currentPhraseIdx + 1} / ${phraseBook.length}</div>
-    <div class="speak-dictation-he">${p.he}</div>
+    <div class="speak-dictation-he">${p.native}</div>
     <button class="speak-hear-btn" onclick="Speak.hearPhrase()">🔊 שמע את המשפט</button>
     
     <div class="speak-dictation-input">
@@ -183,9 +183,9 @@ const Speak = (() => {
   const p = phraseBook[currentPhraseIdx];
   if (!p) return;
   if (typeof speak === 'function') {
-   speak(p.it);
+   speak(p.target);
   } else if ('speechSynthesis' in window) {
-   const u = new SpeechSynthesisUtterance(p.it);
+   const u = new SpeechSynthesisUtterance(p.target);
    u.lang = 'it-IT';
    u.rate = 0.85;
    speechSynthesis.speak(u);
@@ -285,7 +285,7 @@ const Speak = (() => {
   const p = phraseBook[currentPhraseIdx];
   if (p) {
    recordings.push({
-    phrase: p.it,
+    phrase: p.target,
     level: p.level,
     timestamp: Date.now()
    });
@@ -299,7 +299,7 @@ const Speak = (() => {
   const p = phraseBook[currentPhraseIdx];
   if (!p) return;
 
-  const expected = p.it.toLowerCase().replace(/[.,!?;:]/g, '').trim();
+  const expected = p.target.toLowerCase().replace(/[.,!?;:]/g, '').trim();
   const best = alternatives[0]?.toLowerCase().replace(/[.,!?;:]/g, '').trim() || '';
 
   // Calculate match
@@ -324,7 +324,7 @@ const Speak = (() => {
     <div class="speak-score-label">${accuracy >= 70 ? 'מצוין!' : accuracy >= 50 ? 'לא רע, נסה שוב' : 'נסה שוב'}</div>
    </div>
    <div class="speak-compare">
-    <div class="speak-compare-row"><span class="speak-compare-label">ציפית:</span> ${p.it}</div>
+    <div class="speak-compare-row"><span class="speak-compare-label">ציפית:</span> ${p.target}</div>
     <div class="speak-compare-row"><span class="speak-compare-label">אמרת:</span> ${alternatives[0] || '—'}</div>
    </div>
   `, cls);
@@ -343,7 +343,7 @@ const Speak = (() => {
   const input = document.getElementById('dictationInput');
   if (!input) return;
 
-  const expected = p.it.toLowerCase().replace(/[.,!?;:]/g, '').trim();
+  const expected = p.target.toLowerCase().replace(/[.,!?;:]/g, '').trim();
   const typed = input.value.toLowerCase().replace(/[.,!?;:]/g, '').trim();
 
   const expectedWords = expected.split(/\s+/);
@@ -366,7 +366,7 @@ const Speak = (() => {
     <div class="speak-score-pct">${accuracy}%</div>
    </div>
    <div class="speak-answer-reveal">
-    <strong>התשובה:</strong> ${p.it}
+    <strong>התשובה:</strong> ${p.target}
    </div>
   `, cls);
 

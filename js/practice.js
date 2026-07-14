@@ -23,9 +23,7 @@ let dialogueIdx = 0;
 // WORD LESSON
 // ═══════════════════════════════════════
 function startWordLesson(node) {
-  const words = SkillTree.getNodeWords ? 
-    (node.words || []) : 
-    (APP_DATA.words || []).filter(w => w.cat === (node.category || node.id)).slice(0, 8);
+  const words = node.words || getWordsForNode(node);
   
   if (words.length === 0) { toast('אין מילים בנושא זה', 'error'); return; }
   
@@ -53,49 +51,65 @@ function startWordLesson(node) {
     `;
     
     if (phase === 0) {
-      // Phase 1: Hear word, choose translation
-      const options = shuffle([w.he, ...getDistractors(words, w, 'he')]).slice(0, 4);
-      html += `
-        <div class="card" style="text-align:center;padding:24px">
-          <button class="speak-btn active" onclick="speak('${esc(w.it)}')" style="width:64px;height:64px;font-size:1.8rem;margin:0 auto 16px">🔊</button>
-          <div style="font-family:var(--font-it);font-size:1.6rem;font-weight:700;margin-bottom:4px">${w.it}</div>
-          <div style="font-size:.85rem;color:var(--text3)">מה התרגום?</div>
-        </div>
-        ${options.map(o => `
-          <div class="quiz-option" onclick="Practice.answerWord(this,'${esc(o)}','${esc(w.he)}','${node.id}',${wordIdx})">${o}</div>
-        `).join('')}
-      `;
+      // Phase 0: Image mode → pick Italian word, or normal mode → pick Hebrew translation
+      const isImageMode = !!w.img;
+      if (isImageMode) {
+        const options = shuffle([w.target, ...getDistractors(words, w, 'target')]).slice(0, 4);
+        html += `
+          <div class="card" style="text-align:center;padding:24px">
+            <div style="font-size:4rem;margin-bottom:12px">${w.img}</div>
+            <button class="speak-btn active" onclick="speak('${esc(w.target)}')" style="width:64px;height:64px;font-size:1.8rem;margin:0 auto 16px">🔊</button>
+            <div style="font-size:.85rem;color:var(--text3)">Qual è la parola corretta?</div>
+          </div>
+          ${options.map(o => `
+            <div class="quiz-option" onclick="Practice.answerWord(this,'${esc(o)}','${esc(w.target)}','${node.id}',${wordIdx},true)">${o}</div>
+          `).join('')}
+        `;
+      } else {
+        // Phase 1: Hear word, choose translation
+        const options = shuffle([w.native, ...getDistractors(words, w, 'native')]).slice(0, 4);
+        html += `
+          <div class="card" style="text-align:center;padding:24px">
+            <button class="speak-btn active" onclick="speak('${esc(w.target)}')" style="width:64px;height:64px;font-size:1.8rem;margin:0 auto 16px">🔊</button>
+            <div style="font-family:var(--font-it);font-size:1.6rem;font-weight:700;margin-bottom:4px">${w.target}</div>
+            <div style="font-size:.85rem;color:var(--text3)">מה התרגום?</div>
+          </div>
+          ${options.map(o => `
+            <div class="quiz-option" onclick="Practice.answerWord(this,'${esc(o)}','${esc(w.native)}','${node.id}',${wordIdx})">${o}</div>
+          `).join('')}
+        `;
+      }
     } else if (phase === 1) {
       // Phase 2: See Hebrew, type Italian
       html += `
         <div class="card" style="text-align:center;padding:24px">
-          <div style="font-size:1.3rem;font-weight:700;margin-bottom:4px">${w.he}</div>
-          <div style="font-size:.85rem;color:var(--text3)">כתוב באיטלקית</div>
+          <div style="font-size:1.3rem;font-weight:700;margin-bottom:4px">${w.native}</div>
+          <div style="font-size:.85rem;color:var(--text3)">כתוב ב${APP_CONFIG.targetName}</div>
         </div>
         <div style="padding:0 4px;margin-top:12px">
           <input type="text" id="typeInput" placeholder="כתוב כאן..." 
             style="width:100%;padding:14px;background:var(--surface);border:2px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-size:1.1rem;font-family:var(--font-it);text-align:center;direction:ltr"
-            onkeydown="if(event.key==='Enter')Practice.checkTyped('${esc(w.it)}','${node.id}',${wordIdx})">
-          <button class="btn btn-primary btn-block" style="margin-top:8px" onclick="Practice.checkTyped('${esc(w.it)}','${node.id}',${wordIdx})">בדוק →</button>
+            onkeydown="if(event.key==='Enter')Practice.checkTyped('${esc(w.target)}','${node.id}',${wordIdx})">
+          <button class="btn btn-primary btn-block" style="margin-top:8px" onclick="Practice.checkTyped('${esc(w.target)}','${node.id}',${wordIdx})">בדוק →</button>
         </div>
       `;
     } else {
       // Phase 3: Hear only, speak it
       html += `
         <div class="card" style="text-align:center;padding:24px">
-          <button class="speak-btn active" onclick="speak('${esc(w.it)}')" style="width:64px;height:64px;font-size:1.8rem;margin:0 auto 16px">🔊</button>
+          <button class="speak-btn active" onclick="speak('${esc(w.target)}')" style="width:64px;height:64px;font-size:1.8rem;margin:0 auto 16px">🔊</button>
           <div style="font-size:.85rem;color:var(--text3)">הגה את המילה</div>
-          <div style="font-size:.8rem;color:var(--text2);margin-top:4px">💡 רמז: ${w.he}</div>
+          <div style="font-size:.8rem;color:var(--text2);margin-top:4px">💡 רמז: ${w.native}</div>
         </div>
         <div class="record-flow">
-          <button class="mic-btn" id="micBtn" onclick="Practice.recordWord('${esc(w.it)}','${node.id}',${wordIdx})">🎤</button>
+          <button class="mic-btn" id="micBtn" onclick="Practice.recordWord('${esc(w.target)}','${node.id}',${wordIdx})">🎤</button>
           <div id="recordResult" style="text-align:center"></div>
         </div>
       `;
     }
     
     container.innerHTML = `
-      <button class="back-btn" onclick="Practice.render()">← חזרה</button>
+      <button class="back-btn" onclick="goPage('learn')">← חזרה</button>
       <div style="text-align:center;margin-bottom:12px">
         <span style="font-size:1.2rem">${node.icon}</span>
         <span style="font-weight:700;margin-right:6px">${node.name}</span>
@@ -103,7 +117,7 @@ function startWordLesson(node) {
       ${html}
     `;
     
-    if (phase === 0) speak(w.it);
+    if (phase === 0) speak(w.target);
   }
   
   // Store state for callbacks
@@ -115,7 +129,7 @@ function startWordLesson(node) {
   renderWordPhase();
 }
 
-function answerWord(el, chosen, correct, nodeId, wordIdx) {
+function answerWord(el, chosen, correct, nodeId, wordIdx, isImageMode) {
   const lesson = Practice._wordLesson;
   if (!lesson) return;
   
@@ -131,16 +145,19 @@ function answerWord(el, chosen, correct, nodeId, wordIdx) {
     quizCombo++;
     if (quizCombo > quizMaxCombo) quizMaxCombo = quizCombo;
     addXP(10 + (quizCombo > 3 ? quizCombo * 2 : 0));
-    if (!state.wordsLearned.includes(lesson.words[wordIdx].it)) {
-      state.wordsLearned.push(lesson.words[wordIdx].it); save();
+    if (!state.wordsLearned.includes(lesson.words[wordIdx].target)) {
+      state.wordsLearned.push(lesson.words[wordIdx].target); save();
     }
     // Add to Anki
     addAnkiCard(lesson.words[wordIdx]);
   } else {
     el.classList.add('wrong');
     quizCombo = 0;
-    trackWeakWord(lesson.words[wordIdx].it);
-    if (!useHeart()) return;
+    trackWeakWord(lesson.words[wordIdx].target);
+    if (!useHeart()) {
+      showOutOfHearts();
+      return;
+    }
   }
   
   setTimeout(() => {
@@ -148,6 +165,20 @@ function answerWord(el, chosen, correct, nodeId, wordIdx) {
     lesson.phase = Math.min(2, Math.floor(lesson.wordIdx / 3));
     lesson.renderWordPhase();
   }, 1000);
+}
+
+function showOutOfHearts() {
+  const container = document.getElementById('practiceContent') || document.getElementById('pageContent');
+  if (!container) return;
+  container.innerHTML = `
+    <div style="text-align:center;padding:60px 20px">
+      <div style="font-size:5rem;margin-bottom:16px">💔</div>
+      <h2 style="font-weight:800">אזלו הלבבות!</h2>
+      <p style="color:var(--text2);margin:8px 0 24px">חכה להתחדשות או קנה לבבות בחנות</p>
+      <button class="btn btn-primary" style="margin-bottom:12px" onclick="goPage('shop')">🛒 חנות</button>
+      <button class="btn btn-secondary btn-block" onclick="goPage('learn')">🗺️ חזרה למסלול</button>
+    </div>
+  `;
 }
 
 function checkTyped(correct, nodeId, wordIdx) {
@@ -183,7 +214,7 @@ function recordWord(correct, nodeId, wordIdx) {
   if (isListening) { stopListening(); return; }
   
   btn.classList.add('listening');
-  startListening('it-IT', (results) => {
+  startListening(APP_CONFIG.targetLang, (results) => {
     btn.classList.remove('listening');
     const resultEl = document.getElementById('recordResult');
     if (!results) {
@@ -218,7 +249,7 @@ function recordWord(correct, nodeId, wordIdx) {
 }
 
 function finishWordLesson(node, words) {
-  const learned = words.filter(w => state.wordsLearned.includes(w.it)).length;
+  const learned = words.filter(w => state.wordsLearned.includes(w.target)).length;
   const pct = Math.round(learned / words.length * 100);
   const container = document.getElementById('practiceContent');
   
@@ -244,7 +275,7 @@ function finishWordLesson(node, words) {
 // SENTENCE LESSON (with recording)
 // ═══════════════════════════════════════
 function startSentenceLesson(node) {
-  const sentences = node.sentences || (APP_DATA.sentences || []).filter(s => s.cat === (node.category || node.id)).slice(0, 5);
+  const sentences = node.sentences || getSentencesForNode(node);
   if (sentences.length === 0) { toast('אין משפטים בנושא', 'error'); return; }
   
   goPage('practice');
@@ -268,20 +299,20 @@ function renderSentence() {
   }
   
   const s = sentenceQueue[sentenceIdx];
-  const hasRecording = state.sentencesPracticed && state.sentencesPracticed[s.it];
+  const hasRecording = state.sentencesPracticed && state.sentencesPracticed[s.target];
   
   container.innerHTML = `
-    <button class="back-btn" onclick="Practice.render()">← חזרה</button>
+    <button class="back-btn" onclick="goPage('learn')">← חזרה</button>
     <div style="text-align:center;margin-bottom:8px">
       <span style="font-size:.75rem;color:var(--text3)">משפט ${sentenceIdx + 1}/${sentenceQueue.length}</span>
     </div>
     <div class="progress-bar" style="margin-bottom:16px"><div class="progress-fill" style="width:${(sentenceIdx/sentenceQueue.length)*100}%"></div></div>
     
     <div class="sentence-card">
-      <div style="font-size:.7rem;color:var(--text3);margin-bottom:4px">🇮🇹 איטלקית</div>
-      <div class="sentence-it">${s.it}</div>
-      <div style="font-size:.7rem;color:var(--text3);margin-top:12px;margin-bottom:4px">🇮🇱 עברית</div>
-      <div class="sentence-he">${s.he}</div>
+      <div style="font-size:.7rem;color:var(--text3);margin-bottom:4px">${APP_CONFIG.targetFlag} ${APP_CONFIG.targetName}</div>
+      <div class="sentence-it">${s.target}</div>
+      <div style="font-size:.7rem;color:var(--text3);margin-top:12px;margin-bottom:4px">${APP_CONFIG.nativeFlag} ${APP_CONFIG.nativeName}</div>
+      <div class="sentence-he">${s.native}</div>
     </div>
     
     <div class="record-flow">
@@ -292,9 +323,9 @@ function renderSentence() {
     </div>
     
     <div style="display:flex;justify-content:center;gap:12px;margin:16px 0">
-      <button class="btn btn-secondary btn-sm" onclick="speak('${esc(s.it)}',undefined,0.5)">🐢 איטי</button>
-      <button class="btn btn-primary btn-sm" onclick="speak('${esc(s.it)}')">🔊 רגיל</button>
-      <button class="mic-btn" id="micBtn" onclick="Practice.recordSentence('${esc(s.it)}')" style="width:48px;height:48px;font-size:1.2rem">🎤</button>
+      <button class="btn btn-secondary btn-sm" onclick="speak('${esc(s.target)}',undefined,0.5)">🐢 איטי</button>
+      <button class="btn btn-primary btn-sm" onclick="speak('${esc(s.target)}')">🔊 רגיל</button>
+      <button class="mic-btn" id="micBtn" onclick="Practice.recordSentence('${esc(s.target)}')" style="width:48px;height:48px;font-size:1.2rem">🎤</button>
     </div>
     
     <div id="sentenceResult" style="text-align:center"></div>
@@ -306,7 +337,7 @@ function renderSentence() {
   `;
   
   // Auto-play slow
-  speak(s.it, undefined, 0.5);
+  speak(s.target, undefined, 0.5);
 }
 
 function recordSentence(correct) {
@@ -314,7 +345,7 @@ function recordSentence(correct) {
   if (isListening) { stopListening(); return; }
   
   btn.classList.add('listening');
-  startListening('it-IT', (results) => {
+  startListening(APP_CONFIG.targetLang, (results) => {
     btn.classList.remove('listening');
     const resultEl = document.getElementById('sentenceResult');
     if (!results) {
@@ -358,10 +389,14 @@ function nextSentence() {
 // QUIZ
 // ═══════════════════════════════════════
 function startQuiz(node) {
- goPage('practice');
- Practice._quizNode = node; // ← fix: save node reference
- const words = node.words || (APP_DATA.words || []).filter(w => w.cat === (node.category || node.id));
-  if (words.length < 4) { toast('אין מספיק מילים לחידון', 'error'); return; }
+  // Guard against re-triggering when called from within render()
+  if (Practice._insideStartQuiz) return;
+  Practice._insideStartQuiz = true;
+  
+  goPage('practice');
+  Practice._quizNode = node; // ← fix: save node reference
+ const words = node.words || getWordsForNode(node);
+  if (words.length < 4) { toast('אין מספיק מילים לחידון', 'error'); Practice._insideStartQuiz = false; return; }
   
   // Mix question types
   currentQuiz = [];
@@ -369,25 +404,26 @@ function startQuiz(node) {
   
   // Type 1: IT→HE (choose)
   shuffled.slice(0, 3).forEach(w => {
-    const distractors = getDistractors(words, w, 'he');
-    currentQuiz.push({ type: 'choose', q: w.it, a: w.he, options: shuffle([w.he, ...distractors]).slice(0, 4), qLang: 'it' });
+    const distractors = getDistractors(words, w, 'native');
+    currentQuiz.push({ type: 'choose', q: w.target, a: w.native, options: shuffle([w.native, ...distractors]).slice(0, 4), qLang: 'target' });
   });
   
   // Type 2: HE→IT (choose)
   shuffled.slice(3, 6).forEach(w => {
-    const distractors = getDistractors(words, w, 'it');
-    currentQuiz.push({ type: 'choose', q: w.he, a: w.it, options: shuffle([w.it, ...distractors]).slice(0, 4), qLang: 'he' });
+    const distractors = getDistractors(words, w, 'target');
+    currentQuiz.push({ type: 'choose', q: w.native, a: w.target, options: shuffle([w.target, ...distractors]).slice(0, 4), qLang: 'native' });
   });
   
   // Type 3: type it
   if (shuffled.length > 6) {
     shuffled.slice(6, 8).forEach(w => {
-      currentQuiz.push({ type: 'type', q: w.he, a: w.it, qLang: 'he' });
+      currentQuiz.push({ type: 'type', q: w.native, a: w.target, qLang: 'native' });
     });
   }
   
   quizIdx = 0; quizScore = 0; quizCombo = 0; quizMaxCombo = 0;
   renderQuizQuestion(node);
+  Practice._insideStartQuiz = false;
 }
 
 function renderQuizQuestion(node) {
@@ -409,8 +445,8 @@ function renderQuizQuestion(node) {
     html += `
       <div class="card" style="text-align:center;padding:24px">
         <div style="font-family:${q.qLang==='it'?'var(--font-it)':'var(--font-he)'};font-size:1.5rem;font-weight:700">${q.q}</div>
-        ${q.qLang === 'it' ? `<button class="btn btn-sm btn-secondary" onclick="speak('${esc(q.q)}')" style="margin-top:8px">🔊</button>` : ''}
-        <div style="font-size:.85rem;color:var(--text3);margin-top:8px">${q.qLang === 'it' ? 'מה התרגום?' : 'כתוב באיטלקית'}</div>
+        ${q.qLang === 'target' ? `<button class="btn btn-sm btn-secondary" onclick="speak('${esc(q.q)}')" style="margin-top:8px">🔊</button>` : ''}
+        <div style="font-size:.85rem;color:var(--text3);margin-top:8px">${q.qLang === 'target' ? 'מה התרגום?' : 'כתוב ב${APP_CONFIG.targetName}'}</div>
       </div>
       ${q.options.map(o => `
         <div class="quiz-option" onclick="Practice.answerQuiz(this,'${esc(o)}','${esc(q.a)}')">${o}</div>
@@ -420,7 +456,7 @@ function renderQuizQuestion(node) {
     html += `
       <div class="card" style="text-align:center;padding:24px">
         <div style="font-size:1.3rem;font-weight:700">${q.q}</div>
-        <div style="font-size:.85rem;color:var(--text3);margin-top:8px">כתוב באיטלקית</div>
+        <div style="font-size:.85rem;color:var(--text3);margin-top:8px">כתוב ב${APP_CONFIG.targetName}</div>
       </div>
       <div style="padding:0 4px;margin-top:12px">
         <input type="text" id="quizInput" placeholder="..." 
@@ -432,7 +468,7 @@ function renderQuizQuestion(node) {
   }
   
   container.innerHTML = `
-    <button class="back-btn" onclick="Practice.render()">← חזרה</button>
+    <button class="back-btn" onclick="goPage('learn')">← חזרה</button>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
       <span>❤️ ${'❤️'.repeat(getHearts().count)}</span>
       <span style="font-size:.8rem;color:var(--text3)">🧠 ${node.icon} ${node.name}</span>
@@ -462,13 +498,16 @@ function answerQuiz(el, chosen, correct) {
  quizCombo = 0;
  trackWeakWord(correct);
  // Add to Anki automatically
- const wordData = (APP_DATA.words||[]).find(w => w.he === correct || w.it === correct);
+ const wordData = (APP_DATA.words||[]).find(w => w.native === correct || w.target === correct);
  if (wordData) addAnkiCard(wordData);
  // Reset success count for this word
  if (!state.ankiSuccessCount) state.ankiSuccessCount = {};
  state.ankiSuccessCount[correct] = 0; save();
- if (!useHeart()) return;
- }
+ if (!useHeart()) {
+   showOutOfHearts();
+   return;
+   }
+  }
   
   setTimeout(() => { quizIdx++; renderQuizQuestion(Practice._quizNode); }, 1000);
 }
@@ -494,6 +533,31 @@ function finishQuiz(node) {
   const pct = Math.round(quizScore / maxScore * 100);
   const container = document.getElementById('practiceContent');
   
+  if (node && node.isMixed) {
+    // Mixed practice completion — show "מלא הכול" options
+    container.innerHTML = `
+      <div style="text-align:center;padding:40px 20px">
+        <div style="font-size:4rem;margin-bottom:16px">${pct >= 80 ? '🌟' : pct >= 50 ? '👍' : '💪'}</div>
+        <h2 style="font-weight:800">${pct >= 80 ? 'מצוין!' : pct >= 50 ? 'כל הכבוד!' : 'המשך להתאמן!'}</h2>
+        <p style="color:var(--text2);margin:8px 0">ציון: ${quizScore}/${maxScore} (${pct}%)</p>
+        ${quizMaxCombo >= 3 ? `<p style="color:var(--orange)">🔥 קומבו מקסימלי: x${quizMaxCombo}</p>` : ''}
+        <div style="margin:16px 0">
+          <span class="coin-badge">+${Math.ceil(pct/5)} 💎</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:20px">
+          <button class="btn btn-primary btn-block" onclick="Practice.startMixedPractice(false)">🎯 תרגול מעורב נוסף</button>
+          ${!node.isFull ? `<button class="btn btn-primary btn-block" style="border-color:var(--emerald);color:var(--emerald);background:transparent" onclick="Practice.startMixedPractice(true)">📚 תרגול מלא — כל המילים</button>` : ''}
+          <button class="btn btn-secondary btn-block" onclick="Practice.showPracticeMenu()">📋 תפריט נושאים</button>
+        </div>
+      </div>
+    `;
+    if (pct >= 80) confetti();
+    state.quizHistory.push({ nodeId: node.id, score: pct, date: Date.now() }); save();
+    addDaily();
+    return;
+  }
+  
+  // Regular topic quiz completion
   container.innerHTML = `
     <div style="text-align:center;padding:40px 20px">
       <div style="font-size:4rem;margin-bottom:16px">${pct >= 80 ? '🌟' : pct >= 50 ? '👍' : '💪'}</div>
@@ -555,7 +619,7 @@ function renderDialogueLine() {
   const isYou = line.role === 'you';
   
   let html = `
-    <button class="back-btn" onclick="Practice.render()">← חזרה</button>
+    <button class="back-btn" onclick="goPage('learn')">← חזרה</button>
     <div class="dlg-progress">
       ${dialogueQueue.map((_, i) => `
         <div class="dlg-dot ${i < dialogueIdx ? 'done' : (i === dialogueIdx ? 'current' : '')}"></div>
@@ -569,8 +633,8 @@ function renderDialogueLine() {
     html += `
       <div class="${l.role === 'you' ? 'dlg-you' : 'dlg-npc'}">
         <div class="dlg-role">${l.role === 'you' ? '👤 את/ה' : '🧑‍🏫 ' + l.name}</div>
-        <div class="dlg-text-it">${l.it}</div>
-        <div class="dlg-text-he">${l.he}</div>
+        <div class="dlg-text-it">${l.target}</div>
+        <div class="dlg-text-he">${l.native}</div>
       </div>
     `;
   }
@@ -580,9 +644,9 @@ function renderDialogueLine() {
     html += `
       <div class="dlg-npc">
         <div class="dlg-role">🧑‍🏫 ${line.name || 'NPC'}</div>
-        <div class="dlg-text-it">${line.it}</div>
-        <div class="dlg-text-he">${line.he}</div>
-        <button class="btn btn-sm btn-secondary" onclick="speak('${esc(line.it)}')" style="margin-top:8px">🔊</button>
+        <div class="dlg-text-it">${line.target}</div>
+        <div class="dlg-text-he">${line.native}</div>
+        <button class="btn btn-sm btn-secondary" onclick="speak('${esc(line.target)}')" style="margin-top:8px">🔊</button>
       </div>
       <div style="text-align:center;margin-top:16px">
         <button class="btn btn-primary" onclick="Practice.nextDialogueLine()">המשך →</button>
@@ -594,14 +658,14 @@ function renderDialogueLine() {
       html += `
         <div style="text-align:center;margin:16px 0;font-size:.85rem;color:var(--text3)">👤 בחר את התשובה שלך:</div>
         ${line.options.map(o => `
-          <div class="quiz-option" onclick="Practice.answerDialogue(this,'${esc(o.it)}','${esc(line.it)}')">${o.it}<br><span style="font-size:.7rem;color:var(--text3)">${o.he}</span></div>
+          <div class="quiz-option" onclick="Practice.answerDialogue(this,'${esc(o.target)}','${esc(line.target)}')">${o.target}<br><span style="font-size:.7rem;color:var(--text3)">${o.native}</span></div>
         `).join('')}
       `;
     } else {
       html += `
-        <div style="text-align:center;margin:16px 0;font-size:.85rem;color:var(--text3)">👤 אמור: <strong style="color:var(--indigo-light)">${line.it}</strong></div>
+        <div style="text-align:center;margin:16px 0;font-size:.85rem;color:var(--text3)">👤 אמור: <strong style="color:var(--indigo-light)">${line.target}</strong></div>
         <div style="text-align:center">
-          <button class="mic-btn" id="dlgMicBtn" onclick="Practice.recordDialogue('${esc(line.it)}')">🎤</button>
+          <button class="mic-btn" id="dlgMicBtn" onclick="Practice.recordDialogue('${esc(line.target)}')">🎤</button>
           <div id="dlgResult" style="margin-top:12px"></div>
         </div>
       `;
@@ -609,7 +673,7 @@ function renderDialogueLine() {
   }
   
   container.innerHTML = html;
-  if (!isYou && dialogueIdx === 0) speak(dialogueQueue[0].it);
+  if (!isYou && dialogueIdx === 0) speak(dialogueQueue[0].target);
 }
 
 function answerDialogue(el, chosen, correct) {
@@ -627,7 +691,7 @@ function recordDialogue(correct) {
   const btn = document.getElementById('dlgMicBtn');
   if (isListening) { stopListening(); return; }
   btn.classList.add('listening');
-  startListening('it-IT', (results) => {
+  startListening(APP_CONFIG.targetLang, (results) => {
     btn.classList.remove('listening');
     const resultEl = document.getElementById('dlgResult');
     if (!results) { resultEl.innerHTML = '<span style="color:var(--text3)">לא נשמע</span>'; return; }
@@ -651,9 +715,9 @@ function nextDialogueLine() {
 // ANKI SRS
 // ═══════════════════════════════════════
 function addAnkiCard(word) {
-  if (!anki[word.it]) {
-    anki[word.it] = {
-      front: word.it, back: word.he, cat: word.cat,
+  if (!anki[word.target]) {
+    anki[word.target] = {
+      front: word.target, back: word.native, cat: word.cat,
       interval: 1, ease: 2.5, due: Date.now(),
       lapses: 0
     };
@@ -696,7 +760,7 @@ function renderAnkiCard() {
   ankiRevealed = false;
   
   container.innerHTML = `
-    <button class="back-btn" onclick="Practice.render()">← חזרה</button>
+    <button class="back-btn" onclick="goPage('learn')">← חזרה</button>
     <div style="text-align:center;margin-bottom:8px">
       <span style="font-size:.75rem;color:var(--text3)">כרטיס ${ankiIdx + 1}/${ankiQueue.length}</span>
     </div>
@@ -846,7 +910,7 @@ function startWeakWords() {
   const weak = state.weakWords.slice(0, 10);
   
   container.innerHTML = `
-    <button class="back-btn" onclick="Practice.render()">← חזרה</button>
+    <button class="back-btn" onclick="goPage('learn')">← חזרה</button>
     <h2 class="section-title"><span class="emoji">💪</span> מילים חלשות — אימון ממוקד</h2>
     <p style="font-size:.85rem;color:var(--text2);margin-bottom:16px">אלו המילים שטעית בהן הכי הרבה. תרגל אותן!</p>
     ${weak.map(w => {
@@ -855,12 +919,12 @@ function startWeakWords() {
       return `
         <div class="word-item">
           <div class="word-left">
-            <div class="word-it">${wordData.it}</div>
-            <div class="word-he">${wordData.he}</div>
+            <div class="word-it">${wordData.target}</div>
+            <div class="word-he">${wordData.native}</div>
           </div>
           <div class="word-right">
             <span style="font-size:.7rem;color:var(--red)">❌ ${w.misses} טעויות</span>
-            <button class="speak-btn" onclick="speak('${esc(wordData.it)}')">🔊</button>
+            <button class="speak-btn" onclick="speak('${esc(wordData.target)}')">🔊</button>
           </div>
         </div>
       `;
@@ -877,8 +941,8 @@ function startWeakQuiz() {
   
   currentQuiz = [];
   words.forEach(w => {
-    const distractors = getDistractors(APP_DATA.words || [], w, 'he');
-    currentQuiz.push({ type: 'choose', q: w.it, a: w.he, options: shuffle([w.he, ...distractors]).slice(0, 4), qLang: 'it' });
+    const distractors = getDistractors(APP_DATA.words || [], w, 'native');
+    currentQuiz.push({ type: 'choose', q: w.target, a: w.native, options: shuffle([w.native, ...distractors]).slice(0, 4), qLang: 'target' });
   });
   quizIdx = 0; quizScore = 0; quizCombo = 0;
   Practice._quizNode = { id: 'weak_words', name: 'מילים חלשות', icon: '💪', level: state.currentLevel || 'A1' };
@@ -886,19 +950,109 @@ function startWeakQuiz() {
 }
 
 function findWord(it) {
-  return (APP_DATA.words || []).find(w => w.it === it);
+  return (APP_DATA.words || []).find(w => w.target === it);
 }
 
 // ═══════════════════════════════════════
-// MAIN RENDER
+// MAIN RENDER — Immediate Mixed Practice
 // ═══════════════════════════════════════
 function render() {
+  // Start mixed practice immediately — no menu
+  startMixedPractice(false);
+}
+
+// ═══════════════════════════════════════
+// MIXED PRACTICE — All Categories
+// ═══════════════════════════════════════
+function getWordsForLevel(level) {
+  const levelOrder = ['A1','A2','B1','B2','C1','C2'];
+  const maxIdx = levelOrder.indexOf(level);
+  if (maxIdx === -1) return [];
+  
+  const nodes = (APP_DATA.skillTree || []).filter(n => {
+    const idx = levelOrder.indexOf(n.level);
+    return idx >= 0 && idx <= maxIdx;
+  });
+  
+  let allWords = [];
+  nodes.forEach(n => {
+    const words = getWordsForNode(n);
+    if (words.length > 0) allWords = allWords.concat(words);
+  });
+  
+  // Deduplicate by target
+  const seen = new Set();
+  allWords = allWords.filter(w => {
+    if (seen.has(w.target)) return false;
+    seen.add(w.target);
+    return true;
+  });
+  
+  return shuffle(allWords);
+}
+
+function startMixedPractice(isFull) {
+  const allWords = getWordsForLevel(state.level || 'A1');
+  if (allWords.length < 4) {
+    showPracticeMenu();
+    return;
+  }
+  
+  const count = isFull ? Math.min(allWords.length, 20) : Math.min(allWords.length, 8);
+  const chosen = allWords.slice(0, count);
+  
+  const mixedNode = {
+    id: isFull ? 'full_mixed_practice' : 'mixed_practice',
+    name: isFull ? 'תרגול מלא' : 'תרגול מעורב',
+    icon: '🎯',
+    words: chosen,
+    isMixed: true,
+    isFull: isFull
+  };
+  
+  // Call startQuiz directly without goPage to avoid re-triggering render()
+  Practice._quizNode = mixedNode;
+  const words = mixedNode.words || getWordsForNode(mixedNode);
+  if (words.length < 4) { showPracticeMenu(); return; }
+  
+  // Build quiz questions directly
+  currentQuiz = [];
+  const shuffled = shuffle([...words]);
+  
+  // Type 1: IT→HE (choose)
+  shuffled.slice(0, 3).forEach(w => {
+    const distractors = getDistractors(words, w, 'native');
+    currentQuiz.push({ type: 'choose', q: w.target, a: w.native, options: shuffle([w.native, ...distractors]).slice(0, 4), qLang: 'target' });
+  });
+  
+  // Type 2: HE→IT (choose)
+  shuffled.slice(3, 6).forEach(w => {
+    const distractors = getDistractors(words, w, 'target');
+    currentQuiz.push({ type: 'choose', q: w.native, a: w.target, options: shuffle([w.target, ...distractors]).slice(0, 4), qLang: 'native' });
+  });
+  
+  // Type 3: type it
+  if (shuffled.length > 6) {
+    shuffled.slice(6, count).forEach(w => {
+      currentQuiz.push({ type: 'type', q: w.native, a: w.target, qLang: 'native' });
+    });
+  }
+  
+  quizIdx = 0; quizScore = 0; quizCombo = 0; quizMaxCombo = 0;
+  renderQuizQuestion(mixedNode);
+}
+
+// ═══════════════════════════════════════
+// PRACTICE MENU — Old category picker
+// ═══════════════════════════════════════
+function showPracticeMenu() {
   const container = document.getElementById('practiceContent');
   const ankiDue = getAnkiDueCount();
   const weakCount = (state.weakWords || []).length;
   
   container.innerHTML = `
     <h2 class="section-title"><span class="emoji">🎯</span> תרגול</h2>
+    <p style="font-size:.85rem;color:var(--text3);margin:-8px 0 12px">עבר לתפריט נושאים</p>
     
     ${ankiDue > 0 ? `
       <div class="card card-clickable" style="border-color:var(--indigo)" onclick="Practice.startAnki()">
@@ -909,7 +1063,7 @@ function render() {
     ` : ''}
     
     ${weakCount > 0 ? `
-      <div class="card card-clickable" style="border-color:var(--red)" onclick="Practice.startWeakWords()">
+      <div class="card card-clickable" style="border-color:var(--red)" onclick="Practice.startMistakesReview()">
         <div class="card-title">💪 מילים חלשות</div>
         <div class="card-desc">${weakCount} מילים שטעית בהן — אימון ממוקד</div>
         <button class="btn btn-danger btn-sm" style="margin-top:8px">תרגל</button>
@@ -937,6 +1091,26 @@ function render() {
       <div class="card-desc">תרגל הגייה עם הקלטה וציון</div>
       <button class="btn btn-primary btn-sm" style="margin-top:8px">🎤 התחל</button>
     </div>
+    <div class="card card-clickable" style="border-color:var(--indigo)" onclick="SentBuild.start()">
+      <div class="card-title">🧩 בניית משפטים</div>
+      <div class="card-desc">סדר את המילים במשפט הנכון — אתגר סדר מילים</div>
+      <button class="btn btn-primary btn-sm" style="margin-top:8px">🧩 התחל</button>
+    </div>
+    <div class="card card-clickable" style="border-color:var(--indigo)" onclick="Listening.start('${state.level}')">
+      <div class="card-title">🎧 הבנת הנשמע</div>
+      <div class="card-desc">שמע משפט באיטלקית ובחר את התרגום הנכון בעברית</div>
+      <button class="btn btn-primary btn-sm" style="margin-top:8px">🎧 התחל</button>
+    </div>
+    <div class="card card-clickable" style="border-color:var(--orange)" onclick="nav('exams')">
+      <div class="card-title">📝 מבחנים רשמיים</div>
+      <div class="card-desc">התכונן למבחני ההסמכה של AIL Firenze — DELI, DILI, DALI</div>
+      <button class="btn btn-primary btn-sm" style="margin-top:8px">📝 פתח</button>
+    </div>
+    <div class="card card-clickable" onclick="nav('grammar')">
+      <div class="card-title">📖 טיפים דקדוקיים</div>
+      <div class="card-desc">35 טיפים דקדוקיים מאיטלקית ברמות A1 עד C2</div>
+      <button class="btn btn-primary btn-sm" style="margin-top:8px">📖 פתח</button>
+    </div>
   `;
 }
 
@@ -952,6 +1126,44 @@ function startRandomSentences() {
 // ═══════════════════════════════════════
 // HELPERS
 // ═══════════════════════════════════════
+function getWordsForNode(node) {
+  var cat = node.category || node.id;
+  // Try exact match first
+  var found = (APP_DATA.words || []).filter(function(w) { return w.cat === cat; });
+  if (found.length > 0) return found.slice(0, 8);
+  // Try Hebrew category match via CATEGORY_MAP
+  var heCat = window.CATEGORY_MAP && window.CATEGORY_MAP[cat];
+  if (heCat) {
+    found = (APP_DATA.words || []).filter(function(w) { return w.cat === heCat; });
+    if (found.length > 0) return found.slice(0, 8);
+  }
+  // Try catAliases
+  found = (APP_DATA.words || []).filter(function(w) { return w.catAliases && w.catAliases.indexOf(cat) !== -1; });
+  if (found.length > 0) return found.slice(0, 8);
+  // Try partial name match
+  found = (APP_DATA.words || []).filter(function(w) { return node.name.indexOf(w.cat) !== -1 || w.cat.indexOf(node.name) !== -1; });
+  return found.slice(0, 8);
+}
+
+function getSentencesForNode(node) {
+  var cat = node.category || node.id;
+  // Try exact match first
+  var found = (APP_DATA.sentences || []).filter(function(s) { return s.cat === cat; });
+  if (found.length > 0) return found.slice(0, 5);
+  // Try Hebrew category match via CATEGORY_MAP
+  var heCat = window.CATEGORY_MAP && window.CATEGORY_MAP[cat];
+  if (heCat) {
+    found = (APP_DATA.sentences || []).filter(function(s) { return s.cat === heCat; });
+    if (found.length > 0) return found.slice(0, 5);
+  }
+  // Try catAliases
+  found = (APP_DATA.sentences || []).filter(function(s) { return s.catAliases && s.catAliases.indexOf(cat) !== -1; });
+  if (found.length > 0) return found.slice(0, 5);
+  // Try partial name match
+  found = (APP_DATA.sentences || []).filter(function(s) { return node.name.indexOf(s.cat) !== -1 || s.cat.indexOf(node.name) !== -1; });
+  return found.slice(0, 5);
+}
+
 function shuffle(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -982,14 +1194,133 @@ function isUnlocked(node) {
 
 // ── EXPOSE ──
 return {
-  render, startWordLesson, startSentenceLesson, startQuiz, startDialogue,
-  startAnki, startCILSExam, startWeakWords, startRandomSentences,
+  render, showPracticeMenu, startMixedPractice, getWordsForLevel,
+  startWordLesson, startSentenceLesson, startQuiz, startDialogue,
+  startAnki, startCILSExam, startMatchGame, renderMatchGame, handleMatchClick, startMistakesReview, startWeakWords, startRandomSentences,
   answerWord, checkTyped, recordWord, answerQuiz, checkQuizTyped,
   answerDialogue, recordDialogue, nextDialogueLine,
   revealAnki, rateAnki, getAnkiDueCount,
   answerCILS, checkCILSTyped, startWeakQuiz,
   nextSentence, renderSentence, recordSentence,
-  _wordLesson: null, _quizNode: null, _dialogueNode: null
+  _wordLesson: null, _quizNode: null, _dialogueNode: null, _insideStartQuiz: false
 };
 
 })();
+
+
+// ═══════════════════════════════════════
+// MATCH PAIRS GAME
+// ═══════════════════════════════════════
+let matchState = null;
+
+function startMatchGame(node) {
+  const container = document.getElementById('practiceContent');
+  if (!container) return;
+  
+  const words = (node && node.words) ? node.words : shuffle(APP_DATA.words || []).slice(0, 5);
+  if (words.length < 4) return toast('אין מספיק מילים לשלב זה', 'warning');
+  
+  const pool = words.slice(0, 4);
+  const cards = [];
+  pool.forEach(w => {
+    cards.push({ id: w.target, text: w.target, type: 'target', w });
+    cards.push({ id: w.target, text: w.native, type: 'native', w });
+  });
+  
+  matchState = {
+    cards: shuffle(cards),
+    selected: null,
+    matched: 0,
+    total: pool.length,
+    node: node
+  };
+  
+  renderMatchGame();
+}
+
+function renderMatchGame() {
+  const container = document.getElementById('practiceContent');
+  if (!container) return;
+  
+  let html = `
+    <button class="back-btn" onclick="nav('learn')">← סיום</button>
+    <div style="text-align:center;margin-bottom:20px">
+      <h2 style="font-size:1.4rem;font-weight:800">התאמת זוגות 🧩</h2>
+      <p style="font-size:.85rem;color:var(--text2)">לחץ על מילה באיטלקית ואז על התרגום שלה</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:10px">
+  `;
+  
+  matchState.cards.forEach((c, idx) => {
+    const isMatched = c.matched ? 'opacity:0;pointer-events:none' : '';
+    const isSelected = (matchState.selected === idx) ? 'border-color:var(--primary);background:var(--surface2)' : '';
+    html += `
+      <div class="card card-clickable" style="text-align:center;font-weight:700;${isMatched};${isSelected}"
+        onclick="Practice.handleMatchClick(${idx})">
+        ${c.text}
+      </div>
+    `;
+  });
+  
+  html += `</div>`;
+  container.innerHTML = html;
+}
+
+function handleMatchClick(idx) {
+  const c = matchState.cards[idx];
+  if (c.matched) return;
+  
+  if (matchState.selected === null) {
+    matchState.selected = idx;
+    if (c.type === 'target') speak(c.text);
+    renderMatchGame();
+  } else {
+    const prev = matchState.cards[matchState.selected];
+    if (matchState.selected === idx) {
+      // deselect
+      matchState.selected = null;
+      renderMatchGame();
+      return;
+    }
+    
+    if (prev.id === c.id && prev.type !== c.type) {
+      // Match!
+      if (c.type === 'target') speak(c.text);
+      else speak(prev.text);
+      
+      prev.matched = true;
+      c.matched = true;
+      matchState.matched++;
+      matchState.selected = null;
+      
+      if (matchState.matched >= matchState.total) {
+        addXP(20);
+        confetti();
+        setTimeout(() => nav('learn'), 1500);
+      } else {
+        renderMatchGame();
+      }
+    } else {
+      // Wrong
+      toast('טעות!', 'error');
+      const h = getHearts();
+      if (h.count > 0) useHeart();
+      matchState.selected = null;
+      renderMatchGame();
+    }
+  }
+}
+
+// ═══════════════════════════════════════
+// PRACTICE MISTAKES (SRS)
+// ═══════════════════════════════════════
+function startMistakesReview() {
+  const weak = state.weakWords || [];
+  if (weak.length < 3) return toast('אין לך מספיק מילים חלשות כדי לתרגל! כל הכבוד!', 'success');
+  
+  // Convert weak words strings back to word objects
+  const wordsToPractice = weak.map(hw => (APP_DATA.words||[]).find(w => w.native === hw)).filter(Boolean).slice(0, 5);
+  if (wordsToPractice.length < 3) return toast('אין מספיק מילים לתרגול.', 'warning');
+  
+  startWordLesson({ id: 'mistakes', name: 'תרגול טעויות', icon: '❤️', words: wordsToPractice });
+}

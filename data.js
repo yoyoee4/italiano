@@ -5987,5 +5987,689 @@ const APP_DATA = {
         }
       ]
     }
+  ],
+"sentences": [
+    // === A1 (40 sentences) ===
+    { "target": "Io sono italiano.", "native": "אני איטלקי.", "en": "I am Italian.", "level": "A1", "cat": "general" },
+    { "target": "Tu come ti chiami?", "native": "איך קוראים לך?", "en": "What is your name?", "level": "A1", "cat": "general" },
+    { "target": "Lei è molto gentile.", "native": "היא מאוד אדיבה.", "en": "She is very kind.", "level": "A1", "cat": "general" },
+    { "target": "Noi abitiamo a Roma.", "native": "אנחנו גרים ברומא.", "en": "We live in Rome.", "level": "A1", "cat": "general" },
+    { "target": "Loro parlano italiano.", "native": "הם מדברים איטלקית.", "en": "They speak Italian.", "level": "A1", "cat": "general" },
+    { "target": "Oggi fa bel tempo.", "native": "היום מזג האוויר יפה.", "en": "Today the weather is nice.", "level": "A1", "cat": "general" },
+    { "target": "Io ho un gatto nero.", "native": "יש לי חתול שחור.", "en": "I have a black cat.", "level": "A1", "cat": "general" },
+    { "target": "Questa è la mia casa.", "native": "זה הבית שלי.", "en": "This is my house.", "level": "A1", "cat": "general" },
+    { "target": "Il libro è sul tavolo.", "native": "הספר על השולחן.", "en": "The book is on the table.", "level": "A1", "cat": "general" },
+    { "target": "Mangio la pizza ogni venerdì.", "native": "אני אוכל פיצה כל יום שישי.", "en": "I eat pizza every Friday.", "level": "A1", "cat": "general" },
+    { "target": "Vado al mercato con mia madre.", "native": "אני הולך לשוק עם אמא שלי.", "en": "I go to the market with my mother.", "level": "A1", "cat": "general" },
+    { "target": "Lui beve un caffè al bar.", "native": "הוא שותה קפה בבית הקפה.", "en": "He drinks a coffee at the bar.", "level": "A1", "cat": "general" },
+    { "target": "Le finestre della camera sono grandi.", "native": "החלונות של החדר גדולים.", "en": "The windows of the room are big.", "level": "A1", "cat": "general" },
+    { "target": "Il mio compleanno è in gennaio.", "native": "יום ההולדת שלי בינואר.", "en": "My birthday is in January.", "level": "A1", "cat": "general" },
+    { "target": "Dove abiti tu?", "native": "איפה אתה גר?", "en": "Where do you live?", "level": "A1", "cat": "general" },
+    { "target": "Io studio italiano ogni sera.", "native": "אני לומד איטלקית כל ערב.", "en": "I study Italian every evening.", "level": "A1", "cat": "general" },
+    { "target": "Il ristorante apre alle sette.", "native": "המסעדה נפתחת בשבע.", "en": "The restaurant opens at seven.", "level": "A1", "cat": "general" },
+    { "target": "Vorrei un gelato alla fragola.", "native": "הייתי רוצה גלידה בתות.", "en": "I would like a strawberry ice cream.", "level": "A1", "cat": "general" },
+    { "target": "Quanto costa questa borsa?", "native": "כמה עולה התיק הזה?", "en": "How much does this bag cost?", "level": "A1", "cat": "general" },
+    { "target": "Lui è alto e ha i capelli biondi.", "native": "הוא גבוה ויש לו שיער בלונדיני.", "en": "He is tall and has blond hair.", "level": "A1", "cat": "general" },
+    { "target": "Noi preferiamo il tè al caffè.", "native": "אנחנו מעדיפים תה על קפה.", "en": "We prefer tea to coffee.", "level": "A1", "cat": "general" },
+    { "target": "La piazza è molto affollata oggi.", "native": "הכיכר מאוד צפופה היום.", "en": "The square is very crowded today.", "level": "A1", "cat": "general" },
+    { "target": "I bambini giocano nel parco.", "native": "הילדים משחקים בפארק.", "en": "The children play in the park.", "level": "A1", "cat": "general" },
+    { "target": "Loro sono amici da molti anni.", "native": "הם חברים כבר הרבה שנים.", "en": "They have been friends for many years.", "level": "A1", "cat": "general" },
+    { "target": "Mi piace ascoltare la musica.", "native": "אני אוהב להאזין למוזיקה.", "en": "I like listening to music.", "level": "A1", "cat": "general" },
+    { "target": "Buongiorno, come stai?", "native": "בוקר טוב, מה שלומך?", "en": "Good morning, how are you?", "level": "A1", "cat": "general" },
+    { "target": "Arrivederci e grazie!", "native": "להתראות ותודה!", "en": "Goodbye and thank you!", "level": "A1", "cat": "general" },
+    { "target": "Il gatto è sul divano.", "native": "החתול על הספה.", "en": "The cat is on the sofa.", "level": "A1", "cat": "general" },
+    { "target": "Oggi è lunedì.", "native": "היום יום שני.", "en": "Today is Monday.", "level": "A1", "cat": "general" },
+    { "target": "La mela è rossa.", "native": "התפוח אדום.", "en": "The apple is red.", "level": "A1", "cat": "general" },
+    { "target": "Mio padre è cuoco.", "native": "אבא שלי הוא טבח.", "en": "My father is a cook.", "level": "A1", "cat": "general" },
+    { "target": "La casa è grande.", "native": "הבית גדול.", "en": "The house is big.", "level": "A1", "cat": "general" },
+    { "target": "Ho un fratello e una sorella.", "native": "יש לי אח ואחות.", "en": "I have a brother and a sister.", "level": "A1", "cat": "general" },
+    { "target": "Il cane corre nel giardino.", "native": "הכלב רץ בגינה.", "en": "The dog runs in the garden.", "level": "A1", "cat": "general" },
+    { "target": "Loro sono studenti.", "native": "הם סטודנטים.", "en": "They are students.", "level": "A1", "cat": "general" },
+    { "target": "La macchina è blu.", "native": "המכונית כחולה.", "en": "The car is blue.", "level": "A1", "cat": "general" },
+    { "target": "Il sole splende oggi.", "native": "השמש זורחת היום.", "en": "The sun is shining today.", "level": "A1", "cat": "general" },
+    { "target": "Noi mangiamo insieme.", "native": "אנחנו אוכלים יחד.", "en": "We eat together.", "level": "A1", "cat": "general" },
+    { "target": "Lei è alta e magra.", "native": "היא גבוהה ורזה.", "en": "She is tall and thin.", "level": "A1", "cat": "general" },
+    { "target": "Dove sono le chiavi?", "native": "איפה המפתחות?", "en": "Where are the keys?", "level": "A1", "cat": "general" },
+    // === A2 (40 sentences) ===
+    { "target": "Ieri sera sono andato al cinema.", "native": "אתמול בערב הלכתי לקולנוע.", "en": "Last night I went to the cinema.", "level": "A2", "cat": "general" },
+    { "target": "Ha comprato un regalo per sua sorella.", "native": "הוא קנה מתנה לאחותו.", "en": "He bought a gift for his sister.", "level": "A2", "cat": "general" },
+    { "target": "D'estate andiamo sempre al mare.", "native": "בקיץ אנחנו תמיד הולכים לים.", "en": "In summer we always go to the sea.", "level": "A2", "cat": "general" },
+    { "target": "Quando ero piccolo avevo un cane.", "native": "כשהייתי קטן היה לי כלב.", "en": "When I was little I had a dog.", "level": "A2", "cat": "general" },
+    { "target": "Domani devo svegliarmi presto.", "native": "מחר אני חייב להתעורר מוקדם.", "en": "Tomorrow I have to wake up early.", "level": "A2", "cat": "general" },
+    { "target": "Questo ristorante serve una pasta buonissima.", "native": "המסעדה הזו מגישה פסטה טעימה מאוד.", "en": "This restaurant serves very tasty pasta.", "level": "A2", "cat": "general" },
+    { "target": "Lei sa parlare tre lingue diverse.", "native": "היא יודעת לדבר שלוש שפות שונות.", "en": "She can speak three different languages.", "level": "A2", "cat": "general" },
+    { "target": "Possiamo incontrarci domani pomeriggio?", "native": "אנחנו יכולים להיפגש מחר אחר הצהריים?", "en": "Can we meet tomorrow afternoon?", "level": "A2", "cat": "general" },
+    { "target": "Ho comprato frutta al mercato.", "native": "קניתי פירות בשוק.", "en": "I bought fruit at the market.", "level": "A2", "cat": "general" },
+    { "target": "Ogni mattina faccio colazione con il latte.", "native": "כל בוקר אני אוכל ארוחת בוקר עם חלב.", "en": "Every morning I have breakfast with milk.", "level": "A2", "cat": "general" },
+    { "target": "Non ho mai visitato la Sicilia.", "native": "מעולם לא ביקרתי בסיציליה.", "en": "I have never visited Sicily.", "level": "A2", "cat": "general" },
+    { "target": "Stasera cucino la cena per gli amici.", "native": "הערב אני מבשל ארוחת ערב לחברים.", "en": "Tonight I cook dinner for friends.", "level": "A2", "cat": "general" },
+    { "target": "La stazione ferroviaria è lontana da qui.", "native": "תחנת הרכבת רחוקה מכאן.", "en": "The train station is far from here.", "level": "A2", "cat": "general" },
+    { "target": "Mio fratello lavora in una banca.", "native": "אחי עובד בבנק.", "en": "My brother works in a bank.", "level": "A2", "cat": "general" },
+    { "target": "Durante il viaggio abbiamo visto molti musei.", "native": "במהלך הטיול ראינו מוזיאונים רבים.", "en": "During the trip we saw many museums.", "level": "A2", "cat": "general" },
+    { "target": "Preferisci la carne o il pesce?", "native": "אתה מעדיף בשר או דג?", "en": "Do you prefer meat or fish?", "level": "A2", "cat": "general" },
+    { "target": "Di solito vado a letto alle undici.", "native": "בדרך כלל אני הולך לישון באחת עשרה.", "en": "I usually go to bed at eleven.", "level": "A2", "cat": "general" },
+    { "target": "La casa di mia nonna è in campagna.", "native": "הבית של סבתא שלי בכפר.", "en": "My grandmother's house is in the countryside.", "level": "A2", "cat": "general" },
+    { "target": "Ieri ha piovuto tutto il giorno.", "native": "אתמול ירד גשם כל היום.", "en": "Yesterday it rained all day.", "level": "A2", "cat": "general" },
+    { "target": "Questa città ha molti monumenti antichi.", "native": "לעיר הזו יש הרבה מונומנטים עתיקים.", "en": "This city has many ancient monuments.", "level": "A2", "cat": "general" },
+    { "target": "Ho preso l'autobus per andare al lavoro.", "native": "לקחתי את האוטובוס כדי ללכת לעבודה.", "en": "I took the bus to go to work.", "level": "A2", "cat": "general" },
+    { "target": "Mi piace molto leggere libri di avventura.", "native": "אני מאוד אוהב לקרוא ספרי הרפתקאות.", "en": "I really like reading adventure books.", "level": "A2", "cat": "general" },
+    { "target": "Lei ha gli occhi verdi e i capelli rossi.", "native": "יש לה עיניים ירוקות ושיער אדום.", "en": "She has green eyes and red hair.", "level": "A2", "cat": "general" },
+    { "target": "Dobbiamo comprare il pane e il latte.", "native": "אנחנו צריכים לקנות לחם וחלב.", "en": "We have to buy bread and milk.", "level": "A2", "cat": "general" },
+    { "target": "Non mi sento bene, ho mal di testa.", "native": "אני לא מרגיש טוב, יש לי כאב ראש.", "en": "I don't feel well, I have a headache.", "level": "A2", "cat": "general" },
+    { "target": "A che ora apre la farmacia?", "native": "באיזו שעה נפתח בית המרקחת?", "en": "What time does the pharmacy open?", "level": "A2", "cat": "general" },
+    { "target": "Puoi darmi un bicchiere d'acqua?", "native": "אתה יכול לתת לי כוס מים?", "en": "Can you give me a glass of water?", "level": "A2", "cat": "general" },
+    { "target": "Il supermercato chiude alle otto.", "native": "הסופר נסגר בשמונה.", "en": "The supermarket closes at eight.", "level": "A2", "cat": "general" },
+    { "target": "Loro hanno viaggiato in treno per tutta l'Italia.", "native": "הם טיילו ברכבת בכל איטליה.", "en": "They traveled by train all over Italy.", "level": "A2", "cat": "general" },
+    { "target": "Scusi, dov'è la fermata dell'autobus?", "native": "סליחה, איפה תחנת האוטובוס?", "en": "Excuse me, where is the bus stop?", "level": "A2", "cat": "general" },
+    { "target": "Da bambino andavo in vacanza al mare ogni anno.", "native": "כילד נסעתי לחופשה לים כל שנה.", "en": "As a child I went on vacation to the sea every year.", "level": "A2", "cat": "general" },
+    { "target": "Lei ha preparato una torta per la festa.", "native": "היא הכינה עוגה למסיבה.", "en": "She made a cake for the party.", "level": "A2", "cat": "general" },
+    { "target": "Il gatto dorme tutto il giorno.", "native": "החתול ישן כל היום.", "en": "The cat sleeps all day.", "level": "A2", "cat": "general" },
+    { "target": "Noi abbiamo deciso di andare in montagna.", "native": "החלטנו לנסוע להרים.", "en": "We decided to go to the mountains.", "level": "A2", "cat": "general" },
+    { "target": "I miei genitori sono molto gentili.", "native": "ההורים שלי מאוד נחמדים.", "en": "My parents are very kind.", "level": "A2", "cat": "general" },
+    { "target": "Quanto tempo ci vuole per arrivare?", "native": "כמה זמן לוקח להגיע?", "en": "How long does it take to get there?", "level": "A2", "cat": "general" },
+    { "target": "Mi scusi, ho sbagliato strada.", "native": "סליחה, טעיתי בדרך.", "en": "Excuse me, I took the wrong street.", "level": "A2", "cat": "general" },
+    { "target": "Oggi è una bella giornata.", "native": "היום יום יפה.", "en": "Today is a beautiful day.", "level": "A2", "cat": "general" },
+    { "target": "Loro cantano molto bene.", "native": "הם שרים יפה מאוד.", "en": "They sing very well.", "level": "A2", "cat": "general" },
+    { "target": "Puoi ripetere, per favore?", "native": "אתה יכול לחזור, בבקשה?", "en": "Can you repeat, please?", "level": "A2", "cat": "general" },
+    // === B1 (50 sentences) ===
+    { "target": "Se avessi più tempo, viaggerei di più.", "native": "אם היה לי יותר זמן, הייתי מטייל יותר.", "en": "If I had more time, I would travel more.", "level": "B1", "cat": "general" },
+    { "target": "Non vedo l'ora di andare in Italia.", "native": "אני לא יכול לחכות לנסוע לאיטליה.", "en": "I can't wait to go to Italy.", "level": "B1", "cat": "general" },
+    { "target": "Mi hanno detto che il film è bellissimo.", "native": "אמרו לי שהסרט יפה מאוד.", "en": "They told me the movie is beautiful.", "level": "B1", "cat": "general" },
+    { "target": "Quando sono arrivato, la festa era già iniziata.", "native": "כשהגעתי, המסיבה כבר התחילה.", "en": "When I arrived, the party had already started.", "level": "B1", "cat": "general" },
+    { "target": "Potresti aiutarmi a portare queste borse?", "native": "תוכל לעזור לי לסחוב את התיקים האלה?", "en": "Could you help me carry these bags?", "level": "B1", "cat": "general" },
+    { "target": "Ogni weekend faccio una lunga passeggiata.", "native": "כל סוף שבוע אני עושה טיול ארוך.", "en": "Every weekend I take a long walk.", "level": "B1", "cat": "general" },
+    { "target": "Il mio sogno è di aprire un ristorante.", "native": "החלום שלי הוא לפתוח מסעדה.", "en": "My dream is to open a restaurant.", "level": "B1", "cat": "general" },
+    { "target": "Da bambino andavo sempre in montagna.", "native": "כילד תמיד נסעתי להרים.", "en": "As a child I always went to the mountains.", "level": "B1", "cat": "general" },
+    { "target": "Non mi piace quando la gente arriva in ritardo.", "native": "אני לא אוהב כשאנשים מאחרים.", "en": "I don't like when people arrive late.", "level": "B1", "cat": "general" },
+    { "target": "Penso che dovremmo prenotare prima.", "native": "אני חושב שכדאי לנו להזמין מקום מראש.", "en": "I think we should book in advance.", "level": "B1", "cat": "general" },
+    { "target": "È difficile trovare parcheggio in centro.", "native": "קשה למצוא חניה במרכז.", "en": "It's difficult to find parking downtown.", "level": "B1", "cat": "general" },
+    { "target": "Ho iniziato a studiare italiano per lavoro.", "native": "התחלתי ללמוד איטלקית בשביל העבודה.", "en": "I started studying Italian for work.", "level": "B1", "cat": "general" },
+    { "target": "Nonostante la pioggia, siamo usciti lo stesso.", "native": "למרות הגשם, יצאנו בכל זאת.", "en": "Despite the rain, we went out anyway.", "level": "B1", "cat": "general" },
+    { "target": "La settimana scorsa ho perso il portafoglio.", "native": "בשבוע שעבר איבדתי את הארנק.", "en": "Last week I lost my wallet.", "level": "B1", "cat": "general" },
+    { "target": "Preferirei rimanere a casa stasera.", "native": "הייתי מעדיף להישאר בבית הערב.", "en": "I would prefer to stay home tonight.", "level": "B1", "cat": "general" },
+    { "target": "Ti ricordi quando siamo andati a Venezia?", "native": "אתה זוכר כשנסענו לוונציה?", "en": "Do you remember when we went to Venice?", "level": "B1", "cat": "general" },
+    { "target": "La cucina italiana è una delle migliori al mondo.", "native": "המטבח האיטלקי הוא אחד הטובים בעולם.", "en": "Italian cuisine is one of the best in the world.", "level": "B1", "cat": "general" },
+    { "target": "Mi sono iscritto a un corso di italiano.", "native": "נרשמתי לקורס איטלקית.", "en": "I enrolled in an Italian course.", "level": "B1", "cat": "general" },
+    { "target": "Dovresti visitare Firenze almeno una volta.", "native": "כדאי לך לבקר בפירנצה לפחות פעם אחת.", "en": "You should visit Florence at least once.", "level": "B1", "cat": "general" },
+    { "target": "Che cosa hai fatto durante le vacanze?", "native": "מה עשית במהלך החופשה?", "en": "What did you do during the holidays?", "level": "B1", "cat": "general" },
+    { "target": "Secondo me, questo ristorante è il migliore.", "native": "לדעתי, המסעדה הזאת היא הכי טובה.", "en": "In my opinion, this restaurant is the best.", "level": "B1", "cat": "general" },
+    { "target": "Potrebbe dirmi dov'è la stazione?", "native": "תוכל להגיד לי איפה התחנה?", "en": "Could you tell me where the station is?", "level": "B1", "cat": "general" },
+    { "target": "Vorrei parlare con il direttore, per favore.", "native": "הייתי רוצה לדבר עם המנהל, בבקשה.", "en": "I would like to speak with the manager, please.", "level": "B1", "cat": "general" },
+    { "target": "Ho prenotato una camera per tre notti.", "native": "הזמנתי חדר לשלושה לילות.", "en": "I booked a room for three nights.", "level": "B1", "cat": "general" },
+    { "target": "Mi piace molto la musica classica.", "native": "אני מאוד אוהב מוזיקה קלאסית.", "en": "I really like classical music.", "level": "B1", "cat": "general" },
+    { "target": "Lui lavora come ingegnere informatico.", "native": "הוא עובד כמהנדס תוכנה.", "en": "He works as a software engineer.", "level": "B1", "cat": "general" },
+    { "target": "Abbiamo visitato il museo e la galleria d'arte.", "native": "ביקרנו במוזיאון ובגלריה לאמנות.", "en": "We visited the museum and the art gallery.", "level": "B1", "cat": "general" },
+    { "target": "Non capisco perché non mi rispondi.", "native": "אני לא מבין למה אתה לא עונה לי.", "en": "I don't understand why you don't answer me.", "level": "B1", "cat": "general" },
+    { "target": "Dovremmo andare dal medico per un controllo.", "native": "כדאי לנו ללכת לרופא לבדיקה.", "en": "We should go to the doctor for a checkup.", "level": "B1", "cat": "general" },
+    { "target": "Hai sentito le ultime notizie?", "native": "שמעת את החדשות האחרונות?", "en": "Did you hear the latest news?", "level": "B1", "cat": "general" },
+    { "target": "Mi raccomando, stai attento per strada!", "native": "תזהר, היה זהיר בדרך!", "en": "Take care, be careful on the road!", "level": "B1", "cat": "general" },
+    { "target": "Non sono d'accordo con quello che hai detto.", "native": "אני לא מסכים עם מה שאמרת.", "en": "I don't agree with what you said.", "level": "B1", "cat": "general" },
+    { "target": "Se potessi, vivrei al mare.", "native": "אם יכולתי, הייתי גר ליד הים.", "en": "If I could, I would live by the sea.", "level": "B1", "cat": "general" },
+    { "target": "Il mio amico abita a Milano da dieci anni.", "native": "חבר שלי גר במילאנו כבר עשר שנים.", "en": "My friend has been living in Milan for ten years.", "level": "B1", "cat": "general" },
+    { "target": "La mostra d'arte è stata molto interessante.", "native": "תערוכת האמנות הייתה מעניינת מאוד.", "en": "The art exhibition was very interesting.", "level": "B1", "cat": "general" },
+    { "target": "Devo assolutamente finire questo progetto.", "native": "אני חייב לסיים את הפרויקט הזה בהחלט.", "en": "I absolutely have to finish this project.", "level": "B1", "cat": "general" },
+    { "target": "Che tipo di musica preferisci?", "native": "איזה סוג מוזיקה אתה מעדיף?", "en": "What kind of music do you prefer?", "level": "B1", "cat": "general" },
+    { "target": "Mia sorella si è laureata in legge.", "native": "אחותי סיימה תואר במשפטים.", "en": "My sister graduated in law.", "level": "B1", "cat": "general" },
+    { "target": "Mi dispiace ma non posso venire alla festa.", "native": "אני מצטער אבל אני לא יכול לבוא למסיבה.", "en": "I'm sorry but I can't come to the party.", "level": "B1", "cat": "general" },
+    { "target": "Cosa ne pensi del nuovo film?", "native": "מה דעתך על הסרט החדש?", "en": "What do you think about the new movie?", "level": "B1", "cat": "general" },
+    { "target": "Il tempo passa veloce quando ci si diverte.", "native": "הזמן עובר מהר כשנהנים.", "en": "Time flies when you're having fun.", "level": "B1", "cat": "general" },
+    { "target": "Dovresti provare il tiramisù, è fantastico!", "native": "כדאי לך לנסות את הטירמיסו, הוא מעולה!", "en": "You should try the tiramisu, it's fantastic!", "level": "B1", "cat": "general" },
+    { "target": "Noi ci vediamo ogni sabato per giocare a calcio.", "native": "אנחנו נפגשים כל שבת לשחק כדורגל.", "en": "We meet every Saturday to play soccer.", "level": "B1", "cat": "general" },
+    { "target": "Lei parla italiano molto bene per essere straniera.", "native": "היא מדברת איטלקית טוב מאוד למי שהיא זרה.", "en": "She speaks Italian very well for being a foreigner.", "level": "B1", "cat": "general" },
+    { "target": "Ho dimenticato di comprare il pane.", "native": "שכחתי לקנות לחם.", "en": "I forgot to buy bread.", "level": "B1", "cat": "general" },
+    { "target": "Appena arrivo a casa, ti chiamo.", "native": "ברגע שאגיע הביתה, אתקשר אליך.", "en": "As soon as I get home, I'll call you.", "level": "B1", "cat": "general" },
+    { "target": "Ogni anno Milano ospita la settimana della moda.", "native": "מילאנו מארחת כל שנה את שבוע האופנה.", "en": "Every year Milan hosts fashion week.", "level": "B1", "cat": "general" },
+    { "target": "La pasta si mangia in tutta Italia.", "native": "פסטה אוכלים בכל איטליה.", "en": "Pasta is eaten all over Italy.", "level": "B1", "cat": "general" },
+    { "target": "Potrebbe farmi uno sconto?", "native": "תוכל לתת לי הנחה?", "en": "Could you give me a discount?", "level": "B1", "cat": "general" },
+    { "target": "Quanto tempo hai studiato italiano?", "native": "כמה זמן למדת איטלקית?", "en": "How long have you studied Italian?", "level": "B1", "cat": "general" },
+    // === B2 (40 sentences) ===
+    { "target": "Se avessi saputo prima, sarei venuto con te.", "native": "אם הייתי יודע קודם, הייתי בא איתך.", "en": "If I had known earlier, I would have come with you.", "level": "B2", "cat": "general" },
+    { "target": "Nonostante avesse studiato tanto, non ha passato l'esame.", "native": "למרות שלמד הרבה, הוא לא עבר את המבחן.", "en": "Although he studied a lot, he didn't pass the exam.", "level": "B2", "cat": "general" },
+    { "target": "Il governo ha annunciato nuove misure economiche.", "native": "הממשלה הכריזה על צעדים כלכליים חדשים.", "en": "The government announced new economic measures.", "level": "B2", "cat": "general" },
+    { "target": "Mi piacerebbe vivere all'estero per qualche anno.", "native": "הייתי רוצה לגור בחו\"ל לכמה שנים.", "en": "I would like to live abroad for a few years.", "level": "B2", "cat": "general" },
+    { "target": "Non è giusto giudicare senza conoscere i fatti.", "native": "זה לא הוגן לשפוט בלי לדעת את העובדות.", "en": "It's not fair to judge without knowing the facts.", "level": "B2", "cat": "general" },
+    { "target": "La ricerca scientifica ha fatto grandi progressi.", "native": "המחקר המדעי עשה התקדמות גדולה.", "en": "Scientific research has made great progress.", "level": "B2", "cat": "general" },
+    { "target": "L'inquinamento dell'aria è un problema serio.", "native": "זיהום האוויר הוא בעיה רצינית.", "en": "Air pollution is a serious problem.", "level": "B2", "cat": "general" },
+    { "target": "Bisognerebbe investire di più nelle energie rinnovabili.", "native": "צריך להשקיע יותר באנרגיות מתחדשות.", "en": "We should invest more in renewable energy.", "level": "B2", "cat": "general" },
+    { "target": "Ho apprezzato molto la tua sincerità.", "native": "הערכתי מאוד את הכנות שלך.", "en": "I really appreciated your honesty.", "level": "B2", "cat": "general" },
+    { "target": "L'opera lirica italiana è famosa in tutto il mondo.", "native": "האופרה האיטלקית מפורסמת בכל העולם.", "en": "Italian opera is famous all over the world.", "level": "B2", "cat": "general" },
+    { "target": "Mi sono reso conto di aver sbagliato.", "native": "הבנתי שטעיתי.", "en": "I realized I was wrong.", "level": "B2", "cat": "general" },
+    { "target": "La società italiana è cambiata molto negli ultimi anni.", "native": "החברה האיטלקית השתנתה מאוד בשנים האחרונות.", "en": "Italian society has changed a lot in recent years.", "level": "B2", "cat": "general" },
+    { "target": "È importante mantenere uno stile di vita sano.", "native": "חשוב לשמור על אורח חיים בריא.", "en": "It's important to maintain a healthy lifestyle.", "level": "B2", "cat": "general" },
+    { "target": "Vorrei sottoporre la tua attenzione a questo problema.", "native": "הייתי רוצה להפנות את תשומת לבך לבעיה הזו.", "en": "I would like to draw your attention to this problem.", "level": "B2", "cat": "general" },
+    { "target": "Il film tratta temi sociali molto complessi.", "native": "הסרט עוסק בנושאים חברתיים מורכבים מאוד.", "en": "The film deals with very complex social issues.", "level": "B2", "cat": "general" },
+    { "target": "Nonostante le difficoltà, hanno portato a termine il progetto.", "native": "למרות הקשיים, הם השלימו את הפרויקט.", "en": "Despite the difficulties, they completed the project.", "level": "B2", "cat": "general" },
+    { "target": "Le politiche ambientali devono essere migliorate.", "native": "יש לשפר את המדיניות הסביבתית.", "en": "Environmental policies need to be improved.", "level": "B2", "cat": "general" },
+    { "target": "Sarebbe opportuno discutere la questione con il direttore.", "native": "כדאי לדון בעניין עם המנהל.", "en": "It would be appropriate to discuss the matter with the director.", "level": "B2", "cat": "general" },
+    { "target": "La globalizzazione ha portato molti cambiamenti.", "native": "הגלובליזציה הביאה שינויים רבים.", "en": "Globalization has brought many changes.", "level": "B2", "cat": "general" },
+    { "target": "Condivido pienamente la tua opinione.", "native": "אני שותף מלא לדעתך.", "en": "I fully share your opinion.", "level": "B2", "cat": "general" },
+    { "target": "Il congiuntivo è un modo verbale molto usato in italiano.", "native": "הקוניונטיבו הוא מודוס פועלי נפוץ מאוד באיטלקית.", "en": "The subjunctive is a very used verbal mood in Italian.", "level": "B2", "cat": "general" },
+    { "target": "L'azienda ha deciso di espandere il mercato all'estero.", "native": "החברה החליטה להרחיב את השוק לחו\"ל.", "en": "The company decided to expand the market abroad.", "level": "B2", "cat": "general" },
+    { "target": "Penso che sia giusto dare una seconda possibilità.", "native": "אני חושב שזה נכון לתת סיכוי שני.", "en": "I think it's right to give a second chance.", "level": "B2", "cat": "general" },
+    { "target": "La mostra di Caravaggio ha attirato migliaia di visitatori.", "native": "תערוכת קאראווג'ו משכה אלפי מבקרים.", "en": "The Caravaggio exhibition attracted thousands of visitors.", "level": "B2", "cat": "general" },
+    { "target": "Non è facile conciliare lavoro e famiglia.", "native": "לא קל לשלב עבודה ומשפחה.", "en": "It's not easy to balance work and family.", "level": "B2", "cat": "general" },
+    { "target": "L'intelligenza artificiale sta rivoluzionando molti settori.", "native": "בינה מלאכותית מחוללת מהפכה בתחומים רבים.", "en": "Artificial intelligence is revolutionizing many sectors.", "level": "B2", "cat": "general" },
+    { "target": "Ho letto un articolo molto interessante sul cambiamento climatico.", "native": "קראתי מאמר מעניין מאוד על שינוי אקלים.", "en": "I read a very interesting article about climate change.", "level": "B2", "cat": "general" },
+    { "target": "La situazione economica sta migliorando gradualmente.", "native": "המצב הכלכלי משתפר בהדרגה.", "en": "The economic situation is gradually improving.", "level": "B2", "cat": "general" },
+    { "target": "Sono rimasto molto colpito dalla sua presentazione.", "native": "התרשמתי מאוד מהמצגת שלו.", "en": "I was very impressed by his presentation.", "level": "B2", "cat": "general" },
+    { "target": "È fondamentale che tutti partecipino alla riunione.", "native": "חיוני שכולם ישתתפו בפגישה.", "en": "It's essential that everyone attends the meeting.", "level": "B2", "cat": "general" },
+    { "target": "Il turismo è una delle principali risorse dell'Italia.", "native": "תיירות היא אחד המשאבים העיקריים של איטליה.", "en": "Tourism is one of Italy's main resources.", "level": "B2", "cat": "general" },
+    { "target": "Ho partecipato a un convegno sulla sostenibilità ambientale.", "native": "השתתפתי בכנס על קיימות סביבתית.", "en": "I attended a conference on environmental sustainability.", "level": "B2", "cat": "general" },
+    { "target": "L'università offre molti corsi di specializzazione.", "native": "האוניברסיטה מציעה הרבה קורסי התמחות.", "en": "The university offers many specialization courses.", "level": "B2", "cat": "general" },
+    { "target": "Il dibattito politico è stato molto acceso.", "native": "הוויכוח הפוליטי היה סוער מאוד.", "en": "The political debate was very heated.", "level": "B2", "cat": "general" },
+    { "target": "Mi auguro che tu possa realizzare i tuoi sogni.", "native": "אני מקווה שתוכל להגשים את החלומות שלך.", "en": "I hope you can realize your dreams.", "level": "B2", "cat": "general" },
+    { "target": "La tecnologia ha trasformato il modo di comunicare.", "native": "הטכנולוגיה שינתה את הדרך לתקשר.", "en": "Technology has transformed the way we communicate.", "level": "B2", "cat": "general" },
+    { "target": "È importante rispettare le scadenze.", "native": "חשוב לכבד מועדי סיום.", "en": "It's important to respect deadlines.", "level": "B2", "cat": "general" },
+    { "target": "La qualità della vita in Italia è molto alta.", "native": "איכות החיים באיטליה גבוהה מאוד.", "en": "The quality of life in Italy is very high.", "level": "B2", "cat": "general" },
+    { "target": "Ho deciso di cambiare lavoro dopo cinque anni.", "native": "החלטתי להחליף עבודה אחרי חמש שנים.", "en": "I decided to change jobs after five years.", "level": "B2", "cat": "general" },
+    { "target": "Il sistema sanitario italiano è universale.", "native": "מערכת הבריאות האיטלקית היא אוניברסלית.", "en": "The Italian healthcare system is universal.", "level": "B2", "cat": "general" },
+    // === C1 (30 sentences) ===
+    { "target": "Sarebbe stato preferibile discutere prima di prendere una decisione.", "native": "היה עדיף לדון לפני קבלת החלטה.", "en": "It would have been preferable to discuss before making a decision.", "level": "C1", "cat": "general" },
+    { "target": "Nonostante le avversità, ha perseverato fino al raggiungimento dell'obiettivo.", "native": "למרות הקשיים, הוא התמיד עד להשגת המטרה.", "en": "Despite the adversity, he persevered until achieving the goal.", "level": "C1", "cat": "general" },
+    { "target": "L'articolo analizza le implicazioni socioeconomiche del fenomeno.", "native": "המאמר מנתח את ההשלכות החברתיות-כלכליות של התופעה.", "en": "The article analyzes the socioeconomic implications of the phenomenon.", "level": "C1", "cat": "general" },
+    { "target": "Qualora si verifichino determinate condizioni, l'accordo sarà revocato.", "native": "במידה ויתקיימו תנאים מסוימים, ההסכם יבוטל.", "en": "Should certain conditions occur, the agreement will be revoked.", "level": "C1", "cat": "general" },
+    { "target": "I mutamenti climatici rappresentano una minaccia concreta.", "native": "שינויי האקלים מהווים איום ממשי.", "en": "Climate change represents a concrete threat.", "level": "C1", "cat": "general" },
+    { "target": "È fondamentale sensibilizzare l'opinione pubblica su questo tema.", "native": "חיוני להעלות את המודעות הציבורית בנושא זה.", "en": "It is essential to raise public awareness on this issue.", "level": "C1", "cat": "general" },
+    { "target": "L'intervento del governo ha sortito effetti positivi sull'economia.", "native": "התערבות הממשלה הניבה השפעות חיוביות על הכלכלה.", "en": "The government intervention produced positive effects on the economy.", "level": "C1", "cat": "general" },
+    { "target": "La sua interpretazione del testo è estremamente approfondita.", "native": "הפרשנות שלו לטקסט היא מעמיקה ביותר.", "en": "His interpretation of the text is extremely thorough.", "level": "C1", "cat": "general" },
+    { "target": "È auspicabile che vengano adottate misure più rigorose.", "native": "רצוי שיינקטו צעדים מחמירים יותר.", "en": "It is desirable that more rigorous measures be adopted.", "level": "C1", "cat": "general" },
+    { "target": "La critica letteraria contemporanea mette in discussione canoni consolidati.", "native": "הביקורת הספרותית העכשווית מטילה ספק בקנונים מבוססים.", "en": "Contemporary literary criticism questions established canons.", "level": "C1", "cat": "general" },
+    { "target": "Pur essendo un'idea affascinante, rimane difficilmente realizzabile.", "native": "למרות שזה רעיון מרתק, הוא נותר קשה למימוש.", "en": "Although it's a fascinating idea, it remains difficult to implement.", "level": "C1", "cat": "general" },
+    { "target": "Il fenomeno migratorio richiede una gestione complessa.", "native": "תופעת ההגירה דורשת ניהול מורכב.", "en": "The migratory phenomenon requires complex management.", "level": "C1", "cat": "general" },
+    { "target": "L'evoluzione tecnologica ha radicalmente trasformato il mercato del lavoro.", "native": "האבולוציה הטכנולוגית שינתה באופן קיצוני את שוק העבודה.", "en": "Technological evolution has radically transformed the labor market.", "level": "C1", "cat": "general" },
+    { "target": "Si tratta di un argomento dibattuto a livello internazionale.", "native": "מדובר בנושא שנדון ברמה בינלאומית.", "en": "It is a topic debated at an international level.", "level": "C1", "cat": "general" },
+    { "target": "Bisognerebbe incentivare la ricerca nel campo delle biotecnologie.", "native": "יש לעודד מחקר בתחום הביוטכנולוגיה.", "en": "Research in the field of biotechnology should be encouraged.", "level": "C1", "cat": "general" },
+    { "target": "Il romanzo esplora le complesse dinamiche psicologiche dei personaggi.", "native": "הרומן חוקר את הדינמיקה הפסיכולוגית המורכבת של הדמויות.", "en": "The novel explores the complex psychological dynamics of the characters.", "level": "C1", "cat": "general" },
+    { "target": "Le istituzioni culturali svolgono un ruolo cruciale nella società.", "native": "מוסדות תרבות ממלאים תפקיד מכריע בחברה.", "en": "Cultural institutions play a crucial role in society.", "level": "C1", "cat": "general" },
+    { "target": "La diplomazia italiana ha mediato con successo la controversia.", "native": "הדיפלומטיה האיטלקית תיווכה בהצלחה במחלוקת.", "en": "Italian diplomacy successfully mediated the dispute.", "level": "C1", "cat": "general" },
+    { "target": "L'analisi dei dati evidenzia una tendenza preoccupante.", "native": "ניתוח הנתונים מדגים מגמה מדאיגה.", "en": "The data analysis highlights a worrying trend.", "level": "C1", "cat": "general" },
+    { "target": "Il docente ha illustrato le principali correnti filosofiche del Novecento.", "native": "המרצה הציג את הזרמים הפילוסופיים העיקריים של המאה העשרים.", "en": "The professor illustrated the main philosophical currents of the twentieth century.", "level": "C1", "cat": "general" },
+    { "target": "Nonostante le differenze culturali, hanno trovato un terreno comune.", "native": "למרות ההבדלים התרבותיים, הם מצאו בסיס משותף.", "en": "Despite the cultural differences, they found common ground.", "level": "C1", "cat": "general" },
+    { "target": "La tutela del patrimonio artistico è una priorità nazionale.", "native": "הגנה על המורשת האמנותית היא עדיפות לאומית.", "en": "Protection of the artistic heritage is a national priority.", "level": "C1", "cat": "general" },
+    { "target": "Il processo di integrazione europea ha attraversato molte fasi.", "native": "תהליך האינטגרציה האירופית עבר שלבים רבים.", "en": "The European integration process has gone through many phases.", "level": "C1", "cat": "general" },
+    { "target": "L'articolo di fondo analizza le implicazioni della riforma.", "native": "מאמר המערכת מנתח את ההשלכות של הרפורמה.", "en": "The editorial analyzes the implications of the reform.", "level": "C1", "cat": "general" },
+    { "target": "Il dibattito parlamentare è stato trasmesso in diretta televisiva.", "native": "הדיון הפרלמנטרי שודר בשידור חי בטלוויזיה.", "en": "The parliamentary debate was broadcast live on television.", "level": "C1", "cat": "general" },
+    { "target": "La mostra fotografica documenta la trasformazione urbana di Milano.", "native": "תערוכת הצילומים מתעדת את השינוי האורבני של מילאנו.", "en": "The photographic exhibition documents the urban transformation of Milan.", "level": "C1", "cat": "general" },
+    { "target": "La poesia ermetica italiana è caratterizzata da un linguaggio complesso.", "native": "השירה ההרמטית האיטלקית מאופיינת בשפה מורכבת.", "en": "Italian hermetic poetry is characterized by complex language.", "level": "C1", "cat": "general" },
+    { "target": "L'opera di Dante Alighieri è considerata il fondamento della lingua italiana.", "native": "יצירתו של דנטה אליגיירי נחשבת לבסיס השפה האיטלקית.", "en": "Dante Alighieri's work is considered the foundation of the Italian language.", "level": "C1", "cat": "general" },
+    { "target": "La ricerca sull'intelligenza artificiale procede a ritmo sostenuto.", "native": "המחקר על בינה מלאכותית מתקדם בקצב מהיר.", "en": "Research on artificial intelligence proceeds at a rapid pace.", "level": "C1", "cat": "general" },
+    { "target": "La sostenibilità ambientale è diventata un imperativo categorico.", "native": "קיימות סביבתית הפכה לציווי קטגורי.", "en": "Environmental sustainability has become a categorical imperative.", "level": "C1", "cat": "general" }
+  ],
+"skillTree": [
+    // === A1 (13 nodes) ===
+    { "id": "A1_greetings", "level": "A1", "name": "ברכות והיכרות", "icon": "👋", "category": "greetings", "prerequisite": [], "wordCount": 20 },
+    { "id": "A1_numbers", "level": "A1", "name": "מספרים 1-100", "icon": "🔢", "category": "numbers", "prerequisite": ["A1_greetings"], "wordCount": 30 },
+    { "id": "A1_colors", "level": "A1", "name": "צבעים", "icon": "🎨", "category": "colors", "prerequisite": ["A1_greetings"], "wordCount": 15 },
+    { "id": "A1_family", "level": "A1", "name": "משפחה", "icon": "👨‍👩‍👧‍👦", "category": "family", "prerequisite": ["A1_greetings"], "wordCount": 20 },
+    { "id": "A1_essentials", "level": "A1", "name": "פעלים בסיסיים", "icon": "⚡", "category": "verbs", "prerequisite": ["A1_greetings"], "wordCount": 20 },
+    { "id": "A1_time", "level": "A1", "name": "זמן - ימים וחודשים", "icon": "📅", "category": "time", "prerequisite": ["A1_numbers"], "wordCount": 25 },
+    { "id": "A1_food", "level": "A1", "name": "אוכל ושתייה", "icon": "🍕", "category": "food", "prerequisite": ["A1_essentials"], "wordCount": 25 },
+    { "id": "A1_body", "level": "A1", "name": "גוף האדם", "icon": "🧍", "category": "body", "prerequisite": ["A1_essentials"], "wordCount": 25 },
+    { "id": "A1_adjectives", "level": "A1", "name": "תארים בסיסיים", "icon": "📝", "category": "adjectives", "prerequisite": ["A1_essentials"], "wordCount": 20 },
+    { "id": "A1_places", "level": "A1", "name": "מקומות בעיר", "icon": "🏘️", "category": "places", "prerequisite": ["A1_essentials"], "wordCount": 20 },
+    { "id": "A1_clothing", "level": "A1", "name": "ביגוד", "icon": "👕", "category": "clothing", "prerequisite": ["A1_essentials"], "wordCount": 20 },
+    { "id": "A1_weather", "level": "A1", "name": "מזג אוויר", "icon": "🌤️", "category": "weather", "prerequisite": ["A1_essentials"], "wordCount": 15 },
+    { "id": "A1_animals", "level": "A1", "name": "חיות", "icon": "🐾", "category": "animals", "prerequisite": ["A1_essentials"], "wordCount": 20 },
+    // === A2 (13 nodes) ===
+    { "id": "A2_past", "level": "A2", "name": "עבר קרוב (Passato Prossimo)", "icon": "⏪", "category": "grammar", "prerequisite": ["A1_essentials"], "wordCount": 25 },
+    { "id": "A2_directions", "level": "A2", "name": "הכוונה וכיוונים", "icon": "🗺️", "category": "travel", "prerequisite": ["A1_places"], "wordCount": 20 },
+    { "id": "A2_shopping", "level": "A2", "name": "קניות", "icon": "🛍️", "category": "shopping", "prerequisite": ["A1_food"], "wordCount": 20 },
+    { "id": "A2_restaurant", "level": "A2", "name": "במסעדה", "icon": "🍝", "category": "food", "prerequisite": ["A1_food"], "wordCount": 20 },
+    { "id": "A2_plans", "level": "A2", "name": "תכניות ועתיד", "icon": "📋", "category": "grammar", "prerequisite": ["A2_past"], "wordCount": 20 },
+    { "id": "A2_hobbies", "level": "A2", "name": "תחביבים", "icon": "🎯", "category": "general", "prerequisite": ["A1_essentials"], "wordCount": 20 },
+    { "id": "A2_describe", "level": "A2", "name": "לתאר אנשים", "icon": "👤", "category": "adjectives", "prerequisite": ["A1_adjectives"], "wordCount": 20 },
+    { "id": "A2_health", "level": "A2", "name": "בריאות וגוף", "icon": "🏥", "category": "health", "prerequisite": ["A1_body"], "wordCount": 20 },
+    { "id": "A2_travel", "level": "A2", "name": "טיולים", "icon": "✈️", "category": "travel", "prerequisite": ["A1_places"], "wordCount": 20 },
+    { "id": "A2_phone", "level": "A2", "name": "שיחות טלפון", "icon": "📞", "category": "general", "prerequisite": ["A1_essentials"], "wordCount": 15 },
+    { "id": "A2_emotions", "level": "A2", "name": "רגשות", "icon": "😊", "category": "emotions", "prerequisite": ["A1_adjectives"], "wordCount": 20 },
+    { "id": "A2_home", "level": "A2", "name": "בית וחיי יום יום", "icon": "🏠", "category": "general", "prerequisite": ["A1_essentials"], "wordCount": 20 },
+    { "id": "A2_transport", "level": "A2", "name": "תחבורה", "icon": "🚌", "category": "travel", "prerequisite": ["A1_places"], "wordCount": 20 },
+    // === B1 (12 nodes) ===
+    { "id": "B1_opinion", "level": "B1", "name": "הבעת דעה", "icon": "💬", "category": "general", "prerequisite": ["A2_emotions"], "wordCount": 25 },
+    { "id": "B1_conditional", "level": "B1", "name": "זמן תנאי", "icon": "🤔", "category": "grammar", "prerequisite": ["A2_past"], "wordCount": 20 },
+    { "id": "B1_future", "level": "B1", "name": "תכניות עתידיות", "icon": "🔮", "category": "grammar", "prerequisite": ["A2_plans"], "wordCount": 20 },
+    { "id": "B1_media", "level": "B1", "name": "חדשות ומדיה", "icon": "📰", "category": "media", "prerequisite": ["B1_opinion"], "wordCount": 20 },
+    { "id": "B1_work", "level": "B1", "name": "עבודה ומקצועות", "icon": "💼", "category": "work", "prerequisite": ["A2_home"], "wordCount": 25 },
+    { "id": "B1_regions", "level": "B1", "name": "מחוזות איטליה", "icon": "🇮🇹", "category": "culture", "prerequisite": ["A2_travel"], "wordCount": 20 },
+    { "id": "B1_cinema", "level": "B1", "name": "קולנוע וטלוויזיה", "icon": "🎬", "category": "media", "prerequisite": ["B1_media"], "wordCount": 20 },
+    { "id": "B1_advice", "level": "B1", "name": "מתן עצות", "icon": "💡", "category": "grammar", "prerequisite": ["B1_conditional"], "wordCount": 15 },
+    { "id": "B1_imperative", "level": "B1", "name": "ציווי ובקשות", "icon": "📢", "category": "grammar", "prerequisite": ["B1_conditional"], "wordCount": 20 },
+    { "id": "B1_bank", "level": "B1", "name": "בבנק ודואר", "icon": "🏦", "category": "general", "prerequisite": ["A2_shopping"], "wordCount": 15 },
+    { "id": "B1_storytelling", "level": "B1", "name": "סיפורים בעבר", "icon": "📖", "category": "grammar", "prerequisite": ["A2_past"], "wordCount": 20 },
+    { "id": "B1_culture", "level": "B1", "name": "תרבות איטלקית", "icon": "🎭", "category": "culture", "prerequisite": ["B1_regions"], "wordCount": 20 },
+    // === B2 (12 nodes) ===
+    { "id": "B2_complex_grammar", "level": "B2", "name": "דקדוק מורכב", "icon": "📚", "category": "grammar", "prerequisite": ["B1_conditional"], "wordCount": 25 },
+    { "id": "B2_formal_writing", "level": "B2", "name": "כתיבה רשמית", "icon": "✍️", "category": "general", "prerequisite": ["B1_work"], "wordCount": 20 },
+    { "id": "B2_debate", "level": "B2", "name": "דיונים וויכוחים", "icon": "🎤", "category": "general", "prerequisite": ["B1_opinion"], "wordCount": 20 },
+    { "id": "B2_literature", "level": "B2", "name": "ספרות איטלקית", "icon": "📕", "category": "art", "prerequisite": ["B1_culture"], "wordCount": 20 },
+    { "id": "B2_science", "level": "B2", "name": "מדע וטכנולוגיה", "icon": "🔬", "category": "science", "prerequisite": ["B1_media"], "wordCount": 20 },
+    { "id": "B2_job_interview", "level": "B2", "name": "ראיון עבודה", "icon": "👔", "category": "work", "prerequisite": ["B1_work"], "wordCount": 20 },
+    { "id": "B2_current_events", "level": "B2", "name": "אירועים אקטואליים", "icon": "🌍", "category": "media", "prerequisite": ["B1_media"], "wordCount": 20 },
+    { "id": "B2_politics", "level": "B2", "name": "פוליטיקה איטלקית", "icon": "🏛️", "category": "politics", "prerequisite": ["B2_debate"], "wordCount": 20 },
+    { "id": "B2_art_history", "level": "B2", "name": "אמנות והיסטוריה", "icon": "🎨", "category": "art", "prerequisite": ["B2_literature"], "wordCount": 25 },
+    { "id": "B2_academic", "level": "B2", "name": "אוצר מילים אקדמי", "icon": "🎓", "category": "education", "prerequisite": ["B2_science"], "wordCount": 25 },
+    { "id": "B2_economy", "level": "B2", "name": "כלכלה ופיננסים", "icon": "💰", "category": "finance", "prerequisite": ["B1_bank"], "wordCount": 20 },
+    { "id": "B2_subjunctive", "level": "B2", "name": "מודוס קוניונטיבו", "icon": "🎭", "category": "grammar", "prerequisite": ["B2_complex_grammar"], "wordCount": 25 },
+    // === C1 (10 nodes) ===
+    { "id": "C1_subjunctive_mastery", "level": "C1", "name": "שליטה בקוניונטיבו", "icon": "🎭", "category": "grammar", "prerequisite": ["B2_subjunctive"], "wordCount": 25 },
+    { "id": "C1_abstract", "level": "C1", "name": "נושאים מופשטים", "icon": "💭", "category": "general", "prerequisite": ["B2_academic"], "wordCount": 25 },
+    { "id": "C1_professional", "level": "C1", "name": "מצגות מקצועיות", "icon": "📊", "category": "work", "prerequisite": ["B2_formal_writing"], "wordCount": 20 },
+    { "id": "C1_philosophy", "level": "C1", "name": "פילוסופיה איטלקית", "icon": "🧠", "category": "art", "prerequisite": ["B2_literature"], "wordCount": 20 },
+    { "id": "C1_legal", "level": "C1", "name": "מילון משפטי", "icon": "⚖️", "category": "law", "prerequisite": ["B2_politics"], "wordCount": 20 },
+    { "id": "C1_medical", "level": "C1", "name": "טרמינולוגיה רפואית", "icon": "🩺", "category": "health", "prerequisite": ["B2_science"], "wordCount": 20 },
+    { "id": "C1_literary_analysis", "level": "C1", "name": "ניתוח ספרותי", "icon": "📝", "category": "art", "prerequisite": ["B2_literature"], "wordCount": 20 },
+    { "id": "C1_journalism", "level": "C1", "name": "עיתונאות", "icon": "📰", "category": "media", "prerequisite": ["B2_current_events"], "wordCount": 20 },
+    { "id": "C1_advanced_conversation", "level": "C1", "name": "שיחה מתקדמת", "icon": "🗣️", "category": "general", "prerequisite": ["C1_abstract"], "wordCount": 25 },
+    { "id": "C1_nuance", "level": "C1", "name": "ביטויים ניואנסיים", "icon": "🎯", "category": "general", "prerequisite": ["C1_advanced_conversation"], "wordCount": 20 }
+  ],
+"stories": [
+    {
+      "id": "story_1", "level": "A2", "title": "Il viaggio di Marco a Roma", "en": "Marco's trip to Rome",
+      "paragraphs": [
+        { "it": "Marco è un ragazzo di Milano. Ha venticinque anni e lavora in un ufficio.", "he": "מרקו הוא בחור ממילאנו. הוא בן עשרים וחמש ועובד במשרד." },
+        { "it": "Un giorno decide di visitare Roma per la prima volta. Prende il treno la mattina presto.", "he": "יום אחד הוא מחליט לבקר ברומא בפעם הראשונה. הוא לוקח את הרכבת מוקדם בבוקר." },
+        { "it": "Arriva a Roma Termini e prende la metropolitana. La città è bellissima!", "he": "הוא מגיע לרומא טרמיני ולוקח את הרכבת התחתית. העיר יפה מאוד!" },
+        { "it": "Vede il Colosseo e rimane senza parole. È enorme e antico.", "he": "הוא רואה את הקולוסיאום ונשאר ללא מילים. הוא עצום ועתיק." },
+        { "it": "Poi visita il Foro Romano e mangia un gelato vicino alla Fontana di Trevi.", "he": "אחר כך הוא מבקר בפורום רומאנום ואוכל גלידה ליד מזרקת טרווי." },
+        { "it": "Marco si innamora di Roma e promette di tornare presto.", "he": "מרקו מתאהב ברומא ומבטיח לחזור בקרוב." }
+      ],
+      "questions": [
+        { "question": "Da dove viene Marco?", "options": ["Roma", "Milano", "Firenze", "Napoli"], "correct": 1 },
+        { "question": "Cosa vede Marco che lo lascia senza parole?", "options": ["Il Vaticano", "Il Colosseo", "La Fontana di Trevi", "Il Tevere"], "correct": 1 },
+        { "question": "Cosa mangia Marco vicino alla Fontana di Trevi?", "options": ["Una pizza", "Un gelato", "Un caffè", "Una pasta"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "story_2", "level": "A2", "title": "Anna impara a cucinare", "en": "Anna learns to cook",
+      "paragraphs": [
+        { "it": "Anna è una studentessa di Bologna. Non sa cucinare molto bene.", "he": "אנה היא סטודנטית מבולוניה. היא לא יודעת לבשל טוב מאוד." },
+        { "it": "Un giorno sua nonna Lucia viene a trovarla e le insegna a fare la pasta fresca.", "he": "יום אחד סבתא שלה לוצ'יה באה לבקר ומלמדת אותה להכין פסטה טרייה." },
+        { "it": "Preparano le tagliatelle insieme. La nonna spiega che la pasta deve essere sottile.", "he": "הן מכינות טליאטלה יחד. הסבתא מסבירה שהפסטה צריכה להיות דקה." },
+        { "it": "Anna impara anche a fare il ragù alla bolognese. Cucinano per ore.", "he": "אנה לומדת גם להכין רagu בולונז. הן מבשלות שעות." },
+        { "it": "Alla fine, Anna invita i suoi amici a cena. Tutti dicono che il cibo è delizioso.", "he": "בסוף, אנה מזמינה את חבריה לארוחת ערב. כולם אומרים שהאוכל טעים." },
+        { "it": "Anna è felice e orgogliosa. Ora sa cucinare come la sua nonna!", "he": "אנה שמחה וגאה. עכשיו היא יודעת לבשל כמו סבתא שלה!" }
+      ],
+      "questions": [
+        { "question": "Chi insegna ad Anna a cucinare?", "options": ["Sua madre", "Sua nonna", "Un amico", "Un libro"], "correct": 1 },
+        { "question": "Cosa preparano Anna e sua nonna?", "options": ["Pizza", "Tagliatelle", "Risotto", "Lasagne"], "correct": 1 },
+        { "question": "Chi viene a cena alla fine della storia?", "options": ["La nonna", "I genitori", "Gli amici", "I vicini"], "correct": 2 }
+      ]
+    },
+    {
+      "id": "story_3", "level": "B1", "title": "La festa italiana", "en": "The Italian festival",
+      "paragraphs": [
+        { "it": "Ogni anno a settembre, nel paese di Montepulciano, si tiene la festa del vino.", "he": "כל שנה בספטמבר, בעיירה מונטפולצ'אנו, מתקיים פסטיבל היין." },
+        { "it": "Gianni e la sua famiglia partecipano da generazioni. Preparano il vino nella loro cantina.", "he": "ג'אני ומשפחתו משתתפים במשך דורות. הם מכינים יין במרתף שלהם." },
+        { "it": "Durante la festa, le strade si riempiono di bancarelle, musica e balli popolari.", "he": "במהלך הפסטיבל, הרחובות מתמלאים בדוכנים, מוזיקה וריקודים עממיים." },
+        { "it": "Si assaggiano vini diversi e si mangiano piatti tipici toscani.", "he": "טועמים יינות שונים ואוכלים מאכלים טיפוסיים של טוסקנה." },
+        { "it": "La domenica c'è una sfilata storica con costumi rinascimentali.", "he": "ביום ראשון יש תהלוכה היסטורית עם תלבושות רנסנס." },
+        { "it": "Gianni dice che questa festa è il cuore della loro comunità.", "he": "ג'אני אומר שהפסטיבל הזה הוא הלב של הקהילה שלהם." }
+      ],
+      "questions": [
+        { "question": "Dove si tiene la festa del vino?", "options": ["Firenze", "Montepulciano", "Siena", "Pisa"], "correct": 1 },
+        { "question": "Cosa fanno le strade durante la festa?", "options": ["Si svuotano", "Si riempiono di bancarelle", "Chiudono", "Si illuminano"], "correct": 1 },
+        { "question": "Cosa indossano le persone nella sfilata?", "options": ["Abiti moderni", "Costumi rinascimentali", "Uniformi", "Maschere"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "story_4", "level": "B1", "title": "Trovare lavoro a Milano", "en": "Finding work in Milan",
+      "paragraphs": [
+        { "it": "Luigi si è appena laureato in economia all'Università di Padova.", "he": "לואיג'י刚刚סיים תואר בכלכלה באוניברסיטת פדובה." },
+        { "it": "Decide di trasferirsi a Milano per cercare lavoro nel settore finanziario.", "he": "הוא מחליט לעבור למילאנו כדי לחפש עבודה בתחום הפיננסי." },
+        { "it": "Manda decine di curriculum ma riceve poche risposte.", "he": "הוא שולח עשרות קורות חיים אבל מקבל מעט תשובות." },
+        { "it": "Finalmente viene convocato per un colloquio in una grande banca.", "he": "לבסוף הוא מוזמן לראיון עבודה בבנק גדול." },
+        { "it": "Il colloquio va molto bene. Il direttore è impressionato dalle sue conoscenze.", "he": "הראיון הולך טוב מאוד. המנהל מתרשם מהידע שלו." },
+        { "it": "Luigi viene assunto e inizia una nuova vita a Milano.", "he": "לואיג'י מתקבל לעבודה ומתחיל חיים חדשים במילאנו." }
+      ],
+      "questions": [
+        { "question": "In cosa si è laureato Luigi?", "options": ["Medicina", "Economia", "Ingegneria", "Lettere"], "correct": 1 },
+        { "question": "Dove cerca lavoro Luigi?", "options": ["Roma", "Padova", "Milano", "Torino"], "correct": 2 },
+        { "question": "Chi rimane impressionato dal colloquio?", "options": ["Il collega", "Il direttore", "Il segretario", "Il cliente"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "story_5", "level": "B2", "title": "L'arte del caffè espresso", "en": "The art of espresso",
+      "paragraphs": [
+        { "it": "Il caffè espresso è molto più di una bevanda in Italia. È un rito quotidiano.", "he": "אספרסו הוא הרבה יותר ממשקה באיטליה. זה טקס יומיומי." },
+        { "it": "Marco lavora come barista a Napoli da vent'anni. Conosce tutti i segreti del caffè.", "he": "מרקו עובד כבריסטה בנאפולי כבר עשרים שנה. הוא מכיר את כל סודות הקפה." },
+        { "it": "La miscela giusta, la temperatura dell'acqua, la pressione — tutto deve essere perfetto.", "he": "התערובת הנכונה, טמפרטורת המים, הלחץ — הכל חייב להיות מושלם." },
+        { "it": "I clienti di Marco vengono da tutto il quartiere. Alcuni prendono il caffè alla mattina presto, altri dopo pranzo.", "he": "הלקוחות של מרקו באים מכל השכונה. חלק שותים קפה מוקדם בבוקר, אחרים אחרי הצהריים." },
+        { "it": "Marco dice che un buon espresso deve avere la crema dorata e un aroma intenso.", "he": "מרקו אומר שאספרסו טוב חייב להיות בעל קרמה מוזהבת וארומה חזקה." },
+        { "it": "Per gli italiani, il caffè è un momento di pausa e di socialità.", "he": "עבור האיטלקים, קפה הוא רגע של הפסקה וחברתיות." }
+      ],
+      "questions": [
+        { "question": "Dove lavora Marco?", "options": ["Roma", "Napoli", "Milano", "Firenze"], "correct": 1 },
+        { "question": "Da quanto tempo Marco fa il barista?", "options": ["Dieci anni", "Vent'anni", "Trent'anni", "Cinque anni"], "correct": 1 },
+        { "question": "Cosa deve avere un buon espresso secondo Marco?", "options": ["Schiuma bianca", "Crema dorata", "Ghiaccio", "Latte"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "story_6", "level": "B2", "title": "Un weekend a Firenze", "en": "A weekend in Florence",
+      "paragraphs": [
+        { "it": "Sofia e Luca decidono di passare un weekend a Firenze per il loro anniversario.", "he": "סופיה ולוקה מחליטים לבלות סוף שבוע בפירנצה לרגל יום השנה שלהם." },
+        { "it": "Arrivano venerdì sera e si sistemano in un piccolo hotel vicino al Duomo.", "he": "הם מגיעים בערב שישי ומתמקמים במלון קטן ליד הדואומו." },
+        { "it": "Sabato mattina visitano la Galleria degli Uffizi. Sofia rimane incantata dalla Primavera di Botticelli.", "he": "בשבת בבוקר הם מבקרים בגלריה אופיצי. סופיה מוקסמת מהאביב של בוטיצ'לי." },
+        { "it": "Pranzano in una trattoria tipica dove assaggiano la bistecca alla fiorentina.", "he": "הם אוכלים צהריים בטרטוריה טיפוסית שם טועמים סטייק פלורנטיני." },
+        { "it": "Nel pomeriggio camminano sul Ponte Vecchio e comprano un piccolo gioiello.", "he": "אחר הצהריים הם מטיילים על פונטה וקיו וקונים תכשיט קטן." },
+        { "it": "La domenica salgono sulla collina di Fiesole per vedere il panorama della città.", "he": "ביום ראשון הם עולים על גבעת פייזולה כדי לראות את הנוף של העיר." },
+        { "it": "Tornano a casa stanchi ma felici. Firenze li ha conquistati.", "he": "הם חוזרים הביתה עייפים אבל שמחים. פירנצה כבשה אותם." }
+      ],
+      "questions": [
+        { "question": "Perché Sofia e Luca vanno a Firenze?", "options": ["Per lavoro", "Per l'anniversario", "Per studiare", "Per un concerto"], "correct": 1 },
+        { "question": "Cosa vedono agli Uffizi?", "options": ["La Gioconda", "La Primavera", "La Pietà", "La Creazione"], "correct": 1 },
+        { "question": "Cosa comprano sul Ponte Vecchio?", "options": ["Un quadro", "Un gioiello", "Un vestito", "Un libro"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "story_7", "level": "B1", "title": "Studiare all'università", "en": "Studying at university",
+      "paragraphs": [
+        { "it": "Chiara ha diciotto anni e si iscrive all'Università di Bologna.", "he": "קיארה בת שמונה עשרה ונרשמת לאוניברסיטת בולוניה." },
+        { "it": "Sceglie di studiare lettere moderne perché ama leggere e scrivere.", "he": "היא בוחרת ללמוד ספרות מודרנית כי היא אוהבת לקרוא ולכתוב." },
+        { "it": "I primi mesi sono difficili. Gli esami sono tanti e lo studio è impegnativo.", "he": "החודשים הראשונים קשים. יש הרבה מבחנים והלימודים תובעניים." },
+        { "it": "Chiara conosce nuovi amici e formano un gruppo di studio.", "he": "קיארה מכירה חברים חדשים והם מקימים קבוצת לימוד." },
+        { "it": "Insieme preparano gli esami e si aiutano a vicenda.", "he": "יחד הם מתכוננים למבחנים ועוזרים זה לזה." },
+        { "it": "Dopo tre anni, Chiara si laurea con il massimo dei voti. I suoi genitori sono orgogliosi.", "he": "אחרי שלוש שנים, קיארה מסיימת בהצטיינות. הוריה גאים בה." }
+      ],
+      "questions": [
+        { "question": "Cosa sceglie di studiare Chiara?", "options": ["Medicina", "Lettere moderne", "Ingegneria", "Economia"], "correct": 1 },
+        { "question": "Cosa formano i nuovi amici?", "options": ["Una squadra", "Un gruppo di studio", "Un club", "Un'associazione"], "correct": 1 },
+        { "question": "Con che voto si laurea Chiara?", "options": ["Sufficiente", "Massimo dei voti", "Buono", "Discreto"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "story_8", "level": "B1", "title": "Le tradizioni di famiglia", "en": "Italian family traditions",
+      "paragraphs": [
+        { "it": "La famiglia Rossi si riunisce ogni domenica per il pranzo. È una tradizione che va avanti da generazioni.", "he": "משפחת רוסי מתאספת כל יום ראשון לארוחת צהריים. זו מסורת שנמשכת דורות." },
+        { "it": "La nonna Maria cucina tutto il giorno. Prepara la pasta fatta in casa, l'arrosto e il tiramisù.", "he": "סבתא מריה מבשלת כל היום. היא מכינה פסטה ביתית, צלי וטירמיסו." },
+        { "it": "Arrivano tutti: zii, cugini, nipoti. La tavola è lunga e piena di cibo.", "he": "כולם באים: דודים, בני דודים, נכדים. השולחן ארוך ומלא אוכל." },
+        { "it": "Dopo pranzo, gli adulti giocano a carte mentre i bambini corrono in giardino.", "he": "אחרי הארוחה, המבוגרים משחקים בקלפים בזמן שהילדים רצים בגן." },
+        { "it": "La domenica per gli italiani è sacra. È un momento per stare insieme.", "he": "יום ראשון עבור האיטלקים הוא קדוש. זה זמן להיות יחד." },
+        { "it": "Marco, il più piccolo, dice: \"La domenica con la nonna è il giorno più bello della settimana.\"", "he": "מרקו, הקטן ביותר, אומר: \"יום ראשון עם סבתא הוא היום הכי יפה בשבוע.\"" }
+      ],
+      "questions": [
+        { "question": "Quando si riunisce la famiglia Rossi?", "options": ["Il sabato", "La domenica", "Il venerdì", "A Natale"], "correct": 1 },
+        { "question": "Cosa prepara la nonna Maria?", "options": ["Pizza e insalata", "Pasta, arrosto e tiramisù", "Solo dolci", "Sushi"], "correct": 1 },
+        { "question": "Cosa fanno gli adulti dopo pranzo?", "options": ["Guardano la TV", "Giocano a carte", "Fanno una passeggiata", "Dormono"], "correct": 1 }
+      ]
+    }
+  ],
+"songs": [
+    {
+      "id": "song_1", "level": "A2", "title": "Nel blu, dipinto di blu (Volare)", "artist": "Domenico Modugno",
+      "lines": [
+        { "it": "Volare, oh oh!", "he": "לעוף, או או!" },
+        { "it": "Cantare, oh oh oh oh!", "he": "לשיר, או או או או!" },
+        { "it": "Nel blu dipinto di blu", "he": "בכחול צבוע בכחול" },
+        { "it": "Felice di stare lassù", "he": "שמח להיות שם למעלה" },
+        { "it": "E volavo, volavo felice", "he": "ועפתי, עפתי מאושר" },
+        { "it": "Più in alto del sole ed ancora più su", "he": "גבוה יותר מהשמש ועוד יותר למעלה" }
+      ]
+    },
+    {
+      "id": "song_2", "level": "A2", "title": "Azzurro", "artist": "Adriano Celentano",
+      "lines": [
+        { "it": "Azzurro, il pomeriggio è troppo azzurro", "he": "כחול, אחר הצהריים כחול מדי" },
+        { "it": "E per me, andare via è un po' come morire", "he": "ובשבילי, ללכת זה קצת כמו למות" },
+        { "it": "Ma forse non ci crederai", "he": "אבל אולי לא תאמין לי" },
+        { "it": "Mi manca l'aria, mi manca il sole", "he": "חסר לי האוויר, חסרה לי השמש" },
+        { "it": "Azzurro, il mio pensiero vola via", "he": "כחול, המחשבה שלי עפה" },
+        { "it": "E torna verso casa mia", "he": "וחוזרת לבית שלי" }
+      ]
+    },
+    {
+      "id": "song_3", "level": "B1", "title": "Con te partirò", "artist": "Andrea Bocelli",
+      "lines": [
+        { "it": "Quando sono solo, sogno all'orizzonte", "he": "כשאני לבד, אני חולם על האופק" },
+        { "it": "E mancano le parole", "he": "ואין מילים" },
+        { "it": "Sì, lo so che non c'è luce", "he": "כן, אני יודע שאין אור" },
+        { "it": "In una stanza quando manca il sole", "he": "בחדר כשחסרה השמש" },
+        { "it": "Con te partirò", "he": "אצא איתך" },
+        { "it": "Paesi che non ho mai visto e vissuto con te", "he": "ארצות שמעולם לא ראיתי ואחיה איתך" },
+        { "it": "Adesso sì, le vivrò con te", "he": "עכשיו כן, אחיה אותן איתך" }
+      ]
+    },
+    {
+      "id": "song_4", "level": "B1", "title": "Buongiorno principessa", "artist": "Marco Mengoni",
+      "lines": [
+        { "it": "Buongiorno principessa, come stai?", "he": "בוקר טוב נסיכה, מה שלומך?" },
+        { "it": "Mi manchi ogni momento, lo sai", "he": "את חסרה לי כל רגע, את יודעת" },
+        { "it": "Vorrei fermare il tempo qui con te", "he": "הייתי רוצה לעצור את הזמן כאן איתך" },
+        { "it": "E non lasciarti mai più", "he": "ולא לעזוב אותך לעולם" },
+        { "it": "Buongiorno principessa, sei bellissima", "he": "בוקר טוב נסיכה, את יפה מאוד" },
+        { "it": "Il mondo è più bello quando ci sei tu", "he": "העולם יפה יותר כשאת כאן" }
+      ]
+    },
+    {
+      "id": "song_5", "level": "B1", "title": "La solitudine", "artist": "Laura Pausini",
+      "lines": [
+        { "it": "Marco se n'è andato e non è tornato più", "he": "מרקו הלך ולא חזר יותר" },
+        { "it": "La solitudine ci fa paura", "he": "הבדידות מפחידה אותנו" },
+        { "it": "Ma quando arriva l'amore", "he": "אבל כשהאהבה מגיעה" },
+        { "it": "Tutto cambia, il mondo è a colori", "he": "הכל משתנה, העולם בצבעים" },
+        { "it": "E io qui, da sola, aspetto te", "he": "ואני פה, לבד, מחכה לך" }
+      ]
+    },
+    {
+      "id": "song_6", "level": "B2", "title": "Se telefonando", "artist": "Mina",
+      "lines": [
+        { "it": "Se telefonando, io potessi dirti addio", "he": "אם בטלפון, אוכל לומר לך להתראות" },
+        { "it": "Ti saluterei, ma tu risponderesti", "he": "הייתי נפרדת, אבל אתה תענה" },
+        { "it": "E non so che cosa farei", "he": "ואני לא יודעת מה הייתי עושה" },
+        { "it": "Se telefonando, tu tornassi a dire sì", "he": "אם בטלפון, תחזור לומר כן" },
+        { "it": "Uno così, non lo dimentichi mai", "he": "כזה, לא שוכחים לעולם" }
+      ]
+    },
+    {
+      "id": "song_7", "level": "A2", "title": "L'italiano", "artist": "Toto Cutugno",
+      "lines": [
+        { "it": "Lasciatemi cantare con la chitarra in mano", "he": "תנו לי לשיר עם גיטרה ביד" },
+        { "it": "Lasciatemi cantare, sono un italiano", "he": "תנו לי לשיר, אני איטלקי" },
+        { "it": "Buongiorno Italia, il caffè è caldo", "he": "בוקר טוב איטליה, הקפה חם" },
+        { "it": "Buongiorno Italia, le camicie bianche", "he": "בוקר טוב איטליה, החולצות הלבנות" },
+        { "it": "La bella lingua, la bella gente", "he": "השפה היפה, האנשים היפים" },
+        { "it": "Sono un italiano, un italiano vero", "he": "אני איטלקי, איטלקי אמיתי" }
+      ]
+    },
+    {
+      "id": "song_8", "level": "A2", "title": "Felicità", "artist": "Al Bano & Romina Power",
+      "lines": [
+        { "it": "Felicità, felicità", "he": "אושר, אושר" },
+        { "it": "È un bicchiere di vino con un panino", "he": "זה כוס יין עם כריך" },
+        { "it": "Felicità, felicità", "he": "אושר, אושר" },
+        { "it": "È lasciarti un biglietto sul cuscino", "he": "זה להשאיר לך פתק על הכרית" },
+        { "it": "Felicità, felicità", "he": "אושר, אושר" },
+        { "it": "È un cane che scodinzola sul divano", "he": "זה כלב שמכשכש בזנב על הספה" }
+      ]
+    },
+    {
+      "id": "song_9", "level": "A2", "title": "Sarà perché ti amo", "artist": "Ricchi e Poveri",
+      "lines": [
+        { "it": "Sarà perché ti amo, ti amo, ti amo", "he": "זה יהיה כי אני אוהב אותך, אוהב, אוהב" },
+        { "it": "Che i giorni senza te sono più amari", "he": "שהימים בלעדיך מרים יותר" },
+        { "it": "Sarà perché ti amo, ti amo, ti amo", "he": "זה יהיה כי אני אוהב אותך, אוהב, אוהב" },
+        { "it": "E brucio nel profondo del mio cuore", "he": "ואני בוער במעמקי לבי" },
+        { "it": "Sarà perché ti amo, ti amo, ti amo", "he": "זה יהיה כי אני אוהב אותך, אוהב, אוהב" },
+        { "it": "Che non mi stanco mai di stringerti a me", "he": "שאני לעולם לא מתעייף מלחבק אותך" }
+      ]
+    },
+    {
+      "id": "song_10", "level": "B2", "title": "Caruso", "artist": "Lucio Dalla",
+      "lines": [
+        { "it": "Qui dove il mare luccica e tira forte il vento", "he": "כאן שהים נוצץ והרוח נושבת חזק" },
+        { "it": "Su una vecchia terrazza davanti al Golfo di Surriento", "he": "על מרפסת ישנה מול מפרץ סורנטו" },
+        { "it": "Un uomo abbraccia una ragazza dopo che aveva pianto", "he": "איש מחבק ילדה אחרי שבכתה" },
+        { "it": "Poi si schiarisce la voce e ricomincia il canto", "he": "ואז מפנה את גרונו ומתחיל לשיר" },
+        { "it": "Te voglio bene assaje ma tanto tanto bene sai", "he": "אני אוהב אותך מאוד אבל ממש מאוד את יודעת" },
+        { "it": "È una catena ormai che scioglie il sangue dint'e vene sai", "he": "זו שרשרת שממיסה את הדם בוורידים את יודעת" }
+      ]
+    }
+  ],
+"newsItems": [
+    {
+      "id": "news_1", "level": "B2", "title": "La Settimana della Moda di Milano attira visitatori da tutto il mondo",
+      "it": "La Settimana della Moda di Milano ha aperto i battenti con sfilate spettacolari. Stilisti italiani e internazionali presentano le loro collezioni autunno-inverno. Milano si conferma una delle capitali mondiali della moda. Le strade del centro sono piene di fashion blogger, buyer e giornalisti. I riflettori sono puntati sulle nuove tendenze che arriveranno nei negozi nei prossimi mesi.",
+      "he": "שבוע האופנה של מילאנו נפתח עם תצוגות מרהיבות. מעצבי אופנה איטלקים ובינלאומיים מציגים את קולקציות החורף שלהם. מילאנו שוב מאשרת את מעמדה כאחת מבירות האופנה העולמיות. רחובות המרכז מלאים בבלוגרים, קונים ועיתונאים. זרקורים מופנים לטרנדים החדשים שיגיעו לחנויות בחודשים הקרובים.",
+      "source": "ANSA"
+    },
+    {
+      "id": "news_2", "level": "B2", "title": "Nuovi scavi archeologici a Roma: scoperti mosaici antichi",
+      "it": "Nuovi scavi archeologici nei pressi del Colosseo hanno portato alla luce mosaici romani di straordinaria bellezza. I mosaici risalgono al II secolo d.C. e raffigurano scene di caccia e vita quotidiana. Gli archeologi sono entusiasti della scoperta, che getta nuova luce sulla vita nell'antica Roma. I mosaici verranno restaurati e presto esposti al pubblico.",
+      "he": "חפירות ארכיאולוגיות חדשות ליד הקולוסיאום חשפו פסיפסים רומיים בעלי יופי יוצא דופן. הפסיפסים מתוארכים למאה השנייה לספירה ומתארים סצנות ציד וחיי יום יום. הארכיאולוגים נרגשים מהגילוי, השופך אור חדש על החיים ברומא העתיקה. הפסיפסים ישוקמו ובקרוב יוצגו לציבור.",
+      "source": "La Repubblica"
+    },
+    {
+      "id": "news_3", "level": "B1", "title": "Il cinema italiano trionfa ai premi David di Donatello",
+      "it": "La cerimonia dei David di Donatello, i premi più importanti del cinema italiano, si è svolta a Roma. Il film vincitore della serata è un dramma storico ambientato nella Sicilia del dopoguerra. Il regista ha ringraziato la sua squadra e dedicato il premio a tutti i giovani cineasti italiani. La serata è stata ricca di emozioni e momenti indimenticabili.",
+      "he": "טקס פרסי דוד די דונטלו, הפרסים החשובים ביותר בקולנוע האיטלקי, התקיים ברומא. הסרט הזוכה של הערב הוא דרמה היסטורית המתרחשת בסיציליה של אחרי המלחמה. הבמאי הודה לצוותו והקדיש את הפרס לכל יוצרי הקולנוע הצעירים באיטליה. הערב היה מלא ברגשות ורגעים בלתי נשכחים.",
+      "source": "ANSA"
+    },
+    {
+      "id": "news_4", "level": "B1", "title": "La cucina italiana candidata all'UNESCO",
+      "it": "La cucina italiana è stata ufficialmente candidata per diventare patrimonio immateriale dell'UNESCO. Il ministro della Cultura ha presentato la candidatura, sottolineando l'importanza della tradizione culinaria italiana nel mondo. Dalla pasta alla pizza, dal gelato al caffè, la cucina italiana è amata e riconosciuta ovunque. La decisione finale dell'UNESCO è attesa tra un anno.",
+      "he": "המטבח האיטלקי הועמד רשמית למועמדות להפוך למורשת תרבותית בלתי מוחשית של אונסק\"ו. שר התרבות הציג את המועמדות, תוך הדגשת חשיבות המסורת הקולינרית האיטלקית בעולם. מפסטה ועד פיצה, מגלידה ועד קפה, המטבח האיטלקי אהוב ומוכר בכל מקום. ההחלטה הסופית של אונסק\"ו צפויה בעוד שנה.",
+      "source": "Il Corriere della Sera"
+    },
+    {
+      "id": "news_5", "level": "B2", "title": "Il design italiano protagonista al Salone del Mobile di Milano",
+      "it": "Il Salone del Mobile di Milano ha aperto le sue porte, attirando migliaia di visitatori da tutto il mondo. Il design italiano è protagonista assoluto con le sue linee eleganti e innovative. I designer presentano mobili sostenibili realizzati con materiali riciclati. L'evento conferma Milano come capitale mondiale del design e dell'arredamento.",
+      "he": "יריד הריהוט של מילאנו פתח את שעריו, משך אלפי מבקרים מכל העולם. העיצוב האיטלקי הוא הכוכב הראשי עם הקווים האלגנטיים והחדשניים שלו. המעצבים מציגים ריהוט בר-קיימא העשוי מחומרים ממוחזרים. האירוע מאשר את מילאנו כבירת העיצוב והריהוט העולמית.",
+      "source": "ANSA"
+    },
+    {
+      "id": "news_6", "level": "B1", "title": "Record di turisti in Italia nel 2024",
+      "it": "L'Italia ha registrato un record di visitatori nel 2024, superando i livelli pre-pandemia. Le città d'arte come Roma, Firenze e Venezia sono le mete più gettonate. Il turismo enogastronomico è in forte crescita, con sempre più visitatori che scelgono destinazioni meno conosciute come le Langhe e il Salento. Il Governo prevede un ulteriore aumento per l'anno prossimo.",
+      "he": "איטליה רשמה שיא מבקרים בשנת 2024, שעברה את הרמות שלפני המגפה. ערי האמנות כמו רומא, פירנצה וונציה הן היעדים הפופולריים ביותר. תיירות האוכל והיין נמצאת בצמיחה חזקה, עם יותר ויותר מבקרים שבוחרים ביעדים פחות מוכרים. הממשלה צופה עלייה נוספת בשנה הבאה.",
+      "source": "Il Sole 24 Ore"
+    },
+    {
+      "id": "news_7", "level": "B2", "title": "Il Festival di Sanremo incorona la nuova musica italiana",
+      "it": "Il 74° Festival di Sanremo si è concluso con la vittoria di un giovane cantautore emergente. La sua canzone, un mix di melodie tradizionali e sonorità moderne, ha conquistato il pubblico e la critica. Sanremo si conferma la vetrina più importante della musica italiana, lanciando nuovi talenti ogni anno.",
+      "he": "פסטיבל סן רמו ה-74 הסתיים בניצחונו של זמר-יוצר צעיר ומבטיח. השיר שלו, שילוב של מלודיות מסורתיות וצלילים מודרניים, כבש את הקהל ואת המבקרים. סן רמו מאשרת את מעמדה כחלון הראווה החשוב ביותר של המוזיקה האיטלקית, משיקה כישרונות חדשים מדי שנה.",
+      "source": "La Stampa"
+    },
+    {
+      "id": "news_8", "level": "B1", "title": "La Nazionale italiana di calcio vince la partita decisiva",
+      "it": "La Nazionale italiana di calcio ha vinto la partita decisiva per la qualificazione ai campionati europei. La partita, giocata allo Stadio Olimpico di Roma, ha visto un pubblico entusiasta. L'Italia ha dominato il gioco per tutti i novanta minuti, segnando tre gol. I tifosi hanno festeggiato per le strade fino a tarda notte.",
+      "he": "נבחרת איטליה בכדורגל ניצחה במשחק המכריע להעפלה לאליפות אירופה. המשחק, שנערך באצטדיון האולימפי ברומא, ראה קהל נלהב. איטליה שלטה במשחק לאורך כל תשעים הדקות, כבשה שלושה שערים. האוהדים חגגו ברחובות עד שעות הלילה המאוחרות.",
+      "source": "La Gazzetta dello Sport"
+    },
+    {
+      "id": "news_9", "level": "B2", "title": "Iniziative green: l'Italia investe nelle energie rinnovabili",
+      "it": "Il Governo italiano ha annunciato un nuovo piano di investimenti per le energie rinnovabili. L'obiettivo è raggiungere la neutralità carbonica entro il 2050. Verranno costruiti nuovi parchi eolici e solari in tutto il territorio nazionale. Il ministro dell'Ambiente ha sottolineato l'urgenza di agire contro i cambiamenti climatici.",
+      "he": "ממשלת איטליה הכריזה על תוכנית השקעות חדשה באנרגיות מתחדשות. המטרה היא להגיע לנייטרליות פחמנית עד 2050. ייבנו פארקי רוח ושמש חדשים בכל רחבי המדינה. שר הסביבה הדגיש את הדחיפות לפעול נגד שינויי האקלים.",
+      "source": "ANSA"
+    },
+    {
+      "id": "news_10", "level": "C1", "title": "Startup tecnologiche: Milano diventa la Silicon Valley d'Europa",
+      "it": "Milano sta diventando un hub tecnologico di livello europeo. Le startup italiane attirano investimenti internazionali sempre più consistenti. I settori più promettenti sono l'intelligenza artificiale, la finanza digitale e la biotecnologia. Molti giovani talenti italiani che lavoravano all'estero stanno tornando in patria per fondare le proprie aziende.",
+      "he": "מילאנו הופכת למרכז טכנולוגי ברמה אירופית. הסטארטאפים האיטלקיים מושכים השקעות בינלאומיות גדלות. התחומים המבטיחים ביותר הם בינה מלאכותית, פיננסים דיגיטליים וביוטכנולוגיה. כישרונות צעירים איטלקיים רבים שעבדו בחו\"ל חוזרים לארץ כדי להקים חברות משלהם.",
+      "source": "Il Sole 24 Ore"
+    },
+    {
+      "id": "news_11", "level": "B2", "title": "Premio Strega: il vincitore del più importante premio letterario italiano",
+      "it": "Il Premio Strega 2024 è stato assegnato a un romanzo che esplora i temi dell'identità e della memoria. La cerimonia si è tenuta al Museo Nazionale Romano di Palazzo Altemps. Il vincitore ha ricevuto il premio dalle mani del presidente della giuria. Il libro ha già venduto centinaia di migliaia di copie in tutta Italia.",
+      "he": "פרס סטרגה 2024 הוענק לרומן החוקר את נושאי הזהות והזיכרון. הטקס התקיים במוזיאון הלאומי הרומי בפאלאצו אלטמפס. הזוכה קיבל את הפרס מידי נשיא חבר השופטים. הספר כבר מכר מאות אלפי עותקים בכל איטליה.",
+      "source": "La Repubblica"
+    },
+    {
+      "id": "news_12", "level": "B1", "title": "Le elezioni regionali: cambiamenti politici in Italia",
+      "it": "Le elezioni regionali in Italia hanno portato a significativi cambiamenti politici. Diverse regioni hanno eletto nuovi presidenti, cambiando gli equilibri politici. L'affluenza alle urne è stata alta, segno di un forte interesse dei cittadini per la politica locale. I nuovi governatori hanno promesso di concentrarsi su sanità, istruzione e infrastrutture.",
+      "he": "הבחירות האזוריות באיטליה הביאו לשינויים פוליטיים משמעותיים. מספר מחוזות בחרו נשיאים חדשים, תוך שינוי המאזן הפוליטי. אחוז ההצבעה היה גבוה, סימן להתעניינות חזקה של האזרחים בפוליטיקה המקומית. המושלים החדשים הבטיחו להתמקד בבריאות, חינוך ותשתיות.",
+      "source": "Il Corriere della Sera"
+    },
+    {
+      "id": "news_13", "level": "C1", "title": "L'Italia e l'Unione Europea: nuove prospettive di collaborazione",
+      "it": "Il Presidente del Consiglio italiano ha incontrato i leader dell'Unione Europea a Bruxelles per discutere le future politiche comuni. Al centro del dibattito la gestione dei flussi migratori, la politica energetica e la competitività economica. L'Italia ha proposto un nuovo patto per lo sviluppo sostenibile del Mediterraneo. La Commissione Europea ha accolto favorevolmente la proposta italiana.",
+      "he": "ראש ממשלת איטליה נפגש עם מנהיגי האיחוד האירופי בבריסל כדי לדון במדיניות העתידית המשותפת. במרכז הדיון ניהול זרמי ההגירה, מדיניות האנרגיה והתחרותיות הכלכלית. איטליה הציעה ברית חדשה לפיתוח בר-קיימא של הים התיכון. הנציבות האירופית קיבלה את ההצעה האיטלקית בעין יפה.",
+      "source": "ANSA"
+    },
+    {
+      "id": "news_14", "level": "B2", "title": "Venezia innova: il sistema MOSE protegge la città dall'acqua alta",
+      "it": "Il sistema MOSE, il progetto di barriere mobili per proteggere Venezia dall'acqua alta, ha dimostrato la sua efficacia durante l'ultima ondata di maltempo. Le paratie mobili hanno impedito l'allagamento della città, salvaguardando il patrimonio artistico e architettonico. Il progetto, dopo anni di polemiche e ritardi, si è rivelato un successo tecnologico.",
+      "he": "מערכת MOSE, פרויקט הסכרים הניידים להגנת ונציה מהצפות, הוכיחה את יעילותה במהלך גל מזג האוויר הסוער האחרון. הסכרים הניידים מנעו את הצפת העיר, תוך הגנה על המורשת האמנותית והאדריכלית. הפרויקט, לאחר שנים של מחלוקות ועיכובים, התגלה כהצלחה טכנולוגית.",
+      "source": "Il Gazzettino"
+    },
+    {
+      "id": "news_15", "level": "B1", "title": "Restauro del Colosseo: nuove aree aperte al pubblico",
+      "it": "Nuove aree del Colosseo sono state aperte al pubblico dopo un lungo restauro. I visitatori possono ora accedere ai livelli superiori dell'anfiteatro, godendo di una vista spettacolare. Il progetto di restauro ha richiesto cinque anni di lavoro e ha svelato dettagli architettonici mai visti prima. Il Colosseo rimane il monumento più visitato d'Italia.",
+      "he": "אזורים חדשים בקולוסיאום נפתחו לציבור לאחר שיקום ארוך. המבקרים יכולים כעת לגשת לקומות העליונות של האמפיתיאטרון, וליהנות מתצפית מרהיבה. פרויקט השיקום דרש חמש שנות עבודה וחשף פרטים אדריכליים שמעולם לא נראו לפני כן. הקולוסיאום נשאר האתר המתוייר ביותר באיטליה.",
+      "source": "ANSA"
+    }
+  ],
+  "grammarTips": [
+    { "id": "g1", "level": "A1", "title": "Presente indicativo - verbi in -are", "explanation": "Remove -are, add: -o, -i, -a, -iamo, -ate, -ano.", "examples": [{"it": "Io parlo italiano", "he": "אני מדבר איטלקית"}], "icon": "edit" },
+    { "id": "g2", "level": "A1", "title": "Articoli determinativi", "explanation": "il, lo, la, i, gli, le.", "examples": [{"it": "Il libro", "he": "הספר"}], "icon": "book" },
+    { "id": "g3", "level": "A2", "title": "Passato prossimo", "explanation": "Auxiliary (essere/avere) + past participle.", "examples": [{"it": "Ho mangiato", "he": "אכלתי"}], "icon": "time" },
+    { "id": "g4", "level": "B1", "title": "Imperfetto", "explanation": "Habitual past: -vo, -vi, -va, -vamo, -vate, -vano.", "examples": [{"it": "Mangiavo sempre", "he": "תמיד אכלתי"}], "icon": "cycle" },
+    { "id": "g5", "level": "B2", "title": "Congiuntivo presente", "explanation": "Subjunctive for doubt/opinion: -i, -i, -i, -iamo, -iate, -ino.", "examples": [{"it": "Credo che parli bene", "he": "אני מאמין שהוא מדבר טוב"}], "icon": "think" },
+    { "id": "g6", "level": "C1", "title": "Periodo ipotetico", "explanation": "Se + congiuntivo imperfetto + condizionale.", "examples": [{"it": "Se avessi soldi comprerei una casa", "he": "אם היה לי כסף הייתי קונה בית"}], "icon": "maybe" }
+  ],
+  "achievements": [
+    { "id": "ach_1", "name": "מתחיל", "desc": "למד 10 מילים", "icon": "star", "target": 10, "type": "words" },
+    { "id": "ach_2", "name": "מתלמד", "desc": "למד 50 מילים", "icon": "star2", "target": 50, "type": "words" },
+    { "id": "ach_3", "name": "תלמיד", "desc": "למד 100 מילים", "icon": "star3", "target": 100, "type": "words" },
+    { "id": "ach_4", "name": "לומד מתמיד", "desc": "למד 200 מילים", "icon": "grad", "target": 200, "type": "words" },
+    { "id": "ach_5", "name": "משוחח", "desc": "השלם 10 שיעורים", "icon": "talk", "target": 10, "type": "lessons" },
+    { "id": "ach_6", "name": "חרוץ", "desc": "השלם 25 שיעורים", "icon": "books", "target": 25, "type": "lessons" },
+    { "id": "ach_7", "name": "סדרתי", "desc": "רצף של 7 ימים", "icon": "fire", "target": 7, "type": "streak" },
+    { "id": "ach_8", "name": "בלתי עציר", "desc": "רצף של 30 ימים", "icon": "muscle", "target": 30, "type": "streak" },
+    { "id": "ach_9", "name": "אספן", "desc": "אסוף 500 XP", "icon": "star_medal", "target": 500, "type": "xp" },
+    { "id": "ach_10", "name": "מומחה", "desc": "אסוף 2000 XP", "icon": "super_star", "target": 2000, "type": "xp" },
+    { "id": "ach_11", "name": "אלוף", "desc": "אסוף 5000 XP", "icon": "crown", "target": 5000, "type": "xp" },
+    { "id": "ach_12", "name": "יהלום", "desc": "הגע לליגת היהלום", "icon": "diamond", "target": 1, "type": "league" }
+  ],
+  "cilsExams": [
+    { "level": "A1", "name": "CILS A1", "sections": [{"name": "Ascolto", "duration": 20, "items": 15}, {"name": "Lettura", "duration": 30, "items": 15}, {"name": "Scrittura", "duration": 30, "items": 1}, {"name": "Parlato", "duration": 10, "items": 1}] },
+    { "level": "A2", "name": "CILS A2", "sections": [{"name": "Ascolto", "duration": 20, "items": 15}, {"name": "Lettura", "duration": 30, "items": 15}, {"name": "Scrittura", "duration": 40, "items": 2}, {"name": "Parlato", "duration": 10, "items": 1}] },
+    { "level": "B1", "name": "CILS B1", "sections": [{"name": "Ascolto", "duration": 30, "items": 20}, {"name": "Lettura", "duration": 45, "items": 20}, {"name": "Scrittura", "duration": 60, "items": 2}, {"name": "Parlato", "duration": 15, "items": 1}] },
+    { "level": "B2", "name": "CILS B2", "sections": [{"name": "Ascolto", "duration": 30, "items": 20}, {"name": "Lettura", "duration": 50, "items": 25}, {"name": "Scrittura", "duration": 70, "items": 2}, {"name": "Parlato", "duration": 15, "items": 1}] },
+    { "level": "C1", "name": "CILS C1", "sections": [{"name": "Ascolto", "duration": 35, "items": 25}, {"name": "Lettura", "duration": 60, "items": 30}, {"name": "Scrittura", "duration": 90, "items": 3}, {"name": "Parlato", "duration": 20, "items": 1}] }
   ]
+};
+
+// ═══════════════════════════════════════
+// EMOJI MAP — Auto-assign emoji to words by category
+// Used for image-based practice (Duolingo style)
+// ═══════════════════════════════════════
+window.EMOJI_MAP = {
+  'ברכות': '👋',
+  'היכרות': '🤝',
+  'מספרים': '🔢',
+  'צבעים': '🎨',
+  'משפחה': '👨‍👩‍👧‍👦',
+  'אוכל': '🍝',
+  'מטבח איטלקי': '🍕',
+  'מסעדה': '🍕',
+  'בית': '🏠',
+  'יומיום': '☀️',
+  'גוף': '🧍',
+  'רגשות': '😊',
+  'בגדים': '👕',
+  'טבע': '🌿',
+  'מקומות': '📍',
+  'נסיעות': '✈️',
+  'טיולים': '🗺️',
+  'מלון': '🏨',
+  'קניות': '🛍️',
+  'עבודה': '💼',
+  'מקצועות': '👔',
+  'פעלים': '🏃',
+  'זמן': '⏰',
+  'חינוך': '📚',
+  'טכנולוגיה': '💻',
+  'טלפון': '📱',
+  'בריאות': '🏥',
+  'ספורט': '⚽',
+  'בילוי': '🎬',
+  'אומנות': '🎨',
+  'חגים': '🎄',
+  'סלנג': '💬',
+  'חברים': '👥',
+  'דעות': '💭',
+  'בקשות': '🙏',
+  'ערים איטליה': '🏛️',
+  'עסקים': '📊',
+  'משפטים': '⚖️',
+  'דקדוק': '📖',
+  'general': '📝'
 };

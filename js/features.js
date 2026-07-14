@@ -40,11 +40,11 @@ function renderTranslate(container) {
   ${translateHistory.map((t, i) => `
    <div class="word-item" onclick="Features.replayTranslation(${i})">
     <div class="word-left">
-     <div class="word-he">${t.he}</div>
-     <div class="word-it" style="font-family:var(--font-it);font-size:.9rem;color:var(--indigo-light)">${t.it}</div>
+     <div class="word-he">${t.native}</div>
+     <div class="word-it" style="font-family:var(--font-it);font-size:.9rem;color:var(--indigo-light)">${t.target}</div>
     </div>
     <div class="word-right">
-     <button class="speak-btn active" onclick="event.stopPropagation();speak('${esc(t.it)}')">🔊</button>
+     <button class="speak-btn active" onclick="event.stopPropagation();speak('${esc(t.target)}')">🔊</button>
     </div>
    </div>
   `).join('')}
@@ -85,7 +85,7 @@ async function doTranslate() {
  try {
   const resp = await fetch('https://api.b.ai/v1/chat/completions', {
    method: 'POST',
-   headers: { 'Content-Type': 'application/json' },
+   headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer sk-dk1eflbtuz623in5dmjcdzjbvn5gbpag' },
    body: JSON.stringify({
     model: 'gpt-4o-mini',
     messages: [
@@ -116,13 +116,13 @@ function findLocalTranslation(text) {
  // Search in APP_DATA words
  const allWords = APP_DATA.words || [];
  const t = text.trim().toLowerCase();
- const match = allWords.find(w => w.he?.toLowerCase() === t || w.he?.toLowerCase().includes(t));
- if (match) return match.it;
+ const match = allWords.find(w => w.native?.toLowerCase() === t || w.native?.toLowerCase().includes(t));
+ if (match) return match.target;
  
  // Search in APP_DATA sentences
  const allSentences = APP_DATA.sentences || [];
- const sMatch = allSentences.find(s => s.he?.toLowerCase() === t || s.he?.toLowerCase().includes(t));
- if (sMatch) return sMatch.it;
+ const sMatch = allSentences.find(s => s.native?.toLowerCase() === t || s.native?.toLowerCase().includes(t));
+ if (sMatch) return sMatch.target;
  
  return null;
 }
@@ -139,7 +139,7 @@ function saveTranslation() {
  if (!he || !it) return;
  
  // Avoid duplicates
- if (translateHistory.find(t => t.he === he && t.it === it)) {
+ if (translateHistory.find(t => t.native === he && t.target === it)) {
   toast('כבר שמור', 'info'); return;
  }
  
@@ -164,9 +164,9 @@ function replayTranslation(idx) {
  if (!t) return;
  const input = document.getElementById('translateInput');
  const result = document.getElementById('translateResult');
- if (input) input.value = t.he;
- _lastTranslation = t.it;
- showTranslation(t.it);
+ if (input) input.value = t.native;
+ _lastTranslation = t.target;
+ showTranslation(t.target);
 }
 
 // ═══════════════════════════════════════
@@ -560,8 +560,8 @@ function startCareerStage(stageId) {
  if (!APP_DATA.skillTree.find(n => n.id === stage.id)) {
   APP_DATA.skillTree.push(node);
   // Re-flatten
-  stage.words.forEach(w => { if (!APP_DATA.words.find(x => x.it === w.it)) APP_DATA.words.push(w); });
-  stage.sentences.forEach(s => { if (!APP_DATA.sentences.find(x => x.it === s.it)) APP_DATA.sentences.push(s); });
+  stage.words.forEach(w => { if (!APP_DATA.words.find(x => x.target === w.target)) APP_DATA.words.push(w); });
+  stage.sentences.forEach(s => { if (!APP_DATA.sentences.find(x => x.target === s.target)) APP_DATA.sentences.push(s); });
  }
  
  Practice.startQuiz(node);
@@ -746,8 +746,8 @@ function autoAddWeakToAnki() {
  
  let added = 0;
  state.weakWords.forEach(w => {
-  const wordData = (APP_DATA.words || []).find(x => x.he === w.word || x.it === w.word);
-  if (wordData && !anki[wordData.it]) {
+  const wordData = (APP_DATA.words || []).find(x => x.native === w.word || x.target === w.word);
+  if (wordData && !anki[wordData.target]) {
    addAnkiCard(wordData);
    added++;
   }

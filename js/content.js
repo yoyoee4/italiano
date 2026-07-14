@@ -6,9 +6,9 @@
 
 const Content = (() => {
 
-const BAI_API = '/api';
-// API key hidden server-side
-const BAI_MODEL = 'gpt-5-nano'; // cheap + fast for translations
+const BAI_API = 'https://api.b.ai';
+const BAI_KEY = 'sk-dk1eflbtuz623in5dmjcdzjbvn5gbpag';
+const BAI_MODEL = 'gpt-4o-mini'; // cheap + fast for translations
 
 let currentTab = 'news';
 let newsCache = [];
@@ -70,7 +70,7 @@ function renderNews(area) {
     <div class="card" style="text-align:center;padding:24px">
       <div style="font-size:2rem;margin-bottom:8px">📰</div>
       <div style="font-weight:700">טוען חדשות באיטלקית...</div>
-      <div style="font-size:.8rem;color:var(--text3);margin-top:4px">מקור: ANSA.it</div>
+      <div style="font-size:.8rem;color:var(--text3);margin-top:4px">מקור: ANSA.target</div>
     </div>
   `;
   
@@ -83,7 +83,7 @@ async function fetchNews() {
   
   try {
     // Try RSS2JSON for ANSA
-    const rssUrl = 'https://www.ansa.it/sito/notizie/topnews/topnews_rss.xml';
+    const rssUrl = 'https://www.ansa.target/sito/notizie/topnews/topnews_rss.xml';
     const resp = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=10`);
     const data = await resp.json();
     
@@ -124,9 +124,9 @@ async function translateNewsItems(items) {
     const titles = items.map(i => i.title).join('\n');
     const descs = items.map(i => i.description?.replace(/<[^>]+>/g,'').trim() || '').join('\n---\n');
     
-    const resp = await fetch('/api/translate', {
+    const resp = await fetch(`${BAI_API}/v1/chat/completions`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${BAI_KEY}` },
       body: JSON.stringify({
         model: BAI_MODEL,
         messages: [
@@ -147,9 +147,9 @@ async function translateNewsItems(items) {
     
     // Translate descriptions
     if (descs.replace(/---/g,'').trim()) {
-      const resp2 = await fetch('/api/translate', {
+      const resp2 = await fetch(`${BAI_API}/v1/chat/completions`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${BAI_KEY}` },
         body: JSON.stringify({
           model: BAI_MODEL,
           messages: [
@@ -262,9 +262,9 @@ function openSong(idx) {
   
   song.lines.forEach((line, li) => {
     html += `
-      <div style="padding:8px 0;border-bottom:1px solid var(--border);cursor:pointer" onclick="speak('${esc(line.it)}')">
-        <div style="font-family:var(--font-it);font-size:.95rem;font-weight:600">${line.it}</div>
-        ${line.he ? `<div style="font-size:.8rem;color:var(--text3);margin-top:2px">${line.he}</div>` : ''}
+      <div style="padding:8px 0;border-bottom:1px solid var(--border);cursor:pointer" onclick="speak('${esc(line.target)}')">
+        <div style="font-family:var(--font-it);font-size:.95rem;font-weight:600">${line.target}</div>
+        ${line.native ? `<div style="font-size:.8rem;color:var(--text3);margin-top:2px">${line.native}</div>` : ''}
       </div>
     `;
   });
@@ -274,13 +274,13 @@ function openSong(idx) {
     html += `<h3 class="section-title"><span class="emoji">📚</span> אוצר מילים</h3>`;
     song.vocab.forEach(v => {
       html += `
-        <div class="word-item" onclick="speak('${esc(v.it)}')">
+        <div class="word-item" onclick="speak('${esc(v.target)}')">
           <div class="word-left">
-            <div class="word-it">${v.it}</div>
-            <div class="word-he">${v.he}</div>
+            <div class="word-it">${v.target}</div>
+            <div class="word-he">${v.native}</div>
           </div>
           <div class="word-right">
-            <button class="speak-btn" onclick="event.stopPropagation();speak('${esc(v.it)}')">🔊</button>
+            <button class="speak-btn" onclick="event.stopPropagation();speak('${esc(v.target)}')">🔊</button>
           </div>
         </div>
       `;
@@ -308,7 +308,7 @@ function singAlong(idx) {
   if (!song) return;
   
   // Use sentence recording flow for each line
-  sentenceQueue = song.lines.map(l => ({ it: l.it, he: l.he || '', cat: 'song' }));
+  sentenceQueue = song.lines.map(l => ({ it: l.target, he: l.native || '', cat: 'song' }));
   sentenceIdx = 0;
   goPage('practice');
   // Reuse Practice's sentence rendering
@@ -368,10 +368,10 @@ function openStory(idx) {
   
   story.paragraphs.forEach((p, pi) => {
     html += `
-      <div class="card" style="cursor:pointer" onclick="speak('${esc(p.it.replace(/'/g,"\\'"))}')">
-        <div style="font-family:var(--font-it);font-size:.95rem;line-height:1.8">${p.it}</div>
-        <div style="font-size:.85rem;color:var(--text2);margin-top:8px;line-height:1.6">${p.he}</div>
-        <button class="btn btn-sm btn-secondary" style="margin-top:8px" onclick="event.stopPropagation();speak('${esc(p.it)}')">🔊</button>
+      <div class="card" style="cursor:pointer" onclick="speak('${esc(p.target.replace(/'/g,"\\'"))}')">
+        <div style="font-family:var(--font-it);font-size:.95rem;line-height:1.8">${p.target}</div>
+        <div style="font-size:.85rem;color:var(--text2);margin-top:8px;line-height:1.6">${p.native}</div>
+        <button class="btn btn-sm btn-secondary" style="margin-top:8px" onclick="event.stopPropagation();speak('${esc(p.target)}')">🔊</button>
       </div>
     `;
   });
@@ -396,13 +396,13 @@ function openStory(idx) {
     html += `<h3 class="section-title"><span class="emoji">📚</span> אוצר מילים</h3>`;
     story.vocab.forEach(v => {
       html += `
-        <div class="word-item" onclick="speak('${esc(v.it)}')">
+        <div class="word-item" onclick="speak('${esc(v.target)}')">
           <div class="word-left">
-            <div class="word-it">${v.it}</div>
-            <div class="word-he">${v.he}</div>
+            <div class="word-it">${v.target}</div>
+            <div class="word-he">${v.native}</div>
           </div>
           <div class="word-right">
-            <button class="speak-btn" onclick="event.stopPropagation();speak('${esc(v.it)}')">🔊</button>
+            <button class="speak-btn" onclick="event.stopPropagation();speak('${esc(v.target)}')">🔊</button>
           </div>
         </div>
       `;
@@ -443,9 +443,9 @@ function renderCulture(area) {
         ${c.region ? `<div style="font-size:.7rem;color:var(--indigo-light);margin-top:4px">📍 ${c.region}</div>` : ''}
         ${c.funFact ? `<div style="margin-top:8px;padding:8px;background:var(--surface2);border-radius:6px;font-size:.8rem;color:var(--emerald-light)">💡 ${c.funFact}</div>` : ''}
         ${c.phrase ? `
-          <div style="margin-top:8px;padding:8px;background:rgba(99,102,241,.1);border-radius:6px;cursor:pointer" onclick="speak('${esc(c.phrase.it)}')">
-            <div style="font-family:var(--font-it);font-weight:600">"${c.phrase.it}"</div>
-            <div style="font-size:.8rem;color:var(--text3)">${c.phrase.he}</div>
+          <div style="margin-top:8px;padding:8px;background:rgba(99,102,241,.1);border-radius:6px;cursor:pointer" onclick="speak('${esc(c.phrase.target)}')">
+            <div style="font-family:var(--font-it);font-weight:600">"${c.phrase.target}"</div>
+            <div style="font-size:.8rem;color:var(--text3)">${c.phrase.native}</div>
           </div>
         ` : ''}
       </div>
