@@ -11,6 +11,7 @@ const PRECACHE_URLS = [
   '/js/core/content-loader.js',
   '/js/core/events.js',
   '/js/modules/coach.js',
+  '/js/modules/gamification.js',
   '/js/app.js',
   '/js/skill-tree.js',
   '/js/practice.js',

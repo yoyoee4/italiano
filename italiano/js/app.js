@@ -194,16 +194,34 @@ function showApp() {
   document.getElementById('loginScreen').style.display = 'none';
   document.getElementById('appScreen').style.display = 'flex';
   
- // Update top bar
- const brandEl = document.querySelector('.nav-brand');
- if(brandEl) brandEl.innerHTML = `<span style="color:var(--indigo-light)">${APP_CONFIG.targetFlag}</span> ` + state.name;
-try{var ts=document.getElementById('topStreak');if(ts){var tv=ts.querySelector('.val');if(tv)tv.textContent=state.streak;}}catch(e){}
+  // Update top bar
+  const brandEl = document.querySelector('.nav-brand');
+  if(brandEl) brandEl.innerHTML = `<span style="color:var(--indigo-light)">${APP_CONFIG.targetFlag}</span> ` + state.name;
+  try{var ts=document.getElementById('topStreak');if(ts){var tv=ts.querySelector('.val');if(tv)tv.textContent=state.streak;}}catch(e){}
   try{var dg=document.getElementById('topDailyGoal');if(dg){var dv=dg.querySelector('.val');if(dv)dv.textContent=state.dailyXP+'/'+state.dailyGoal;}}catch(e){}
-try{var tc=document.getElementById('topCoins');if(tc){var cv=tc.querySelector('.val');if(cv)cv.textContent=state.coins;}}catch(e){}
- refreshHearts();
+  try{var tc=document.getElementById('topCoins');if(tc){var cv=tc.querySelector('.val');if(cv)cv.textContent=state.coins;}}catch(e){}
+  
+  // Initialize Gamification module
+  if (window.Gamification) {
+    Gamification.init({
+      state: state,
+      save: save,
+      toast: toast,
+      Events: Events,
+      APP_DATA: APP_DATA
+    });
+    // Refresh hearts via module
+    Gamification.getHearts();
+  } else {
+    refreshHearts();
+  }
   
   // Check streak
-  checkStreak();
+  if (window.Gamification) {
+    Gamification.checkStreak();
+  } else {
+    checkStreak();
+  }
   
   // Init Nona — automatic greetings, coaching, milestones
   if (window.Nona) {
@@ -239,7 +257,14 @@ function goPage(page) {
       break;
     case 'league':
       content.innerHTML = '<div id="leagueContent"></div>';
-      renderLeague();
+      if (window.Gamification) {
+        const info = Gamification.getLeagueInfo();
+        // renderLeague uses the same logic, but we need to keep it working
+        // For now, keep the old renderLeague since it does DOM manipulation
+        renderLeague();
+      } else {
+        renderLeague();
+      }
       break;
  case 'explore':
  content.innerHTML = '<div id="exploreContent"></div>';
@@ -263,7 +288,12 @@ case 'profile':
       break;
     case 'shop':
       content.innerHTML = '<div id="shopContent"></div>';
-      renderShop();
+      if (window.Gamification) {
+        // Use module for shop data, but keep renderShop for DOM
+        renderShop();
+      } else {
+        renderShop();
+      }
       break;
     case 'grammar':
       content.innerHTML = '<div id="grammarContent"></div>';
@@ -425,14 +455,18 @@ function renderShop() {
 }
 
 function buyItem(id, price) {
-  if (state.coins < price) { toast('אין מספיק מטבעות!', 'error'); return; }
-  state.coins -= price;
-  state.shopPurchases.push(id);
+  if (window.Gamification) {
+    Gamification.buyItem(id);
+  } else {
+    if (state.coins < price) { toast('אין מספיק מטבעות!', 'error'); return; }
+    state.coins -= price;
+    state.shopPurchases.push(id);
   
-  if (id === 'hearts_refill') { state.hearts = 5; state.heartsRefill = Date.now(); refreshHearts(); }
-  save();
-  toast('✅ נרכש בהצלחה!', 'success');
-  renderShop();
+    if (id === 'hearts_refill') { state.hearts = 5; state.heartsRefill = Date.now(); refreshHearts(); }
+    save();
+    toast('✅ נרכש בהצלחה!', 'success');
+    renderShop();
+  }
 }
 
 // ═══════════════════════════════════════
