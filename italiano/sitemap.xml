@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://italiano.tickerio.app/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://italiano.tickerio.app/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://italiano.tickerio.app/?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://italiano.tickerio.app/?lang=en"/>
+  </url>
+</urlset>
