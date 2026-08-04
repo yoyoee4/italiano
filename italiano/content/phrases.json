@@ -1,0 +1,765 @@
+[
+  {
+    "it": "Ciao, mi chiamo Marco",
+    "he": "שלום, קוראים לי מרקו",
+    "cat": "היכרות",
+    "level": 1,
+    "context": "הצגה עצמית"
+  },
+  {
+    "it": "Piacere di conoscerti!",
+    "he": "נעים להכיר אותך!",
+    "cat": "היכרות",
+    "level": 1,
+    "context": "נעימות"
+  },
+  {
+    "it": "Da quanto tempo studi l'italiano?",
+    "he": "כמה זמן אתה לומד איטלקית?",
+    "cat": "היכרות",
+    "level": 2,
+    "context": "שיחה על לימודים"
+  },
+  {
+    "it": "Studio l'italiano da due anni",
+    "he": "אני לומד איטלקית כבר שנתיים",
+    "cat": "היכרות",
+    "level": 2,
+    "context": "תשובה על לימודים"
+  },
+  {
+    "it": "Sei italiano?",
+    "he": "אתה איטלקי?",
+    "cat": "היכרות",
+    "level": 1,
+    "context": "שאלה על מוצא"
+  },
+  {
+    "it": "No, sono israeliano",
+    "he": "לא, אני ישראלי",
+    "cat": "היכרות",
+    "level": 1,
+    "context": "תשובה על מוצא"
+  },
+  {
+    "it": "Parli altre lingue?",
+    "he": "אתה מדבר שפות אחרות?",
+    "cat": "היכרות",
+    "level": 2,
+    "context": "שפות"
+  },
+  {
+    "it": "Sì, parlo inglese ed ebraico",
+    "he": "כן, אני מדבר אנגלית ועברית",
+    "cat": "היכרות",
+    "level": 2,
+    "context": "תשובה על שפות"
+  },
+  {
+    "it": "Un tavolo per due, per favore",
+    "he": "שולחן לשניים, בבקשה",
+    "cat": "מסעדה",
+    "level": 1,
+    "context": "בקשת שולחן"
+  },
+  {
+    "it": "Posso vedere il menù?",
+    "he": "אפשר לראות את התפריט?",
+    "cat": "מסעדה",
+    "level": 1,
+    "context": "בקשת תפריט"
+  },
+  {
+    "it": "Cosa ci consiglia?",
+    "he": "מה אתה ממליץ?",
+    "cat": "מסעדה",
+    "level": 2,
+    "context": "בקשת המלצה"
+  },
+  {
+    "it": "Il piatto del giorno è fantastico",
+    "he": "המנה של היום מעולה",
+    "cat": "מסעדה",
+    "level": 2,
+    "context": "המלצת מלצר"
+  },
+  {
+    "it": "Vorrei una carbonara, per favore",
+    "he": "אני רוצה קרבונרה, בבקשה",
+    "cat": "מסעדה",
+    "level": 1,
+    "context": "הזמנה"
+  },
+  {
+    "it": "Con o senza guanciale?",
+    "he": "עם או בלי לחי חזיר?",
+    "cat": "מסעדה",
+    "level": 3,
+    "context": "שאלת מלצר"
+  },
+  {
+    "it": "È tutto buonissimo!",
+    "he": "הכל טעים מאוד!",
+    "cat": "מסעדה",
+    "level": 1,
+    "context": "מחמאה"
+  },
+  {
+    "it": "Il conto, per favore",
+    "he": "החשבון, בבקשה",
+    "cat": "מסעדה",
+    "level": 1,
+    "context": "בקשת חשבון"
+  },
+  {
+    "it": "Posso pagare con la carta?",
+    "he": "אפשר לשלם בכרטיס?",
+    "cat": "מסעדה",
+    "level": 2,
+    "context": "תשלום"
+  },
+  {
+    "it": "Tenga il resto",
+    "he": "תשמור את העודף",
+    "cat": "מסעדה",
+    "level": 3,
+    "context": "טיפ"
+  },
+  {
+    "it": "Posso aiutarla?",
+    "he": "אפשר לעזור לך?",
+    "cat": "קניות",
+    "level": 1,
+    "context": "מוכר פונה"
+  },
+  {
+    "it": "Sto solo guardando, grazie",
+    "he": "אני רק מסתכל, תודה",
+    "cat": "קניות",
+    "level": 2,
+    "context": "תשובה מנומסת"
+  },
+  {
+    "it": "Quanto costa questo?",
+    "he": "כמה זה עולה?",
+    "cat": "קניות",
+    "level": 1,
+    "context": "שאלת מחיר"
+  },
+  {
+    "it": "Costa venticinque euro",
+    "he": "זה עולה 25 יורו",
+    "cat": "קניות",
+    "level": 1,
+    "context": "תשובת מחיר"
+  },
+  {
+    "it": "È troppo caro!",
+    "he": "זה יקר מדי!",
+    "cat": "קניות",
+    "level": 2,
+    "context": "תלונה"
+  },
+  {
+    "it": "Avete qualcosa di meno caro?",
+    "he": "יש לכם משהו יותר זול?",
+    "cat": "קניות",
+    "level": 2,
+    "context": "בקשת חלופה"
+  },
+  {
+    "it": "Posso provare questo?",
+    "he": "אפשר לנסות את זה?",
+    "cat": "קניות",
+    "level": 2,
+    "context": "מדידה"
+  },
+  {
+    "it": "Lo prendo!",
+    "he": "אני לוקח את זה!",
+    "cat": "קניות",
+    "level": 1,
+    "context": "קנייה"
+  },
+  {
+    "it": "Accettate carte di credito?",
+    "he": "אתם מקבלים כרטיסי אשראי?",
+    "cat": "קניות",
+    "level": 2,
+    "context": "תשלום"
+  },
+  {
+    "it": "Dov'è la stazione?",
+    "he": "איפה התחנה?",
+    "cat": "נסיעות",
+    "level": 1,
+    "context": "שאלת כיוון"
+  },
+  {
+    "it": "È vicino o lontano?",
+    "he": "זה קרוב או רחוק?",
+    "cat": "נסיעות",
+    "level": 2,
+    "context": "שאלת מרחק"
+  },
+  {
+    "it": "A dieci minuti a piedi",
+    "he": "עשר דקות ברגל",
+    "cat": "נסיעות",
+    "level": 2,
+    "context": "תשובת מרחק"
+  },
+  {
+    "it": "Un biglietto per Roma, per favore",
+    "he": "כרטיס לרומא, בבקשה",
+    "cat": "נסיעות",
+    "level": 1,
+    "context": "קניית כרטיס"
+  },
+  {
+    "it": "Andata e ritorno?",
+    "he": "הלוך וחזר?",
+    "cat": "נסיעות",
+    "level": 2,
+    "context": "שאלת פקיד"
+  },
+  {
+    "it": "Solo andata",
+    "he": "רק הלוך",
+    "cat": "נסיעות",
+    "level": 2,
+    "context": "תשובה"
+  },
+  {
+    "it": "A che ora parte il treno?",
+    "he": "באיזו שעה יוצאת הרכבת?",
+    "cat": "נסיעות",
+    "level": 2,
+    "context": "שאלת זמן"
+  },
+  {
+    "it": "Il treno parte alle nove",
+    "he": "הרכבת יוצאת בתשע",
+    "cat": "נסיעות",
+    "level": 2,
+    "context": "תשובת זמן"
+  },
+  {
+    "it": "Dov'è il binario?",
+    "he": "איפה הרציף?",
+    "cat": "נסיעות",
+    "level": 3,
+    "context": "בתחנה"
+  },
+  {
+    "it": "Ho perso il treno!",
+    "he": "הפסדתי את הרכבת!",
+    "cat": "נסיעות",
+    "level": 3,
+    "context": "תקלה"
+  },
+  {
+    "it": "Ho una prenotazione a nome Cohen",
+    "he": "יש לי הזמנה על שם כהן",
+    "cat": "מלון",
+    "level": 2,
+    "context": "צ'ק-אין"
+  },
+  {
+    "it": "Per quante notti?",
+    "he": "לכמה לילות?",
+    "cat": "מלון",
+    "level": 2,
+    "context": "שאלת פקיד"
+  },
+  {
+    "it": "Per tre notti",
+    "he": "לשלושה לילות",
+    "cat": "מלון",
+    "level": 2,
+    "context": "תשובה"
+  },
+  {
+    "it": "La colazione è inclusa?",
+    "he": "ארוחת הבוקר כלולה?",
+    "cat": "מלון",
+    "level": 2,
+    "context": "שאלה"
+  },
+  {
+    "it": "Sì, al buffet dalle 7 alle 10",
+    "he": "כן, בופט מ-7 עד 10",
+    "cat": "מלון",
+    "level": 3,
+    "context": "תשובת פקיד"
+  },
+  {
+    "it": "Posso avere una stanza con vista?",
+    "he": "אפשר לקבל חדר עם נוף?",
+    "cat": "מלון",
+    "level": 3,
+    "context": "בקשה"
+  },
+  {
+    "it": "C'è il Wi-Fi?",
+    "he": "יש Wi-Fi?",
+    "cat": "מלון",
+    "level": 1,
+    "context": "שאלה חיונית"
+  },
+  {
+    "it": "La password è alla reception",
+    "he": "הסיסמה בקבלה",
+    "cat": "מלון",
+    "level": 2,
+    "context": "תשובה"
+  },
+  {
+    "it": "Non mi sento bene",
+    "he": "אני לא מרגיש טוב",
+    "cat": "בריאות",
+    "level": 2,
+    "context": "התבטאות על בריאות"
+  },
+  {
+    "it": "Mi fa male la testa",
+    "he": "כואב לי הראש",
+    "cat": "בריאות",
+    "level": 2,
+    "context": "תלונה"
+  },
+  {
+    "it": "Ho bisogno di un medico",
+    "he": "אני צריך רופא",
+    "cat": "בריאות",
+    "level": 2,
+    "context": "חירום"
+  },
+  {
+    "it": "Dov'è la farmacia più vicina?",
+    "he": "איפה בית המרקחת הכי קרוב?",
+    "cat": "בריאות",
+    "level": 2,
+    "context": "חיפוש"
+  },
+  {
+    "it": "Sono allergico alle noci",
+    "he": "אני אלרגי לאגוזים",
+    "cat": "בריאות",
+    "level": 3,
+    "context": "אלרגיה"
+  },
+  {
+    "it": "Chiamate un'ambulanza!",
+    "he": "תקראו אמבולנס!",
+    "cat": "בריאות",
+    "level": 3,
+    "context": "חירום"
+  },
+  {
+    "it": "Che giorno è oggi?",
+    "he": "איזה יום היום?",
+    "cat": "יומיום",
+    "level": 1,
+    "context": "שאלה"
+  },
+  {
+    "it": "Oggi è lunedì",
+    "he": "היום שני",
+    "cat": "יומיום",
+    "level": 1,
+    "context": "תשובה"
+  },
+  {
+    "it": "Che tempo fa?",
+    "he": "איזה מזג אוויר?",
+    "cat": "יומיום",
+    "level": 1,
+    "context": "שיחת חולין"
+  },
+  {
+    "it": "Fa caldo oggi!",
+    "he": "חם היום!",
+    "cat": "יומיום",
+    "level": 1,
+    "context": "תגובה"
+  },
+  {
+    "it": "Sta piovendo",
+    "he": "יורד גשם",
+    "cat": "יומיום",
+    "level": 2,
+    "context": "תגובה"
+  },
+  {
+    "it": "Che ore sono?",
+    "he": "מה השעה?",
+    "cat": "יומיום",
+    "level": 1,
+    "context": "שאלת זמן"
+  },
+  {
+    "it": "Sono le tre e mezza",
+    "he": "שלוש וחצי",
+    "cat": "יומיום",
+    "level": 2,
+    "context": "תשובת זמן"
+  },
+  {
+    "it": "Devo andare",
+    "he": "אני צריך ללכת",
+    "cat": "יומיום",
+    "level": 2,
+    "context": "פרידה"
+  },
+  {
+    "it": "Ci vediamo domani!",
+    "he": "נתראה מחר!",
+    "cat": "יומיום",
+    "level": 1,
+    "context": "פרידה"
+  },
+  {
+    "it": "Buonanotte, sogna d'oro!",
+    "he": "לילה טוב, חלום זהב!",
+    "cat": "יומיום",
+    "level": 1,
+    "context": "לילה טוב"
+  },
+  {
+    "it": "Secondo me...",
+    "he": "לדעתי...",
+    "cat": "דעות",
+    "level": 2,
+    "context": "הבעת דעה"
+  },
+  {
+    "it": "Sono d'accordo",
+    "he": "אני מסכים",
+    "cat": "דעות",
+    "level": 2,
+    "context": "הסכמה"
+  },
+  {
+    "it": "Non sono d'accordo",
+    "he": "אני לא מסכים",
+    "cat": "דעות",
+    "level": 2,
+    "context": "אי-הסכמה"
+  },
+  {
+    "it": "Mi piace molto!",
+    "he": "אני ממש אוהב את זה!",
+    "cat": "דעות",
+    "level": 1,
+    "context": "התלהבות"
+  },
+  {
+    "it": "Non mi piace per niente",
+    "he": "אני בכלל לא אוהב את זה",
+    "cat": "דעות",
+    "level": 2,
+    "context": "אי-אהדה"
+  },
+  {
+    "it": "Sono stanco morto!",
+    "he": "אני עייף למוות!",
+    "cat": "דעות",
+    "level": 2,
+    "context": "עייפות"
+  },
+  {
+    "it": "Che bello!",
+    "he": "איזה יופי!",
+    "cat": "דעות",
+    "level": 1,
+    "context": "התפעלות"
+  },
+  {
+    "it": "Mi manca casa",
+    "he": "חסרה לי הביתה",
+    "cat": "דעות",
+    "level": 3,
+    "context": "געגוע"
+  },
+  {
+    "it": "Usciamo stasera?",
+    "he": "יוצאים הערב?",
+    "cat": "חברים",
+    "level": 2,
+    "context": "הזמנה"
+  },
+  {
+    "it": "Andiamo a prendere un caffè?",
+    "he": "נלך לשתות קפה?",
+    "cat": "חברים",
+    "level": 1,
+    "context": "הזמנה"
+  },
+  {
+    "it": "Ottima idea!",
+    "he": "רעיון מעולה!",
+    "cat": "חברים",
+    "level": 1,
+    "context": "הסכמה"
+  },
+  {
+    "it": "Mi dispiace, non posso",
+    "he": "סליחה, אני לא יכול",
+    "cat": "חברים",
+    "level": 2,
+    "context": "סירוב מנומס"
+  },
+  {
+    "it": "Ci vediamo dopo!",
+    "he": "נתראה אחר כך!",
+    "cat": "חברים",
+    "level": 1,
+    "context": "פרידה זמנית"
+  },
+  {
+    "it": "Ti va di venire con noi?",
+    "he": "יש לך חשק לבוא איתנו?",
+    "cat": "חברים",
+    "level": 2,
+    "context": "הזמנה"
+  },
+  {
+    "it": "Volentieri!",
+    "he": "בשמחה!",
+    "cat": "חברים",
+    "level": 2,
+    "context": "הסכמה נלהבת"
+  },
+  {
+    "it": "Grazie per l'invito",
+    "he": "תודה על ההזמנה",
+    "cat": "חברים",
+    "level": 2,
+    "context": "תודה"
+  },
+  {
+    "it": "Lavoro in un'azienda tech",
+    "he": "אני עובד בחברת טק",
+    "cat": "עבודה",
+    "level": 2,
+    "context": "תיאור עבודה"
+  },
+  {
+    "it": "Faccio il programmatore",
+    "he": "אני מתכנת",
+    "cat": "עבודה",
+    "level": 2,
+    "context": "תיאור מקצוע"
+  },
+  {
+    "it": "Ho una riunione alle tre",
+    "he": "יש לי פגישה בשלוש",
+    "cat": "עבודה",
+    "level": 2,
+    "context": "לו\"ז"
+  },
+  {
+    "it": "Posso inviarle un'email?",
+    "he": "אפשר לשלוח לך אימייל?",
+    "cat": "עבודה",
+    "level": 2,
+    "context": "תקשורת"
+  },
+  {
+    "it": "La scadenza è venerdì",
+    "he": "הדד-ליין בשישי",
+    "cat": "עבודה",
+    "level": 3,
+    "context": "לו\"ז"
+  },
+  {
+    "it": "Sei molto bella",
+    "he": "את יפה מאוד",
+    "cat": "רומנטיקה",
+    "level": 2,
+    "context": "מחמאה"
+  },
+  {
+    "it": "Mi piaci molto",
+    "he": "אני מאוד אוהב אותך",
+    "cat": "רומנטיקה",
+    "level": 2,
+    "context": "הצהרה"
+  },
+  {
+    "it": "Vuoi uscire con me?",
+    "he": "את רוצה לצאת איתי?",
+    "cat": "רומנטיקה",
+    "level": 2,
+    "context": "הזמנה לדייט"
+  },
+  {
+    "it": "Sei il mio amore",
+    "he": "את האהבה שלי",
+    "cat": "רומנטיקה",
+    "level": 3,
+    "context": "הצהרת אהבה"
+  },
+  {
+    "it": "Ti amo",
+    "he": "אני אוהב אותך",
+    "cat": "רומנטיקה",
+    "level": 1,
+    "context": "אהבה"
+  },
+  {
+    "it": "Scusi, posso chiederle una cosa?",
+    "he": "סליחה, אפשר לשאול אותך משהו?",
+    "cat": "בקשות",
+    "level": 2,
+    "context": "פנייה מנומסת"
+  },
+  {
+    "it": "Potrebbe parlare più piano?",
+    "he": "אפשר לדבר יותר לאט?",
+    "cat": "בקשות",
+    "level": 2,
+    "context": "בקשה להאט"
+  },
+  {
+    "it": "Non ho capito, può ripetere?",
+    "he": "לא הבנתי, אפשר לחזור?",
+    "cat": "בקשות",
+    "level": 1,
+    "context": "בקשת חזרה"
+  },
+  {
+    "it": "Parla un po' più lentamente?",
+    "he": "תדבר קצת יותר לאט?",
+    "cat": "בקשות",
+    "level": 2,
+    "context": "בקשה"
+  },
+  {
+    "it": "Mi scusi, ho sbagliato",
+    "he": "סליחה, טעיתי",
+    "cat": "בקשות",
+    "level": 2,
+    "context": "התנצלות"
+  },
+  {
+    "it": "Non fa niente!",
+    "he": "אין בעיה / שום דבר!",
+    "cat": "בקשות",
+    "level": 2,
+    "context": "סליחה"
+  },
+  {
+    "it": "Andiamo al cinema?",
+    "he": "נלך לקולנוע?",
+    "cat": "בילוי",
+    "level": 2,
+    "context": "הצעה"
+  },
+  {
+    "it": "Cosa fanno stasera?",
+    "he": "מה עושים הערב?",
+    "cat": "בילוי",
+    "level": 2,
+    "context": "שאלה"
+  },
+  {
+    "it": "Andiamo a fare una passeggiata",
+    "he": "נלך לטייל קצת",
+    "cat": "בילוי",
+    "level": 2,
+    "context": "הצעה"
+  },
+  {
+    "it": "Mi piace ascoltare la musica",
+    "he": "אני אוהב לשמוע מוזיקה",
+    "cat": "בילוי",
+    "level": 2,
+    "context": "תחביב"
+  },
+  {
+    "it": "Suoni uno strumento?",
+    "he": "אתה מנגן על כלי?",
+    "cat": "בילוי",
+    "level": 3,
+    "context": "שאלה"
+  },
+  {
+    "it": "Andiamo in spiaggia!",
+    "he": "נלך לחוף!",
+    "cat": "בילוי",
+    "level": 1,
+    "context": "הצעה"
+  },
+  {
+    "it": "Pronto? Chi parla?",
+    "he": "הלו? מי מדבר?",
+    "cat": "טלפון",
+    "level": 2,
+    "context": "פתיחת שיחה"
+  },
+  {
+    "it": "Sono Marco, c'è Giulia?",
+    "he": "זה מרקו, ג'וליה שם?",
+    "cat": "טלפון",
+    "level": 2,
+    "context": "בקשה לדבר"
+  },
+  {
+    "it": "Un momento, per favore",
+    "he": "רגע, בבקשה",
+    "cat": "טלפון",
+    "level": 2,
+    "context": "המתנה"
+  },
+  {
+    "it": "Può lasciare un messaggio?",
+    "he": "אפשר להשאיר הודעה?",
+    "cat": "טלפון",
+    "level": 3,
+    "context": "הודעה"
+  },
+  {
+    "it": "La richiamo dopo",
+    "he": "אחזור אליך אחר כך",
+    "cat": "טלפון",
+    "level": 3,
+    "context": "סיום שיחה"
+  },
+  {
+    "it": "Benvenuto a casa mia!",
+    "he": "ברוכים הבאים לבית שלי!",
+    "cat": "בית",
+    "level": 2,
+    "context": "אירוח"
+  },
+  {
+    "it": "Accomodati!",
+    "he": "שב נוח!",
+    "cat": "בית",
+    "level": 2,
+    "context": "הזמנה לשבת"
+  },
+  {
+    "it": "Vuoi qualcosa da bere?",
+    "he": "אתה רוצה משהו לשתות?",
+    "cat": "בית",
+    "level": 2,
+    "context": "אירוח"
+  },
+  {
+    "it": "Mettiti comodo!",
+    "he": "תרגיש בנוח!",
+    "cat": "בית",
+    "level": 2,
+    "context": "אירוח"
+  },
+  {
+    "it": "La cena è pronta!",
+    "he": "ארוחת הערב מוכנה!",
+    "cat": "בית",
+    "level": 1,
+    "context": "קריאה לארוחה"
+  }
+]

@@ -3,12 +3,12 @@
    Offline-first PWA caching
    ═══════════════════════════════════════════════ */
 
-const CACHE_NAME = 'volalingo-v5';
+const CACHE_NAME = 'volalingo-v6';
 const PRECACHE_URLS = [
   '/',
   '/index.html',
   '/css/styles.css',
-  '/js/data.js',
+  '/js/core/content-loader.js',
   '/js/app.js',
   '/js/skill-tree.js',
   '/js/practice.js',
@@ -18,7 +18,21 @@ const PRECACHE_URLS = [
   '/js/speak.js',
   '/js/sentbuild.js',
   '/js/listening.js',
-  '/manifest.json'
+  '/manifest.json',
+  '/content/words.json',
+  '/content/sentences.json',
+  '/content/phrases.json',
+  '/content/dialogues.json',
+  '/content/stories.json',
+  '/content/songs.json',
+  '/content/skill-tree.json',
+  '/content/levels.json',
+  '/content/characters.json',
+  '/content/culture.json',
+  '/content/grammar.json',
+  '/content/achievements.json',
+  '/content/exams.json',
+  '/content/news.json'
 ];
 
 // Install — precache shell

@@ -69,9 +69,12 @@ function loadAnki() {
 function saveAnki() { localStorage.setItem('vl_anki', JSON.stringify(anki)); }
 
 // ═══════════════════════════════════════
-// INIT
+// INIT - Wait for content to load first
 // ═══════════════════════════════════════
-window.addEventListener('DOMContentLoaded', () => {
+async function initApp() {
+  // Wait for content to be ready
+  await ContentLoader.init();
+  
   // Normalize word format - ensure target/native aliases exist
   if (APP_DATA && APP_DATA.words && APP_DATA.words.length > 0) {
     APP_DATA.words.forEach(function(w) {
@@ -165,6 +168,13 @@ window.addEventListener('DOMContentLoaded', () => {
         showApp();
       }, 400);
     }, 800);
+}
+
+// Start initialization
+initApp().catch(err => {
+  console.error('Failed to initialize app:', err);
+  // Fallback: try to continue anyway
+  showApp();
 });
 
 function doLogin() {
