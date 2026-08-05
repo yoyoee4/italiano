@@ -1,0 +1,518 @@
+[
+  {
+    "id": "story_1",
+    "level": "A2",
+    "title": "Il viaggio di Marco a Roma",
+    "en": "Marco's trip to Rome",
+    "paragraphs": [
+      {
+        "it": "Marco è un ragazzo di Milano. Ha venticinque anni e lavora in un ufficio.",
+        "he": "מרקו הוא בחור ממילאנו. הוא בן עשרים וחמש ועובד במשרד."
+      },
+      {
+        "it": "Un giorno decide di visitare Roma per la prima volta. Prende il treno la mattina presto.",
+        "he": "יום אחד הוא מחליט לבקר ברומא בפעם הראשונה. הוא לוקח את הרכבת מוקדם בבוקר."
+      },
+      {
+        "it": "Arriva a Roma Termini e prende la metropolitana. La città è bellissima!",
+        "he": "הוא מגיע לרומא טרמיני ולוקח את הרכבת התחתית. העיר יפה מאוד!"
+      },
+      {
+        "it": "Vede il Colosseo e rimane senza parole. È enorme e antico.",
+        "he": "הוא רואה את הקולוסיאום ונשאר ללא מילים. הוא עצום ועתיק."
+      },
+      {
+        "it": "Poi visita il Foro Romano e mangia un gelato vicino alla Fontana di Trevi.",
+        "he": "אחר כך הוא מבקר בפורום רומאנום ואוכל גלידה ליד מזרקת טרווי."
+      },
+      {
+        "it": "Marco si innamora di Roma e promette di tornare presto.",
+        "he": "מרקו מתאהב ברומא ומבטיח לחזור בקרוב."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Da dove viene Marco?",
+        "options": [
+          "Roma",
+          "Milano",
+          "Firenze",
+          "Napoli"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Cosa vede Marco che lo lascia senza parole?",
+        "options": [
+          "Il Vaticano",
+          "Il Colosseo",
+          "La Fontana di Trevi",
+          "Il Tevere"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Cosa mangia Marco vicino alla Fontana di Trevi?",
+        "options": [
+          "Una pizza",
+          "Un gelato",
+          "Un caffè",
+          "Una pasta"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "story_2",
+    "level": "A2",
+    "title": "Anna impara a cucinare",
+    "en": "Anna learns to cook",
+    "paragraphs": [
+      {
+        "it": "Anna è una studentessa di Bologna. Non sa cucinare molto bene.",
+        "he": "אנה היא סטודנטית מבולוניה. היא לא יודעת לבשל טוב מאוד."
+      },
+      {
+        "it": "Un giorno sua nonna Lucia viene a trovarla e le insegna a fare la pasta fresca.",
+        "he": "יום אחד סבתא שלה לוצ'יה באה לבקר ומלמדת אותה להכין פסטה טרייה."
+      },
+      {
+        "it": "Preparano le tagliatelle insieme. La nonna spiega che la pasta deve essere sottile.",
+        "he": "הן מכינות טליאטלה יחד. הסבתא מסבירה שהפסטה צריכה להיות דקה."
+      },
+      {
+        "it": "Anna impara anche a fare il ragù alla bolognese. Cucinano per ore.",
+        "he": "אנה לומדת גם להכין רagu בולונז. הן מבשלות שעות."
+      },
+      {
+        "it": "Alla fine, Anna invita i suoi amici a cena. Tutti dicono che il cibo è delizioso.",
+        "he": "בסוף, אנה מזמינה את חבריה לארוחת ערב. כולם אומרים שהאוכל טעים."
+      },
+      {
+        "it": "Anna è felice e orgogliosa. Ora sa cucinare come la sua nonna!",
+        "he": "אנה שמחה וגאה. עכשיו היא יודעת לבשל כמו סבתא שלה!"
+      }
+    ],
+    "questions": [
+      {
+        "question": "Chi insegna ad Anna a cucinare?",
+        "options": [
+          "Sua madre",
+          "Sua nonna",
+          "Un amico",
+          "Un libro"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Cosa preparano Anna e sua nonna?",
+        "options": [
+          "Pizza",
+          "Tagliatelle",
+          "Risotto",
+          "Lasagne"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Chi viene a cena alla fine della storia?",
+        "options": [
+          "La nonna",
+          "I genitori",
+          "Gli amici",
+          "I vicini"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "story_3",
+    "level": "B1",
+    "title": "La festa italiana",
+    "en": "The Italian festival",
+    "paragraphs": [
+      {
+        "it": "Ogni anno a settembre, nel paese di Montepulciano, si tiene la festa del vino.",
+        "he": "כל שנה בספטמבר, בעיירה מונטפולצ'אנו, מתקיים פסטיבל היין."
+      },
+      {
+        "it": "Gianni e la sua famiglia partecipano da generazioni. Preparano il vino nella loro cantina.",
+        "he": "ג'אני ומשפחתו משתתפים במשך דורות. הם מכינים יין במרתף שלהם."
+      },
+      {
+        "it": "Durante la festa, le strade si riempiono di bancarelle, musica e balli popolari.",
+        "he": "במהלך הפסטיבל, הרחובות מתמלאים בדוכנים, מוזיקה וריקודים עממיים."
+      },
+      {
+        "it": "Si assaggiano vini diversi e si mangiano piatti tipici toscani.",
+        "he": "טועמים יינות שונים ואוכלים מאכלים טיפוסיים של טוסקנה."
+      },
+      {
+        "it": "La domenica c'è una sfilata storica con costumi rinascimentali.",
+        "he": "ביום ראשון יש תהלוכה היסטורית עם תלבושות רנסנס."
+      },
+      {
+        "it": "Gianni dice che questa festa è il cuore della loro comunità.",
+        "he": "ג'אני אומר שהפסטיבל הזה הוא הלב של הקהילה שלהם."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Dove si tiene la festa del vino?",
+        "options": [
+          "Firenze",
+          "Montepulciano",
+          "Siena",
+          "Pisa"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Cosa fanno le strade durante la festa?",
+        "options": [
+          "Si svuotano",
+          "Si riempiono di bancarelle",
+          "Chiudono",
+          "Si illuminano"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Cosa indossano le persone nella sfilata?",
+        "options": [
+          "Abiti moderni",
+          "Costumi rinascimentali",
+          "Uniformi",
+          "Maschere"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "story_4",
+    "level": "B1",
+    "title": "Trovare lavoro a Milano",
+    "en": "Finding work in Milan",
+    "paragraphs": [
+      {
+        "it": "Luigi si è appena laureato in economia all'Università di Padova.",
+        "he": "לואיג'י刚刚סיים תואר בכלכלה באוניברסיטת פדובה."
+      },
+      {
+        "it": "Decide di trasferirsi a Milano per cercare lavoro nel settore finanziario.",
+        "he": "הוא מחליט לעבור למילאנו כדי לחפש עבודה בתחום הפיננסי."
+      },
+      {
+        "it": "Manda decine di curriculum ma riceve poche risposte.",
+        "he": "הוא שולח עשרות קורות חיים אבל מקבל מעט תשובות."
+      },
+      {
+        "it": "Finalmente viene convocato per un colloquio in una grande banca.",
+        "he": "לבסוף הוא מוזמן לראיון עבודה בבנק גדול."
+      },
+      {
+        "it": "Il colloquio va molto bene. Il direttore è impressionato dalle sue conoscenze.",
+        "he": "הראיון הולך טוב מאוד. המנהל מתרשם מהידע שלו."
+      },
+      {
+        "it": "Luigi viene assunto e inizia una nuova vita a Milano.",
+        "he": "לואיג'י מתקבל לעבודה ומתחיל חיים חדשים במילאנו."
+      }
+    ],
+    "questions": [
+      {
+        "question": "In cosa si è laureato Luigi?",
+        "options": [
+          "Medicina",
+          "Economia",
+          "Ingegneria",
+          "Lettere"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Dove cerca lavoro Luigi?",
+        "options": [
+          "Roma",
+          "Padova",
+          "Milano",
+          "Torino"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Chi rimane impressionato dal colloquio?",
+        "options": [
+          "Il collega",
+          "Il direttore",
+          "Il segretario",
+          "Il cliente"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "story_5",
+    "level": "B2",
+    "title": "L'arte del caffè espresso",
+    "en": "The art of espresso",
+    "paragraphs": [
+      {
+        "it": "Il caffè espresso è molto più di una bevanda in Italia. È un rito quotidiano.",
+        "he": "אספרסו הוא הרבה יותר ממשקה באיטליה. זה טקס יומיומי."
+      },
+      {
+        "it": "Marco lavora come barista a Napoli da vent'anni. Conosce tutti i segreti del caffè.",
+        "he": "מרקו עובד כבריסטה בנאפולי כבר עשרים שנה. הוא מכיר את כל סודות הקפה."
+      },
+      {
+        "it": "La miscela giusta, la temperatura dell'acqua, la pressione — tutto deve essere perfetto.",
+        "he": "התערובת הנכונה, טמפרטורת המים, הלחץ — הכל חייב להיות מושלם."
+      },
+      {
+        "it": "I clienti di Marco vengono da tutto il quartiere. Alcuni prendono il caffè alla mattina presto, altri dopo pranzo.",
+        "he": "הלקוחות של מרקו באים מכל השכונה. חלק שותים קפה מוקדם בבוקר, אחרים אחרי הצהריים."
+      },
+      {
+        "it": "Marco dice che un buon espresso deve avere la crema dorata e un aroma intenso.",
+        "he": "מרקו אומר שאספרסו טוב חייב להיות בעל קרמה מוזהבת וארומה חזקה."
+      },
+      {
+        "it": "Per gli italiani, il caffè è un momento di pausa e di socialità.",
+        "he": "עבור האיטלקים, קפה הוא רגע של הפסקה וחברתיות."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Dove lavora Marco?",
+        "options": [
+          "Roma",
+          "Napoli",
+          "Milano",
+          "Firenze"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Da quanto tempo Marco fa il barista?",
+        "options": [
+          "Dieci anni",
+          "Vent'anni",
+          "Trent'anni",
+          "Cinque anni"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Cosa deve avere un buon espresso secondo Marco?",
+        "options": [
+          "Schiuma bianca",
+          "Crema dorata",
+          "Ghiaccio",
+          "Latte"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "story_6",
+    "level": "B2",
+    "title": "Un weekend a Firenze",
+    "en": "A weekend in Florence",
+    "paragraphs": [
+      {
+        "it": "Sofia e Luca decidono di passare un weekend a Firenze per il loro anniversario.",
+        "he": "סופיה ולוקה מחליטים לבלות סוף שבוע בפירנצה לרגל יום השנה שלהם."
+      },
+      {
+        "it": "Arrivano venerdì sera e si sistemano in un piccolo hotel vicino al Duomo.",
+        "he": "הם מגיעים בערב שישי ומתמקמים במלון קטן ליד הדואומו."
+      },
+      {
+        "it": "Sabato mattina visitano la Galleria degli Uffizi. Sofia rimane incantata dalla Primavera di Botticelli.",
+        "he": "בשבת בבוקר הם מבקרים בגלריה אופיצי. סופיה מוקסמת מהאביב של בוטיצ'לי."
+      },
+      {
+        "it": "Pranzano in una trattoria tipica dove assaggiano la bistecca alla fiorentina.",
+        "he": "הם אוכלים צהריים בטרטוריה טיפוסית שם טועמים סטייק פלורנטיני."
+      },
+      {
+        "it": "Nel pomeriggio camminano sul Ponte Vecchio e comprano un piccolo gioiello.",
+        "he": "אחר הצהריים הם מטיילים על פונטה וקיו וקונים תכשיט קטן."
+      },
+      {
+        "it": "La domenica salgono sulla collina di Fiesole per vedere il panorama della città.",
+        "he": "ביום ראשון הם עולים על גבעת פייזולה כדי לראות את הנוף של העיר."
+      },
+      {
+        "it": "Tornano a casa stanchi ma felici. Firenze li ha conquistati.",
+        "he": "הם חוזרים הביתה עייפים אבל שמחים. פירנצה כבשה אותם."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Perché Sofia e Luca vanno a Firenze?",
+        "options": [
+          "Per lavoro",
+          "Per l'anniversario",
+          "Per studiare",
+          "Per un concerto"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Cosa vedono agli Uffizi?",
+        "options": [
+          "La Gioconda",
+          "La Primavera",
+          "La Pietà",
+          "La Creazione"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Cosa comprano sul Ponte Vecchio?",
+        "options": [
+          "Un quadro",
+          "Un gioiello",
+          "Un vestito",
+          "Un libro"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "story_7",
+    "level": "B1",
+    "title": "Studiare all'università",
+    "en": "Studying at university",
+    "paragraphs": [
+      {
+        "it": "Chiara ha diciotto anni e si iscrive all'Università di Bologna.",
+        "he": "קיארה בת שמונה עשרה ונרשמת לאוניברסיטת בולוניה."
+      },
+      {
+        "it": "Sceglie di studiare lettere moderne perché ama leggere e scrivere.",
+        "he": "היא בוחרת ללמוד ספרות מודרנית כי היא אוהבת לקרוא ולכתוב."
+      },
+      {
+        "it": "I primi mesi sono difficili. Gli esami sono tanti e lo studio è impegnativo.",
+        "he": "החודשים הראשונים קשים. יש הרבה מבחנים והלימודים תובעניים."
+      },
+      {
+        "it": "Chiara conosce nuovi amici e formano un gruppo di studio.",
+        "he": "קיארה מכירה חברים חדשים והם מקימים קבוצת לימוד."
+      },
+      {
+        "it": "Insieme preparano gli esami e si aiutano a vicenda.",
+        "he": "יחד הם מתכוננים למבחנים ועוזרים זה לזה."
+      },
+      {
+        "it": "Dopo tre anni, Chiara si laurea con il massimo dei voti. I suoi genitori sono orgogliosi.",
+        "he": "אחרי שלוש שנים, קיארה מסיימת בהצטיינות. הוריה גאים בה."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Cosa sceglie di studiare Chiara?",
+        "options": [
+          "Medicina",
+          "Lettere moderne",
+          "Ingegneria",
+          "Economia"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Cosa formano i nuovi amici?",
+        "options": [
+          "Una squadra",
+          "Un gruppo di studio",
+          "Un club",
+          "Un'associazione"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Con che voto si laurea Chiara?",
+        "options": [
+          "Sufficiente",
+          "Massimo dei voti",
+          "Buono",
+          "Discreto"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "story_8",
+    "level": "B1",
+    "title": "Le tradizioni di famiglia",
+    "en": "Italian family traditions",
+    "paragraphs": [
+      {
+        "it": "La famiglia Rossi si riunisce ogni domenica per il pranzo. È una tradizione che va avanti da generazioni.",
+        "he": "משפחת רוסי מתאספת כל יום ראשון לארוחת צהריים. זו מסורת שנמשכת דורות."
+      },
+      {
+        "it": "La nonna Maria cucina tutto il giorno. Prepara la pasta fatta in casa, l'arrosto e il tiramisù.",
+        "he": "סבתא מריה מבשלת כל היום. היא מכינה פסטה ביתית, צלי וטירמיסו."
+      },
+      {
+        "it": "Arrivano tutti: zii, cugini, nipoti. La tavola è lunga e piena di cibo.",
+        "he": "כולם באים: דודים, בני דודים, נכדים. השולחן ארוך ומלא אוכל."
+      },
+      {
+        "it": "Dopo pranzo, gli adulti giocano a carte mentre i bambini corrono in giardino.",
+        "he": "אחרי הארוחה, המבוגרים משחקים בקלפים בזמן שהילדים רצים בגן."
+      },
+      {
+        "it": "La domenica per gli italiani è sacra. È un momento per stare insieme.",
+        "he": "יום ראשון עבור האיטלקים הוא קדוש. זה זמן להיות יחד."
+      },
+      {
+        "it": "Marco, il più piccolo, dice: \"La domenica con la nonna è il giorno più bello della settimana.\"",
+        "he": "מרקו, הקטן ביותר, אומר: \"יום ראשון עם סבתא הוא היום הכי יפה בשבוע.\""
+      }
+    ],
+    "questions": [
+      {
+        "question": "Quando si riunisce la famiglia Rossi?",
+        "options": [
+          "Il sabato",
+          "La domenica",
+          "Il venerdì",
+          "A Natale"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Cosa prepara la nonna Maria?",
+        "options": [
+          "Pizza e insalata",
+          "Pasta, arrosto e tiramisù",
+          "Solo dolci",
+          "Sushi"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Cosa fanno gli adulti dopo pranzo?",
+        "options": [
+          "Guardano la TV",
+          "Giocano a carte",
+          "Fanno una passeggiata",
+          "Dormono"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+]

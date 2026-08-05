@@ -20,6 +20,10 @@ const PRECACHE_URLS = [
   '/js/modules/practice/dialogue-practice.js',
   '/js/modules/practice/practice-ui.js',
   '/js/modules/practice/index.js',
+  // Exercise Registry & Generators (Sprint C4C)
+  '/js/modules/practice/exercise-registry.js',
+  '/js/modules/practice/generators/index.js',
+  '/js/modules/practice/content-exercises.js',
   '/js/app.js',
   '/js/skill-tree.js',
   '/js/content.js',

@@ -1,0 +1,146 @@
+{
+  "id": "culture_regions",
+  "category": "regions",
+  "title": "Le Regioni d'Italia",
+  "titleHe": "מחוזות איטליה",
+  "icon": "🇮🇹",
+  "level": "B1",
+  "description": "איטליה מחולקת ל-20 מחוזות, לכל אחד אופי, אוכל ודיאלקט משלו.",
+  "region": "כל איטליה",
+  "vocabulary": [
+    "regione",
+    "capoluogo",
+    "dialetto",
+    "specialità",
+    "paesaggio",
+    "tradizione",
+    "nord",
+    "sud",
+    "centro",
+    "isole"
+  ],
+  "keyPoints": [
+    "20 מחוזות (regioni), 5 מהם אוטונומיים",
+    "כל מחוז = בירה (capoluogo) + נופים + אוכל ייחודי",
+    "צפון = תעשייה, אלפים, חמאה/אורז",
+    "מרכז = אמנות, גבעות, שמן זית/פסטה",
+    "דרום = ים, שמש, עגבניות/מוצרלה",
+    "איים = סיציליה וסרדיניה - עולמות נפרדים"
+  ],
+  "regions": [
+    {
+      "name": "Lombardia",
+      "capital": "Milano",
+      "icon": "🏙️",
+      "specialty": "Risotto alla milanese, Panettone",
+      "landscape": "אלפים, אגמים, מישור פו"
+    },
+    {
+      "name": "Toscana",
+      "capital": "Firenze",
+      "icon": "🎨",
+      "specialty": "Bistecca alla fiorentina, Chianti",
+      "landscape": "גבעות, כרמים, עיירות ימי ביניימיות"
+    },
+    {
+      "name": "Lazio",
+      "capital": "Roma",
+      "icon": "🏛️",
+      "specialty": "Carbonara, Amatriciana",
+      "landscape": "גבעות וולקניות, ים טירני"
+    },
+    {
+      "name": "Campania",
+      "capital": "Napoli",
+      "icon": "🍕",
+      "specialty": "Pizza, Mozzarella di bufala, Limoncello",
+      "landscape": "ווזוב, חוף אמלפי, איים"
+    },
+    {
+      "name": "Sicilia",
+      "capital": "Palermo",
+      "icon": "🏝️",
+      "specialty": "Arancini, Cannoli, Pistacchio di Bronte",
+      "landscape": "אתנה, ים, עמקים פוריים"
+    },
+    {
+      "name": "Piemonte",
+      "capital": "Torino",
+      "icon": "🍫",
+      "specialty": "Tartufo bianco, Barolo, Gianduja",
+      "landscape": "אלפים, לנגה, מישור"
+    },
+    {
+      "name": "Veneto",
+      "capital": "Venezia",
+      "icon": "🌊",
+      "specialty": "Tiramisù, Prosecco, Baccalà",
+      "landscape": "לגונה, דולומיטים, מישור"
+    },
+    {
+      "name": "Emilia-Romagna",
+      "capital": "Bologna",
+      "icon": "🍝",
+      "specialty": "Parma ham, Parmigiano, Tagliatelle, Lambrusco",
+      "landscape": "אפנינים, מישור פו, חוף אדריאטי"
+    },
+    {
+      "name": "Puglia",
+      "capital": "Bari",
+      "icon": "🫒",
+      "specialty": "Orecchiette, Olio d'oliva, Burrata",
+      "landscape": "מישור סלנטו, חופים, טרולי"
+    },
+    {
+      "name": "Sardegna",
+      "capital": "Cagliari",
+      "icon": "🏖️",
+      "specialty": "Porceddu, Pane carasau, Mirto",
+      "landscape": "הרים, חופים לבנים, נורק"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "כמה מחוזות יש באיטליה?",
+      "options": [
+        "15",
+        "18",
+        "20",
+        "22"
+      ],
+      "correct": 2,
+      "explanation": "איטליה מחולקת ל-20 מחוזות (regioni)"
+    },
+    {
+      "question": "איזה מחוז מפורסם בפרמזן ובפרושוטו?",
+      "options": [
+        "טוסקנה",
+        "אמיליה-רומאניה",
+        "פיימונטה",
+        "לומברדיה"
+      ],
+      "correct": 1,
+      "explanation": "אמיליה-רומאניה (בולוניה) = בירת האוכל האיטלקי"
+    },
+    {
+      "question": "מה הבירה של סיציליה?",
+      "options": [
+        "קטניה",
+        "פלרמו",
+        "סירקוזה",
+        "מסינה"
+      ],
+      "correct": 1,
+      "explanation": "פלרמו היא הבירה והעיר הגדולה בסיציליה"
+    }
+  ],
+  "nonaComment": {
+    "sweet": "L'Italia è come una famiglia grande: ogni regione ha il suo carattere, ma tutti si vogliono bene! 💕",
+    "strict": "Non confondere la cucina! La carbonara è romana, la pizza è napoletana, il risotto è milanese. Punto! 😤",
+    "teacher": "Studiare le regioni aiuta a capire l'italiano: ogni dialetto, ogni piatto, ogni paesaggio racconta una storia."
+  },
+  "relatedCulture": [
+    "culture_food",
+    "culture_dialects"
+  ]
+}

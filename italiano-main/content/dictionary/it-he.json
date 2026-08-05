@@ -1,0 +1,450 @@
+{
+  "entries": [
+    {
+      "id": "dict_caffe_001",
+      "word": "caffè",
+      "translations": {
+        "he": "קפה",
+        "en": "coffee"
+      },
+      "grammar": {
+        "gender": "masculine",
+        "plural": "caffè",
+        "article": "il",
+        "partOfSpeech": "noun"
+      },
+      "pronunciation": {
+        "ipa": "/kafˈfɛ/",
+        "audioUrl": "audio/caffe.mp3",
+        "stress": "penultimate"
+      },
+      "level": "A1",
+      "frequency": 15,
+      "examples": [
+        {
+          "it": "Un caffè, per favore.",
+          "he": "קפה אחד, בבקשה.",
+          "en": "A coffee, please."
+        },
+        {
+          "it": "Il caffè italiano è il migliore.",
+          "he": "הקפה האיטלקי הוא הכי טוב.",
+          "en": "Italian coffee is the best."
+        }
+      ],
+      "relatedWords": [
+        "cappuccino",
+        "espresso",
+        "macchiato",
+        "bar",
+        "caffettiera"
+      ],
+      "culture": {
+        "importance": "essential",
+        "notes": [
+          "איטלקים שותים אספרסו בעמידה בבר",
+          "קפוצ'ינו רק בבוקר (לפני 11:00)",
+          "אספרסו = 'un caffè' (לא צריך להגיד espresso)",
+          "caffè corretto = אספרסו עם אלכוהול (גרפה/סמבוקה)"
+        ],
+        "region": "כל איטליה"
+      },
+      "examLinks": [
+        "CILS_A1_LISTENING",
+        "CILS_A1_SPEAKING"
+      ],
+      "collocations": [
+        "prendere un caffè",
+        "offrire un caffè",
+        "caffè ristretto",
+        "caffè lungo",
+        "caffè macchiato"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "wordFamily": [
+        "caffettiera",
+        "caffetteria",
+        "caffeinato",
+        "decaffeinato"
+      ]
+    },
+    {
+      "id": "dict_cappuccino_002",
+      "word": "cappuccino",
+      "translations": {
+        "he": "קפוצ'ינו",
+        "en": "cappuccino"
+      },
+      "grammar": {
+        "gender": "masculine",
+        "plural": "cappuccini",
+        "article": "il",
+        "partOfSpeech": "noun"
+      },
+      "pronunciation": {
+        "ipa": "/kapputˈtʃino/",
+        "audioUrl": "audio/cappuccino.mp3",
+        "stress": "antepenultimate"
+      },
+      "level": "A1",
+      "frequency": 45,
+      "examples": [
+        {
+          "it": "Vorrei un cappuccino e un cornetto.",
+          "he": "הייתי רוצה קפוצ'ינו וקרואסון.",
+          "en": "I'd like a cappuccino and a croissant."
+        }
+      ],
+      "relatedWords": [
+        "caffè",
+        "latte",
+        "schiuma",
+        "cornetto",
+        "colazione"
+      ],
+      "culture": {
+        "importance": "high",
+        "notes": [
+          "שותים רק בבוקר - אף פעם אחרי ארוחה!",
+          "1/3 אספרסו, 1/3 חלב חם, 1/3 קצף",
+          "שם נגזר מהנזירים הקפוצ'ינים (צבע הגלימה)",
+          "איטלקי אמיתי לא מבקש קפוצ'ינו אחרי 11:00"
+        ],
+        "region": "כל איטליה"
+      },
+      "examLinks": [
+        "CILS_A1_SPEAKING"
+      ],
+      "collocations": [
+        "cappuccino e cornetto",
+        "cappuccino chiaro",
+        "cappuccino scuro",
+        "cappuccino senza schiuma"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "wordFamily": [
+        "cappuccinaio",
+        "cappuccineria"
+      ]
+    },
+    {
+      "id": "dict_espresso_003",
+      "word": "espresso",
+      "translations": {
+        "he": "אספרסו",
+        "en": "espresso"
+      },
+      "grammar": {
+        "gender": "masculine",
+        "plural": "espressi",
+        "article": "l'",
+        "partOfSpeech": "noun"
+      },
+      "pronunciation": {
+        "ipa": "/esˈprɛsso/",
+        "audioUrl": "audio/espresso.mp3",
+        "stress": "penultimate"
+      },
+      "level": "A1",
+      "frequency": 20,
+      "examples": [
+        {
+          "it": "Un espresso, per favore.",
+          "he": "אספרסו אחד, בבקשה.",
+          "en": "An espresso, please."
+        }
+      ],
+      "relatedWords": [
+        "caffè",
+        "ristretto",
+        "lungo",
+        "macchiato",
+        "bar"
+      ],
+      "culture": {
+        "importance": "essential",
+        "notes": [
+          "באיטליה 'un caffè' = אספרסו אוטומטית",
+          "שותים בכוס קטנה, בעמידה, תוך 2 דקות",
+          "ristretto = פחות מים, יותר חזק",
+          "lungo = יותר מים, פחות חזק",
+          "macchiato = עם טיפת חלב"
+        ],
+        "region": "כל איטליה"
+      },
+      "examLinks": [
+        "CILS_A1_LISTENING",
+        "CILS_A1_SPEAKING"
+      ],
+      "collocations": [
+        "espresso ristretto",
+        "espresso lungo",
+        "espresso macchiato",
+        "espresso corretto",
+        "espresso doppio"
+      ],
+      "synonyms": [
+        "caffè"
+      ],
+      "antonyms": [],
+      "wordFamily": []
+    },
+    {
+      "id": "dict_mangiare_004",
+      "word": "mangiare",
+      "translations": {
+        "he": "לאכול",
+        "en": "to eat"
+      },
+      "grammar": {
+        "gender": null,
+        "plural": null,
+        "article": null,
+        "partOfSpeech": "verb",
+        "conjugation": "are",
+        "auxiliary": "avere",
+        "irregular": false
+      },
+      "pronunciation": {
+        "ipa": "/manˈdʒaːre/",
+        "audioUrl": "audio/mangiare.mp3",
+        "stress": "penultimate"
+      },
+      "level": "A1",
+      "frequency": 10,
+      "examples": [
+        {
+          "it": "Mangio la pizza ogni venerdì.",
+          "he": "אני אוכל פיצה כל יום שישי.",
+          "en": "I eat pizza every Friday."
+        },
+        {
+          "it": "Hai mangiato bene?",
+          "he": "אכלת טוב?",
+          "en": "Did you eat well?"
+        }
+      ],
+      "relatedWords": [
+        "cibo",
+        "pasto",
+        "colazione",
+        "pranzo",
+        "cena",
+        "spuntino"
+      ],
+      "culture": {
+        "importance": "essential",
+        "notes": [
+          "פועל -are רגיל לחלוטין",
+          "Pranzo = ארוחת צהריים (העיקרית)",
+          "Cena = ארוחת ערב (קלה יותר)",
+          "Colazione = ארוחת בוקר (מתוקה, קפה + מאפה)"
+        ],
+        "region": "כל איטליה"
+      },
+      "examLinks": [
+        "CILS_A1_WRITING",
+        "CILS_A2_READING"
+      ],
+      "conjugation": {
+        "presente": [
+          "mangio",
+          "mangi",
+          "mangia",
+          "mangiamo",
+          "mangiate",
+          "mangiano"
+        ],
+        "passatoProssimo": "ho mangiato",
+        "imperfetto": [
+          "mangiavo",
+          "mangiavi",
+          "mangiava",
+          "mangiavamo",
+          "mangiavate",
+          "mangiavano"
+        ],
+        "futuro": [
+          "mangerò",
+          "mangerai",
+          "mangerà",
+          "mangeremo",
+          "mangerete",
+          "mangeranno"
+        ],
+        "condizionale": [
+          "mangerei",
+          "mangeresti",
+          "mangerebbe",
+          "mangeremmo",
+          "mangereste",
+          "mangerebbero"
+        ],
+        "congiuntivo": [
+          "mangi",
+          "mangi",
+          "mangi",
+          "mangiamo",
+          "mangiate",
+          "mangino"
+        ],
+        "imperativo": [
+          "mangia",
+          "mangi",
+          "mangiamo",
+          "mangiate",
+          "mangino"
+        ]
+      },
+      "collocations": [
+        "mangiare fuori",
+        "mangiare bene",
+        "mangiare sano",
+        "mangiare alla svelta",
+        "mangiare con gusto"
+      ],
+      "synonyms": [
+        "nutrirsi",
+        "cibarsi"
+      ],
+      "antonyms": [
+        "digiunare"
+      ],
+      "wordFamily": [
+        "mangiata",
+        "mangiatore",
+        "mangiabile",
+        "mangereccio"
+      ]
+    },
+    {
+      "id": "dict_andare_005",
+      "word": "andare",
+      "translations": {
+        "he": "ללכת",
+        "en": "to go"
+      },
+      "grammar": {
+        "gender": null,
+        "plural": null,
+        "article": null,
+        "partOfSpeech": "verb",
+        "conjugation": "are",
+        "auxiliary": "essere",
+        "irregular": true
+      },
+      "pronunciation": {
+        "ipa": "/anˈdaːre/",
+        "audioUrl": "audio/andare.mp3",
+        "stress": "penultimate"
+      },
+      "level": "A1",
+      "frequency": 5,
+      "examples": [
+        {
+          "it": "Vado a Roma domani.",
+          "he": "אני הולך לרומא מחר.",
+          "en": "I'm going to Rome tomorrow."
+        },
+        {
+          "it": "Dove vai?",
+          "he": "לאן אתה הולך?",
+          "en": "Where are you going?"
+        }
+      ],
+      "relatedWords": [
+        "venire",
+        "tornare",
+        "partire",
+        "viaggiare",
+        "viaggio"
+      ],
+      "culture": {
+        "importance": "essential",
+        "notes": [
+          "פועל בלתי רגיל חשוב מאוד!",
+          "משתמש ב-essere בעבר (sono andato)",
+          "Andare + a + infinitive = עומד ל... (vado a mangiare)",
+          "Andare + preposition: a (מקום), in (מדינה/אזור), da (אדם)"
+        ],
+        "region": "כל איטליה"
+      },
+      "examLinks": [
+        "CILS_A1_WRITING",
+        "CILS_A2_SPEAKING"
+      ],
+      "conjugation": {
+        "presente": [
+          "vado",
+          "vai",
+          "va",
+          "andiamo",
+          "andate",
+          "vanno"
+        ],
+        "passatoProssimo": "sono andato/a",
+        "imperfetto": [
+          "andavo",
+          "andavi",
+          "andava",
+          "andavamo",
+          "andavate",
+          "andavano"
+        ],
+        "futuro": [
+          "andrò",
+          "andrai",
+          "andrà",
+          "andremo",
+          "andrete",
+          "andranno"
+        ],
+        "condizionale": [
+          "andrei",
+          "andresti",
+          "andrebbe",
+          "andremmo",
+          "andreste",
+          "andrebbero"
+        ],
+        "congiuntivo": [
+          "vada",
+          "vada",
+          "vada",
+          "andiamo",
+          "andiate",
+          "vadano"
+        ],
+        "imperativo": [
+          "va'",
+          "vada",
+          "andiamo",
+          "andate",
+          "vadano"
+        ]
+      },
+      "collocations": [
+        "andare al mare",
+        "andare in vacanza",
+        "andare a trovare",
+        "andare d'accordo",
+        "andare bene"
+      ],
+      "synonyms": [
+        "recarsi",
+        "dirigersi"
+      ],
+      "antonyms": [
+        "restare",
+        "stare"
+      ],
+      "wordFamily": [
+        "andata",
+        "andirivieni",
+        "andante"
+      ]
+    }
+  ]
+}

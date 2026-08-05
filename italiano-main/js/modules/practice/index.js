@@ -1,6 +1,7 @@
 /* ══════════════════════════════════════════════
    VolaLingo — Practice Module (Unified Entry Point)
    Sprint C4A: Clean Contract for all practice functionality
+   Sprint C4C: Exercise Registry integration
    ══════════════════════════════════════════════ */
 
 const Practice = (() => {
@@ -13,6 +14,8 @@ let _exercises = null;
 let _anki = null;
 let _dialogue = null;
 let _ui = null;
+let _registry = null;
+let _generators = null;
 
 // ══════════════════════════════════════════════
 // INIT
@@ -35,6 +38,10 @@ function init(dependencies) {
   _ui = PracticeUI;
   _ui.init(_core, _exercises, _anki, _dialogue);
 
+  // Initialize Exercise Registry & Generators (Sprint C4C)
+  _registry = ExerciseRegistry;
+  _generators = ExerciseGenerators;
+
   console.log('🎯 Practice module (unified) initialized');
   return api;
 }
@@ -50,6 +57,10 @@ function _createCompatAliases() {
   window.AnkiPractice = _anki;
   window.DialoguePractice = _dialogue;
   window.PracticeUI = _ui;
+  
+  // Exercise Registry & Generators (Sprint C4C)
+  window.ExerciseRegistry = _registry;
+  window.ExerciseGenerators = _generators;
 
   // Legacy window.Practice.* methods that inline onclick handlers call
   return {
@@ -109,7 +120,14 @@ function _createCompatAliases() {
     _wordLesson: _core._wordLesson,
     _quizNode: _core._quizNode,
     _dialogueNode: _core._dialogueNode,
-    _insideStartQuiz: _core._insideStartQuiz
+    _insideStartQuiz: _core._insideStartQuiz,
+
+    // Exercise Registry (C4C)
+    generateExercises: (contentItem, config) => _registry.generateExercises(contentItem, config),
+    createDailyFlow: (contentItems, options) => _registry.createDailyFlow(contentItems, options),
+    createExamFlow: (examType, level, contentItems) => _registry.createExamFlow(examType, level, contentItems),
+    getExerciseTypes: () => _registry.EXERCISE_TYPES,
+    getExerciseMetadata: (type) => _registry.getMetadata(type)
   };
 }
 
