@@ -202,26 +202,38 @@ function showApp() {
   try{var tc=document.getElementById('topCoins');if(tc){var cv=tc.querySelector('.val');if(cv)cv.textContent=state.coins;}}catch(e){}
   
   // Initialize Gamification module
-  if (window.Gamification) {
-    Gamification.init({
-      state: state,
-      save: save,
-      toast: toast,
-      Events: Events,
-      APP_DATA: APP_DATA
-    });
-    // Refresh hearts via module
-    Gamification.getHearts();
-  } else {
-    refreshHearts();
-  }
-  
-  // Check streak
-  if (window.Gamification) {
-    Gamification.checkStreak();
-  } else {
-    checkStreak();
-  }
+    if (window.Gamification) {
+      Gamification.init({
+        state: state,
+        save: save,
+        toast: toast,
+        Events: Events,
+        APP_DATA: APP_DATA
+      });
+      // Refresh hearts via module
+      Gamification.getHearts();
+    } else {
+      refreshHearts();
+    }
+
+    // Initialize Practice module
+    if (window.Practice) {
+      Practice.init({
+        state: state,
+        save: save,
+        toast: toast,
+        Events: Events,
+        APP_DATA: APP_DATA,
+        APP_CONFIG: APP_CONFIG
+      });
+    }
+
+    // Check streak
+    if (window.Gamification) {
+      Gamification.checkStreak();
+    } else {
+      checkStreak();
+    }
   
   // Init Nona — automatic greetings, coaching, milestones
   if (window.Nona) {

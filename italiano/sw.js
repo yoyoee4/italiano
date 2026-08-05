@@ -3,7 +3,7 @@
    Offline-first PWA caching
    ═══════════════════════════════════════════════ */
 
-const CACHE_NAME = 'volalingo-v6';
+const CACHE_NAME = 'volalingo-v7';
 const PRECACHE_URLS = [
   '/',
   '/index.html',
@@ -13,9 +13,15 @@ const PRECACHE_URLS = [
   '/js/modules/coach.js',
   '/js/modules/gamification.js',
   '/js/modules/exam.js',
+  // Practice Core Modules (Sprint C4A)
+  '/js/modules/practice/practice-core.js',
+  '/js/modules/practice/exercises.js',
+  '/js/modules/practice/anki-practice.js',
+  '/js/modules/practice/dialogue-practice.js',
+  '/js/modules/practice/practice-ui.js',
+  '/js/modules/practice/index.js',
   '/js/app.js',
   '/js/skill-tree.js',
-  '/js/practice.js',
   '/js/content.js',
   '/js/features.js',
   '/js/games.js',

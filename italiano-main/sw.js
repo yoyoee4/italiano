@@ -3,22 +3,46 @@
    Offline-first PWA caching
    ═══════════════════════════════════════════════ */
 
-const CACHE_NAME = 'volalingo-v5';
+const CACHE_NAME = 'volalingo-v7';
 const PRECACHE_URLS = [
   '/',
   '/index.html',
-  '/styles.css',
-  '/js/data.js',
+  '/css/styles.css',
+  '/js/core/content-loader.js',
+  '/js/core/events.js',
+  '/js/modules/coach.js',
+  '/js/modules/gamification.js',
+  '/js/modules/exam.js',
+  // Practice Core Modules (Sprint C4A)
+  '/js/modules/practice/practice-core.js',
+  '/js/modules/practice/exercises.js',
+  '/js/modules/practice/anki-practice.js',
+  '/js/modules/practice/dialogue-practice.js',
+  '/js/modules/practice/practice-ui.js',
+  '/js/modules/practice/index.js',
   '/js/app.js',
   '/js/skill-tree.js',
-  '/js/practice.js',
   '/js/content.js',
   '/js/features.js',
   '/js/games.js',
   '/js/speak.js',
   '/js/sentbuild.js',
   '/js/listening.js',
-  '/manifest.json'
+  '/manifest.json',
+  '/content/words.json',
+  '/content/sentences.json',
+  '/content/phrases.json',
+  '/content/dialogues.json',
+  '/content/stories.json',
+  '/content/songs.json',
+  '/content/skill-tree.json',
+  '/content/levels.json',
+  '/content/characters.json',
+  '/content/culture.json',
+  '/content/grammar.json',
+  '/content/achievements.json',
+  '/content/exams.json',
+  '/content/news.json'
 ];
 
 // Install — precache shell
