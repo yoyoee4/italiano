@@ -1,0 +1,197 @@
+{
+  "appName": "VolaLingo",
+  "version": "C4E-Integration",
+  "date": "2026-08-05T16:20:49.742Z",
+  "competitors": {
+    "Duolingo": {
+      "strengths": [
+        "Massive user base",
+        "Gamification leader",
+        "Free tier generous",
+        "Strong brand"
+      ],
+      "weaknesses": [
+        "Shallow grammar",
+        "No speaking evaluation",
+        "Repetitive exercises",
+        "No exam prep",
+        "No cultural context",
+        "Hebrew UI limited"
+      ],
+      "cefrCoverage": "A1-B1",
+      "price": "Free / Super €12.99/mo",
+      "offline": "Partial (Plus only)",
+      "aiSpeaking": "Basic (Duolingo Max)",
+      "examPrep": "None",
+      "simulations": "None",
+      "dictionary": "Basic",
+      "culture": "Minimal",
+      "srs": "Hidden, not user-controlled",
+      "hebrewSupport": "UI only, no Hebrew→Italian content"
+    },
+    "Babbel": {
+      "strengths": [
+        "Structured curriculum",
+        "Good grammar explanations",
+        "Speech recognition",
+        "Review manager"
+      ],
+      "weaknesses": [
+        "Expensive",
+        "Limited free content",
+        "No exam prep",
+        "No simulations",
+        "No cultural depth",
+        "Hebrew not supported"
+      ],
+      "cefrCoverage": "A1-C1",
+      "price": "€12.95/mo (12mo plan)",
+      "offline": "Yes",
+      "aiSpeaking": "Basic speech recognition",
+      "examPrep": "None",
+      "simulations": "Dialogue-only",
+      "dictionary": "Built-in",
+      "culture": "Cultural notes in lessons",
+      "srs": "Review Manager (spaced)",
+      "hebrewSupport": "None"
+    },
+    "Busuu": {
+      "strengths": [
+        "CEFR aligned",
+        "Community corrections",
+        "Certificates (McGraw-Hill)",
+        "Offline mode"
+      ],
+      "weaknesses": [
+        "Premium required for most",
+        "Limited speaking practice",
+        "No exam-specific prep",
+        "No simulations",
+        "Hebrew not supported"
+      ],
+      "cefrCoverage": "A1-C1",
+      "price": "€13.90/mo / Premium Plus €16.90",
+      "offline": "Premium only",
+      "aiSpeaking": "Basic",
+      "examPrep": "None",
+      "simulations": "None",
+      "dictionary": "Yes",
+      "culture": "Some cultural tips",
+      "srs": "Vocabulary trainer",
+      "hebrewSupport": "None"
+    },
+    "Memrise": {
+      "strengths": [
+        "Video clips from natives",
+        "Good vocab building",
+        "User-generated courses",
+        "Spaced repetition"
+      ],
+      "weaknesses": [
+        "No structured curriculum",
+        "Weak grammar",
+        "No speaking eval",
+        "No exam prep",
+        "No simulations",
+        "Hebrew UI only"
+      ],
+      "cefrCoverage": "A1-B2 (varies)",
+      "price": "Free / Pro €8.99/mo",
+      "offline": "Pro only",
+      "aiSpeaking": "None",
+      "examPrep": "None",
+      "simulations": "None",
+      "dictionary": "Basic",
+      "culture": "Video context",
+      "srs": "Core feature",
+      "hebrewSupport": "UI + some courses"
+    },
+    "Mondly": {
+      "strengths": [
+        "AR/VR features",
+        "Chatbot conversations",
+        "41 languages",
+        "Daily lessons"
+      ],
+      "weaknesses": [
+        "Shallow content",
+        "Weak grammar",
+        "No exam prep",
+        "Buggy speech recognition",
+        "Hebrew UI only"
+      ],
+      "cefrCoverage": "A1-B1",
+      "price": "€9.99/mo / Lifetime €89.99",
+      "offline": "Premium only",
+      "aiSpeaking": "Chatbot + speech recognition",
+      "examPrep": "None",
+      "simulations": "AR/VR scenarios (limited)",
+      "dictionary": "Basic",
+      "culture": "Minimal",
+      "srs": "Basic",
+      "hebrewSupport": "UI only"
+    }
+  },
+  "volalingo": {
+    "strengths": [
+      "Hebrew→Italian native content (unique)",
+      "CILS/CELI/AIL exam prep (unique)",
+      "Life simulations: restaurant, airport, hospital, job interview, etc. (unique)",
+      "Three Nona personalities (sweet/teacher/strict nonna)",
+      "Full offline PWA",
+      "Unified Learning Orchestrator (adaptive)",
+      "Cross-module content linking (word→story→dialogue→sim→exam)",
+      "SRS user-controlled + adaptive",
+      "Cultural depth (coffee, aperitivo, regions)",
+      "Free base tier, fair premium pricing"
+    ],
+    "weaknesses": [
+      "Early stage (beta)",
+      "Smaller content library vs Duolingo",
+      "No community features yet",
+      "AI Speaking Coach in development",
+      "Backend sync not yet live",
+      "iOS/Android apps not yet published"
+    ],
+    "cefrCoverage": "A1-C2 (planned 56 lessons)",
+    "price": "Free / Premium €9.99/mo / Exam Pro €14.99-19.99/mo",
+    "offline": "Full PWA (all content)",
+    "aiSpeaking": "Planned C7 (3 personalities + real-time feedback)",
+    "examPrep": "Full CILS/CELI/AIL mapping + mock exams",
+    "simulations": "10 real-life scenarios (C6)",
+    "dictionary": "Offline, 5000+ entries with grammar/examples/culture",
+    "culture": "Deep cultural modules (coffee, aperitivo, 10 regions)",
+    "srs": "User-visible Anki-style + adaptive orchestrator",
+    "hebrewSupport": "Native Hebrew→Italian content, RTL UI"
+  },
+  "differentiators": [
+    "ONLY app with Hebrew→Italian native content",
+    "ONLY app with CILS/CELI/AIL exam preparation",
+    "ONLY app with life simulations for Hebrew speakers",
+    "ONLY app with \"Italian Nonna\" personality coach",
+    "ONLY app with unified adaptive orchestrator across all modules",
+    "ONLY app with full offline PWA + full content"
+  ],
+  "kpis": {
+    "Day-1 Retention": {
+      "target": "≥40%",
+      "current": "TBD"
+    },
+    "Lesson Completion Rate": {
+      "target": "≥70%",
+      "current": "TBD"
+    },
+    "7-Day Streak Rate": {
+      "target": "≥15%",
+      "current": "TBD"
+    },
+    "Exam Pass Rate (CILS B1)": {
+      "target": "≥80%",
+      "current": "TBD"
+    },
+    "Premium Conversion": {
+      "target": "≥5%",
+      "current": "TBD"
+    }
+  }
+}

@@ -556,6 +556,7 @@ function _planExercisesForDecision(decision, profile, startIndex) {
 }
 
 function _buildExerciseConfig(decision, profile, role) {
+  const payload = decision.payload || {};
   const baseConfig = {
     allVocab: _contentExercises?.getContentCache?.()?.words?.map(w => _contentExercises.generateForWord(w.id, { count: 0 })[0]?.contentItem) || [],
     allSentences: [],
