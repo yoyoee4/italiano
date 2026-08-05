@@ -24,6 +24,8 @@ const PRECACHE_URLS = [
   '/js/modules/practice/exercise-registry.js',
   '/js/modules/practice/generators/index.js',
   '/js/modules/practice/content-exercises.js',
+  // Learning Orchestrator (Sprint C4D)
+  '/js/modules/orchestrator.js',
   '/js/app.js',
   '/js/skill-tree.js',
   '/js/content.js',
