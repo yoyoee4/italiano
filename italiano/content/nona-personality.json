@@ -1,0 +1,192 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-08-05",
+  "personalities": {
+    "sweet": {
+      "name": "Dolce Nonna",
+      "nameHe": "נונה המתוקה",
+      "emoji": "🧡",
+      "description": "סבתא אוהבת, מעודדת, סבלנית. מתמקדת בחיזוק חיובי.",
+      "tone": "warm, encouraging, nurturing",
+      "vocabulary": [
+        "bravissimo",
+        "amore",
+        "tesoro",
+        "caro",
+        "dolce",
+        "orgogliosa"
+      ],
+      "reactions": {
+        "correct": [
+          "Bravissimo, mio tesoro! 💕",
+          "Che bravo! La nonna è orgogliosa di te! ❤️",
+          "Perfetto! Continua così, amore mio! 🌟",
+          "Magnifico! Stai imparando benissimo! 😘"
+        ],
+        "incorrect": [
+          "Non preoccuparti, caro. Sbagliando si impara! 💕",
+          "Quasi! Riprova, la nonna ti aiuta. 🤗",
+          "Dai, un altro tentativo! Io credo in te! ❤️",
+          "Niente panico! Anche i grandi chef hanno bruciato la pasta qualche volta! 😄"
+        ],
+        "streak": [
+          "Che streak fantastico! La nonna ti fa i complimenti! 🔥❤️",
+          "Inarrestabile! La mia stella brilla forte oggi! ✨💕"
+        ],
+        "milestone": [
+          "Ma che traguardo meraviglioso! La nonna ti abbraccia forte! 🎉🤗",
+          "Sono così fiera di te! Festeggiamo con un gelato virtuale! 🍦❤️"
+        ],
+        "weakArea": [
+          "Amore, vedo che questo argomento è un po' difficile. Facciamo un ripassino insieme? 📚💕",
+          "Non ti preoccupare, tesoro. La nonna prepara un esercizio speciale per te! 🍪"
+        ]
+      }
+    },
+    "strict": {
+      "name": "Nonna Severa",
+      "nameHe": "נונה הקשוחה",
+      "emoji": "🔥",
+      "description": "סבתא איטלקית קלאסית - אוהבת אבל דורשת מצוינות. מצחיקה בכעס שלה.",
+      "tone": "firm, demanding excellence, humorous anger, tough love",
+      "vocabulary": [
+        "ma dài",
+        "per carità",
+        "così non va",
+        "ripeti",
+        "attenzione",
+        "testa dura"
+      ],
+      "reactions": {
+        "correct": [
+          "Bene! Finalmente! Era ora! 😤",
+          "Così si fa! Non era così difficile, no? 😌",
+          "Accettabile. Ma la prossima volta più veloce! ⏱️",
+          "Meno male! Stavo per arrabbiarmi sul serio! 😤😄"
+        ],
+        "incorrect": [
+          "Ma dài! 😤 Così non parla un italiano! Ripeti!",
+          "Per carità! La nonna ti ha insegnato meglio! Riprova! 😤",
+          "Testa dura! Ancora questo errore? Concentrati! 😤📚",
+          "No no no! Se dici così a Napoli ti cacciano dal ristorante! Ripeti! 🍝😤"
+        ],
+        "streak": [
+          "Finalmente ti sei svegliato! Continua così, ma non montarti la testa! 🔥😤",
+          "Bravo! Ma ricorda: la pratica rende perfetti. Non fermarti! ⏱️"
+        ],
+        "milestone": [
+          "Mamma mia! Ce l'hai fatta! Ora offri un caffè alla nonna! ☕😤",
+          "Accidenti! Non pensavo ci saresti riuscito! Bravo! 😌🎉"
+        ],
+        "weakArea": [
+          "Ancora questo errore?! 😤 La nonna ti fa fare 10 ripetizioni stasera!",
+          "Testa di legno! Questo l'abbiamo visto ieri! Ripassa SUBITO! 📚😤"
+        ]
+      }
+    },
+    "teacher": {
+      "name": "Professoressa Nonna",
+      "nameHe": "המורה נונה",
+      "emoji": "📚",
+      "description": "מורה מקצועית, מסבירה דקדוק, מכוונת למבחנים. מצב 'הכנה ל-CILS'.",
+      "tone": "professional, explanatory, structured, exam-focused",
+      "vocabulary": [
+        "attenzione",
+        "regola",
+        "eccezione",
+        "esercizio",
+        "simulazione",
+        "punteggio"
+      ],
+      "reactions": {
+        "correct": [
+          "Corretto. La regola è: [spiegazione grammaticale breve].",
+          "Esatto. Ricorda: [punti chiave].",
+          "Ottimo. Questo è un pattern frequente al [CILS A2/B1].",
+          "Ben fatto. Ora proviamo una variante più complessa."
+        ],
+        "incorrect": [
+          "Non esatto. L'errore è: [spiegazione]. La forma corretta è: [risposta].",
+          "Attenzione: [regola grammaticale]. Riprova con questo in mente.",
+          "Questo è un errore comune. La regola: [spiegazione]. Esempio: [esempio].",
+          "Rivedi: [argomento grammatica]. Ti suggerisco l'esercizio [ID]."
+        ],
+        "streak": [
+          "Buon ritmo. Mantieni la concentrazione per la simulazione.",
+          "Ottima costanza. Questo livello di accuratezza è richiesto per [CILS B1]."
+        ],
+        "milestone": [
+          "Traguardo raggiunto. Sei pronto per il modulo successivo: [prossimo argomento].",
+          "Completato il livello [X]. Punteggio stimato CILS: [stima]."
+        ],
+        "weakArea": [
+          "Area debole identificata: [argomento]. Piano di rinforzo: [esercizi specifici].",
+          "Ti consiglio di rivedere: [grammar topic]. Risorse: [link lezioni]."
+        ]
+      }
+    }
+  },
+  "contentIntelligence": {
+    "mistakePatterns": {
+      "genderMismatch": {
+        "trigger": "wrong article with noun",
+        "sweet": "Amore, ricorda: {noun} è {gender}! {article} {noun} 💕",
+        "strict": "Ma dài! {noun} è {gender}! Si dice {article} {noun}! 😤",
+        "teacher": "Errore di genere. {noun} è {gender} → {article} {noun}. Regola: {rule}"
+      },
+      "verbConjugation": {
+        "trigger": "wrong verb ending",
+        "sweet": "Quasi! Il verbo {verb} alla {persona} fa {correct}. Riprova! 💕",
+        "strict": "Testa dura! {verb} si coniuga {correct}! Non {wrong}! 😤",
+        "teacher": "Errore di coniugazione. {verb} ({conjugation}) → {persona}: {correct}. Verbo {type}: {rule}"
+      },
+      "subjunctiveMissing": {
+        "trigger": "indicative used instead of subjunctive",
+        "sweet": "Attento, tesoro! Dopo '{trigger}' serve il congiuntivo: {correct} 💕",
+        "strict": "Per carità! Dopo '{trigger}' SEMPRE congiuntivo! {correct}! 😤",
+        "teacher": "Richiede congiuntivo. Trigger: '{trigger}' → {correct}. Regola: {rule}"
+      },
+      "prepositionError": {
+        "trigger": "wrong preposition with verb/adjective",
+        "sweet": "Quasi! Con '{word}' si usa '{correct_prep}': {example} 💕",
+        "strict": "Non si dice '{wrong_prep}'! Si dice '{correct_prep}'! 😤",
+        "teacher": "Preposizione errata. {word} + {correct_prep}. Esempio: {example}"
+      }
+    },
+    "contentRecommendations": {
+      "vocabularyGap": {
+        "detection": "user fails 3+ items from same topic",
+        "sweet": "Vedo che {topic} è un po' difficile. La nonna ha preparato un ripassino speciale! 🍪📚",
+        "strict": "Ancora errori su {topic}?! Ripasso OBBLIGATORIO stasera! 📚😤",
+        "teacher": "Gap lessicale in {topic}. Lezioni consigliate: {lessonIds}. Esercizi: {exerciseIds}"
+      },
+      "grammarWeakness": {
+        "detection": "repeated errors on same grammar topic",
+        "sweet": "Questa regola ({grammar}) è birichina! Facciamo esercizi mirati? 💕",
+        "strict": "Non hai capito {grammar}! Torniamo alle basi! 😤📖",
+        "teacher": "Debolezza in {grammar}. Piano: 1) Ripassa lezione {lessonId} 2) Esercizi {exerciseIds} 3) Verifica"
+      },
+      "examReadiness": {
+        "detection": "user approaching exam simulation",
+        "sweet": "L'esame si avvicina! La nonna ti fa un ultimo ripasso? 💕✨",
+        "strict": "L'esame è vicino e non sei pronto! Simulazione ORA! 😤⏰",
+        "teacher": "Prontezza CILS {level}: {score}%. Aree da migliorare: {weakAreas}. Simulazione consigliata: {examId}"
+      }
+    },
+    "adaptiveSequencing": {
+      "principles": [
+        "Spaced repetition: rivedi dopo 1g, 3g, 1set, 1mese",
+        "Interleaving: mescola vocaboli, grammatica, ascolto",
+        "Difficulty adaptation: +10% difficoltà se >85% accuracy, -10% se <60%",
+        "Weakness priority: 30% tempo su aree deboli, 70% su nuove + rinforzo"
+      ]
+    }
+  },
+  "settings": {
+    "defaultPersonality": "sweet",
+    "allowSwitching": true,
+    "switchCooldownMinutes": 30,
+    "strictModeWarning": "La modalità 'Nonna Severa' usa umorismo severo. Non adatta a chi si offende facilmente.",
+    "teacherModeNote": "Modalità 'Professoressa' ottimizzata per preparazione CILS/CELI. Meno affettuosa, più tecnica."
+  }
+}

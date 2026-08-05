@@ -1,0 +1,143 @@
+{
+  "id": "A2_past_tenses",
+  "level": "A2",
+  "title": "עבר קרוב (Passato Prossimo)",
+  "titleIt": "Passato Prossimo",
+  "goals": [
+    "לספר מה עשיתי אתמול/בשבוע שעבר",
+    "להבחין בין avere ל-essere כפועל עזר",
+    "ליצור פרטיציפיו עבר רגילים ובלתי רגילים"
+  ],
+  "estimatedTimeMinutes": 25,
+  "prerequisites": [
+    "A1_essentials"
+  ],
+  "vocabulary": [
+    "it_verbs_ho_fatto_001",
+    "it_verbs_ho_mangiato_002",
+    "it_verbs_sono_andato_003",
+    "it_verbs_ho_visto_004",
+    "it_verbs_ho_bevuto_005",
+    "it_verbs_ieri_006",
+    "it_verbs_scorsa_settimana_007"
+  ],
+  "grammar": [
+    "g3_passato_prossimo",
+    "g6_participio_passato_regolari",
+    "g7_participio_passato_irregolari",
+    "g8_ausiliare_essere_vs_avere"
+  ],
+  "dialogues": [
+    "dlg_weekend"
+  ],
+  "culture": [
+    "culture_italian_weekend"
+  ],
+  "examPractice": [
+    "exam_CILS_A2_READING_001",
+    "exam_CILS_A2_WRITING_001"
+  ],
+  "exercises": [
+    {
+      "type": "flashcard",
+      "contentIds": [
+        "it_verbs_ho_fatto_001",
+        "it_verbs_ho_mangiato_002",
+        "it_verbs_sono_andato_003",
+        "it_verbs_ho_visto_004",
+        "it_verbs_ho_bevuto_005"
+      ],
+      "count": 5,
+      "config": {
+        "direction": "it-he",
+        "showGrammar": true
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "contentIds": [
+        "g8_ausiliare_essere_vs_avere"
+      ],
+      "count": 8,
+      "config": {
+        "options": 3,
+        "task": "choose_auxiliary"
+      }
+    },
+    {
+      "type": "sentence-builder",
+      "contentIds": [
+        "it_verbs_ho_mangiato_002",
+        "it_verbs_ho_visto_004",
+        "it_verbs_sono_andato_003"
+      ],
+      "count": 5,
+      "config": {
+        "template": "Ieri {aux} {participle}",
+        "wordBank": [
+          "ho",
+          "sono",
+          "mangiato",
+          "andato",
+          "visto",
+          "fatto",
+          "bevuto",
+          "ieri"
+        ]
+      }
+    },
+    {
+      "type": "writing",
+      "contentIds": [
+        "it_verbs_ieri_006",
+        "it_verbs_scorsa_settimana_007"
+      ],
+      "count": 2,
+      "config": {
+        "prompt": "כתוב 5 משפטים על מה שעשית בשבוע שעבר",
+        "minWords": 30,
+        "register": "informal"
+      }
+    },
+    {
+      "type": "listening",
+      "contentIds": [
+        "dlg_weekend"
+      ],
+      "count": 3,
+      "config": {
+        "speed": "normal",
+        "task": "past_tense_identification"
+      }
+    },
+    {
+      "type": "exam-style",
+      "contentIds": [
+        "exam_CILS_A2_WRITING_001"
+      ],
+      "count": 1,
+      "config": {
+        "section": "WRITING",
+        "task": "short_message"
+      }
+    }
+  ],
+  "assessment": {
+    "passThreshold": 0.7,
+    "xpReward": 100,
+    "unlocks": [
+      "A2_plans",
+      "B1_storytelling"
+    ]
+  },
+  "nonaGuidance": {
+    "intro": "העבר הקרוב זה הסוד לספר סיפורים באיטלקית! 📖",
+    "tips": [
+      "רוב הפעלים משתמשים ב-avere: ho mangiato, ho visto, ho fatto",
+      "פעלי תנועה ושינוי מצב משתמשים ב-essere: sono andato, sono tornato, sono diventato",
+      "הפרטיציפיו של -are זה -ato, של -ere זה -uto, של -ire זה -ito",
+      "בלתי רגילים נפוצים: fatto, visto, bevuto, messo, preso, scritto, detto"
+    ],
+    "encouragement": "Ma che bravo! עכשיו אתה יכול לספר מה עשית אתמול! ⏮️"
+  }
+}

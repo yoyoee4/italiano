@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Principiante",
+    "nameHe": "מתחיל",
+    "desc": "מילים בסיסיות וברכות",
+    "icon": "🌱",
+    "minScore": 0,
+    "wordsNeeded": 50
+  },
+  {
+    "id": 2,
+    "name": "Elementare",
+    "nameHe": "יסודי",
+    "desc": "משפטים פשוטים ומצב יומיומי",
+    "icon": "🌿",
+    "minScore": 200,
+    "wordsNeeded": 150
+  },
+  {
+    "id": 3,
+    "name": "Intermedio",
+    "nameHe": "בינוני",
+    "desc": "שיחות ומצבים מורכבים",
+    "icon": "🌳",
+    "minScore": 500,
+    "wordsNeeded": 300
+  },
+  {
+    "id": 4,
+    "name": "Avanzato",
+    "nameHe": "מתקדם",
+    "desc": "עסקים ותרבות עמוקה",
+    "icon": "🏔️",
+    "minScore": 1000,
+    "wordsNeeded": 500
+  },
+  {
+    "id": 5,
+    "name": "Esperto",
+    "nameHe": "מומחה",
+    "desc": "דקדוק מתקדם וסלנג",
+    "icon": "👑",
+    "minScore": 2000,
+    "wordsNeeded": 800
+  }
+]

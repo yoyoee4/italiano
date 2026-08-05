@@ -1,0 +1,374 @@
+[
+  {
+    "id": "cafe",
+    "title": "☕ בקפה",
+    "desc": "הזמנת קפה וקורנטו בבר איטלקי",
+    "icon": "☕",
+    "level": 1,
+    "lines": [
+      {
+        "role": "barista",
+        "it": "Buongiorno! Desidera?",
+        "he": "בוקר טוב! מה תרצה?",
+        "hint": "תגיד מה אתה רוצה לשתות"
+      },
+      {
+        "role": "you",
+        "it": "Un espresso, per favore",
+        "he": "אספרסו, בבקשה",
+        "hint": "Un espresso / Un cappuccino"
+      },
+      {
+        "role": "barista",
+        "it": "Lo vuole macchiato o normale?",
+        "he": "עם חלב או רגיל?",
+        "hint": "תבחר: macchiato / normale"
+      },
+      {
+        "role": "you",
+        "it": "Normale, grazie",
+        "he": "רגיל, תודה",
+        "hint": "Normale / Macchiato"
+      },
+      {
+        "role": "barista",
+        "it": "Ecco! Un euro e cinquanta",
+        "he": "הנה! יורו וחמישים",
+        "hint": "תשלם ותגיד תודה"
+      },
+      {
+        "role": "you",
+        "it": "Grazie, arrivederci!",
+        "he": "תודה, להתראות!",
+        "hint": "Grazie + Arrivederci"
+      }
+    ]
+  },
+  {
+    "id": "restaurant",
+    "title": "🍝 במסעדה",
+    "desc": "הזמנת אוכל בטרטוריה",
+    "icon": "🍝",
+    "level": 2,
+    "lines": [
+      {
+        "role": "waiter",
+        "it": "Buonasera! Un tavolo per quanti?",
+        "he": "ערב טוב! שולחן לכמה?",
+        "hint": "תגיד כמה אנשים"
+      },
+      {
+        "role": "you",
+        "it": "Per due persone, grazie",
+        "he": "לשניים, תודה",
+        "hint": "Per due / Per tre"
+      },
+      {
+        "role": "waiter",
+        "it": "Prego, da questa parte",
+        "he": "בבקשה, מכאן",
+        "hint": "עקוב אחריו"
+      },
+      {
+        "role": "waiter",
+        "it": "Desidera ordinare?",
+        "he": "תרצה להזמין?",
+        "hint": "תגיד מה אתה רוצה"
+      },
+      {
+        "role": "you",
+        "it": "Vorrei la carbonara",
+        "he": "אני רוצה קרבונרה",
+        "hint": "Vorrei + שם המנה"
+      },
+      {
+        "role": "waiter",
+        "it": "Ottima scelta! E da bere?",
+        "he": "בחירה מעולה! ולשתות?",
+        "hint": "תגיד מה לשתות"
+      },
+      {
+        "role": "you",
+        "it": "Un'acqua naturale, per favore",
+        "he": "מים מינרליים, בבקשה",
+        "hint": "Acqua naturale / Acqua frizzante"
+      },
+      {
+        "role": "waiter",
+        "it": "Subito! Buon appetito!",
+        "he": "מיד! בתיאבון!",
+        "hint": "Grazie, altrettanto"
+      }
+    ]
+  },
+  {
+    "id": "directions",
+    "title": "🗺️ מציאת כיוון",
+    "desc": "שאלת איפה הקולוסיאום",
+    "icon": "🗺️",
+    "level": 2,
+    "lines": [
+      {
+        "role": "you",
+        "it": "Scusi, dov'è il Colosseo?",
+        "he": "סליחה, איפה הקולוסיאום?",
+        "hint": "Scusi + dov'è + מקום"
+      },
+      {
+        "role": "local",
+        "it": "È vicino! Vada dritto e poi a destra",
+        "he": "קרוב! תלך ישר ואז ימינה",
+        "hint": "תבין את ההוראות"
+      },
+      {
+        "role": "you",
+        "it": "Dritto e poi a destra?",
+        "he": "ישר ואז ימינה?",
+        "hint": "חזור על ההוראות לוודא"
+      },
+      {
+        "role": "local",
+        "it": "Sì, esatto! Ci sono cinque minuti",
+        "he": "כן, בדיוק! חמש דקות הליכה",
+        "hint": "תודה לו"
+      },
+      {
+        "role": "you",
+        "it": "Grazie mille! Lei è molto gentile",
+        "he": "תודה רבה! אתה מאוד אדיב",
+        "hint": "Grazie mille + מחמאה"
+      },
+      {
+        "role": "local",
+        "it": "Prego! Buona visita!",
+        "he": "בבקשה! ביקור נעים!",
+        "hint": "Grazie, arrivederci"
+      }
+    ]
+  },
+  {
+    "id": "market",
+    "title": "🛒 בשוק",
+    "desc": "קניות בשוק מקומי",
+    "icon": "🛒",
+    "level": 2,
+    "lines": [
+      {
+        "role": "vendor",
+        "it": "Prego, prego! Assaggi!",
+        "he": "בבקשה, בבקשה! תטעם!",
+        "hint": "תגיד תודה ותטעם"
+      },
+      {
+        "role": "you",
+        "it": "Grazie! Che buono!",
+        "he": "תודה! איזה טעים!",
+        "hint": "Che buono / Delizioso"
+      },
+      {
+        "role": "vendor",
+        "it": "Vuoi comprare? Tre euro al chilo",
+        "he": "תרצה לקנות? שלוש יורו לקילו",
+        "hint": "תשאל על מחיר או כמות"
+      },
+      {
+        "role": "you",
+        "it": "Me ne dà due chili, per favore",
+        "he": "תן לי שני קילו, בבקשה",
+        "hint": "Me ne dà + מספר + chili"
+      },
+      {
+        "role": "vendor",
+        "it": "Sei euro! Qualcos'altro?",
+        "he": "שישה יורו! עוד משהו?",
+        "hint": "תגיד כן או לא"
+      },
+      {
+        "role": "you",
+        "it": "No grazie, basta così",
+        "he": "לא תודה, זה מספיק",
+        "hint": "Basta così / Va bene così"
+      }
+    ]
+  },
+  {
+    "id": "hotel",
+    "title": "🏨 צ'ק-אין במלון",
+    "desc": "הגעת למלון ונרשמת",
+    "icon": "🏨",
+    "level": 2,
+    "lines": [
+      {
+        "role": "clerk",
+        "it": "Buongiorno! Benvenuto! Ha una prenotazione?",
+        "he": "בוקר טוב! ברוכים הבאים! יש לך הזמנה?",
+        "hint": "תגיד כן ותתן את השם"
+      },
+      {
+        "role": "you",
+        "it": "Sì, a nome Cohen",
+        "he": "כן, על שם כהן",
+        "hint": "A nome + שם משפחה"
+      },
+      {
+        "role": "clerk",
+        "it": "Perfetto! Camera 305, terzo piano",
+        "he": "מושלם! חדר 305, קומה שלישית",
+        "hint": "תשאל על ארוחת בוקר"
+      },
+      {
+        "role": "you",
+        "it": "La colazione è inclusa?",
+        "he": "ארוחת בוקר כלולה?",
+        "hint": "La colazione + inclusa?"
+      },
+      {
+        "role": "clerk",
+        "it": "Sì, dalle 7 alle 10. Ecco la chiave!",
+        "he": "כן, מ-7 עד 10. הנה המפתח!",
+        "hint": "תודה ותגיד להתראות"
+      },
+      {
+        "role": "you",
+        "it": "Grazie mille! Buona giornata!",
+        "he": "תודה רבה! יום טוב!",
+        "hint": "Grazie mille + Buona giornata"
+      }
+    ]
+  },
+  {
+    "id": "gossip",
+    "title": "🗣️ שיחת חברים",
+    "desc": "שיחה עם חבר איטלקי על החיים",
+    "icon": "🗣️",
+    "level": 3,
+    "lines": [
+      {
+        "role": "friend",
+        "it": "Allora, come stai?",
+        "he": "אז, מה שלומך?",
+        "hint": "תגיד איך אתה מרגיש"
+      },
+      {
+        "role": "you",
+        "it": "Bene grazie! E tu?",
+        "he": "טוב תודה! ואתה?",
+        "hint": "Bene / Così così + E tu?"
+      },
+      {
+        "role": "friend",
+        "it": "Insomma... molto lavoro ultimamente",
+        "he": "ככה-ככה... המון עבודה לאחרונה",
+        "hint": "תביע אמפתיה"
+      },
+      {
+        "role": "you",
+        "it": "Mi dispiace. Devi riposarti!",
+        "he": "חבל. אתה חייב לנוח!",
+        "hint": "Mi dispiace + עצה"
+      },
+      {
+        "role": "friend",
+        "it": "Hai ragione! Usciamo sabato?",
+        "he": "נכון! נצא בשבת?",
+        "hint": "תסכים בשמחה"
+      },
+      {
+        "role": "you",
+        "it": "Certo! Andiamo a mangiare una pizza?",
+        "he": "בטח! נלך לאכול פיצה?",
+        "hint": "Certo! + הצעה"
+      }
+    ]
+  },
+  {
+    "id": "pharmacy",
+    "title": "💊 בבית מרקחת",
+    "desc": "קניית תרופות בפארמצ'יה",
+    "icon": "💊",
+    "level": 3,
+    "lines": [
+      {
+        "role": "pharmacist",
+        "it": "Buongiorno, come posso aiutarla?",
+        "he": "בוקר טוב, איך אפשר לעזור?",
+        "hint": "תסביר מה כואב לך"
+      },
+      {
+        "role": "you",
+        "it": "Mi fa male la gola",
+        "he": "כואב לי הגרון",
+        "hint": "Mi fa male + חלק בגוף"
+      },
+      {
+        "role": "pharmacist",
+        "it": "Da quanto tempo?",
+        "he": "מאז מתי?",
+        "hint": "תגיד כמה זמן"
+      },
+      {
+        "role": "you",
+        "it": "Da due giorni",
+        "he": "כבר יומיים",
+        "hint": "Da + מספר + giorni"
+      },
+      {
+        "role": "pharmacist",
+        "it": "Le do queste pastiglie. Una tre volte al giorno",
+        "he": "אני נותן לך את הכדורים. אחד שלוש פעמים ביום",
+        "hint": "תודה ותשאל כמה זה עולה"
+      },
+      {
+        "role": "you",
+        "it": "Grazie! Quanto devo?",
+        "he": "תודה! כמה אני צריך לשלם?",
+        "hint": "Quanto devo?"
+      }
+    ]
+  },
+  {
+    "id": "date",
+    "title": "❤️ דייט איטלקי",
+    "desc": "פלירטוט ודייט ברומא",
+    "icon": "❤️",
+    "level": 3,
+    "lines": [
+      {
+        "role": "you",
+        "it": "Sei bellissima stasera!",
+        "he": "את יפהפייה הערב!",
+        "hint": "Sei bellissima / bellissimo"
+      },
+      {
+        "role": "date",
+        "it": "Grazie! Anche tu stai molto bene",
+        "he": "תודה! גם אתה נראה טוב מאוד",
+        "hint": "תגיד תודה"
+      },
+      {
+        "role": "you",
+        "it": "Andiamo a fare una passeggiata?",
+        "he": "נלך לטייל קצת?",
+        "hint": "Andiamo a + פעולה"
+      },
+      {
+        "role": "date",
+        "it": "Mi piace l'idea! Conosco un posto bellissimo",
+        "he": "אני אוהבת את הרעיון! אני מכירה מקום יפהפה",
+        "hint": "תגיב בהתלהבות"
+      },
+      {
+        "role": "you",
+        "it": "Fammi vedere! Sono curioso",
+        "he": "תראי לי! אני סקרן",
+        "hint": "Fammi vedere / Sono curioso"
+      },
+      {
+        "role": "date",
+        "it": "È una sorpresa... vieni con me!",
+        "he": "זו הפתעה... בוא איתי!",
+        "hint": "Volentieri!"
+      }
+    ]
+  }
+]

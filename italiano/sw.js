@@ -1,0 +1,94 @@
+/* ═══════════════════════════════════════════════
+   VolaLingo — Service Worker
+   Offline-first PWA caching
+   ═══════════════════════════════════════════════ */
+
+const CACHE_NAME = 'volalingo-v7';
+const PRECACHE_URLS = [
+  '/',
+  '/index.html',
+  '/css/styles.css',
+  '/js/core/content-loader.js',
+  '/js/core/events.js',
+  '/js/modules/coach.js',
+  '/js/modules/gamification.js',
+  '/js/modules/exam.js',
+  // Practice Core Modules (Sprint C4A)
+  '/js/modules/practice/practice-core.js',
+  '/js/modules/practice/exercises.js',
+  '/js/modules/practice/anki-practice.js',
+  '/js/modules/practice/dialogue-practice.js',
+  '/js/modules/practice/practice-ui.js',
+  '/js/modules/practice/index.js',
+  '/js/app.js',
+  '/js/skill-tree.js',
+  '/js/content.js',
+  '/js/features.js',
+  '/js/games.js',
+  '/js/speak.js',
+  '/js/sentbuild.js',
+  '/js/listening.js',
+  '/manifest.json',
+  '/content/words.json',
+  '/content/sentences.json',
+  '/content/phrases.json',
+  '/content/dialogues.json',
+  '/content/stories.json',
+  '/content/songs.json',
+  '/content/skill-tree.json',
+  '/content/levels.json',
+  '/content/characters.json',
+  '/content/culture.json',
+  '/content/grammar.json',
+  '/content/achievements.json',
+  '/content/exams.json',
+  '/content/news.json'
+];
+
+// Install — precache shell
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.addAll(PRECACHE_URLS);
+    }).then(() => self.skipWaiting())
+  );
+});
+
+// Activate — clean old caches
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(keys => 
+      Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
+    ).then(() => self.clients.claim())
+  );
+});
+
+// Fetch — network first, cache fallback
+self.addEventListener('fetch', event => {
+  // Skip non-GET and API calls
+  if (event.request.method !== 'GET') return;
+  if (event.request.url.includes('api.') || event.request.url.includes('rss2json')) return;
+  
+  event.respondWith(
+    fetch(event.request)
+      .then(response => {
+        // Cache successful responses
+        if (response.ok) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+        }
+        return response;
+      })
+      .catch(() => {
+        // Fallback to cache
+        return caches.match(event.request).then(cached => {
+          if (cached) return cached;
+          // For navigation, return index.html (SPA)
+          if (event.request.mode === 'navigate') {
+            return caches.match('/index.html');
+          }
+          return new Response('Offline', { status: 503 });
+        });
+      })
+  );
+});

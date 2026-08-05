@@ -1,0 +1,143 @@
+{
+  "id": "B1_opinion",
+  "level": "B1",
+  "title": "הבעת דעה",
+  "titleIt": "Esprimere opinioni",
+  "goals": [
+    "להביע הסכמה/אי-הסכמה בנימוס",
+    "לתת סיבות לדעה שלי",
+    "להשתמש ב-congiuntivo בדעות"
+  ],
+  "estimatedTimeMinutes": 25,
+  "prerequisites": [
+    "A2_emotions"
+  ],
+  "vocabulary": [
+    "it_opinion_penso_che_001",
+    "it_opinion_secondo_me_002",
+    "it_opinion_sono_daccordo_003",
+    "it_opinion_non_sono_daccordo_004",
+    "it_opinion_perche_005",
+    "it_opinion_infatti_006",
+    "it_opinion_tuttavia_007"
+  ],
+  "grammar": [
+    "g9_congiuntivo_presente",
+    "g10_congiuntivo_dopo_espressioni_opinione",
+    "g11_connettivi_logici"
+  ],
+  "dialogues": [
+    "dlg_debate"
+  ],
+  "culture": [
+    "culture_italian_debate_style"
+  ],
+  "examPractice": [
+    "exam_CILS_B1_SPEAKING_001",
+    "exam_CILS_B1_WRITING_001"
+  ],
+  "exercises": [
+    {
+      "type": "flashcard",
+      "contentIds": [
+        "it_opinion_penso_che_001",
+        "it_opinion_secondo_me_002",
+        "it_opinion_sono_daccordo_003",
+        "it_opinion_non_sono_daccordo_004"
+      ],
+      "count": 4,
+      "config": {
+        "direction": "it-he",
+        "showGrammar": true
+      }
+    },
+    {
+      "type": "sentence-builder",
+      "contentIds": [
+        "it_opinion_penso_che_001",
+        "it_opinion_perche_005"
+      ],
+      "count": 5,
+      "config": {
+        "template": "Penso che {subjunctive}, perché {indicative}",
+        "wordBank": [
+          "penso",
+          "che",
+          "sia",
+          "abbia",
+          "vada",
+          "perchè",
+          "importante",
+          "bello",
+          "utile"
+        ]
+      }
+    },
+    {
+      "type": "speaking",
+      "contentIds": [
+        "it_opinion_sono_daccordo_003",
+        "it_opinion_non_sono_daccordo_004",
+        "it_opinion_tuttavia_007"
+      ],
+      "count": 3,
+      "config": {
+        "mode": "debate",
+        "topic": "environment"
+      }
+    },
+    {
+      "type": "writing",
+      "contentIds": [
+        "it_opinion_infatti_006",
+        "it_opinion_tuttavia_007"
+      ],
+      "count": 1,
+      "config": {
+        "prompt": "כתוב פסקה קצרה (80-100 מילים) המביעה דעתך על: 'האם טכנולוגיה משפרת את חיינו?'",
+        "minWords": 80,
+        "register": "neutral"
+      }
+    },
+    {
+      "type": "listening",
+      "contentIds": [
+        "dlg_debate"
+      ],
+      "count": 3,
+      "config": {
+        "speed": "normal",
+        "task": "identify_opinions"
+      }
+    },
+    {
+      "type": "exam-style",
+      "contentIds": [
+        "exam_CILS_B1_SPEAKING_001"
+      ],
+      "count": 1,
+      "config": {
+        "section": "SPEAKING",
+        "task": "express_opinion"
+      }
+    }
+  ],
+  "assessment": {
+    "passThreshold": 0.7,
+    "xpReward": 125,
+    "unlocks": [
+      "B1_media",
+      "B2_debate"
+    ]
+  },
+  "nonaGuidance": {
+    "intro": "להביע דעה זה אומנות! באיטליה דעות זה כמו קפה - לכולם יש, וכולם רוצים לשתף ☕💬",
+    "tips": [
+      "Penso che + congiuntivo תמיד! (Penso che sia bello, non è bello)",
+      "Secondo me זה יותר אישי ופחות פורמלי",
+      "Non sono d'accordo זה מנומס יותר מ-Non è vero",
+      "Usa perché + indicative לסיבה, ma + congiuntivo לניגוד"
+    ],
+    "encouragement": "Bravissimo! עכשיו אתה יכול להתווכח כמו איטלקי אמיתי! 🗣️"
+  }
+}

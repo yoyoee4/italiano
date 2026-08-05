@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ach_1",
+    "name": "מתחיל",
+    "desc": "למד 10 מילים",
+    "icon": "star",
+    "target": 10,
+    "type": "words"
+  },
+  {
+    "id": "ach_2",
+    "name": "מתלמד",
+    "desc": "למד 50 מילים",
+    "icon": "star2",
+    "target": 50,
+    "type": "words"
+  },
+  {
+    "id": "ach_3",
+    "name": "תלמיד",
+    "desc": "למד 100 מילים",
+    "icon": "star3",
+    "target": 100,
+    "type": "words"
+  },
+  {
+    "id": "ach_4",
+    "name": "לומד מתמיד",
+    "desc": "למד 200 מילים",
+    "icon": "grad",
+    "target": 200,
+    "type": "words"
+  },
+  {
+    "id": "ach_5",
+    "name": "משוחח",
+    "desc": "השלם 10 שיעורים",
+    "icon": "talk",
+    "target": 10,
+    "type": "lessons"
+  },
+  {
+    "id": "ach_6",
+    "name": "חרוץ",
+    "desc": "השלם 25 שיעורים",
+    "icon": "books",
+    "target": 25,
+    "type": "lessons"
+  },
+  {
+    "id": "ach_7",
+    "name": "סדרתי",
+    "desc": "רצף של 7 ימים",
+    "icon": "fire",
+    "target": 7,
+    "type": "streak"
+  },
+  {
+    "id": "ach_8",
+    "name": "בלתי עציר",
+    "desc": "רצף של 30 ימים",
+    "icon": "muscle",
+    "target": 30,
+    "type": "streak"
+  },
+  {
+    "id": "ach_9",
+    "name": "אספן",
+    "desc": "אסוף 500 XP",
+    "icon": "star_medal",
+    "target": 500,
+    "type": "xp"
+  },
+  {
+    "id": "ach_10",
+    "name": "מומחה",
+    "desc": "אסוף 2000 XP",
+    "icon": "super_star",
+    "target": 2000,
+    "type": "xp"
+  },
+  {
+    "id": "ach_11",
+    "name": "אלוף",
+    "desc": "אסוף 5000 XP",
+    "icon": "crown",
+    "target": 5000,
+    "type": "xp"
+  },
+  {
+    "id": "ach_12",
+    "name": "יהלום",
+    "desc": "הגע לליגת היהלום",
+    "icon": "diamond",
+    "target": 1,
+    "type": "league"
+  }
+]

@@ -1,0 +1,1402 @@
+[
+  {
+    "target": "Io sono italiano.",
+    "native": "אני איטלקי.",
+    "en": "I am Italian.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Tu come ti chiami?",
+    "native": "איך קוראים לך?",
+    "en": "What is your name?",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Lei è molto gentile.",
+    "native": "היא מאוד אדיבה.",
+    "en": "She is very kind.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Noi abitiamo a Roma.",
+    "native": "אנחנו גרים ברומא.",
+    "en": "We live in Rome.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Loro parlano italiano.",
+    "native": "הם מדברים איטלקית.",
+    "en": "They speak Italian.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Oggi fa bel tempo.",
+    "native": "היום מזג האוויר יפה.",
+    "en": "Today the weather is nice.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Io ho un gatto nero.",
+    "native": "יש לי חתול שחור.",
+    "en": "I have a black cat.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Questa è la mia casa.",
+    "native": "זה הבית שלי.",
+    "en": "This is my house.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Il libro è sul tavolo.",
+    "native": "הספר על השולחן.",
+    "en": "The book is on the table.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Mangio la pizza ogni venerdì.",
+    "native": "אני אוכל פיצה כל יום שישי.",
+    "en": "I eat pizza every Friday.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Vado al mercato con mia madre.",
+    "native": "אני הולך לשוק עם אמא שלי.",
+    "en": "I go to the market with my mother.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Lui beve un caffè al bar.",
+    "native": "הוא שותה קפה בבית הקפה.",
+    "en": "He drinks a coffee at the bar.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Le finestre della camera sono grandi.",
+    "native": "החלונות של החדר גדולים.",
+    "en": "The windows of the room are big.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Il mio compleanno è in gennaio.",
+    "native": "יום ההולדת שלי בינואר.",
+    "en": "My birthday is in January.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Dove abiti tu?",
+    "native": "איפה אתה גר?",
+    "en": "Where do you live?",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Io studio italiano ogni sera.",
+    "native": "אני לומד איטלקית כל ערב.",
+    "en": "I study Italian every evening.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Il ristorante apre alle sette.",
+    "native": "המסעדה נפתחת בשבע.",
+    "en": "The restaurant opens at seven.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Vorrei un gelato alla fragola.",
+    "native": "הייתי רוצה גלידה בתות.",
+    "en": "I would like a strawberry ice cream.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Quanto costa questa borsa?",
+    "native": "כמה עולה התיק הזה?",
+    "en": "How much does this bag cost?",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Lui è alto e ha i capelli biondi.",
+    "native": "הוא גבוה ויש לו שיער בלונדיני.",
+    "en": "He is tall and has blond hair.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Noi preferiamo il tè al caffè.",
+    "native": "אנחנו מעדיפים תה על קפה.",
+    "en": "We prefer tea to coffee.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "La piazza è molto affollata oggi.",
+    "native": "הכיכר מאוד צפופה היום.",
+    "en": "The square is very crowded today.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "I bambini giocano nel parco.",
+    "native": "הילדים משחקים בפארק.",
+    "en": "The children play in the park.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Loro sono amici da molti anni.",
+    "native": "הם חברים כבר הרבה שנים.",
+    "en": "They have been friends for many years.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Mi piace ascoltare la musica.",
+    "native": "אני אוהב להאזין למוזיקה.",
+    "en": "I like listening to music.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Buongiorno, come stai?",
+    "native": "בוקר טוב, מה שלומך?",
+    "en": "Good morning, how are you?",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Arrivederci e grazie!",
+    "native": "להתראות ותודה!",
+    "en": "Goodbye and thank you!",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Il gatto è sul divano.",
+    "native": "החתול על הספה.",
+    "en": "The cat is on the sofa.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Oggi è lunedì.",
+    "native": "היום יום שני.",
+    "en": "Today is Monday.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "La mela è rossa.",
+    "native": "התפוח אדום.",
+    "en": "The apple is red.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Mio padre è cuoco.",
+    "native": "אבא שלי הוא טבח.",
+    "en": "My father is a cook.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "La casa è grande.",
+    "native": "הבית גדול.",
+    "en": "The house is big.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Ho un fratello e una sorella.",
+    "native": "יש לי אח ואחות.",
+    "en": "I have a brother and a sister.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Il cane corre nel giardino.",
+    "native": "הכלב רץ בגינה.",
+    "en": "The dog runs in the garden.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Loro sono studenti.",
+    "native": "הם סטודנטים.",
+    "en": "They are students.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "La macchina è blu.",
+    "native": "המכונית כחולה.",
+    "en": "The car is blue.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Il sole splende oggi.",
+    "native": "השמש זורחת היום.",
+    "en": "The sun is shining today.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Noi mangiamo insieme.",
+    "native": "אנחנו אוכלים יחד.",
+    "en": "We eat together.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Lei è alta e magra.",
+    "native": "היא גבוהה ורזה.",
+    "en": "She is tall and thin.",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Dove sono le chiavi?",
+    "native": "איפה המפתחות?",
+    "en": "Where are the keys?",
+    "level": "A1",
+    "cat": "general"
+  },
+  {
+    "target": "Ieri sera sono andato al cinema.",
+    "native": "אתמול בערב הלכתי לקולנוע.",
+    "en": "Last night I went to the cinema.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Ha comprato un regalo per sua sorella.",
+    "native": "הוא קנה מתנה לאחותו.",
+    "en": "He bought a gift for his sister.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "D'estate andiamo sempre al mare.",
+    "native": "בקיץ אנחנו תמיד הולכים לים.",
+    "en": "In summer we always go to the sea.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Quando ero piccolo avevo un cane.",
+    "native": "כשהייתי קטן היה לי כלב.",
+    "en": "When I was little I had a dog.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Domani devo svegliarmi presto.",
+    "native": "מחר אני חייב להתעורר מוקדם.",
+    "en": "Tomorrow I have to wake up early.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Questo ristorante serve una pasta buonissima.",
+    "native": "המסעדה הזו מגישה פסטה טעימה מאוד.",
+    "en": "This restaurant serves very tasty pasta.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Lei sa parlare tre lingue diverse.",
+    "native": "היא יודעת לדבר שלוש שפות שונות.",
+    "en": "She can speak three different languages.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Possiamo incontrarci domani pomeriggio?",
+    "native": "אנחנו יכולים להיפגש מחר אחר הצהריים?",
+    "en": "Can we meet tomorrow afternoon?",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Ho comprato frutta al mercato.",
+    "native": "קניתי פירות בשוק.",
+    "en": "I bought fruit at the market.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Ogni mattina faccio colazione con il latte.",
+    "native": "כל בוקר אני אוכל ארוחת בוקר עם חלב.",
+    "en": "Every morning I have breakfast with milk.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Non ho mai visitato la Sicilia.",
+    "native": "מעולם לא ביקרתי בסיציליה.",
+    "en": "I have never visited Sicily.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Stasera cucino la cena per gli amici.",
+    "native": "הערב אני מבשל ארוחת ערב לחברים.",
+    "en": "Tonight I cook dinner for friends.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "La stazione ferroviaria è lontana da qui.",
+    "native": "תחנת הרכבת רחוקה מכאן.",
+    "en": "The train station is far from here.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Mio fratello lavora in una banca.",
+    "native": "אחי עובד בבנק.",
+    "en": "My brother works in a bank.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Durante il viaggio abbiamo visto molti musei.",
+    "native": "במהלך הטיול ראינו מוזיאונים רבים.",
+    "en": "During the trip we saw many museums.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Preferisci la carne o il pesce?",
+    "native": "אתה מעדיף בשר או דג?",
+    "en": "Do you prefer meat or fish?",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Di solito vado a letto alle undici.",
+    "native": "בדרך כלל אני הולך לישון באחת עשרה.",
+    "en": "I usually go to bed at eleven.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "La casa di mia nonna è in campagna.",
+    "native": "הבית של סבתא שלי בכפר.",
+    "en": "My grandmother's house is in the countryside.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Ieri ha piovuto tutto il giorno.",
+    "native": "אתמול ירד גשם כל היום.",
+    "en": "Yesterday it rained all day.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Questa città ha molti monumenti antichi.",
+    "native": "לעיר הזו יש הרבה מונומנטים עתיקים.",
+    "en": "This city has many ancient monuments.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Ho preso l'autobus per andare al lavoro.",
+    "native": "לקחתי את האוטובוס כדי ללכת לעבודה.",
+    "en": "I took the bus to go to work.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Mi piace molto leggere libri di avventura.",
+    "native": "אני מאוד אוהב לקרוא ספרי הרפתקאות.",
+    "en": "I really like reading adventure books.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Lei ha gli occhi verdi e i capelli rossi.",
+    "native": "יש לה עיניים ירוקות ושיער אדום.",
+    "en": "She has green eyes and red hair.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Dobbiamo comprare il pane e il latte.",
+    "native": "אנחנו צריכים לקנות לחם וחלב.",
+    "en": "We have to buy bread and milk.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Non mi sento bene, ho mal di testa.",
+    "native": "אני לא מרגיש טוב, יש לי כאב ראש.",
+    "en": "I don't feel well, I have a headache.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "A che ora apre la farmacia?",
+    "native": "באיזו שעה נפתח בית המרקחת?",
+    "en": "What time does the pharmacy open?",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Puoi darmi un bicchiere d'acqua?",
+    "native": "אתה יכול לתת לי כוס מים?",
+    "en": "Can you give me a glass of water?",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Il supermercato chiude alle otto.",
+    "native": "הסופר נסגר בשמונה.",
+    "en": "The supermarket closes at eight.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Loro hanno viaggiato in treno per tutta l'Italia.",
+    "native": "הם טיילו ברכבת בכל איטליה.",
+    "en": "They traveled by train all over Italy.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Scusi, dov'è la fermata dell'autobus?",
+    "native": "סליחה, איפה תחנת האוטובוס?",
+    "en": "Excuse me, where is the bus stop?",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Da bambino andavo in vacanza al mare ogni anno.",
+    "native": "כילד נסעתי לחופשה לים כל שנה.",
+    "en": "As a child I went on vacation to the sea every year.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Lei ha preparato una torta per la festa.",
+    "native": "היא הכינה עוגה למסיבה.",
+    "en": "She made a cake for the party.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Il gatto dorme tutto il giorno.",
+    "native": "החתול ישן כל היום.",
+    "en": "The cat sleeps all day.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Noi abbiamo deciso di andare in montagna.",
+    "native": "החלטנו לנסוע להרים.",
+    "en": "We decided to go to the mountains.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "I miei genitori sono molto gentili.",
+    "native": "ההורים שלי מאוד נחמדים.",
+    "en": "My parents are very kind.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Quanto tempo ci vuole per arrivare?",
+    "native": "כמה זמן לוקח להגיע?",
+    "en": "How long does it take to get there?",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Mi scusi, ho sbagliato strada.",
+    "native": "סליחה, טעיתי בדרך.",
+    "en": "Excuse me, I took the wrong street.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Oggi è una bella giornata.",
+    "native": "היום יום יפה.",
+    "en": "Today is a beautiful day.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Loro cantano molto bene.",
+    "native": "הם שרים יפה מאוד.",
+    "en": "They sing very well.",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Puoi ripetere, per favore?",
+    "native": "אתה יכול לחזור, בבקשה?",
+    "en": "Can you repeat, please?",
+    "level": "A2",
+    "cat": "general"
+  },
+  {
+    "target": "Se avessi più tempo, viaggerei di più.",
+    "native": "אם היה לי יותר זמן, הייתי מטייל יותר.",
+    "en": "If I had more time, I would travel more.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Non vedo l'ora di andare in Italia.",
+    "native": "אני לא יכול לחכות לנסוע לאיטליה.",
+    "en": "I can't wait to go to Italy.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Mi hanno detto che il film è bellissimo.",
+    "native": "אמרו לי שהסרט יפה מאוד.",
+    "en": "They told me the movie is beautiful.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Quando sono arrivato, la festa era già iniziata.",
+    "native": "כשהגעתי, המסיבה כבר התחילה.",
+    "en": "When I arrived, the party had already started.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Potresti aiutarmi a portare queste borse?",
+    "native": "תוכל לעזור לי לסחוב את התיקים האלה?",
+    "en": "Could you help me carry these bags?",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Ogni weekend faccio una lunga passeggiata.",
+    "native": "כל סוף שבוע אני עושה טיול ארוך.",
+    "en": "Every weekend I take a long walk.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Il mio sogno è di aprire un ristorante.",
+    "native": "החלום שלי הוא לפתוח מסעדה.",
+    "en": "My dream is to open a restaurant.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Da bambino andavo sempre in montagna.",
+    "native": "כילד תמיד נסעתי להרים.",
+    "en": "As a child I always went to the mountains.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Non mi piace quando la gente arriva in ritardo.",
+    "native": "אני לא אוהב כשאנשים מאחרים.",
+    "en": "I don't like when people arrive late.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Penso che dovremmo prenotare prima.",
+    "native": "אני חושב שכדאי לנו להזמין מקום מראש.",
+    "en": "I think we should book in advance.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "È difficile trovare parcheggio in centro.",
+    "native": "קשה למצוא חניה במרכז.",
+    "en": "It's difficult to find parking downtown.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Ho iniziato a studiare italiano per lavoro.",
+    "native": "התחלתי ללמוד איטלקית בשביל העבודה.",
+    "en": "I started studying Italian for work.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Nonostante la pioggia, siamo usciti lo stesso.",
+    "native": "למרות הגשם, יצאנו בכל זאת.",
+    "en": "Despite the rain, we went out anyway.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "La settimana scorsa ho perso il portafoglio.",
+    "native": "בשבוע שעבר איבדתי את הארנק.",
+    "en": "Last week I lost my wallet.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Preferirei rimanere a casa stasera.",
+    "native": "הייתי מעדיף להישאר בבית הערב.",
+    "en": "I would prefer to stay home tonight.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Ti ricordi quando siamo andati a Venezia?",
+    "native": "אתה זוכר כשנסענו לוונציה?",
+    "en": "Do you remember when we went to Venice?",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "La cucina italiana è una delle migliori al mondo.",
+    "native": "המטבח האיטלקי הוא אחד הטובים בעולם.",
+    "en": "Italian cuisine is one of the best in the world.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Mi sono iscritto a un corso di italiano.",
+    "native": "נרשמתי לקורס איטלקית.",
+    "en": "I enrolled in an Italian course.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Dovresti visitare Firenze almeno una volta.",
+    "native": "כדאי לך לבקר בפירנצה לפחות פעם אחת.",
+    "en": "You should visit Florence at least once.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Che cosa hai fatto durante le vacanze?",
+    "native": "מה עשית במהלך החופשה?",
+    "en": "What did you do during the holidays?",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Secondo me, questo ristorante è il migliore.",
+    "native": "לדעתי, המסעדה הזאת היא הכי טובה.",
+    "en": "In my opinion, this restaurant is the best.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Potrebbe dirmi dov'è la stazione?",
+    "native": "תוכל להגיד לי איפה התחנה?",
+    "en": "Could you tell me where the station is?",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Vorrei parlare con il direttore, per favore.",
+    "native": "הייתי רוצה לדבר עם המנהל, בבקשה.",
+    "en": "I would like to speak with the manager, please.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Ho prenotato una camera per tre notti.",
+    "native": "הזמנתי חדר לשלושה לילות.",
+    "en": "I booked a room for three nights.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Mi piace molto la musica classica.",
+    "native": "אני מאוד אוהב מוזיקה קלאסית.",
+    "en": "I really like classical music.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Lui lavora come ingegnere informatico.",
+    "native": "הוא עובד כמהנדס תוכנה.",
+    "en": "He works as a software engineer.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Abbiamo visitato il museo e la galleria d'arte.",
+    "native": "ביקרנו במוזיאון ובגלריה לאמנות.",
+    "en": "We visited the museum and the art gallery.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Non capisco perché non mi rispondi.",
+    "native": "אני לא מבין למה אתה לא עונה לי.",
+    "en": "I don't understand why you don't answer me.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Dovremmo andare dal medico per un controllo.",
+    "native": "כדאי לנו ללכת לרופא לבדיקה.",
+    "en": "We should go to the doctor for a checkup.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Hai sentito le ultime notizie?",
+    "native": "שמעת את החדשות האחרונות?",
+    "en": "Did you hear the latest news?",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Mi raccomando, stai attento per strada!",
+    "native": "תזהר, היה זהיר בדרך!",
+    "en": "Take care, be careful on the road!",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Non sono d'accordo con quello che hai detto.",
+    "native": "אני לא מסכים עם מה שאמרת.",
+    "en": "I don't agree with what you said.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Se potessi, vivrei al mare.",
+    "native": "אם יכולתי, הייתי גר ליד הים.",
+    "en": "If I could, I would live by the sea.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Il mio amico abita a Milano da dieci anni.",
+    "native": "חבר שלי גר במילאנו כבר עשר שנים.",
+    "en": "My friend has been living in Milan for ten years.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "La mostra d'arte è stata molto interessante.",
+    "native": "תערוכת האמנות הייתה מעניינת מאוד.",
+    "en": "The art exhibition was very interesting.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Devo assolutamente finire questo progetto.",
+    "native": "אני חייב לסיים את הפרויקט הזה בהחלט.",
+    "en": "I absolutely have to finish this project.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Che tipo di musica preferisci?",
+    "native": "איזה סוג מוזיקה אתה מעדיף?",
+    "en": "What kind of music do you prefer?",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Mia sorella si è laureata in legge.",
+    "native": "אחותי סיימה תואר במשפטים.",
+    "en": "My sister graduated in law.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Mi dispiace ma non posso venire alla festa.",
+    "native": "אני מצטער אבל אני לא יכול לבוא למסיבה.",
+    "en": "I'm sorry but I can't come to the party.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Cosa ne pensi del nuovo film?",
+    "native": "מה דעתך על הסרט החדש?",
+    "en": "What do you think about the new movie?",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Il tempo passa veloce quando ci si diverte.",
+    "native": "הזמן עובר מהר כשנהנים.",
+    "en": "Time flies when you're having fun.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Dovresti provare il tiramisù, è fantastico!",
+    "native": "כדאי לך לנסות את הטירמיסו, הוא מעולה!",
+    "en": "You should try the tiramisu, it's fantastic!",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Noi ci vediamo ogni sabato per giocare a calcio.",
+    "native": "אנחנו נפגשים כל שבת לשחק כדורגל.",
+    "en": "We meet every Saturday to play soccer.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Lei parla italiano molto bene per essere straniera.",
+    "native": "היא מדברת איטלקית טוב מאוד למי שהיא זרה.",
+    "en": "She speaks Italian very well for being a foreigner.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Ho dimenticato di comprare il pane.",
+    "native": "שכחתי לקנות לחם.",
+    "en": "I forgot to buy bread.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Appena arrivo a casa, ti chiamo.",
+    "native": "ברגע שאגיע הביתה, אתקשר אליך.",
+    "en": "As soon as I get home, I'll call you.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Ogni anno Milano ospita la settimana della moda.",
+    "native": "מילאנו מארחת כל שנה את שבוע האופנה.",
+    "en": "Every year Milan hosts fashion week.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "La pasta si mangia in tutta Italia.",
+    "native": "פסטה אוכלים בכל איטליה.",
+    "en": "Pasta is eaten all over Italy.",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Potrebbe farmi uno sconto?",
+    "native": "תוכל לתת לי הנחה?",
+    "en": "Could you give me a discount?",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Quanto tempo hai studiato italiano?",
+    "native": "כמה זמן למדת איטלקית?",
+    "en": "How long have you studied Italian?",
+    "level": "B1",
+    "cat": "general"
+  },
+  {
+    "target": "Se avessi saputo prima, sarei venuto con te.",
+    "native": "אם הייתי יודע קודם, הייתי בא איתך.",
+    "en": "If I had known earlier, I would have come with you.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Nonostante avesse studiato tanto, non ha passato l'esame.",
+    "native": "למרות שלמד הרבה, הוא לא עבר את המבחן.",
+    "en": "Although he studied a lot, he didn't pass the exam.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Il governo ha annunciato nuove misure economiche.",
+    "native": "הממשלה הכריזה על צעדים כלכליים חדשים.",
+    "en": "The government announced new economic measures.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Mi piacerebbe vivere all'estero per qualche anno.",
+    "native": "הייתי רוצה לגור בחו\"ל לכמה שנים.",
+    "en": "I would like to live abroad for a few years.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Non è giusto giudicare senza conoscere i fatti.",
+    "native": "זה לא הוגן לשפוט בלי לדעת את העובדות.",
+    "en": "It's not fair to judge without knowing the facts.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "La ricerca scientifica ha fatto grandi progressi.",
+    "native": "המחקר המדעי עשה התקדמות גדולה.",
+    "en": "Scientific research has made great progress.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "L'inquinamento dell'aria è un problema serio.",
+    "native": "זיהום האוויר הוא בעיה רצינית.",
+    "en": "Air pollution is a serious problem.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Bisognerebbe investire di più nelle energie rinnovabili.",
+    "native": "צריך להשקיע יותר באנרגיות מתחדשות.",
+    "en": "We should invest more in renewable energy.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Ho apprezzato molto la tua sincerità.",
+    "native": "הערכתי מאוד את הכנות שלך.",
+    "en": "I really appreciated your honesty.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "L'opera lirica italiana è famosa in tutto il mondo.",
+    "native": "האופרה האיטלקית מפורסמת בכל העולם.",
+    "en": "Italian opera is famous all over the world.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Mi sono reso conto di aver sbagliato.",
+    "native": "הבנתי שטעיתי.",
+    "en": "I realized I was wrong.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "La società italiana è cambiata molto negli ultimi anni.",
+    "native": "החברה האיטלקית השתנתה מאוד בשנים האחרונות.",
+    "en": "Italian society has changed a lot in recent years.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "È importante mantenere uno stile di vita sano.",
+    "native": "חשוב לשמור על אורח חיים בריא.",
+    "en": "It's important to maintain a healthy lifestyle.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Vorrei sottoporre la tua attenzione a questo problema.",
+    "native": "הייתי רוצה להפנות את תשומת לבך לבעיה הזו.",
+    "en": "I would like to draw your attention to this problem.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Il film tratta temi sociali molto complessi.",
+    "native": "הסרט עוסק בנושאים חברתיים מורכבים מאוד.",
+    "en": "The film deals with very complex social issues.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Nonostante le difficoltà, hanno portato a termine il progetto.",
+    "native": "למרות הקשיים, הם השלימו את הפרויקט.",
+    "en": "Despite the difficulties, they completed the project.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Le politiche ambientali devono essere migliorate.",
+    "native": "יש לשפר את המדיניות הסביבתית.",
+    "en": "Environmental policies need to be improved.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Sarebbe opportuno discutere la questione con il direttore.",
+    "native": "כדאי לדון בעניין עם המנהל.",
+    "en": "It would be appropriate to discuss the matter with the director.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "La globalizzazione ha portato molti cambiamenti.",
+    "native": "הגלובליזציה הביאה שינויים רבים.",
+    "en": "Globalization has brought many changes.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Condivido pienamente la tua opinione.",
+    "native": "אני שותף מלא לדעתך.",
+    "en": "I fully share your opinion.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Il congiuntivo è un modo verbale molto usato in italiano.",
+    "native": "הקוניונטיבו הוא מודוס פועלי נפוץ מאוד באיטלקית.",
+    "en": "The subjunctive is a very used verbal mood in Italian.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "L'azienda ha deciso di espandere il mercato all'estero.",
+    "native": "החברה החליטה להרחיב את השוק לחו\"ל.",
+    "en": "The company decided to expand the market abroad.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Penso che sia giusto dare una seconda possibilità.",
+    "native": "אני חושב שזה נכון לתת סיכוי שני.",
+    "en": "I think it's right to give a second chance.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "La mostra di Caravaggio ha attirato migliaia di visitatori.",
+    "native": "תערוכת קאראווג'ו משכה אלפי מבקרים.",
+    "en": "The Caravaggio exhibition attracted thousands of visitors.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Non è facile conciliare lavoro e famiglia.",
+    "native": "לא קל לשלב עבודה ומשפחה.",
+    "en": "It's not easy to balance work and family.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "L'intelligenza artificiale sta rivoluzionando molti settori.",
+    "native": "בינה מלאכותית מחוללת מהפכה בתחומים רבים.",
+    "en": "Artificial intelligence is revolutionizing many sectors.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Ho letto un articolo molto interessante sul cambiamento climatico.",
+    "native": "קראתי מאמר מעניין מאוד על שינוי אקלים.",
+    "en": "I read a very interesting article about climate change.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "La situazione economica sta migliorando gradualmente.",
+    "native": "המצב הכלכלי משתפר בהדרגה.",
+    "en": "The economic situation is gradually improving.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Sono rimasto molto colpito dalla sua presentazione.",
+    "native": "התרשמתי מאוד מהמצגת שלו.",
+    "en": "I was very impressed by his presentation.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "È fondamentale che tutti partecipino alla riunione.",
+    "native": "חיוני שכולם ישתתפו בפגישה.",
+    "en": "It's essential that everyone attends the meeting.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Il turismo è una delle principali risorse dell'Italia.",
+    "native": "תיירות היא אחד המשאבים העיקריים של איטליה.",
+    "en": "Tourism is one of Italy's main resources.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Ho partecipato a un convegno sulla sostenibilità ambientale.",
+    "native": "השתתפתי בכנס על קיימות סביבתית.",
+    "en": "I attended a conference on environmental sustainability.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "L'università offre molti corsi di specializzazione.",
+    "native": "האוניברסיטה מציעה הרבה קורסי התמחות.",
+    "en": "The university offers many specialization courses.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Il dibattito politico è stato molto acceso.",
+    "native": "הוויכוח הפוליטי היה סוער מאוד.",
+    "en": "The political debate was very heated.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Mi auguro che tu possa realizzare i tuoi sogni.",
+    "native": "אני מקווה שתוכל להגשים את החלומות שלך.",
+    "en": "I hope you can realize your dreams.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "La tecnologia ha trasformato il modo di comunicare.",
+    "native": "הטכנולוגיה שינתה את הדרך לתקשר.",
+    "en": "Technology has transformed the way we communicate.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "È importante rispettare le scadenze.",
+    "native": "חשוב לכבד מועדי סיום.",
+    "en": "It's important to respect deadlines.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "La qualità della vita in Italia è molto alta.",
+    "native": "איכות החיים באיטליה גבוהה מאוד.",
+    "en": "The quality of life in Italy is very high.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Ho deciso di cambiare lavoro dopo cinque anni.",
+    "native": "החלטתי להחליף עבודה אחרי חמש שנים.",
+    "en": "I decided to change jobs after five years.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Il sistema sanitario italiano è universale.",
+    "native": "מערכת הבריאות האיטלקית היא אוניברסלית.",
+    "en": "The Italian healthcare system is universal.",
+    "level": "B2",
+    "cat": "general"
+  },
+  {
+    "target": "Sarebbe stato preferibile discutere prima di prendere una decisione.",
+    "native": "היה עדיף לדון לפני קבלת החלטה.",
+    "en": "It would have been preferable to discuss before making a decision.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "Nonostante le avversità, ha perseverato fino al raggiungimento dell'obiettivo.",
+    "native": "למרות הקשיים, הוא התמיד עד להשגת המטרה.",
+    "en": "Despite the adversity, he persevered until achieving the goal.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "L'articolo analizza le implicazioni socioeconomiche del fenomeno.",
+    "native": "המאמר מנתח את ההשלכות החברתיות-כלכליות של התופעה.",
+    "en": "The article analyzes the socioeconomic implications of the phenomenon.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "Qualora si verifichino determinate condizioni, l'accordo sarà revocato.",
+    "native": "במידה ויתקיימו תנאים מסוימים, ההסכם יבוטל.",
+    "en": "Should certain conditions occur, the agreement will be revoked.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "I mutamenti climatici rappresentano una minaccia concreta.",
+    "native": "שינויי האקלים מהווים איום ממשי.",
+    "en": "Climate change represents a concrete threat.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "È fondamentale sensibilizzare l'opinione pubblica su questo tema.",
+    "native": "חיוני להעלות את המודעות הציבורית בנושא זה.",
+    "en": "It is essential to raise public awareness on this issue.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "L'intervento del governo ha sortito effetti positivi sull'economia.",
+    "native": "התערבות הממשלה הניבה השפעות חיוביות על הכלכלה.",
+    "en": "The government intervention produced positive effects on the economy.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "La sua interpretazione del testo è estremamente approfondita.",
+    "native": "הפרשנות שלו לטקסט היא מעמיקה ביותר.",
+    "en": "His interpretation of the text is extremely thorough.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "È auspicabile che vengano adottate misure più rigorose.",
+    "native": "רצוי שיינקטו צעדים מחמירים יותר.",
+    "en": "It is desirable that more rigorous measures be adopted.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "La critica letteraria contemporanea mette in discussione canoni consolidati.",
+    "native": "הביקורת הספרותית העכשווית מטילה ספק בקנונים מבוססים.",
+    "en": "Contemporary literary criticism questions established canons.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "Pur essendo un'idea affascinante, rimane difficilmente realizzabile.",
+    "native": "למרות שזה רעיון מרתק, הוא נותר קשה למימוש.",
+    "en": "Although it's a fascinating idea, it remains difficult to implement.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "Il fenomeno migratorio richiede una gestione complessa.",
+    "native": "תופעת ההגירה דורשת ניהול מורכב.",
+    "en": "The migratory phenomenon requires complex management.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "L'evoluzione tecnologica ha radicalmente trasformato il mercato del lavoro.",
+    "native": "האבולוציה הטכנולוגית שינתה באופן קיצוני את שוק העבודה.",
+    "en": "Technological evolution has radically transformed the labor market.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "Si tratta di un argomento dibattuto a livello internazionale.",
+    "native": "מדובר בנושא שנדון ברמה בינלאומית.",
+    "en": "It is a topic debated at an international level.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "Bisognerebbe incentivare la ricerca nel campo delle biotecnologie.",
+    "native": "יש לעודד מחקר בתחום הביוטכנולוגיה.",
+    "en": "Research in the field of biotechnology should be encouraged.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "Il romanzo esplora le complesse dinamiche psicologiche dei personaggi.",
+    "native": "הרומן חוקר את הדינמיקה הפסיכולוגית המורכבת של הדמויות.",
+    "en": "The novel explores the complex psychological dynamics of the characters.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "Le istituzioni culturali svolgono un ruolo cruciale nella società.",
+    "native": "מוסדות תרבות ממלאים תפקיד מכריע בחברה.",
+    "en": "Cultural institutions play a crucial role in society.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "La diplomazia italiana ha mediato con successo la controversia.",
+    "native": "הדיפלומטיה האיטלקית תיווכה בהצלחה במחלוקת.",
+    "en": "Italian diplomacy successfully mediated the dispute.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "L'analisi dei dati evidenzia una tendenza preoccupante.",
+    "native": "ניתוח הנתונים מדגים מגמה מדאיגה.",
+    "en": "The data analysis highlights a worrying trend.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "Il docente ha illustrato le principali correnti filosofiche del Novecento.",
+    "native": "המרצה הציג את הזרמים הפילוסופיים העיקריים של המאה העשרים.",
+    "en": "The professor illustrated the main philosophical currents of the twentieth century.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "Nonostante le differenze culturali, hanno trovato un terreno comune.",
+    "native": "למרות ההבדלים התרבותיים, הם מצאו בסיס משותף.",
+    "en": "Despite the cultural differences, they found common ground.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "La tutela del patrimonio artistico è una priorità nazionale.",
+    "native": "הגנה על המורשת האמנותית היא עדיפות לאומית.",
+    "en": "Protection of the artistic heritage is a national priority.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "Il processo di integrazione europea ha attraversato molte fasi.",
+    "native": "תהליך האינטגרציה האירופית עבר שלבים רבים.",
+    "en": "The European integration process has gone through many phases.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "L'articolo di fondo analizza le implicazioni della riforma.",
+    "native": "מאמר המערכת מנתח את ההשלכות של הרפורמה.",
+    "en": "The editorial analyzes the implications of the reform.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "Il dibattito parlamentare è stato trasmesso in diretta televisiva.",
+    "native": "הדיון הפרלמנטרי שודר בשידור חי בטלוויזיה.",
+    "en": "The parliamentary debate was broadcast live on television.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "La mostra fotografica documenta la trasformazione urbana di Milano.",
+    "native": "תערוכת הצילומים מתעדת את השינוי האורבני של מילאנו.",
+    "en": "The photographic exhibition documents the urban transformation of Milan.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "La poesia ermetica italiana è caratterizzata da un linguaggio complesso.",
+    "native": "השירה ההרמטית האיטלקית מאופיינת בשפה מורכבת.",
+    "en": "Italian hermetic poetry is characterized by complex language.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "L'opera di Dante Alighieri è considerata il fondamento della lingua italiana.",
+    "native": "יצירתו של דנטה אליגיירי נחשבת לבסיס השפה האיטלקית.",
+    "en": "Dante Alighieri's work is considered the foundation of the Italian language.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "La ricerca sull'intelligenza artificiale procede a ritmo sostenuto.",
+    "native": "המחקר על בינה מלאכותית מתקדם בקצב מהיר.",
+    "en": "Research on artificial intelligence proceeds at a rapid pace.",
+    "level": "C1",
+    "cat": "general"
+  },
+  {
+    "target": "La sostenibilità ambientale è diventata un imperativo categorico.",
+    "native": "קיימות סביבתית הפכה לציווי קטגורי.",
+    "en": "Environmental sustainability has become a categorical imperative.",
+    "level": "C1",
+    "cat": "general"
+  }
+]

@@ -1,0 +1,660 @@
+[
+  {
+    "id": "A1_greetings",
+    "level": "A1",
+    "name": "ברכות והיכרות",
+    "icon": "👋",
+    "category": "greetings",
+    "prerequisite": [],
+    "wordCount": 20
+  },
+  {
+    "id": "A1_numbers",
+    "level": "A1",
+    "name": "מספרים 1-100",
+    "icon": "🔢",
+    "category": "numbers",
+    "prerequisite": [
+      "A1_greetings"
+    ],
+    "wordCount": 30
+  },
+  {
+    "id": "A1_colors",
+    "level": "A1",
+    "name": "צבעים",
+    "icon": "🎨",
+    "category": "colors",
+    "prerequisite": [
+      "A1_greetings"
+    ],
+    "wordCount": 15
+  },
+  {
+    "id": "A1_family",
+    "level": "A1",
+    "name": "משפחה",
+    "icon": "👨‍👩‍👧‍👦",
+    "category": "family",
+    "prerequisite": [
+      "A1_greetings"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A1_essentials",
+    "level": "A1",
+    "name": "פעלים בסיסיים",
+    "icon": "⚡",
+    "category": "verbs",
+    "prerequisite": [
+      "A1_greetings"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A1_time",
+    "level": "A1",
+    "name": "זמן - ימים וחודשים",
+    "icon": "📅",
+    "category": "time",
+    "prerequisite": [
+      "A1_numbers"
+    ],
+    "wordCount": 25
+  },
+  {
+    "id": "A1_food",
+    "level": "A1",
+    "name": "אוכל ושתייה",
+    "icon": "🍕",
+    "category": "food",
+    "prerequisite": [
+      "A1_essentials"
+    ],
+    "wordCount": 25
+  },
+  {
+    "id": "A1_body",
+    "level": "A1",
+    "name": "גוף האדם",
+    "icon": "🧍",
+    "category": "body",
+    "prerequisite": [
+      "A1_essentials"
+    ],
+    "wordCount": 25
+  },
+  {
+    "id": "A1_adjectives",
+    "level": "A1",
+    "name": "תארים בסיסיים",
+    "icon": "📝",
+    "category": "adjectives",
+    "prerequisite": [
+      "A1_essentials"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A1_places",
+    "level": "A1",
+    "name": "מקומות בעיר",
+    "icon": "🏘️",
+    "category": "places",
+    "prerequisite": [
+      "A1_essentials"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A1_clothing",
+    "level": "A1",
+    "name": "ביגוד",
+    "icon": "👕",
+    "category": "clothing",
+    "prerequisite": [
+      "A1_essentials"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A1_weather",
+    "level": "A1",
+    "name": "מזג אוויר",
+    "icon": "🌤️",
+    "category": "weather",
+    "prerequisite": [
+      "A1_essentials"
+    ],
+    "wordCount": 15
+  },
+  {
+    "id": "A1_animals",
+    "level": "A1",
+    "name": "חיות",
+    "icon": "🐾",
+    "category": "animals",
+    "prerequisite": [
+      "A1_essentials"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A2_past",
+    "level": "A2",
+    "name": "עבר קרוב (Passato Prossimo)",
+    "icon": "⏪",
+    "category": "grammar",
+    "prerequisite": [
+      "A1_essentials"
+    ],
+    "wordCount": 25
+  },
+  {
+    "id": "A2_directions",
+    "level": "A2",
+    "name": "הכוונה וכיוונים",
+    "icon": "🗺️",
+    "category": "travel",
+    "prerequisite": [
+      "A1_places"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A2_shopping",
+    "level": "A2",
+    "name": "קניות",
+    "icon": "🛍️",
+    "category": "shopping",
+    "prerequisite": [
+      "A1_food"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A2_restaurant",
+    "level": "A2",
+    "name": "במסעדה",
+    "icon": "🍝",
+    "category": "food",
+    "prerequisite": [
+      "A1_food"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A2_plans",
+    "level": "A2",
+    "name": "תכניות ועתיד",
+    "icon": "📋",
+    "category": "grammar",
+    "prerequisite": [
+      "A2_past"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A2_hobbies",
+    "level": "A2",
+    "name": "תחביבים",
+    "icon": "🎯",
+    "category": "general",
+    "prerequisite": [
+      "A1_essentials"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A2_describe",
+    "level": "A2",
+    "name": "לתאר אנשים",
+    "icon": "👤",
+    "category": "adjectives",
+    "prerequisite": [
+      "A1_adjectives"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A2_health",
+    "level": "A2",
+    "name": "בריאות וגוף",
+    "icon": "🏥",
+    "category": "health",
+    "prerequisite": [
+      "A1_body"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A2_travel",
+    "level": "A2",
+    "name": "טיולים",
+    "icon": "✈️",
+    "category": "travel",
+    "prerequisite": [
+      "A1_places"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A2_phone",
+    "level": "A2",
+    "name": "שיחות טלפון",
+    "icon": "📞",
+    "category": "general",
+    "prerequisite": [
+      "A1_essentials"
+    ],
+    "wordCount": 15
+  },
+  {
+    "id": "A2_emotions",
+    "level": "A2",
+    "name": "רגשות",
+    "icon": "😊",
+    "category": "emotions",
+    "prerequisite": [
+      "A1_adjectives"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A2_home",
+    "level": "A2",
+    "name": "בית וחיי יום יום",
+    "icon": "🏠",
+    "category": "general",
+    "prerequisite": [
+      "A1_essentials"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "A2_transport",
+    "level": "A2",
+    "name": "תחבורה",
+    "icon": "🚌",
+    "category": "travel",
+    "prerequisite": [
+      "A1_places"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B1_opinion",
+    "level": "B1",
+    "name": "הבעת דעה",
+    "icon": "💬",
+    "category": "general",
+    "prerequisite": [
+      "A2_emotions"
+    ],
+    "wordCount": 25
+  },
+  {
+    "id": "B1_conditional",
+    "level": "B1",
+    "name": "זמן תנאי",
+    "icon": "🤔",
+    "category": "grammar",
+    "prerequisite": [
+      "A2_past"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B1_future",
+    "level": "B1",
+    "name": "תכניות עתידיות",
+    "icon": "🔮",
+    "category": "grammar",
+    "prerequisite": [
+      "A2_plans"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B1_media",
+    "level": "B1",
+    "name": "חדשות ומדיה",
+    "icon": "📰",
+    "category": "media",
+    "prerequisite": [
+      "B1_opinion"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B1_work",
+    "level": "B1",
+    "name": "עבודה ומקצועות",
+    "icon": "💼",
+    "category": "work",
+    "prerequisite": [
+      "A2_home"
+    ],
+    "wordCount": 25
+  },
+  {
+    "id": "B1_regions",
+    "level": "B1",
+    "name": "מחוזות איטליה",
+    "icon": "🇮🇹",
+    "category": "culture",
+    "prerequisite": [
+      "A2_travel"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B1_cinema",
+    "level": "B1",
+    "name": "קולנוע וטלוויזיה",
+    "icon": "🎬",
+    "category": "media",
+    "prerequisite": [
+      "B1_media"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B1_advice",
+    "level": "B1",
+    "name": "מתן עצות",
+    "icon": "💡",
+    "category": "grammar",
+    "prerequisite": [
+      "B1_conditional"
+    ],
+    "wordCount": 15
+  },
+  {
+    "id": "B1_imperative",
+    "level": "B1",
+    "name": "ציווי ובקשות",
+    "icon": "📢",
+    "category": "grammar",
+    "prerequisite": [
+      "B1_conditional"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B1_bank",
+    "level": "B1",
+    "name": "בבנק ודואר",
+    "icon": "🏦",
+    "category": "general",
+    "prerequisite": [
+      "A2_shopping"
+    ],
+    "wordCount": 15
+  },
+  {
+    "id": "B1_storytelling",
+    "level": "B1",
+    "name": "סיפורים בעבר",
+    "icon": "📖",
+    "category": "grammar",
+    "prerequisite": [
+      "A2_past"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B1_culture",
+    "level": "B1",
+    "name": "תרבות איטלקית",
+    "icon": "🎭",
+    "category": "culture",
+    "prerequisite": [
+      "B1_regions"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B2_complex_grammar",
+    "level": "B2",
+    "name": "דקדוק מורכב",
+    "icon": "📚",
+    "category": "grammar",
+    "prerequisite": [
+      "B1_conditional"
+    ],
+    "wordCount": 25
+  },
+  {
+    "id": "B2_formal_writing",
+    "level": "B2",
+    "name": "כתיבה רשמית",
+    "icon": "✍️",
+    "category": "general",
+    "prerequisite": [
+      "B1_work"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B2_debate",
+    "level": "B2",
+    "name": "דיונים וויכוחים",
+    "icon": "🎤",
+    "category": "general",
+    "prerequisite": [
+      "B1_opinion"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B2_literature",
+    "level": "B2",
+    "name": "ספרות איטלקית",
+    "icon": "📕",
+    "category": "art",
+    "prerequisite": [
+      "B1_culture"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B2_science",
+    "level": "B2",
+    "name": "מדע וטכנולוגיה",
+    "icon": "🔬",
+    "category": "science",
+    "prerequisite": [
+      "B1_media"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B2_job_interview",
+    "level": "B2",
+    "name": "ראיון עבודה",
+    "icon": "👔",
+    "category": "work",
+    "prerequisite": [
+      "B1_work"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B2_current_events",
+    "level": "B2",
+    "name": "אירועים אקטואליים",
+    "icon": "🌍",
+    "category": "media",
+    "prerequisite": [
+      "B1_media"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B2_politics",
+    "level": "B2",
+    "name": "פוליטיקה איטלקית",
+    "icon": "🏛️",
+    "category": "politics",
+    "prerequisite": [
+      "B2_debate"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B2_art_history",
+    "level": "B2",
+    "name": "אמנות והיסטוריה",
+    "icon": "🎨",
+    "category": "art",
+    "prerequisite": [
+      "B2_literature"
+    ],
+    "wordCount": 25
+  },
+  {
+    "id": "B2_academic",
+    "level": "B2",
+    "name": "אוצר מילים אקדמי",
+    "icon": "🎓",
+    "category": "education",
+    "prerequisite": [
+      "B2_science"
+    ],
+    "wordCount": 25
+  },
+  {
+    "id": "B2_economy",
+    "level": "B2",
+    "name": "כלכלה ופיננסים",
+    "icon": "💰",
+    "category": "finance",
+    "prerequisite": [
+      "B1_bank"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "B2_subjunctive",
+    "level": "B2",
+    "name": "מודוס קוניונטיבו",
+    "icon": "🎭",
+    "category": "grammar",
+    "prerequisite": [
+      "B2_complex_grammar"
+    ],
+    "wordCount": 25
+  },
+  {
+    "id": "C1_subjunctive_mastery",
+    "level": "C1",
+    "name": "שליטה בקוניונטיבו",
+    "icon": "🎭",
+    "category": "grammar",
+    "prerequisite": [
+      "B2_subjunctive"
+    ],
+    "wordCount": 25
+  },
+  {
+    "id": "C1_abstract",
+    "level": "C1",
+    "name": "נושאים מופשטים",
+    "icon": "💭",
+    "category": "general",
+    "prerequisite": [
+      "B2_academic"
+    ],
+    "wordCount": 25
+  },
+  {
+    "id": "C1_professional",
+    "level": "C1",
+    "name": "מצגות מקצועיות",
+    "icon": "📊",
+    "category": "work",
+    "prerequisite": [
+      "B2_formal_writing"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "C1_philosophy",
+    "level": "C1",
+    "name": "פילוסופיה איטלקית",
+    "icon": "🧠",
+    "category": "art",
+    "prerequisite": [
+      "B2_literature"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "C1_legal",
+    "level": "C1",
+    "name": "מילון משפטי",
+    "icon": "⚖️",
+    "category": "law",
+    "prerequisite": [
+      "B2_politics"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "C1_medical",
+    "level": "C1",
+    "name": "טרמינולוגיה רפואית",
+    "icon": "🩺",
+    "category": "health",
+    "prerequisite": [
+      "B2_science"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "C1_literary_analysis",
+    "level": "C1",
+    "name": "ניתוח ספרותי",
+    "icon": "📝",
+    "category": "art",
+    "prerequisite": [
+      "B2_literature"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "C1_journalism",
+    "level": "C1",
+    "name": "עיתונאות",
+    "icon": "📰",
+    "category": "media",
+    "prerequisite": [
+      "B2_current_events"
+    ],
+    "wordCount": 20
+  },
+  {
+    "id": "C1_advanced_conversation",
+    "level": "C1",
+    "name": "שיחה מתקדמת",
+    "icon": "🗣️",
+    "category": "general",
+    "prerequisite": [
+      "C1_abstract"
+    ],
+    "wordCount": 25
+  },
+  {
+    "id": "C1_nuance",
+    "level": "C1",
+    "name": "ביטויים ניואנסיים",
+    "icon": "🎯",
+    "category": "general",
+    "prerequisite": [
+      "C1_advanced_conversation"
+    ],
+    "wordCount": 20
+  }
+]
