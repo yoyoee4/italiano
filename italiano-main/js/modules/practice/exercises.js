@@ -36,6 +36,25 @@ function init(coreModule) {
   _APP_DATA = _core._APP_DATA || coreModule.getAppData?.();
   _APP_CONFIG = _core._APP_CONFIG || coreModule.getAppConfig?.();
 
+  // Keyboard shortcuts for quiz options (1-4)
+  if (typeof document !== 'undefined') {
+    document.addEventListener('keydown', (e) => {
+      // Only handle number keys when a quiz is active
+      const session = _core.getSession?.();
+      if (!session || session.type !== 'quiz') return;
+      
+      const key = e.key;
+      if (key >= '1' && key <= '4') {
+        const options = document.querySelectorAll('.quiz-option[data-key]');
+        const index = parseInt(key) - 1;
+        if (options[index] && !options[index].classList.contains('disabled')) {
+          e.preventDefault();
+          options[index].click();
+        }
+      }
+    });
+  }
+
   console.log('📝 PracticeExercises module initialized');
   return api;
 }
@@ -100,6 +119,14 @@ function _renderWordPhase() {
   if (renderFn) {
     renderFn('word', { node, word: w, phase, wordIdx, words });
   }
+  
+  // Auto-focus input in typing phase
+  if (phase === 1) {
+    setTimeout(() => {
+      const input = document.getElementById('typeInput');
+      if (input) input.focus();
+    }, 100);
+  }
 }
 
 function answerWord(el, chosen, correct, nodeId, wordIdx, isImageMode) {
@@ -114,6 +141,8 @@ function answerWord(el, chosen, correct, nodeId, wordIdx, isImageMode) {
 
   if (isCorrect) {
     el.classList.add('correct');
+    // Add new animation class
+    el.classList.add('answer-correct');
     // Use core's quizCombo tracking
     const session = _core.getSession();
     if (session) {
@@ -127,11 +156,25 @@ function answerWord(el, chosen, correct, nodeId, wordIdx, isImageMode) {
     }
     addAnkiCard(_wordLessonState.words[wordIdx]);
     
-    if (_wordLessonState.renderFn) {
+    // Trigger enhanced feedback
+    if (window.PracticeUI && window.PracticeUI.showAnswerFeedback) {
+      window.PracticeUI.showAnswerFeedback(el, true, () => {
+        if (_wordLessonState.renderFn) {
+          _wordLessonState.renderFn('feedback', { correct: true, word: _wordLessonState.words[wordIdx] });
+        }
+      });
+    } else if (_wordLessonState.renderFn) {
       _wordLessonState.renderFn('feedback', { correct: true, word: _wordLessonState.words[wordIdx] });
+    }
+    
+    // Show streak feedback if combo >= 3
+    if (session && session.combo >= 3 && window.PracticeUI && window.PracticeUI.showStreakFeedback) {
+      window.PracticeUI.showStreakFeedback(session.combo);
     }
   } else {
     el.classList.add('wrong');
+    // Add new animation class
+    el.classList.add('answer-wrong');
     if (session) session.combo = 0;
     trackWeakWord(_wordLessonState.words[wordIdx].target);
     
@@ -140,9 +183,38 @@ function answerWord(el, chosen, correct, nodeId, wordIdx, isImageMode) {
       return;
     }
     
-    if (_wordLessonState.renderFn) {
+    // Show mistake explanation with grammar hint, related words, Nona's tip
+    if (window.PracticeUI && window.PracticeUI.renderMistakeFeedback) {
+      const container = document.getElementById('practiceContent');
+      if (container) {
+        const word = _wordLessonState.words[wordIdx];
+        const explanation = window.PracticeUI.generateMistakeExplanation(
+          chosen, correct, _wordLessonState, { word }
+        );
+        
+        container.innerHTML = window.PracticeUI.renderMistakeFeedback({
+          userAnswer: chosen,
+          correctAnswer: correct,
+          question: { target: word.target, native: word.native },
+          context: { word },
+          explanation
+        });
+        
+        // Re-attach event listeners for the "try again" and "continue" buttons
+        // (they're inline onclick handlers)
+      }
+    } else if (window.PracticeUI && window.PracticeUI.showAnswerFeedback) {
+      window.PracticeUI.showAnswerFeedback(el, false, () => {
+        if (_wordLessonState.renderFn) {
+          _wordLessonState.renderFn('feedback', { correct: false, word: _wordLessonState.words[wordIdx] });
+        }
+      });
+    } else if (_wordLessonState.renderFn) {
       _wordLessonState.renderFn('feedback', { correct: false, word: _wordLessonState.words[wordIdx] });
     }
+    
+    // Don't auto-advance - let user click "נסה שוב" or "המשך"
+    return;
   }
 
   setTimeout(() => {
@@ -165,6 +237,21 @@ function checkTyped(correct, nodeId, wordIdx) {
     input.style.color = 'var(--emerald-light)';
     addXP(15, 'word-typing');
     if (session) session.combo = (session.combo || 0) + 1;
+    
+    // Trigger success feedback on the input
+    if (window.PracticeUI && window.PracticeUI.showAnswerFeedback) {
+      window.PracticeUI.showAnswerFeedback(input, true, () => {
+        _wordLessonState.wordIdx++;
+        _wordLessonState.phase = Math.min(2, Math.floor(_wordLessonState.wordIdx / 3));
+        _renderWordPhase();
+      });
+    } else {
+      setTimeout(() => {
+        _wordLessonState.wordIdx++;
+        _wordLessonState.phase = Math.min(2, Math.floor(_wordLessonState.wordIdx / 3));
+        _renderWordPhase();
+      }, 1500);
+    }
   } else {
     input.style.borderColor = 'var(--red)';
     input.style.color = 'var(--red)';
@@ -172,13 +259,22 @@ function checkTyped(correct, nodeId, wordIdx) {
     if (session) session.combo = 0;
     trackWeakWord(correct);
     useHeart();
+    
+    // Trigger error feedback
+    if (window.PracticeUI && window.PracticeUI.showAnswerFeedback) {
+      window.PracticeUI.showAnswerFeedback(input, false, () => {
+        _wordLessonState.wordIdx++;
+        _wordLessonState.phase = Math.min(2, Math.floor(_wordLessonState.wordIdx / 3));
+        _renderWordPhase();
+      });
+    } else {
+      setTimeout(() => {
+        _wordLessonState.wordIdx++;
+        _wordLessonState.phase = Math.min(2, Math.floor(_wordLessonState.wordIdx / 3));
+        _renderWordPhase();
+      }, 1500);
+    }
   }
-
-  setTimeout(() => {
-    _wordLessonState.wordIdx++;
-    _wordLessonState.phase = Math.min(2, Math.floor(_wordLessonState.wordIdx / 3));
-    _renderWordPhase();
-  }, 1500);
 }
 
 function recordWord(correct, nodeId, wordIdx) {
@@ -387,13 +483,35 @@ function answerQuiz(el, chosen, correct, renderFn) {
 
   if (isCorrect) {
     el.classList.add('correct');
+    // Add new animation class
+    el.classList.add('answer-correct');
     _core._quizScore += 10 + (session && session.combo >= 3 ? session.combo * 2 : 0);
     session.combo = (session.combo || 0) + 1;
     if (session.combo > (session.maxCombo || 0)) session.maxCombo = session.combo;
     addXP(10, 'quiz');
     if (typeof Features !== 'undefined') Features.enhancedAnkiRate({front: correct}, 2);
+    
+    // Trigger enhanced feedback
+    if (window.PracticeUI && window.PracticeUI.showAnswerFeedback) {
+      window.PracticeUI.showAnswerFeedback(el, true, () => {
+        _core._quizIdx++;
+        _renderQuizQuestion(renderFn);
+      });
+    } else {
+      setTimeout(() => { 
+        _core._quizIdx++; 
+        _renderQuizQuestion(renderFn); 
+      }, 1000);
+    }
+    
+    // Show streak feedback if combo >= 3
+    if (session && session.combo >= 3 && window.PracticeUI && window.PracticeUI.showStreakFeedback) {
+      window.PracticeUI.showStreakFeedback(session.combo);
+    }
   } else {
     el.classList.add('wrong');
+    // Add new animation class
+    el.classList.add('answer-wrong');
     session.combo = 0;
     trackWeakWord(correct);
     const wordData = (_APP_DATA.words||[]).find(w => w.native === correct || w.target === correct);
@@ -404,12 +522,38 @@ function answerQuiz(el, chosen, correct, renderFn) {
       _showOutOfHearts();
       return;
     }
+    
+    // Show mistake explanation with grammar hint, related words, Nona's tip
+    if (window.PracticeUI && window.PracticeUI.renderMistakeFeedback) {
+      const container = document.getElementById('practiceContent');
+      if (container) {
+        const explanation = window.PracticeUI.generateMistakeExplanation(
+          chosen, correct, { q: q.q, a: correct }, { word: wordData }
+        );
+        
+        container.innerHTML = window.PracticeUI.renderMistakeFeedback({
+          userAnswer: chosen,
+          correctAnswer: correct,
+          question: { target: wordData?.target, native: wordData?.native },
+          context: { word: wordData },
+          explanation
+        });
+      }
+    } else if (window.PracticeUI && window.PracticeUI.showAnswerFeedback) {
+      window.PracticeUI.showAnswerFeedback(el, false, () => {
+        _core._quizIdx++;
+        _renderQuizQuestion(renderFn);
+      });
+    } else {
+      setTimeout(() => { 
+        _core._quizIdx++; 
+        _renderQuizQuestion(renderFn); 
+      }, 1000);
+    }
+    
+    // Don't auto-advance - let user click "נסה שוב" or "המשך"
+    return;
   }
-
-  setTimeout(() => { 
-    _core._quizIdx++; 
-    _renderQuizQuestion(renderFn); 
-  }, 1000);
 }
 
 function checkQuizTyped(correct, renderFn) {
@@ -423,18 +567,39 @@ function checkQuizTyped(correct, renderFn) {
     _core._quizScore += 15; 
     session.combo = (session.combo || 0) + 1;
     addXP(15, 'quiz-typing');
+    
+    // Trigger success feedback
+    if (window.PracticeUI && window.PracticeUI.showAnswerFeedback) {
+      window.PracticeUI.showAnswerFeedback(input, true, () => {
+        _core._quizIdx++; 
+        _renderQuizQuestion(renderFn); 
+      });
+    } else {
+      setTimeout(() => { 
+        _core._quizIdx++; 
+        _renderQuizQuestion(renderFn); 
+      }, 1500);
+    }
   } else {
     input.style.borderColor = 'var(--red)'; input.style.color = 'var(--red)';
     input.value = correct; 
     session.combo = 0; 
     trackWeakWord(correct); 
     useHeart();
+    
+    // Trigger error feedback
+    if (window.PracticeUI && window.PracticeUI.showAnswerFeedback) {
+      window.PracticeUI.showAnswerFeedback(input, false, () => {
+        _core._quizIdx++; 
+        _renderQuizQuestion(renderFn); 
+      });
+    } else {
+      setTimeout(() => { 
+        _core._quizIdx++; 
+        _renderQuizQuestion(renderFn); 
+      }, 1500);
+    }
   }
-
-  setTimeout(() => { 
-    _core._quizIdx++; 
-    _renderQuizQuestion(renderFn); 
-  }, 1500);
 }
 
 function _finishQuiz(node, renderFn) {

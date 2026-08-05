@@ -1,0 +1,78 @@
+{
+  "id": "culture_coffee",
+  "category": "coffee",
+  "title": "Il Caffè al Bar",
+  "titleHe": "קפה בבר",
+  "icon": "☕",
+  "level": "A1",
+  "description": "קפה עומדים — לא יושבים לאספרסו! עומדים, שותים, משוחחים. 2 דקות וסיימנו.",
+  "region": "כל איטליה",
+  "vocabulary": [
+    "caffè",
+    "espresso",
+    "cappuccino",
+    "macchiato",
+    "ristretto",
+    "lungo",
+    "corretto",
+    "bar",
+    "bancone",
+    "tazzina",
+    "cucchiaino",
+    "zucchero"
+  ],
+  "keyPoints": [
+    "באיטליה 'un caffè' = אספרסו אוטומטית",
+    "שותים בעמידה על הבר (al banco), לא יושבים בשולחן",
+    "קפוצ'ינו רק בבוקר, אף פעם אחרי ארוחה",
+    "משלמים בקופה (cassa) לפני או אחרי",
+    "זה ריטואל חברתי - 2-3 דקות של הפסקה ושיחה"
+  ],
+  "dialogues": [
+    "dlg_cafe"
+  ],
+  "quiz": [
+    {
+      "question": "מה זה 'un caffè' באיטליה?",
+      "options": [
+        "קפה הפוך",
+        "אספרסו",
+        "קפוצ'ינו",
+        "תה"
+      ],
+      "correct": 1,
+      "explanation": "באיטליה כשמבקשים 'un caffè' מקבלים אספרסו אוטומטית"
+    },
+    {
+      "question": "מתי שותים קפוצ'ינו?",
+      "options": [
+        "כל היום",
+        "רק בבוקר",
+        "רק בערב",
+        "אחרי ארוחה"
+      ],
+      "correct": 1,
+      "explanation": "קפוצ'ינו נחשב משקה בוקר - איטלקים לא שותים אותו אחרי 11:00"
+    },
+    {
+      "question": "איפה שותים אספרסו?",
+      "options": [
+        "בישיבה בשולחן",
+        "בעמידה על הבר",
+        "רק בבית",
+        "בכוס גדולה"
+      ],
+      "correct": 1,
+      "explanation": "אספרסו שותים בעמידה על הבר (al banco) - זה חלק מהריטואל"
+    }
+  ],
+  "nonaComment": {
+    "sweet": "Il caffè è un momento sacro! Due minuti di pace nella giornata frenetica. 💕",
+    "strict": "Ma dài! Non ti siedi per un espresso! Al banco, veloce, come si deve! ☕😤",
+    "teacher": "Osservate: al bar si paga prima alla cassa, poi si mostra lo scontrino al barista. Regola d'oro."
+  },
+  "relatedCulture": [
+    "culture_aperitivo",
+    "culture_colazione"
+  ]
+}

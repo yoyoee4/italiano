@@ -1,19 +1,53 @@
 /* ══════════════════════════════════════════════
    VolaLingo — Practice UI Module
    Rendering, HTML generation for all practice types
-   Sprint C4A: Extracted from practice.js — Zero behavior change
+   Sprint C4B: Enhanced UX - Feedback, animations, haptics
    ══════════════════════════════════════════════ */
 
 const PracticeUI = (() => {
 
 // ══════════════════════════════════════════════
 // DEPENDENCIES
-// ══════════════════════════════════════════════
+// ═══════════════════════════════════════════════
 let _core = null;
 let _exercises = null;
 let _anki = null;
 let _dialogue = null;
 let _APP_CONFIG = null;
+
+// ══════════════════════════════════════════════
+// UX CONFIG
+// ══════════════════════════════════════════════
+const UX_CONFIG = {
+  // Feedback timing
+  feedbackDuration: 800,      // How long feedback shows before next question
+  correctFlashDuration: 300,  // Green flash for correct
+  wrongShakeDuration: 400,    // Shake animation for wrong
+  
+  // Haptic patterns (mobile)
+  haptic: {
+    correct: [10, 50, 10],      // Light double tap
+    wrong: [50, 100, 50],       // Strong buzz
+    milestone: [100, 50, 100],  // Celebration
+    streak: [20, 50, 20, 50, 20] // Combo achieved
+  },
+  
+  // Sound feedback
+  sounds: {
+    correct: 'correct',
+    wrong: 'wrong',
+    levelUp: 'levelup',
+    streak: 'streak'
+  },
+  
+  // Animation classes
+  animations: {
+    correct: 'answer-correct',
+    wrong: 'answer-wrong',
+    progressPulse: 'progress-pulse',
+    comboBurst: 'combo-burst'
+  }
+};
 
 // ══════════════════════════════════════════════
 // INIT
@@ -28,8 +62,152 @@ function init(coreModule, exercisesModule, ankiModule, dialogueModule) {
   // Register render callback with core
   _core._renderCallback = render;
 
-  console.log('🎨 PracticeUI module initialized');
+  console.log('🎨 PracticeUI module initialized (C4B UX enhanced)');
   return api;
+}
+
+// ══════════════════════════════════════════════
+// FEEDBACK HELPERS
+// ══════════════════════════════════════════════
+function triggerHaptic(pattern) {
+  if ('vibrate' in navigator) {
+    navigator.vibrate(pattern);
+  }
+}
+
+function playFeedbackSound(type) {
+  // Use Web Audio API for instant feedback sounds
+  // Fallback to simple beep if not available
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    
+    if (type === 'correct') {
+      osc.frequency.setValueAtTime(880, ctx.currentTime); // A5
+      osc.frequency.exponentialRampToValueAtTime(1320, ctx.currentTime + 0.1); // E6
+      gain.gain.setValueAtTime(0.3, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 0.3);
+    } else if (type === 'wrong') {
+      osc.frequency.setValueAtTime(220, ctx.currentTime); // A3
+      osc.type = 'sawtooth';
+      gain.gain.setValueAtTime(0.2, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.4);
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 0.4);
+    } else if (type === 'streak') {
+      // Rising arpeggio for combo
+      [660, 880, 1320].forEach((freq, i) => {
+        const o = ctx.createOscillator();
+        const g = ctx.createGain();
+        o.connect(g); g.connect(ctx.destination);
+        o.frequency.value = freq;
+        o.type = 'sine';
+        g.gain.setValueAtTime(0.2, ctx.currentTime + i * 0.08);
+        g.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + i * 0.08 + 0.2);
+        o.start(ctx.currentTime + i * 0.08);
+        o.stop(ctx.currentTime + i * 0.08 + 0.2);
+      });
+    }
+  } catch (e) {
+    // Silently fail - sound is enhancement only
+  }
+}
+
+function showAnswerFeedback(element, isCorrect, onComplete) {
+  if (!element) {
+    onComplete?.();
+    return;
+  }
+  
+  const config = UX_CONFIG;
+  
+  if (isCorrect) {
+    // Correct: green flash + haptic + sound
+    element.classList.add(config.animations.correct);
+    triggerHaptic(config.haptic.correct);
+    playFeedbackSound('correct');
+    
+    // Add particle burst for extra delight
+    createParticleBurst(element, '#10b981');
+    
+    setTimeout(() => {
+      element.classList.remove(config.animations.correct);
+      onComplete?.();
+    }, config.correctFlashDuration);
+  } else {
+    // Wrong: shake + red flash + haptic + sound
+    element.classList.add(config.animations.wrong);
+    triggerHaptic(config.haptic.wrong);
+    playFeedbackSound('wrong');
+    
+    setTimeout(() => {
+      element.classList.remove(config.animations.wrong);
+      onComplete?.();
+    }, config.wrongShakeDuration);
+  }
+}
+
+function createParticleBurst(element, color) {
+  const rect = element.getBoundingClientRect();
+  const container = document.getElementById('practiceContent') || document.body;
+  
+  for (let i = 0; i < 8; i++) {
+    const particle = document.createElement('div');
+    particle.style.cssText = `
+      position: fixed;
+      left: ${rect.left + rect.width/2}px;
+      top: ${rect.top + rect.height/2}px;
+      width: 8px;
+      height: 8px;
+      background: ${color};
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 1000;
+      transform: translate(-50%, -50%);
+    `;
+    container.appendChild(particle);
+    
+    const angle = (i / 8) * Math.PI * 2;
+    const distance = 60 + Math.random() * 40;
+    const tx = Math.cos(angle) * distance;
+    const ty = Math.sin(angle) * distance - 40;
+    
+    particle.animate([
+      { transform: 'translate(-50%, -50%) scale(1)', opacity: 1 },
+      { transform: `translate(calc(-50% + ${tx}px), calc(-50% + ${ty}px)) scale(0)`, opacity: 0 }
+    ], {
+      duration: 600,
+      easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+    }).onfinish = () => particle.remove();
+  }
+}
+
+function showStreakFeedback(combo) {
+  const config = UX_CONFIG;
+  triggerHaptic(config.haptic.streak);
+  playFeedbackSound('streak');
+  
+  // Show combo burst animation
+  const comboEl = document.querySelector('.combo-display');
+  if (comboEl) {
+    comboEl.classList.add(config.animations.comboBurst);
+    setTimeout(() => comboEl.classList.remove(config.animations.comboBurst), 500);
+  }
+}
+
+function animateProgress(progressEl, newWidth) {
+  if (!progressEl) return;
+  progressEl.style.transition = 'width 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+  progressEl.style.width = newWidth;
+  
+  // Pulse effect on progress update
+  progressEl.classList.add('progress-pulse');
+  setTimeout(() => progressEl.classList.remove('progress-pulse'), 500);
 }
 
 // ══════════════════════════════════════════════
@@ -299,13 +477,33 @@ function renderQuizQuestion(data) {
   const { question, index, total, node } = data;
   const q = question;
   const hearts = _core.getHearts();
+  const session = _core.getSession();
+  const streak = session?.streak || 0;
+  const combo = session?.combo || 0;
 
   let html = `
     <div style="text-align:center;margin-bottom:8px">
       <span style="font-size:.75rem;color:var(--text3)">שאלה ${index + 1}/${total}</span>
     </div>
-    <div class="progress-bar" style="margin-bottom:4px"><div class="progress-fill" style="width:${(index/total)*100}%"></div></div>
-    ${_core.getSession()?.combo >= 3 ? `<div class="combo-display">🔥 x${_core.getSession().combo} <span class="combo-x">קומבו!</span></div>` : ''}
+    <div class="progress-bar" style="margin-bottom:4px">
+      <div class="progress-fill ${session?.type === 'quiz' && streak > 0 ? 'streak' : ''}" style="width:${(index/total)*100}%"></div>
+    </div>
+    <div class="progress-labels">
+      <div class="progress-label">
+        <span class="value">${index + 1}</span>
+        <span class="label">הנוכחית</span>
+      </div>
+      <div class="progress-label">
+        <span class="value">${total}</span>
+        <span class="label">סה"כ</span>
+      </div>
+      <div class="progress-label">
+        <span class="value">${Math.round((index/total)*100)}%</span>
+        <span class="label">התקדמות</span>
+      </div>
+    </div>
+    ${combo >= 3 ? `<div class="combo-display combo-burst">🔥 x${combo} <span class="combo-x">קומבו!</span></div>` : ''}
+    ${streak > 0 ? `<div class="streak-display"><span class="streak-flame">🔥</span><span class="streak-count">${streak}</span><span class="streak-label">רצף</span></div>` : ''}
   `;
 
   if (q.type === 'choose') {
@@ -315,8 +513,10 @@ function renderQuizQuestion(data) {
         ${q.qLang === 'target' ? `<button class="btn btn-sm btn-secondary" onclick="speak('${esc(q.q)}')" style="margin-top:8px">🔊</button>` : ''}
         <div style="font-size:.85rem;color:var(--text3);margin-top:8px">${q.qLang === 'target' ? 'מה התרגום?' : 'כתוב ב${_APP_CONFIG.targetName}'}</div>
       </div>
-      ${q.options.map(o => `
-        <div class="quiz-option" onclick="PracticeExercises.answerQuiz(this,'${esc(o)}','${esc(q.a)}')">${o}</div>
+      ${q.options.map((o, i) => `
+        <div class="quiz-option" data-key="${i+1}" onclick="PracticeExercises.answerQuiz(this,'${esc(o)}','${esc(q.a)}')">
+          <span class="option-key">${i+1}</span>${o}
+        </div>
       `).join('')}
     `;
   } else {
@@ -326,7 +526,7 @@ function renderQuizQuestion(data) {
         <div style="font-size:.85rem;color:var(--text3);margin-top:8px">כתוב ב${_APP_CONFIG.targetName}</div>
       </div>
       <div style="padding:0 4px;margin-top:12px">
-        <input type="text" id="quizInput" placeholder="..."
+        <input type="text" id="quizInput" placeholder="..." autofocus
           style="width:100%;padding:14px;background:var(--surface);border:2px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-size:1.1rem;font-family:var(--font-it);text-align:center;direction:ltr"
           onkeydown="if(event.key==='Enter')PracticeExercises.checkQuizTyped('${esc(q.a)}')">
         <button class="btn btn-primary btn-block" style="margin-top:8px" onclick="PracticeExercises.checkQuizTyped('${esc(q.a)}')">בדוק</button>
@@ -523,16 +723,212 @@ function renderPracticeMenu() {
 }
 
 // ══════════════════════════════════════════════
-// HELPERS
+// MISTAKE EXPLANATION SYSTEM (C4B Phase 3)
 // ══════════════════════════════════════════════
-function esc(s) { return String(s).replace(/'/g, "\\'").replace(/\"/g, '"').replace(/\n/g, ' '); }
-function shuffle(arr) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
+function generateMistakeExplanation(userAnswer, correctAnswer, question, context) {
+  const wordData = context?.word || _APP_DATA.words?.find(w => w.target === correctAnswer || w.native === correctAnswer);
+  
+  let explanation = {
+    userAnswer,
+    correctAnswer,
+    type: 'translation',
+    grammarHint: null,
+    relatedWords: [],
+    memoryTip: null
+  };
+  
+  if (!wordData) return explanation;
+  
+  // Determine mistake type
+  const isHebrewToItalian = userAnswer && /[א-ת]/.test(userAnswer);
+  const isItalianToHebrew = userAnswer && /[a-zA-Z]/.test(userAnswer) && !isHebrewToItalian;
+  
+  // Grammar hint based on word properties
+  if (wordData.target && wordData.native) {
+    explanation.type = isHebrewToItalian ? 'hebrew-to-italian' : 'italian-to-hebrew';
+    
+    // Add grammar hint
+    if (wordData.gender || wordData.type) {
+      const gender = wordData.gender || (wordData.target?.endsWith('o') || wordData.target?.endsWith('e') ? 'masculine' : 'feminine');
+      const article = gender === 'feminine' ? 'la' : 'il';
+      explanation.grammarHint = `${article} ${wordData.target} (${gender === 'feminine' ? 'נקבה' : 'זכר'})`;
+    }
+    
+    // Verb conjugation hint
+    if (wordData.type === 'verb' || wordData.target?.match(/(are|ere|ire)$/)) {
+      explanation.grammarHint = `פועל: ${wordData.target} - נסה לזכור את ההטייה הנכונה`;
+    }
+    
+    // Preposition hint
+    if (wordData.target?.match(/^(a|da|di|in|con|su|per|tra|fra)$/)) {
+      explanation.grammarHint = `מילת יחס: ${wordData.target} - ${wordData.native}`;
+    }
   }
-  return arr;
+  
+  // Related words (same category)
+  if (wordData.cat && _APP_DATA.words) {
+    const related = _APP_DATA.words
+      .filter(w => w.cat === wordData.cat && w.target !== correctAnswer)
+      .slice(0, 3)
+      .map(w => ({ target: w.target, native: w.native }));
+    explanation.relatedWords = related;
+  }
+  
+  // Memory tip using Nona's personality
+  const memoryTips = [
+    `💡 נונה אומרת: תחשוב על "${correctAnswer}" כמו על "${wordData.native}" - הם חברים טובים!`,
+    `🧠 טריק של נונה: תגיד "${correctAnswer}" שלוש פעמים בקול רם - זה נתפס במוח!`,
+    `🤌 נונה זוכרת: במילה "${correctAnswer}" יש את הצליל "${correctAnswer.slice(0, 3)}" - תזכור את זה!`,
+    `🇮🇹 טיפ איטלקי: כשאתה טועה ב-"${correctAnswer}", תחשוב על המילה העברית "${wordData.native}" ותדמיין את הסיטואציה`
+  ];
+  explanation.memoryTip = memoryTips[Math.floor(Math.random() * memoryTips.length)];
+  
+  return explanation;
 }
+
+function renderMistakeFeedback(data) {
+  const { userAnswer, correctAnswer, question, context, explanation } = data;
+  const exp = explanation || generateMistakeExplanation(userAnswer, correctAnswer, question, context);
+  
+  return `
+    <div class="mistake-feedback" style="animation: slideInUp 0.3s ease;">
+      <!-- Wrong answer highlight -->
+      <div class="mistake-header" style="
+        background: rgba(239, 68, 68, 0.1);
+        border: 1px solid var(--red);
+        border-radius: var(--radius-sm);
+        padding: 12px 16px;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      ">
+        <span style="font-size: 1.5rem;">❌</span>
+        <div>
+          <div style="font-weight: 700; color: var(--red);">התשובה שלך: <span style="text-decoration: line-through;">${esc(userAnswer)}</span></div>
+          <div style="font-weight: 700; color: var(--emerald-light);">הנכונה: ${esc(correctAnswer)}</div>
+        </div>
+      </div>
+      
+      ${exp.grammarHint ? `
+      <!-- Grammar hint -->
+      <div class="grammar-hint" style="
+        background: rgba(99, 102, 241, 0.1);
+        border-left: 3px solid var(--indigo);
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        padding: 10px 12px;
+        margin-bottom: 12px;
+        font-size: .85rem;
+      ">
+        <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+          <span style="font-size: 1rem;">📚</span>
+          <strong style="color: var(--indigo-light);">טיפ דקדוק:</strong>
+        </div>
+        <div style="color: var(--text2);">${esc(exp.grammarHint)}</div>
+      </div>
+      ` : ''}
+      
+      ${exp.relatedWords.length > 0 ? `
+      <!-- Related words -->
+      <div class="related-words" style="margin-bottom: 12px;">
+        <div style="font-weight: 600; color: var(--text3); font-size: .75rem; margin-bottom: 8px; text-transform: uppercase;">מילים קשורות:</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+          ${exp.relatedWords.map(w => `
+            <button class="related-word-btn" 
+              onclick="speak('${esc(w.target)}')" 
+              style="
+                background: var(--surface2);
+                border: 1px solid var(--border);
+                border-radius: var(--radius-xs);
+                padding: 6px 10px;
+                font-size: .75rem;
+                font-family: var(--font-it);
+                color: var(--text);
+                cursor: pointer;
+                transition: all .2s;
+              "
+              onmouseover="this.style.borderColor='var(--indigo)'"
+              onmouseout="this.style.borderColor='var(--border)'"
+            >
+              ${esc(w.target)} <span style="color: var(--text3); font-family: var(--font-he);">(${esc(w.native)})</span>
+            </button>
+          `).join('')}
+        </div>
+      </div>
+      ` : ''}
+      
+      ${exp.memoryTip ? `
+      <!-- Nona's memory tip -->
+      <div class="nona-tip" style="
+        background: linear-gradient(135deg, rgba(88, 204, 2, 0.1), rgba(16, 185, 129, 0.1));
+        border: 1px solid rgba(88, 204, 2, 0.3);
+        border-radius: var(--radius-sm);
+        padding: 12px;
+        position: relative;
+        overflow: hidden;
+      ">
+        <div style="display: flex; align-items: flex-start; gap: 10px;">
+          <div style="
+            width: 32px; height: 32px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dim));
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1rem; flex-shrink: 0;
+          ">🤌</div>
+          <div style="flex: 1; color: var(--text); line-height: 1.5;">
+            <div style="font-weight: 700; color: var(--primary); margin-bottom: 4px;">הטיפ של נונה:</div>
+            <div style="font-size: .85rem;">${esc(exp.memoryTip)}</div>
+          </div>
+        </div>
+      </div>
+      ` : ''}
+      
+      <!-- Action buttons -->
+      <div style="display: flex; gap: 8px; margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--border);">
+        <button class="btn btn-secondary btn-sm" onclick="PracticeExercises.renderSentence?.() || PracticeCore.render()" style="flex: 1;">
+          🔄 נסה שוב
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="PracticeCore.startMixedPractice(false)" style="flex: 1;">
+          ➡️ המשך
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+// Add CSS animation for mistake feedback
+const mistakeStyles = document.createElement('style');
+mistakeStyles.textContent = `
+@keyframes slideInUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.mistake-feedback {
+  animation: slideInUp 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.related-word-btn:active {
+  transform: scale(0.95);
+  background: var(--indigo) !important;
+  color: white !important;
+  border-color: var(--indigo) !important;
+}
+
+.nona-tip::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 50 Q30 30 40 50 Q50 70 60 50 Q70 30 80 50' stroke='%2358cc02' stroke-width='0.5' fill='none' opacity='0.3'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+`;
+document.head.appendChild(mistakeStyles);
 
 // ══════════════════════════════════════════════
 // PUBLIC API

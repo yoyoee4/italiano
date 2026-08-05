@@ -1,0 +1,76 @@
+{
+  "id": "culture_aperitivo",
+  "category": "food",
+  "title": "L'Aperitivo",
+  "titleHe": "אפריטיבו",
+  "icon": "🍹",
+  "level": "A2",
+  "description": "משקה לפני ארוחת ערב + בופה חטיפים חינם. אפרול שפריץ = הקלאסיקה.",
+  "region": "מילאנו → כל איטליה",
+  "vocabulary": [
+    "aperitivo",
+    "spritz",
+    "aperol",
+    "campari",
+    "prosecco",
+    "stuzzichini",
+    "patatine",
+    "olive",
+    "tramezzini",
+    "buffet",
+    "orario",
+    "prezzo"
+  ],
+  "keyPoints": [
+    "נולד במילאנו בשנות ה-20, עכשיו בכל איטליה",
+    "שעה: בדרך כלל 18:00-21:00",
+    "משלמים רק על המשקה (€8-12), האוכל חינם",
+    "Spritz = Prosecco + Aperol/Campari + סודה + קרח",
+    "לא תחליף לארוחת ערב - רק פתיחת תיאבון"
+  ],
+  "dialogues": [],
+  "quiz": [
+    {
+      "question": "מה כולל מחיר האפריטיבו?",
+      "options": [
+        "רק המשקה",
+        "רק האוכל",
+        "משקה + אוכל חופשי",
+        "כלום, זה בחינם"
+      ],
+      "correct": 0,
+      "explanation": "משלמים על המשקה (€8-12) ומקבלים גישה חופשית לבופה"
+    },
+    {
+      "question": "מה המרכיבים של ספריץ קלאסי?",
+      "options": [
+        "יין לבן + מיץ תפוזים",
+        "פרוסקו + אפרול/קמפרי + סודה",
+        "וודקה + מיץ חמוציות",
+        "בירה + לימון"
+      ],
+      "correct": 1,
+      "explanation": "Spritz = Prosecco + Aperol או Campari + סודה + קרח"
+    },
+    {
+      "question": "מאיפה הגיע האפריטיבו?",
+      "options": [
+        "רומא",
+        "נאפולי",
+        "מילאנו",
+        "פירנצה"
+      ],
+      "correct": 2,
+      "explanation": "נולד במילאנו בשנות ה-20 של המאה ה-20"
+    }
+  ],
+  "nonaComment": {
+    "sweet": "L'aperitivo è il momento più bello della giornata! Amici, chiacchiere, un spritz... la dolce vita! 💕",
+    "strict": "Attenzione! L'aperitivo non è la cena! Due stuzzichini e basta, non riempirti le tasche! 😤",
+    "teacher": "Ricordate: si beve lo spritz prima delle 21. Dopo si passa al vino con la cena. Regola non scritta."
+  },
+  "relatedCulture": [
+    "culture_coffee",
+    "culture_cena"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "A1_greetings",
+  "level": "A1",
+  "title": "ברכות והיכרות",
+  "titleIt": "Saluti e presentazioni",
+  "goals": [
+    "לברך ולהציג את עצמי",
+    "לשאול ולענות 'מה שלומך?'",
+    "להבחין בין פורמלי לבלתי פורמלי"
+  ],
+  "estimatedTimeMinutes": 15,
+  "prerequisites": [],
+  "vocabulary": [
+    "it_greetings_ciao_001",
+    "it_greetings_buongiorno_002",
+    "it_greetings_buonasera_003",
+    "it_greetings_arrivederci_004",
+    "it_greetings_grazie_005",
+    "it_greetings_prego_006",
+    "it_greetings_scusa_007",
+    "it_greetings_come_stai_008",
+    "it_greetings_sto_bene_009",
+    "it_greetings_piacere_010"
+  ],
+  "grammar": [
+    "g1_presente_essere",
+    "g2_articoli_determinativi"
+  ],
+  "dialogues": [
+    "dlg_cafe"
+  ],
+  "culture": [
+    "culture_italian_greetings"
+  ],
+  "examPractice": [
+    "exam_CILS_A1_LISTENING_001",
+    "exam_CILS_A1_READING_001"
+  ],
+  "exercises": [
+    {
+      "type": "flashcard",
+      "contentIds": [
+        "it_greetings_ciao_001",
+        "it_greetings_buongiorno_002",
+        "it_greetings_buonasera_003",
+        "it_greetings_arrivederci_004",
+        "it_greetings_grazie_005"
+      ],
+      "count": 5,
+      "config": {
+        "direction": "it-he"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "contentIds": [
+        "it_greetings_come_stai_008",
+        "it_greetings_sto_bene_009",
+        "it_greetings_piacere_010"
+      ],
+      "count": 3,
+      "config": {
+        "options": 4
+      }
+    },
+    {
+      "type": "listening",
+      "contentIds": [
+        "it_greetings_buongiorno_002",
+        "it_greetings_arrivederci_004"
+      ],
+      "count": 2,
+      "config": {
+        "speed": "slow"
+      }
+    },
+    {
+      "type": "speaking",
+      "contentIds": [
+        "it_greetings_ciao_001",
+        "it_greetings_come_stai_008"
+      ],
+      "count": 2,
+      "config": {
+        "mode": "repeat"
+      }
+    },
+    {
+      "type": "translation",
+      "contentIds": [
+        "it_greetings_prego_006",
+        "it_greetings_scusa_007"
+      ],
+      "count": 2,
+      "config": {
+        "direction": "he-it"
+      }
+    },
+    {
+      "type": "exam-style",
+      "contentIds": [
+        "exam_CILS_A1_LISTENING_001"
+      ],
+      "count": 1,
+      "config": {
+        "section": "LISTENING"
+      }
+    }
+  ],
+  "assessment": {
+    "passThreshold": 0.7,
+    "xpReward": 50,
+    "unlocks": [
+      "A1_numbers",
+      "A1_essentials"
+    ]
+  },
+  "nonaGuidance": {
+    "intro": "בואו נתחיל מההתחלה! באיטליה, ברכה טובה פותחת כל דלת. 🇮🇹",
+    "tips": [
+      "השתמש ב-Buongiorno עד הצהריים, Buonasera מהצהריים ואילך",
+      "Ciao זה רק לחברים/משפחה - לא לזרים!",
+      "תמיד תגיד Grazie ו-Prego - זה נימוס בסיסי"
+    ],
+    "encouragement": "כל הכבוד! עכשיו אתה יכול לברך כמו איטלקי אמיתי! 👋"
+  }
+}
