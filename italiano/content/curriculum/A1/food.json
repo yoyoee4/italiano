@@ -1,0 +1,167 @@
+{
+  "id": "A1_food_basics",
+  "level": "A1",
+  "title": "אוכל ושתייה בסיסי",
+  "titleIt": "Cibo e bevande base",
+  "goals": [
+    "להזמין קפה ומאפה בבר",
+    "לבקש תפריט ולהבין מנות עיקריות",
+    "להגיד מה אני אוהב/לא אוהב לאכול"
+  ],
+  "estimatedTimeMinutes": 20,
+  "prerequisites": [
+    "A1_essentials"
+  ],
+  "vocabulary": [
+    "it_food_caffe_001",
+    "it_food_cappuccino_002",
+    "it_food_cornetto_003",
+    "it_food_pizza_004",
+    "it_food_pasta_005",
+    "it_food_acqua_006",
+    "it_food_vino_007",
+    "it_food_pane_008",
+    "it_food_formaggio_009",
+    "it_food_gelato_010",
+    "it_food_vorrei_011",
+    "it_food_il_conto_012"
+  ],
+  "grammar": [
+    "g1_presente_avere",
+    "g4_vorrei_conditional",
+    "g5_articoli_indeterminativi"
+  ],
+  "dialogues": [
+    "dlg_cafe",
+    "dlg_restaurant"
+  ],
+  "culture": [
+    "culture_caffe_al_bar",
+    "culture_cappuccino_rules"
+  ],
+  "examPractice": [
+    "exam_CILS_A1_LISTENING_003",
+    "exam_CILS_A1_READING_003",
+    "exam_CILS_A1_SPEAKING_001"
+  ],
+  "exercises": [
+    {
+      "type": "flashcard",
+      "contentIds": [
+        "it_food_caffe_001",
+        "it_food_cappuccino_002",
+        "it_food_cornetto_003",
+        "it_food_pizza_004",
+        "it_food_pasta_005"
+      ],
+      "count": 5,
+      "config": {
+        "direction": "it-he",
+        "includeImages": true
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "contentIds": [
+        "it_food_acqua_006",
+        "it_food_vino_007",
+        "it_food_pane_008",
+        "it_food_formaggio_009",
+        "it_food_gelato_010"
+      ],
+      "count": 5,
+      "config": {
+        "options": 4
+      }
+    },
+    {
+      "type": "listening",
+      "contentIds": [
+        "dlg_cafe"
+      ],
+      "count": 3,
+      "config": {
+        "speed": "normal",
+        "task": "complete_dialogue"
+      }
+    },
+    {
+      "type": "speaking",
+      "contentIds": [
+        "it_food_vorrei_011",
+        "it_food_caffe_001",
+        "it_food_cappuccino_002",
+        "it_food_il_conto_012"
+      ],
+      "count": 4,
+      "config": {
+        "mode": "roleplay",
+        "scenario": "cafe"
+      }
+    },
+    {
+      "type": "sentence-builder",
+      "contentIds": [
+        "it_food_vorrei_011",
+        "it_food_pizza_004",
+        "it_food_pasta_005",
+        "it_food_acqua_006"
+      ],
+      "count": 4,
+      "config": {
+        "template": "Vorrei {item}, per favore",
+        "wordBank": [
+          "Vorrei",
+          "per",
+          "favore",
+          "pizza",
+          "pasta",
+          "acqua",
+          "un",
+          "caffè"
+        ]
+      }
+    },
+    {
+      "type": "translation",
+      "contentIds": [
+        "it_food_il_conto_012",
+        "it_food_grazie_005",
+        "it_food_prego_006"
+      ],
+      "count": 3,
+      "config": {
+        "direction": "he-it"
+      }
+    },
+    {
+      "type": "exam-style",
+      "contentIds": [
+        "exam_CILS_A1_SPEAKING_001"
+      ],
+      "count": 1,
+      "config": {
+        "section": "SPEAKING",
+        "task": "roleplay_cafe"
+      }
+    }
+  ],
+  "assessment": {
+    "passThreshold": 0.7,
+    "xpReward": 75,
+    "unlocks": [
+      "A2_restaurant",
+      "A2_shopping"
+    ]
+  },
+  "nonaGuidance": {
+    "intro": "הגענו לחלק הכי טעים! אוכל איטלקי זה לא רק תזונה - זה אהבה ❤️🍝",
+    "tips": [
+      "קפוצ'ינו שותים רק בבוקר! אחרי 11:00 זה נחשב מוזר",
+      "אספרסו שותים בעמידה בבר - לא יושבים!",
+      "Il conto = החשבון. תמיד תבקש אותו בסוף",
+      "Cornetto זה קרואסון איטלקי - יותר רך ומתוק"
+    ],
+    "encouragement": "Perfetto! עכשיו אתה יכול לשרוד בכל בר איטלקי! ☕🥐"
+  }
+}

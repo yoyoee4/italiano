@@ -1,0 +1,318 @@
+[
+  {
+    "id": "song_1",
+    "level": "A2",
+    "title": "Nel blu, dipinto di blu (Volare)",
+    "artist": "Domenico Modugno",
+    "lines": [
+      {
+        "it": "Volare, oh oh!",
+        "he": "לעוף, או או!"
+      },
+      {
+        "it": "Cantare, oh oh oh oh!",
+        "he": "לשיר, או או או או!"
+      },
+      {
+        "it": "Nel blu dipinto di blu",
+        "he": "בכחול צבוע בכחול"
+      },
+      {
+        "it": "Felice di stare lassù",
+        "he": "שמח להיות שם למעלה"
+      },
+      {
+        "it": "E volavo, volavo felice",
+        "he": "ועפתי, עפתי מאושר"
+      },
+      {
+        "it": "Più in alto del sole ed ancora più su",
+        "he": "גבוה יותר מהשמש ועוד יותר למעלה"
+      }
+    ]
+  },
+  {
+    "id": "song_2",
+    "level": "A2",
+    "title": "Azzurro",
+    "artist": "Adriano Celentano",
+    "lines": [
+      {
+        "it": "Azzurro, il pomeriggio è troppo azzurro",
+        "he": "כחול, אחר הצהריים כחול מדי"
+      },
+      {
+        "it": "E per me, andare via è un po' come morire",
+        "he": "ובשבילי, ללכת זה קצת כמו למות"
+      },
+      {
+        "it": "Ma forse non ci crederai",
+        "he": "אבל אולי לא תאמין לי"
+      },
+      {
+        "it": "Mi manca l'aria, mi manca il sole",
+        "he": "חסר לי האוויר, חסרה לי השמש"
+      },
+      {
+        "it": "Azzurro, il mio pensiero vola via",
+        "he": "כחול, המחשבה שלי עפה"
+      },
+      {
+        "it": "E torna verso casa mia",
+        "he": "וחוזרת לבית שלי"
+      }
+    ]
+  },
+  {
+    "id": "song_3",
+    "level": "B1",
+    "title": "Con te partirò",
+    "artist": "Andrea Bocelli",
+    "lines": [
+      {
+        "it": "Quando sono solo, sogno all'orizzonte",
+        "he": "כשאני לבד, אני חולם על האופק"
+      },
+      {
+        "it": "E mancano le parole",
+        "he": "ואין מילים"
+      },
+      {
+        "it": "Sì, lo so che non c'è luce",
+        "he": "כן, אני יודע שאין אור"
+      },
+      {
+        "it": "In una stanza quando manca il sole",
+        "he": "בחדר כשחסרה השמש"
+      },
+      {
+        "it": "Con te partirò",
+        "he": "אצא איתך"
+      },
+      {
+        "it": "Paesi che non ho mai visto e vissuto con te",
+        "he": "ארצות שמעולם לא ראיתי ואחיה איתך"
+      },
+      {
+        "it": "Adesso sì, le vivrò con te",
+        "he": "עכשיו כן, אחיה אותן איתך"
+      }
+    ]
+  },
+  {
+    "id": "song_4",
+    "level": "B1",
+    "title": "Buongiorno principessa",
+    "artist": "Marco Mengoni",
+    "lines": [
+      {
+        "it": "Buongiorno principessa, come stai?",
+        "he": "בוקר טוב נסיכה, מה שלומך?"
+      },
+      {
+        "it": "Mi manchi ogni momento, lo sai",
+        "he": "את חסרה לי כל רגע, את יודעת"
+      },
+      {
+        "it": "Vorrei fermare il tempo qui con te",
+        "he": "הייתי רוצה לעצור את הזמן כאן איתך"
+      },
+      {
+        "it": "E non lasciarti mai più",
+        "he": "ולא לעזוב אותך לעולם"
+      },
+      {
+        "it": "Buongiorno principessa, sei bellissima",
+        "he": "בוקר טוב נסיכה, את יפה מאוד"
+      },
+      {
+        "it": "Il mondo è più bello quando ci sei tu",
+        "he": "העולם יפה יותר כשאת כאן"
+      }
+    ]
+  },
+  {
+    "id": "song_5",
+    "level": "B1",
+    "title": "La solitudine",
+    "artist": "Laura Pausini",
+    "lines": [
+      {
+        "it": "Marco se n'è andato e non è tornato più",
+        "he": "מרקו הלך ולא חזר יותר"
+      },
+      {
+        "it": "La solitudine ci fa paura",
+        "he": "הבדידות מפחידה אותנו"
+      },
+      {
+        "it": "Ma quando arriva l'amore",
+        "he": "אבל כשהאהבה מגיעה"
+      },
+      {
+        "it": "Tutto cambia, il mondo è a colori",
+        "he": "הכל משתנה, העולם בצבעים"
+      },
+      {
+        "it": "E io qui, da sola, aspetto te",
+        "he": "ואני פה, לבד, מחכה לך"
+      }
+    ]
+  },
+  {
+    "id": "song_6",
+    "level": "B2",
+    "title": "Se telefonando",
+    "artist": "Mina",
+    "lines": [
+      {
+        "it": "Se telefonando, io potessi dirti addio",
+        "he": "אם בטלפון, אוכל לומר לך להתראות"
+      },
+      {
+        "it": "Ti saluterei, ma tu risponderesti",
+        "he": "הייתי נפרדת, אבל אתה תענה"
+      },
+      {
+        "it": "E non so che cosa farei",
+        "he": "ואני לא יודעת מה הייתי עושה"
+      },
+      {
+        "it": "Se telefonando, tu tornassi a dire sì",
+        "he": "אם בטלפון, תחזור לומר כן"
+      },
+      {
+        "it": "Uno così, non lo dimentichi mai",
+        "he": "כזה, לא שוכחים לעולם"
+      }
+    ]
+  },
+  {
+    "id": "song_7",
+    "level": "A2",
+    "title": "L'italiano",
+    "artist": "Toto Cutugno",
+    "lines": [
+      {
+        "it": "Lasciatemi cantare con la chitarra in mano",
+        "he": "תנו לי לשיר עם גיטרה ביד"
+      },
+      {
+        "it": "Lasciatemi cantare, sono un italiano",
+        "he": "תנו לי לשיר, אני איטלקי"
+      },
+      {
+        "it": "Buongiorno Italia, il caffè è caldo",
+        "he": "בוקר טוב איטליה, הקפה חם"
+      },
+      {
+        "it": "Buongiorno Italia, le camicie bianche",
+        "he": "בוקר טוב איטליה, החולצות הלבנות"
+      },
+      {
+        "it": "La bella lingua, la bella gente",
+        "he": "השפה היפה, האנשים היפים"
+      },
+      {
+        "it": "Sono un italiano, un italiano vero",
+        "he": "אני איטלקי, איטלקי אמיתי"
+      }
+    ]
+  },
+  {
+    "id": "song_8",
+    "level": "A2",
+    "title": "Felicità",
+    "artist": "Al Bano & Romina Power",
+    "lines": [
+      {
+        "it": "Felicità, felicità",
+        "he": "אושר, אושר"
+      },
+      {
+        "it": "È un bicchiere di vino con un panino",
+        "he": "זה כוס יין עם כריך"
+      },
+      {
+        "it": "Felicità, felicità",
+        "he": "אושר, אושר"
+      },
+      {
+        "it": "È lasciarti un biglietto sul cuscino",
+        "he": "זה להשאיר לך פתק על הכרית"
+      },
+      {
+        "it": "Felicità, felicità",
+        "he": "אושר, אושר"
+      },
+      {
+        "it": "È un cane che scodinzola sul divano",
+        "he": "זה כלב שמכשכש בזנב על הספה"
+      }
+    ]
+  },
+  {
+    "id": "song_9",
+    "level": "A2",
+    "title": "Sarà perché ti amo",
+    "artist": "Ricchi e Poveri",
+    "lines": [
+      {
+        "it": "Sarà perché ti amo, ti amo, ti amo",
+        "he": "זה יהיה כי אני אוהב אותך, אוהב, אוהב"
+      },
+      {
+        "it": "Che i giorni senza te sono più amari",
+        "he": "שהימים בלעדיך מרים יותר"
+      },
+      {
+        "it": "Sarà perché ti amo, ti amo, ti amo",
+        "he": "זה יהיה כי אני אוהב אותך, אוהב, אוהב"
+      },
+      {
+        "it": "E brucio nel profondo del mio cuore",
+        "he": "ואני בוער במעמקי לבי"
+      },
+      {
+        "it": "Sarà perché ti amo, ti amo, ti amo",
+        "he": "זה יהיה כי אני אוהב אותך, אוהב, אוהב"
+      },
+      {
+        "it": "Che non mi stanco mai di stringerti a me",
+        "he": "שאני לעולם לא מתעייף מלחבק אותך"
+      }
+    ]
+  },
+  {
+    "id": "song_10",
+    "level": "B2",
+    "title": "Caruso",
+    "artist": "Lucio Dalla",
+    "lines": [
+      {
+        "it": "Qui dove il mare luccica e tira forte il vento",
+        "he": "כאן שהים נוצץ והרוח נושבת חזק"
+      },
+      {
+        "it": "Su una vecchia terrazza davanti al Golfo di Surriento",
+        "he": "על מרפסת ישנה מול מפרץ סורנטו"
+      },
+      {
+        "it": "Un uomo abbraccia una ragazza dopo che aveva pianto",
+        "he": "איש מחבק ילדה אחרי שבכתה"
+      },
+      {
+        "it": "Poi si schiarisce la voce e ricomincia il canto",
+        "he": "ואז מפנה את גרונו ומתחיל לשיר"
+      },
+      {
+        "it": "Te voglio bene assaje ma tanto tanto bene sai",
+        "he": "אני אוהב אותך מאוד אבל ממש מאוד את יודעת"
+      },
+      {
+        "it": "È una catena ormai che scioglie il sangue dint'e vene sai",
+        "he": "זו שרשרת שממיסה את הדם בוורידים את יודעת"
+      }
+    ]
+  }
+]

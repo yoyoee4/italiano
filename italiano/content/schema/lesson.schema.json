@@ -1,0 +1,185 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://volalingo.com/schemas/lesson.schema.json",
+  "title": "VolaLingo Lesson",
+  "type": "object",
+  "description": "A complete learning unit with goals, content, exercises, and assessment.",
+  "required": [
+    "id",
+    "level",
+    "title",
+    "goals",
+    "vocabulary",
+    "grammar",
+    "exercises"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-C][12]_[a-z_]+$",
+      "description": "Lesson ID: CEFR_topic (e.g., A1_food_basics)"
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ],
+      "description": "CEFR level"
+    },
+    "title": {
+      "type": "string",
+      "description": "Display title in Hebrew"
+    },
+    "titleIt": {
+      "type": "string",
+      "description": "Display title in Italian"
+    },
+    "goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "description": "Can-do statements (CEFR aligned)"
+    },
+    "estimatedTimeMinutes": {
+      "type": "integer",
+      "minimum": 5,
+      "maximum": 60,
+      "default": 15,
+      "description": "Estimated completion time"
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Lesson IDs that must be completed first"
+    },
+    "vocabulary": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]{2}_[a-z_]+_[0-9]{3,}$"
+      },
+      "description": "Content item IDs for vocabulary"
+    },
+    "grammar": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Grammar topic IDs covered"
+    },
+    "dialogues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Dialogue IDs for practice"
+    },
+    "culture": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Culture module IDs"
+    },
+    "examPractice": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Exam question IDs for exam preparation"
+    },
+    "exercises": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "contentIds"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "flashcard",
+              "multiple-choice",
+              "listening",
+              "speaking",
+              "writing",
+              "sentence-builder",
+              "translation",
+              "picture",
+              "dialogue",
+              "exam-style"
+            ]
+          },
+          "contentIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Content item IDs this exercise uses"
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 1,
+            "default": 5,
+            "description": "Number of questions to generate"
+          },
+          "config": {
+            "type": "object",
+            "description": "Exercise-specific configuration"
+          }
+        }
+      },
+      "minItems": 1,
+      "description": "Exercise sequence for this lesson"
+    },
+    "assessment": {
+      "type": "object",
+      "properties": {
+        "passThreshold": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.7
+        },
+        "xpReward": {
+          "type": "integer",
+          "default": 50
+        },
+        "unlocks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "nonaGuidance": {
+      "type": "object",
+      "properties": {
+        "intro": {
+          "type": "string"
+        },
+        "tips": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "encouragement": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

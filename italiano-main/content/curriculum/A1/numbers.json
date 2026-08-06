@@ -1,0 +1,162 @@
+{
+  "id": "A1_numbers",
+  "level": "A1",
+  "title": "מספרים 1-20",
+  "titleIt": "Numeri 1-20",
+  "goals": [
+    "לספור מ-1 עד 20",
+    "להשתמש במספרים בגיל, שעה, מחיר",
+    "לזהות מספרים בדיבור"
+  ],
+  "estimatedTimeMinutes": 15,
+  "prerequisites": [
+    "A1_greetings"
+  ],
+  "vocabulary": [
+    "it_numbers_zero_001",
+    "it_numbers_uno_002",
+    "it_numbers_due_003",
+    "it_numbers_tre_004",
+    "it_numbers_quattro_005",
+    "it_numbers_cinque_006",
+    "it_numbers_sei_007",
+    "it_numbers_sette_008",
+    "it_numbers_otto_009",
+    "it_numbers_nove_010",
+    "it_numbers_dieci_011",
+    "it_numbers_undici_012",
+    "it_numbers_dodici_013",
+    "it_numbers_tredici_014",
+    "it_numbers_quattordici_015",
+    "it_numbers_quindici_016",
+    "it_numbers_sedici_017",
+    "it_numbers_diciassette_018",
+    "it_numbers_diciotto_019",
+    "it_numbers_diciannove_020",
+    "it_numbers_venti_021"
+  ],
+  "grammar": [
+    "g1_presente_essere",
+    "g3_preposizioni_semplici"
+  ],
+  "dialogues": [
+    "dlg_cafe"
+  ],
+  "culture": [
+    "culture_italian_numbers"
+  ],
+  "examPractice": [
+    "exam_CILS_A1_LISTENING_002",
+    "exam_CILS_A1_READING_002"
+  ],
+  "exercises": [
+    {
+      "type": "flashcard",
+      "contentIds": [
+        "it_numbers_zero_001",
+        "it_numbers_uno_002",
+        "it_numbers_due_003",
+        "it_numbers_tre_004",
+        "it_numbers_quattro_005",
+        "it_numbers_cinque_006",
+        "it_numbers_sei_007",
+        "it_numbers_sette_008",
+        "it_numbers_otto_009",
+        "it_numbers_nove_010"
+      ],
+      "count": 10,
+      "config": {
+        "direction": "it-he",
+        "includeAudio": true
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "contentIds": [
+        "it_numbers_undici_012",
+        "it_numbers_dodici_013",
+        "it_numbers_tredici_014",
+        "it_numbers_quattordici_015",
+        "it_numbers_quindici_016"
+      ],
+      "count": 5,
+      "config": {
+        "options": 4
+      }
+    },
+    {
+      "type": "listening",
+      "contentIds": [
+        "it_numbers_uno_002",
+        "it_numbers_cinque_006",
+        "it_numbers_dieci_011",
+        "it_numbers_venti_021"
+      ],
+      "count": 4,
+      "config": {
+        "speed": "slow",
+        "task": "type_number"
+      }
+    },
+    {
+      "type": "speaking",
+      "contentIds": [
+        "it_numbers_uno_002",
+        "it_numbers_due_003",
+        "it_numbers_tre_004",
+        "it_numbers_quattro_005",
+        "it_numbers_cinque_006"
+      ],
+      "count": 5,
+      "config": {
+        "mode": "count_sequence"
+      }
+    },
+    {
+      "type": "sentence-builder",
+      "contentIds": [
+        "it_numbers_uno_002",
+        "it_numbers_due_003",
+        "it_numbers_tre_004"
+      ],
+      "count": 3,
+      "config": {
+        "template": "Ho {number} anni",
+        "wordBank": [
+          "Ho",
+          "anni",
+          "uno",
+          "due",
+          "tre"
+        ]
+      }
+    },
+    {
+      "type": "exam-style",
+      "contentIds": [
+        "exam_CILS_A1_LISTENING_002"
+      ],
+      "count": 1,
+      "config": {
+        "section": "LISTENING"
+      }
+    }
+  ],
+  "assessment": {
+    "passThreshold": 0.7,
+    "xpReward": 50,
+    "unlocks": [
+      "A1_time",
+      "A1_colors"
+    ]
+  },
+  "nonaGuidance": {
+    "intro": "מספרים הם הבסיס להכל! גיל, מחיר, שעה, כתובת... 🇮🇹",
+    "tips": [
+      "11-16 הם מיוחדים: undici, dodici, tredici, quattordici, quindici, sedici",
+      "מ-17 ואילך: diciassette, diciotto, diciannove, venti - שים לב לתבנית!",
+      "איטלקים משתמשים ב-metà לחצי (0.5) - utile per prezzi!"
+    ],
+    "encouragement": "Bravissimo! עכשיו אתה יכול לספור באיטלקית! 🔢"
+  }
+}

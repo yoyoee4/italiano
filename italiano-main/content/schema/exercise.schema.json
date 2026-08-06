@@ -1,0 +1,313 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://volalingo.com/schemas/exercise.schema.json",
+  "title": "VolaLingo Exercise",
+  "type": "object",
+  "description": "Individual exercise instance generated from content items. Each exercise type has specific configuration.",
+  "required": [
+    "id",
+    "type",
+    "contentId",
+    "level",
+    "question",
+    "answer",
+    "explanation"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ex_[a-z]+_[a-z0-9_]+$",
+      "description": "Exercise instance ID"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "flashcard",
+        "multiple-choice",
+        "listening",
+        "speaking",
+        "writing",
+        "sentence-builder",
+        "translation",
+        "picture",
+        "dialogue",
+        "exam-style"
+      ],
+      "description": "Exercise type determines UI and validation logic"
+    },
+    "contentId": {
+      "type": "string",
+      "pattern": "^[a-z]{2}_[a-z_]+_[0-9]{3,}$",
+      "description": "Source content item ID"
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ],
+      "description": "CEFR level of this exercise"
+    },
+    "skill": {
+      "type": "string",
+      "enum": [
+        "reading",
+        "listening",
+        "speaking",
+        "writing",
+        "vocabulary",
+        "grammar",
+        "culture"
+      ],
+      "description": "Primary skill tested"
+    },
+    "question": {
+      "type": "object",
+      "description": "The prompt/question presented to user. Structure varies by exercise type.",
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string"
+            },
+            "audio": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "description": "Flashcard / Multiple choice / Translation"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "audio": {
+              "type": "string",
+              "format": "uri"
+            },
+            "text": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "audio"
+          ],
+          "description": "Listening exercise"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "prompt": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": [
+            "prompt"
+          ],
+          "description": "Speaking / Picture description"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "prompt": {
+              "type": "string"
+            },
+            "wordBank": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "prompt"
+          ],
+          "description": "Sentence builder"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "context": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "previousLine": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "context"
+          ],
+          "description": "Dialogue exercise"
+        }
+      ]
+    },
+    "answer": {
+      "type": "object",
+      "description": "Correct answer(s) and validation rules",
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "alternatives": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "fuzzyThreshold": {
+              "type": "integer",
+              "minimum": 60,
+              "maximum": 100,
+              "default": 80
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "description": "Flashcard / Translation / Writing"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "correctIndex": {
+              "type": "integer"
+            },
+            "options": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "correctIndex",
+            "options"
+          ],
+          "description": "Multiple choice"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "expectedText": {
+              "type": "string"
+            },
+            "phonemeTargets": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "tolerance": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "default": 0.7
+            }
+          },
+          "required": [
+            "expectedText"
+          ],
+          "description": "Speaking exercise"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "targetSentence": {
+              "type": "string"
+            },
+            "wordBank": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "allowVariations": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          "required": [
+            "targetSentence"
+          ],
+          "description": "Sentence builder"
+        }
+      ]
+    },
+    "explanation": {
+      "type": "object",
+      "description": "Feedback shown after answer (correct or incorrect)",
+      "properties": {
+        "correct": {
+          "type": "string",
+          "description": "Explanation when user answers correctly"
+        },
+        "incorrect": {
+          "type": "string",
+          "description": "Explanation when user answers incorrectly"
+        },
+        "grammarNote": {
+          "type": "string",
+          "description": "Grammar rule reference"
+        },
+        "cultureNote": {
+          "type": "string",
+          "description": "Cultural context"
+        },
+        "nonaTip": {
+          "type": "string",
+          "description": "Nona's personalized tip"
+        },
+        "relatedContent": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Related content item IDs for review"
+        }
+      }
+    },
+    "difficulty": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0.5,
+      "description": "Difficulty weight for adaptive sequencing"
+    },
+    "xpReward": {
+      "type": "integer",
+      "minimum": 5,
+      "maximum": 50,
+      "default": 10
+    },
+    "timeLimitSeconds": {
+      "type": "integer",
+      "minimum": 10,
+      "maximum": 300,
+      "description": "Optional time limit for timed exercises"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags for filtering (e.g., 'exam-prep', 'daily-mission', 'weak-words')"
+    }
+  }
+}

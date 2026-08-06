@@ -1,0 +1,343 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://volalingo.com/schemas/exam-question.schema.json",
+  "title": "VolaLingo Exam Question",
+  "type": "object",
+  "description": "Official exam practice question mapped to CILS/CELI/AIL specifications. Used in Exam Center simulations.",
+  "required": [
+    "id",
+    "exam",
+    "level",
+    "section",
+    "question",
+    "answer",
+    "explanation"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^exam_(CILS|CELI|AIL)_[A-C][12]_[A-Z_]+_[0-9]{3,}$",
+      "description": "Exam question ID: exam_EXAM_LEVEL_SECTION_NUMBER"
+    },
+    "exam": {
+      "type": "string",
+      "enum": [
+        "CILS",
+        "CELI",
+        "AIL"
+      ],
+      "description": "Exam provider"
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ],
+      "description": "CEFR level of the exam"
+    },
+    "section": {
+      "type": "string",
+      "enum": [
+        "LISTENING",
+        "READING",
+        "WRITING",
+        "SPEAKING"
+      ],
+      "description": "Exam section"
+    },
+    "subsection": {
+      "type": "string",
+      "description": "Specific task type within section (e.g., 'multiple-choice', 'gap-fill', 'essay', 'role-play')"
+    },
+    "question": {
+      "type": "object",
+      "description": "The exam prompt. Structure varies by section.",
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "audio": {
+              "type": "string",
+              "format": "uri"
+            },
+            "text": {
+              "type": "string"
+            },
+            "questionText": {
+              "type": "string"
+            },
+            "options": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "audio",
+            "questionText",
+            "options"
+          ],
+          "description": "Listening: audio + multiple choice"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string"
+            },
+            "questionText": {
+              "type": "string"
+            },
+            "options": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "text",
+            "questionText",
+            "options"
+          ],
+          "description": "Reading: text + multiple choice"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string"
+            },
+            "gaps": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "index": {
+                    "type": "integer"
+                  },
+                  "answer": {
+                    "type": "string"
+                  },
+                  "alternatives": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "index",
+                  "answer"
+                ]
+              }
+            }
+          },
+          "required": [
+            "text",
+            "gaps"
+          ],
+          "description": "Reading/Writing: gap fill"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "prompt": {
+              "type": "string"
+            },
+            "wordLimit": {
+              "type": "integer"
+            },
+            "register": {
+              "type": "string",
+              "enum": [
+                "formal",
+                "informal",
+                "neutral"
+              ]
+            }
+          },
+          "required": [
+            "prompt"
+          ],
+          "description": "Writing: essay/email/message"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "scenario": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "interlocutor": {
+              "type": "string"
+            },
+            "tasks": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "scenario",
+            "role",
+            "tasks"
+          ],
+          "description": "Speaking: role play / monologue / interaction"
+        }
+      ]
+    },
+    "answer": {
+      "type": "object",
+      "description": "Correct answer and scoring rubric",
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "correctIndex": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "correctIndex"
+          ],
+          "description": "Multiple choice"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "acceptedAnswers": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "caseSensitive": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          "required": [
+            "acceptedAnswers"
+          ],
+          "description": "Gap fill / short answer"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "rubric": {
+              "type": "object",
+              "properties": {
+                "taskAchievement": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 5
+                },
+                "coherence": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 5
+                },
+                "vocabulary": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 5
+                },
+                "grammar": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 5
+                }
+              },
+              "required": [
+                "taskAchievement",
+                "coherence",
+                "vocabulary",
+                "grammar"
+              ]
+            },
+            "modelAnswer": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "rubric"
+          ],
+          "description": "Writing / Speaking"
+        }
+      ]
+    },
+    "explanation": {
+      "type": "object",
+      "description": "Detailed explanation for review mode",
+      "properties": {
+        "correctRationale": {
+          "type": "string",
+          "description": "Why the correct answer is right"
+        },
+        "distractorAnalysis": {
+          "type": "object",
+          "description": "Why each wrong option is wrong"
+        },
+        "grammarReference": {
+          "type": "string",
+          "description": "Grammar rule ID or explanation"
+        },
+        "vocabularyNotes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "examStrategy": {
+          "type": "string",
+          "description": "Test-taking tip for this question type"
+        },
+        "relatedLessons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Lesson IDs to study for this question type"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "durationSeconds": {
+          "type": "integer",
+          "description": "Recommended time for this question"
+        },
+        "difficulty": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "source": {
+          "type": "string",
+          "description": "Source reference (e.g., 'OnlineItalianClub', 'CILS sample paper')"
+        },
+        "year": {
+          "type": "integer",
+          "description": "Year of exam paper if from past paper"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

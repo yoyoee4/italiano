@@ -1,0 +1,118 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-08-05",
+  "levels": {
+    "A1": {
+      "name": "Principiante",
+      "nameHe": "מתחיל",
+      "lessons": [
+        "greetings",
+        "numbers",
+        "essentials",
+        "food",
+        "family",
+        "colors",
+        "body",
+        "time",
+        "places",
+        "clothing",
+        "weather",
+        "animals"
+      ],
+      "totalLessons": 12,
+      "estimatedHours": 3
+    },
+    "A2": {
+      "name": "Elementare",
+      "nameHe": "יסודי",
+      "lessons": [
+        "past_tenses",
+        "directions",
+        "shopping",
+        "restaurant",
+        "plans",
+        "hobbies",
+        "describe",
+        "health",
+        "travel",
+        "phone",
+        "emotions",
+        "home",
+        "transport"
+      ],
+      "totalLessons": 13,
+      "estimatedHours": 5
+    },
+    "B1": {
+      "name": "Intermedio",
+      "nameHe": "בינוני",
+      "lessons": [
+        "opinion",
+        "conditional",
+        "future",
+        "media",
+        "work",
+        "regions",
+        "cinema",
+        "advice",
+        "imperative",
+        "bank",
+        "storytelling",
+        "culture"
+      ],
+      "totalLessons": 12,
+      "estimatedHours": 8
+    },
+    "B2": {
+      "name": "Avanzato",
+      "nameHe": "מתקדם",
+      "lessons": [
+        "complex_grammar",
+        "formal_writing",
+        "debate",
+        "literature",
+        "science",
+        "job_interview",
+        "current_events",
+        "politics"
+      ],
+      "totalLessons": 8,
+      "estimatedHours": 10
+    },
+    "C1": {
+      "name": "Esperto",
+      "nameHe": "מומחה",
+      "lessons": [
+        "advanced_grammar",
+        "academic_writing",
+        "professional_communication",
+        "italian_literature",
+        "philosophy_culture",
+        "legal_administrative"
+      ],
+      "totalLessons": 6,
+      "estimatedHours": 12
+    },
+    "C2": {
+      "name": "Maestro",
+      "nameHe": "אמן",
+      "lessons": [
+        "mastery_nuance",
+        "creative_writing",
+        "translation_skills",
+        "dialects_regional",
+        "teaching_italian"
+      ],
+      "totalLessons": 5,
+      "estimatedHours": 15
+    }
+  },
+  "totalLessons": 56,
+  "totalEstimatedHours": 53,
+  "progressionRules": {
+    "unlockThreshold": 0.7,
+    "xpPerLesson": 50,
+    "streakBonus": 1.1,
+    "weakAreaReview": 0.3
+  }
+}

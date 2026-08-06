@@ -1,0 +1,160 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://volalingo.com/schemas/content-item.schema.json",
+  "title": "VolaLingo Content Item",
+  "type": "object",
+  "description": "Base schema for all VolaLingo content items. Supports vocabulary, grammar, culture, and media items.",
+  "required": [
+    "id",
+    "type",
+    "language",
+    "level",
+    "topic"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z]{2}_[a-z_]+_[0-9]{3,}$",
+      "description": "Unique identifier: language_topic_category_number (e.g., it_food_caffe_001)"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "vocabulary",
+        "grammar",
+        "culture",
+        "media",
+        "exercise",
+        "exam-question"
+      ],
+      "description": "Content type classification"
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2}$",
+      "description": "ISO 639-1 language code (e.g., it, en, he)"
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ],
+      "description": "CEFR proficiency level"
+    },
+    "topic": {
+      "type": "string",
+      "description": "Semantic topic/category (e.g., food, travel, grammar, culture)"
+    },
+    "skill": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "reading",
+          "listening",
+          "speaking",
+          "writing",
+          "vocabulary",
+          "grammar",
+          "culture"
+        ]
+      },
+      "minItems": 1,
+      "description": "Language skills this content develops"
+    },
+    "translations": {
+      "type": "object",
+      "required": [
+        "he"
+      ],
+      "properties": {
+        "he": {
+          "type": "string",
+          "description": "Hebrew translation"
+        },
+        "en": {
+          "type": "string",
+          "description": "English translation"
+        }
+      },
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "culture": {
+      "type": "object",
+      "properties": {
+        "importance": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "essential"
+          ]
+        },
+        "context": {
+          "type": "string",
+          "description": "Cultural context explanation"
+        },
+        "region": {
+          "type": "string",
+          "description": "Italian region (optional)"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "examLinks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(CILS|CELI|AIL)_[A-C][12]_(LISTENING|READING|WRITING|SPEAKING)$"
+      },
+      "description": "Official exam references this content supports"
+    },
+    "relatedGrammar": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Grammar topic IDs this content relates to"
+    },
+    "frequency": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100,
+      "description": "Usage frequency rank (1=most frequent). For vocabulary prioritization."
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "created": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "source": {
+          "type": "string",
+          "description": "Content source (e.g., 'curated', 'onlineitalianclub', 'user-generated')"
+        },
+        "verified": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  }
+}
