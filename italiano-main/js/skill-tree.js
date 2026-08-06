@@ -68,6 +68,11 @@ function render() {
     return prevNodes.length === 0 || (done / prevNodes.length) >= 0.6;
   }
 
+  // Load Daily Mission if available
+  if (window.Orchestrator && !state.dailyComplete) {
+    loadDailyMission();
+  }
+
   let html = `
     <div style="text-align:center;margin-bottom:20px">
       <h2 style="font-size:1.3rem;font-weight:800">🗺️ מסלול הלמידה</h2>
@@ -354,3 +359,133 @@ function openExam(level) {
 return { render, toggleLevel, openNode, startLesson, completeNode, openExam, getNodeProgress, isUnlocked };
 
 })();
+
+// ═══════════════════════════════════════════════════════════════════
+// DAILY MISSION LOADER (Sprint C5)
+// ═══════════════════════════════════════════════════════════════════
+async function loadDailyMission() {
+  try {
+    const recommendations = window.Orchestrator.getRecommendations();
+    const mission = recommendations.dailyMission;
+    const greeting = recommendations.profile && window.Nona ? window.Nona.getDailyGreeting(recommendations.profile) : null;
+    
+    if (!mission) return;
+    
+    // Render mission card at top of learn page
+    const container = document.getElementById('learnContent');
+    if (!container) return;
+    
+    const missionHtml = renderMissionCard(mission, greeting);
+    container.insertAdjacentHTML('afterbegin', missionHtml);
+    
+    // Add event listener for start button
+    const startBtn = document.getElementById('start-mission');
+    if (startBtn) {
+      startBtn.addEventListener('click', () => {
+        // Navigate to practice page with daily mission
+        window.goPage('practice');
+        // Start the daily mission session
+        setTimeout(() => {
+          if (window.Practice && mission.exercises) {
+            window.Practice.startLesson('daily_mission');
+          }
+        }, 100);
+      });
+    }
+  } catch (e) {
+    console.warn('loadDailyMission error:', e);
+  }
+}
+
+function renderMissionCard(mission, greeting) {
+  const streak = window.state?.streak || 0;
+  const xpReward = mission.xpReward || 30;
+  const exerciseCount = mission.exercises ? mission.exercises.reduce((sum, ex) => sum + (ex.count || 1), 0) : 5;
+  const duration = mission.estimatedMinutes || 10;
+  
+  const objectivesHtml = mission.exercises ? mission.exercises.map(ex => {
+    const icons = { flashcard: '📝', multiple_choice: '🧠', listening_mc: '🎧', speaking_pronunciation: '🗣️', dialogue_roleplay: '💬', writing_freeform: '✍️', exam_reading: '📖', exam_listening: '🎧', exam_speaking: '🗣️' };
+    const icon = icons[ex.type] || '📋';
+    const labels = { review: 'חזרה', new: 'חדש', weak_words: 'מילים חלשות', pronunciation: 'הגייה', fluency: 'שטף', exam_prep: 'מבחן' };
+    const label = labels[ex.focus] || ex.focus;
+    return `<div class="objective-item"><span class="objective-icon">${icon}</span><span>${ex.count || 1}x ${ex.type.replace(/_/g, ' ')}</span><span class="objective-focus">${label}</span></div>`;
+  }).join('') : '<div class="objective-item">טוען...</div>';
+  
+  return `
+      <section id="daily-mission" class="mission-card" style="animation: slideIn 0.4s ease">
+        <header>
+          <h2>🎯 המשימה היומית</h2>
+          <span class="streak-badge">🔥 ${streak} ימים</span>
+        </header>
+        <div class="mission-content">
+          ${greeting ? `<p class="nona-greeting">"${greeting.message}"</p>` : ''}
+          <div class="mission-objectives">
+            ${objectivesHtml}
+          </div>
+          <button class="btn btn-primary btn-block" id="start-mission" style="margin-top:16px;font-size:1rem;padding:14px">
+            התחל משימה
+          </button>
+        </div>
+        <footer class="mission-meta">
+          <span>⏱ ${duration} דקות</span>
+          <span>💎 +${xpReward} XP</span>
+          <span>🎯 ${exerciseCount} תרגילים</span>
+        </footer>
+        ${renderStreakCalendar(streak)}
+      </section>
+    `;
+  }
+
+// Expose for use in app.js
+window.SkillTree.loadDailyMission = loadDailyMission;
+
+// ════════════════════════════════════════════════════════════════════
+// STREAK CALENDAR (Sprint C5)
+// ════════════════════════════════════════════════════════════════════
+function renderStreakCalendar(streak) {
+  const today = new Date();
+  const firstDayOfMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+  const lastDayOfMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+  const daysInMonth = lastDayOfMonth.getDate();
+  const startDayOfWeek = firstDayOfMonth.getDay(); // 0 = Sunday
+  
+  // For Hebrew locale, we want Sunday first
+  const dayLabels = ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ש'];
+  
+  // Simulate completed days based on streak (in real app, this would come from state)
+  // We'll show the last 'streak' days as completed
+  const completedDays = new Set();
+  for (let i = 0; i < streak; i++) {
+    const d = new Date(today);
+    d.setDate(d.getDate() - i);
+    if (d.getMonth() === today.getMonth()) {
+      completedDays.add(d.getDate());
+    }
+  }
+  
+  let html = `
+    <div class="streak-calendar">
+      <div class="streak-calendar-header">
+        <h3 class="streak-calendar-title">📅 רצף חודשי</h3>
+        <span style="font-size:.7rem;color:var(--text2)">${today.toLocaleDateString('he-IL', {month: 'long', year: 'numeric'})}</span>
+      </div>
+      <div class="streak-calendar-grid">
+        ${dayLabels.map(d => `<div class="streak-day-header">${d}</div>`).join('')}
+        ${' '.repeat(startDayOfWeek).split('').map(() => '<div class="streak-day empty"></div>').join('')}
+        ${Array.from({length: daysInMonth}, (_, i) => i + 1).map(day => {
+          const isToday = day === today.getDate();
+          const isCompleted = completedDays.has(day);
+          const classes = ['streak-day'];
+          if (isToday) classes.push('today');
+          if (isCompleted) classes.push('completed');
+          return `<div class="${classes.join(' ')}" title="${isCompleted ? 'הושלם' : isToday ? 'היום' : ''}">
+            <span class="streak-day-number">${day}</span>
+            ${isCompleted ? '<span class="streak-day-icon">✓</span>' : ''}
+          </div>`;
+        }).join('')}
+      </div>
+    </div>
+  `;
+  
+  return html;
+}

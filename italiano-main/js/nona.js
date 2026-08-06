@@ -1026,6 +1026,69 @@ function init() {
 }
 
 // ═══════════════════════════════════════
+// DAILY GREETING (Sprint C5)
+// ═══════════════════════════════════════
+function getDailyGreeting(profile) {
+  const hour = new Date().getHours();
+  const streak = profile?.streak || 0;
+  const level = profile?.level || 'A1';
+  const weakWordsCount = profile?.weakWordsCount || 0;
+  const srsOverdueCount = profile?.srsOverdueCount || 0;
+  const daysUntilExam = profile?.daysUntilExam || null;
+  
+  // Time-based greeting
+  let timeGreeting = '';
+  if (hour < 12) timeGreeting = 'בוקר טוב! ☀️';
+  else if (hour < 18) timeGreeting = 'צהריים טובים! 🌤️';
+  else timeGreeting = 'ערב טוב! 🌙';
+  
+  // Personality-based message
+  let message = '';
+  let personality = 'sweet';
+  let culturalTip = '';
+  
+  if (srsOverdueCount > 5 || streak === 0) {
+      personality = 'strict';
+      message = `${timeGreeting} נונה רואה שיש מילים שמחכות לחזרה! היום נתמקד בחיזוק היסודות. 🤌`;
+      culturalTip = "באיטליה אומרים: 'Chi ben comincia è a metà dell'opera' (מי שמתחיל טוב - חצי עבודה נעשתה)";
+    } else if (daysUntilExam !== null && daysUntilExam <= 30) {
+      personality = 'teacher';
+      message = `${timeGreeting} המבחן מתקרב (${daysUntilExam} ימים)! נונה הכינה תוכנית הכנה מיוחדת. 📝`;
+      culturalTip = 'למבחני CILS/CELI: תרגל גם כתיבה וגם דיבור - שני החלקים שווים במשקל!';
+    } else if (level === 'A1' && streak < 3) {
+      personality = 'sweet';
+      message = `${timeGreeting} ברוכה הבאה, קארה! היום נלמד מילים ראשונות באיטלקית! 🌱`;
+      culturalTip = 'באיטליה מברכים "Buongiorno" עד הצהריים, ואז "Buonasera" - לעולם לא "Ciao" לזרים!';
+    } else if (weakWordsCount > 5) {
+      personality = 'teacher';
+      message = `${timeGreeting} נונה שמה לב שיש ${weakWordsCount} מילים שצריכות חיזוק. היום נתמקד בהן! 💪`;
+      culturalTip = "שיטה של נונה: כתוב כל מילה 3 פעמים, תגיד בקול, תשתמש במשפט!";
+    } else if (streak >= 7) {
+      personality = 'sweet';
+      message = `${timeGreeting} ${streak} ימים ברציפות?! 🎉 נונה גאה בך! היום נעשה משהו כיף!`;
+      culturalTip = 'בימי שישי באיטליה: אפריטיבו עם חברים! "Aperitivo" זה לא רק משקה - זה מנהג חברתי!';
+    } else {
+      personality = 'sweet';
+      const starters = [
+        'היום נלמד לברך כמו איטלקי אמיתי! ☕',
+        'נונה הכינה הפתעה - מילים חדשות וטעימות! 🍝',
+        'בוא נמשיך מהמקום שהפסקנו אתמול! 📖',
+        'יש לי סיפור קטן מפירנצה לספר לך היום... 🏛️',
+        'נתאמן על משפטים שימושיים לטיול הבא! ✈️'
+      ];
+      message = `${timeGreeting} ${starters[Math.floor(Math.random() * starters.length)]}`;
+      culturalTip = 'מילה יומית: "Allora" (אז / נו / טוב) - המילה הכי שימושית באיטלקית!';
+    }
+  
+  return {
+    message,
+    personality,
+    culturalTip,
+    audio: `nona/greeting_${personality}.mp3`
+  };
+}
+
+// ═══════════════════════════════════════
 // EXPOSE
 // ═══════════════════════════════════════
 return {
@@ -1033,6 +1096,7 @@ return {
   onCorrect, onWrong, onMilestone, onVisit, onPageChange,
   coachNotify, resetNagTimer, stopNagTimer,
   toggleEnabled, toggleCoach, toggleNag, getSettings, renderSettings,
+  getDailyGreeting,
   CONFIG,
   _goodJob: goodJob, _nag: nagMsg, _wrong: wrongMsg,
   _encourage: encourage, _greeting: greeting,
