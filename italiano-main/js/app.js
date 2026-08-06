@@ -159,6 +159,10 @@ window.addEventListener('DOMContentLoaded', () => {
   
   // Splash → Login or App
     setTimeout(() => {
+      // Initialize Analytics
+      if (window.Analytics) {
+        Analytics.init();
+      }
       document.getElementById('splash').style.opacity = '0';
       setTimeout(() => {
         document.getElementById('splash').style.display = 'none';
@@ -349,6 +353,64 @@ function renderProfile() {
         <div>💪 מילים חלשות: <strong>${state.weakWords.length}</strong></div>
       </div>
     </div>
+    
+    <!-- Analytics Section (added by Analytics module) -->
+    <div id="analytics-section"></div>
+    <script>
+    if (window.Analytics) {
+      (function(){
+        try {
+          Analytics.init();
+          const stats = Analytics.getStats();
+          const week = Analytics.getWeeklyReport();
+          const weak = Analytics.getWeakAreas();
+          const el = document.getElementById('analytics-section');
+          if (!el) return;
+          
+          let html = '<h3 class="section-title"><span class="emoji">📈</span> אנליטיקה</h3><div class="card">';
+          html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:.85rem">';
+          html += '<div>📊 שיעורים: <strong>' + stats.totalSessions + '</strong></div>';
+          html += '<div>✅ השלמה: <strong>' + stats.completionRate + '%</strong></div>';
+          html += '<div>🎯 דיוק: <strong>' + stats.accuracy + '%</strong></div>';
+          html += '<div>⏱ ממוצע: <strong>' + stats.avgSessionMinutes + ' דק\'</strong></div>';
+          html += '<div>📅 ימים פעילים: <strong>' + stats.daysActive + '</strong></div>';
+          html += '<div>💎 XP השבוע: <strong>' + stats.xpThisWeek + '</strong></div>';
+          html += '</div>';
+          
+          // Weekly chart (simple bars)
+          html += '<div style="margin-top:12px"><div style="font-size:.8rem;color:var(--text2);margin-bottom:6px">7 ימים אחרונים (XP)</div><div style="display:flex;gap:4px;height:40px;align-items:flex-end">';
+          var maxXp = Math.max.apply(null, week.daily.map(function(d) { return d.xp; })) || 1;
+          week.daily.forEach(function(d) {
+            var pct = Math.round((d.xp / maxXp) * 100);
+            html += '<div style="flex:1;text-align:center"><div style="height:' + pct + 'px;background:var(--primary);border-radius:4px 4px 0 0;min-height:4px"></div><div style="font-size:.55rem;color:var(--text3);margin-top:2px">' + d.date.slice(5) + '</div></div>';
+          });
+          html += '</div></div>';
+          
+          // Weak areas from Error Intelligence
+          if (weak.length > 0) {
+            html += '<div style="margin-top:12px"><div style="font-size:.8rem;color:var(--text2);margin-bottom:6px">🔴 תחומים חלשים</div>';
+            weak.forEach(function(p) {
+              html += '<div style="display:flex;justify-content:space-between;padding:4px 0;font-size:.8rem"><span>' + (p.icon || '❌') + ' ' + (p.label || p.type) + '</span><span style="color:var(--danger)">×' + p.count + '</span></div>';
+            });
+            html += '</div>';
+          }
+          
+          // Retention badges
+          html += '<div style="margin-top:12px"><div style="font-size:.8rem;color:var(--text2);margin-bottom:6px">🏆 Retention</div><div style="display:flex;gap:8px;flex-wrap:wrap">';
+          var retention = stats.retention || {};
+          var retItems = [['Day 1', retention.day1], ['Day 3', retention.day3], ['Day 7', retention.day7], ['Day 30', retention.day30]];
+          retItems.forEach(function(r) {
+            var unlocked = r[1];
+            html += '<div style="padding:4px 10px;border-radius:12px;font-size:.75rem;background:' + (unlocked ? 'var(--primary-transparent)' : 'var(--surface)') + ';color:' + (unlocked ? 'var(--primary-light)' : 'var(--text3)') + '">' + (unlocked ? '✅ ' : '⏳ ') + r[0] + '</div>';
+          });
+          html += '</div></div>';
+          
+          html += '</div>';
+          el.innerHTML = html;
+        } catch(e) { console.warn('Analytics render:', e); }
+      })();
+    }
+    </script>
     
     <h3 class="section-title"><span class="emoji">⚙️</span> הגדרות</h3>
     <div class="card">

@@ -28,7 +28,7 @@ VolaLingo is a production-grade Italian learning PWA combining adaptive intellig
 | **GitBranch** | `main` (pushed) | [[architecture]] |
 || **Strategy** | **Content-First (Epic 1-7)** — Code complete, now scaling content | [[epics]] |
 || **Engine Status** | ✅ All engines built (C4A-C5) | [[architecture]] |
-|| **Content** | 🟢 **Epic 1**: 1,490 words, 2,050 sentences, 285 dialogues, 300 stories, 200 articles<br>🟢 **Dictionary**: 1,490 entries (IPA, grammar, examples, collocations)<br>🟢 **Exam Qs**: 2,160 (CILS/CELI/AIL tagged)<br>🟢 **Nona**: v2.0 with 3 personalities, contextual feedback<br>🟢 **Simulations**: 95 scenarios × 3-5 levels | [[content-system]] |
+|| **Content** | 🟢 **Epic 1**: 1,490 words, 2,050 sentences, 36 real dialogues, 300 real stories, 19 real articles<br>🟢 **Dictionary**: 1,490 entries (IPA, grammar, examples, collocations)<br>🟢 **Exam Qs**: 2,160 (CILS/CELI/AIL tagged)<br>🟢 **Nona**: v2.0 + Error Intelligence integration<br>🟢 **Simulations**: 95 scenarios × 3-5 levels<br>🟢 **Corpus**: 19 Italian texts (1,632 words)<br>🟢 **Error Intel**: 8 error types, pattern detection, SRS, Nona coaching | [[content-system]] |
 | **Deployment** | GitHub Pages → italiano.tickerio.app | [[architecture]] |
 | **Benchmark** | 6 unique differentiators | [[product-benchmark]] |
 
