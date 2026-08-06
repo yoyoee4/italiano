@@ -1,36 +1,27 @@
-# VolaLingo Quality Audit Report
+# VolaLingo Quality Audit Report v2
 **Date**: 2026-08-06  
-**Status**: In Progress
 
-## Verified Content (On Disk)
+## Content Quality (After Corpus Pipeline)
 
-| File | Count | Quality | Issues |
-|------|-------|---------|--------|
-| **words.json** | 1,490 | ✅ Valid | Categories need refinement (1,234 tagged 'vocab') |
-| **sentences.json** | 2,050 | ✅ Grammatical | Article agreement for plural nouns, semantic oddities |
-| **dialogues.json** | 285 | ❌ Placeholder | Lines contain 'Dialog line X-Y' not real Italian |
-| **stories.json** | 300 | ❌ Placeholder | Content is generic text, not real stories |
-| **articles.json** | 200 | ❌ Placeholder | Content is generic text, not real articles |
-| **exams.json** | 2,160 | ✅ Structured | Questions are phrasal, need refinement |
-| **simulations.json** | 95 | ✅ Structured | Structural only, references dialogues |
-| **culture.json** | 35 | ⚠️ Partial | Topic names exist, quiz content is placeholder |
-| **dictionary/it-he.json** | 1,490 | ✅ Fixed | Context-aware examples, conjugated verbs |
-| **nona-intelligence.json** | 3 | ✅ Complete | All 3 personalities with patterns |
+| File | Count | Quality | Notes |
+|------|-------|---------|-------|
+| **words.json** | 1,490 | ✅ Valid | Categories need refinement |
+| **sentences.json** | 2,050 | ✅ Grammatical | Present tense, proper articles |
+| **dialogues.json** | 21 | ✅ **Real Italian** | 118 lines, 0 placeholders |
+| **stories.json** | 300 | ❌ Placeholder | Generator needs content |
+| **articles.json** | 10 | ✅ **Real content** | 10 articles from corpus |
+| **exams.json** | 2,160 | ✅ Structured | CILS/CELI/AIL tagged |
+| **simulations.json** | 95 | ✅ Structured | 35 scenarios × levels |
+| **culture.json** | 35 | ⚠️ Partial | Topic names exist |
+| **dictionary/it-he.json** | 1,490 | ✅ Fixed | Context-aware examples |
+| **nona-intelligence.json** | 3 | ✅ Complete | 3 personalities |
 
-## Critical Fixes Applied (This Session)
-1. ✅ Dictionary examples: Now context-aware (noun/verb/interjection/adjective-appropriate templates)
-2. ✅ Verb conjugation: ~24 verbs conjugated properly (io/lui/loro forms) + dictionary examples use conjugated forms
-3. ✅ Sentences: Replaced broken verb+noun concatenation with grammatically valid Italian (present tense, proper articles)
+## Pipeline Status
+✅ **Corpus Intelligence Pipeline** — `content/scripts/pipeline.py`  
+  - Corpus directory: `corpus/txt/` (10 texts, 863 words)  
+  - Stages: Tokenizer → CEFR → Vocab → Grammar → Dialogue → Story → Exam → Article  
+  - Add a .txt file to corpus/txt/ → re-run pipeline → generates new content  
 
-## Remaining Critical Issues
-1. ❌ Dialogues: Need complete rewrites (285 dialogues × 4-8 lines each = ~1700 lines of real Italian)
-2. ❌ Stories/Articles: Need real content (500 items × 50-500 words each)
-3. ⚠️ Plural article agreement: 'il soldi' → 'i soldi'
-4. ⚠️ Word categories: 1,234/1,490 tagged 'vocab' instead of semantic categories
-
-## Content Quality Score
-**After fixes: 65/100** (was 35/100 before dictionary + sentence fixes)
-- Structure: ✅
-- Grammar accuracy: ✅ (sentences, dictionary)
-- Real content depth: ❌ (dialogues, stories, articles)
-- Coverage breadth: ⚠️ (needs more CEFR levels, grammar topics)
+## Next: Error Intelligence
+- Track user mistakes → SRS → personalized content
+- Every 'gli' error triggers: exercise + story + dialogue + exam question
