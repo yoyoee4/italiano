@@ -916,5 +916,539 @@
         "hint": "Translate: Perfetto. Compili questo modulo."
       }
     ]
+  },
+  {
+    "id": "car_rental_A1_0",
+    "scenario": "car_rental",
+    "title": "🚗 השכרת רכב - A1 (#1)",
+    "desc": "משכירים רכב",
+    "icon": "🚗",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "impiegato",
+        "it": "Buongiorno! Ha prenotato un'auto?",
+        "he": "בוקר טוב! הזמנת רכב?",
+        "hint": "Translate: Buongiorno! Ha prenotato un'auto?"
+      },
+      {
+        "role": "impiegato",
+        "it": "Ha la patente di guida?",
+        "he": "יש לך רישיון נהיגה?",
+        "hint": "Translate: Ha la patente di guida?"
+      },
+      {
+        "role": "cliente",
+        "it": "Sì, eccola.",
+        "he": "כן, הנה.",
+        "hint": "Translate: Sì, eccola."
+      },
+      {
+        "role": "impiegato",
+        "it": "Perfetto. Deve lasciare un deposito.",
+        "he": "מושלם. צריך להשאיר פיקדון.",
+        "hint": "Translate: Perfetto. Deve lasciare un deposito."
+      }
+    ]
+  },
+  {
+    "id": "car_rental_A1_1",
+    "scenario": "car_rental",
+    "title": "🚗 השכרת רכב - A1 (#2)",
+    "desc": "משכירים רכב",
+    "icon": "🚗",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "impiegato",
+        "it": "Buongiorno! Ha prenotato un'auto?",
+        "he": "בוקר טוב! הזמנת רכב?",
+        "hint": "Translate: Buongiorno! Ha prenotato un'auto?"
+      },
+      {
+        "role": "cliente",
+        "it": "Sì, ho prenotato una macchina piccola.",
+        "he": "כן, הזמנתי רכב קטן.",
+        "hint": "Translate: Sì, ho prenotato una macchina piccola."
+      },
+      {
+        "role": "impiegato",
+        "it": "Ha la patente di guida?",
+        "he": "יש לך רישיון נהיגה?",
+        "hint": "Translate: Ha la patente di guida?"
+      },
+      {
+        "role": "cliente",
+        "it": "Sì, eccola.",
+        "he": "כן, הנה.",
+        "hint": "Translate: Sì, eccola."
+      },
+      {
+        "role": "impiegato",
+        "it": "Perfetto. Deve lasciare un deposito.",
+        "he": "מושלם. צריך להשאיר פיקדון.",
+        "hint": "Translate: Perfetto. Deve lasciare un deposito."
+      }
+    ]
+  },
+  {
+    "id": "car_rental_A1_2",
+    "scenario": "car_rental",
+    "title": "🚗 השכרת רכב - A1 (#3)",
+    "desc": "משכירים רכב",
+    "icon": "🚗",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "impiegato",
+        "it": "Buongiorno! Ha prenotato un'auto?",
+        "he": "בוקר טוב! הזמנת רכב?",
+        "hint": "Translate: Buongiorno! Ha prenotato un'auto?"
+      },
+      {
+        "role": "impiegato",
+        "it": "Ha la patente di guida?",
+        "he": "יש לך רישיון נהיגה?",
+        "hint": "Translate: Ha la patente di guida?"
+      },
+      {
+        "role": "cliente",
+        "it": "Sì, eccola.",
+        "he": "כן, הנה.",
+        "hint": "Translate: Sì, eccola."
+      }
+    ]
+  },
+  {
+    "id": "doctor_A1_0",
+    "scenario": "doctor",
+    "title": "🩺 אצל רופא - A1 (#1)",
+    "desc": "בדיקה אצל רופא כללי",
+    "icon": "🩺",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "dottore",
+        "it": "Buongiorno! Cosa la porta qui?",
+        "he": "בוקר טוב! מה מביא אותך לכאן?",
+        "hint": "Translate: Buongiorno! Cosa la porta qui?"
+      },
+      {
+        "role": "paziente",
+        "it": "Non mi sento bene da qualche giorno.",
+        "he": "אני לא מרגיש טוב כבר כמה ימים.",
+        "hint": "Translate: Non mi sento bene da qualche giorno."
+      },
+      {
+        "role": "dottore",
+        "it": "Ha la febbre?",
+        "he": "יש לך חום?",
+        "hint": "Translate: Ha la febbre?"
+      },
+      {
+        "role": "paziente",
+        "it": "Sì, 38 gradi.",
+        "he": "כן, 38 מעלות.",
+        "hint": "Translate: Sì, 38 gradi."
+      },
+      {
+        "role": "dottore",
+        "it": "Apra la bocca, per favore.",
+        "he": "פתח את הפה, בבקשה.",
+        "hint": "Translate: Apra la bocca, per favore."
+      }
+    ]
+  },
+  {
+    "id": "doctor_A1_1",
+    "scenario": "doctor",
+    "title": "🩺 אצל רופא - A1 (#2)",
+    "desc": "בדיקה אצל רופא כללי",
+    "icon": "🩺",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "dottore",
+        "it": "Buongiorno! Cosa la porta qui?",
+        "he": "בוקר טוב! מה מביא אותך לכאן?",
+        "hint": "Translate: Buongiorno! Cosa la porta qui?"
+      },
+      {
+        "role": "paziente",
+        "it": "Non mi sento bene da qualche giorno.",
+        "he": "אני לא מרגיש טוב כבר כמה ימים.",
+        "hint": "Translate: Non mi sento bene da qualche giorno."
+      },
+      {
+        "role": "dottore",
+        "it": "Ha la febbre?",
+        "he": "יש לך חום?",
+        "hint": "Translate: Ha la febbre?"
+      },
+      {
+        "role": "paziente",
+        "it": "Sì, 38 gradi.",
+        "he": "כן, 38 מעלות.",
+        "hint": "Translate: Sì, 38 gradi."
+      },
+      {
+        "role": "dottore",
+        "it": "Apra la bocca, per favore.",
+        "he": "פתח את הפה, בבקשה.",
+        "hint": "Translate: Apra la bocca, per favore."
+      }
+    ]
+  },
+  {
+    "id": "doctor_A1_2",
+    "scenario": "doctor",
+    "title": "🩺 אצל רופא - A1 (#3)",
+    "desc": "בדיקה אצל רופא כללי",
+    "icon": "🩺",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "dottore",
+        "it": "Buongiorno! Cosa la porta qui?",
+        "he": "בוקר טוב! מה מביא אותך לכאן?",
+        "hint": "Translate: Buongiorno! Cosa la porta qui?"
+      },
+      {
+        "role": "paziente",
+        "it": "Non mi sento bene da qualche giorno.",
+        "he": "אני לא מרגיש טוב כבר כמה ימים.",
+        "hint": "Translate: Non mi sento bene da qualche giorno."
+      },
+      {
+        "role": "dottore",
+        "it": "Ha la febbre?",
+        "he": "יש לך חום?",
+        "hint": "Translate: Ha la febbre?"
+      },
+      {
+        "role": "paziente",
+        "it": "Sì, 38 gradi.",
+        "he": "כן, 38 מעלות.",
+        "hint": "Translate: Sì, 38 gradi."
+      },
+      {
+        "role": "dottore",
+        "it": "Apra la bocca, per favore.",
+        "he": "פתח את הפה, בבקשה.",
+        "hint": "Translate: Apra la bocca, per favore."
+      }
+    ]
+  },
+  {
+    "id": "museum_A1_0",
+    "scenario": "museum",
+    "title": "🏛️ במוזיאון - A1 (#1)",
+    "desc": "סיור במוזיאון",
+    "icon": "🏛️",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "guida",
+        "it": "Benvenuti al museo! Questo è il biglietto.",
+        "he": "ברוכים הבאים למוזיאון! הנה הכרטיס.",
+        "hint": "Translate: Benvenuti al museo! Questo è il biglietto."
+      },
+      {
+        "role": "visitatore",
+        "it": "Grazie. Quanto dura la visita?",
+        "he": "תודה. כמה זמן נמשך הביקור?",
+        "hint": "Translate: Grazie. Quanto dura la visita?"
+      },
+      {
+        "role": "guida",
+        "it": "Circa due ore. Si può fotografare senza flash.",
+        "he": "בערך שעתיים. אפשר לצלם בלי פלש.",
+        "hint": "Translate: Circa due ore. Si può fotografare senza flash."
+      },
+      {
+        "role": "guida",
+        "it": "Sì, le trova all'ingresso. Costa 5 euro.",
+        "he": "כן, יש בכניסה. עולה 5 יורו.",
+        "hint": "Translate: Sì, le trova all'ingresso. Costa 5 euro."
+      }
+    ]
+  },
+  {
+    "id": "museum_A1_1",
+    "scenario": "museum",
+    "title": "🏛️ במוזיאון - A1 (#2)",
+    "desc": "סיור במוזיאון",
+    "icon": "🏛️",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "guida",
+        "it": "Benvenuti al museo! Questo è il biglietto.",
+        "he": "ברוכים הבאים למוזיאון! הנה הכרטיס.",
+        "hint": "Translate: Benvenuti al museo! Questo è il biglietto."
+      },
+      {
+        "role": "visitatore",
+        "it": "Grazie. Quanto dura la visita?",
+        "he": "תודה. כמה זמן נמשך הביקור?",
+        "hint": "Translate: Grazie. Quanto dura la visita?"
+      },
+      {
+        "role": "guida",
+        "it": "Circa due ore. Si può fotografare senza flash.",
+        "he": "בערך שעתיים. אפשר לצלם בלי פלש.",
+        "hint": "Translate: Circa due ore. Si può fotografare senza flash."
+      }
+    ]
+  },
+  {
+    "id": "museum_A1_2",
+    "scenario": "museum",
+    "title": "🏛️ במוזיאון - A1 (#3)",
+    "desc": "סיור במוזיאון",
+    "icon": "🏛️",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "guida",
+        "it": "Benvenuti al museo! Questo è il biglietto.",
+        "he": "ברוכים הבאים למוזיאון! הנה הכרטיס.",
+        "hint": "Translate: Benvenuti al museo! Questo è il biglietto."
+      },
+      {
+        "role": "visitatore",
+        "it": "Grazie. Quanto dura la visita?",
+        "he": "תודה. כמה זמן נמשך הביקור?",
+        "hint": "Translate: Grazie. Quanto dura la visita?"
+      },
+      {
+        "role": "guida",
+        "it": "Circa due ore. Si può fotografare senza flash.",
+        "he": "בערך שעתיים. אפשר לצלם בלי פלש.",
+        "hint": "Translate: Circa due ore. Si può fotografare senza flash."
+      }
+    ]
+  },
+  {
+    "id": "friends_A1_0",
+    "scenario": "friends",
+    "title": "👫 עם חברים - A1 (#1)",
+    "desc": "מפגש חברים",
+    "icon": "👫",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "amico1",
+        "it": "Ciao! Come stai? Long time no see!",
+        "he": "היי! מה שלומך? מזמן לא התראנו!",
+        "hint": "Translate: Ciao! Come stai? Long time no see!"
+      },
+      {
+        "role": "amico2",
+        "it": "Ciao! Bene, grazie. E tu?",
+        "he": "היי! טוב, תודה. ואתה?",
+        "hint": "Translate: Ciao! Bene, grazie. E tu?"
+      },
+      {
+        "role": "amico1",
+        "it": "Tutto bene. Hai voglia di uscire stasera?",
+        "he": "הכל טוב. בא לך לצאת הערב?",
+        "hint": "Translate: Tutto bene. Hai voglia di uscire stasera?"
+      },
+      {
+        "role": "amico2",
+        "it": "Volentieri! Andiamo a cena fuori?",
+        "he": "בשמחה! נלך לאכול בחוץ?",
+        "hint": "Translate: Volentieri! Andiamo a cena fuori?"
+      },
+      {
+        "role": "amico1",
+        "it": "Buona idea! Ti chiamo dopo.",
+        "he": "רעיון טוב! אני מתקשר אליך אחרי.",
+        "hint": "Translate: Buona idea! Ti chiamo dopo."
+      }
+    ]
+  },
+  {
+    "id": "friends_A1_1",
+    "scenario": "friends",
+    "title": "👫 עם חברים - A1 (#2)",
+    "desc": "מפגש חברים",
+    "icon": "👫",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "amico1",
+        "it": "Ciao! Come stai? Long time no see!",
+        "he": "היי! מה שלומך? מזמן לא התראנו!",
+        "hint": "Translate: Ciao! Come stai? Long time no see!"
+      },
+      {
+        "role": "amico2",
+        "it": "Ciao! Bene, grazie. E tu?",
+        "he": "היי! טוב, תודה. ואתה?",
+        "hint": "Translate: Ciao! Bene, grazie. E tu?"
+      },
+      {
+        "role": "amico1",
+        "it": "Tutto bene. Hai voglia di uscire stasera?",
+        "he": "הכל טוב. בא לך לצאת הערב?",
+        "hint": "Translate: Tutto bene. Hai voglia di uscire stasera?"
+      },
+      {
+        "role": "amico2",
+        "it": "Volentieri! Andiamo a cena fuori?",
+        "he": "בשמחה! נלך לאכול בחוץ?",
+        "hint": "Translate: Volentieri! Andiamo a cena fuori?"
+      },
+      {
+        "role": "amico1",
+        "it": "Buona idea! Ti chiamo dopo.",
+        "he": "רעיון טוב! אני מתקשר אליך אחרי.",
+        "hint": "Translate: Buona idea! Ti chiamo dopo."
+      }
+    ]
+  },
+  {
+    "id": "friends_A1_2",
+    "scenario": "friends",
+    "title": "👫 עם חברים - A1 (#3)",
+    "desc": "מפגש חברים",
+    "icon": "👫",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "amico1",
+        "it": "Ciao! Come stai? Long time no see!",
+        "he": "היי! מה שלומך? מזמן לא התראנו!",
+        "hint": "Translate: Ciao! Come stai? Long time no see!"
+      },
+      {
+        "role": "amico2",
+        "it": "Ciao! Bene, grazie. E tu?",
+        "he": "היי! טוב, תודה. ואתה?",
+        "hint": "Translate: Ciao! Bene, grazie. E tu?"
+      },
+      {
+        "role": "amico1",
+        "it": "Tutto bene. Hai voglia di uscire stasera?",
+        "he": "הכל טוב. בא לך לצאת הערב?",
+        "hint": "Translate: Tutto bene. Hai voglia di uscire stasera?"
+      },
+      {
+        "role": "amico2",
+        "it": "Volentieri! Andiamo a cena fuori?",
+        "he": "בשמחה! נלך לאכול בחוץ?",
+        "hint": "Translate: Volentieri! Andiamo a cena fuori?"
+      },
+      {
+        "role": "amico1",
+        "it": "Buona idea! Ti chiamo dopo.",
+        "he": "רעיון טוב! אני מתקשר אליך אחרי.",
+        "hint": "Translate: Buona idea! Ti chiamo dopo."
+      }
+    ]
+  },
+  {
+    "id": "university_A1_0",
+    "scenario": "university",
+    "title": "🎓 באוניברסיטה - A1 (#1)",
+    "desc": "רישום לקורס",
+    "icon": "🎓",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "professore",
+        "it": "Il corso inizia a ottobre e dura tre mesi.",
+        "he": "הקורס מתחיל באוקטובר ונמשך שלושה חודשים.",
+        "hint": "Translate: Il corso inizia a ottobre e dura tre mesi."
+      },
+      {
+        "role": "studente",
+        "it": "Quanto costa l'iscrizione?",
+        "he": "כמה עולה ההרשמה?",
+        "hint": "Translate: Quanto costa l'iscrizione?"
+      },
+      {
+        "role": "professore",
+        "it": "200 euro. Può pagare anche a rate.",
+        "he": "200 יורו. אפשר לשלם גם בתשלומים.",
+        "hint": "Translate: 200 euro. Può pagare anche a rate."
+      }
+    ]
+  },
+  {
+    "id": "university_A1_1",
+    "scenario": "university",
+    "title": "🎓 באוניברסיטה - A1 (#2)",
+    "desc": "רישום לקורס",
+    "icon": "🎓",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "professore",
+        "it": "Buongiorno! Come posso aiutarla?",
+        "he": "בוקר טוב! איך אני יכול לעזור?",
+        "hint": "Translate: Buongiorno! Come posso aiutarla?"
+      },
+      {
+        "role": "studente",
+        "it": "Vorrei informazioni sul corso di italiano.",
+        "he": "הייתי רוצה מידע על קורס איטלקית.",
+        "hint": "Translate: Vorrei informazioni sul corso di italiano."
+      },
+      {
+        "role": "professore",
+        "it": "Il corso inizia a ottobre e dura tre mesi.",
+        "he": "הקורס מתחיל באוקטובר ונמשך שלושה חודשים.",
+        "hint": "Translate: Il corso inizia a ottobre e dura tre mesi."
+      },
+      {
+        "role": "studente",
+        "it": "Quanto costa l'iscrizione?",
+        "he": "כמה עולה ההרשמה?",
+        "hint": "Translate: Quanto costa l'iscrizione?"
+      },
+      {
+        "role": "professore",
+        "it": "200 euro. Può pagare anche a rate.",
+        "he": "200 יורו. אפשר לשלם גם בתשלומים.",
+        "hint": "Translate: 200 euro. Può pagare anche a rate."
+      }
+    ]
+  },
+  {
+    "id": "university_A1_2",
+    "scenario": "university",
+    "title": "🎓 באוניברסיטה - A1 (#3)",
+    "desc": "רישום לקורס",
+    "icon": "🎓",
+    "level": "A1",
+    "lines": [
+      {
+        "role": "professore",
+        "it": "Buongiorno! Come posso aiutarla?",
+        "he": "בוקר טוב! איך אני יכול לעזור?",
+        "hint": "Translate: Buongiorno! Come posso aiutarla?"
+      },
+      {
+        "role": "professore",
+        "it": "Il corso inizia a ottobre e dura tre mesi.",
+        "he": "הקורס מתחיל באוקטובר ונמשך שלושה חודשים.",
+        "hint": "Translate: Il corso inizia a ottobre e dura tre mesi."
+      },
+      {
+        "role": "studente",
+        "it": "Quanto costa l'iscrizione?",
+        "he": "כמה עולה ההרשמה?",
+        "hint": "Translate: Quanto costa l'iscrizione?"
+      },
+      {
+        "role": "professore",
+        "it": "200 euro. Può pagare anche a rate.",
+        "he": "200 יורו. אפשר לשלם גם בתשלומים.",
+        "hint": "Translate: 200 euro. Può pagare anche a rate."
+      }
+    ]
   }
 ]

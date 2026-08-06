@@ -247,6 +247,57 @@ def generate_dialogues(corpus_words, existing_scenarios):
             ("cliente", "Sì, ecco il mio passaporto.", "כן, הנה הדרכון שלי.", "A2"),
             ("impiegato", "Perfetto. Compili questo modulo.", "מושלם. מלא את הטופס הזה.", "B1"),
         ],
+        "car_rental": [
+            ("impiegato","Buongiorno! Ha prenotato un'auto?","בוקר טוב! הזמנת רכב?","A2"),
+            ("cliente","Sì, ho prenotato una macchina piccola.","כן, הזמנתי רכב קטן.","B1"),
+            ("impiegato","Ha la patente di guida?","יש לך רישיון נהיגה?","A2"),
+            ("cliente","Sì, eccola.","כן, הנה.","A2"),
+            ("impiegato","Perfetto. Deve lasciare un deposito.","מושלם. צריך להשאיר פיקדון.","B1"),
+        ],
+        "doctor": [
+            ("dottore","Buongiorno! Cosa la porta qui?","בוקר טוב! מה מביא אותך לכאן?","A2"),
+            ("paziente","Non mi sento bene da qualche giorno.","אני לא מרגיש טוב כבר כמה ימים.","A2"),
+            ("dottore","Ha la febbre?","יש לך חום?","A1"),
+            ("paziente","Sì, 38 gradi.","כן, 38 מעלות.","A2"),
+            ("dottore","Apra la bocca, per favore.","פתח את הפה, בבקשה.","A2"),
+            ("dottore","Le prescrivo un antibiotico.","אני רושם לך אנטיביוטיקה.","B1"),
+        ],
+        "post_office": [
+            ("impiegato","Buongiorno! Deve spedire qualcosa?","בוקר טוב! צריך לשלוח משהו?","A2"),
+            ("cliente","Sì, vorrei spedire un pacco in Italia.","כן, הייתי רוצה לשלוח חבילה באיטליה.","A2"),
+            ("impiegato","Dove vuole spedirlo?","לאן אתה רוצה לשלוח?","A1"),
+            ("cliente","A Firenze.","לפירנצה.","A1"),
+            ("impiegato","Sono 8 euro e 50. Compili questo modulo.","8 יורו ו-50. מלא את הטופס הזה.","A2"),
+        ],
+        "museum": [
+            ("guida","Benvenuti al museo! Questo è il biglietto.","ברוכים הבאים למוזיאון! הנה הכרטיס.","A2"),
+            ("visitatore","Grazie. Quanto dura la visita?","תודה. כמה זמן נמשך הביקור?","A2"),
+            ("guida","Circa due ore. Si può fotografare senza flash.","בערך שעתיים. אפשר לצלם בלי פלש.","A2"),
+            ("visitatore","Ci sono audioguide in inglese?","יש מדריכי שמע באנגלית?","B1"),
+            ("guida","Sì, le trova all'ingresso. Costa 5 euro.","כן, יש בכניסה. עולה 5 יורו.","B1"),
+        ],
+        "friends": [
+            ("amico1","Ciao! Come stai? Long time no see!","היי! מה שלומך? מזמן לא התראנו!","A1"),
+            ("amico2","Ciao! Bene, grazie. E tu?","היי! טוב, תודה. ואתה?","A1"),
+            ("amico1","Tutto bene. Hai voglia di uscire stasera?","הכל טוב. בא לך לצאת הערב?","A2"),
+            ("amico2","Volentieri! Andiamo a cena fuori?","בשמחה! נלך לאכול בחוץ?","A2"),
+            ("amico1","Buona idea! Ti chiamo dopo.","רעיון טוב! אני מתקשר אליך אחרי.","A2"),
+        ],
+        "job_interview": [
+            ("intervistatore","Buongiorno! Si accomodi.","בוקר טוב! שב בבקשה.","B1"),
+            ("candidato","Buongiorno, grazie.","בוקר טוב, תודה.","A2"),
+            ("intervistatore","Mi parli della sua esperienza lavorativa.","ספר לי על ניסיון העבודה שלך.","B1"),
+            ("candidato","Ho lavorato per tre anni come sviluppatore.","עבדתי שלוש שנים כמפתח.","B1"),
+            ("intervistatore","Perché vuole lavorare per la nostra azienda?","למה אתה רוצה לעבוד בחברה שלנו?","B2"),
+            ("candidato","Ammiro molto il vostro lavoro nel settore.","אני מאוד מעריץ את העבודה שלכם בתחום.","C1"),
+        ],
+        "university": [
+            ("professore","Buongiorno! Come posso aiutarla?","בוקר טוב! איך אני יכול לעזור?","B1"),
+            ("studente","Vorrei informazioni sul corso di italiano.","הייתי רוצה מידע על קורס איטלקית.","B1"),
+            ("professore","Il corso inizia a ottobre e dura tre mesi.","הקורס מתחיל באוקטובר ונמשך שלושה חודשים.","B1"),
+            ("studente","Quanto costa l'iscrizione?","כמה עולה ההרשמה?","A2"),
+            ("professore","200 euro. Può pagare anche a rate.","200 יורו. אפשר לשלם גם בתשלומים.","B1"),
+        ],
     }
     
     dialogues = []

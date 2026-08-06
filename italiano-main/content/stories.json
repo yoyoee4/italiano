@@ -7,24 +7,24 @@
     "content": "CONTENT_PLACEHOLDER_Una giornata a Roma",
     "glossary": [
       {
-        "it": "ha",
-        "he": "ha"
-      },
-      {
-        "it": "ogni",
-        "he": "ogni"
-      },
-      {
         "it": "si",
         "he": "si"
+      },
+      {
+        "it": "ha",
+        "he": "ha"
       },
       {
         "it": "sono",
         "he": "sono"
       },
       {
-        "it": "mi",
-        "he": "mi"
+        "it": "ogni",
+        "he": "ogni"
+      },
+      {
+        "it": "italiana",
+        "he": "italiana"
       }
     ],
     "questions": [
@@ -51,24 +51,24 @@
     "content": "CONTENT_PLACEHOLDER_Il mio amico italiano",
     "glossary": [
       {
-        "it": "ha",
-        "he": "ha"
-      },
-      {
-        "it": "ogni",
-        "he": "ogni"
-      },
-      {
         "it": "si",
         "he": "si"
+      },
+      {
+        "it": "ha",
+        "he": "ha"
       },
       {
         "it": "sono",
         "he": "sono"
       },
       {
-        "it": "mi",
-        "he": "mi"
+        "it": "ogni",
+        "he": "ogni"
+      },
+      {
+        "it": "italiana",
+        "he": "italiana"
       }
     ],
     "questions": [
@@ -95,6 +95,10 @@
     "content": "CONTENT_PLACEHOLDER_La famiglia di Marco",
     "glossary": [
       {
+        "it": "si",
+        "he": "si"
+      },
+      {
         "it": "ha",
         "he": "ha"
       },
@@ -103,16 +107,12 @@
         "he": "ogni"
       },
       {
-        "it": "si",
-        "he": "si"
+        "it": "italiana",
+        "he": "italiana"
       },
       {
-        "it": "mi",
-        "he": "mi"
-      },
-      {
-        "it": "pizza",
-        "he": "pizza"
+        "it": "roma",
+        "he": "roma"
       }
     ],
     "questions": [
@@ -143,20 +143,20 @@
         "he": "ha"
       },
       {
-        "it": "ogni",
-        "he": "ogni"
-      },
-      {
         "it": "sono",
         "he": "sono"
       },
       {
-        "it": "pizza",
-        "he": "pizza"
+        "it": "ogni",
+        "he": "ogni"
       },
       {
         "it": "italiana",
         "he": "italiana"
+      },
+      {
+        "it": "roma",
+        "he": "roma"
       }
     ],
     "questions": [
@@ -183,24 +183,24 @@
     "content": "CONTENT_PLACEHOLDER_Il viaggio a Venezia",
     "glossary": [
       {
-        "it": "ha",
-        "he": "ha"
-      },
-      {
-        "it": "ogni",
-        "he": "ogni"
-      },
-      {
         "it": "si",
         "he": "si"
+      },
+      {
+        "it": "ha",
+        "he": "ha"
       },
       {
         "it": "sono",
         "he": "sono"
       },
       {
-        "it": "mi",
-        "he": "mi"
+        "it": "ogni",
+        "he": "ogni"
+      },
+      {
+        "it": "italiana",
+        "he": "italiana"
       }
     ],
     "questions": [
@@ -227,6 +227,10 @@
     "content": "CONTENT_PLACEHOLDER_La storia della pizza",
     "glossary": [
       {
+        "it": "si",
+        "he": "si"
+      },
+      {
         "it": "ha",
         "he": "ha"
       },
@@ -235,16 +239,12 @@
         "he": "ogni"
       },
       {
-        "it": "si",
-        "he": "si"
+        "it": "italiana",
+        "he": "italiana"
       },
       {
-        "it": "mi",
-        "he": "mi"
-      },
-      {
-        "it": "pizza",
-        "he": "pizza"
+        "it": "roma",
+        "he": "roma"
       }
     ],
     "questions": [
@@ -275,20 +275,20 @@
         "he": "ha"
       },
       {
-        "it": "ogni",
-        "he": "ogni"
-      },
-      {
         "it": "sono",
         "he": "sono"
       },
       {
-        "it": "mi",
-        "he": "mi"
+        "it": "ogni",
+        "he": "ogni"
       },
       {
-        "it": "pizza",
-        "he": "pizza"
+        "it": "italiana",
+        "he": "italiana"
+      },
+      {
+        "it": "roma",
+        "he": "roma"
       }
     ],
     "questions": [
@@ -315,24 +315,24 @@
     "content": "CONTENT_PLACEHOLDER_La sfida dell'italiano",
     "glossary": [
       {
-        "it": "ha",
-        "he": "ha"
-      },
-      {
-        "it": "ogni",
-        "he": "ogni"
-      },
-      {
         "it": "si",
         "he": "si"
+      },
+      {
+        "it": "ha",
+        "he": "ha"
       },
       {
         "it": "sono",
         "he": "sono"
       },
       {
-        "it": "mi",
-        "he": "mi"
+        "it": "ogni",
+        "he": "ogni"
+      },
+      {
+        "it": "italiana",
+        "he": "italiana"
       }
     ],
     "questions": [
@@ -363,10 +363,6 @@
         "he": "ha"
       },
       {
-        "it": "pizza",
-        "he": "pizza"
-      },
-      {
         "it": "italiana",
         "he": "italiana"
       },
@@ -375,8 +371,12 @@
         "he": "roma"
       },
       {
-        "it": "lavoro",
-        "he": "lavoro"
+        "it": "italia",
+        "he": "italia"
+      },
+      {
+        "it": "pizza",
+        "he": "pizza"
       }
     ],
     "questions": [
@@ -403,24 +403,24 @@
     "content": "CONTENT_PLACEHOLDER_Le tradizioni italiane",
     "glossary": [
       {
-        "it": "ha",
-        "he": "ha"
-      },
-      {
-        "it": "ogni",
-        "he": "ogni"
-      },
-      {
         "it": "si",
         "he": "si"
+      },
+      {
+        "it": "ha",
+        "he": "ha"
       },
       {
         "it": "sono",
         "he": "sono"
       },
       {
-        "it": "mi",
-        "he": "mi"
+        "it": "ogni",
+        "he": "ogni"
+      },
+      {
+        "it": "italiana",
+        "he": "italiana"
       }
     ],
     "questions": [
@@ -447,10 +447,6 @@
     "content": "CONTENT_PLACEHOLDER_La cultura del design italiano",
     "glossary": [
       {
-        "it": "ogni",
-        "he": "ogni"
-      },
-      {
         "it": "si",
         "he": "si"
       },
@@ -459,12 +455,16 @@
         "he": "sono"
       },
       {
-        "it": "mi",
-        "he": "mi"
+        "it": "ogni",
+        "he": "ogni"
       },
       {
-        "it": "pizza",
-        "he": "pizza"
+        "it": "italiana",
+        "he": "italiana"
+      },
+      {
+        "it": "italia",
+        "he": "italia"
       }
     ],
     "questions": [
@@ -491,24 +491,24 @@
     "content": "CONTENT_PLACEHOLDER_L'evoluzione della lingua italiana",
     "glossary": [
       {
-        "it": "ha",
-        "he": "ha"
-      },
-      {
-        "it": "ogni",
-        "he": "ogni"
-      },
-      {
         "it": "si",
         "he": "si"
+      },
+      {
+        "it": "ha",
+        "he": "ha"
       },
       {
         "it": "sono",
         "he": "sono"
       },
       {
-        "it": "mi",
-        "he": "mi"
+        "it": "ogni",
+        "he": "ogni"
+      },
+      {
+        "it": "italiana",
+        "he": "italiana"
       }
     ],
     "questions": [
