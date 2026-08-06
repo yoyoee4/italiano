@@ -1,25 +1,73 @@
 [
   {
     "id": "art_0000",
-    "title": "חדשות 1",
+    "title": "Notizie da al-ristorante.txt",
     "type": "news",
     "level": "A1",
-    "content": "תוכן ברמת A1: חדשות מספר 1.",
-    "word_count": 50,
+    "content": "Quando vado al ristorante italiano, prima ordino un antipasto. Poi prendo un primo piatto, di solito pasta. Dopo viene il secondo piatto con il contorno. Alla fine scelgo il dolce. Il cameriere porta il conto. Di solito lascio la mancia. Al ristorante si mangia lentamente e si parla. La cena italiana dura almeno due ore. Il vino accompagna sempre il pasto. Alla fine del pasto molti italiani prendono un caffè. Non ordinano mai il cappuccino dopo cena, solo al mattino.",
+    "word_count": 80,
+    "cefr_vocabulary": {
+      "ristorante": "A1",
+      "vado": "A1",
+      "prima": "A1",
+      "antipasto": "A1",
+      "ordino": "A1",
+      "italiano": "A1"
+    },
     "glossary": [
       {
-        "it": "parola0",
-        "he": "מילה0"
+        "it": "ristorante",
+        "he": "translation_ristorante"
+      },
+      {
+        "it": "vado",
+        "he": "translation_vado"
+      },
+      {
+        "it": "prima",
+        "he": "translation_prima"
+      },
+      {
+        "it": "antipasto",
+        "he": "translation_antipasto"
+      },
+      {
+        "it": "ordino",
+        "he": "translation_ordino"
+      },
+      {
+        "it": "italiano",
+        "he": "translation_italiano"
       }
     ],
     "questions": [
       {
-        "q": "שאלת הבנה",
+        "q": "Qual è l'argomento principale del testo?",
         "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
         ],
         "correct": 0
       }
@@ -32,25 +80,63 @@
   },
   {
     "id": "art_0001",
-    "title": "בלוג 2",
+    "title": "Blog da calcio.txt",
     "type": "blog",
     "level": "A2",
-    "content": "תוכן ברמת A2: בלוג מספר 2.",
-    "word_count": 100,
+    "content": "Il calcio è lo sport più popolare in Italia. La serie A è il campionato di calcio italiano. Le squadre più famose sono Juventus, Milan, Inter e Roma. Ogni domenica milioni di italiani seguono le partite in televisione o allo stadio. I tifosi sono molto appassionati. La nazionale italiana ha vinto quattro campionati del mondo. I calciatori italiani più famosi sono stati Roberto Baggio, Paolo Maldini e Alessandro Del Piero. Il calcio è una parte importante della cultura italiana. Anche i bambini giocano a calcio nei parchi e nelle strade.",
+    "word_count": 90,
+    "cefr_vocabulary": {
+      "italia": "A2",
+      "popolare": "A2",
+      "calcio": "A2",
+      "sport": "A2"
+    },
     "glossary": [
       {
-        "it": "parola1",
-        "he": "מילה1"
+        "it": "italia",
+        "he": "translation_italia"
+      },
+      {
+        "it": "popolare",
+        "he": "translation_popolare"
+      },
+      {
+        "it": "calcio",
+        "he": "translation_calcio"
+      },
+      {
+        "it": "sport",
+        "he": "translation_sport"
       }
     ],
     "questions": [
       {
-        "q": "שאלת הבנה",
+        "q": "Qual è l'argomento principale del testo?",
         "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
         ],
         "correct": 0
       }
@@ -63,149 +149,364 @@
   },
   {
     "id": "art_0002",
-    "title": "מתכון 3",
+    "title": "Ricetta da cultura.txt",
     "type": "recipe",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מתכון מספר 3.",
-    "word_count": 150,
+    "level": "A1",
+    "content": "L'Italia è famosa per la sua arte e cultura. Il Colosseo a Roma è il monumento più visitato. Ogni anno milioni di turisti vengono a vedere i Musei Vaticani e la Cappella Sistina. Firenze è la culla del Rinascimento. La Galleria degli Uffizi ha opere di Leonardo, Michelangelo e Botticelli. Milano è famosa per il Duomo e il teatro alla Scala. Napoli ha il Museo Archeologico Nazionale con i reperti di Pompei. La cultura italiana non è solo arte antica. L'Italia ha anche un cinema importante, una musica famosa e una moda conosciuta in tutto il mondo.",
+    "word_count": 97,
+    "cefr_vocabulary": {
+      "cultura": "A1",
+      "arte": "A1",
+      "famosa": "A1",
+      "l'italia": "A1"
+    },
     "glossary": [
       {
-        "it": "parola2",
-        "he": "מילה2"
+        "it": "cultura",
+        "he": "translation_cultura"
+      },
+      {
+        "it": "arte",
+        "he": "translation_arte"
+      },
+      {
+        "it": "famosa",
+        "he": "translation_famosa"
+      },
+      {
+        "it": "l'italia",
+        "he": "translation_l'italia"
       }
     ],
     "questions": [
       {
-        "q": "שאלת הבנה",
+        "q": "Qual è l'argomento principale del testo?",
         "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
         ],
         "correct": 0
       }
     ],
     "audio_url": "audio/articles/art_0002.mp3",
     "srs_tags": [
-      "B1_reading",
+      "A1_reading",
       "recipe"
     ]
   },
   {
     "id": "art_0003",
-    "title": "תפריט 4",
-    "type": "menu",
-    "level": "B2",
-    "content": "תוכן ברמת B2: תפריט מספר 4.",
-    "word_count": 200,
+    "title": "Guida da lavoro.txt",
+    "type": "guide",
+    "level": "A2",
+    "content": "Lavoro in un ufficio moderno nel centro di Milano. Il mio ufficio è al decimo piano con una bella vista sulla città. Ogni mattina alle nove faccio una riunione con i colleghi. Discutiamo dei progetti in corso. A mezzogiorno faccio una pausa pranzo con i colleghi. Nel pomeriggio lavoro al computer e rispondo alle email. Ogni tanto partecipo a conferenze e corsi di formazione. Il mio lavoro mi piace perché è interessante e dinamico. L'orario di lavoro è dalle 9 alle 18 con un'ora di pausa.",
+    "word_count": 84,
+    "cefr_vocabulary": {
+      "ufficio": "A2",
+      "moderno": "A2",
+      "milano": "A2",
+      "lavoro": "A2",
+      "centro": "A2"
+    },
     "glossary": [
       {
-        "it": "parola3",
-        "he": "מילה3"
+        "it": "ufficio",
+        "he": "translation_ufficio"
+      },
+      {
+        "it": "moderno",
+        "he": "translation_moderno"
+      },
+      {
+        "it": "milano",
+        "he": "translation_milano"
+      },
+      {
+        "it": "lavoro",
+        "he": "translation_lavoro"
+      },
+      {
+        "it": "centro",
+        "he": "translation_centro"
       }
     ],
     "questions": [
       {
-        "q": "שאלת הבנה",
+        "q": "Qual è l'argomento principale del testo?",
         "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
         ],
         "correct": 0
       }
     ],
     "audio_url": "audio/articles/art_0003.mp3",
     "srs_tags": [
-      "B2_reading",
-      "menu"
+      "A2_reading",
+      "guide"
     ]
   },
   {
     "id": "art_0004",
-    "title": "מייל 5",
-    "type": "email",
-    "level": "C1",
-    "content": "תוכן ברמת C1: מייל מספר 5.",
-    "word_count": 250,
+    "title": "Racconto da pizza.txt",
+    "type": "story",
+    "level": "A1",
+    "content": "La pizza è uno dei piatti più famosi d'Italia. La pizza napoletana è la più antica. Ha la base sottile e i bordi alti. La pizza margherita ha pomodoro, mozzarella e basilico. I colori sono come la bandiera italiana: rosso, bianco e verde. La pizza si cuoce nel forno a legna a temperatura molto alta. In Italia la pizza si mangia soprattutto la sera. Ogni regione ha le sue varianti. La pizza romana è più sottile e croccante. A Genova fanno la focaccia. In Sicilia la pizza ha la forma rettangolare e più condimento.",
+    "word_count": 94,
+    "cefr_vocabulary": {
+      "d'italia": "A1",
+      "famosi": "A1",
+      "pizza": "A1",
+      "piatti": "A1"
+    },
     "glossary": [
       {
-        "it": "parola4",
-        "he": "מילה4"
+        "it": "d'italia",
+        "he": "translation_d'italia"
+      },
+      {
+        "it": "famosi",
+        "he": "translation_famosi"
+      },
+      {
+        "it": "pizza",
+        "he": "translation_pizza"
+      },
+      {
+        "it": "piatti",
+        "he": "translation_piatti"
       }
     ],
     "questions": [
       {
-        "q": "שאלת הבנה",
+        "q": "Qual è l'argomento principale del testo?",
         "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
         ],
         "correct": 0
       }
     ],
     "audio_url": "audio/articles/art_0004.mp3",
     "srs_tags": [
-      "C1_reading",
-      "email"
+      "A1_reading",
+      "story"
     ]
   },
   {
     "id": "art_0005",
-    "title": "מכתב 6",
-    "type": "letter",
-    "level": "C2",
-    "content": "תוכן ברמת C2: מכתב מספר 6.",
-    "word_count": 300,
+    "title": "Descrizione da salute.txt",
+    "type": "description",
+    "level": "A1",
+    "content": "Dal dottore devo fare una visita completa. Il medico mi visita e controlla la pressione. Dice che sono in buona salute. Mi consiglia di fare più attività fisica. Ogni mattina vado a correre al parco. La mattina faccio colazione con yogurt e frutta. A pranzo mangio leggero. La sera ceno presto. Bevo almeno due litri d'acqua al giorno. Il medico mi ha detto che è importante dormire almeno otto ore. Anche ridurre lo stress è importante per la salute.",
+    "word_count": 79,
+    "cefr_vocabulary": {
+      "fare": "A1",
+      "dottore": "A1",
+      "medico": "A1",
+      "completa": "A1",
+      "devo": "A1",
+      "visita": "A1"
+    },
     "glossary": [
       {
-        "it": "parola5",
-        "he": "מילה5"
+        "it": "fare",
+        "he": "translation_fare"
+      },
+      {
+        "it": "dottore",
+        "he": "translation_dottore"
+      },
+      {
+        "it": "medico",
+        "he": "translation_medico"
+      },
+      {
+        "it": "completa",
+        "he": "translation_completa"
+      },
+      {
+        "it": "devo",
+        "he": "translation_devo"
+      },
+      {
+        "it": "visita",
+        "he": "translation_visita"
       }
     ],
     "questions": [
       {
-        "q": "שאלת הבנה",
+        "q": "Qual è l'argomento principale del testo?",
         "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
         ],
         "correct": 0
       }
     ],
     "audio_url": "audio/articles/art_0005.mp3",
     "srs_tags": [
-      "C2_reading",
-      "letter"
+      "A1_reading",
+      "description"
     ]
   },
   {
     "id": "art_0006",
-    "title": "טופס 7",
-    "type": "form",
+    "title": "Notizie da spesa.txt",
+    "type": "news",
     "level": "A1",
-    "content": "תוכן ברמת A1: טופס מספר 7.",
-    "word_count": 50,
+    "content": "Oggi vado al supermercato. Compro il pane, il latte, la pasta e i pomodori. Al banco della frutta prendo le mele e le banane. Alla cassa pago con la carta. Il totale è 15 euro e 50 centesimi. Il cassiere è gentile e mi dà lo scontrino. Esco e torno a casa. Metto la spesa in frigorifero. Poi preparo il pranzo: pasta al pomodoro. È molto buona!",
+    "word_count": 65,
+    "cefr_vocabulary": {
+      "compro": "A1",
+      "vado": "A1",
+      "latte": "A1",
+      "oggi": "A1",
+      "pane": "A1",
+      "supermercato": "A1"
+    },
     "glossary": [
       {
-        "it": "parola6",
-        "he": "מילה6"
+        "it": "compro",
+        "he": "translation_compro"
+      },
+      {
+        "it": "vado",
+        "he": "translation_vado"
+      },
+      {
+        "it": "latte",
+        "he": "translation_latte"
+      },
+      {
+        "it": "oggi",
+        "he": "translation_oggi"
+      },
+      {
+        "it": "pane",
+        "he": "translation_pane"
+      },
+      {
+        "it": "supermercato",
+        "he": "translation_supermercato"
       }
     ],
     "questions": [
       {
-        "q": "שאלת הבנה",
+        "q": "Qual è l'argomento principale del testo?",
         "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
         ],
         "correct": 0
       }
@@ -213,5989 +514,248 @@
     "audio_url": "audio/articles/art_0006.mp3",
     "srs_tags": [
       "A1_reading",
-      "form"
+      "news"
     ]
   },
   {
     "id": "art_0007",
-    "title": "פרסומת 8",
-    "type": "ad",
-    "level": "A2",
-    "content": "תוכן ברמת A2: פרסומת מספר 8.",
-    "word_count": 100,
+    "title": "Blog da stazione.txt",
+    "type": "blog",
+    "level": "A1",
+    "content": "La stazione di Roma Termini è molto grande. Ogni giorno passano migliaia di persone. I treni partono e arrivano continuamente. Al binario 1 parte il treno per Firenze. Al binario 5 c'è il treno per Napoli. I biglietti si comprano alla biglietteria o alle macchinette automatiche. Il viaggio da Roma a Firenze dura circa un'ora e mezza. È importante arrivare in stazione con qualche minuto di anticipo. Sul treno ci sono posti a sedere, il bar e i servizi igienici. Il controllore verifica i biglietti durante il viaggio.",
+    "word_count": 86,
+    "cefr_vocabulary": {
+      "roma": "A1",
+      "termini": "A1",
+      "grande": "A1",
+      "stazione": "A1",
+      "giorno": "A1",
+      "ogni": "A1"
+    },
     "glossary": [
       {
-        "it": "parola7",
-        "he": "מילה7"
+        "it": "roma",
+        "he": "translation_roma"
+      },
+      {
+        "it": "termini",
+        "he": "translation_termini"
+      },
+      {
+        "it": "grande",
+        "he": "translation_grande"
+      },
+      {
+        "it": "stazione",
+        "he": "translation_stazione"
+      },
+      {
+        "it": "giorno",
+        "he": "translation_giorno"
+      },
+      {
+        "it": "ogni",
+        "he": "translation_ogni"
       }
     ],
     "questions": [
       {
-        "q": "שאלת הבנה",
+        "q": "Qual è l'argomento principale del testo?",
         "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
         ],
         "correct": 0
       }
     ],
     "audio_url": "audio/articles/art_0007.mp3",
     "srs_tags": [
-      "A2_reading",
-      "ad"
+      "A1_reading",
+      "blog"
     ]
   },
   {
     "id": "art_0008",
-    "title": "סיפור 9",
-    "type": "story",
-    "level": "B1",
-    "content": "תוכן ברמת B1: סיפור מספר 9.",
-    "word_count": 150,
+    "title": "Ricetta da viaggio.txt",
+    "type": "recipe",
+    "level": "A1",
+    "content": "Venezia è una città unica al mondo. È costruita sull'acqua, con canali al posto delle strade. La gente si sposta a piedi o in vaporetto. Il ponte di Rialto è il più antico e famoso. Piazza San Marco è il cuore della città. Ogni anno milioni di turisti visitano Venezia. Il Carnevale di Venezia è famoso per le maschere e i costumi storici. La città ha anche molti musei e chiese antiche. Il teatro La Fenice è uno dei teatri più importanti d'Italia. Mangiare un gelato vicino al Canal Grande è un'esperienza indimenticabile.",
+    "word_count": 93,
+    "cefr_vocabulary": {
+      "sull'acqua": "A1",
+      "unica": "A1",
+      "venezia": "A1",
+      "costruita": "A1",
+      "mondo": "A1",
+      "città": "A1"
+    },
     "glossary": [
       {
-        "it": "parola8",
-        "he": "מילה8"
+        "it": "sull'acqua",
+        "he": "translation_sull'acqua"
+      },
+      {
+        "it": "unica",
+        "he": "translation_unica"
+      },
+      {
+        "it": "venezia",
+        "he": "translation_venezia"
+      },
+      {
+        "it": "costruita",
+        "he": "translation_costruita"
+      },
+      {
+        "it": "mondo",
+        "he": "translation_mondo"
+      },
+      {
+        "it": "città",
+        "he": "translation_città"
       }
     ],
     "questions": [
       {
-        "q": "שאלת הבנה",
+        "q": "Qual è l'argomento principale del testo?",
         "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
         ],
         "correct": 0
       }
     ],
     "audio_url": "audio/articles/art_0008.mp3",
     "srs_tags": [
-      "B1_reading",
-      "story"
+      "A1_reading",
+      "recipe"
     ]
   },
   {
     "id": "art_0009",
-    "title": "מדריך 10",
+    "title": "Guida da vita-quotidiana.txt",
     "type": "guide",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מדריך מספר 10.",
-    "word_count": 200,
+    "level": "A1",
+    "content": "Buongiorno! Mi chiamo Marco e sono italiano. Vivo a Roma, una città bellissima. Ogni mattina prendo un caffè al bar vicino casa. Il barista è molto simpatico. Dopo il caffè, vado al lavoro in centro. Lavoro in un ufficio grande con molti colleghi. La sera torno a casa e ceno con la mia famiglia. Mia moglie si chiama Elena e i miei figli si chiamano Luca e Sofia. La sera guardiamo la televisione o leggiamo un libro. Il fine settimana andiamo al parco o visitiamo i monumenti di Roma. Mi piace molto la vita italiana!",
+    "word_count": 95,
+    "cefr_vocabulary": {
+      "roma": "A1",
+      "vivo": "A1",
+      "buongiorno": "A1",
+      "chiamo": "A1",
+      "marco": "A1",
+      "italiano": "A1",
+      "sono": "A1"
+    },
     "glossary": [
       {
-        "it": "parola9",
-        "he": "מילה9"
+        "it": "roma",
+        "he": "translation_roma"
+      },
+      {
+        "it": "vivo",
+        "he": "translation_vivo"
+      },
+      {
+        "it": "buongiorno",
+        "he": "translation_buongiorno"
+      },
+      {
+        "it": "chiamo",
+        "he": "translation_chiamo"
+      },
+      {
+        "it": "marco",
+        "he": "translation_marco"
+      },
+      {
+        "it": "italiano",
+        "he": "translation_italiano"
+      },
+      {
+        "it": "sono",
+        "he": "translation_sono"
       }
     ],
     "questions": [
       {
-        "q": "שאלת הבנה",
+        "q": "Qual è l'argomento principale del testo?",
         "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
         ],
         "correct": 0
       }
     ],
     "audio_url": "audio/articles/art_0009.mp3",
     "srs_tags": [
-      "B2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0010",
-    "title": "חדשות 11",
-    "type": "news",
-    "level": "C1",
-    "content": "תוכן ברמת C1: חדשות מספר 11.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola10",
-        "he": "מילה10"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0010.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0011",
-    "title": "בלוג 12",
-    "type": "blog",
-    "level": "C2",
-    "content": "תוכן ברמת C2: בלוג מספר 12.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola11",
-        "he": "מילה11"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0011.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0012",
-    "title": "מתכון 13",
-    "type": "recipe",
-    "level": "A1",
-    "content": "תוכן ברמת A1: מתכון מספר 13.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola12",
-        "he": "מילה12"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0012.mp3",
-    "srs_tags": [
       "A1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0013",
-    "title": "תפריט 14",
-    "type": "menu",
-    "level": "A2",
-    "content": "תוכן ברמת A2: תפריט מספר 14.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola13",
-        "he": "מילה13"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0013.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0014",
-    "title": "מייל 15",
-    "type": "email",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מייל מספר 15.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola14",
-        "he": "מילה14"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0014.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0015",
-    "title": "מכתב 16",
-    "type": "letter",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מכתב מספר 16.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola15",
-        "he": "מילה15"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0015.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0016",
-    "title": "טופס 17",
-    "type": "form",
-    "level": "C1",
-    "content": "תוכן ברמת C1: טופס מספר 17.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola16",
-        "he": "מילה16"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0016.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0017",
-    "title": "פרסומת 18",
-    "type": "ad",
-    "level": "C2",
-    "content": "תוכן ברמת C2: פרסומת מספר 18.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola17",
-        "he": "מילה17"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0017.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0018",
-    "title": "סיפור 19",
-    "type": "story",
-    "level": "A1",
-    "content": "תוכן ברמת A1: סיפור מספר 19.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola18",
-        "he": "מילה18"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0018.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0019",
-    "title": "מדריך 20",
-    "type": "guide",
-    "level": "A2",
-    "content": "תוכן ברמת A2: מדריך מספר 20.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola19",
-        "he": "מילה19"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0019.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0020",
-    "title": "חדשות 21",
-    "type": "news",
-    "level": "B1",
-    "content": "תוכן ברמת B1: חדשות מספר 21.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola20",
-        "he": "מילה20"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0020.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0021",
-    "title": "בלוג 22",
-    "type": "blog",
-    "level": "B2",
-    "content": "תוכן ברמת B2: בלוג מספר 22.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola21",
-        "he": "מילה21"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0021.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0022",
-    "title": "מתכון 23",
-    "type": "recipe",
-    "level": "C1",
-    "content": "תוכן ברמת C1: מתכון מספר 23.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola22",
-        "he": "מילה22"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0022.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0023",
-    "title": "תפריט 24",
-    "type": "menu",
-    "level": "C2",
-    "content": "תוכן ברמת C2: תפריט מספר 24.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola23",
-        "he": "מילה23"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0023.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0024",
-    "title": "מייל 25",
-    "type": "email",
-    "level": "A1",
-    "content": "תוכן ברמת A1: מייל מספר 25.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola24",
-        "he": "מילה24"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0024.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0025",
-    "title": "מכתב 26",
-    "type": "letter",
-    "level": "A2",
-    "content": "תוכן ברמת A2: מכתב מספר 26.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola25",
-        "he": "מילה25"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0025.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0026",
-    "title": "טופס 27",
-    "type": "form",
-    "level": "B1",
-    "content": "תוכן ברמת B1: טופס מספר 27.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola26",
-        "he": "מילה26"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0026.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0027",
-    "title": "פרסומת 28",
-    "type": "ad",
-    "level": "B2",
-    "content": "תוכן ברמת B2: פרסומת מספר 28.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola27",
-        "he": "מילה27"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0027.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0028",
-    "title": "סיפור 29",
-    "type": "story",
-    "level": "C1",
-    "content": "תוכן ברמת C1: סיפור מספר 29.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola28",
-        "he": "מילה28"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0028.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0029",
-    "title": "מדריך 30",
-    "type": "guide",
-    "level": "C2",
-    "content": "תוכן ברמת C2: מדריך מספר 30.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola29",
-        "he": "מילה29"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0029.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0030",
-    "title": "חדשות 31",
-    "type": "news",
-    "level": "A1",
-    "content": "תוכן ברמת A1: חדשות מספר 31.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola30",
-        "he": "מילה30"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0030.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0031",
-    "title": "בלוג 32",
-    "type": "blog",
-    "level": "A2",
-    "content": "תוכן ברמת A2: בלוג מספר 32.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola31",
-        "he": "מילה31"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0031.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0032",
-    "title": "מתכון 33",
-    "type": "recipe",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מתכון מספר 33.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola32",
-        "he": "מילה32"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0032.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0033",
-    "title": "תפריט 34",
-    "type": "menu",
-    "level": "B2",
-    "content": "תוכן ברמת B2: תפריט מספר 34.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola33",
-        "he": "מילה33"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0033.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0034",
-    "title": "מייל 35",
-    "type": "email",
-    "level": "C1",
-    "content": "תוכן ברמת C1: מייל מספר 35.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola34",
-        "he": "מילה34"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0034.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0035",
-    "title": "מכתב 36",
-    "type": "letter",
-    "level": "C2",
-    "content": "תוכן ברמת C2: מכתב מספר 36.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola35",
-        "he": "מילה35"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0035.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0036",
-    "title": "טופס 37",
-    "type": "form",
-    "level": "A1",
-    "content": "תוכן ברמת A1: טופס מספר 37.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola36",
-        "he": "מילה36"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0036.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0037",
-    "title": "פרסומת 38",
-    "type": "ad",
-    "level": "A2",
-    "content": "תוכן ברמת A2: פרסומת מספר 38.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola37",
-        "he": "מילה37"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0037.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0038",
-    "title": "סיפור 39",
-    "type": "story",
-    "level": "B1",
-    "content": "תוכן ברמת B1: סיפור מספר 39.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola38",
-        "he": "מילה38"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0038.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0039",
-    "title": "מדריך 40",
-    "type": "guide",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מדריך מספר 40.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola39",
-        "he": "מילה39"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0039.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0040",
-    "title": "חדשות 41",
-    "type": "news",
-    "level": "C1",
-    "content": "תוכן ברמת C1: חדשות מספר 41.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola40",
-        "he": "מילה40"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0040.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0041",
-    "title": "בלוג 42",
-    "type": "blog",
-    "level": "C2",
-    "content": "תוכן ברמת C2: בלוג מספר 42.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola41",
-        "he": "מילה41"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0041.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0042",
-    "title": "מתכון 43",
-    "type": "recipe",
-    "level": "A1",
-    "content": "תוכן ברמת A1: מתכון מספר 43.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola42",
-        "he": "מילה42"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0042.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0043",
-    "title": "תפריט 44",
-    "type": "menu",
-    "level": "A2",
-    "content": "תוכן ברמת A2: תפריט מספר 44.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola43",
-        "he": "מילה43"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0043.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0044",
-    "title": "מייל 45",
-    "type": "email",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מייל מספר 45.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola44",
-        "he": "מילה44"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0044.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0045",
-    "title": "מכתב 46",
-    "type": "letter",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מכתב מספר 46.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola45",
-        "he": "מילה45"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0045.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0046",
-    "title": "טופס 47",
-    "type": "form",
-    "level": "C1",
-    "content": "תוכן ברמת C1: טופס מספר 47.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola46",
-        "he": "מילה46"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0046.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0047",
-    "title": "פרסומת 48",
-    "type": "ad",
-    "level": "C2",
-    "content": "תוכן ברמת C2: פרסומת מספר 48.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola47",
-        "he": "מילה47"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0047.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0048",
-    "title": "סיפור 49",
-    "type": "story",
-    "level": "A1",
-    "content": "תוכן ברמת A1: סיפור מספר 49.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola48",
-        "he": "מילה48"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0048.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0049",
-    "title": "מדריך 50",
-    "type": "guide",
-    "level": "A2",
-    "content": "תוכן ברמת A2: מדריך מספר 50.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola49",
-        "he": "מילה49"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0049.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0050",
-    "title": "חדשות 51",
-    "type": "news",
-    "level": "B1",
-    "content": "תוכן ברמת B1: חדשות מספר 51.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola50",
-        "he": "מילה50"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0050.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0051",
-    "title": "בלוג 52",
-    "type": "blog",
-    "level": "B2",
-    "content": "תוכן ברמת B2: בלוג מספר 52.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola51",
-        "he": "מילה51"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0051.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0052",
-    "title": "מתכון 53",
-    "type": "recipe",
-    "level": "C1",
-    "content": "תוכן ברמת C1: מתכון מספר 53.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola52",
-        "he": "מילה52"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0052.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0053",
-    "title": "תפריט 54",
-    "type": "menu",
-    "level": "C2",
-    "content": "תוכן ברמת C2: תפריט מספר 54.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola53",
-        "he": "מילה53"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0053.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0054",
-    "title": "מייל 55",
-    "type": "email",
-    "level": "A1",
-    "content": "תוכן ברמת A1: מייל מספר 55.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola54",
-        "he": "מילה54"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0054.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0055",
-    "title": "מכתב 56",
-    "type": "letter",
-    "level": "A2",
-    "content": "תוכן ברמת A2: מכתב מספר 56.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola55",
-        "he": "מילה55"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0055.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0056",
-    "title": "טופס 57",
-    "type": "form",
-    "level": "B1",
-    "content": "תוכן ברמת B1: טופס מספר 57.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola56",
-        "he": "מילה56"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0056.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0057",
-    "title": "פרסומת 58",
-    "type": "ad",
-    "level": "B2",
-    "content": "תוכן ברמת B2: פרסומת מספר 58.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola57",
-        "he": "מילה57"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0057.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0058",
-    "title": "סיפור 59",
-    "type": "story",
-    "level": "C1",
-    "content": "תוכן ברמת C1: סיפור מספר 59.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola58",
-        "he": "מילה58"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0058.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0059",
-    "title": "מדריך 60",
-    "type": "guide",
-    "level": "C2",
-    "content": "תוכן ברמת C2: מדריך מספר 60.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola59",
-        "he": "מילה59"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0059.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0060",
-    "title": "חדשות 61",
-    "type": "news",
-    "level": "A1",
-    "content": "תוכן ברמת A1: חדשות מספר 61.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola60",
-        "he": "מילה60"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0060.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0061",
-    "title": "בלוג 62",
-    "type": "blog",
-    "level": "A2",
-    "content": "תוכן ברמת A2: בלוג מספר 62.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola61",
-        "he": "מילה61"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0061.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0062",
-    "title": "מתכון 63",
-    "type": "recipe",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מתכון מספר 63.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola62",
-        "he": "מילה62"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0062.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0063",
-    "title": "תפריט 64",
-    "type": "menu",
-    "level": "B2",
-    "content": "תוכן ברמת B2: תפריט מספר 64.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola63",
-        "he": "מילה63"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0063.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0064",
-    "title": "מייל 65",
-    "type": "email",
-    "level": "C1",
-    "content": "תוכן ברמת C1: מייל מספר 65.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola64",
-        "he": "מילה64"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0064.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0065",
-    "title": "מכתב 66",
-    "type": "letter",
-    "level": "C2",
-    "content": "תוכן ברמת C2: מכתב מספר 66.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola65",
-        "he": "מילה65"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0065.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0066",
-    "title": "טופס 67",
-    "type": "form",
-    "level": "A1",
-    "content": "תוכן ברמת A1: טופס מספר 67.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola66",
-        "he": "מילה66"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0066.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0067",
-    "title": "פרסומת 68",
-    "type": "ad",
-    "level": "A2",
-    "content": "תוכן ברמת A2: פרסומת מספר 68.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola67",
-        "he": "מילה67"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0067.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0068",
-    "title": "סיפור 69",
-    "type": "story",
-    "level": "B1",
-    "content": "תוכן ברמת B1: סיפור מספר 69.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola68",
-        "he": "מילה68"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0068.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0069",
-    "title": "מדריך 70",
-    "type": "guide",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מדריך מספר 70.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola69",
-        "he": "מילה69"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0069.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0070",
-    "title": "חדשות 71",
-    "type": "news",
-    "level": "C1",
-    "content": "תוכן ברמת C1: חדשות מספר 71.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola70",
-        "he": "מילה70"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0070.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0071",
-    "title": "בלוג 72",
-    "type": "blog",
-    "level": "C2",
-    "content": "תוכן ברמת C2: בלוג מספר 72.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola71",
-        "he": "מילה71"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0071.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0072",
-    "title": "מתכון 73",
-    "type": "recipe",
-    "level": "A1",
-    "content": "תוכן ברמת A1: מתכון מספר 73.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola72",
-        "he": "מילה72"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0072.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0073",
-    "title": "תפריט 74",
-    "type": "menu",
-    "level": "A2",
-    "content": "תוכן ברמת A2: תפריט מספר 74.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola73",
-        "he": "מילה73"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0073.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0074",
-    "title": "מייל 75",
-    "type": "email",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מייל מספר 75.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola74",
-        "he": "מילה74"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0074.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0075",
-    "title": "מכתב 76",
-    "type": "letter",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מכתב מספר 76.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola75",
-        "he": "מילה75"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0075.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0076",
-    "title": "טופס 77",
-    "type": "form",
-    "level": "C1",
-    "content": "תוכן ברמת C1: טופס מספר 77.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola76",
-        "he": "מילה76"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0076.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0077",
-    "title": "פרסומת 78",
-    "type": "ad",
-    "level": "C2",
-    "content": "תוכן ברמת C2: פרסומת מספר 78.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola77",
-        "he": "מילה77"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0077.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0078",
-    "title": "סיפור 79",
-    "type": "story",
-    "level": "A1",
-    "content": "תוכן ברמת A1: סיפור מספר 79.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola78",
-        "he": "מילה78"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0078.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0079",
-    "title": "מדריך 80",
-    "type": "guide",
-    "level": "A2",
-    "content": "תוכן ברמת A2: מדריך מספר 80.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola79",
-        "he": "מילה79"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0079.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0080",
-    "title": "חדשות 81",
-    "type": "news",
-    "level": "B1",
-    "content": "תוכן ברמת B1: חדשות מספר 81.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola80",
-        "he": "מילה80"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0080.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0081",
-    "title": "בלוג 82",
-    "type": "blog",
-    "level": "B2",
-    "content": "תוכן ברמת B2: בלוג מספר 82.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola81",
-        "he": "מילה81"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0081.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0082",
-    "title": "מתכון 83",
-    "type": "recipe",
-    "level": "C1",
-    "content": "תוכן ברמת C1: מתכון מספר 83.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola82",
-        "he": "מילה82"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0082.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0083",
-    "title": "תפריט 84",
-    "type": "menu",
-    "level": "C2",
-    "content": "תוכן ברמת C2: תפריט מספר 84.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola83",
-        "he": "מילה83"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0083.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0084",
-    "title": "מייל 85",
-    "type": "email",
-    "level": "A1",
-    "content": "תוכן ברמת A1: מייל מספר 85.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola84",
-        "he": "מילה84"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0084.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0085",
-    "title": "מכתב 86",
-    "type": "letter",
-    "level": "A2",
-    "content": "תוכן ברמת A2: מכתב מספר 86.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola85",
-        "he": "מילה85"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0085.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0086",
-    "title": "טופס 87",
-    "type": "form",
-    "level": "B1",
-    "content": "תוכן ברמת B1: טופס מספר 87.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola86",
-        "he": "מילה86"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0086.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0087",
-    "title": "פרסומת 88",
-    "type": "ad",
-    "level": "B2",
-    "content": "תוכן ברמת B2: פרסומת מספר 88.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola87",
-        "he": "מילה87"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0087.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0088",
-    "title": "סיפור 89",
-    "type": "story",
-    "level": "C1",
-    "content": "תוכן ברמת C1: סיפור מספר 89.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola88",
-        "he": "מילה88"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0088.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0089",
-    "title": "מדריך 90",
-    "type": "guide",
-    "level": "C2",
-    "content": "תוכן ברמת C2: מדריך מספר 90.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola89",
-        "he": "מילה89"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0089.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0090",
-    "title": "חדשות 91",
-    "type": "news",
-    "level": "A1",
-    "content": "תוכן ברמת A1: חדשות מספר 91.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola90",
-        "he": "מילה90"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0090.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0091",
-    "title": "בלוג 92",
-    "type": "blog",
-    "level": "A2",
-    "content": "תוכן ברמת A2: בלוג מספר 92.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola91",
-        "he": "מילה91"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0091.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0092",
-    "title": "מתכון 93",
-    "type": "recipe",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מתכון מספר 93.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola92",
-        "he": "מילה92"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0092.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0093",
-    "title": "תפריט 94",
-    "type": "menu",
-    "level": "B2",
-    "content": "תוכן ברמת B2: תפריט מספר 94.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola93",
-        "he": "מילה93"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0093.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0094",
-    "title": "מייל 95",
-    "type": "email",
-    "level": "C1",
-    "content": "תוכן ברמת C1: מייל מספר 95.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola94",
-        "he": "מילה94"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0094.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0095",
-    "title": "מכתב 96",
-    "type": "letter",
-    "level": "C2",
-    "content": "תוכן ברמת C2: מכתב מספר 96.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola95",
-        "he": "מילה95"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0095.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0096",
-    "title": "טופס 97",
-    "type": "form",
-    "level": "A1",
-    "content": "תוכן ברמת A1: טופס מספר 97.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola96",
-        "he": "מילה96"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0096.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0097",
-    "title": "פרסומת 98",
-    "type": "ad",
-    "level": "A2",
-    "content": "תוכן ברמת A2: פרסומת מספר 98.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola97",
-        "he": "מילה97"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0097.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0098",
-    "title": "סיפור 99",
-    "type": "story",
-    "level": "B1",
-    "content": "תוכן ברמת B1: סיפור מספר 99.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola98",
-        "he": "מילה98"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0098.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0099",
-    "title": "מדריך 100",
-    "type": "guide",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מדריך מספר 100.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola99",
-        "he": "מילה99"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0099.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0100",
-    "title": "חדשות 101",
-    "type": "news",
-    "level": "C1",
-    "content": "תוכן ברמת C1: חדשות מספר 101.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola100",
-        "he": "מילה100"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0100.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0101",
-    "title": "בלוג 102",
-    "type": "blog",
-    "level": "C2",
-    "content": "תוכן ברמת C2: בלוג מספר 102.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola101",
-        "he": "מילה101"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0101.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0102",
-    "title": "מתכון 103",
-    "type": "recipe",
-    "level": "A1",
-    "content": "תוכן ברמת A1: מתכון מספר 103.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola102",
-        "he": "מילה102"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0102.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0103",
-    "title": "תפריט 104",
-    "type": "menu",
-    "level": "A2",
-    "content": "תוכן ברמת A2: תפריט מספר 104.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola103",
-        "he": "מילה103"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0103.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0104",
-    "title": "מייל 105",
-    "type": "email",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מייל מספר 105.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola104",
-        "he": "מילה104"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0104.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0105",
-    "title": "מכתב 106",
-    "type": "letter",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מכתב מספר 106.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola105",
-        "he": "מילה105"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0105.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0106",
-    "title": "טופס 107",
-    "type": "form",
-    "level": "C1",
-    "content": "תוכן ברמת C1: טופס מספר 107.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola106",
-        "he": "מילה106"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0106.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0107",
-    "title": "פרסומת 108",
-    "type": "ad",
-    "level": "C2",
-    "content": "תוכן ברמת C2: פרסומת מספר 108.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola107",
-        "he": "מילה107"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0107.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0108",
-    "title": "סיפור 109",
-    "type": "story",
-    "level": "A1",
-    "content": "תוכן ברמת A1: סיפור מספר 109.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola108",
-        "he": "מילה108"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0108.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0109",
-    "title": "מדריך 110",
-    "type": "guide",
-    "level": "A2",
-    "content": "תוכן ברמת A2: מדריך מספר 110.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola109",
-        "he": "מילה109"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0109.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0110",
-    "title": "חדשות 111",
-    "type": "news",
-    "level": "B1",
-    "content": "תוכן ברמת B1: חדשות מספר 111.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola110",
-        "he": "מילה110"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0110.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0111",
-    "title": "בלוג 112",
-    "type": "blog",
-    "level": "B2",
-    "content": "תוכן ברמת B2: בלוג מספר 112.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola111",
-        "he": "מילה111"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0111.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0112",
-    "title": "מתכון 113",
-    "type": "recipe",
-    "level": "C1",
-    "content": "תוכן ברמת C1: מתכון מספר 113.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola112",
-        "he": "מילה112"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0112.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0113",
-    "title": "תפריט 114",
-    "type": "menu",
-    "level": "C2",
-    "content": "תוכן ברמת C2: תפריט מספר 114.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola113",
-        "he": "מילה113"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0113.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0114",
-    "title": "מייל 115",
-    "type": "email",
-    "level": "A1",
-    "content": "תוכן ברמת A1: מייל מספר 115.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola114",
-        "he": "מילה114"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0114.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0115",
-    "title": "מכתב 116",
-    "type": "letter",
-    "level": "A2",
-    "content": "תוכן ברמת A2: מכתב מספר 116.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola115",
-        "he": "מילה115"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0115.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0116",
-    "title": "טופס 117",
-    "type": "form",
-    "level": "B1",
-    "content": "תוכן ברמת B1: טופס מספר 117.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola116",
-        "he": "מילה116"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0116.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0117",
-    "title": "פרסומת 118",
-    "type": "ad",
-    "level": "B2",
-    "content": "תוכן ברמת B2: פרסומת מספר 118.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola117",
-        "he": "מילה117"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0117.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0118",
-    "title": "סיפור 119",
-    "type": "story",
-    "level": "C1",
-    "content": "תוכן ברמת C1: סיפור מספר 119.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola118",
-        "he": "מילה118"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0118.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0119",
-    "title": "מדריך 120",
-    "type": "guide",
-    "level": "C2",
-    "content": "תוכן ברמת C2: מדריך מספר 120.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola119",
-        "he": "מילה119"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0119.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0120",
-    "title": "חדשות 121",
-    "type": "news",
-    "level": "A1",
-    "content": "תוכן ברמת A1: חדשות מספר 121.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola120",
-        "he": "מילה120"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0120.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0121",
-    "title": "בלוג 122",
-    "type": "blog",
-    "level": "A2",
-    "content": "תוכן ברמת A2: בלוג מספר 122.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola121",
-        "he": "מילה121"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0121.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0122",
-    "title": "מתכון 123",
-    "type": "recipe",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מתכון מספר 123.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola122",
-        "he": "מילה122"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0122.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0123",
-    "title": "תפריט 124",
-    "type": "menu",
-    "level": "B2",
-    "content": "תוכן ברמת B2: תפריט מספר 124.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola123",
-        "he": "מילה123"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0123.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0124",
-    "title": "מייל 125",
-    "type": "email",
-    "level": "C1",
-    "content": "תוכן ברמת C1: מייל מספר 125.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola124",
-        "he": "מילה124"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0124.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0125",
-    "title": "מכתב 126",
-    "type": "letter",
-    "level": "C2",
-    "content": "תוכן ברמת C2: מכתב מספר 126.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola125",
-        "he": "מילה125"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0125.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0126",
-    "title": "טופס 127",
-    "type": "form",
-    "level": "A1",
-    "content": "תוכן ברמת A1: טופס מספר 127.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola126",
-        "he": "מילה126"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0126.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0127",
-    "title": "פרסומת 128",
-    "type": "ad",
-    "level": "A2",
-    "content": "תוכן ברמת A2: פרסומת מספר 128.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola127",
-        "he": "מילה127"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0127.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0128",
-    "title": "סיפור 129",
-    "type": "story",
-    "level": "B1",
-    "content": "תוכן ברמת B1: סיפור מספר 129.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola128",
-        "he": "מילה128"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0128.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0129",
-    "title": "מדריך 130",
-    "type": "guide",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מדריך מספר 130.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola129",
-        "he": "מילה129"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0129.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0130",
-    "title": "חדשות 131",
-    "type": "news",
-    "level": "C1",
-    "content": "תוכן ברמת C1: חדשות מספר 131.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola130",
-        "he": "מילה130"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0130.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0131",
-    "title": "בלוג 132",
-    "type": "blog",
-    "level": "C2",
-    "content": "תוכן ברמת C2: בלוג מספר 132.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola131",
-        "he": "מילה131"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0131.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0132",
-    "title": "מתכון 133",
-    "type": "recipe",
-    "level": "A1",
-    "content": "תוכן ברמת A1: מתכון מספר 133.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola132",
-        "he": "מילה132"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0132.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0133",
-    "title": "תפריט 134",
-    "type": "menu",
-    "level": "A2",
-    "content": "תוכן ברמת A2: תפריט מספר 134.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola133",
-        "he": "מילה133"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0133.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0134",
-    "title": "מייל 135",
-    "type": "email",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מייל מספר 135.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola134",
-        "he": "מילה134"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0134.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0135",
-    "title": "מכתב 136",
-    "type": "letter",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מכתב מספר 136.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola135",
-        "he": "מילה135"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0135.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0136",
-    "title": "טופס 137",
-    "type": "form",
-    "level": "C1",
-    "content": "תוכן ברמת C1: טופס מספר 137.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola136",
-        "he": "מילה136"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0136.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0137",
-    "title": "פרסומת 138",
-    "type": "ad",
-    "level": "C2",
-    "content": "תוכן ברמת C2: פרסומת מספר 138.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola137",
-        "he": "מילה137"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0137.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0138",
-    "title": "סיפור 139",
-    "type": "story",
-    "level": "A1",
-    "content": "תוכן ברמת A1: סיפור מספר 139.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola138",
-        "he": "מילה138"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0138.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0139",
-    "title": "מדריך 140",
-    "type": "guide",
-    "level": "A2",
-    "content": "תוכן ברמת A2: מדריך מספר 140.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola139",
-        "he": "מילה139"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0139.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0140",
-    "title": "חדשות 141",
-    "type": "news",
-    "level": "B1",
-    "content": "תוכן ברמת B1: חדשות מספר 141.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola140",
-        "he": "מילה140"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0140.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0141",
-    "title": "בלוג 142",
-    "type": "blog",
-    "level": "B2",
-    "content": "תוכן ברמת B2: בלוג מספר 142.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola141",
-        "he": "מילה141"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0141.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0142",
-    "title": "מתכון 143",
-    "type": "recipe",
-    "level": "C1",
-    "content": "תוכן ברמת C1: מתכון מספר 143.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola142",
-        "he": "מילה142"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0142.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0143",
-    "title": "תפריט 144",
-    "type": "menu",
-    "level": "C2",
-    "content": "תוכן ברמת C2: תפריט מספר 144.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola143",
-        "he": "מילה143"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0143.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0144",
-    "title": "מייל 145",
-    "type": "email",
-    "level": "A1",
-    "content": "תוכן ברמת A1: מייל מספר 145.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola144",
-        "he": "מילה144"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0144.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0145",
-    "title": "מכתב 146",
-    "type": "letter",
-    "level": "A2",
-    "content": "תוכן ברמת A2: מכתב מספר 146.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola145",
-        "he": "מילה145"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0145.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0146",
-    "title": "טופס 147",
-    "type": "form",
-    "level": "B1",
-    "content": "תוכן ברמת B1: טופס מספר 147.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola146",
-        "he": "מילה146"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0146.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0147",
-    "title": "פרסומת 148",
-    "type": "ad",
-    "level": "B2",
-    "content": "תוכן ברמת B2: פרסומת מספר 148.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola147",
-        "he": "מילה147"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0147.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0148",
-    "title": "סיפור 149",
-    "type": "story",
-    "level": "C1",
-    "content": "תוכן ברמת C1: סיפור מספר 149.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola148",
-        "he": "מילה148"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0148.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0149",
-    "title": "מדריך 150",
-    "type": "guide",
-    "level": "C2",
-    "content": "תוכן ברמת C2: מדריך מספר 150.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola149",
-        "he": "מילה149"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0149.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0150",
-    "title": "חדשות 151",
-    "type": "news",
-    "level": "A1",
-    "content": "תוכן ברמת A1: חדשות מספר 151.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola150",
-        "he": "מילה150"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0150.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0151",
-    "title": "בלוג 152",
-    "type": "blog",
-    "level": "A2",
-    "content": "תוכן ברמת A2: בלוג מספר 152.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola151",
-        "he": "מילה151"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0151.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0152",
-    "title": "מתכון 153",
-    "type": "recipe",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מתכון מספר 153.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola152",
-        "he": "מילה152"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0152.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0153",
-    "title": "תפריט 154",
-    "type": "menu",
-    "level": "B2",
-    "content": "תוכן ברמת B2: תפריט מספר 154.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola153",
-        "he": "מילה153"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0153.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0154",
-    "title": "מייל 155",
-    "type": "email",
-    "level": "C1",
-    "content": "תוכן ברמת C1: מייל מספר 155.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola154",
-        "he": "מילה154"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0154.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0155",
-    "title": "מכתב 156",
-    "type": "letter",
-    "level": "C2",
-    "content": "תוכן ברמת C2: מכתב מספר 156.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola155",
-        "he": "מילה155"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0155.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0156",
-    "title": "טופס 157",
-    "type": "form",
-    "level": "A1",
-    "content": "תוכן ברמת A1: טופס מספר 157.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola156",
-        "he": "מילה156"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0156.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0157",
-    "title": "פרסומת 158",
-    "type": "ad",
-    "level": "A2",
-    "content": "תוכן ברמת A2: פרסומת מספר 158.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola157",
-        "he": "מילה157"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0157.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0158",
-    "title": "סיפור 159",
-    "type": "story",
-    "level": "B1",
-    "content": "תוכן ברמת B1: סיפור מספר 159.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola158",
-        "he": "מילה158"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0158.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0159",
-    "title": "מדריך 160",
-    "type": "guide",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מדריך מספר 160.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola159",
-        "he": "מילה159"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0159.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0160",
-    "title": "חדשות 161",
-    "type": "news",
-    "level": "C1",
-    "content": "תוכן ברמת C1: חדשות מספר 161.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola160",
-        "he": "מילה160"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0160.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0161",
-    "title": "בלוג 162",
-    "type": "blog",
-    "level": "C2",
-    "content": "תוכן ברמת C2: בלוג מספר 162.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola161",
-        "he": "מילה161"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0161.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0162",
-    "title": "מתכון 163",
-    "type": "recipe",
-    "level": "A1",
-    "content": "תוכן ברמת A1: מתכון מספר 163.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola162",
-        "he": "מילה162"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0162.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0163",
-    "title": "תפריט 164",
-    "type": "menu",
-    "level": "A2",
-    "content": "תוכן ברמת A2: תפריט מספר 164.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola163",
-        "he": "מילה163"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0163.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0164",
-    "title": "מייל 165",
-    "type": "email",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מייל מספר 165.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola164",
-        "he": "מילה164"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0164.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0165",
-    "title": "מכתב 166",
-    "type": "letter",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מכתב מספר 166.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola165",
-        "he": "מילה165"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0165.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0166",
-    "title": "טופס 167",
-    "type": "form",
-    "level": "C1",
-    "content": "תוכן ברמת C1: טופס מספר 167.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola166",
-        "he": "מילה166"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0166.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0167",
-    "title": "פרסומת 168",
-    "type": "ad",
-    "level": "C2",
-    "content": "תוכן ברמת C2: פרסומת מספר 168.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola167",
-        "he": "מילה167"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0167.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0168",
-    "title": "סיפור 169",
-    "type": "story",
-    "level": "A1",
-    "content": "תוכן ברמת A1: סיפור מספר 169.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola168",
-        "he": "מילה168"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0168.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0169",
-    "title": "מדריך 170",
-    "type": "guide",
-    "level": "A2",
-    "content": "תוכן ברמת A2: מדריך מספר 170.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola169",
-        "he": "מילה169"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0169.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0170",
-    "title": "חדשות 171",
-    "type": "news",
-    "level": "B1",
-    "content": "תוכן ברמת B1: חדשות מספר 171.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola170",
-        "he": "מילה170"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0170.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0171",
-    "title": "בלוג 172",
-    "type": "blog",
-    "level": "B2",
-    "content": "תוכן ברמת B2: בלוג מספר 172.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola171",
-        "he": "מילה171"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0171.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0172",
-    "title": "מתכון 173",
-    "type": "recipe",
-    "level": "C1",
-    "content": "תוכן ברמת C1: מתכון מספר 173.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola172",
-        "he": "מילה172"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0172.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0173",
-    "title": "תפריט 174",
-    "type": "menu",
-    "level": "C2",
-    "content": "תוכן ברמת C2: תפריט מספר 174.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola173",
-        "he": "מילה173"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0173.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0174",
-    "title": "מייל 175",
-    "type": "email",
-    "level": "A1",
-    "content": "תוכן ברמת A1: מייל מספר 175.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola174",
-        "he": "מילה174"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0174.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0175",
-    "title": "מכתב 176",
-    "type": "letter",
-    "level": "A2",
-    "content": "תוכן ברמת A2: מכתב מספר 176.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola175",
-        "he": "מילה175"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0175.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0176",
-    "title": "טופס 177",
-    "type": "form",
-    "level": "B1",
-    "content": "תוכן ברמת B1: טופס מספר 177.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola176",
-        "he": "מילה176"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0176.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0177",
-    "title": "פרסומת 178",
-    "type": "ad",
-    "level": "B2",
-    "content": "תוכן ברמת B2: פרסומת מספר 178.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola177",
-        "he": "מילה177"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0177.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0178",
-    "title": "סיפור 179",
-    "type": "story",
-    "level": "C1",
-    "content": "תוכן ברמת C1: סיפור מספר 179.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola178",
-        "he": "מילה178"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0178.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0179",
-    "title": "מדריך 180",
-    "type": "guide",
-    "level": "C2",
-    "content": "תוכן ברמת C2: מדריך מספר 180.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola179",
-        "he": "מילה179"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0179.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0180",
-    "title": "חדשות 181",
-    "type": "news",
-    "level": "A1",
-    "content": "תוכן ברמת A1: חדשות מספר 181.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola180",
-        "he": "מילה180"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0180.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0181",
-    "title": "בלוג 182",
-    "type": "blog",
-    "level": "A2",
-    "content": "תוכן ברמת A2: בלוג מספר 182.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola181",
-        "he": "מילה181"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0181.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0182",
-    "title": "מתכון 183",
-    "type": "recipe",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מתכון מספר 183.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola182",
-        "he": "מילה182"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0182.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0183",
-    "title": "תפריט 184",
-    "type": "menu",
-    "level": "B2",
-    "content": "תוכן ברמת B2: תפריט מספר 184.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola183",
-        "he": "מילה183"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0183.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0184",
-    "title": "מייל 185",
-    "type": "email",
-    "level": "C1",
-    "content": "תוכן ברמת C1: מייל מספר 185.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola184",
-        "he": "מילה184"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0184.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0185",
-    "title": "מכתב 186",
-    "type": "letter",
-    "level": "C2",
-    "content": "תוכן ברמת C2: מכתב מספר 186.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola185",
-        "he": "מילה185"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0185.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0186",
-    "title": "טופס 187",
-    "type": "form",
-    "level": "A1",
-    "content": "תוכן ברמת A1: טופס מספר 187.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola186",
-        "he": "מילה186"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0186.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0187",
-    "title": "פרסומת 188",
-    "type": "ad",
-    "level": "A2",
-    "content": "תוכן ברמת A2: פרסומת מספר 188.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola187",
-        "he": "מילה187"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0187.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0188",
-    "title": "סיפור 189",
-    "type": "story",
-    "level": "B1",
-    "content": "תוכן ברמת B1: סיפור מספר 189.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola188",
-        "he": "מילה188"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0188.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0189",
-    "title": "מדריך 190",
-    "type": "guide",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מדריך מספר 190.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola189",
-        "he": "מילה189"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0189.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "guide"
-    ]
-  },
-  {
-    "id": "art_0190",
-    "title": "חדשות 191",
-    "type": "news",
-    "level": "C1",
-    "content": "תוכן ברמת C1: חדשות מספר 191.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola190",
-        "he": "מילה190"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0190.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "news"
-    ]
-  },
-  {
-    "id": "art_0191",
-    "title": "בלוג 192",
-    "type": "blog",
-    "level": "C2",
-    "content": "תוכן ברמת C2: בלוג מספר 192.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola191",
-        "he": "מילה191"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0191.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "blog"
-    ]
-  },
-  {
-    "id": "art_0192",
-    "title": "מתכון 193",
-    "type": "recipe",
-    "level": "A1",
-    "content": "תוכן ברמת A1: מתכון מספר 193.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola192",
-        "he": "מילה192"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0192.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "recipe"
-    ]
-  },
-  {
-    "id": "art_0193",
-    "title": "תפריט 194",
-    "type": "menu",
-    "level": "A2",
-    "content": "תוכן ברמת A2: תפריט מספר 194.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola193",
-        "he": "מילה193"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0193.mp3",
-    "srs_tags": [
-      "A2_reading",
-      "menu"
-    ]
-  },
-  {
-    "id": "art_0194",
-    "title": "מייל 195",
-    "type": "email",
-    "level": "B1",
-    "content": "תוכן ברמת B1: מייל מספר 195.",
-    "word_count": 150,
-    "glossary": [
-      {
-        "it": "parola194",
-        "he": "מילה194"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0194.mp3",
-    "srs_tags": [
-      "B1_reading",
-      "email"
-    ]
-  },
-  {
-    "id": "art_0195",
-    "title": "מכתב 196",
-    "type": "letter",
-    "level": "B2",
-    "content": "תוכן ברמת B2: מכתב מספר 196.",
-    "word_count": 200,
-    "glossary": [
-      {
-        "it": "parola195",
-        "he": "מילה195"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0195.mp3",
-    "srs_tags": [
-      "B2_reading",
-      "letter"
-    ]
-  },
-  {
-    "id": "art_0196",
-    "title": "טופס 197",
-    "type": "form",
-    "level": "C1",
-    "content": "תוכן ברמת C1: טופס מספר 197.",
-    "word_count": 250,
-    "glossary": [
-      {
-        "it": "parola196",
-        "he": "מילה196"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0196.mp3",
-    "srs_tags": [
-      "C1_reading",
-      "form"
-    ]
-  },
-  {
-    "id": "art_0197",
-    "title": "פרסומת 198",
-    "type": "ad",
-    "level": "C2",
-    "content": "תוכן ברמת C2: פרסומת מספר 198.",
-    "word_count": 300,
-    "glossary": [
-      {
-        "it": "parola197",
-        "he": "מילה197"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0197.mp3",
-    "srs_tags": [
-      "C2_reading",
-      "ad"
-    ]
-  },
-  {
-    "id": "art_0198",
-    "title": "סיפור 199",
-    "type": "story",
-    "level": "A1",
-    "content": "תוכן ברמת A1: סיפור מספר 199.",
-    "word_count": 50,
-    "glossary": [
-      {
-        "it": "parola198",
-        "he": "מילה198"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0198.mp3",
-    "srs_tags": [
-      "A1_reading",
-      "story"
-    ]
-  },
-  {
-    "id": "art_0199",
-    "title": "מדריך 200",
-    "type": "guide",
-    "level": "A2",
-    "content": "תוכן ברמת A2: מדריך מספר 200.",
-    "word_count": 100,
-    "glossary": [
-      {
-        "it": "parola199",
-        "he": "מילה199"
-      }
-    ],
-    "questions": [
-      {
-        "q": "שאלת הבנה",
-        "options": [
-          "א",
-          "ב",
-          "ג",
-          "ד"
-        ],
-        "correct": 0
-      }
-    ],
-    "audio_url": "audio/articles/art_0199.mp3",
-    "srs_tags": [
-      "A2_reading",
       "guide"
     ]
   }
