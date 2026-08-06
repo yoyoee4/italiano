@@ -1,0 +1,2187 @@
+[
+  {
+    "id": "sim_cafe_A1",
+    "scenario": "cafe",
+    "title": "☕ בקפה",
+    "description": "הזמנת קפה בבר איטלקי",
+    "level": "A1",
+    "difficulty": 1,
+    "roles": [
+      "barista",
+      "cliente"
+    ],
+    "duration_minutes": 8,
+    "objectives": [
+      "תרגול A1 cafe"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 10,
+    "tags": [
+      "cafe",
+      "A1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_cafe_A2",
+    "scenario": "cafe",
+    "title": "☕ בקפה",
+    "description": "הזמנת קפה בבר איטלקי",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "barista",
+      "cliente"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 cafe"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "cafe",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_cafe_B1",
+    "scenario": "cafe",
+    "title": "☕ בקפה",
+    "description": "הזמנת קפה בבר איטלקי",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "barista",
+      "cliente"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 cafe"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "cafe",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_restaurant_A1",
+    "scenario": "restaurant",
+    "title": "🍝 במסעדה",
+    "description": "הזמנת אוכל בטרטוריה",
+    "level": "A1",
+    "difficulty": 1,
+    "roles": [
+      "cameriere",
+      "cliente"
+    ],
+    "duration_minutes": 8,
+    "objectives": [
+      "תרגול A1 restaurant"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 10,
+    "tags": [
+      "restaurant",
+      "A1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_restaurant_A2",
+    "scenario": "restaurant",
+    "title": "🍝 במסעדה",
+    "description": "הזמנת אוכל בטרטוריה",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "cameriere",
+      "cliente"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 restaurant"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "restaurant",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_restaurant_B1",
+    "scenario": "restaurant",
+    "title": "🍝 במסעדה",
+    "description": "הזמנת אוכל בטרטוריה",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "cameriere",
+      "cliente"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 restaurant"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "restaurant",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_restaurant_B2",
+    "scenario": "restaurant",
+    "title": "🍝 במסעדה",
+    "description": "הזמנת אוכל בטרטוריה",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "cameriere",
+      "cliente"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 restaurant"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "restaurant",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_bar_A1",
+    "scenario": "bar",
+    "title": "🍸 בבר",
+    "description": "מזמינים קוקטייל בבר",
+    "level": "A1",
+    "difficulty": 1,
+    "roles": [
+      "barista",
+      "cliente"
+    ],
+    "duration_minutes": 8,
+    "objectives": [
+      "תרגול A1 bar"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 10,
+    "tags": [
+      "bar",
+      "A1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_bar_A2",
+    "scenario": "bar",
+    "title": "🍸 בבר",
+    "description": "מזמינים קוקטייל בבר",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "barista",
+      "cliente"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 bar"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "bar",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_bar_B1",
+    "scenario": "bar",
+    "title": "🍸 בבר",
+    "description": "מזמינים קוקטייל בבר",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "barista",
+      "cliente"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 bar"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "bar",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_gelateria_A1",
+    "scenario": "gelateria",
+    "title": "🍦 בגלידרייה",
+    "description": "בוחרים גלידה בגלידרייה",
+    "level": "A1",
+    "difficulty": 1,
+    "roles": [
+      "gelataio",
+      "cliente"
+    ],
+    "duration_minutes": 8,
+    "objectives": [
+      "תרגול A1 gelateria"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 10,
+    "tags": [
+      "gelateria",
+      "A1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_gelateria_A2",
+    "scenario": "gelateria",
+    "title": "🍦 בגלידרייה",
+    "description": "בוחרים גלידה בגלידרייה",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "gelataio",
+      "cliente"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 gelateria"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "gelateria",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_hotel_A1",
+    "scenario": "hotel",
+    "title": "🏨 במלון",
+    "description": "צ'ק-אין במלון",
+    "level": "A1",
+    "difficulty": 1,
+    "roles": [
+      "receptionist",
+      "ospite"
+    ],
+    "duration_minutes": 8,
+    "objectives": [
+      "תרגול A1 hotel"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 10,
+    "tags": [
+      "hotel",
+      "A1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_hotel_A2",
+    "scenario": "hotel",
+    "title": "🏨 במלון",
+    "description": "צ'ק-אין במלון",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "receptionist",
+      "ospite"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 hotel"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "hotel",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_hotel_B1",
+    "scenario": "hotel",
+    "title": "🏨 במלון",
+    "description": "צ'ק-אין במלון",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "receptionist",
+      "ospite"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 hotel"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "hotel",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_airbnb_A2",
+    "scenario": "airbnb",
+    "title": "🏠 ב-Airbnb",
+    "description": "תיאום כניסה ל-Airbnb",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "host",
+      "ospite"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 airbnb"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "airbnb",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_airbnb_B1",
+    "scenario": "airbnb",
+    "title": "🏠 ב-Airbnb",
+    "description": "תיאום כניסה ל-Airbnb",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "host",
+      "ospite"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 airbnb"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "airbnb",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_train_A1",
+    "scenario": "train",
+    "title": "🚂 בתחנת רכבת",
+    "description": "קניית כרטיס רכבת",
+    "level": "A1",
+    "difficulty": 1,
+    "roles": [
+      "bigliettaio",
+      "passeggero"
+    ],
+    "duration_minutes": 8,
+    "objectives": [
+      "תרגול A1 train"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 10,
+    "tags": [
+      "train",
+      "A1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_train_A2",
+    "scenario": "train",
+    "title": "🚂 בתחנת רכבת",
+    "description": "קניית כרטיס רכבת",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "bigliettaio",
+      "passeggero"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 train"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "train",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_train_B1",
+    "scenario": "train",
+    "title": "🚂 בתחנת רכבת",
+    "description": "קניית כרטיס רכבת",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "bigliettaio",
+      "passeggero"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 train"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "train",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_airport_A1",
+    "scenario": "airport",
+    "title": "✈️ בשדה תעופה",
+    "description": "צ'ק-אין וביטחון בשדה",
+    "level": "A1",
+    "difficulty": 1,
+    "roles": [
+      "impiegato",
+      "passeggero"
+    ],
+    "duration_minutes": 8,
+    "objectives": [
+      "תרגול A1 airport"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 10,
+    "tags": [
+      "airport",
+      "A1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_airport_A2",
+    "scenario": "airport",
+    "title": "✈️ בשדה תעופה",
+    "description": "צ'ק-אין וביטחון בשדה",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "impiegato",
+      "passeggero"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 airport"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "airport",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_airport_B1",
+    "scenario": "airport",
+    "title": "✈️ בשדה תעופה",
+    "description": "צ'ק-אין וביטחון בשדה",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "impiegato",
+      "passeggero"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 airport"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "airport",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_airport_B2",
+    "scenario": "airport",
+    "title": "✈️ בשדה תעופה",
+    "description": "צ'ק-אין וביטחון בשדה",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "impiegato",
+      "passeggero"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 airport"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "airport",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_car_rental_A2",
+    "scenario": "car_rental",
+    "title": "🚗 השכרת רכב",
+    "description": "משכירים רכב",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "impiegato",
+      "cliente"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 car_rental"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "car_rental",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_car_rental_B1",
+    "scenario": "car_rental",
+    "title": "🚗 השכרת רכב",
+    "description": "משכירים רכב",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "impiegato",
+      "cliente"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 car_rental"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "car_rental",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_car_rental_B2",
+    "scenario": "car_rental",
+    "title": "🚗 השכרת רכב",
+    "description": "משכירים רכב",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "impiegato",
+      "cliente"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 car_rental"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "car_rental",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_pharmacy_A1",
+    "scenario": "pharmacy",
+    "title": "💊 בבית מרקחת",
+    "description": "קניית תרופות",
+    "level": "A1",
+    "difficulty": 1,
+    "roles": [
+      "farmacista",
+      "cliente"
+    ],
+    "duration_minutes": 8,
+    "objectives": [
+      "תרגול A1 pharmacy"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 10,
+    "tags": [
+      "pharmacy",
+      "A1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_pharmacy_A2",
+    "scenario": "pharmacy",
+    "title": "💊 בבית מרקחת",
+    "description": "קניית תרופות",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "farmacista",
+      "cliente"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 pharmacy"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "pharmacy",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_pharmacy_B1",
+    "scenario": "pharmacy",
+    "title": "💊 בבית מרקחת",
+    "description": "קניית תרופות",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "farmacista",
+      "cliente"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 pharmacy"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "pharmacy",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_hospital_A2",
+    "scenario": "hospital",
+    "title": "🏥 בבית חולים",
+    "description": "ביקור במיון",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "dottore",
+      "paziente"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 hospital"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "hospital",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_hospital_B1",
+    "scenario": "hospital",
+    "title": "🏥 בבית חולים",
+    "description": "ביקור במיון",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "dottore",
+      "paziente"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 hospital"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "hospital",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_hospital_B2",
+    "scenario": "hospital",
+    "title": "🏥 בבית חולים",
+    "description": "ביקור במיון",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "dottore",
+      "paziente"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 hospital"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "hospital",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_doctor_A2",
+    "scenario": "doctor",
+    "title": "🩺 אצל רופא",
+    "description": "בדיקה אצל רופא כללי",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "dottore",
+      "paziente"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 doctor"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "doctor",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_doctor_B1",
+    "scenario": "doctor",
+    "title": "🩺 אצל רופא",
+    "description": "בדיקה אצל רופא כללי",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "dottore",
+      "paziente"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 doctor"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "doctor",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_doctor_B2",
+    "scenario": "doctor",
+    "title": "🩺 אצל רופא",
+    "description": "בדיקה אצל רופא כללי",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "dottore",
+      "paziente"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 doctor"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "doctor",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_police_A2",
+    "scenario": "police",
+    "title": "👮 במשטרה",
+    "description": "דיווח על אובדן",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "poliziotto",
+      "cittadino"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 police"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "police",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_police_B1",
+    "scenario": "police",
+    "title": "👮 במשטרה",
+    "description": "דיווח על אובדן",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "poliziotto",
+      "cittadino"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 police"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "police",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_police_B2",
+    "scenario": "police",
+    "title": "👮 במשטרה",
+    "description": "דיווח על אובדן",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "poliziotto",
+      "cittadino"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 police"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "police",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_bank_B1",
+    "scenario": "bank",
+    "title": "🏦 בבנק",
+    "description": "פתיחת חשבון בנק",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "impiegato",
+      "cliente"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 bank"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "bank",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_bank_B2",
+    "scenario": "bank",
+    "title": "🏦 בבנק",
+    "description": "פתיחת חשבון בנק",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "impiegato",
+      "cliente"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 bank"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "bank",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_bank_C1",
+    "scenario": "bank",
+    "title": "🏦 בבנק",
+    "description": "פתיחת חשבון בנק",
+    "level": "C1",
+    "difficulty": 5,
+    "roles": [
+      "impiegato",
+      "cliente"
+    ],
+    "duration_minutes": 20,
+    "objectives": [
+      "תרגול C1 bank"
+    ],
+    "nona_mode": "strict",
+    "xp_reward": 50,
+    "tags": [
+      "bank",
+      "C1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_post_A2",
+    "scenario": "post",
+    "title": "📮 בדואר",
+    "description": "שליחת חבילה",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "impiegato",
+      "cliente"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 post"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "post",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_post_B1",
+    "scenario": "post",
+    "title": "📮 בדואר",
+    "description": "שליחת חבילה",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "impiegato",
+      "cliente"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 post"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "post",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_supermarket_A1",
+    "scenario": "supermarket",
+    "title": "🛒 בסופר",
+    "description": "קניות בסופר",
+    "level": "A1",
+    "difficulty": 1,
+    "roles": [
+      "cassiere",
+      "cliente"
+    ],
+    "duration_minutes": 8,
+    "objectives": [
+      "תרגול A1 supermarket"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 10,
+    "tags": [
+      "supermarket",
+      "A1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_supermarket_A2",
+    "scenario": "supermarket",
+    "title": "🛒 בסופר",
+    "description": "קניות בסופר",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "cassiere",
+      "cliente"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 supermarket"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "supermarket",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_supermarket_B1",
+    "scenario": "supermarket",
+    "title": "🛒 בסופר",
+    "description": "קניות בסופר",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "cassiere",
+      "cliente"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 supermarket"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "supermarket",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_market_A1",
+    "scenario": "market",
+    "title": "🏪 בשוק",
+    "description": "קניות בשוק האיכרים",
+    "level": "A1",
+    "difficulty": 1,
+    "roles": [
+      "venditore",
+      "cliente"
+    ],
+    "duration_minutes": 8,
+    "objectives": [
+      "תרגול A1 market"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 10,
+    "tags": [
+      "market",
+      "A1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_market_A2",
+    "scenario": "market",
+    "title": "🏪 בשוק",
+    "description": "קניות בשוק האיכרים",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "venditore",
+      "cliente"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 market"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "market",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_market_B1",
+    "scenario": "market",
+    "title": "🏪 בשוק",
+    "description": "קניות בשוק האיכרים",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "venditore",
+      "cliente"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 market"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "market",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_work_B1",
+    "scenario": "work",
+    "title": "💼 בעבודה",
+    "description": "שיחה עם קולגה",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "collega",
+      "dipendente"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 work"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "work",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_work_B2",
+    "scenario": "work",
+    "title": "💼 בעבודה",
+    "description": "שיחה עם קולגה",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "collega",
+      "dipendente"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 work"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "work",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_work_C1",
+    "scenario": "work",
+    "title": "💼 בעבודה",
+    "description": "שיחה עם קולגה",
+    "level": "C1",
+    "difficulty": 5,
+    "roles": [
+      "collega",
+      "dipendente"
+    ],
+    "duration_minutes": 20,
+    "objectives": [
+      "תרגול C1 work"
+    ],
+    "nona_mode": "strict",
+    "xp_reward": 50,
+    "tags": [
+      "work",
+      "C1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_interview_B1",
+    "scenario": "interview",
+    "title": "🤝 בראיון עבודה",
+    "description": "ראיון עבודה באיטלקית",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "intervistatore",
+      "candidato"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 interview"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "interview",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_interview_B2",
+    "scenario": "interview",
+    "title": "🤝 בראיון עבודה",
+    "description": "ראיון עבודה באיטלקית",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "intervistatore",
+      "candidato"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 interview"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "interview",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_interview_C1",
+    "scenario": "interview",
+    "title": "🤝 בראיון עבודה",
+    "description": "ראיון עבודה באיטלקית",
+    "level": "C1",
+    "difficulty": 5,
+    "roles": [
+      "intervistatore",
+      "candidato"
+    ],
+    "duration_minutes": 20,
+    "objectives": [
+      "תרגול C1 interview"
+    ],
+    "nona_mode": "strict",
+    "xp_reward": 50,
+    "tags": [
+      "interview",
+      "C1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_interview_C2",
+    "scenario": "interview",
+    "title": "🤝 בראיון עבודה",
+    "description": "ראיון עבודה באיטלקית",
+    "level": "C2",
+    "difficulty": 6,
+    "roles": [
+      "intervistatore",
+      "candidato"
+    ],
+    "duration_minutes": 23,
+    "objectives": [
+      "תרגול C2 interview"
+    ],
+    "nona_mode": "strict",
+    "xp_reward": 60,
+    "tags": [
+      "interview",
+      "C2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_university_B1",
+    "scenario": "university",
+    "title": "🎓 באוניברסיטה",
+    "description": "רישום לקורס",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "professore",
+      "studente"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 university"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "university",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_university_B2",
+    "scenario": "university",
+    "title": "🎓 באוניברסיטה",
+    "description": "רישום לקורס",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "professore",
+      "studente"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 university"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "university",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_university_C1",
+    "scenario": "university",
+    "title": "🎓 באוניברסיטה",
+    "description": "רישום לקורס",
+    "level": "C1",
+    "difficulty": 5,
+    "roles": [
+      "professore",
+      "studente"
+    ],
+    "duration_minutes": 20,
+    "objectives": [
+      "תרגול C1 university"
+    ],
+    "nona_mode": "strict",
+    "xp_reward": 50,
+    "tags": [
+      "university",
+      "C1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_friends_A1",
+    "scenario": "friends",
+    "title": "👫 עם חברים",
+    "description": "מפגש חברים",
+    "level": "A1",
+    "difficulty": 1,
+    "roles": [
+      "amico1",
+      "amico2"
+    ],
+    "duration_minutes": 8,
+    "objectives": [
+      "תרגול A1 friends"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 10,
+    "tags": [
+      "friends",
+      "A1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_friends_A2",
+    "scenario": "friends",
+    "title": "👫 עם חברים",
+    "description": "מפגש חברים",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "amico1",
+      "amico2"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 friends"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "friends",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_friends_B1",
+    "scenario": "friends",
+    "title": "👫 עם חברים",
+    "description": "מפגש חברים",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "amico1",
+      "amico2"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 friends"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "friends",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_family_A1",
+    "scenario": "family",
+    "title": "👪 עם המשפחה",
+    "description": "ארוחת ערב משפחתית",
+    "level": "A1",
+    "difficulty": 1,
+    "roles": [
+      "mamma",
+      "figlio"
+    ],
+    "duration_minutes": 8,
+    "objectives": [
+      "תרגול A1 family"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 10,
+    "tags": [
+      "family",
+      "A1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_family_A2",
+    "scenario": "family",
+    "title": "👪 עם המשפחה",
+    "description": "ארוחת ערב משפחתית",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "mamma",
+      "figlio"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 family"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "family",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_family_B1",
+    "scenario": "family",
+    "title": "👪 עם המשפחה",
+    "description": "ארוחת ערב משפחתית",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "mamma",
+      "figlio"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 family"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "family",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_date_A2",
+    "scenario": "date",
+    "title": "💑 דייט",
+    "description": "דייט ראשון",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "persona1",
+      "persona2"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 date"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "date",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_date_B1",
+    "scenario": "date",
+    "title": "💑 דייט",
+    "description": "דייט ראשון",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "persona1",
+      "persona2"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 date"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "date",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_date_B2",
+    "scenario": "date",
+    "title": "💑 דייט",
+    "description": "דייט ראשון",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "persona1",
+      "persona2"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 date"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "date",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_wedding_B1",
+    "scenario": "wedding",
+    "title": "💒 בחתונה",
+    "description": "ברכות בחתונה איטלקית",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "ospite",
+      "sposo"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 wedding"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "wedding",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_wedding_B2",
+    "scenario": "wedding",
+    "title": "💒 בחתונה",
+    "description": "ברכות בחתונה איטלקית",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "ospite",
+      "sposo"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 wedding"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "wedding",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_phone_B1",
+    "scenario": "phone",
+    "title": "📞 שיחת טלפון",
+    "description": "שיחת טלפון רשמית",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "segreteria",
+      "chiamante"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 phone"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "phone",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_phone_B2",
+    "scenario": "phone",
+    "title": "📞 שיחת טלפון",
+    "description": "שיחת טלפון רשמית",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "segreteria",
+      "chiamante"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 phone"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "phone",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_argument_B2",
+    "scenario": "argument",
+    "title": "😤 ויכוח",
+    "description": "ויכוח על פוליטיקה",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "persona1",
+      "persona2"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 argument"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "argument",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_argument_C1",
+    "scenario": "argument",
+    "title": "😤 ויכוח",
+    "description": "ויכוח על פוליטיקה",
+    "level": "C1",
+    "difficulty": 5,
+    "roles": [
+      "persona1",
+      "persona2"
+    ],
+    "duration_minutes": 20,
+    "objectives": [
+      "תרגול C1 argument"
+    ],
+    "nona_mode": "strict",
+    "xp_reward": 50,
+    "tags": [
+      "argument",
+      "C1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_argument_C2",
+    "scenario": "argument",
+    "title": "😤 ויכוח",
+    "description": "ויכוח על פוליטיקה",
+    "level": "C2",
+    "difficulty": 6,
+    "roles": [
+      "persona1",
+      "persona2"
+    ],
+    "duration_minutes": 23,
+    "objectives": [
+      "תרגול C2 argument"
+    ],
+    "nona_mode": "strict",
+    "xp_reward": 60,
+    "tags": [
+      "argument",
+      "C2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_smalltalk_A2",
+    "scenario": "smalltalk",
+    "title": "💬 שיחת חולין",
+    "description": "שיחת חולין על מזג אוויר",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "persona1",
+      "persona2"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 smalltalk"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "smalltalk",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_smalltalk_B1",
+    "scenario": "smalltalk",
+    "title": "💬 שיחת חולין",
+    "description": "שיחת חולין על מזג אוויר",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "persona1",
+      "persona2"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 smalltalk"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "smalltalk",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_driving_A2",
+    "scenario": "driving",
+    "title": "🚗 נהיגה",
+    "description": "עצירה במשטרת תנועה",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "poliziotto",
+      "automobilista"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 driving"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "driving",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_driving_B1",
+    "scenario": "driving",
+    "title": "🚗 נהיגה",
+    "description": "עצירה במשטרת תנועה",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "poliziotto",
+      "automobilista"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 driving"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "driving",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_driving_B2",
+    "scenario": "driving",
+    "title": "🚗 נהיגה",
+    "description": "עצירה במשטרת תנועה",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "poliziotto",
+      "automobilista"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 driving"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "driving",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_museum_A2",
+    "scenario": "museum",
+    "title": "🏛️ במוזיאון",
+    "description": "סיור במוזיאון",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "guida",
+      "visitatore"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 museum"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "museum",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_museum_B1",
+    "scenario": "museum",
+    "title": "🏛️ במוזיאון",
+    "description": "סיור במוזיאון",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "guida",
+      "visitatore"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 museum"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "museum",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_museum_B2",
+    "scenario": "museum",
+    "title": "🏛️ במוזיאון",
+    "description": "סיור במוזיאון",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "guida",
+      "visitatore"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 museum"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "museum",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_museum_C1",
+    "scenario": "museum",
+    "title": "🏛️ במוזיאון",
+    "description": "סיור במוזיאון",
+    "level": "C1",
+    "difficulty": 5,
+    "roles": [
+      "guida",
+      "visitatore"
+    ],
+    "duration_minutes": 20,
+    "objectives": [
+      "תרגול C1 museum"
+    ],
+    "nona_mode": "strict",
+    "xp_reward": 50,
+    "tags": [
+      "museum",
+      "C1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_football_A2",
+    "scenario": "football",
+    "title": "⚽ כדורגל",
+    "description": "דיבור על משחק כדורגל",
+    "level": "A2",
+    "difficulty": 2,
+    "roles": [
+      "tifoso1",
+      "tifoso2"
+    ],
+    "duration_minutes": 11,
+    "objectives": [
+      "תרגול A2 football"
+    ],
+    "nona_mode": "sweet",
+    "xp_reward": 20,
+    "tags": [
+      "football",
+      "A2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_football_B1",
+    "scenario": "football",
+    "title": "⚽ כדורגל",
+    "description": "דיבור על משחק כדורגל",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "tifoso1",
+      "tifoso2"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 football"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "football",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_gov_office_B1",
+    "scenario": "gov_office",
+    "title": "🏛️ במשרד ממשלתי",
+    "description": "טיפול בבירוקרטיה",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "impiegato",
+      "cittadino"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 gov_office"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "gov_office",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_gov_office_B2",
+    "scenario": "gov_office",
+    "title": "🏛️ במשרד ממשלתי",
+    "description": "טיפול בבירוקרטיה",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "impiegato",
+      "cittadino"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 gov_office"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "gov_office",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_gov_office_C1",
+    "scenario": "gov_office",
+    "title": "🏛️ במשרד ממשלתי",
+    "description": "טיפול בבירוקרטיה",
+    "level": "C1",
+    "difficulty": 5,
+    "roles": [
+      "impiegato",
+      "cittadino"
+    ],
+    "duration_minutes": 20,
+    "objectives": [
+      "תרגול C1 gov_office"
+    ],
+    "nona_mode": "strict",
+    "xp_reward": 50,
+    "tags": [
+      "gov_office",
+      "C1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_citizenship_B2",
+    "scenario": "citizenship",
+    "title": "🪪 אזרחות",
+    "description": "בקשה לאזרחות איטלקית",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "funzionario",
+      "richiedente"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 citizenship"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "citizenship",
+      "B2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_citizenship_C1",
+    "scenario": "citizenship",
+    "title": "🪪 אזרחות",
+    "description": "בקשה לאזרחות איטלקית",
+    "level": "C1",
+    "difficulty": 5,
+    "roles": [
+      "funzionario",
+      "richiedente"
+    ],
+    "duration_minutes": 20,
+    "objectives": [
+      "תרגול C1 citizenship"
+    ],
+    "nona_mode": "strict",
+    "xp_reward": 50,
+    "tags": [
+      "citizenship",
+      "C1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_citizenship_C2",
+    "scenario": "citizenship",
+    "title": "🪪 אזרחות",
+    "description": "בקשה לאזרחות איטלקית",
+    "level": "C2",
+    "difficulty": 6,
+    "roles": [
+      "funzionario",
+      "richiedente"
+    ],
+    "duration_minutes": 23,
+    "objectives": [
+      "תרגול C2 citizenship"
+    ],
+    "nona_mode": "strict",
+    "xp_reward": 60,
+    "tags": [
+      "citizenship",
+      "C2",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_rent_B1",
+    "scenario": "rent",
+    "title": "🔑 שכירת דירה",
+    "description": "ביקור בדירה להשכרה",
+    "level": "B1",
+    "difficulty": 3,
+    "roles": [
+      "proprietario",
+      "inquilino"
+    ],
+    "duration_minutes": 14,
+    "objectives": [
+      "תרגול B1 rent"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 30,
+    "tags": [
+      "rent",
+      "B1",
+      "simulation"
+    ]
+  },
+  {
+    "id": "sim_rent_B2",
+    "scenario": "rent",
+    "title": "🔑 שכירת דירה",
+    "description": "ביקור בדירה להשכרה",
+    "level": "B2",
+    "difficulty": 4,
+    "roles": [
+      "proprietario",
+      "inquilino"
+    ],
+    "duration_minutes": 17,
+    "objectives": [
+      "תרגול B2 rent"
+    ],
+    "nona_mode": "teacher",
+    "xp_reward": 40,
+    "tags": [
+      "rent",
+      "B2",
+      "simulation"
+    ]
+  }
+]

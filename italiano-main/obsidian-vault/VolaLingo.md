@@ -2,7 +2,7 @@
 
 **Language Learning Intelligence Platform for Hebrew Speakers**
 
-*Last Updated: 2026-08-05*
+*Last Updated: 2026-08-06*
 
 ---
 
@@ -26,9 +26,9 @@ VolaLingo is a production-grade Italian learning PWA combining adaptive intellig
 |----------|-------|-------|
 | **Version** | v0.9-beta-learning-engine | [[roadmap]] |
 | **GitBranch** | `main` (pushed) | [[architecture]] |
-| **Sprints** | ✅ C4A-C4E, C6 complete<br>🔄 C5-C7 in progress | [[architecture]] |
-| **Test Coverage** | 100% (C4E 6-phase suite) | [[roadmap]] |
-| **Content Files** | 46 JSON + 3 articles | [[content-system]] |
+|| **Strategy** | **Content-First (Epic 1-7)** — Code complete, now scaling content | [[epics]] |
+|| **Engine Status** | ✅ All engines built (C4A-C5) | [[architecture]] |
+|| **Content** | 🟢 **Epic 1**: 1,490 words, 2,050 sentences, 285 dialogues, 300 stories, 200 articles<br>🟢 **Dictionary**: 1,490 entries (IPA, grammar, examples, collocations)<br>🟢 **Exam Qs**: 2,160 (CILS/CELI/AIL tagged)<br>🟢 **Nona**: v2.0 with 3 personalities, contextual feedback<br>🟢 **Simulations**: 95 scenarios × 3-5 levels | [[content-system]] |
 | **Deployment** | GitHub Pages → italiano.tickerio.app | [[architecture]] |
 | **Benchmark** | 6 unique differentiators | [[product-benchmark]] |
 
@@ -137,6 +137,72 @@ volalingo/
 - **C5**: Daily Missions UI (activate `Orchestrator.createDailyMission()` in home screen)
 - **C6**: Life Simulations UI (restaurant, airport, hospital, job interview via `Orchestrator.createSimulation()`)
 - **C7**: AI Speaking Coach UI (`Orchestrator.createSpeakingCoachSession('pronunciation'|'fluency'|'exam')`)
+
+---
+
+## 🎯 NEW STRATEGY: Content-First Epics (Epic 1-7)
+**Decision Date**: 2026-08-06  
+**Rationale**: Engines are complete. Bottleneck is content depth, not code.
+
+### **Epic 1 — Expand Content (P0)**
+| Target | Quantity | Status |
+|--------|----------|--------|
+| Words | 5,000–8,000 | 926 baseline |
+| Sentences | 2,000 | ~200 baseline |
+| Dialogues | 500 | 30 baseline |
+| Stories | 300 | 0 |
+| Articles | 200 | 3 baseline |
+| Simulations | 100+ | 0 |
+| CILS/CELI Questions | 500+ | 0 |
+| Vocab Questions | 1,000+ | 0 |
+| Grammar Questions | 1,000+ | 0 |
+
+### **Epic 2 — Simulation Library (30+ scenarios × 3–5 levels)**
+Core scenarios: Restaurant, Café, Bar, Gelateria, Hotel, Airbnb, Train Station, Airport, Car Rental, Pharmacy, Hospital, Doctor, Police, Bank, Post Office, Supermarket, Market, Work, Job Interview, University, Friends, Family, Date, Wedding, Phone, Argument, Small Talk, Driving, Museum, Football, Government Office, Citizenship, Rent Apartment
+
+### **Epic 3 — Reading Center**
+Types: Simple News, Real News, Blogs, Recipes, Menus, Emails, WhatsApp, Letters, Simple Contracts, Ads, Instructions, Forms, Street Signs, Ads
+Features: Word-click translation, Audio, Save to SRS, Comprehension Qs, Grammar from text
+
+### **Epic 4 — Dictionary (WordReference + Wiktionary + Reverso)**
+Fields: Translation, Pronunciation, IPA, Examples, Expressions, Collocations, Synonyms, Antonyms, Conjugations, Culture, Common Mistakes, Related Words, SRS, Audio
+
+### **Epic 5 — Italian Culture Center**
+Food, Coffee, Pasta, Wine, Football, Music, Cinema, TV Series, Basic Politics, Geography, Regions, Dialects, Holidays, Etiquette, Slang, Hand Gestures
+
+### **Epic 6 — Exam Intelligence**
+Every question tagged: Exam → Section → CEFR → Skills Tested → Mistakes Detected → Remediation Lessons
+
+### **Epic 7 — Nona Intelligence**
+Contextual, memorable coaching: "Mamma mia... preposition again? Let's do two more." / "Non correre! In Italia si parla piano." / "Ora sembri italiano vero."
+
+---
+
+## 📋 Product Release Checklist
+| Feature | Status |
+|---------|--------|
+| Web PWA | ✅ |
+| Android | ✅ |
+| iOS | ⏳ |
+| Offline | ✅ |
+| Dictionary | ✅ (structure) → 🔄 scale |
+| Articles | ✅ (structure) → 🔄 scale |
+| Stories | ⏳ |
+| Simulations | ✅ (engine) → 🔄 Epic 2 |
+| Daily Missions | ✅ (UI + engine) |
+| Exam Center | ✅ (engine) → 🔄 Epic 6 |
+| SRS | ✅ |
+| Speaking | ✅ (engine) → 🔄 Epic 7 |
+| Listening | ✅ |
+| Reading | ✅ (engine) → 🔄 Epic 3 |
+| Writing | ✅ (engine) → 🔄 Epic 3 |
+| Grammar | ✅ (engine) → 🔄 Epic 6 |
+| Culture | ✅ (engine) → 🔄 Epic 5 |
+| Nona | ✅ (engine) → 🔄 Epic 7 |
+| Analytics | ⏳ |
+| Cloud Sync | ⏳ |
+| Backups | ⏳ |
+| Multi-language Ready | ✅ (architecture) |
 
 ---
 
