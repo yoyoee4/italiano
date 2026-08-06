@@ -1287,7 +1287,7 @@
   {
     "it": "bicchiere",
     "he": "כוס",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "coltello",
@@ -1342,7 +1342,7 @@
   {
     "it": "stanza",
     "he": "חדר",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "balcone",
@@ -1352,262 +1352,262 @@
   {
     "it": "giardino",
     "he": "גן",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "scala",
     "he": "מדרגות",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "divano",
     "he": "ספה",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "poltrona",
     "he": "כורסה",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "tappeto",
     "he": "שטיח",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "cuscino",
     "he": "כרית",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "coperta",
     "he": "שמיכה",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "tenda",
     "he": "וילון",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "quadro",
     "he": "תמונה",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "parete",
     "he": "קיר",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "soffitto",
     "he": "תקרה",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "pavimento",
     "he": "רצפה",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "vestito",
     "he": "שמלה",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "abito",
     "he": "חליפה",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "giacca",
     "he": "מעיל",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "cappotto",
     "he": "מעיל חורף",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "maglione",
     "he": "סוודר",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "camicia",
     "he": "חולצה",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "pantaloni",
     "he": "מכנסיים",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "scarpe",
     "he": "נעליים",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "stivali",
     "he": "מגפיים",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "sandali",
     "he": "סנדלים",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "cappello",
     "he": "כובע",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "cintura",
     "he": "חגורה",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "occhiali",
     "he": "משקפיים",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "orologio",
     "he": "שעון",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "pioggia",
     "he": "גשם",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "neve",
     "he": "שלג",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "vento",
     "he": "רוח",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "tempesta",
     "he": "סופה",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "nuvola",
     "he": "ענן",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "mucca",
     "he": "פרה",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "pecora",
     "he": "כבש",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "gallina",
     "he": "תרנגולת",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "maiale",
     "he": "חזיר",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "orso",
     "he": "דוב",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "lupo",
     "he": "זאב",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "volpe",
     "he": "שועל",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "topo",
     "he": "עכבר",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "elefante",
     "he": "פיל",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "leone",
     "he": "אריה",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "tigre",
     "he": "נמר",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "scimmia",
     "he": "קוף",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "serpente",
     "he": "נחש",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "rana",
     "he": "צפרדע",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "spalla",
     "he": "כתף",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "schiena",
     "he": "גב",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "pancia",
     "he": "בטן",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "dito",
     "he": "אצבע",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "unghia",
     "he": "ציפורן",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "lingua",
     "he": "שפה",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "dente",
     "he": "שן",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "soggiorno",
@@ -1617,27 +1617,27 @@
   {
     "it": "camera da letto",
     "he": "חדר שינה",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "scrivania",
     "he": "שולחן כתיבה",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "computer",
     "he": "מחשב",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "televisione",
     "he": "טלוויזיה",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "radio",
     "he": "רדיו",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "zona",
@@ -1647,17 +1647,17 @@
   {
     "it": "cortile",
     "he": "חצר",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "cancello",
     "he": "שער",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "serratura",
     "he": "מנעול",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "campanello",
@@ -1732,7 +1732,7 @@
   {
     "it": "dentifricio",
     "he": "משחת שיניים",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "spazzolino",
@@ -1787,47 +1787,47 @@
   {
     "it": "zaino",
     "he": "תיק גב",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "borsa",
     "he": "בורסה",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "portafoglio",
     "he": "ארנק",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "valigia",
     "he": "מזוודה",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "ombrello",
     "he": "מטרייה",
-    "cat": "vocab"
+    "cat": "clothing"
   },
   {
     "it": "spuntino",
     "he": "חטיף",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "merenda",
     "he": "ארוחת ארבע",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "antipasto",
     "he": "מתאבן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "primo piatto",
     "he": "מנה ראשונה",
-    "cat": "vocab"
+    "cat": "misc"
   },
   {
     "it": "secondo piatto",
@@ -1837,7 +1837,7 @@
   {
     "it": "contorno",
     "he": "תוספת",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "caffe",
@@ -1847,17 +1847,17 @@
   {
     "it": "cappuccino",
     "he": "קפוצ'ינו",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "espresso",
     "he": "אספרסו",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "latte macchiato",
     "he": "לאטה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "succo",
@@ -1872,7 +1872,7 @@
   {
     "it": "acqua minerale",
     "he": "מים מינרליים",
-    "cat": "vocab"
+    "cat": "adj"
   },
   {
     "it": "vino rosso",
@@ -1887,17 +1887,17 @@
   {
     "it": "prosecco",
     "he": "פרוסקו",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "limoncello",
     "he": "לימונצ'לו",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "grappa",
     "he": "גרפה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "amaro",
@@ -1907,17 +1907,17 @@
   {
     "it": "cassiere",
     "he": "קופאי",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "cliente",
     "he": "לקוח",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "bancone",
     "he": "דלפק",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "menù",
@@ -1947,12 +1947,12 @@
   {
     "it": "piscina",
     "he": "בריכה",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "parrucchiere",
     "he": "מספרה",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "tabaccheria",
@@ -1982,12 +1982,12 @@
   {
     "it": "pasticceria",
     "he": "קונדיטוריה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "fioreria",
     "he": "חנות פרחים",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "libreria",
@@ -2007,7 +2007,7 @@
   {
     "it": "orologeria",
     "he": "חנות שעונים",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "fotografo",
@@ -2017,12 +2017,12 @@
   {
     "it": "pompiere",
     "he": "כבאי",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "poliziotto",
     "he": "שוטר",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "vigile del fuoco",
@@ -2032,52 +2032,52 @@
   {
     "it": "artista",
     "he": "אמן",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "musicista",
     "he": "מוזיקאי",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "cantante",
     "he": "זמר",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "ballerino",
     "he": "רקדן",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "cuoco",
     "he": "טבח",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "cameriere",
     "he": "מלצר",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "barista",
     "he": "בטרן",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "giudice",
     "he": "שופט",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "avvocato",
     "he": "עורך דין",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "tempo",
     "he": "מזג אוויר",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "fragola",
@@ -2102,7 +2102,7 @@
   {
     "it": "pesca",
     "he": "אפרסק",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "albicocca",
@@ -2127,57 +2127,57 @@
   {
     "it": "carota",
     "he": "גזר",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "cipolla",
     "he": "בצל",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "aglio",
     "he": "שום",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "patata",
     "he": "תפוח אדמה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "melanzana",
     "he": "חציל",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "zucchina",
     "he": "קישוא",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "peperone",
     "he": "פלפל",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "funghi",
     "he": "פטריות",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "spinaci",
     "he": "תרד",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "broccoli",
     "he": "ברוקולי",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "cavolfiore",
     "he": "כרובית",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "sedano",
@@ -2187,112 +2187,112 @@
   {
     "it": "lattuga",
     "he": "חסה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "basilico",
     "he": "בזיליקום",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "origano",
     "he": "אורגנו",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "rosmarino",
     "he": "רוזמרין",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "prezzemolo",
     "he": "פטרוזיליה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "pepe",
     "he": "פלפל",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "mozzarella",
     "he": "מוצרלה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "parmigiano",
     "he": "פרמזן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "pecorino",
     "he": "פקורינו",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "gorgonzola",
     "he": "גורגונזולה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "prosciutto",
     "he": "פרושוטו",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "salame",
     "he": "סלמי",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "salsiccia",
     "he": "נקניק",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "bistecca",
     "he": "סטייק",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "pollo",
     "he": "עוף",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "agnello",
     "he": "כבש",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "coniglio",
     "he": "ארנב",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "tonno",
     "he": "טונה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "salmone",
     "he": "סלמון",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "gamberi",
     "he": "שרימפס",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "vongole",
     "he": "צדפות",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "polipo",
     "he": "תמנון",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "calamari",
@@ -2302,47 +2302,47 @@
   {
     "it": "risotto",
     "he": "ריזוטו",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "polenta",
     "he": "פולנטה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "lasagna",
     "he": "לזניה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "gnocchi",
     "he": "ניוקי",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "tortellini",
     "he": "טורטליני",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "tiramisù",
     "he": "טירמיסו",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "panna cotta",
     "he": "פנה קוטה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "cannoli",
     "he": "קנולי",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "università",
     "he": "אוניברסיטה",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "facoltà",
@@ -2352,7 +2352,7 @@
   {
     "it": "corso",
     "he": "קורס",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "lezione",
@@ -2377,17 +2377,17 @@
   {
     "it": "professore",
     "he": "פרופסור",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "collega",
     "he": "קולגה",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "capo",
     "he": "בוס",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "ufficio",
@@ -2442,27 +2442,27 @@
   {
     "it": "medico",
     "he": "רופא",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "infermiere",
     "he": "אחות",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "dentista",
     "he": "רופא שיניים",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "farmacista",
     "he": "רוקח",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "febbre",
     "he": "חום",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "tosse",
@@ -2522,7 +2522,7 @@
   {
     "it": "farmaco",
     "he": "תרופה",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "compressa",
@@ -2597,32 +2597,32 @@
   {
     "it": "viaggio",
     "he": "טיול",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "vacanza",
     "he": "חופשה",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "turista",
     "he": "תייר",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "biglietto",
     "he": "כרטיס",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "passaporto",
     "he": "דרכון",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "visto",
     "he": "ויזה",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "dogana",
@@ -2637,7 +2637,7 @@
   {
     "it": "autobus",
     "he": "אוטובוס",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "tram",
@@ -2657,17 +2657,17 @@
   {
     "it": "treno",
     "he": "רכבת",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "aereo",
     "he": "מטוס",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "nave",
     "he": "ספינה",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "traghetto",
@@ -2682,7 +2682,7 @@
   {
     "it": "parcheggio",
     "he": "חניה",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "autostrada",
@@ -2697,7 +2697,7 @@
   {
     "it": "sicurezza",
     "he": "בטיחות",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "controllo",
@@ -2717,7 +2717,7 @@
   {
     "it": "politica",
     "he": "מדע המדינה",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "governo",
@@ -2737,12 +2737,12 @@
   {
     "it": "diritto",
     "he": "משפטים",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "cittadino",
     "he": "אזרח",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "elezioni",
@@ -2802,22 +2802,22 @@
   {
     "it": "cittadinanza",
     "he": "אזרחות",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "ambiente",
     "he": "סביבה",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "natura",
     "he": "טבע",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "ecologia",
     "he": "אקולוגיה",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "inquinamento",
@@ -2842,7 +2842,7 @@
   {
     "it": "sostenibile",
     "he": "בר קיימא",
-    "cat": "vocab"
+    "cat": "adj"
   },
   {
     "it": "incontro",
@@ -2872,7 +2872,7 @@
   {
     "it": "cinema",
     "he": "קולנוע",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "opera",
@@ -2882,7 +2882,7 @@
   {
     "it": "musica",
     "he": "מוזיקה",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "danza",
@@ -2917,7 +2917,7 @@
   {
     "it": "natale",
     "he": "חג המולד",
-    "cat": "vocab"
+    "cat": "adj"
   },
   {
     "it": "pasqua",
@@ -2937,12 +2937,12 @@
   {
     "it": "regione",
     "he": "מחוז",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "capitale",
     "he": "עיר בירה",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "popolo",
@@ -2952,27 +2952,27 @@
   {
     "it": "tradizione",
     "he": "מסורת",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "cultura",
     "he": "תרבות",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "innovazione",
     "he": "חדשנות",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "tecnologia",
     "he": "טכנולוגיה",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "sviluppo",
     "he": "פיתוח",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "industria",
@@ -2982,7 +2982,7 @@
   {
     "it": "economia",
     "he": "כלכלה",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "mercato",
@@ -3022,12 +3022,12 @@
   {
     "it": "crescita",
     "he": "צמיחה",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "arte",
     "he": "אמנות",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "pittura",
@@ -3042,7 +3042,7 @@
   {
     "it": "architettura",
     "he": "אדריכלות",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "fotografia",
@@ -3052,7 +3052,7 @@
   {
     "it": "letteratura",
     "he": "ספרות",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "poesia",
@@ -3102,7 +3102,7 @@
   {
     "it": "scienza",
     "he": "מדע",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "biologia",
@@ -3152,12 +3152,12 @@
   {
     "it": "filosofia",
     "he": "פילוסופיה",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "storia",
     "he": "היסטוריה",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "geografia",
@@ -3177,7 +3177,7 @@
   {
     "it": "linguistica",
     "he": "בלשנות",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "filologia",
@@ -3192,17 +3192,17 @@
   {
     "it": "conoscenza",
     "he": "ידע",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "saggezza",
     "he": "חוכמה",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "esperienza",
     "he": "ניסיון",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "epistemologia",
@@ -3302,7 +3302,7 @@
   {
     "it": "capitalismo",
     "he": "קפיטליזם",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "socialismo",
@@ -3327,7 +3327,7 @@
   {
     "it": "coscienza",
     "he": "תודעה",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "percezione",
@@ -3352,7 +3352,7 @@
   {
     "it": "empatia",
     "he": "אמפתיה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "utopia",
@@ -3367,162 +3367,162 @@
   {
     "it": "Piacerino",
     "he": "נעים להכיר קטן",
-    "cat": "vocab"
+    "cat": "greetings"
   },
   {
     "it": "Piacerone",
     "he": "נעים להכיר גדול",
-    "cat": "vocab"
+    "cat": "greetings"
   },
   {
     "it": "Madrino",
     "he": "אמא קטן",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Madrone",
     "he": "אמא גדול",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Padrino",
     "he": "אבא קטן",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Padrone",
     "he": "אבא גדול",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Sorellino",
     "he": "אחות קטן",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Sorellone",
     "he": "אחות גדול",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Fratella",
     "he": "אח (נקבה)",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Fratellino",
     "he": "אח קטן",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Fratellone",
     "he": "אח גדול",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Figliino",
     "he": "בת קטן",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Figlione",
     "he": "בת גדול",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Mammino",
     "he": "אמא קטן",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Mammone",
     "he": "אמא גדול",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Papàino",
     "he": "אבא קטן",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Papàone",
     "he": "אבא גדול",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Nonnino",
     "he": "סבתא קטן",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Nonnone",
     "he": "סבתא גדול",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Cuginino",
     "he": "בת דוד קטן",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Cuginone",
     "he": "בת דוד גדול",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Nipotino",
     "he": "נכד קטן",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Nipotone",
     "he": "נכד גדול",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Mogliino",
     "he": "אישה קטן",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Moglione",
     "he": "אישה גדול",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Marita",
     "he": "בעל (נקבה)",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Maritino",
     "he": "בעל קטן",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Maritone",
     "he": "בעל גדול",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Amicino",
     "he": "חבר קטן",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Amicone",
     "he": "חבר גדול",
-    "cat": "vocab"
+    "cat": "family"
   },
   {
     "it": "Acquino",
     "he": "מים קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Acquone",
     "he": "מים גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Panino",
@@ -3537,12 +3537,12 @@
   {
     "it": "Lattino",
     "he": "חלב קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Lattone",
     "he": "חלב גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Uova",
@@ -3562,77 +3562,77 @@
   {
     "it": "Formaggia",
     "he": "גבינה (נקבה)",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Formaggiino",
     "he": "גבינה קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Formaggione",
     "he": "גבינה גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Pescino",
     "he": "דג קטן",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "Pescone",
     "he": "דג גדול",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "Carnino",
     "he": "בשר קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Carnone",
     "he": "בשר גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Fruttino",
     "he": "פרי קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Fruttone",
     "he": "פרי גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Verdurino",
     "he": "ירק קטן",
-    "cat": "vocab"
+    "cat": "colors"
   },
   {
     "it": "Verdurone",
     "he": "ירק גדול",
-    "cat": "vocab"
+    "cat": "colors"
   },
   {
     "it": "Pastino",
     "he": "פסטה קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Pastone",
     "he": "פסטה גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Pizzino",
     "he": "פיצה קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Pizzone",
     "he": "פיצה גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Risa",
@@ -3652,17 +3652,17 @@
   {
     "it": "Zucchera",
     "he": "סוכר (נקבה)",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Zuccherino",
     "he": "סוכר קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Zuccherone",
     "he": "סוכר גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Salino",
@@ -3692,27 +3692,27 @@
   {
     "it": "Aceta",
     "he": "חומץ (נקבה)",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Acetino",
     "he": "חומץ קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Acetone",
     "he": "חומץ גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Caffèino",
     "he": "קפה קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Caffèone",
     "he": "קפה גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Vina",
@@ -3732,42 +3732,42 @@
   {
     "it": "Birrino",
     "he": "בירה קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Birrone",
     "he": "בירה גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Cioccolata",
     "he": "שוקולד (נקבה)",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Cioccolatino",
     "he": "שוקולד קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Cioccolatone",
     "he": "שוקולד גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Gelata",
     "he": "גלידה (נקבה)",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Gelatino",
     "he": "גלידה קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Gelatone",
     "he": "גלידה גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Melino",
@@ -3777,87 +3777,87 @@
   {
     "it": "Bananino",
     "he": "בננה קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Bananone",
     "he": "בננה גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Aranciino",
     "he": "תפוז קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Limonino",
     "he": "לימון קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Limonone",
     "he": "לימון גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Pomodora",
     "he": "עגבניה (נקבה)",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Pomodorino",
     "he": "עגבניה קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Pomodorone",
     "he": "עגבניה גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Insalatino",
     "he": "סלט קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Insalatone",
     "he": "סלט גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Dolcino",
     "he": "קינוח קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Dolcone",
     "he": "קינוח גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Colazionino",
     "he": "ארוחת בוקר קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Colazionone",
     "he": "ארוחת בוקר גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Pranza",
     "he": "ארוחת צהריים (נקבה)",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Pranzino",
     "he": "ארוחת צהריים קטן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Pranzone",
     "he": "ארוחת צהריים גדול",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "Cenino",
@@ -3872,12 +3872,12 @@
   {
     "it": "Camerino",
     "he": "חדר קטן",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Camerone",
     "he": "חדר גדול",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Casino",
@@ -3892,37 +3892,37 @@
   {
     "it": "Portino",
     "he": "דלת קטן",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "Portone",
     "he": "דלת גדול",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "Finestrino",
     "he": "חלון קטן",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Finestrone",
     "he": "חלון גדול",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Tavola",
     "he": "שולחן (נקבה)",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Tavolino",
     "he": "שולחן קטן",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Tavolone",
     "he": "שולחן גדול",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Sediino",
@@ -3937,137 +3937,137 @@
   {
     "it": "Letta",
     "he": "מיטה (נקבה)",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Lettino",
     "he": "מיטה קטן",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Lettone",
     "he": "מיטה גדול",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Bagna",
     "he": "חדר אמבטיה (נקבה)",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Bagnino",
     "he": "חדר אמבטיה קטן",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Bagnone",
     "he": "חדר אמבטיה גדול",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Cucinino",
     "he": "מטבח קטן",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Cucinone",
     "he": "מטבח גדול",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Lampadino",
     "he": "מנורה קטן",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Lampadone",
     "he": "מנורה גדול",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Telefona",
     "he": "טלפון (נקבה)",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Telefonino",
     "he": "טלפון קטן",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Telefonone",
     "he": "טלפון גדול",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Chiavino",
     "he": "מפתח קטן",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Chiavone",
     "he": "מפתח גדול",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Specchia",
     "he": "מראה (נקבה)",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Specchiino",
     "he": "מראה קטן",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Specchione",
     "he": "מראה גדול",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Armadia",
     "he": "ארון (נקבה)",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Armadiino",
     "he": "ארון קטן",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Armadione",
     "he": "ארון גדול",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "Cittàino",
     "he": "עיר קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Cittàone",
     "he": "עיר גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Paesino",
     "he": "מדינה/כפר קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Paesone",
     "he": "מדינה/כפר גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Piazzino",
     "he": "כיכר קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Piazzone",
     "he": "כיכר גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Musea",
@@ -4087,142 +4087,142 @@
   {
     "it": "Chiesino",
     "he": "כנסייה קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Chiesone",
     "he": "כנסייה גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Ospedalino",
     "he": "בית חולים קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Ospedalone",
     "he": "בית חולים גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Scuolino",
     "he": "בית ספר קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Scuolone",
     "he": "בית ספר גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Bancino",
     "he": "בנק קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Farmaciino",
     "he": "בית מרקחת קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Farmacione",
     "he": "בית מרקחת גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Negozia",
     "he": "חנות (נקבה)",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Negoziino",
     "he": "חנות קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Negozione",
     "he": "חנות גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Supermercata",
     "he": "סופר (נקבה)",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Supermercatino",
     "he": "סופר קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Supermercatone",
     "he": "סופר גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Ristorantino",
     "he": "מסעדה קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Ristorantone",
     "he": "מסעדה גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Alberga",
     "he": "מלון (נקבה)",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Albergino",
     "he": "מלון קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Albergone",
     "he": "מלון גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Stazionino",
     "he": "תחנה קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Stazionone",
     "he": "תחנה גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Aeroporta",
     "he": "שדה תעופה (נקבה)",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Aeroportino",
     "he": "שדה תעופה קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Aeroportone",
     "he": "שדה תעופה גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Parca",
     "he": "פארק (נקבה)",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Parcino",
     "he": "פארק קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Parcone",
     "he": "פארק גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Marino",
@@ -4237,72 +4237,72 @@
   {
     "it": "Spiaggiino",
     "he": "חוף קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Spiaggione",
     "he": "חוף גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Montino",
     "he": "הר קטן",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Montone",
     "he": "הר גדול",
-    "cat": "vocab"
+    "cat": "places"
   },
   {
     "it": "Giorna",
     "he": "יום (נקבה)",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Giornino",
     "he": "יום קטן",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Giornone",
     "he": "יום גדול",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Nottino",
     "he": "לילה קטן",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Nottone",
     "he": "לילה גדול",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Minuta",
     "he": "דקה (נקבה)",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Minutino",
     "he": "דקה קטן",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Minutone",
     "he": "דקה גדול",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Settimanino",
     "he": "שבוע קטן",
-    "cat": "vocab"
+    "cat": "numbers"
   },
   {
     "it": "Settimanone",
     "he": "שבוע גדול",
-    "cat": "vocab"
+    "cat": "numbers"
   },
   {
     "it": "Mesino",
@@ -4332,32 +4332,32 @@
   {
     "it": "Mattina",
     "he": "בוקר (נקבה)",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Mattinino",
     "he": "בוקר קטן",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Mattinone",
     "he": "בוקר גדול",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Pomeriggia",
     "he": "אחר הצהריים (נקבה)",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Pomeriggiino",
     "he": "אחר הצהריים קטן",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Pomeriggione",
     "he": "אחר הצהריים גדול",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "Serino",
@@ -4372,282 +4372,282 @@
   {
     "it": "Lunedìino",
     "he": "יום שני קטן",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Lunedìone",
     "he": "יום שני גדול",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Martedìino",
     "he": "יום שלישי קטן",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Martedìone",
     "he": "יום שלישי גדול",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Mercoledìino",
     "he": "יום רביעי קטן",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Mercoledìone",
     "he": "יום רביעי גדול",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Giovedìino",
     "he": "יום חמישי קטן",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Giovedìone",
     "he": "יום חמישי גדול",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Venerdìino",
     "he": "יום שישי קטן",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Venerdìone",
     "he": "יום שישי גדול",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Sabata",
     "he": "שבת (נקבה)",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Sabatino",
     "he": "שבת קטן",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Sabatone",
     "he": "שבת גדול",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Domenicino",
     "he": "ראשון קטן",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Domenicone",
     "he": "ראשון גדול",
-    "cat": "vocab"
+    "cat": "days"
   },
   {
     "it": "Gennaia",
     "he": "ינואר (נקבה)",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Gennaiino",
     "he": "ינואר קטן",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Gennaione",
     "he": "ינואר גדול",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Febbraia",
     "he": "פברואר (נקבה)",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Febbraiino",
     "he": "פברואר קטן",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Febbraione",
     "he": "פברואר גדול",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Marza",
     "he": "מרץ (נקבה)",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Marzino",
     "he": "מרץ קטן",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Marzone",
     "he": "מרץ גדול",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Aprilino",
     "he": "אפריל קטן",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Aprilone",
     "he": "אפריל גדול",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Maggia",
     "he": "מאי (נקבה)",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Maggiino",
     "he": "מאי קטן",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Maggione",
     "he": "מאי גדול",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Giugna",
     "he": "יוני (נקבה)",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Giugnino",
     "he": "יוני קטן",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Giugnone",
     "he": "יוני גדול",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Luglia",
     "he": "יולי (נקבה)",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Lugliino",
     "he": "יולי קטן",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Luglione",
     "he": "יולי גדול",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Agosta",
     "he": "אוגוסט (נקבה)",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Agostino",
     "he": "אוגוסט קטן",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Agostone",
     "he": "אוגוסט גדול",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Settembrino",
     "he": "ספטמבר קטן",
-    "cat": "vocab"
+    "cat": "numbers"
   },
   {
     "it": "Settembrone",
     "he": "ספטמבר גדול",
-    "cat": "vocab"
+    "cat": "numbers"
   },
   {
     "it": "Ottobrino",
     "he": "אוקטובר קטן",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Ottobrone",
     "he": "אוקטובר גדול",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Novembrino",
     "he": "נובמבר קטן",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Novembrone",
     "he": "נובמבר גדול",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Dicembrino",
     "he": "דצמבר קטן",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Dicembrone",
     "he": "דצמבר גדול",
-    "cat": "vocab"
+    "cat": "months"
   },
   {
     "it": "Primaverino",
     "he": "אביב קטן",
-    "cat": "vocab"
+    "cat": "seasons"
   },
   {
     "it": "Primaverone",
     "he": "אביב גדול",
-    "cat": "vocab"
+    "cat": "seasons"
   },
   {
     "it": "Estatino",
     "he": "קיץ קטן",
-    "cat": "vocab"
+    "cat": "seasons"
   },
   {
     "it": "Estatone",
     "he": "קיץ גדול",
-    "cat": "vocab"
+    "cat": "seasons"
   },
   {
     "it": "Autunna",
     "he": "סתיו (נקבה)",
-    "cat": "vocab"
+    "cat": "seasons"
   },
   {
     "it": "Autunnino",
     "he": "סתיו קטן",
-    "cat": "vocab"
+    "cat": "seasons"
   },
   {
     "it": "Autunnone",
     "he": "סתיו גדול",
-    "cat": "vocab"
+    "cat": "seasons"
   },
   {
     "it": "Inverna",
     "he": "חורף (נקבה)",
-    "cat": "vocab"
+    "cat": "seasons"
   },
   {
     "it": "Invernino",
     "he": "חורף קטן",
-    "cat": "vocab"
+    "cat": "seasons"
   },
   {
     "it": "Invernone",
     "he": "חורף גדול",
-    "cat": "vocab"
+    "cat": "seasons"
   },
   {
     "it": "Solino",
@@ -4672,72 +4672,72 @@
   {
     "it": "Stellino",
     "he": "כוכב קטן",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Stellone",
     "he": "כוכב גדול",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Ciela",
     "he": "שמיים (נקבה)",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Cielino",
     "he": "שמיים קטן",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Cielone",
     "he": "שמיים גדול",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Terrino",
     "he": "אדמה קטן",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Terrone",
     "he": "אדמה גדול",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Fiorino",
     "he": "פרח קטן",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Fiorone",
     "he": "פרח גדול",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Albera",
     "he": "עץ (נקבה)",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Alberino",
     "he": "עץ קטן",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Alberone",
     "he": "עץ גדול",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Animalino",
     "he": "חיה קטן",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Animalone",
     "he": "חיה גדול",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "Canino",
@@ -4752,57 +4752,57 @@
   {
     "it": "Gatta",
     "he": "חתול (נקבה)",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "Gattino",
     "he": "חתול קטן",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "Gattone",
     "he": "חתול גדול",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "Cavalla",
     "he": "סוס (נקבה)",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "Cavallino",
     "he": "סוס קטן",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "Cavallone",
     "he": "סוס גדול",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "Uccella",
     "he": "ציפור (נקבה)",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "Uccellino",
     "he": "ציפור קטן",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "Uccellone",
     "he": "ציפור גדול",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "Testino",
     "he": "ראש קטן",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Testone",
     "he": "ראש גדול",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Mana",
@@ -4822,42 +4822,42 @@
   {
     "it": "Piedino",
     "he": "רגל קטן",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Piedone",
     "he": "רגל גדול",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Occhia",
     "he": "עין (נקבה)",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Occhiino",
     "he": "עין קטן",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Occhione",
     "he": "עין גדול",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Orecchia",
     "he": "אוזן (נקבה)",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Orecchiino",
     "he": "אוזן קטן",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Orecchione",
     "he": "אוזן גדול",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Nasa",
@@ -4877,62 +4877,62 @@
   {
     "it": "Boccino",
     "he": "פה קטן",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Boccone",
     "he": "פה גדול",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Cuorino",
     "he": "לב קטן",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Cuorone",
     "he": "לב גדול",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Braccia",
     "he": "זרוע (נקבה)",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Bracciino",
     "he": "זרוע קטן",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Braccione",
     "he": "זרוע גדול",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Gambino",
     "he": "רגל קטן",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "Gambone",
     "he": "רגל גדול",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "passeggiare",
     "he": "לטייל",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "cenare",
     "he": "לסעוד",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "pranzare",
     "he": "לאכול צהריים",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "fare colazione",
@@ -4942,87 +4942,87 @@
   {
     "it": "studiare",
     "he": "ללמוד",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "lavorare",
     "he": "לעבוד",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "giocare",
     "he": "לשחק",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "cambiare",
     "he": "להחליף",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "pensare",
     "he": "לחשוב",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "ricordare",
     "he": "לזכור",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "sperare",
     "he": "לקוות",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "domandare",
     "he": "לשאול",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "rispondere",
     "he": "לענות",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "viaggiare",
     "he": "לנסוע",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "ballare",
     "he": "לרקוד",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "cantare",
     "he": "לשיר",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "camminare",
     "he": "ללכת",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "cucinare",
     "he": "לבשל",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "spendere",
     "he": "להוציא כסף",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "telefonare",
     "he": "להתקשר",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "alzarsi",
     "he": "לקום",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "sedersi",
@@ -5032,177 +5032,177 @@
   {
     "it": "correre",
     "he": "לרוץ",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "saltare",
     "he": "לקפוץ",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "piangere",
     "he": "לבכות",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "ridere",
     "he": "לצחוק",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "sognare",
     "he": "לחלום",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "spiegare",
     "he": "להסביר",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "chiedere",
     "he": "לבקש",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "offrire",
     "he": "להציע",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "accettare",
     "he": "לקבל",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "rifiutare",
     "he": "לדחות",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "aspettare",
     "he": "לחכות",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "iniziare",
     "he": "להתחיל",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "finire",
     "he": "לסיים",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "continuare",
     "he": "להמשיך",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "provare",
     "he": "לנסות",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "riuscire",
     "he": "להצליח",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "tentare",
     "he": "להתנסות",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "decidere",
     "he": "להחליט",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "scegliere",
     "he": "לבחור",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "preferire",
     "he": "להעדיף",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "dimenticare",
     "he": "לשכוח",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "capire",
     "he": "להבין",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "insegnare",
     "he": "ללמד",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "imparare",
     "he": "ללמוד",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "esercitare",
     "he": "לתרגל",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "vincere",
     "he": "לנצח",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "perdere",
     "he": "להפסיד",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "pareggiare",
     "he": "לסיים בתיקו",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "guidare",
     "he": "לנהוג",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "volare",
     "he": "לטוס",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "nuotare",
     "he": "לשחות",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "pescare",
     "he": "לדוג",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "dipingere",
     "he": "לצבוע",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "scolpire",
     "he": "לפסל",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "disegnare",
     "he": "לצייר",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "tradurre",
@@ -5212,122 +5212,122 @@
   {
     "it": "vendere",
     "he": "למכור",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "affittare",
     "he": "להשכיר",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "prenotare",
     "he": "להזמין",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "cancellare",
     "he": "לבטל",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "ringraziare",
     "he": "להודות",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "scusarsi",
     "he": "להתנצל",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "salutare",
     "he": "לברך",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "abbracciare",
     "he": "לחבק",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "baciare",
     "he": "לנשק",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "stringere",
     "he": "ללחוץ",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "litigare",
     "he": "לריב",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "discutere",
     "he": "לדון",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "sgridare",
     "he": "לנזוף",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "preoccuparsi",
     "he": "לדאוג",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "arrabbiarsi",
     "he": "לכעוס",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "calmarsi",
     "he": "להירגע",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "annoiarsi",
     "he": "להשתעמם",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "divertirsi",
     "he": "ליהנות",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "riposarsi",
     "he": "לנוח",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "svegliarsi",
     "he": "להתעורר",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "addormentarsi",
     "he": "להירדם",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "sposarsi",
     "he": "להתחתן",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "fidanzarsi",
     "he": "להתארס",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "separarsi",
     "he": "להיפרד",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "iscriversi",
@@ -5337,12 +5337,12 @@
   {
     "it": "laurearsi",
     "he": "לסיים תואר",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "specializzarsi",
     "he": "להתמחות",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "felice",
@@ -5412,7 +5412,7 @@
   {
     "it": "simpatico",
     "he": "חביב",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "antipatico",
@@ -5422,7 +5422,7 @@
   {
     "it": "gentile",
     "he": "אדיב",
-    "cat": "vocab"
+    "cat": "adj"
   },
   {
     "it": "educato",
@@ -5467,12 +5467,12 @@
   {
     "it": "facile",
     "he": "קל",
-    "cat": "vocab"
+    "cat": "adj"
   },
   {
     "it": "difficile",
     "he": "קשה",
-    "cat": "vocab"
+    "cat": "adj"
   },
   {
     "it": "semplice",
@@ -5492,7 +5492,7 @@
   {
     "it": "inutile",
     "he": "חסר תועלת",
-    "cat": "vocab"
+    "cat": "adj"
   },
   {
     "it": "necessario",
@@ -5502,12 +5502,12 @@
   {
     "it": "possibile",
     "he": "אפשרי",
-    "cat": "vocab"
+    "cat": "adj"
   },
   {
     "it": "probabile",
     "he": "סביר",
-    "cat": "vocab"
+    "cat": "adj"
   },
   {
     "it": "certo",
@@ -5602,7 +5602,7 @@
   {
     "it": "bagnato",
     "he": "רטוב",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "asciutto",
@@ -5637,7 +5637,7 @@
   {
     "it": "leggero",
     "he": "קל",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "stretto",
@@ -5657,97 +5657,97 @@
   {
     "it": "superficiale",
     "he": "שטחי",
-    "cat": "vocab"
+    "cat": "adj"
   },
   {
     "it": "assolutamente",
     "he": "בהחלט",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "probabilmente",
     "he": "סביר להניח",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "effettivamente",
     "he": "למעשה",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "naturalmente",
     "he": "כמובן",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "evidentemente",
     "he": "ברור",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "fortunatamente",
     "he": "למרבה המזל",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "sfortunatamente",
     "he": "לרוע המזל",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "certamente",
     "he": "בוודאי",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "sicuramente",
     "he": "בטוח",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "ovviamente",
     "he": "ברור",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "chiaramente",
     "he": "בבירור",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "generalmente",
     "he": "באופן כללי",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "normalmente",
     "he": "בדרך כלל",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "particolarmente",
     "he": "במיוחד",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "principalmente",
     "he": "בעיקר",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "solamente",
     "he": "רק",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "semplicemente",
     "he": "פשוט",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "praticamente",
     "he": "בפועל",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "assai",
@@ -5817,7 +5817,7 @@
   {
     "it": "ghiaccio",
     "he": "קרח",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "fuoco",
@@ -5837,37 +5837,37 @@
   {
     "it": "polvere",
     "he": "אבק",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "sabbia",
     "he": "חול",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "roccia",
     "he": "סלע",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "sasso",
     "he": "אבן",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "collina",
     "he": "גבעה",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "valle",
     "he": "עמק",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "fiume",
     "he": "נהר",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "ruscello",
@@ -5877,12 +5877,12 @@
   {
     "it": "lago",
     "he": "אגם",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "cascata",
     "he": "מפל",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "oceano",
@@ -5892,7 +5892,7 @@
   {
     "it": "onda",
     "he": "גל",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "marea",
@@ -5907,22 +5907,22 @@
   {
     "it": "riva",
     "he": "שפת",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "porto",
     "he": "נמל",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "faro",
     "he": "מגדלור",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "isola",
     "he": "אי",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "penisola",
@@ -5932,12 +5932,12 @@
   {
     "it": "vulcano",
     "he": "הר געש",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "terremoto",
     "he": "רעידת אדמה",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "cima",
@@ -5952,42 +5952,42 @@
   {
     "it": "uomo",
     "he": "גבר",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "donna",
     "he": "אישה",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "ragazzo",
     "he": "ילד",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "ragazza",
     "he": "ילדה",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "signore",
     "he": "אדון",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "signora",
     "he": "גברת",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "bambino",
     "he": "ילד",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "bambina",
     "he": "ילדה",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "adolescente",
@@ -6007,22 +6007,22 @@
   {
     "it": "lavoratore",
     "he": "עובד",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "direttore",
     "he": "מנהל",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "segretario",
     "he": "מזכיר",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "contabile",
     "he": "רואה חשבון",
-    "cat": "vocab"
+    "cat": "adj"
   },
   {
     "it": "consulente",
@@ -6042,17 +6042,17 @@
   {
     "it": "ingegnere",
     "he": "מהנדס",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "architetto",
     "he": "אדריכל",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "programmatore",
     "he": "מתכנת",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "analista",
@@ -6097,7 +6097,7 @@
   {
     "it": "giornalista",
     "he": "עיתונאי",
-    "cat": "vocab"
+    "cat": "people"
   },
   {
     "it": "critico",
@@ -6107,197 +6107,197 @@
   {
     "it": "biscotto",
     "he": "עוגייה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "torta",
     "he": "עוגה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "crostata",
     "he": "פשטידה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "budino",
     "he": "פודינג",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "macedonia",
     "he": "סלט פירות",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "frullato",
     "he": "שייק",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "granita",
     "he": "גרניטה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "sorbetto",
     "he": "סורבה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "yogurt",
     "he": "יוגורט",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "burro",
     "he": "חמאה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "panna",
     "he": "שמנת",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "ricotta",
     "he": "ריקוטה",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "carciofo",
     "he": "ארטישוק",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "asparago",
     "he": "אספרגוס",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "cavolo",
     "he": "כרוב",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "peperoncino",
     "he": "פלפל חריף",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "zenzero",
     "he": "ג'ינג'ר",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "cannella",
     "he": "קינמון",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "vaniglia",
     "he": "וניל",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "zafferano",
     "he": "זעפרן",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "caramello",
     "he": "קרמל",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "torrone",
     "he": "טורון",
-    "cat": "vocab"
+    "cat": "food"
   },
   {
     "it": "amore",
     "he": "אהבה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "odio",
     "he": "שנאה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "rabbia",
     "he": "כעס",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "paura",
     "he": "פחד",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "coraggio",
     "he": "אומץ",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "gioia",
     "he": "שמחה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "felicità",
     "he": "אושר",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "tristezza",
     "he": "עצב",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "malinconia",
     "he": "עגמומיות",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "nostalgia",
     "he": "נוסטלגיה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "speranza",
     "he": "תקווה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "disperazione",
     "he": "ייאוש",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "ansia",
     "he": "חרדה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "terrore",
     "he": "אימה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "panico",
     "he": "בהלה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "stupore",
     "he": "תדהמה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "meraviglia",
     "he": "פלא",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "sorpresa",
@@ -6307,262 +6307,262 @@
   {
     "it": "delusione",
     "he": "אכזבה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "frustrazione",
     "he": "תסכול",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "vergogna",
     "he": "בושה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "colpa",
     "he": "אשמה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "orgoglio",
     "he": "גאווה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "umiltà",
     "he": "ענווה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "gratitudine",
     "he": "הכרת תודה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "invidia",
     "he": "קנאה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "gelosia",
     "he": "קנאה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "disgusto",
     "he": "גועל",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "noia",
     "he": "שעמום",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "entusiasmo",
     "he": "התלהבות",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "passione",
     "he": "תשוקה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "interesse",
     "he": "עניין",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "curiosità",
     "he": "סקרנות",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "indifferenza",
     "he": "אדישות",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "apatia",
     "he": "אפתיה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "simpatia",
     "he": "סימפטיה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "compassione",
     "he": "חמלה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "tenerezza",
     "he": "רוך",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "affetto",
     "he": "חיבה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "stima",
     "he": "הערכה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "rispetto",
     "he": "כבוד",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "ammirazione",
     "he": "הערצה",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "fedeltà",
     "he": "נאמנות",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "lealtà",
     "he": "נאמנות",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "onestà",
     "he": "יושר",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "sincerità",
     "he": "כנות",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "generosità",
     "he": "נדיבות",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "altruismo",
     "he": "אלטרואיזם",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "egoismo",
     "he": "אנוכיות",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "pigrizia",
     "he": "עצלות",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "pazienza",
     "he": "סבלנות",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "determinazione",
     "he": "נחישות",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "fiducia",
     "he": "ביטחון",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "dubbio",
     "he": "ספק",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "confusione",
     "he": "בלבול",
-    "cat": "vocab"
+    "cat": "emotions"
   },
   {
     "it": "calcio",
     "he": "כדורגל",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "pallacanestro",
     "he": "כדורסל",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "pallavolo",
     "he": "כדורעף",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "tennis",
     "he": "טניס",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "ciclismo",
     "he": "אופניים",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "nuoto",
     "he": "שחייה",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "atletica",
     "he": "אתלטיקה",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "ginnastica",
     "he": "התעמלות",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "scherma",
     "he": "סיף",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "judo",
     "he": "ג'ודו",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "karate",
     "he": "קראטה",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "vela",
     "he": "שייט",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "canoa",
     "he": "קאנו",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "surf",
     "he": "גלישה",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "caccia",
     "he": "ציד",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "sci",
@@ -6572,17 +6572,17 @@
   {
     "it": "pattinaggio",
     "he": "החלקה",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "corsa",
     "he": "ריצה",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "maratona",
     "he": "מרתון",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "meta",
@@ -6627,12 +6627,12 @@
   {
     "it": "confine",
     "he": "גבול",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "frontiera",
     "he": "גבול",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "incrocio",
@@ -6657,12 +6657,12 @@
   {
     "it": "ponte",
     "he": "גשר",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "canale",
     "he": "תעלה",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "scatola",
@@ -6702,7 +6702,7 @@
   {
     "it": "calendario",
     "he": "לוח שנה",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "diario",
@@ -6727,7 +6727,7 @@
   {
     "it": "manuale",
     "he": "מדריך",
-    "cat": "vocab"
+    "cat": "adj"
   },
   {
     "it": "opuscolo",
@@ -6757,7 +6757,7 @@
   {
     "it": "schermo",
     "he": "מסך",
-    "cat": "vocab"
+    "cat": "sports"
   },
   {
     "it": "tastiera",
@@ -6797,7 +6797,7 @@
   {
     "it": "software",
     "he": "תוכנה",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "programma",
@@ -6817,7 +6817,7 @@
   {
     "it": "file",
     "he": "קובץ",
-    "cat": "vocab"
+    "cat": "adj"
   },
   {
     "it": "database",
@@ -6847,162 +6847,162 @@
   {
     "it": "rossamente",
     "he": "אדום (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "bluamente",
     "he": "כחול (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "verdamente",
     "he": "ירוק (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "giallamente",
     "he": "צהוב (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "biancamente",
     "he": "לבן (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "neramente",
     "he": "שחור (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "arancionamente",
     "he": "כתום (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "violamente",
     "he": "סגול (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "rosamente",
     "he": "ורוד (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "azzurramente",
     "he": "תכלת (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "grandamente",
     "he": "גדול (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "piccolamente",
     "he": "קטן (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "buonamente",
     "he": "טוב (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "cattivamente",
     "he": "רע (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "bellamente",
     "he": "יפה (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "bruttamente",
     "he": "מכוער (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "altamente",
     "he": "גבוה (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "bassamente",
     "he": "נמוך (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "nuovamente",
     "he": "חדש (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "vecchiamente",
     "he": "ישן (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "caldamente",
     "he": "חם (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "freddamente",
     "he": "קר (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "giovanamente",
     "he": "צעיר (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "vicinamente",
     "he": "קרוב (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "lontanamente",
     "he": "רחוק (באופן)",
-    "cat": "vocab"
+    "cat": "adv"
   },
   {
     "it": "fronte",
     "he": "מצח",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "mento",
     "he": "סנטר",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "mascella",
     "he": "לסת",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "guancia",
     "he": "לחי",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "gola",
     "he": "גרון",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "collo",
     "he": "צוואר",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "nuca",
     "he": "עורף",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "ascella",
@@ -7012,47 +7012,47 @@
   {
     "it": "gomito",
     "he": "מרפק",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "polso",
     "he": "פרק כף יד",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "palmo",
     "he": "כף יד",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "dorso",
     "he": "גב",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "fianco",
     "he": "צד",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "coscia",
     "he": "ירך",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "ginocchio",
     "he": "ברך",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "caviglia",
     "he": "קרסול",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "calcagno",
     "he": "עקב",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "pianta",
@@ -7062,17 +7062,17 @@
   {
     "it": "costola",
     "he": "צלע",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "polmone",
     "he": "ריאה",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "fegato",
     "he": "כבד",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "reni",
@@ -7082,27 +7082,27 @@
   {
     "it": "stomaco",
     "he": "קיבה",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "intestino",
     "he": "מעי",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "vescica",
     "he": "שלפוחית",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "milza",
     "he": "טחול",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "pancreas",
     "he": "לבלב",
-    "cat": "vocab"
+    "cat": "body"
   },
   {
     "it": "tiroide",
@@ -7112,12 +7112,12 @@
   {
     "it": "libertà",
     "he": "חופש",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "uguaglianza",
     "he": "שוויון",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "fraternità",
@@ -7127,32 +7127,32 @@
   {
     "it": "giustizia",
     "he": "צדק",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "pace",
     "he": "שלום",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "guerra",
     "he": "מלחמה",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "violenza",
     "he": "אלימות",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "tolleranza",
     "he": "סובלנות",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "solidarietà",
     "he": "סולידריות",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "cooperazione",
@@ -7162,47 +7162,47 @@
   {
     "it": "progresso",
     "he": "קידמה",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "civiltà",
     "he": "ציוויליזציה",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "umanità",
     "he": "אנושות",
-    "cat": "vocab"
+    "cat": "abstract"
   },
   {
     "it": "formica",
     "he": "נמלה",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "ape",
     "he": "דבורה",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "farfalla",
     "he": "פרפר",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "zanzara",
     "he": "יתוש",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "mosca",
     "he": "זבוב",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "ragno",
     "he": "עכביש",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "scorpione",
@@ -7212,12 +7212,12 @@
   {
     "it": "lumaca",
     "he": "שבלול",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "verme",
     "he": "תולעת",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "serpe",
@@ -7227,12 +7227,12 @@
   {
     "it": "tartaruga",
     "he": "צב",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "coccodrillo",
     "he": "תנין",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "rospo",
@@ -7242,32 +7242,32 @@
   {
     "it": "aquila",
     "he": "נשר",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "falco",
     "he": "בז",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "gufo",
     "he": "ינשוף",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "corvo",
     "he": "עורב",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "passero",
     "he": "דרור",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "rondine",
     "he": "סנונית",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "piccione",
@@ -7277,37 +7277,37 @@
   {
     "it": "gabbiano",
     "he": "שחף",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "cigno",
     "he": "ברבור",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "pavone",
     "he": "טווס",
-    "cat": "vocab"
+    "cat": "animals"
   },
   {
     "it": "comodino",
     "he": "שידה",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "cassettiera",
     "he": "שידה עם מגירות",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "scaffale",
     "he": "מדף",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "mensola",
     "he": "מדף קיר",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "appendiabiti",
@@ -7322,32 +7322,32 @@
   {
     "it": "portaombrelli",
     "he": "מתלה מטריות",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "portafoto",
     "he": "מסגרת תמונה",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "vaso",
     "he": "אגרטל",
-    "cat": "vocab"
+    "cat": "house"
   },
   {
     "it": "sottobicchiere",
     "he": "תחתית לכוס",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "posacenere",
     "he": "מאפרה",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "portacenere",
     "he": "מאפרה",
-    "cat": "vocab"
+    "cat": "verbs"
   },
   {
     "it": "cestino",
@@ -7357,96 +7357,96 @@
   {
     "it": "portariviste",
     "he": "מתלה מגזינים",
-    "cat": "vocab"
+    "cat": "travel"
   },
   {
     "it": "attimo",
     "he": "רגע",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "istante",
     "he": "רגע",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "momento",
     "he": "רגע",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "periodo",
     "he": "תקופה",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "epoca",
     "he": "תקופה",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "era",
     "he": "עידן",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "secolo",
     "he": "מאה",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "millennio",
     "he": "מילניום",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "eternità",
     "he": "נצח",
-    "cat": "vocab"
+    "cat": "time"
   },
   {
     "it": "fossato",
     "he": "תעלה",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "palude",
     "he": "ביצה",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "erba",
     "he": "דשא",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "prato",
     "he": "אחו",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "campagna",
     "he": "כפר",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "bosco",
     "he": "יער",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "foresta",
     "he": "יער",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "siepe",
     "he": "גדר חיה",
-    "cat": "vocab"
+    "cat": "nature"
   },
   {
     "it": "sentiero",
     "he": "שביל",
-    "cat": "vocab"
+    "cat": "nature"
   }
 ]

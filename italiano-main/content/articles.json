@@ -7,14 +7,22 @@
     "content": "Quando vado al ristorante italiano, prima ordino un antipasto. Poi prendo un primo piatto, di solito pasta. Dopo viene il secondo piatto con il contorno. Alla fine scelgo il dolce. Il cameriere porta il conto. Di solito lascio la mancia. Al ristorante si mangia lentamente e si parla. La cena italiana dura almeno due ore. Il vino accompagna sempre il pasto. Alla fine del pasto molti italiani prendono un caffè. Non ordinano mai il cappuccino dopo cena, solo al mattino.",
     "word_count": 80,
     "cefr_vocabulary": {
+      "antipasto": "A1",
+      "ristorante": "A1",
       "ordino": "A1",
       "italiano": "A1",
-      "ristorante": "A1",
-      "vado": "A1",
       "prima": "A1",
-      "antipasto": "A1"
+      "vado": "A1"
     },
     "glossary": [
+      {
+        "it": "antipasto",
+        "he": "translation_antipasto"
+      },
+      {
+        "it": "ristorante",
+        "he": "translation_ristorante"
+      },
       {
         "it": "ordino",
         "he": "translation_ordino"
@@ -24,20 +32,12 @@
         "he": "translation_italiano"
       },
       {
-        "it": "ristorante",
-        "he": "translation_ristorante"
-      },
-      {
-        "it": "vado",
-        "he": "translation_vado"
-      },
-      {
         "it": "prima",
         "he": "translation_prima"
       },
       {
-        "it": "antipasto",
-        "he": "translation_antipasto"
+        "it": "vado",
+        "he": "translation_vado"
       }
     ],
     "questions": [
@@ -86,14 +86,22 @@
     "content": "L'Italia ha un patrimonio artistico straordinario. Il Colosseo a Roma è il monumento più visitato d'Italia. I Musei Vaticani contengono alcune delle opere d'arte più importanti del mondo. La Cappella Sistina, dipinta da Michelangelo, è famosa in tutto il mondo. Firenze è considerata la culla del Rinascimento. La Galleria degli Uffizi espone opere di Botticelli, Leonardo da Vinci e Raffaello. A Milano si trova il Cenacolo Vinciano, l'Ultima Cena di Leonardo. Venezia ha il Ponte di Rialto e Piazza San Marco. Napoli vanta il Museo Archeologico Nazionale con i reperti di Pompei.",
     "word_count": 92,
     "cefr_vocabulary": {
+      "l'italia": "A1",
+      "straordinario": "A1",
       "colosseo": "A1",
       "roma": "A1",
       "patrimonio": "A1",
-      "l'italia": "A1",
-      "straordinario": "A1",
       "artistico": "A1"
     },
     "glossary": [
+      {
+        "it": "l'italia",
+        "he": "translation_l'italia"
+      },
+      {
+        "it": "straordinario",
+        "he": "translation_straordinario"
+      },
       {
         "it": "colosseo",
         "he": "translation_colosseo"
@@ -105,14 +113,6 @@
       {
         "it": "patrimonio",
         "he": "translation_patrimonio"
-      },
-      {
-        "it": "l'italia",
-        "he": "translation_l'italia"
-      },
-      {
-        "it": "straordinario",
-        "he": "translation_straordinario"
       },
       {
         "it": "artistico",
@@ -165,16 +165,12 @@
     "content": "Il calcio è lo sport più popolare in Italia. La serie A è il campionato di calcio italiano. Le squadre più famose sono Juventus, Milan, Inter e Roma. Ogni domenica milioni di italiani seguono le partite in televisione o allo stadio. I tifosi sono molto appassionati. La nazionale italiana ha vinto quattro campionati del mondo. I calciatori italiani più famosi sono stati Roberto Baggio, Paolo Maldini e Alessandro Del Piero. Il calcio è una parte importante della cultura italiana. Anche i bambini giocano a calcio nei parchi e nelle strade.",
     "word_count": 90,
     "cefr_vocabulary": {
-      "sport": "A2",
       "italia": "A2",
       "calcio": "A2",
-      "popolare": "A2"
+      "popolare": "A2",
+      "sport": "A2"
     },
     "glossary": [
-      {
-        "it": "sport",
-        "he": "translation_sport"
-      },
       {
         "it": "italia",
         "he": "translation_italia"
@@ -186,6 +182,10 @@
       {
         "it": "popolare",
         "he": "translation_popolare"
+      },
+      {
+        "it": "sport",
+        "he": "translation_sport"
       }
     ],
     "questions": [
@@ -228,33 +228,43 @@
   },
   {
     "id": "art_0003",
-    "title": "Guida da cultura.txt",
+    "title": "Guida da cibo.txt",
     "type": "guide",
     "level": "A1",
-    "content": "L'Italia è famosa per la sua arte e cultura. Il Colosseo a Roma è il monumento più visitato. Ogni anno milioni di turisti vengono a vedere i Musei Vaticani e la Cappella Sistina. Firenze è la culla del Rinascimento. La Galleria degli Uffizi ha opere di Leonardo, Michelangelo e Botticelli. Milano è famosa per il Duomo e il teatro alla Scala. Napoli ha il Museo Archeologico Nazionale con i reperti di Pompei. La cultura italiana non è solo arte antica. L'Italia ha anche un cinema importante, una musica famosa e una moda conosciuta in tutto il mondo.",
-    "word_count": 97,
+    "content": "La cucina italiana è conosciuta in tutto il mondo. Ogni regione ha i suoi piatti tipici. In Toscana si mangia la bistecca alla fiorentina. A Napoli si mangia la pizza vera. In Sicilia si mangia il cannolo e la granita. In Lombardia si mangia il risotto alla milanese. In Emilia-Romagna si mangia la pasta fresca come i tortellini e le lasagne. La dieta mediterranea è considerata una delle più sane al mondo. Gli italiani usano ingredienti freschi e di stagione. L'olio d'oliva italiano è famoso per la sua qualità.",
+    "word_count": 90,
     "cefr_vocabulary": {
-      "famosa": "A1",
-      "arte": "A1",
-      "l'italia": "A1",
-      "cultura": "A1"
+      "tutto": "A1",
+      "ogni": "A1",
+      "cucina": "A1",
+      "italiana": "A1",
+      "conosciuta": "A1",
+      "mondo": "A1"
     },
     "glossary": [
       {
-        "it": "famosa",
-        "he": "translation_famosa"
+        "it": "tutto",
+        "he": "translation_tutto"
       },
       {
-        "it": "arte",
-        "he": "translation_arte"
+        "it": "ogni",
+        "he": "translation_ogni"
       },
       {
-        "it": "l'italia",
-        "he": "translation_l'italia"
+        "it": "cucina",
+        "he": "translation_cucina"
       },
       {
-        "it": "cultura",
-        "he": "translation_cultura"
+        "it": "italiana",
+        "he": "translation_italiana"
+      },
+      {
+        "it": "conosciuta",
+        "he": "translation_conosciuta"
+      },
+      {
+        "it": "mondo",
+        "he": "translation_mondo"
       }
     ],
     "questions": [
@@ -297,33 +307,43 @@
   },
   {
     "id": "art_0004",
-    "title": "Racconto da famiglia.txt",
+    "title": "Racconto da citta.txt",
     "type": "story",
     "level": "A1",
-    "content": "La famiglia italiana è molto importante. I genitori e i figli spesso pranzano insieme la domenica. La domenica è il giorno della famiglia. Molte famiglie italiane si riuniscono per il pranzo. La nonna prepara la pasta fatta in casa. Il nonno racconta storie del passato. I cugini giocano insieme. Dopo pranzo si fa una passeggiata. La sera si guarda la televisione insieme. I rapporti familiari in Italia sono molto forti e durano tutta la vita.",
-    "word_count": 75,
+    "content": "Ogni città italiana ha una personalità unica. Roma è la città eterna con duemila anni di storia. Milano è la capitale della moda e del design. Firenze è la culla del Rinascimento. Napoli è vivace, rumorosa e piena di vita. Venezia romantica con i suoi canali. Torino elegante con i suoi caffè storici. Bologna è la città della musica e della buona cucina. Palermo è un mix di culture diverse. Ogni città italiana merita una visita. Ognuna ha qualcosa di speciale da offrire: arte, cibo, musica o semplicemente la bellezza di vivere all'italiana.",
+    "word_count": 93,
     "cefr_vocabulary": {
-      "famiglia": "A1",
-      "importante": "A1",
-      "genitori": "A1",
-      "italiana": "A1"
+      "roma": "A1",
+      "personalità": "A1",
+      "italiana": "A1",
+      "città": "A1",
+      "ogni": "A1",
+      "unica": "A1"
     },
     "glossary": [
       {
-        "it": "famiglia",
-        "he": "translation_famiglia"
+        "it": "roma",
+        "he": "translation_roma"
       },
       {
-        "it": "importante",
-        "he": "translation_importante"
-      },
-      {
-        "it": "genitori",
-        "he": "translation_genitori"
+        "it": "personalità",
+        "he": "translation_personalità"
       },
       {
         "it": "italiana",
         "he": "translation_italiana"
+      },
+      {
+        "it": "città",
+        "he": "translation_città"
+      },
+      {
+        "it": "ogni",
+        "he": "translation_ogni"
+      },
+      {
+        "it": "unica",
+        "he": "translation_unica"
       }
     ],
     "questions": [
@@ -366,38 +386,33 @@
   },
   {
     "id": "art_0005",
-    "title": "Descrizione da lavoro.txt",
+    "title": "Descrizione da cultura.txt",
     "type": "description",
-    "level": "A2",
-    "content": "Lavoro in un ufficio moderno nel centro di Milano. Il mio ufficio è al decimo piano con una bella vista sulla città. Ogni mattina alle nove faccio una riunione con i colleghi. Discutiamo dei progetti in corso. A mezzogiorno faccio una pausa pranzo con i colleghi. Nel pomeriggio lavoro al computer e rispondo alle email. Ogni tanto partecipo a conferenze e corsi di formazione. Il mio lavoro mi piace perché è interessante e dinamico. L'orario di lavoro è dalle 9 alle 18 con un'ora di pausa.",
-    "word_count": 84,
+    "level": "A1",
+    "content": "L'Italia è famosa per la sua arte e cultura. Il Colosseo a Roma è il monumento più visitato. Ogni anno milioni di turisti vengono a vedere i Musei Vaticani e la Cappella Sistina. Firenze è la culla del Rinascimento. La Galleria degli Uffizi ha opere di Leonardo, Michelangelo e Botticelli. Milano è famosa per il Duomo e il teatro alla Scala. Napoli ha il Museo Archeologico Nazionale con i reperti di Pompei. La cultura italiana non è solo arte antica. L'Italia ha anche un cinema importante, una musica famosa e una moda conosciuta in tutto il mondo.",
+    "word_count": 97,
     "cefr_vocabulary": {
-      "ufficio": "A2",
-      "moderno": "A2",
-      "milano": "A2",
-      "centro": "A2",
-      "lavoro": "A2"
+      "l'italia": "A1",
+      "arte": "A1",
+      "cultura": "A1",
+      "famosa": "A1"
     },
     "glossary": [
       {
-        "it": "ufficio",
-        "he": "translation_ufficio"
+        "it": "l'italia",
+        "he": "translation_l'italia"
       },
       {
-        "it": "moderno",
-        "he": "translation_moderno"
+        "it": "arte",
+        "he": "translation_arte"
       },
       {
-        "it": "milano",
-        "he": "translation_milano"
+        "it": "cultura",
+        "he": "translation_cultura"
       },
       {
-        "it": "centro",
-        "he": "translation_centro"
-      },
-      {
-        "it": "lavoro",
-        "he": "translation_lavoro"
+        "it": "famosa",
+        "he": "translation_famosa"
       }
     ],
     "questions": [
@@ -434,39 +449,39 @@
     ],
     "audio_url": "audio/articles/art_0005.mp3",
     "srs_tags": [
-      "A2_reading",
+      "A1_reading",
       "description"
     ]
   },
   {
     "id": "art_0006",
-    "title": "Notizie da pizza.txt",
+    "title": "Notizie da famiglia.txt",
     "type": "news",
     "level": "A1",
-    "content": "La pizza è uno dei piatti più famosi d'Italia. La pizza napoletana è la più antica. Ha la base sottile e i bordi alti. La pizza margherita ha pomodoro, mozzarella e basilico. I colori sono come la bandiera italiana: rosso, bianco e verde. La pizza si cuoce nel forno a legna a temperatura molto alta. In Italia la pizza si mangia soprattutto la sera. Ogni regione ha le sue varianti. La pizza romana è più sottile e croccante. A Genova fanno la focaccia. In Sicilia la pizza ha la forma rettangolare e più condimento.",
-    "word_count": 94,
+    "content": "La famiglia italiana è molto importante. I genitori e i figli spesso pranzano insieme la domenica. La domenica è il giorno della famiglia. Molte famiglie italiane si riuniscono per il pranzo. La nonna prepara la pasta fatta in casa. Il nonno racconta storie del passato. I cugini giocano insieme. Dopo pranzo si fa una passeggiata. La sera si guarda la televisione insieme. I rapporti familiari in Italia sono molto forti e durano tutta la vita.",
+    "word_count": 75,
     "cefr_vocabulary": {
-      "piatti": "A1",
-      "d'italia": "A1",
-      "famosi": "A1",
-      "pizza": "A1"
+      "importante": "A1",
+      "genitori": "A1",
+      "italiana": "A1",
+      "famiglia": "A1"
     },
     "glossary": [
       {
-        "it": "piatti",
-        "he": "translation_piatti"
+        "it": "importante",
+        "he": "translation_importante"
       },
       {
-        "it": "d'italia",
-        "he": "translation_d'italia"
+        "it": "genitori",
+        "he": "translation_genitori"
       },
       {
-        "it": "famosi",
-        "he": "translation_famosi"
+        "it": "italiana",
+        "he": "translation_italiana"
       },
       {
-        "it": "pizza",
-        "he": "translation_pizza"
+        "it": "famiglia",
+        "he": "translation_famiglia"
       }
     ],
     "questions": [
@@ -509,43 +524,43 @@
   },
   {
     "id": "art_0007",
-    "title": "Blog da salute.txt",
+    "title": "Blog da futuro.txt",
     "type": "blog",
-    "level": "A1",
-    "content": "Dal dottore devo fare una visita completa. Il medico mi visita e controlla la pressione. Dice che sono in buona salute. Mi consiglia di fare più attività fisica. Ogni mattina vado a correre al parco. La mattina faccio colazione con yogurt e frutta. A pranzo mangio leggero. La sera ceno presto. Bevo almeno due litri d'acqua al giorno. Il medico mi ha detto che è importante dormire almeno otto ore. Anche ridurre lo stress è importante per la salute.",
-    "word_count": 79,
+    "level": "A2",
+    "content": "Il futuro dell'Italia è pieno di possibilità. I giovani italiani sono creativi e pieni di idee. Molti partono per studiare all'estero e poi tornano con nuove esperienze. Le città italiane stanno diventando più verdi e sostenibili. Ci sono più piste ciclabili e parchi. La tecnologia aiuta a preservare l'arte e la cultura italiana. I musei offrono visite virtuali. I ristoranti usano prodotti locali e biologici. L'Italia sta cambiando, mantenendo però la sua identità unica fatta di storia, arte, cibo e passione per la vita.",
+    "word_count": 84,
     "cefr_vocabulary": {
-      "fare": "A1",
-      "medico": "A1",
-      "completa": "A1",
-      "visita": "A1",
-      "devo": "A1",
-      "dottore": "A1"
+      "possibilità": "A2",
+      "dell'italia": "A2",
+      "futuro": "A2",
+      "giovani": "A2",
+      "italiani": "A2",
+      "pieno": "A2"
     },
     "glossary": [
       {
-        "it": "fare",
-        "he": "translation_fare"
+        "it": "possibilità",
+        "he": "translation_possibilità"
       },
       {
-        "it": "medico",
-        "he": "translation_medico"
+        "it": "dell'italia",
+        "he": "translation_dell'italia"
       },
       {
-        "it": "completa",
-        "he": "translation_completa"
+        "it": "futuro",
+        "he": "translation_futuro"
       },
       {
-        "it": "visita",
-        "he": "translation_visita"
+        "it": "giovani",
+        "he": "translation_giovani"
       },
       {
-        "it": "devo",
-        "he": "translation_devo"
+        "it": "italiani",
+        "he": "translation_italiani"
       },
       {
-        "it": "dottore",
-        "he": "translation_dottore"
+        "it": "pieno",
+        "he": "translation_pieno"
       }
     ],
     "questions": [
@@ -582,44 +597,44 @@
     ],
     "audio_url": "audio/articles/art_0007.mp3",
     "srs_tags": [
-      "A1_reading",
+      "A2_reading",
       "blog"
     ]
   },
   {
     "id": "art_0008",
-    "title": "Ricetta da scuola.txt",
+    "title": "Ricetta da lavoro.txt",
     "type": "recipe",
-    "level": "A1",
-    "content": "La scuola in Italia inizia a settembre e finisce a giugno. I bambini iniziano la scuola primaria a sei anni. Poi frequentano la scuola media per tre anni. Dopo c'è la scuola superiore per cinque anni. Le materie principali sono italiano, matematica, storia, geografia e inglese. Gli studenti studiano anche scienze, arte e musica. Ogni giorno ci sono cinque o sei ore di lezione. A giugno ci sono gli esami finali. Dopo la scuola superiore si può andare all'università.",
-    "word_count": 79,
+    "level": "A2",
+    "content": "Lavoro in un ufficio moderno nel centro di Milano. Il mio ufficio è al decimo piano con una bella vista sulla città. Ogni mattina alle nove faccio una riunione con i colleghi. Discutiamo dei progetti in corso. A mezzogiorno faccio una pausa pranzo con i colleghi. Nel pomeriggio lavoro al computer e rispondo alle email. Ogni tanto partecipo a conferenze e corsi di formazione. Il mio lavoro mi piace perché è interessante e dinamico. L'orario di lavoro è dalle 9 alle 18 con un'ora di pausa.",
+    "word_count": 84,
     "cefr_vocabulary": {
-      "finisce": "A1",
-      "settembre": "A1",
-      "scuola": "A1",
-      "italia": "A1",
-      "inizia": "A1"
+      "milano": "A2",
+      "lavoro": "A2",
+      "moderno": "A2",
+      "centro": "A2",
+      "ufficio": "A2"
     },
     "glossary": [
       {
-        "it": "finisce",
-        "he": "translation_finisce"
+        "it": "milano",
+        "he": "translation_milano"
       },
       {
-        "it": "settembre",
-        "he": "translation_settembre"
+        "it": "lavoro",
+        "he": "translation_lavoro"
       },
       {
-        "it": "scuola",
-        "he": "translation_scuola"
+        "it": "moderno",
+        "he": "translation_moderno"
       },
       {
-        "it": "italia",
-        "he": "translation_italia"
+        "it": "centro",
+        "he": "translation_centro"
       },
       {
-        "it": "inizia",
-        "he": "translation_inizia"
+        "it": "ufficio",
+        "he": "translation_ufficio"
       }
     ],
     "questions": [
@@ -656,49 +671,44 @@
     ],
     "audio_url": "audio/articles/art_0008.mp3",
     "srs_tags": [
-      "A1_reading",
+      "A2_reading",
       "recipe"
     ]
   },
   {
     "id": "art_0009",
-    "title": "Guida da spesa.txt",
+    "title": "Guida da moderno.txt",
     "type": "guide",
     "level": "A1",
-    "content": "Oggi vado al supermercato. Compro il pane, il latte, la pasta e i pomodori. Al banco della frutta prendo le mele e le banane. Alla cassa pago con la carta. Il totale è 15 euro e 50 centesimi. Il cassiere è gentile e mi dà lo scontrino. Esco e torno a casa. Metto la spesa in frigorifero. Poi preparo il pranzo: pasta al pomodoro. È molto buona!",
-    "word_count": 65,
+    "content": "La vita moderna in Italia è cambiata molto. Ora molti italiani usano lo smartphone per tutto: lavorare, studiare, comprare e parlare con gli amici. I giovani passano molto tempo sui social media. Anche le banche sono digitali. Si può pagare con la carta o con il telefono. I supermercati hanno le casse automatiche. Si ordinano i prodotti online e arrivano a casa. La tecnologia ha reso la vita più comoda ma anche più veloce. Molte persone sentono la mancanza dei tempi passati, quando tutto era più lento.",
+    "word_count": 87,
     "cefr_vocabulary": {
-      "pane": "A1",
-      "supermercato": "A1",
-      "oggi": "A1",
-      "latte": "A1",
-      "compro": "A1",
-      "vado": "A1"
+      "italia": "A1",
+      "moderna": "A1",
+      "molti": "A1",
+      "cambiata": "A1",
+      "vita": "A1"
     },
     "glossary": [
       {
-        "it": "pane",
-        "he": "translation_pane"
+        "it": "italia",
+        "he": "translation_italia"
       },
       {
-        "it": "supermercato",
-        "he": "translation_supermercato"
+        "it": "moderna",
+        "he": "translation_moderna"
       },
       {
-        "it": "oggi",
-        "he": "translation_oggi"
+        "it": "molti",
+        "he": "translation_molti"
       },
       {
-        "it": "latte",
-        "he": "translation_latte"
+        "it": "cambiata",
+        "he": "translation_cambiata"
       },
       {
-        "it": "compro",
-        "he": "translation_compro"
-      },
-      {
-        "it": "vado",
-        "he": "translation_vado"
+        "it": "vita",
+        "he": "translation_vita"
       }
     ],
     "questions": [
@@ -741,43 +751,33 @@
   },
   {
     "id": "art_0010",
-    "title": "Racconto da stazione.txt",
+    "title": "Racconto da pizza.txt",
     "type": "story",
     "level": "A1",
-    "content": "La stazione di Roma Termini è molto grande. Ogni giorno passano migliaia di persone. I treni partono e arrivano continuamente. Al binario 1 parte il treno per Firenze. Al binario 5 c'è il treno per Napoli. I biglietti si comprano alla biglietteria o alle macchinette automatiche. Il viaggio da Roma a Firenze dura circa un'ora e mezza. È importante arrivare in stazione con qualche minuto di anticipo. Sul treno ci sono posti a sedere, il bar e i servizi igienici. Il controllore verifica i biglietti durante il viaggio.",
-    "word_count": 86,
+    "content": "La pizza è uno dei piatti più famosi d'Italia. La pizza napoletana è la più antica. Ha la base sottile e i bordi alti. La pizza margherita ha pomodoro, mozzarella e basilico. I colori sono come la bandiera italiana: rosso, bianco e verde. La pizza si cuoce nel forno a legna a temperatura molto alta. In Italia la pizza si mangia soprattutto la sera. Ogni regione ha le sue varianti. La pizza romana è più sottile e croccante. A Genova fanno la focaccia. In Sicilia la pizza ha la forma rettangolare e più condimento.",
+    "word_count": 94,
     "cefr_vocabulary": {
-      "grande": "A1",
-      "roma": "A1",
-      "stazione": "A1",
-      "ogni": "A1",
-      "termini": "A1",
-      "giorno": "A1"
+      "d'italia": "A1",
+      "piatti": "A1",
+      "famosi": "A1",
+      "pizza": "A1"
     },
     "glossary": [
       {
-        "it": "grande",
-        "he": "translation_grande"
+        "it": "d'italia",
+        "he": "translation_d'italia"
       },
       {
-        "it": "roma",
-        "he": "translation_roma"
+        "it": "piatti",
+        "he": "translation_piatti"
       },
       {
-        "it": "stazione",
-        "he": "translation_stazione"
+        "it": "famosi",
+        "he": "translation_famosi"
       },
       {
-        "it": "ogni",
-        "he": "translation_ogni"
-      },
-      {
-        "it": "termini",
-        "he": "translation_termini"
-      },
-      {
-        "it": "giorno",
-        "he": "translation_giorno"
+        "it": "pizza",
+        "he": "translation_pizza"
       }
     ],
     "questions": [
@@ -820,53 +820,43 @@
   },
   {
     "id": "art_0011",
-    "title": "Descrizione da tempo-libero.txt",
+    "title": "Descrizione da salute.txt",
     "type": "description",
     "level": "A1",
-    "content": "Nel tempo libero molti italiani fanno sport. Alcuni vanno in palestra, altri fanno jogging al parco. La sera vanno al cinema o a teatro. In estate vanno al mare. In inverno vanno in montagna a sciare. Gli italiani amano anche leggere libri e ascoltare musica. Molte persone suonano uno strumento musicale. Altri preferiscono cucinare o fare giardinaggio. La domenica molti vanno a fare una gita fuori porta. I giovani vanno in discoteca o si incontrano al bar con gli amici.",
-    "word_count": 80,
+    "content": "Dal dottore devo fare una visita completa. Il medico mi visita e controlla la pressione. Dice che sono in buona salute. Mi consiglia di fare più attività fisica. Ogni mattina vado a correre al parco. La mattina faccio colazione con yogurt e frutta. A pranzo mangio leggero. La sera ceno presto. Bevo almeno due litri d'acqua al giorno. Il medico mi ha detto che è importante dormire almeno otto ore. Anche ridurre lo stress è importante per la salute.",
+    "word_count": 79,
     "cefr_vocabulary": {
-      "fanno": "A1",
-      "vanno": "A1",
-      "alcuni": "A1",
-      "libero": "A1",
-      "molti": "A1",
-      "sport": "A1",
-      "tempo": "A1",
-      "italiani": "A1"
+      "fare": "A1",
+      "devo": "A1",
+      "medico": "A1",
+      "visita": "A1",
+      "dottore": "A1",
+      "completa": "A1"
     },
     "glossary": [
       {
-        "it": "fanno",
-        "he": "translation_fanno"
+        "it": "fare",
+        "he": "translation_fare"
       },
       {
-        "it": "vanno",
-        "he": "translation_vanno"
+        "it": "devo",
+        "he": "translation_devo"
       },
       {
-        "it": "alcuni",
-        "he": "translation_alcuni"
+        "it": "medico",
+        "he": "translation_medico"
       },
       {
-        "it": "libero",
-        "he": "translation_libero"
+        "it": "visita",
+        "he": "translation_visita"
       },
       {
-        "it": "molti",
-        "he": "translation_molti"
+        "it": "dottore",
+        "he": "translation_dottore"
       },
       {
-        "it": "sport",
-        "he": "translation_sport"
-      },
-      {
-        "it": "tempo",
-        "he": "translation_tempo"
-      },
-      {
-        "it": "italiani",
-        "he": "translation_italiani"
+        "it": "completa",
+        "he": "translation_completa"
       }
     ],
     "questions": [
@@ -909,33 +899,38 @@
   },
   {
     "id": "art_0012",
-    "title": "Notizie da tempo.txt",
+    "title": "Notizie da scuola.txt",
     "type": "news",
     "level": "A1",
-    "content": "In Italia il tempo cambia molto tra nord e sud. Al nord, in inverno fa freddo e spesso nevica. In estate fa caldo ma non come al sud. Al sud, l'estate è molto calda. In Sicilia e in Sardegna il sole splende quasi sempre. La primavera e l'autunno sono stagioni piacevoli in tutta Italia. In montagna fa più freddo che al mare. Quando piove, gli italiani dicono \"che brutto tempo\". Quando c'è il sole, dicono \"che bella giornata\". Il tempo è un argomento di conversazione molto comune in Italia.",
-    "word_count": 89,
+    "content": "La scuola in Italia inizia a settembre e finisce a giugno. I bambini iniziano la scuola primaria a sei anni. Poi frequentano la scuola media per tre anni. Dopo c'è la scuola superiore per cinque anni. Le materie principali sono italiano, matematica, storia, geografia e inglese. Gli studenti studiano anche scienze, arte e musica. Ogni giorno ci sono cinque o sei ore di lezione. A giugno ci sono gli esami finali. Dopo la scuola superiore si può andare all'università.",
+    "word_count": 79,
     "cefr_vocabulary": {
-      "tempo": "A1",
-      "nord": "A1",
-      "cambia": "A1",
-      "italia": "A1"
+      "inizia": "A1",
+      "finisce": "A1",
+      "italia": "A1",
+      "scuola": "A1",
+      "settembre": "A1"
     },
     "glossary": [
       {
-        "it": "tempo",
-        "he": "translation_tempo"
+        "it": "inizia",
+        "he": "translation_inizia"
       },
       {
-        "it": "nord",
-        "he": "translation_nord"
-      },
-      {
-        "it": "cambia",
-        "he": "translation_cambia"
+        "it": "finisce",
+        "he": "translation_finisce"
       },
       {
         "it": "italia",
         "he": "translation_italia"
+      },
+      {
+        "it": "scuola",
+        "he": "translation_scuola"
+      },
+      {
+        "it": "settembre",
+        "he": "translation_settembre"
       }
     ],
     "questions": [
@@ -978,43 +973,43 @@
   },
   {
     "id": "art_0013",
-    "title": "Blog da viaggio.txt",
+    "title": "Blog da spesa.txt",
     "type": "blog",
     "level": "A1",
-    "content": "Venezia è una città unica al mondo. È costruita sull'acqua, con canali al posto delle strade. La gente si sposta a piedi o in vaporetto. Il ponte di Rialto è il più antico e famoso. Piazza San Marco è il cuore della città. Ogni anno milioni di turisti visitano Venezia. Il Carnevale di Venezia è famoso per le maschere e i costumi storici. La città ha anche molti musei e chiese antiche. Il teatro La Fenice è uno dei teatri più importanti d'Italia. Mangiare un gelato vicino al Canal Grande è un'esperienza indimenticabile.",
-    "word_count": 93,
+    "content": "Oggi vado al supermercato. Compro il pane, il latte, la pasta e i pomodori. Al banco della frutta prendo le mele e le banane. Alla cassa pago con la carta. Il totale è 15 euro e 50 centesimi. Il cassiere è gentile e mi dà lo scontrino. Esco e torno a casa. Metto la spesa in frigorifero. Poi preparo il pranzo: pasta al pomodoro. È molto buona!",
+    "word_count": 65,
     "cefr_vocabulary": {
-      "unica": "A1",
-      "città": "A1",
-      "sull'acqua": "A1",
-      "costruita": "A1",
-      "venezia": "A1",
-      "mondo": "A1"
+      "supermercato": "A1",
+      "pane": "A1",
+      "latte": "A1",
+      "oggi": "A1",
+      "compro": "A1",
+      "vado": "A1"
     },
     "glossary": [
       {
-        "it": "unica",
-        "he": "translation_unica"
+        "it": "supermercato",
+        "he": "translation_supermercato"
       },
       {
-        "it": "città",
-        "he": "translation_città"
+        "it": "pane",
+        "he": "translation_pane"
       },
       {
-        "it": "sull'acqua",
-        "he": "translation_sull'acqua"
+        "it": "latte",
+        "he": "translation_latte"
       },
       {
-        "it": "costruita",
-        "he": "translation_costruita"
+        "it": "oggi",
+        "he": "translation_oggi"
       },
       {
-        "it": "venezia",
-        "he": "translation_venezia"
+        "it": "compro",
+        "he": "translation_compro"
       },
       {
-        "it": "mondo",
-        "he": "translation_mondo"
+        "it": "vado",
+        "he": "translation_vado"
       }
     ],
     "questions": [
@@ -1057,48 +1052,43 @@
   },
   {
     "id": "art_0014",
-    "title": "Ricetta da vita-quotidiana.txt",
+    "title": "Ricetta da stazione.txt",
     "type": "recipe",
     "level": "A1",
-    "content": "Buongiorno! Mi chiamo Marco e sono italiano. Vivo a Roma, una città bellissima. Ogni mattina prendo un caffè al bar vicino casa. Il barista è molto simpatico. Dopo il caffè, vado al lavoro in centro. Lavoro in un ufficio grande con molti colleghi. La sera torno a casa e ceno con la mia famiglia. Mia moglie si chiama Elena e i miei figli si chiamano Luca e Sofia. La sera guardiamo la televisione o leggiamo un libro. Il fine settimana andiamo al parco o visitiamo i monumenti di Roma. Mi piace molto la vita italiana!",
-    "word_count": 95,
+    "content": "La stazione di Roma Termini è molto grande. Ogni giorno passano migliaia di persone. I treni partono e arrivano continuamente. Al binario 1 parte il treno per Firenze. Al binario 5 c'è il treno per Napoli. I biglietti si comprano alla biglietteria o alle macchinette automatiche. Il viaggio da Roma a Firenze dura circa un'ora e mezza. È importante arrivare in stazione con qualche minuto di anticipo. Sul treno ci sono posti a sedere, il bar e i servizi igienici. Il controllore verifica i biglietti durante il viaggio.",
+    "word_count": 86,
     "cefr_vocabulary": {
-      "vivo": "A1",
+      "giorno": "A1",
+      "grande": "A1",
       "roma": "A1",
-      "buongiorno": "A1",
-      "italiano": "A1",
-      "chiamo": "A1",
-      "marco": "A1",
-      "sono": "A1"
+      "stazione": "A1",
+      "termini": "A1",
+      "ogni": "A1"
     },
     "glossary": [
       {
-        "it": "vivo",
-        "he": "translation_vivo"
+        "it": "giorno",
+        "he": "translation_giorno"
+      },
+      {
+        "it": "grande",
+        "he": "translation_grande"
       },
       {
         "it": "roma",
         "he": "translation_roma"
       },
       {
-        "it": "buongiorno",
-        "he": "translation_buongiorno"
+        "it": "stazione",
+        "he": "translation_stazione"
       },
       {
-        "it": "italiano",
-        "he": "translation_italiano"
+        "it": "termini",
+        "he": "translation_termini"
       },
       {
-        "it": "chiamo",
-        "he": "translation_chiamo"
-      },
-      {
-        "it": "marco",
-        "he": "translation_marco"
-      },
-      {
-        "it": "sono",
-        "he": "translation_sono"
+        "it": "ogni",
+        "he": "translation_ogni"
       }
     ],
     "questions": [
@@ -1137,6 +1127,327 @@
     "srs_tags": [
       "A1_reading",
       "recipe"
+    ]
+  },
+  {
+    "id": "art_0015",
+    "title": "Guida da tempo-libero.txt",
+    "type": "guide",
+    "level": "A1",
+    "content": "Nel tempo libero molti italiani fanno sport. Alcuni vanno in palestra, altri fanno jogging al parco. La sera vanno al cinema o a teatro. In estate vanno al mare. In inverno vanno in montagna a sciare. Gli italiani amano anche leggere libri e ascoltare musica. Molte persone suonano uno strumento musicale. Altri preferiscono cucinare o fare giardinaggio. La domenica molti vanno a fare una gita fuori porta. I giovani vanno in discoteca o si incontrano al bar con gli amici.",
+    "word_count": 80,
+    "cefr_vocabulary": {
+      "vanno": "A1",
+      "tempo": "A1",
+      "libero": "A1",
+      "molti": "A1",
+      "alcuni": "A1",
+      "italiani": "A1",
+      "fanno": "A1",
+      "sport": "A1"
+    },
+    "glossary": [
+      {
+        "it": "vanno",
+        "he": "translation_vanno"
+      },
+      {
+        "it": "tempo",
+        "he": "translation_tempo"
+      },
+      {
+        "it": "libero",
+        "he": "translation_libero"
+      },
+      {
+        "it": "molti",
+        "he": "translation_molti"
+      },
+      {
+        "it": "alcuni",
+        "he": "translation_alcuni"
+      },
+      {
+        "it": "italiani",
+        "he": "translation_italiani"
+      },
+      {
+        "it": "fanno",
+        "he": "translation_fanno"
+      },
+      {
+        "it": "sport",
+        "he": "translation_sport"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      }
+    ],
+    "audio_url": "audio/articles/art_0015.mp3",
+    "srs_tags": [
+      "A1_reading",
+      "guide"
+    ]
+  },
+  {
+    "id": "art_0016",
+    "title": "Racconto da tempo.txt",
+    "type": "story",
+    "level": "A1",
+    "content": "In Italia il tempo cambia molto tra nord e sud. Al nord, in inverno fa freddo e spesso nevica. In estate fa caldo ma non come al sud. Al sud, l'estate è molto calda. In Sicilia e in Sardegna il sole splende quasi sempre. La primavera e l'autunno sono stagioni piacevoli in tutta Italia. In montagna fa più freddo che al mare. Quando piove, gli italiani dicono \"che brutto tempo\". Quando c'è il sole, dicono \"che bella giornata\". Il tempo è un argomento di conversazione molto comune in Italia.",
+    "word_count": 89,
+    "cefr_vocabulary": {
+      "tempo": "A1",
+      "cambia": "A1",
+      "italia": "A1",
+      "nord": "A1"
+    },
+    "glossary": [
+      {
+        "it": "tempo",
+        "he": "translation_tempo"
+      },
+      {
+        "it": "cambia",
+        "he": "translation_cambia"
+      },
+      {
+        "it": "italia",
+        "he": "translation_italia"
+      },
+      {
+        "it": "nord",
+        "he": "translation_nord"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      }
+    ],
+    "audio_url": "audio/articles/art_0016.mp3",
+    "srs_tags": [
+      "A1_reading",
+      "story"
+    ]
+  },
+  {
+    "id": "art_0017",
+    "title": "Descrizione da viaggio.txt",
+    "type": "description",
+    "level": "A1",
+    "content": "Venezia è una città unica al mondo. È costruita sull'acqua, con canali al posto delle strade. La gente si sposta a piedi o in vaporetto. Il ponte di Rialto è il più antico e famoso. Piazza San Marco è il cuore della città. Ogni anno milioni di turisti visitano Venezia. Il Carnevale di Venezia è famoso per le maschere e i costumi storici. La città ha anche molti musei e chiese antiche. Il teatro La Fenice è uno dei teatri più importanti d'Italia. Mangiare un gelato vicino al Canal Grande è un'esperienza indimenticabile.",
+    "word_count": 93,
+    "cefr_vocabulary": {
+      "venezia": "A1",
+      "sull'acqua": "A1",
+      "costruita": "A1",
+      "città": "A1",
+      "unica": "A1",
+      "mondo": "A1"
+    },
+    "glossary": [
+      {
+        "it": "venezia",
+        "he": "translation_venezia"
+      },
+      {
+        "it": "sull'acqua",
+        "he": "translation_sull'acqua"
+      },
+      {
+        "it": "costruita",
+        "he": "translation_costruita"
+      },
+      {
+        "it": "città",
+        "he": "translation_città"
+      },
+      {
+        "it": "unica",
+        "he": "translation_unica"
+      },
+      {
+        "it": "mondo",
+        "he": "translation_mondo"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      }
+    ],
+    "audio_url": "audio/articles/art_0017.mp3",
+    "srs_tags": [
+      "A1_reading",
+      "description"
+    ]
+  },
+  {
+    "id": "art_0018",
+    "title": "Notizie da vita-quotidiana.txt",
+    "type": "news",
+    "level": "A1",
+    "content": "Buongiorno! Mi chiamo Marco e sono italiano. Vivo a Roma, una città bellissima. Ogni mattina prendo un caffè al bar vicino casa. Il barista è molto simpatico. Dopo il caffè, vado al lavoro in centro. Lavoro in un ufficio grande con molti colleghi. La sera torno a casa e ceno con la mia famiglia. Mia moglie si chiama Elena e i miei figli si chiamano Luca e Sofia. La sera guardiamo la televisione o leggiamo un libro. Il fine settimana andiamo al parco o visitiamo i monumenti di Roma. Mi piace molto la vita italiana!",
+    "word_count": 95,
+    "cefr_vocabulary": {
+      "chiamo": "A1",
+      "vivo": "A1",
+      "marco": "A1",
+      "sono": "A1",
+      "roma": "A1",
+      "italiano": "A1",
+      "buongiorno": "A1"
+    },
+    "glossary": [
+      {
+        "it": "chiamo",
+        "he": "translation_chiamo"
+      },
+      {
+        "it": "vivo",
+        "he": "translation_vivo"
+      },
+      {
+        "it": "marco",
+        "he": "translation_marco"
+      },
+      {
+        "it": "sono",
+        "he": "translation_sono"
+      },
+      {
+        "it": "roma",
+        "he": "translation_roma"
+      },
+      {
+        "it": "italiano",
+        "he": "translation_italiano"
+      },
+      {
+        "it": "buongiorno",
+        "he": "translation_buongiorno"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Qual è l'argomento principale del testo?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      }
+    ],
+    "audio_url": "audio/articles/art_0018.mp3",
+    "srs_tags": [
+      "A1_reading",
+      "news"
     ]
   }
 ]
