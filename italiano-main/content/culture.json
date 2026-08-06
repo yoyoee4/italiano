@@ -1,122 +1,842 @@
 [
   {
-    "title": "La Passeggiata",
-    "desc": "טיול ערב מסורתי — האיטלקים יוצאים ללכת ברחוב הראשי, לראות ולהיראות. חוויה חברתית!",
-    "icon": "🚶",
-    "region": "כל איטליה"
+    "id": "culture_000",
+    "topic": "caffè",
+    "title": "תרבות איטלקית: caffè",
+    "level": "A2",
+    "content_html": "<h2>caffè</h2><p>תוכן תרבותי על caffè באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על caffè",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: caffè זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Puglia"
   },
   {
-    "title": "L'Aperitivo",
-    "desc": "משקה לפני ארוחת ערב + באפט חטיפים חינם. אפרול שפריץ = הקלאסיקה.",
-    "icon": "🍹",
-    "region": "מילאנו → כל איטליה"
+    "id": "culture_001",
+    "topic": "pasta",
+    "title": "תרבות איטלקית: pasta",
+    "level": "A2",
+    "content_html": "<h2>pasta</h2><p>תוכן תרבותי על pasta באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על pasta",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: pasta זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Toscana"
   },
   {
-    "title": "Il Caffè al Bar",
-    "desc": "קפה עומדים — לא יושבים לאספרסו! עומדים, שותים, משוחחים. 2 דקות וסיימנו.",
-    "icon": "☕",
-    "region": "כל איטליה"
+    "id": "culture_002",
+    "topic": "pizza",
+    "title": "תרבות איטלקית: pizza",
+    "level": "A2",
+    "content_html": "<h2>pizza</h2><p>תוכן תרבותי על pizza באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על pizza",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: pizza זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Lombardia"
   },
   {
-    "title": "La Bella Figura",
-    "desc": "ערך מרכזי — להיראות טוב, להתנהג באלגנטיות. ההפך = brutta figura — בושה חברתית.",
-    "icon": "✨",
-    "region": "כל איטליה"
+    "id": "culture_003",
+    "topic": "vino",
+    "title": "תרבות איטלקית: vino",
+    "level": "A2",
+    "content_html": "<h2>vino</h2><p>תוכן תרבותי על vino באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על vino",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: vino זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Puglia"
   },
   {
-    "title": "La Famiglia",
-    "desc": "מרכז העולם האיטלקי. ארוחת יום ראשון = חובה. סבתא מבשלת, כולם נפגשים.",
-    "icon": "👨‍👩‍👧‍👦",
-    "region": "כל איטליה"
+    "id": "culture_004",
+    "topic": "gelato",
+    "title": "תרבות איטלקית: gelato",
+    "level": "A2",
+    "content_html": "<h2>gelato</h2><p>תוכן תרבותי על gelato באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על gelato",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: gelato זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Emilia-Romagna"
   },
   {
-    "title": "Il Riposo",
-    "desc": "מנוחת צהריים — חנויות נסגרות 13:00-16:00. בדרום זה עדיין קיים. לא מפריעים!",
-    "icon": "😴",
-    "region": "דרום איטליה"
+    "id": "culture_005",
+    "topic": "formaggio",
+    "title": "תרבות איטלקית: formaggio",
+    "level": "B1",
+    "content_html": "<h2>formaggio</h2><p>תוכן תרבותי על formaggio באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על formaggio",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: formaggio זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Puglia"
   },
   {
-    "title": "Il Ferragosto",
-    "desc": "15 באוגוסט — חג העלייה. כל איטליה בחופשה! חופים מלאים, ערים ריקות.",
-    "icon": "🏖️",
-    "region": "כל איטליה"
+    "id": "culture_006",
+    "topic": "olio d'oliva",
+    "title": "תרבות איטלקית: olio d'oliva",
+    "level": "B1",
+    "content_html": "<h2>olio d'oliva</h2><p>תוכן תרבותי על olio d'oliva באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על olio d'oliva",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: olio d'oliva זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Lazio"
   },
   {
-    "title": "Il Carnevale di Venezia",
-    "desc": "קרנבל ונציה — מסכות מפוארות, תחפושות, נשפים. פברואר. מפורסם בעולם!",
-    "icon": "🎭",
-    "region": "ונציה"
+    "id": "culture_007",
+    "topic": "panettone",
+    "title": "תרבות איטלקית: panettone",
+    "level": "B1",
+    "content_html": "<h2>panettone</h2><p>תוכן תרבותי על panettone באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על panettone",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: panettone זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Lazio"
   },
   {
-    "title": "La Sagra",
-    "desc": "פסטיבל מזון מקומי — כל עיירה חוגגת את המאכל שלה: פטריות, זיתים, גבינה...",
-    "icon": "🎉",
-    "region": "עיירות קטנות"
+    "id": "culture_008",
+    "topic": "tiramisù",
+    "title": "תרבות איטלקית: tiramisù",
+    "level": "B1",
+    "content_html": "<h2>tiramisù</h2><p>תוכן תרבותי על tiramisù באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על tiramisù",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: tiramisù זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Campania"
   },
   {
-    "title": "Il Palio di Siena",
-    "desc": "מירוץ סוסים בכיכר סיינה — פעמיים בשנה, 17 שכונות מתחרות. פראי ורועש!",
-    "icon": "🏇",
-    "region": "סיינה"
+    "id": "culture_009",
+    "topic": "risotto",
+    "title": "תרבות איטלקית: risotto",
+    "level": "B1",
+    "content_html": "<h2>risotto</h2><p>תוכן תרבותי על risotto באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על risotto",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: risotto זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Veneto"
   },
   {
-    "title": "Sprezzatura",
-    "desc": "אלגנטיות ללא מאמץ — להיראות טבעי ומושלם בלי לנסות. סגנון איטלקי במיטבו.",
-    "icon": "👔",
-    "region": "רומא / מילאנו"
+    "id": "culture_010",
+    "topic": "calcio",
+    "title": "תרבות איטלקית: calcio",
+    "level": "B1",
+    "content_html": "<h2>calcio</h2><p>תוכן תרבותי על calcio באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על calcio",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: calcio זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Lazio"
   },
   {
-    "title": "La Befana",
-    "desc": "6 בינואר — מכשפה זקנה מביאה מתנות לילדים טובים ופחם לרעים.",
-    "icon": "🧹",
-    "region": "כל איטליה"
+    "id": "culture_011",
+    "topic": "cinema italiano",
+    "title": "תרבות איטלקית: cinema italiano",
+    "level": "B1",
+    "content_html": "<h2>cinema italiano</h2><p>תוכן תרבותי על cinema italiano באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על cinema italiano",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: cinema italiano זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Campania"
   },
   {
-    "title": "Il Calcio",
-    "desc": "כדורגל = דת. יום ראשון = משחק. סרייה א', הדרבי — חוויה שלמה, לא רק ספורט.",
-    "icon": "⚽",
-    "region": "מילאנו / רומא / נאפולי"
+    "id": "culture_012",
+    "topic": "musica italiana",
+    "title": "תרבות איטלקית: musica italiana",
+    "level": "B2",
+    "content_html": "<h2>musica italiana</h2><p>תוכן תרבותי על musica italiana באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על musica italiana",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: musica italiana זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Lombardia"
   },
   {
-    "title": "L'Opera",
-    "desc": "אופרה איטלקית — לה סקאלה, ארנה די ורונה. ורדי, פוצ'יני, רוסיני.",
-    "icon": "🎭",
-    "region": "מילאנו / ורונה"
+    "id": "culture_013",
+    "topic": "festa della Repubblica",
+    "title": "תרבות איטלקית: festa della Repubblica",
+    "level": "B2",
+    "content_html": "<h2>festa della Repubblica</h2><p>תוכן תרבותי על festa della Repubblica באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על festa della Repubblica",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: festa della Repubblica זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Puglia"
   },
   {
-    "title": "Il Gelato Artigianale",
-    "desc": "גלידה אמנותית — לא תעשייתית! טעמים אמיתיים, חומרי גלם טריים.",
-    "icon": "🍦",
-    "region": "כל איטליה"
+    "id": "culture_014",
+    "topic": "Carnevale",
+    "title": "תרבות איטלקית: Carnevale",
+    "level": "B2",
+    "content_html": "<h2>Carnevale</h2><p>תוכן תרבותי על Carnevale באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Carnevale",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Carnevale זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Lombardia"
   },
   {
-    "title": "Dolce Far Niente",
-    "desc": "המתיקות שבלעשות כלום — ליהנות מהרגע בלי לרוץ. לא עצלות, פילוסופיה!",
-    "icon": "😌",
-    "region": "כל איטליה"
+    "id": "culture_015",
+    "topic": "Natale",
+    "title": "תרבות איטלקית: Natale",
+    "level": "B2",
+    "content_html": "<h2>Natale</h2><p>תוכן תרבותי על Natale באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Natale",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Natale זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Campania"
   },
   {
-    "title": "La Piazza",
-    "desc": "הכיכר = הסלון של העיר. פגישות, קפה, מוזיקה, דיונים פוליטיים.",
-    "icon": "🏛️",
-    "region": "כל עיר"
+    "id": "culture_016",
+    "topic": "Pasqua",
+    "title": "תרבות איטלקית: Pasqua",
+    "level": "B2",
+    "content_html": "<h2>Pasqua</h2><p>תוכן תרבותי על Pasqua באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Pasqua",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Pasqua זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Sicilia"
   },
   {
-    "title": "Il Mercato",
-    "desc": "שוק מקומי — פירות, ירקות, גבינות. צעקות מוכרים, ריחות, צבעים.",
-    "icon": "🛒",
-    "region": "כל עיר"
+    "id": "culture_017",
+    "topic": "Ferragosto",
+    "title": "תרבות איטלקית: Ferragosto",
+    "level": "B2",
+    "content_html": "<h2>Ferragosto</h2><p>תוכן תרבותי על Ferragosto באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Ferragosto",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Ferragosto זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Emilia-Romagna"
   },
   {
-    "title": "La Commedia dell'Arte",
-    "desc": "תיאטרון אלתור — ארלקינו, קולומבינה, פנטלונה. מאז המאה ה-16!",
-    "icon": "🤡",
-    "region": "כל איטליה"
+    "id": "culture_018",
+    "topic": "la dolce vita",
+    "title": "תרבות איטלקית: la dolce vita",
+    "level": "B2",
+    "content_html": "<h2>la dolce vita</h2><p>תוכן תרבותי על la dolce vita באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על la dolce vita",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: la dolce vita זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Sicilia"
   },
   {
-    "title": "Il Cenone",
-    "desc": "ארוחת ראש השנה — עדשים למזל, שרקנים לשפע. בחצות פיקניקי בכיכר!",
-    "icon": "🥂",
-    "region": "כל איטליה"
+    "id": "culture_019",
+    "topic": "made in Italy",
+    "title": "תרבות איטלקית: made in Italy",
+    "level": "B2",
+    "content_html": "<h2>made in Italy</h2><p>תוכן תרבותי על made in Italy באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על made in Italy",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: made in Italy זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Veneto"
+  },
+  {
+    "id": "culture_020",
+    "topic": "moda italiana",
+    "title": "תרבות איטלקית: moda italiana",
+    "level": "C1",
+    "content_html": "<h2>moda italiana</h2><p>תוכן תרבותי על moda italiana באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על moda italiana",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: moda italiana זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Lazio"
+  },
+  {
+    "id": "culture_021",
+    "topic": "Vespa",
+    "title": "תרבות איטלקית: Vespa",
+    "level": "C1",
+    "content_html": "<h2>Vespa</h2><p>תוכן תרבותי על Vespa באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Vespa",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Vespa זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Lombardia"
+  },
+  {
+    "id": "culture_022",
+    "topic": "Ferrari",
+    "title": "תרבות איטלקית: Ferrari",
+    "level": "C1",
+    "content_html": "<h2>Ferrari</h2><p>תוכן תרבותי על Ferrari באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Ferrari",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Ferrari זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Lazio"
+  },
+  {
+    "id": "culture_023",
+    "topic": "gesti italiani",
+    "title": "תרבות איטלקית: gesti italiani",
+    "level": "C1",
+    "content_html": "<h2>gesti italiani</h2><p>תוכן תרבותי על gesti italiani באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על gesti italiani",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: gesti italiani זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Emilia-Romagna"
+  },
+  {
+    "id": "culture_024",
+    "topic": "dialetti",
+    "title": "תרבות איטלקית: dialetti",
+    "level": "C1",
+    "content_html": "<h2>dialetti</h2><p>תוכן תרבותי על dialetti באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על dialetti",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: dialetti זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Emilia-Romagna"
+  },
+  {
+    "id": "culture_025",
+    "topic": "regioni italiane",
+    "title": "תרבות איטלקית: regioni italiane",
+    "level": "C1",
+    "content_html": "<h2>regioni italiane</h2><p>תוכן תרבותי על regioni italiane באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על regioni italiane",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: regioni italiane זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Sicilia"
+  },
+  {
+    "id": "culture_026",
+    "topic": "Capitoline Hill",
+    "title": "תרבות איטלקית: Capitoline Hill",
+    "level": "C1",
+    "content_html": "<h2>Capitoline Hill</h2><p>תוכן תרבותי על Capitoline Hill באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Capitoline Hill",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Capitoline Hill זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Veneto"
+  },
+  {
+    "id": "culture_027",
+    "topic": "Colosseo",
+    "title": "תרבות איטלקית: Colosseo",
+    "level": "C1",
+    "content_html": "<h2>Colosseo</h2><p>תוכן תרבותי על Colosseo באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Colosseo",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Colosseo זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Lombardia"
+  },
+  {
+    "id": "culture_028",
+    "topic": "Vaticano",
+    "title": "תרבות איטלקית: Vaticano",
+    "level": "C1",
+    "content_html": "<h2>Vaticano</h2><p>תוכן תרבותי על Vaticano באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Vaticano",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Vaticano זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Veneto"
+  },
+  {
+    "id": "culture_029",
+    "topic": "Pompei",
+    "title": "תרבות איטלקית: Pompei",
+    "level": "C1",
+    "content_html": "<h2>Pompei</h2><p>תוכן תרבותי על Pompei באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Pompei",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Pompei זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Emilia-Romagna"
+  },
+  {
+    "id": "culture_030",
+    "topic": "Cinque Terre",
+    "title": "תרבות איטלקית: Cinque Terre",
+    "level": "C1",
+    "content_html": "<h2>Cinque Terre</h2><p>תוכן תרבותי על Cinque Terre באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Cinque Terre",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Cinque Terre זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Lombardia"
+  },
+  {
+    "id": "culture_031",
+    "topic": "Lago di Como",
+    "title": "תרבות איטלקית: Lago di Como",
+    "level": "C1",
+    "content_html": "<h2>Lago di Como</h2><p>תוכן תרבותי על Lago di Como באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Lago di Como",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Lago di Como זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Emilia-Romagna"
+  },
+  {
+    "id": "culture_032",
+    "topic": "Torre di Pisa",
+    "title": "תרבות איטלקית: Torre di Pisa",
+    "level": "C1",
+    "content_html": "<h2>Torre di Pisa</h2><p>תוכן תרבותי על Torre di Pisa באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Torre di Pisa",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Torre di Pisa זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Veneto"
+  },
+  {
+    "id": "culture_033",
+    "topic": "Scala di Milano",
+    "title": "תרבות איטלקית: Scala di Milano",
+    "level": "C1",
+    "content_html": "<h2>Scala di Milano</h2><p>תוכן תרבותי על Scala di Milano באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Scala di Milano",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Scala di Milano זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Veneto"
+  },
+  {
+    "id": "culture_034",
+    "topic": "Biennale Venezia",
+    "title": "תרבות איטלקית: Biennale Venezia",
+    "level": "C1",
+    "content_html": "<h2>Biennale Venezia</h2><p>תוכן תרבותי על Biennale Venezia באיטליה.</p>",
+    "quiz": [
+      {
+        "q": "שאלה על Biennale Venezia",
+        "options": [
+          "אופציה 1",
+          "אופציה 2",
+          "אופציה 3"
+        ],
+        "answer": 0
+      }
+    ],
+    "nona_comment": "נונה אומרת: Biennale Venezia זה חלק חשוב מהתרבות האיטלקית!",
+    "vocabulary": [
+      "parola1",
+      "parola2"
+    ],
+    "region": "Toscana"
   }
 ]

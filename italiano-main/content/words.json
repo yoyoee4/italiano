@@ -1,4632 +1,7452 @@
 [
   {
     "it": "Ciao",
-    "he": "שלום / להתראות",
-    "cat": "ברכות"
+    "he": "שלום",
+    "cat": "greetings"
   },
   {
     "it": "Buongiorno",
     "he": "בוקר טוב",
-    "cat": "ברכות"
+    "cat": "greetings"
   },
   {
     "it": "Buonasera",
     "he": "ערב טוב",
-    "cat": "ברכות"
+    "cat": "greetings"
   },
   {
     "it": "Buonanotte",
     "he": "לילה טוב",
-    "cat": "ברכות"
+    "cat": "greetings"
   },
   {
     "it": "Arrivederci",
-    "he": "להתראות (רשמי)",
-    "cat": "ברכות"
+    "he": "להתראות",
+    "cat": "greetings"
+  },
+  {
+    "it": "Salve",
+    "he": "שלום",
+    "cat": "greetings"
   },
   {
     "it": "A presto",
     "he": "נתראה בקרוב",
-    "cat": "ברכות"
-  },
-  {
-    "it": "A dopo",
-    "he": "נתראה אחר כך",
-    "cat": "ברכות"
-  },
-  {
-    "it": "A domani",
-    "he": "להתראות מחר",
-    "cat": "ברכות"
-  },
-  {
-    "it": "Salve",
-    "he": "שלום (רשמי)",
-    "cat": "ברכות"
-  },
-  {
-    "it": "Benvenuto",
-    "he": "ברוך הבא",
-    "cat": "ברכות"
+    "cat": "greetings"
   },
   {
     "it": "Grazie",
     "he": "תודה",
-    "cat": "ברכות"
+    "cat": "greetings"
   },
   {
     "it": "Grazie mille",
     "he": "תודה רבה",
-    "cat": "ברכות"
+    "cat": "greetings"
   },
   {
     "it": "Prego",
-    "he": "בבקשה / אין בעד מה",
-    "cat": "ברכות"
+    "he": "בבקשה",
+    "cat": "greetings"
   },
   {
     "it": "Per favore",
     "he": "בבקשה",
-    "cat": "ברכות"
+    "cat": "greetings"
   },
   {
     "it": "Scusi",
-    "he": "סליחה (רשמי)",
-    "cat": "ברכות"
+    "he": "סליחה",
+    "cat": "greetings"
   },
   {
     "it": "Scusa",
     "he": "סליחה",
-    "cat": "ברכות"
+    "cat": "greetings"
   },
   {
     "it": "Mi dispiace",
-    "he": "אני מצטער/ת",
-    "cat": "ברכות"
-  },
-  {
-    "it": "Come stai?",
-    "he": "איך אתה?",
-    "cat": "ברכות"
-  },
-  {
-    "it": "Sto bene",
-    "he": "אני בסדר",
-    "cat": "ברכות"
+    "he": "אני מצטער",
+    "cat": "greetings"
   },
   {
     "it": "Piacere",
     "he": "נעים להכיר",
-    "cat": "ברכות"
-  },
-  {
-    "it": "Auguri",
-    "he": "ברכות / מזל טוב",
-    "cat": "ברכות"
-  },
-  {
-    "it": "In bocca al lupo",
-    "he": "בהצלחה (בפה של הזאב)",
-    "cat": "ברכות"
-  },
-  {
-    "it": "Evviva!",
-    "he": "יחי!",
-    "cat": "ברכות"
-  },
-  {
-    "it": "Buon compleanno",
-    "he": "יום הולדת שמח",
-    "cat": "ברכות"
-  },
-  {
-    "it": "Non c'è problema",
-    "he": "אין בעיה",
-    "cat": "ברכות"
-  },
-  {
-    "it": "Zero",
-    "he": "אפס",
-    "cat": "מספרים"
+    "cat": "greetings"
   },
   {
     "it": "Uno",
-    "he": "אחד",
-    "cat": "מספרים"
+    "he": "אחת",
+    "cat": "numbers"
   },
   {
     "it": "Due",
-    "he": "שניים",
-    "cat": "מספרים"
+    "he": "שתיים",
+    "cat": "numbers"
   },
   {
     "it": "Tre",
     "he": "שלוש",
-    "cat": "מספרים"
+    "cat": "numbers"
   },
   {
     "it": "Quattro",
     "he": "ארבע",
-    "cat": "מספרים"
+    "cat": "numbers"
   },
   {
     "it": "Cinque",
     "he": "חמש",
-    "cat": "מספרים"
+    "cat": "numbers"
   },
   {
     "it": "Sei",
     "he": "שש",
-    "cat": "מספרים"
+    "cat": "numbers"
   },
   {
     "it": "Sette",
     "he": "שבע",
-    "cat": "מספרים"
+    "cat": "numbers"
   },
   {
     "it": "Otto",
     "he": "שמונה",
-    "cat": "מספרים"
+    "cat": "numbers"
   },
   {
     "it": "Nove",
     "he": "תשע",
-    "cat": "מספרים"
+    "cat": "numbers"
   },
   {
     "it": "Dieci",
     "he": "עשר",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Undici",
-    "he": "אחת עשרה",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Dodici",
-    "he": "שתיים עשרה",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Tredici",
-    "he": "שלוש עשרה",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Quattordici",
-    "he": "ארבע עשרה",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Quindici",
-    "he": "חמש עשרה",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Sedici",
-    "he": "שש עשרה",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Diciassette",
-    "he": "שבע עשרה",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Diciotto",
-    "he": "שמונה עשרה",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Diciannove",
-    "he": "תשע עשרה",
-    "cat": "מספרים"
+    "cat": "numbers"
   },
   {
     "it": "Venti",
     "he": "עשרים",
-    "cat": "מספרים"
+    "cat": "numbers"
   },
   {
     "it": "Trenta",
     "he": "שלושים",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Quaranta",
-    "he": "ארבעים",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Cinquanta",
-    "he": "חמישים",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Sessanta",
-    "he": "שישים",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Settanta",
-    "he": "שבעים",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Ottanta",
-    "he": "שמונים",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Novanta",
-    "he": "תשעים",
-    "cat": "מספרים"
+    "cat": "numbers"
   },
   {
     "it": "Cento",
     "he": "מאה",
-    "cat": "מספרים"
+    "cat": "numbers"
   },
   {
     "it": "Mille",
     "he": "אלף",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Primo",
-    "he": "ראשון",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Secondo",
-    "he": "שני",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Terzo",
-    "he": "שלישי",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Quarto",
-    "he": "רביעי",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Quinto",
-    "he": "חמישי",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Ultimo",
-    "he": "אחרון",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Metà",
-    "he": "חצי",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Doppio",
-    "he": "כפול",
-    "cat": "מספרים"
-  },
-  {
-    "it": "Oggi",
-    "he": "היום",
-    "cat": "זמן"
-  },
-  {
-    "it": "Domani",
-    "he": "מחר",
-    "cat": "זמן"
-  },
-  {
-    "it": "Ieri",
-    "he": "אתמול",
-    "cat": "זמן"
-  },
-  {
-    "it": "Mattina",
-    "he": "בוקר",
-    "cat": "זמן"
-  },
-  {
-    "it": "Pomeriggio",
-    "he": "אחר צהריים",
-    "cat": "זמן"
-  },
-  {
-    "it": "Sera",
-    "he": "ערב",
-    "cat": "זמן"
-  },
-  {
-    "it": "Notte",
-    "he": "לילה",
-    "cat": "זמן"
-  },
-  {
-    "it": "Ora",
-    "he": "שעה / עכשיו",
-    "cat": "זמן"
-  },
-  {
-    "it": "Minuto",
-    "he": "דקה",
-    "cat": "זמן"
-  },
-  {
-    "it": "Sempre",
-    "he": "תמיד",
-    "cat": "זמן"
-  },
-  {
-    "it": "Mai",
-    "he": "אף פעם",
-    "cat": "זמן"
-  },
-  {
-    "it": "Spesso",
-    "he": "לעתים קרובות",
-    "cat": "זמן"
-  },
-  {
-    "it": "Qualche volta",
-    "he": "לפעמים",
-    "cat": "זמן"
-  },
-  {
-    "it": "Adesso",
-    "he": "עכשיו",
-    "cat": "זמן"
-  },
-  {
-    "it": "Presto",
-    "he": "מוקדם / בקרוב",
-    "cat": "זמן"
-  },
-  {
-    "it": "Tardi",
-    "he": "מאוחר",
-    "cat": "זמן"
-  },
-  {
-    "it": "Lunedì",
-    "he": "שני",
-    "cat": "זמן"
-  },
-  {
-    "it": "Martedì",
-    "he": "שלישי",
-    "cat": "זמן"
-  },
-  {
-    "it": "Mercoledì",
-    "he": "רביעי",
-    "cat": "זמן"
-  },
-  {
-    "it": "Giovedì",
-    "he": "חמישי",
-    "cat": "זמן"
-  },
-  {
-    "it": "Venerdì",
-    "he": "שישי",
-    "cat": "זמן"
-  },
-  {
-    "it": "Sabato",
-    "he": "שבת",
-    "cat": "זמן"
-  },
-  {
-    "it": "Domenica",
-    "he": "ראשון",
-    "cat": "זמן"
-  },
-  {
-    "it": "Gennaio",
-    "he": "ינואר",
-    "cat": "זמן"
-  },
-  {
-    "it": "Febbraio",
-    "he": "פברואר",
-    "cat": "זמן"
-  },
-  {
-    "it": "Marzo",
-    "he": "מרץ",
-    "cat": "זמן"
-  },
-  {
-    "it": "Aprile",
-    "he": "אפריל",
-    "cat": "זמן"
-  },
-  {
-    "it": "Maggio",
-    "he": "מאי",
-    "cat": "זמן"
-  },
-  {
-    "it": "Giugno",
-    "he": "יוני",
-    "cat": "זמן"
-  },
-  {
-    "it": "Luglio",
-    "he": "יולי",
-    "cat": "זמן"
-  },
-  {
-    "it": "Agosto",
-    "he": "אוגוסט",
-    "cat": "זמן"
-  },
-  {
-    "it": "Settembre",
-    "he": "ספטמבר",
-    "cat": "זמן"
-  },
-  {
-    "it": "Ottobre",
-    "he": "אוקטובר",
-    "cat": "זמן"
-  },
-  {
-    "it": "Novembre",
-    "he": "נובמבר",
-    "cat": "זמן"
-  },
-  {
-    "it": "Dicembre",
-    "he": "דצמבר",
-    "cat": "זמן"
-  },
-  {
-    "it": "Primavera",
-    "he": "אביב",
-    "cat": "זמן"
-  },
-  {
-    "it": "Estate",
-    "he": "קיץ",
-    "cat": "זמן"
-  },
-  {
-    "it": "Autunno",
-    "he": "סתיו",
-    "cat": "זמן"
-  },
-  {
-    "it": "Inverno",
-    "he": "חורף",
-    "cat": "זמן"
-  },
-  {
-    "it": "Settimana",
-    "he": "שבוע",
-    "cat": "זמן"
-  },
-  {
-    "it": "Mese",
-    "he": "חודש",
-    "cat": "זמן"
-  },
-  {
-    "it": "Anno",
-    "he": "שנה",
-    "cat": "זמן"
-  },
-  {
-    "it": "Stagione",
-    "he": "עונה",
-    "cat": "זמן"
-  },
-  {
-    "it": "Acqua",
-    "he": "מים",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Caffè",
-    "he": "קפה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Pane",
-    "he": "לחם",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Pasta",
-    "he": "פסטה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Pizza",
-    "he": "פיצה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Vino",
-    "he": "יין",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Carne",
-    "he": "בשר",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Pesce",
-    "he": "דג",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Frutta",
-    "he": "פרי",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Verdura",
-    "he": "ירק",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Riso",
-    "he": "אורז",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Insalata",
-    "he": "סלט",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Formaggio",
-    "he": "גבינה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Uovo",
-    "he": "ביצה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Latte",
-    "he": "חלב",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Burro",
-    "he": "חמאה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Olio",
-    "he": "שמן",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Sale",
-    "he": "מלח",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Pepe",
-    "he": "פלפל",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Zucchero",
-    "he": "סוכר",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Pomodoro",
-    "he": "עגבנייה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Cipolla",
-    "he": "בצל",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Aglio",
-    "he": "שום",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Pollo",
-    "he": "עוף",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Manzo",
-    "he": "בקר",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Gelato",
-    "he": "גלידה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Torta",
-    "he": "עוגה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Dolce",
-    "he": "מתוק / קינוח",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Colazione",
-    "he": "ארוחת בוקר",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Pranzo",
-    "he": "ארוחת צהריים",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Cena",
-    "he": "ארוחת ערב",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Antipasto",
-    "he": "פתיח / מנה ראשונה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Primo",
-    "he": "מנה ראשונה (פסטה)",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Secondo",
-    "he": "מנה עיקרית",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Contorno",
-    "he": "תוספת ירקות",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Cappuccino",
-    "he": "קפוצ'ינו",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Espresso",
-    "he": "אספרסו",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Cornetto",
-    "he": "קרואסון איטלקי",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Tiramisù",
-    "he": "טירמיסו",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Risotto",
-    "he": "ריזוטו",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Lasagna",
-    "he": "לזניה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Ravioli",
-    "he": "רביולי",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Gnocchi",
-    "he": "ניוקי",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Bruschetta",
-    "he": "ברוסקטה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Prosciutto",
-    "he": "פרושוטו (שינקן)",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Mozzarella",
-    "he": "מוצרלה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Parmigiano",
-    "he": "פרמז'ן",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Acqua frizzante",
-    "he": "מים מוגזים",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Birra",
-    "he": "בירה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Spritz",
-    "he": "ספריץ (אפרול)",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Limoncello",
-    "he": "לימונצ'לו",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Olive",
-    "he": "זיתים",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Funghi",
-    "he": "פטריות",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Melanzane",
-    "he": "חצילים",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Zucchine",
-    "he": "קישואים",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Patate",
-    "he": "תפוחי אדמה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Caffè ristretto",
-    "he": "אספרסו קצר",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Caffè macchiato",
-    "he": "אספרסו עם חלב",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Biscotto",
-    "he": "עוגייה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Farina",
-    "he": "קמח",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Panna",
-    "he": "שמנת",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Cannolo",
-    "he": "קאנולו (מאפה סיציליאני)",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Focaccia",
-    "he": "פוקצ'ה",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Caffè corretto",
-    "he": "אספרסו עם אלכוהול",
-    "cat": "אוכל"
-  },
-  {
-    "it": "Famiglia",
-    "he": "משפחה",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Padre",
-    "he": "אבא",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Madre",
-    "he": "אמא",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Genitori",
-    "he": "הורים",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Figlio",
-    "he": "בן",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Figlia",
-    "he": "בת",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Fratello",
-    "he": "אח",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Sorella",
-    "he": "אחות",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Nonno",
-    "he": "סבא",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Nonna",
-    "he": "סבתא",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Zio",
-    "he": "דוד",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Zia",
-    "he": "דודה",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Cugino",
-    "he": "בן דוד",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Cugina",
-    "he": "בת דודה",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Marito",
-    "he": "בעל",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Moglie",
-    "he": "אישה (זוג)",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Nipote",
-    "he": "נכד / אחיין",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Suocero",
-    "he": "חותן",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Suocera",
-    "he": "חמות",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Bambino",
-    "he": "ילד",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Bambina",
-    "he": "ילדה",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Neonato",
-    "he": "תינוק",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Amico",
-    "he": "חבר",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Amica",
-    "he": "חברה",
-    "cat": "משפחה"
-  },
-  {
-    "it": "Testa",
-    "he": "ראש",
-    "cat": "גוף"
-  },
-  {
-    "it": "Capelli",
-    "he": "שיער",
-    "cat": "גוף"
-  },
-  {
-    "it": "Occhio",
-    "he": "עין",
-    "cat": "גוף"
-  },
-  {
-    "it": "Orecchio",
-    "he": "אוזן",
-    "cat": "גוף"
-  },
-  {
-    "it": "Naso",
-    "he": "אף",
-    "cat": "גוף"
-  },
-  {
-    "it": "Bocca",
-    "he": "פה",
-    "cat": "גוף"
-  },
-  {
-    "it": "Dente",
-    "he": "שן",
-    "cat": "גוף"
-  },
-  {
-    "it": "Lingua",
-    "he": "לשון / שפה",
-    "cat": "גוף"
-  },
-  {
-    "it": "Collo",
-    "he": "צוואר",
-    "cat": "גוף"
-  },
-  {
-    "it": "Spalla",
-    "he": "כתף",
-    "cat": "גוף"
-  },
-  {
-    "it": "Braccio",
-    "he": "זרוע",
-    "cat": "גוף"
-  },
-  {
-    "it": "Mano",
-    "he": "יד",
-    "cat": "גוף"
-  },
-  {
-    "it": "Dito",
-    "he": "אצבע",
-    "cat": "גוף"
-  },
-  {
-    "it": "Petto",
-    "he": "חזה",
-    "cat": "גוף"
-  },
-  {
-    "it": "Schiena",
-    "he": "גב",
-    "cat": "גוף"
-  },
-  {
-    "it": "Pancia",
-    "he": "בטן",
-    "cat": "גוף"
-  },
-  {
-    "it": "Gamba",
-    "he": "רגל",
-    "cat": "גוף"
-  },
-  {
-    "it": "Ginocchio",
-    "he": "ברך",
-    "cat": "גוף"
-  },
-  {
-    "it": "Piede",
-    "he": "כף רגל",
-    "cat": "גוף"
-  },
-  {
-    "it": "Cuore",
-    "he": "לב",
-    "cat": "גוף"
-  },
-  {
-    "it": "Stomaco",
-    "he": "קיבה",
-    "cat": "גוף"
-  },
-  {
-    "it": "Pelle",
-    "he": "עור",
-    "cat": "גוף"
-  },
-  {
-    "it": "Sangue",
-    "he": "דם",
-    "cat": "גוף"
-  },
-  {
-    "it": "Fegato",
-    "he": "כבד",
-    "cat": "גוף"
-  },
-  {
-    "it": "Polmone",
-    "he": "ריאה",
-    "cat": "גוף"
-  },
-  {
-    "it": "Mente",
-    "he": "שכל",
-    "cat": "גוף"
+    "cat": "numbers"
   },
   {
     "it": "Rosso",
     "he": "אדום",
-    "cat": "צבעים"
+    "cat": "colors"
   },
   {
     "it": "Blu",
     "he": "כחול",
-    "cat": "צבעים"
+    "cat": "colors"
   },
   {
     "it": "Verde",
     "he": "ירוק",
-    "cat": "צבעים"
+    "cat": "colors"
   },
   {
     "it": "Giallo",
     "he": "צהוב",
-    "cat": "צבעים"
-  },
-  {
-    "it": "Nero",
-    "he": "שחור",
-    "cat": "צבעים"
+    "cat": "colors"
   },
   {
     "it": "Bianco",
     "he": "לבן",
-    "cat": "צבעים"
+    "cat": "colors"
   },
   {
-    "it": "Grigio",
-    "he": "אפור",
-    "cat": "צבעים"
-  },
-  {
-    "it": "Marrone",
-    "he": "חום",
-    "cat": "צבעים"
-  },
-  {
-    "it": "Rosa",
-    "he": "ורוד",
-    "cat": "צבעים"
+    "it": "Nero",
+    "he": "שחור",
+    "cat": "colors"
   },
   {
     "it": "Arancione",
     "he": "כתום",
-    "cat": "צבעים"
+    "cat": "colors"
   },
   {
     "it": "Viola",
     "he": "סגול",
-    "cat": "צבעים"
+    "cat": "colors"
+  },
+  {
+    "it": "Rosa",
+    "he": "ורוד",
+    "cat": "colors"
   },
   {
     "it": "Azzurro",
     "he": "תכלת",
-    "cat": "צבעים"
+    "cat": "colors"
   },
   {
-    "it": "Dorato",
-    "he": "מוזהב",
-    "cat": "צבעים"
+    "it": "Madre",
+    "he": "אמא",
+    "cat": "family"
   },
   {
-    "it": "Argentato",
-    "he": "מוכסף",
-    "cat": "צבעים"
+    "it": "Padre",
+    "he": "אבא",
+    "cat": "family"
   },
   {
-    "it": "Chiaro",
-    "he": "בהיר",
-    "cat": "צבעים"
+    "it": "Sorella",
+    "he": "אחות",
+    "cat": "family"
   },
   {
-    "it": "Scuro",
-    "he": "כהה",
-    "cat": "צבעים"
+    "it": "Fratello",
+    "he": "אח",
+    "cat": "family"
   },
   {
-    "it": "Essere",
-    "he": "להיות",
-    "cat": "פעלים"
+    "it": "Figlia",
+    "he": "בת",
+    "cat": "family"
   },
   {
-    "it": "Avere",
-    "he": "להחזיק / יש לי",
-    "cat": "פעלים"
+    "it": "Figlio",
+    "he": "בן",
+    "cat": "family"
   },
   {
-    "it": "Fare",
-    "he": "לעשות",
-    "cat": "פעלים"
+    "it": "Mamma",
+    "he": "אמא",
+    "cat": "family"
   },
   {
-    "it": "Andare",
-    "he": "ללכת",
-    "cat": "פעלים"
+    "it": "Papà",
+    "he": "אבא",
+    "cat": "family"
   },
   {
-    "it": "Venire",
-    "he": "לבוא",
-    "cat": "פעלים"
+    "it": "Nonna",
+    "he": "סבתא",
+    "cat": "family"
   },
   {
-    "it": "Mangiare",
-    "he": "לאכול",
-    "cat": "פעלים"
+    "it": "Nonno",
+    "he": "סבא",
+    "cat": "family"
   },
   {
-    "it": "Bere",
-    "he": "לשתות",
-    "cat": "פעלים"
+    "it": "Zia",
+    "he": "דודה",
+    "cat": "family"
   },
   {
-    "it": "Parlare",
-    "he": "לדבר",
-    "cat": "פעלים"
+    "it": "Zio",
+    "he": "דוד",
+    "cat": "family"
   },
   {
-    "it": "Capire",
-    "he": "להבין",
-    "cat": "פעלים"
+    "it": "Cugina",
+    "he": "בת דוד",
+    "cat": "family"
   },
   {
-    "it": "Volere",
-    "he": "לרצות",
-    "cat": "פעלים"
+    "it": "Cugino",
+    "he": "בן דוד",
+    "cat": "family"
   },
   {
-    "it": "Potere",
-    "he": "להיות מסוגל",
-    "cat": "פעלים"
+    "it": "Nipote",
+    "he": "נכד",
+    "cat": "family"
   },
   {
-    "it": "Dovere",
-    "he": "חובה / להיות חייב",
-    "cat": "פעלים"
+    "it": "Moglie",
+    "he": "אישה",
+    "cat": "family"
   },
   {
-    "it": "Sapere",
-    "he": "לדעת",
-    "cat": "פעלים"
+    "it": "Marito",
+    "he": "בעל",
+    "cat": "family"
   },
   {
-    "it": "Conoscere",
-    "he": "להכיר",
-    "cat": "פעלים"
+    "it": "Amico",
+    "he": "חבר",
+    "cat": "family"
   },
   {
-    "it": "Dormire",
-    "he": "לישון",
-    "cat": "פעלים"
+    "it": "Amica",
+    "he": "חברה",
+    "cat": "family"
   },
   {
-    "it": "Scrivere",
-    "he": "לכתוב",
-    "cat": "פעלים"
+    "it": "Acqua",
+    "he": "מים",
+    "cat": "food"
   },
   {
-    "it": "Leggere",
-    "he": "לקרוא",
-    "cat": "פעלים"
+    "it": "Pane",
+    "he": "לחם",
+    "cat": "food"
   },
   {
-    "it": "Sentire",
-    "he": "לשמוע / להרגיש",
-    "cat": "פעלים"
+    "it": "Latte",
+    "he": "חלב",
+    "cat": "food"
   },
   {
-    "it": "Vedere",
-    "he": "לראות",
-    "cat": "פעלים"
+    "it": "Uovo",
+    "he": "ביצה",
+    "cat": "food"
   },
   {
-    "it": "Uscire",
-    "he": "לצאת",
-    "cat": "פעלים"
+    "it": "Formaggio",
+    "he": "גבינה",
+    "cat": "food"
   },
   {
-    "it": "Entrare",
-    "he": "להיכנס",
-    "cat": "פעלים"
+    "it": "Pesce",
+    "he": "דג",
+    "cat": "food"
   },
   {
-    "it": "Aprire",
-    "he": "לפתוח",
-    "cat": "פעלים"
+    "it": "Carne",
+    "he": "בשר",
+    "cat": "food"
   },
   {
-    "it": "Chiudere",
-    "he": "לסגור",
-    "cat": "פעלים"
+    "it": "Frutta",
+    "he": "פרי",
+    "cat": "food"
   },
   {
-    "it": "Comprare",
-    "he": "לקנות",
-    "cat": "פעלים"
+    "it": "Verdura",
+    "he": "ירק",
+    "cat": "food"
   },
   {
-    "it": "Vendere",
-    "he": "למכור",
-    "cat": "פעלים"
+    "it": "Pasta",
+    "he": "פסטה",
+    "cat": "food"
   },
   {
-    "it": "Pagare",
-    "he": "לשלם",
-    "cat": "פעלים"
+    "it": "Pizza",
+    "he": "פיצה",
+    "cat": "food"
   },
   {
-    "it": "Dare",
-    "he": "לתת",
-    "cat": "פעלים"
+    "it": "Riso",
+    "he": "אורז",
+    "cat": "food"
   },
   {
-    "it": "Prendere",
-    "he": "לקחת",
-    "cat": "פעלים"
+    "it": "Zucchero",
+    "he": "סוכר",
+    "cat": "food"
   },
   {
-    "it": "Mettere",
-    "he": "לשים / ללבוש",
-    "cat": "פעלים"
+    "it": "Sale",
+    "he": "מלח",
+    "cat": "food"
   },
   {
-    "it": "Lavorare",
-    "he": "לעבוד",
-    "cat": "פעלים"
+    "it": "Olio",
+    "he": "שמן",
+    "cat": "food"
   },
   {
-    "it": "Studiare",
-    "he": "ללמוד",
-    "cat": "פעלים"
+    "it": "Aceto",
+    "he": "חומץ",
+    "cat": "food"
   },
   {
-    "it": "Insegnare",
-    "he": "ללמד",
-    "cat": "פעלים"
+    "it": "Caffè",
+    "he": "קפה",
+    "cat": "food"
   },
   {
-    "it": "Imparare",
-    "he": "לרכוש ידע",
-    "cat": "פעלים"
+    "it": "Tè",
+    "he": "תה",
+    "cat": "food"
   },
   {
-    "it": "Giocare",
-    "he": "לשחק",
-    "cat": "פעלים"
+    "it": "Vino",
+    "he": "יין",
+    "cat": "food"
   },
   {
-    "it": "Correre",
-    "he": "לרוץ",
-    "cat": "פעלים"
+    "it": "Birra",
+    "he": "בירה",
+    "cat": "food"
   },
   {
-    "it": "Camminare",
-    "he": "ללכת ברגל",
-    "cat": "פעלים"
+    "it": "Cioccolato",
+    "he": "שוקולד",
+    "cat": "food"
   },
   {
-    "it": "Nuotare",
-    "he": "לשחות",
-    "cat": "פעלים"
+    "it": "Gelato",
+    "he": "גלידה",
+    "cat": "food"
   },
   {
-    "it": "Guidare",
-    "he": "לנהוג",
-    "cat": "פעלים"
+    "it": "Mela",
+    "he": "תפוח",
+    "cat": "food"
   },
   {
-    "it": "Cantare",
-    "he": "לשיר",
-    "cat": "פעלים"
+    "it": "Banana",
+    "he": "בננה",
+    "cat": "food"
   },
   {
-    "it": "Ballare",
-    "he": "לרקוד",
-    "cat": "פעלים"
+    "it": "Arancia",
+    "he": "תפוז",
+    "cat": "food"
   },
   {
-    "it": "Ridere",
-    "he": "לצחוק",
-    "cat": "פעלים"
+    "it": "Limone",
+    "he": "לימון",
+    "cat": "food"
   },
   {
-    "it": "Piangere",
-    "he": "לבכות",
-    "cat": "פעלים"
+    "it": "Pomodoro",
+    "he": "עגבניה",
+    "cat": "food"
   },
   {
-    "it": "Amare",
-    "he": "לאהוב",
-    "cat": "פעלים"
+    "it": "Insalata",
+    "he": "סלט",
+    "cat": "food"
   },
   {
-    "it": "Sperare",
-    "he": "לקוות",
-    "cat": "פעלים"
+    "it": "Dolce",
+    "he": "קינוח",
+    "cat": "food"
   },
   {
-    "it": "Credere",
-    "he": "להאמין",
-    "cat": "פעלים"
+    "it": "Colazione",
+    "he": "ארוחת בוקר",
+    "cat": "food"
   },
   {
-    "it": "Pensare",
-    "he": "לחשוב",
-    "cat": "פעלים"
+    "it": "Pranzo",
+    "he": "ארוחת צהריים",
+    "cat": "food"
   },
   {
-    "it": "Ricordare",
-    "he": "לזכור",
-    "cat": "פעלים"
+    "it": "Cena",
+    "he": "ארוחת ערב",
+    "cat": "food"
   },
   {
-    "it": "Dimenticare",
-    "he": "לשכוח",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Ascoltare",
-    "he": "להקשיב",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Guardare",
-    "he": "להסתכל",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Cercare",
-    "he": "לחפש",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Trovare",
-    "he": "למצוא",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Lasciare",
-    "he": "לעזוב",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Restare",
-    "he": "להישאר",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Arrivare",
-    "he": "להגיע",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Partire",
-    "he": "לצאת",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Tornare",
-    "he": "לחזור",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Vivere",
-    "he": "לחיות",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Crescere",
-    "he": "לגדול",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Cambiare",
-    "he": "לשנות",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Scegliere",
-    "he": "לבחור",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Provare",
-    "he": "לנסות",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Rispondere",
-    "he": "לענות",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Chiedere",
-    "he": "לשאול",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Spiegare",
-    "he": "להסביר",
-    "cat": "פעלים"
-  },
-  {
-    "it": "Treno",
-    "he": "רכבת",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Aereo",
-    "he": "מטוס",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Nave",
-    "he": "ספינה",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Autobus",
-    "he": "אוטובוס",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Taxi",
-    "he": "מונית",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Macchina",
-    "he": "מכונית",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Bici",
-    "he": "אופניים",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Moto",
-    "he": "אופנוע",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Hotel",
-    "he": "מלון",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Biglietto",
-    "he": "כרטיס",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Stazione",
-    "he": "תחנת רכבת",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Aeroporto",
-    "he": "שדה תעופה",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Strada",
-    "he": "כביש / דרך",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Piazza",
-    "he": "כיכר",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Ponte",
-    "he": "גשר",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Mare",
-    "he": "ים",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Spiaggia",
-    "he": "חוף",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Isola",
-    "he": "אי",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Montagna",
-    "he": "הר",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Lago",
-    "he": "אגם",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Fiume",
-    "he": "נהר",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Passaporto",
-    "he": "דרכון",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Valigia",
-    "he": "מזוודה",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Viaggio",
-    "he": "נסיעה / טיול",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Destinazione",
-    "he": "יעד",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Mappa",
-    "he": "מפה",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Guida",
-    "he": "מדריך",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Ambasciata",
-    "he": "שגרירות",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Parcheggio",
-    "he": "חנייה",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Semaforo",
-    "he": "רמזור",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Incrocio",
-    "he": "צומת",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Andata",
-    "he": "כיוון אחד",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Ritorno",
-    "he": "חזרה",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Corsa",
-    "he": "נסיעה / ריצה",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Pedaggio",
-    "he": "אגרה",
-    "cat": "טיולים"
-  },
-  {
-    "it": "Crociera",
-    "he": "שייט",
-    "cat": "טיולים"
+    "it": "Camera",
+    "he": "חדר",
+    "cat": "house"
   },
   {
     "it": "Casa",
     "he": "בית",
-    "cat": "בית"
-  },
-  {
-    "it": "Appartamento",
-    "he": "דירה",
-    "cat": "בית"
-  },
-  {
-    "it": "Stanza",
-    "he": "חדר",
-    "cat": "בית"
-  },
-  {
-    "it": "Camera da letto",
-    "he": "חדר שינה",
-    "cat": "בית"
-  },
-  {
-    "it": "Soggiorno",
-    "he": "סלון",
-    "cat": "בית"
-  },
-  {
-    "it": "Cucina",
-    "he": "מטבח",
-    "cat": "בית"
-  },
-  {
-    "it": "Bagno",
-    "he": "אמבטיה / שירותים",
-    "cat": "בית"
-  },
-  {
-    "it": "Balcone",
-    "he": "מרפסת",
-    "cat": "בית"
-  },
-  {
-    "it": "Giardino",
-    "he": "גינה",
-    "cat": "בית"
+    "cat": "house"
   },
   {
     "it": "Porta",
     "he": "דלת",
-    "cat": "בית"
+    "cat": "house"
   },
   {
     "it": "Finestra",
     "he": "חלון",
-    "cat": "בית"
+    "cat": "house"
   },
   {
     "it": "Tavolo",
     "he": "שולחן",
-    "cat": "בית"
+    "cat": "house"
   },
   {
     "it": "Sedia",
     "he": "כיסא",
-    "cat": "בית"
+    "cat": "house"
   },
   {
     "it": "Letto",
     "he": "מיטה",
-    "cat": "בית"
+    "cat": "house"
   },
   {
-    "it": "Divano",
-    "he": "ספה",
-    "cat": "בית"
+    "it": "Bagno",
+    "he": "חדר אמבטיה",
+    "cat": "house"
+  },
+  {
+    "it": "Cucina",
+    "he": "מטבח",
+    "cat": "house"
   },
   {
     "it": "Lampada",
     "he": "מנורה",
-    "cat": "בית"
-  },
-  {
-    "it": "Specchio",
-    "he": "מראה",
-    "cat": "בית"
-  },
-  {
-    "it": "Chiave",
-    "he": "מפתח",
-    "cat": "בית"
-  },
-  {
-    "it": "Muro",
-    "he": "קיר",
-    "cat": "בית"
-  },
-  {
-    "it": "Pavimento",
-    "he": "רצפה",
-    "cat": "בית"
-  },
-  {
-    "it": "Soffitto",
-    "he": "תקרה",
-    "cat": "בית"
-  },
-  {
-    "it": "Scale",
-    "he": "מדרגות",
-    "cat": "בית"
-  },
-  {
-    "it": "Tetto",
-    "he": "גג",
-    "cat": "בית"
-  },
-  {
-    "it": "Frigorifero",
-    "he": "מקרר",
-    "cat": "בית"
-  },
-  {
-    "it": "Forno",
-    "he": "תנור",
-    "cat": "בית"
-  },
-  {
-    "it": "Piatto",
-    "he": "צלחת",
-    "cat": "בית"
-  },
-  {
-    "it": "Bicchiere",
-    "he": "כוס",
-    "cat": "בית"
-  },
-  {
-    "it": "Forchetta",
-    "he": "מזלג",
-    "cat": "בית"
-  },
-  {
-    "it": "Coltello",
-    "he": "סכין",
-    "cat": "בית"
-  },
-  {
-    "it": "Cucchiaio",
-    "he": "כף",
-    "cat": "בית"
-  },
-  {
-    "it": "Lavoro",
-    "he": "עבודה",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Ufficio",
-    "he": "משרד",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Azienda",
-    "he": "חברה",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Direttore",
-    "he": "מנהל",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Dipendente",
-    "he": "עובד",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Capo",
-    "he": "בוס",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Collega",
-    "he": "עמית",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Stipendio",
-    "he": "משכורת",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Contratto",
-    "he": "חוזה",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Riunione",
-    "he": "פגישה",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Progetto",
-    "he": "פרויקט",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Scadenza",
-    "he": "דדליין",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Curriculum",
-    "he": "קורות חיים",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Colloquio",
-    "he": "ראיון",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Ferie",
-    "he": "חופשה",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Cliente",
-    "he": "לקוח",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Fattura",
-    "he": "חשבונית",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Profitto",
-    "he": "רווח",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Mercato",
-    "he": "שוק",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Investimento",
-    "he": "השקעה",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Incontro",
-    "he": "מפגש",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Presentazione",
-    "he": "מצגת",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Negoziazione",
-    "he": "משא ומתן",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Strategia",
-    "he": "אסטרטגיה",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Assunzione",
-    "he": "גיוס",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Licenziamento",
-    "he": "פיטורים",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Promozione",
-    "he": "קידום",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Perdita",
-    "he": "הפסד",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Budget",
-    "he": "תקציב",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Concorrenza",
-    "he": "תחרות",
-    "cat": "עבודה"
-  },
-  {
-    "it": "Bello",
-    "he": "יפה",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Brutto",
-    "he": "מכוער",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Grande",
-    "he": "גדול",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Piccolo",
-    "he": "קטן",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Alto",
-    "he": "גבוה",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Basso",
-    "he": "נמוך",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Lungo",
-    "he": "ארוך",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Corto",
-    "he": "קצר",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Nuovo",
-    "he": "חדש",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Vecchio",
-    "he": "ישן",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Buono",
-    "he": "טוב",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Cattivo",
-    "he": "רע",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Felice",
-    "he": "מאושר",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Triste",
-    "he": "עצוב",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Caldo",
-    "he": "חם",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Freddo",
-    "he": "קר",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Facile",
-    "he": "קל",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Difficile",
-    "he": "קשה",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Veloce",
-    "he": "מהיר",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Lento",
-    "he": "איטי",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Forte",
-    "he": "חזק",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Debole",
-    "he": "חלש",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Ricco",
-    "he": "עשיר",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Povero",
-    "he": "עני",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Giovane",
-    "he": "צעיר",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Stanco",
-    "he": "עייף",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Importante",
-    "he": "חשוב",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Interessante",
-    "he": "מעניין",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Simpatico",
-    "he": "נחמד",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Antipatico",
-    "he": "לא נחמד",
-    "cat": "תכונות"
-  },
-  {
-    "it": "Città",
-    "he": "עיר",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Paese",
-    "he": "כפר / מדינה",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Chiesa",
-    "he": "כנסייה",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Museo",
-    "he": "מוזיאון",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Teatro",
-    "he": "תיאטרון",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Cinema",
-    "he": "קולנוע",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Ristorante",
-    "he": "מסעדה",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Bar",
-    "he": "בר / בית קפה",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Farmacia",
-    "he": "בית מרקחת",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Ospedale",
-    "he": "בית חולים",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Banca",
-    "he": "בנק",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Supermercato",
-    "he": "סופרמרקט",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Mercato",
-    "he": "שוק",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Scuola",
-    "he": "בית ספר",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Biblioteca",
-    "he": "ספרייה",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Parco",
-    "he": "פארק",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Fontana",
-    "he": "מזרקה",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Duomo",
-    "he": "קתדרלה",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Castello",
-    "he": "טירה",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Palazzo",
-    "he": "ארמון",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Vicolo",
-    "he": "סמטה",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Corso",
-    "he": "שדרה ראשית",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Lungomare",
-    "he": "טיילת חוף",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Centro",
-    "he": "מרכז",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Periferia",
-    "he": "פרברים",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Campagna",
-    "he": "כפר / שדה",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Ufficio postale",
-    "he": "דואר",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Università",
-    "he": "אוניברסיטה",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Villaggio",
-    "he": "כפר קטן",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Galleria",
-    "he": "גלריה",
-    "cat": "מקומות"
-  },
-  {
-    "it": "Vestito",
-    "he": "שמלה / בגד",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Camicia",
-    "he": "חולצה",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Pantaloni",
-    "he": "מכנסיים",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Gonna",
-    "he": "חצאית",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Giacca",
-    "he": "ז'קט",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Cappotto",
-    "he": "מעיל חורפי",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Scarpe",
-    "he": "נעליים",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Stivali",
-    "he": "מגפיים",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Calzini",
-    "he": "גרביים",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Cappello",
-    "he": "כובע",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Cravatta",
-    "he": "עניבה",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Maglione",
-    "he": "סוודר",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Jeans",
-    "he": "ג'ינס",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Costume da bagno",
-    "he": "בגד ים",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Guanti",
-    "he": "כפפות",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Sciarpa",
-    "he": "צעיף",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Occhiali",
-    "he": "משקפיים",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Borsa",
-    "he": "תיק",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Portafoglio",
-    "he": "ארנק",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Cintura",
-    "he": "חגורה",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Orologio",
-    "he": "שעון",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Anello",
-    "he": "טבעת",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Collana",
-    "he": "שרשרת",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Braccialetto",
-    "he": "צמיד",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Orecchini",
-    "he": "עגילים",
-    "cat": "בגדים"
-  },
-  {
-    "it": "Sole",
-    "he": "שמש",
-    "cat": "טבע"
-  },
-  {
-    "it": "Luna",
-    "he": "ירח",
-    "cat": "טבע"
-  },
-  {
-    "it": "Stella",
-    "he": "כוכב",
-    "cat": "טבע"
-  },
-  {
-    "it": "Cielo",
-    "he": "שמיים",
-    "cat": "טבע"
-  },
-  {
-    "it": "Nuvola",
-    "he": "ענן",
-    "cat": "טבע"
-  },
-  {
-    "it": "Pioggia",
-    "he": "גשם",
-    "cat": "טבע"
-  },
-  {
-    "it": "Neve",
-    "he": "שלג",
-    "cat": "טבע"
-  },
-  {
-    "it": "Vento",
-    "he": "רוח",
-    "cat": "טבע"
-  },
-  {
-    "it": "Tempesta",
-    "he": "סופה",
-    "cat": "טבע"
-  },
-  {
-    "it": "Fulmine",
-    "he": "ברק",
-    "cat": "טבע"
-  },
-  {
-    "it": "Tuono",
-    "he": "רעם",
-    "cat": "טבע"
-  },
-  {
-    "it": "Arcobaleno",
-    "he": "קשת",
-    "cat": "טבע"
-  },
-  {
-    "it": "Albero",
-    "he": "עץ",
-    "cat": "טבע"
-  },
-  {
-    "it": "Fiore",
-    "he": "פרח",
-    "cat": "טבע"
-  },
-  {
-    "it": "Erba",
-    "he": "דשא",
-    "cat": "טבע"
-  },
-  {
-    "it": "Foresta",
-    "he": "יער",
-    "cat": "טבע"
-  },
-  {
-    "it": "Collina",
-    "he": "גבעה",
-    "cat": "טבע"
-  },
-  {
-    "it": "Vulcano",
-    "he": "הר געש",
-    "cat": "טבע"
-  },
-  {
-    "it": "Onda",
-    "he": "גל",
-    "cat": "טבע"
-  },
-  {
-    "it": "Pietra",
-    "he": "אבן",
-    "cat": "טבע"
-  },
-  {
-    "it": "Sabbia",
-    "he": "חול",
-    "cat": "טבע"
-  },
-  {
-    "it": "Ghiaccio",
-    "he": "קרח",
-    "cat": "טבע"
-  },
-  {
-    "it": "Foglia",
-    "he": "עלה",
-    "cat": "טבע"
-  },
-  {
-    "it": "Cane",
-    "he": "כלב",
-    "cat": "טבע"
-  },
-  {
-    "it": "Gatto",
-    "he": "חתול",
-    "cat": "טבע"
-  },
-  {
-    "it": "Uccello",
-    "he": "ציפור",
-    "cat": "טבע"
-  },
-  {
-    "it": "Farfalla",
-    "he": "פרפר",
-    "cat": "טבע"
-  },
-  {
-    "it": "Animale",
-    "he": "חיה",
-    "cat": "טבע"
-  },
-  {
-    "it": "Cavallo",
-    "he": "סוס",
-    "cat": "טבע"
-  },
-  {
-    "it": "Coniglio",
-    "he": "ארנב",
-    "cat": "טבע"
-  },
-  {
-    "it": "Amore",
-    "he": "אהבה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Felicità",
-    "he": "אושר",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Tristezza",
-    "he": "עצבות",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Rabbia",
-    "he": "כעס",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Paura",
-    "he": "פחד",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Sorpresa",
-    "he": "הפתעה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Gioia",
-    "he": "שמחה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Noia",
-    "he": "שעמום",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Vergogna",
-    "he": "בושה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Orgoglio",
-    "he": "גאווה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Gelosia",
-    "he": "קנאה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Speranza",
-    "he": "תקווה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Delusione",
-    "he": "אכזבה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Coraggio",
-    "he": "אומץ",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Ansia",
-    "he": "חרדה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Passione",
-    "he": "תשוקה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Soddisfazione",
-    "he": "סיפוק",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Nostalgia",
-    "he": "נוסטלגיה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Simpatia",
-    "he": "אהדה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Odio",
-    "he": "שנאה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Dolore",
-    "he": "כאב",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Calma",
-    "he": "שלווה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Entusiasmo",
-    "he": "התלהבות",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Sollievo",
-    "he": "הקלה",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Solitudine",
-    "he": "בדידות",
-    "cat": "רגשות"
-  },
-  {
-    "it": "Ingegnere",
-    "he": "מהנדס",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Architetto",
-    "he": "אדריכל",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Avvocato",
-    "he": "עורך דין",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Medico",
-    "he": "רופא",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Infermiere",
-    "he": "אח/ות",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Professore",
-    "he": "פרופסור",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Insegnante",
-    "he": "מורה",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Studente",
-    "he": "סטודנט",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Imprenditore",
-    "he": "יזם",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Commerciante",
-    "he": "סוחר",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Artigiano",
-    "he": "בעל מלאכה",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Contadino",
-    "he": "איכר",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Pescatore",
-    "he": "דייג",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Cuoco",
-    "he": "טבח",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Cameriere",
-    "he": "מלצר",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Pittore",
-    "he": "צייר",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Musicista",
-    "he": "מוזיקאי",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Attore",
-    "he": "שחקן",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Scrittore",
-    "he": "סופר",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Giornalista",
-    "he": "עיתונאי",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Poliziotto",
-    "he": "שוטר",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Pompiere",
-    "he": "כבאי",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Soldato",
-    "he": "חייל",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Pilota",
-    "he": "טייס",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Meccanico",
-    "he": "מכונאי",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Elettricista",
-    "he": "חשמלאי",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Idraulico",
-    "he": "שרברב",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Falegname",
-    "he": "נגר",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Sarto",
-    "he": "חייט",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Farmacista",
-    "he": "רוקח",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Dentista",
-    "he": "רופא שיניים",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Psicologo",
-    "he": "פסיכולוג",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Programmatore",
-    "he": "מתכנת",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Designer",
-    "he": "מעצב",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Guida turistica",
-    "he": "מדריך טיולים",
-    "cat": "מקצועות"
-  },
-  {
-    "it": "Calcio",
-    "he": "כדורגל",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Pallacanestro",
-    "he": "כדורסל",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Tennis",
-    "he": "טניס",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Nuoto",
-    "he": "שחייה",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Ciclismo",
-    "he": "רכיבת אופניים",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Sci",
-    "he": "סקי",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Pallavolo",
-    "he": "כדורעף",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Rugby",
-    "he": "רוגבי",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Pugilato",
-    "he": "איגרוף",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Ginnastica",
-    "he": "התעמלות",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Maratona",
-    "he": "מרתון",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Partita",
-    "he": "משחק",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Squadra",
-    "he": "קבוצה",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Giocatore",
-    "he": "שחקן",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Allenatore",
-    "he": "מאמן",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Arbitro",
-    "he": "שופט",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Gol",
-    "he": "גול",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Vittoria",
-    "he": "ניצחון",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Sconfitta",
-    "he": "הפסד",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Pareggio",
-    "he": "תיקו",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Campionato",
-    "he": "אליפות",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Medaglia",
-    "he": "מדליה",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Allenamento",
-    "he": "אימון",
-    "cat": "ספורט"
-  },
-  {
-    "it": "Scherma",
-    "he": "סיף",
-    "cat": "ספורט"
+    "cat": "house"
   },
   {
     "it": "Telefono",
     "he": "טלפון",
-    "cat": "טכנולוגיה"
+    "cat": "house"
   },
   {
-    "it": "Computer",
-    "he": "מחשב",
-    "cat": "טכנולוגיה"
+    "it": "Chiave",
+    "he": "מפתח",
+    "cat": "house"
   },
   {
-    "it": "Internet",
-    "he": "אינטרנט",
-    "cat": "טכנולוגיה"
+    "it": "Specchio",
+    "he": "מראה",
+    "cat": "house"
   },
   {
-    "it": "Email",
-    "he": "אימייל",
-    "cat": "טכנולוגיה"
+    "it": "Armadio",
+    "he": "ארון",
+    "cat": "house"
   },
   {
-    "it": "Sito web",
-    "he": "אתר",
-    "cat": "טכנולוגיה"
+    "it": "Città",
+    "he": "עיר",
+    "cat": "places"
   },
   {
-    "it": "App",
-    "he": "אפליקציה",
-    "cat": "טכנולוגיה"
+    "it": "Paese",
+    "he": "מדינה/כפר",
+    "cat": "places"
   },
   {
-    "it": "Password",
-    "he": "סיסמה",
-    "cat": "טכנולוגיה"
+    "it": "Via",
+    "he": "רחוב",
+    "cat": "places"
   },
   {
-    "it": "Schermo",
-    "he": "מסך",
-    "cat": "טכנולוגיה"
+    "it": "Piazza",
+    "he": "כיכר",
+    "cat": "places"
   },
   {
-    "it": "Tastiera",
-    "he": "מקלדת",
-    "cat": "טכנולוגיה"
+    "it": "Museo",
+    "he": "מוזיאון",
+    "cat": "places"
   },
   {
-    "it": "Fotocamera",
-    "he": "מצלמה",
-    "cat": "טכנולוגיה"
+    "it": "Chiesa",
+    "he": "כנסייה",
+    "cat": "places"
   },
   {
-    "it": "Video",
-    "he": "וידאו",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Messaggio",
-    "he": "הודעה",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Chiamata",
-    "he": "שיחה",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Rete",
-    "he": "רשת",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Dati",
-    "he": "נתונים",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "File",
-    "he": "קובץ",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Download",
-    "he": "הורדה",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Upload",
-    "he": "העלאה",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Social media",
-    "he": "רשתות חברתיות",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Streaming",
-    "he": "סטרימינג",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Intelligenza artificiale",
-    "he": "בינה מלאכותית",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Account",
-    "he": "חשבון",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Stampante",
-    "he": "מדפסת",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Mouse",
-    "he": "עכבר",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Blog",
-    "he": "בלוג",
-    "cat": "טכנולוגיה"
-  },
-  {
-    "it": "Salute",
-    "he": "בריאות",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Malattia",
-    "he": "מחלה",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Dottore",
-    "he": "רופא",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Ricetta",
-    "he": "מרשם",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Medicina",
-    "he": "תרופה",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Emergenza",
-    "he": "חירום",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Dolore",
-    "he": "כאב",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Febbre",
-    "he": "חום (טמפרטורה)",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Tosse",
-    "he": "שיעול",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Raffreddore",
-    "he": "הצטננות",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Allergia",
-    "he": "אלרגיה",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Ferita",
-    "he": "פצע",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Iniezione",
-    "he": "זריקה",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Operazione",
-    "he": "ניתוח",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Analisi",
-    "he": "בדיקה",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Dieta",
-    "he": "דיאטה",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Esercizio",
-    "he": "תרגיל / פעילות",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Riposo",
-    "he": "מנוחה",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Guarigione",
-    "he": "ריפוי",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Prevenzione",
-    "he": "מניעה",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Assicurazione",
-    "he": "ביטוח",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Ambulanza",
-    "he": "אמבולנס",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Pressione",
-    "he": "לחץ",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Bendaggio",
-    "he": "תחבושת",
-    "cat": "בריאות"
-  },
-  {
-    "it": "Curare",
-    "he": "לטפל",
-    "cat": "בריאות"
+    "it": "Ospedale",
+    "he": "בית חולים",
+    "cat": "places"
   },
   {
     "it": "Scuola",
     "he": "בית ספר",
-    "cat": "חינוך"
+    "cat": "places"
   },
   {
-    "it": "Università",
-    "he": "אוניברסיטה",
-    "cat": "חינוך"
+    "it": "Banca",
+    "he": "בנק",
+    "cat": "places"
   },
   {
-    "it": "Lezione",
-    "he": "שיעור",
-    "cat": "חינוך"
+    "it": "Farmacia",
+    "he": "בית מרקחת",
+    "cat": "places"
   },
   {
-    "it": "Esame",
-    "he": "מבחן",
-    "cat": "חינוך"
+    "it": "Negozio",
+    "he": "חנות",
+    "cat": "places"
   },
   {
-    "it": "Voto",
-    "he": "ציון",
-    "cat": "חינוך"
+    "it": "Supermercato",
+    "he": "סופר",
+    "cat": "places"
   },
   {
-    "it": "Libro",
-    "he": "ספר",
-    "cat": "חינוך"
+    "it": "Ristorante",
+    "he": "מסעדה",
+    "cat": "places"
   },
   {
-    "it": "Quaderno",
-    "he": "מחברת",
-    "cat": "חינוך"
+    "it": "Albergo",
+    "he": "מלון",
+    "cat": "places"
   },
   {
-    "it": "Penna",
-    "he": "עט",
-    "cat": "חינוך"
+    "it": "Stazione",
+    "he": "תחנה",
+    "cat": "places"
   },
   {
-    "it": "Matita",
-    "he": "עיפרון",
-    "cat": "חינוך"
+    "it": "Aeroporto",
+    "he": "שדה תעופה",
+    "cat": "places"
   },
   {
-    "it": "Compito",
-    "he": "שיעורי בית",
-    "cat": "חינוך"
+    "it": "Parco",
+    "he": "פארק",
+    "cat": "places"
   },
   {
-    "it": "Laurea",
-    "he": "תואר",
-    "cat": "חינוך"
+    "it": "Mare",
+    "he": "ים",
+    "cat": "places"
   },
   {
-    "it": "Diploma",
-    "he": "תעודה",
-    "cat": "חינוך"
+    "it": "Spiaggia",
+    "he": "חוף",
+    "cat": "places"
   },
   {
-    "it": "Aula",
-    "he": "כיתה",
-    "cat": "חינוך"
+    "it": "Monte",
+    "he": "הר",
+    "cat": "places"
   },
   {
-    "it": "Materia",
-    "he": "מקצוע",
-    "cat": "חינוך"
+    "it": "Giorno",
+    "he": "יום",
+    "cat": "time"
   },
   {
-    "it": "Storia",
-    "he": "היסטוריה",
-    "cat": "חינוך"
+    "it": "Notte",
+    "he": "לילה",
+    "cat": "time"
   },
   {
-    "it": "Geografia",
-    "he": "גאוגרפיה",
-    "cat": "חינוך"
+    "it": "Ora",
+    "he": "שעה",
+    "cat": "time"
   },
   {
-    "it": "Matematica",
-    "he": "מתמטיקה",
-    "cat": "חינוך"
+    "it": "Minuto",
+    "he": "דקה",
+    "cat": "time"
   },
   {
-    "it": "Scienze",
-    "he": "מדעים",
-    "cat": "חינוך"
+    "it": "Settimana",
+    "he": "שבוע",
+    "cat": "time"
   },
   {
-    "it": "Letteratura",
-    "he": "ספרות",
-    "cat": "חינוך"
+    "it": "Mese",
+    "he": "חודש",
+    "cat": "time"
   },
   {
-    "it": "Arte",
-    "he": "אמנות",
-    "cat": "חינוך"
+    "it": "Anno",
+    "he": "שנה",
+    "cat": "time"
   },
   {
-    "it": "Musica",
-    "he": "מוזיקה",
-    "cat": "חינוך"
+    "it": "Oggi",
+    "he": "היום",
+    "cat": "time"
   },
   {
-    "it": "Lingua",
-    "he": "שפה",
-    "cat": "חינוך"
+    "it": "Domani",
+    "he": "מחר",
+    "cat": "time"
   },
   {
-    "it": "Conoscenza",
-    "he": "ידע",
-    "cat": "חינוך"
+    "it": "Ieri",
+    "he": "אתמול",
+    "cat": "time"
   },
   {
-    "it": "Studio",
-    "he": "לימוד",
-    "cat": "חינוך"
+    "it": "Mattino",
+    "he": "בוקר",
+    "cat": "time"
   },
   {
-    "it": "Ricerca",
-    "he": "מחקר",
-    "cat": "חינוך"
+    "it": "Pomeriggio",
+    "he": "אחר הצהריים",
+    "cat": "time"
   },
   {
-    "it": "Pittura",
-    "he": "ציור",
-    "cat": "אומנות"
+    "it": "Sera",
+    "he": "ערב",
+    "cat": "time"
   },
   {
-    "it": "Scultura",
-    "he": "פיסול",
-    "cat": "אומנות"
+    "it": "Lunedì",
+    "he": "יום שני",
+    "cat": "days"
   },
   {
-    "it": "Fotografia",
-    "he": "צילום",
-    "cat": "אומנות"
+    "it": "Martedì",
+    "he": "יום שלישי",
+    "cat": "days"
   },
   {
-    "it": "Opera",
-    "he": "אופרה",
-    "cat": "אומנות"
+    "it": "Mercoledì",
+    "he": "יום רביעי",
+    "cat": "days"
   },
   {
-    "it": "Sinfonia",
-    "he": "סימפוניה",
-    "cat": "אומנות"
+    "it": "Giovedì",
+    "he": "יום חמישי",
+    "cat": "days"
   },
   {
-    "it": "Festival",
-    "he": "פסטיבל",
-    "cat": "אומנות"
+    "it": "Venerdì",
+    "he": "יום שישי",
+    "cat": "days"
   },
   {
-    "it": "Mostra",
-    "he": "תערוכה",
-    "cat": "אומנות"
+    "it": "Sabato",
+    "he": "שבת",
+    "cat": "days"
   },
   {
-    "it": "Concerto",
-    "he": "קונצרט",
-    "cat": "אומנות"
+    "it": "Domenica",
+    "he": "ראשון",
+    "cat": "days"
   },
   {
-    "it": "Spettacolo",
-    "he": "מופע",
-    "cat": "אומנות"
+    "it": "Gennaio",
+    "he": "ינואר",
+    "cat": "months"
   },
   {
-    "it": "Regista",
-    "he": "במאי",
-    "cat": "אומנות"
+    "it": "Febbraio",
+    "he": "פברואר",
+    "cat": "months"
   },
   {
-    "it": "Romanzo",
-    "he": "רומן",
-    "cat": "אומנות"
+    "it": "Marzo",
+    "he": "מרץ",
+    "cat": "months"
   },
   {
-    "it": "Poesia",
-    "he": "שירה",
-    "cat": "אומנות"
+    "it": "Aprile",
+    "he": "אפריל",
+    "cat": "months"
   },
   {
-    "it": "Danza",
-    "he": "מחול",
-    "cat": "אומנות"
+    "it": "Maggio",
+    "he": "מאי",
+    "cat": "months"
   },
   {
-    "it": "Moda",
-    "he": "אופנה",
-    "cat": "אומנות"
+    "it": "Giugno",
+    "he": "יוני",
+    "cat": "months"
   },
   {
-    "it": "Stile",
-    "he": "סגנון",
-    "cat": "אומנות"
+    "it": "Luglio",
+    "he": "יולי",
+    "cat": "months"
   },
   {
-    "it": "Eleganza",
-    "he": "אלגנטיות",
-    "cat": "אומנות"
+    "it": "Agosto",
+    "he": "אוגוסט",
+    "cat": "months"
   },
   {
-    "it": "Creatività",
-    "he": "יצירתיות",
-    "cat": "אומנות"
+    "it": "Settembre",
+    "he": "ספטמבר",
+    "cat": "months"
   },
   {
-    "it": "Rinascimento",
-    "he": "רנסנס",
-    "cat": "אומנות"
+    "it": "Ottobre",
+    "he": "אוקטובר",
+    "cat": "months"
   },
   {
-    "it": "Capolavoro",
-    "he": "יצירת מופת",
-    "cat": "אומנות"
+    "it": "Novembre",
+    "he": "נובמבר",
+    "cat": "months"
   },
   {
-    "it": "Patrimonio",
-    "he": "מורשת",
-    "cat": "אומנות"
+    "it": "Dicembre",
+    "he": "דצמבר",
+    "cat": "months"
   },
   {
-    "it": "Tradizione",
-    "he": "מסורת",
-    "cat": "אומנות"
+    "it": "Primavera",
+    "he": "אביב",
+    "cat": "seasons"
   },
   {
-    "it": "Cultura",
-    "he": "תרבות",
-    "cat": "אומנות"
+    "it": "Estate",
+    "he": "קיץ",
+    "cat": "seasons"
   },
   {
-    "it": "Dolce vita",
-    "he": "חיים מתוקים",
-    "cat": "אומנות"
+    "it": "Autunno",
+    "he": "סתיו",
+    "cat": "seasons"
   },
   {
-    "it": "Sprezzatura",
-    "he": "אלגנטיות ללא מאמץ",
-    "cat": "אומנות"
+    "it": "Inverno",
+    "he": "חורף",
+    "cat": "seasons"
   },
   {
-    "it": "Bel paese",
-    "he": "מדינה יפה (כינוי לאיטליה)",
-    "cat": "אומנות"
+    "it": "Sole",
+    "he": "שמש",
+    "cat": "nature"
   },
   {
-    "it": "Barocco",
-    "he": "בארוק",
-    "cat": "אומנות"
+    "it": "Luna",
+    "he": "ירח",
+    "cat": "nature"
   },
   {
-    "it": "Classico",
-    "he": "קלאסי",
-    "cat": "אומנות"
+    "it": "Stella",
+    "he": "כוכב",
+    "cat": "nature"
   },
   {
-    "it": "Sceneggiatura",
-    "he": "תסריט",
-    "cat": "אומנות"
+    "it": "Cielo",
+    "he": "שמיים",
+    "cat": "nature"
   },
   {
-    "it": "Galleria",
-    "he": "גלריה",
-    "cat": "אומנות"
+    "it": "Terra",
+    "he": "אדמה",
+    "cat": "nature"
   },
   {
-    "it": "Design",
-    "he": "עיצוב",
-    "cat": "אומנות"
+    "it": "Fiore",
+    "he": "פרח",
+    "cat": "nature"
   },
   {
-    "it": "Come ti chiami?",
-    "he": "איך קוראים לך?",
-    "cat": "משפטים"
+    "it": "Albero",
+    "he": "עץ",
+    "cat": "nature"
   },
   {
-    "it": "Mi chiamo...",
-    "he": "קוראים לי...",
-    "cat": "משפטים"
+    "it": "Animale",
+    "he": "חיה",
+    "cat": "nature"
   },
   {
-    "it": "Di dove sei?",
-    "he": "מאיפה אתה?",
-    "cat": "משפטים"
+    "it": "Cane",
+    "he": "כלב",
+    "cat": "animals"
   },
   {
-    "it": "Sono di...",
-    "he": "אני מ...",
-    "cat": "משפטים"
+    "it": "Gatto",
+    "he": "חתול",
+    "cat": "animals"
   },
   {
-    "it": "Quanti anni hai?",
-    "he": "בן כמה אתה?",
-    "cat": "משפטים"
+    "it": "Cavallo",
+    "he": "סוס",
+    "cat": "animals"
   },
   {
-    "it": "Ho ... anni",
-    "he": "אני בן/בת ...",
-    "cat": "משפטים"
+    "it": "Uccello",
+    "he": "ציפור",
+    "cat": "animals"
   },
   {
-    "it": "Parli italiano?",
-    "he": "אתה מדבר איטלקית?",
-    "cat": "משפטים"
+    "it": "Testa",
+    "he": "ראש",
+    "cat": "body"
   },
   {
-    "it": "Sì, un po'",
-    "he": "כן, קצת",
-    "cat": "משפטים"
+    "it": "Mano",
+    "he": "יד",
+    "cat": "body"
   },
   {
-    "it": "Non capisco",
-    "he": "אני לא מבין/ת",
-    "cat": "משפטים"
+    "it": "Piede",
+    "he": "רגל",
+    "cat": "body"
   },
   {
-    "it": "Può ripetere?",
-    "he": "אפשר לחזור?",
-    "cat": "משפטים"
+    "it": "Occhio",
+    "he": "עין",
+    "cat": "body"
   },
   {
-    "it": "Cosa significa?",
-    "he": "מה זה אומר?",
-    "cat": "משפטים"
+    "it": "Orecchio",
+    "he": "אוזן",
+    "cat": "body"
   },
   {
-    "it": "Dove si trova...?",
-    "he": "איפה נמצא...?",
-    "cat": "משפטים"
+    "it": "Naso",
+    "he": "אף",
+    "cat": "body"
   },
   {
-    "it": "Quanto costa?",
-    "he": "כמה זה עולה?",
-    "cat": "משפטים"
+    "it": "Bocca",
+    "he": "פה",
+    "cat": "body"
   },
   {
-    "it": "Il conto, per favore",
-    "he": "החשבון, בבקשה",
-    "cat": "משפטים"
+    "it": "Cuore",
+    "he": "לב",
+    "cat": "body"
   },
   {
-    "it": "Vorrei...",
-    "he": "הייתי רוצה...",
-    "cat": "משפטים"
+    "it": "Braccio",
+    "he": "זרוע",
+    "cat": "body"
   },
   {
-    "it": "Ho bisogno di...",
-    "he": "אני צריך/כה...",
-    "cat": "משפטים"
+    "it": "Gamba",
+    "he": "רגל",
+    "cat": "body"
   },
   {
-    "it": "Mi può aiutare?",
-    "he": "אפשר לעזור לי?",
-    "cat": "משפטים"
+    "it": "Mangiare",
+    "he": "לאכול",
+    "cat": "verbs"
   },
   {
-    "it": "Dov'è il bagno?",
-    "he": "איפה השירותים?",
-    "cat": "משפטים"
+    "it": "Bere",
+    "he": "לשתות",
+    "cat": "verbs"
   },
   {
-    "it": "Che ore sono?",
-    "he": "מה השעה?",
-    "cat": "משפטים"
+    "it": "Dormire",
+    "he": "לישון",
+    "cat": "verbs"
   },
   {
-    "it": "Fa caldo",
+    "it": "Andare",
+    "he": "ללכת",
+    "cat": "verbs"
+  },
+  {
+    "it": "Venire",
+    "he": "לבוא",
+    "cat": "verbs"
+  },
+  {
+    "it": "Parlare",
+    "he": "לדבר",
+    "cat": "verbs"
+  },
+  {
+    "it": "Leggere",
+    "he": "לקרוא",
+    "cat": "verbs"
+  },
+  {
+    "it": "Scrivere",
+    "he": "לכתוב",
+    "cat": "verbs"
+  },
+  {
+    "it": "Vedere",
+    "he": "לראות",
+    "cat": "verbs"
+  },
+  {
+    "it": "Sentire",
+    "he": "לשמוע",
+    "cat": "verbs"
+  },
+  {
+    "it": "Aprire",
+    "he": "לפתוח",
+    "cat": "verbs"
+  },
+  {
+    "it": "Chiudere",
+    "he": "לסגור",
+    "cat": "verbs"
+  },
+  {
+    "it": "Comprare",
+    "he": "לקנות",
+    "cat": "verbs"
+  },
+  {
+    "it": "Pagare",
+    "he": "לשלם",
+    "cat": "verbs"
+  },
+  {
+    "it": "Prendere",
+    "he": "לקחת",
+    "cat": "verbs"
+  },
+  {
+    "it": "Dare",
+    "he": "לתת",
+    "cat": "verbs"
+  },
+  {
+    "it": "Fare",
+    "he": "לעשות",
+    "cat": "verbs"
+  },
+  {
+    "it": "Stare",
+    "he": "להיות",
+    "cat": "verbs"
+  },
+  {
+    "it": "Essere",
+    "he": "להיות",
+    "cat": "verbs"
+  },
+  {
+    "it": "Avere",
+    "he": "יש",
+    "cat": "verbs"
+  },
+  {
+    "it": "Potere",
+    "he": "יכול",
+    "cat": "verbs"
+  },
+  {
+    "it": "Volere",
+    "he": "רוצה",
+    "cat": "verbs"
+  },
+  {
+    "it": "Dovere",
+    "he": "צריך",
+    "cat": "verbs"
+  },
+  {
+    "it": "Sapere",
+    "he": "יודע",
+    "cat": "verbs"
+  },
+  {
+    "it": "Grande",
+    "he": "גדול",
+    "cat": "adj"
+  },
+  {
+    "it": "Piccolo",
+    "he": "קטן",
+    "cat": "adj"
+  },
+  {
+    "it": "Buono",
+    "he": "טוב",
+    "cat": "adj"
+  },
+  {
+    "it": "Cattivo",
+    "he": "רע",
+    "cat": "adj"
+  },
+  {
+    "it": "Bello",
+    "he": "יפה",
+    "cat": "adj"
+  },
+  {
+    "it": "Brutto",
+    "he": "מכוער",
+    "cat": "adj"
+  },
+  {
+    "it": "Alto",
+    "he": "גבוה",
+    "cat": "adj"
+  },
+  {
+    "it": "Basso",
+    "he": "נמוך",
+    "cat": "adj"
+  },
+  {
+    "it": "Nuovo",
+    "he": "חדש",
+    "cat": "adj"
+  },
+  {
+    "it": "Vecchio",
+    "he": "ישן",
+    "cat": "adj"
+  },
+  {
+    "it": "Caldo",
     "he": "חם",
-    "cat": "משפטים"
+    "cat": "adj"
   },
   {
-    "it": "Fa freddo",
+    "it": "Freddo",
     "he": "קר",
-    "cat": "משפטים"
+    "cat": "adj"
   },
   {
-    "it": "Che bello!",
-    "he": "כמה יפה!",
-    "cat": "משפטים"
+    "it": "Giovane",
+    "he": "צעיר",
+    "cat": "adj"
   },
   {
-    "it": "Andiamo!",
-    "he": "בואו נלך!",
-    "cat": "משפטים"
+    "it": "Vicino",
+    "he": "קרוב",
+    "cat": "adj"
   },
   {
-    "it": "Dai!",
-    "he": "קדימה!",
-    "cat": "משפטים"
+    "it": "Lontano",
+    "he": "רחוק",
+    "cat": "adj"
   },
   {
-    "it": "Mamma mia!",
-    "he": "אימא שלי! (הפתעה)",
-    "cat": "משפטים"
+    "it": "Adesso",
+    "he": "עכשיו",
+    "cat": "adv"
   },
   {
-    "it": "Boh!",
-    "he": "אין לי מושג!",
-    "cat": "משפטים"
+    "it": "Sempre",
+    "he": "תמיד",
+    "cat": "adv"
   },
   {
-    "it": "Magari!",
-    "he": "הלוואי!",
-    "cat": "משפטים"
+    "it": "Mai",
+    "he": "אף פעם",
+    "cat": "adv"
   },
   {
-    "it": "Figurati!",
-    "he": "אין בעד מה!",
-    "cat": "משפטים"
+    "it": "Qui",
+    "he": "פה",
+    "cat": "adv"
   },
   {
-    "it": "Va bene",
-    "he": "בסדר",
-    "cat": "משפטים"
+    "it": "Lì",
+    "he": "שם",
+    "cat": "adv"
   },
   {
-    "it": "Non importa",
-    "he": "לא משנה",
-    "cat": "משפטים"
+    "it": "Dentro",
+    "he": "בפנים",
+    "cat": "adv"
   },
   {
-    "it": "Ci vediamo",
-    "he": "נתראה",
-    "cat": "משפטים"
+    "it": "Fuori",
+    "he": "בחוץ",
+    "cat": "adv"
   },
   {
-    "it": "Buon viaggio!",
-    "he": "נסיעה טובה!",
-    "cat": "משפטים"
+    "it": "Sopra",
+    "he": "מעל",
+    "cat": "adv"
   },
   {
-    "it": "Buon appetito!",
-    "he": "בתיאבון!",
-    "cat": "משפטים"
+    "it": "Sotto",
+    "he": "מתחת",
+    "cat": "adv"
   },
   {
-    "it": "Salute!",
-    "he": "לחיים!",
-    "cat": "משפטים"
+    "it": "Con",
+    "he": "עם",
+    "cat": "prep"
   },
   {
-    "it": "Allora?",
-    "he": "אז?",
-    "cat": "משפטים"
+    "it": "Senza",
+    "he": "בלי",
+    "cat": "prep"
   },
   {
-    "it": "Non vedo l'ora",
-    "he": "אני לא יכול לחכות",
-    "cat": "משפטים"
+    "it": "Per",
+    "he": "בשביל",
+    "cat": "prep"
   },
   {
-    "it": "Nessun problema",
-    "he": "שום בעיה",
-    "cat": "משפטים"
+    "it": "Tra",
+    "he": "בין",
+    "cat": "prep"
   },
   {
-    "it": "Chissà!",
-    "he": "מי ידע!",
-    "cat": "משפטים"
+    "it": "Su",
+    "he": "על",
+    "cat": "prep"
   },
   {
-    "it": "Parli più lentamente?",
-    "he": "אפשר לדבר לאט יותר?",
-    "cat": "משפטים"
+    "it": "Di",
+    "he": "של",
+    "cat": "prep"
   },
   {
-    "it": "Posso pagare?",
-    "he": "אפשר לשלם?",
-    "cat": "משפטים"
+    "it": "A",
+    "he": "ל",
+    "cat": "prep"
   },
   {
-    "it": "Ho fame",
-    "he": "אני רעב",
-    "cat": "משפטים"
+    "it": "Da",
+    "he": "מ",
+    "cat": "prep"
   },
   {
-    "it": "Ho sete",
-    "he": "אני צמא",
-    "cat": "משפטים"
+    "it": "In",
+    "he": "ב",
+    "cat": "prep"
   },
   {
-    "it": "Sono stanco",
-    "he": "אני עייף",
-    "cat": "משפטים"
+    "it": "Sì",
+    "he": "כן",
+    "cat": "misc"
   },
   {
-    "it": "Mi piace molto",
-    "he": "אני מאוד אוהב/ת",
-    "cat": "משפטים"
+    "it": "No",
+    "he": "לא",
+    "cat": "misc"
   },
   {
-    "it": "Non mi piace",
-    "he": "לא אוהב/ת",
-    "cat": "משפטים"
+    "it": "Forse",
+    "he": "אולי",
+    "cat": "misc"
   },
   {
-    "it": "Cosa fai?",
-    "he": "מה אתה עושה?",
-    "cat": "משפטים"
+    "it": "Anche",
+    "he": "גם",
+    "cat": "misc"
   },
   {
-    "it": "Dove abiti?",
-    "he": "איפה אתה גר?",
-    "cat": "משפטים"
+    "it": "Poi",
+    "he": "אחרי",
+    "cat": "misc"
   },
   {
-    "it": "Possiamo vederci?",
-    "he": "אפשר להיפגש?",
-    "cat": "משפטים"
+    "it": "Prima",
+    "he": "לפני",
+    "cat": "misc"
   },
   {
-    "it": "A dopo!",
-    "he": "נתראה אחר כך!",
-    "cat": "משפטים"
+    "it": "Dopo",
+    "he": "אחרי",
+    "cat": "misc"
   },
   {
-    "it": "Buona giornata!",
-    "he": "יום טוב!",
-    "cat": "משפטים"
+    "it": "Molto",
+    "he": "הרבה",
+    "cat": "misc"
   },
   {
-    "it": "Forno a legna",
-    "he": "תנור עצים",
-    "cat": "מטבח איטלקי"
+    "it": "Poco",
+    "he": "מעט",
+    "cat": "misc"
   },
   {
-    "it": "Pasta fresca",
-    "he": "פסטה טרייה",
-    "cat": "מטבח איטלקי"
+    "it": "Troppo",
+    "he": "יותר מדי",
+    "cat": "misc"
   },
   {
-    "it": "Sugo",
-    "he": "רוטב",
-    "cat": "מטבח איטלקי"
+    "it": "Bene",
+    "he": "טוב",
+    "cat": "misc"
   },
   {
-    "it": "Ragù",
-    "he": "ראגו (רוטב בשר)",
-    "cat": "מטבח איטלקי"
+    "it": "Male",
+    "he": "רע",
+    "cat": "misc"
   },
   {
-    "it": "Pesto",
-    "he": "פסטו",
-    "cat": "מטבח איטלקי"
+    "it": "Così",
+    "he": "כך",
+    "cat": "misc"
   },
   {
-    "it": "Carbonara",
-    "he": "קרבונרה",
-    "cat": "מטבח איטלקי"
+    "it": "Ancora",
+    "he": "עוד",
+    "cat": "misc"
   },
   {
-    "it": "Amatriciana",
-    "he": "אמטריצ'יאנה",
-    "cat": "מטבח איטלקי"
+    "it": "Già",
+    "he": "כבר",
+    "cat": "misc"
   },
   {
-    "it": "Cacio e pepe",
-    "he": "גבינה ופלפל",
-    "cat": "מטבח איטלקי"
+    "it": "Purtroppo",
+    "he": "לצערי",
+    "cat": "misc"
   },
   {
-    "it": "Frittura",
-    "he": "טיגון",
-    "cat": "מטבח איטלקי"
+    "it": "Magari",
+    "he": "הלוואי",
+    "cat": "misc"
   },
   {
-    "it": "Griglia",
-    "he": "גריל",
-    "cat": "מטבח איטלקי"
+    "it": "piatto",
+    "he": "צלחת",
+    "cat": "vocab"
   },
   {
-    "it": "Bollito",
-    "he": "מבושל",
-    "cat": "מטבח איטלקי"
+    "it": "bicchiere",
+    "he": "כוס",
+    "cat": "vocab"
   },
   {
-    "it": "Affumicato",
-    "he": "מעושן",
-    "cat": "מטבח איטלקי"
+    "it": "coltello",
+    "he": "סכין",
+    "cat": "vocab"
   },
   {
-    "it": "Sott'olio",
-    "he": "בשמן",
-    "cat": "מטבח איטלקי"
+    "it": "forchetta",
+    "he": "מזלג",
+    "cat": "vocab"
   },
   {
-    "it": "Al dente",
-    "he": "אל דנטה",
-    "cat": "מטבח איטלקי"
+    "it": "cucchiaio",
+    "he": "כף",
+    "cat": "vocab"
   },
   {
-    "it": "Condimento",
-    "he": "תיבול",
-    "cat": "מטבח איטלקי"
+    "it": "tovagliolo",
+    "he": "מפית",
+    "cat": "vocab"
   },
   {
-    "it": "Ingrediente",
-    "he": "מרכיב",
-    "cat": "מטבח איטלקי"
+    "it": "pentola",
+    "he": "סיר",
+    "cat": "vocab"
   },
   {
-    "it": "Ricetta",
-    "he": "מתכון",
-    "cat": "מטבח איטלקי"
+    "it": "padella",
+    "he": "מחבת",
+    "cat": "vocab"
   },
   {
-    "it": "Piatto tipico",
-    "he": "מנה אופיינית",
-    "cat": "מטבח איטלקי"
+    "it": "forno",
+    "he": "תנור",
+    "cat": "vocab"
   },
   {
-    "it": "Specialità",
-    "he": "מומחיות מקומית",
-    "cat": "מטבח איטלקי"
+    "it": "frigorifero",
+    "he": "מקרר",
+    "cat": "vocab"
   },
   {
-    "it": "Trattoria",
-    "he": "טרטוריה (מסעדה משפחתית)",
-    "cat": "מטבח איטלקי"
+    "it": "doccia",
+    "he": "מקלחת",
+    "cat": "vocab"
   },
   {
-    "it": "Osteria",
-    "he": "אוסטריה (פונדק יין)",
-    "cat": "מטבח איטלקי"
+    "it": "lavandino",
+    "he": "כיור",
+    "cat": "vocab"
   },
   {
-    "it": "Sott'aceto",
-    "he": "בחומץ",
-    "cat": "מטבח איטלקי"
+    "it": "stanza",
+    "he": "חדר",
+    "cat": "vocab"
   },
   {
-    "it": "Cottura",
-    "he": "דרגת עשייה",
-    "cat": "מטבח איטלקי"
+    "it": "balcone",
+    "he": "מרפסת",
+    "cat": "vocab"
   },
   {
-    "it": "Denominazione",
-    "he": "כינוי מקור",
-    "cat": "מטבח איטלקי"
+    "it": "giardino",
+    "he": "גן",
+    "cat": "vocab"
   },
   {
-    "it": "Doc / Docg",
-    "he": "תוויות איכות יין",
-    "cat": "מטבח איטלקי"
+    "it": "scala",
+    "he": "מדרגות",
+    "cat": "vocab"
   },
   {
-    "it": "Roma",
-    "he": "רומא",
-    "cat": "ערים איטליה"
+    "it": "divano",
+    "he": "ספה",
+    "cat": "vocab"
   },
   {
-    "it": "Milano",
-    "he": "מילאנו",
-    "cat": "ערים איטליה"
+    "it": "poltrona",
+    "he": "כורסה",
+    "cat": "vocab"
   },
   {
-    "it": "Firenze",
-    "he": "פירנצה",
-    "cat": "ערים איטליה"
+    "it": "tappeto",
+    "he": "שטיח",
+    "cat": "vocab"
   },
   {
-    "it": "Venezia",
-    "he": "ונציה",
-    "cat": "ערים איטליה"
+    "it": "cuscino",
+    "he": "כרית",
+    "cat": "vocab"
   },
   {
-    "it": "Napoli",
-    "he": "נאפולי",
-    "cat": "ערים איטליה"
+    "it": "coperta",
+    "he": "שמיכה",
+    "cat": "vocab"
   },
   {
-    "it": "Torino",
-    "he": "טורינו",
-    "cat": "ערים איטליה"
+    "it": "tenda",
+    "he": "וילון",
+    "cat": "vocab"
   },
   {
-    "it": "Bologna",
-    "he": "בולוניה",
-    "cat": "ערים איטליה"
+    "it": "quadro",
+    "he": "תמונה",
+    "cat": "vocab"
   },
   {
-    "it": "Genova",
-    "he": "גנואה",
-    "cat": "ערים איטליה"
+    "it": "parete",
+    "he": "קיר",
+    "cat": "vocab"
   },
   {
-    "it": "Palermo",
-    "he": "פלרמו",
-    "cat": "ערים איטליה"
+    "it": "soffitto",
+    "he": "תקרה",
+    "cat": "vocab"
   },
   {
-    "it": "Verona",
-    "he": "ורונה",
-    "cat": "ערים איטליה"
+    "it": "pavimento",
+    "he": "רצפה",
+    "cat": "vocab"
   },
   {
-    "it": "Siena",
-    "he": "סיינה",
-    "cat": "ערים איטליה"
+    "it": "vestito",
+    "he": "שמלה",
+    "cat": "vocab"
   },
   {
-    "it": "Pisa",
-    "he": "פיזה",
-    "cat": "ערים איטליה"
+    "it": "abito",
+    "he": "חליפה",
+    "cat": "vocab"
   },
   {
-    "it": "Lucca",
-    "he": "לוקה",
-    "cat": "ערים איטליה"
+    "it": "giacca",
+    "he": "מעיל",
+    "cat": "vocab"
   },
   {
-    "it": "Perugia",
-    "he": "פרוג'יה",
-    "cat": "ערים איטליה"
+    "it": "cappotto",
+    "he": "מעיל חורף",
+    "cat": "vocab"
   },
   {
-    "it": "Bari",
-    "he": "בארי",
-    "cat": "ערים איטליה"
+    "it": "maglione",
+    "he": "סוודר",
+    "cat": "vocab"
   },
   {
-    "it": "Lecce",
-    "he": "לצ'ה",
-    "cat": "ערים איטליה"
+    "it": "camicia",
+    "he": "חולצה",
+    "cat": "vocab"
   },
   {
-    "it": "Trieste",
-    "he": "טריאסטה",
-    "cat": "ערים איטליה"
+    "it": "pantaloni",
+    "he": "מכנסיים",
+    "cat": "vocab"
   },
   {
-    "it": "Cagliari",
-    "he": "קליארי",
-    "cat": "ערים איטליה"
+    "it": "scarpe",
+    "he": "נעליים",
+    "cat": "vocab"
   },
   {
-    "it": "Sorrento",
-    "he": "סורנטו",
-    "cat": "ערים איטליה"
+    "it": "stivali",
+    "he": "מגפיים",
+    "cat": "vocab"
   },
   {
-    "it": "Amalfi",
-    "he": "אמאלפי",
-    "cat": "ערים איטליה"
+    "it": "sandali",
+    "he": "סנדלים",
+    "cat": "vocab"
   },
   {
-    "it": "Cinque Terre",
-    "he": "צ'ינקווה טרה",
-    "cat": "ערים איטליה"
+    "it": "cappello",
+    "he": "כובע",
+    "cat": "vocab"
   },
   {
-    "it": "Capri",
-    "he": "קפרי",
-    "cat": "ערים איטליה"
+    "it": "cintura",
+    "he": "חגורה",
+    "cat": "vocab"
   },
   {
-    "it": "Como",
-    "he": "קומו",
-    "cat": "ערים איטליה"
+    "it": "occhiali",
+    "he": "משקפיים",
+    "cat": "vocab"
   },
   {
-    "it": "Sicilia",
-    "he": "סיציליה",
-    "cat": "ערים איטליה"
+    "it": "orologio",
+    "he": "שעון",
+    "cat": "vocab"
   },
   {
-    "it": "Sardegna",
-    "he": "סרדיניה",
-    "cat": "ערים איטליה"
+    "it": "pioggia",
+    "he": "גשם",
+    "cat": "vocab"
   },
   {
-    "it": "Toscana",
-    "he": "טוסקנה",
-    "cat": "ערים איטליה"
+    "it": "neve",
+    "he": "שלג",
+    "cat": "vocab"
   },
   {
-    "it": "Lombardia",
-    "he": "לומברדיה",
-    "cat": "ערים איטליה"
+    "it": "vento",
+    "he": "רוח",
+    "cat": "vocab"
   },
   {
-    "it": "Lazio",
-    "he": "לאציו",
-    "cat": "ערים איטליה"
+    "it": "tempesta",
+    "he": "סופה",
+    "cat": "vocab"
   },
   {
-    "it": "Campania",
-    "he": "קמפניה",
-    "cat": "ערים איטליה"
+    "it": "nuvola",
+    "he": "ענן",
+    "cat": "vocab"
   },
   {
-    "it": "Puglia",
-    "he": "פוליה",
-    "cat": "ערים איטליה"
+    "it": "mucca",
+    "he": "פרה",
+    "cat": "vocab"
   },
   {
-    "it": "Emilia-Romagna",
-    "he": "אמיליה-רומאניה",
-    "cat": "ערים איטליה"
+    "it": "pecora",
+    "he": "כבש",
+    "cat": "vocab"
   },
   {
-    "it": "Piemonte",
-    "he": "פיימונטה",
-    "cat": "ערים איטליה"
+    "it": "gallina",
+    "he": "תרנגולת",
+    "cat": "vocab"
   },
   {
-    "it": "Veneto",
-    "he": "ונטו",
-    "cat": "ערים איטליה"
+    "it": "maiale",
+    "he": "חזיר",
+    "cat": "vocab"
   },
   {
-    "it": "Umbria",
-    "he": "אומבריה",
-    "cat": "ערים איטליה"
+    "it": "orso",
+    "he": "דוב",
+    "cat": "vocab"
   },
   {
-    "it": "Catania",
-    "he": "קטניה",
-    "cat": "ערים איטליה"
+    "it": "lupo",
+    "he": "זאב",
+    "cat": "vocab"
   },
   {
-    "it": "La passeggiata",
-    "he": "טיול ערב מסורתי",
-    "cat": "תרבות איטלקית"
+    "it": "volpe",
+    "he": "שועל",
+    "cat": "vocab"
   },
   {
-    "it": "Il riposo",
-    "he": "מנוחת צהריים",
-    "cat": "תרבות איטלקית"
+    "it": "topo",
+    "he": "עכבר",
+    "cat": "vocab"
   },
   {
-    "it": "La dolce vita",
-    "he": "החיים המתוקים",
-    "cat": "תרבות איטלקית"
+    "it": "elefante",
+    "he": "פיל",
+    "cat": "vocab"
   },
   {
-    "it": "La famiglia",
-    "he": "משפחה (ערך מרכזי)",
-    "cat": "תרבות איטלקית"
+    "it": "leone",
+    "he": "אריה",
+    "cat": "vocab"
   },
   {
-    "it": "La domenica",
-    "he": "יום ראשון (ארוחה משפחתית)",
-    "cat": "תרבות איטלקית"
+    "it": "tigre",
+    "he": "נמר",
+    "cat": "vocab"
   },
   {
-    "it": "Il caffè al bar",
-    "he": "קפה בבר (עומדים)",
-    "cat": "תרבות איטלקית"
+    "it": "scimmia",
+    "he": "קוף",
+    "cat": "vocab"
   },
   {
-    "it": "L'aperitivo",
-    "he": "אפריטיף (משקה + חטיפים)",
-    "cat": "תרבות איטלקית"
+    "it": "serpente",
+    "he": "נחש",
+    "cat": "vocab"
   },
   {
-    "it": "Il ferragosto",
-    "he": "חג העלייה (15/8)",
-    "cat": "תרבות איטלקית"
+    "it": "rana",
+    "he": "צפרדע",
+    "cat": "vocab"
   },
   {
-    "it": "La befana",
-    "he": "מכשפת הקנדי (6/1)",
-    "cat": "תרבות איטלקית"
+    "it": "spalla",
+    "he": "כתף",
+    "cat": "vocab"
   },
   {
-    "it": "Il Carnevale",
-    "he": "קרנבל ונציאני",
-    "cat": "תרבות איטלקית"
+    "it": "schiena",
+    "he": "גב",
+    "cat": "vocab"
   },
   {
-    "it": "La sagra",
-    "he": "פסטיבל מזון מקומי",
-    "cat": "תרבות איטלקית"
+    "it": "pancia",
+    "he": "בטן",
+    "cat": "vocab"
   },
   {
-    "it": "Il palio",
-    "he": "מירוץ סוסים (סיינה)",
-    "cat": "תרבות איטלקית"
+    "it": "dito",
+    "he": "אצבע",
+    "cat": "vocab"
   },
   {
-    "it": "La piazza",
-    "he": "כיכר (מרכז חברתי)",
-    "cat": "תרבות איטלקית"
+    "it": "unghia",
+    "he": "ציפורן",
+    "cat": "vocab"
   },
   {
-    "it": "Il bar",
-    "he": "בר איטלקי (קפה + חטיפים)",
-    "cat": "תרבות איטלקית"
+    "it": "lingua",
+    "he": "שפה",
+    "cat": "vocab"
   },
   {
-    "it": "La messa",
-    "he": "מיסה",
-    "cat": "תרבות איטלקית"
+    "it": "dente",
+    "he": "שן",
+    "cat": "vocab"
   },
   {
-    "it": "Il matrimonio",
-    "he": "חתונה",
-    "cat": "תרבות איטלקית"
+    "it": "soggiorno",
+    "he": "סלון",
+    "cat": "vocab"
   },
   {
-    "it": "L'ospitalità",
-    "he": "הכנסת אורחים",
-    "cat": "תרבות איטלקית"
+    "it": "camera da letto",
+    "he": "חדר שינה",
+    "cat": "vocab"
   },
   {
-    "it": "La cortesia",
-    "he": "אדיבות",
-    "cat": "תרבות איטלקית"
+    "it": "scrivania",
+    "he": "שולחן כתיבה",
+    "cat": "vocab"
   },
   {
-    "it": "Il rispetto",
-    "he": "כבוד",
-    "cat": "תרבות איטלקית"
+    "it": "computer",
+    "he": "מחשב",
+    "cat": "vocab"
   },
   {
-    "it": "La bella figura",
-    "he": "תדמית יפה (ערך מרכזי)",
-    "cat": "תרבות איטלקית"
+    "it": "televisione",
+    "he": "טלוויזיה",
+    "cat": "vocab"
   },
   {
-    "it": "La brutta figura",
-    "he": "תדמית רעה (בושה)",
-    "cat": "תרבות איטלקית"
+    "it": "radio",
+    "he": "רדיו",
+    "cat": "vocab"
   },
   {
-    "it": "Fare amicizia",
-    "he": "ליצור חברות",
-    "cat": "תרבות איטלקית"
+    "it": "zona",
+    "he": "אזור",
+    "cat": "vocab"
   },
   {
-    "it": "Mangiare insieme",
-    "he": "לאכול יחד",
-    "cat": "תרבות איטלקית"
+    "it": "cortile",
+    "he": "חצר",
+    "cat": "vocab"
   },
   {
-    "it": "La pasquetta",
-    "he": "יום שני של פסחא (פיקניק)",
-    "cat": "תרבות איטלקית"
+    "it": "cancello",
+    "he": "שער",
+    "cat": "vocab"
   },
   {
-    "it": "Il battesimo",
-    "he": "טבילה",
-    "cat": "תרבות איטלקית"
+    "it": "serratura",
+    "he": "מנעול",
+    "cat": "vocab"
   },
   {
-    "it": "La comunione",
-    "he": "קומוניון",
-    "cat": "תרבות איטלקית"
+    "it": "campanello",
+    "he": "פעמון",
+    "cat": "vocab"
   },
   {
-    "it": "La cresima",
-    "he": "קונפירמציה",
-    "cat": "תרבות איטלקית"
+    "it": "rubinetto",
+    "he": "ברז",
+    "cat": "vocab"
   },
   {
-    "it": "Il funerale",
-    "he": "הלוויה",
-    "cat": "תרבות איטלקית"
+    "it": "interruttore",
+    "he": "מתג",
+    "cat": "vocab"
   },
   {
-    "it": "Regalare",
-    "he": "לתת מתנה",
-    "cat": "תרבות איטלקית"
+    "it": "presa",
+    "he": "שקע",
+    "cat": "vocab"
   },
   {
-    "it": "Dolce far niente",
-    "he": "מתיקות של לעשות כלום",
-    "cat": "תרבות איטלקית"
+    "it": "filo",
+    "he": "חוט",
+    "cat": "vocab"
   },
   {
-    "it": "Dai!",
-    "he": "קדימה! / יאלה!",
-    "cat": "סלנג"
+    "it": "cavo",
+    "he": "כבל",
+    "cat": "vocab"
   },
   {
-    "it": "Boh!",
-    "he": "אין לי מושג!",
-    "cat": "סלנג"
+    "it": "batteria",
+    "he": "סוללה",
+    "cat": "vocab"
   },
   {
-    "it": "Magari!",
-    "he": "הלוואי!",
-    "cat": "סלנג"
+    "it": "candela",
+    "he": "נר",
+    "cat": "vocab"
   },
   {
-    "it": "Che palle!",
-    "he": "איזה כאב ראש!",
-    "cat": "סלנג"
+    "it": "fiammifero",
+    "he": "גפרור",
+    "cat": "vocab"
   },
   {
-    "it": "Figurati!",
-    "he": "אל תדאג!",
-    "cat": "סלנג"
+    "it": "sapone",
+    "he": "סבון",
+    "cat": "vocab"
   },
   {
-    "it": "In bocca al lupo",
-    "he": "בהצלחה",
-    "cat": "סלנג"
+    "it": "shampoo",
+    "he": "שמפו",
+    "cat": "vocab"
   },
   {
-    "it": "Crepi il lupo",
-    "he": "הזאב ימות (תשובה)",
-    "cat": "סלנג"
+    "it": "asciugamano",
+    "he": "מגבת",
+    "cat": "vocab"
   },
   {
-    "it": "Mannaggia",
-    "he": "לעזאזל!",
-    "cat": "סלנג"
+    "it": "spazzola",
+    "he": "מברשת",
+    "cat": "vocab"
   },
   {
-    "it": "Cavolo!",
-    "he": "וואו! (עדין)",
-    "cat": "סלנג"
+    "it": "pettine",
+    "he": "מסרק",
+    "cat": "vocab"
   },
   {
-    "it": "Accidenti!",
-    "he": "וואו!",
-    "cat": "סלנג"
+    "it": "dentifricio",
+    "he": "משחת שיניים",
+    "cat": "vocab"
   },
   {
-    "it": "Macché!",
-    "he": "בכלל לא!",
-    "cat": "סלנג"
+    "it": "spazzolino",
+    "he": "מברשת שיניים",
+    "cat": "vocab"
   },
   {
-    "it": "Vabbè",
-    "he": "נו טוב",
-    "cat": "סלנג"
+    "it": "deodorante",
+    "he": "דאודורנט",
+    "cat": "vocab"
   },
   {
-    "it": "Allora",
-    "he": "אז / ובכן",
-    "cat": "סלנג"
+    "it": "crema",
+    "he": "קרם",
+    "cat": "vocab"
   },
   {
-    "it": "Ecco",
-    "he": "הנה",
-    "cat": "סלנג"
+    "it": "profumo",
+    "he": "בושם",
+    "cat": "vocab"
   },
   {
-    "it": "Proprio",
-    "he": "באמת",
-    "cat": "סלנג"
+    "it": "forbici",
+    "he": "מספריים",
+    "cat": "vocab"
   },
   {
-    "it": "Niente",
-    "he": "כלום",
-    "cat": "סלנג"
+    "it": "carta",
+    "he": "נייר",
+    "cat": "vocab"
   },
   {
-    "it": "Porca miseria",
-    "he": "לעזאזל!",
-    "cat": "סלנג"
+    "it": "penna",
+    "he": "עט",
+    "cat": "vocab"
   },
   {
-    "it": "Che fortuna!",
-    "he": "איזו מזל!",
-    "cat": "סלנג"
+    "it": "matita",
+    "he": "עיפרון",
+    "cat": "vocab"
   },
   {
-    "it": "Oggi come oggi",
-    "he": "היום כמו שהוא",
-    "cat": "סלנג"
+    "it": "gomma",
+    "he": "מחק",
+    "cat": "vocab"
   },
   {
-    "it": "Piacerebbe",
-    "he": "הייתי רוצה",
-    "cat": "סלנג"
+    "it": "righello",
+    "he": "סרגל",
+    "cat": "vocab"
   },
   {
-    "it": "Natale",
-    "he": "חג המולד",
-    "cat": "חגים"
+    "it": "zaino",
+    "he": "תיק גב",
+    "cat": "vocab"
   },
   {
-    "it": "Pasqua",
-    "he": "פסחא",
-    "cat": "חגים"
+    "it": "borsa",
+    "he": "בורסה",
+    "cat": "vocab"
   },
   {
-    "it": "Capodanno",
-    "he": "ראש השנה",
-    "cat": "חגים"
+    "it": "portafoglio",
+    "he": "ארנק",
+    "cat": "vocab"
   },
   {
-    "it": "Ferragosto",
-    "he": "חג העלייה",
-    "cat": "חגים"
+    "it": "valigia",
+    "he": "מזוודה",
+    "cat": "vocab"
   },
   {
-    "it": "Festa della Repubblica",
-    "he": "יום הרפובליקה",
-    "cat": "חגים"
+    "it": "ombrello",
+    "he": "מטרייה",
+    "cat": "vocab"
   },
   {
-    "it": "Festa dei lavoratori",
-    "he": "יום הפועלים",
-    "cat": "חגים"
+    "it": "spuntino",
+    "he": "חטיף",
+    "cat": "vocab"
   },
   {
-    "it": "Epifania",
-    "he": "הופעת המגים",
-    "cat": "חגים"
+    "it": "merenda",
+    "he": "ארוחת ארבע",
+    "cat": "vocab"
   },
   {
-    "it": "Carnevale",
-    "he": "קרנבל",
-    "cat": "חגים"
+    "it": "antipasto",
+    "he": "מתאבן",
+    "cat": "vocab"
   },
   {
-    "it": "Ognissanti",
-    "he": "כל הקדושים",
-    "cat": "חגים"
+    "it": "primo piatto",
+    "he": "מנה ראשונה",
+    "cat": "vocab"
   },
   {
-    "it": "San Valentino",
-    "he": "ולנטיין",
-    "cat": "חגים"
+    "it": "secondo piatto",
+    "he": "מנה עיקרית",
+    "cat": "vocab"
   },
   {
-    "it": "Liberazione",
-    "he": "יום השחרור",
-    "cat": "חגים"
+    "it": "contorno",
+    "he": "תוספת",
+    "cat": "vocab"
   },
   {
-    "it": "Immacolata",
-    "he": "העיבור ללא חטא",
-    "cat": "חגים"
+    "it": "caffe",
+    "he": "קפה",
+    "cat": "vocab"
   },
   {
-    "it": "Santo Stefano",
-    "he": "יום סטפנו",
-    "cat": "חגים"
+    "it": "cappuccino",
+    "he": "קפוצ'ינו",
+    "cat": "vocab"
   },
   {
-    "it": "Vigilia di Natale",
-    "he": "ערב חג המולד",
-    "cat": "חגים"
+    "it": "espresso",
+    "he": "אספרסו",
+    "cat": "vocab"
   },
   {
-    "it": "Vigilia di Capodanno",
-    "he": "ערב ראש השנה",
-    "cat": "חגים"
+    "it": "latte macchiato",
+    "he": "לאטה",
+    "cat": "vocab"
   },
   {
-    "it": "Pasquetta",
-    "he": "יום שני של פסחא",
-    "cat": "חגים"
+    "it": "succo",
+    "he": "מיץ",
+    "cat": "vocab"
   },
   {
-    "it": "Festa del papà",
-    "he": "יום האב",
-    "cat": "חגים"
+    "it": "bibita",
+    "he": "משקה קל",
+    "cat": "vocab"
   },
   {
-    "it": "Festa della mamma",
-    "he": "יום האם",
-    "cat": "חגים"
+    "it": "acqua minerale",
+    "he": "מים מינרליים",
+    "cat": "vocab"
   },
   {
-    "it": "Festa di San Gennaro",
-    "he": "חג ג'נארו (נאפולי)",
-    "cat": "חגים"
+    "it": "vino rosso",
+    "he": "יין אדום",
+    "cat": "vocab"
   },
   {
-    "it": "Palio di Siena",
-    "he": "מירוץ הפאליו",
-    "cat": "חגים"
+    "it": "vino bianco",
+    "he": "יין לבן",
+    "cat": "vocab"
   },
   {
-    "it": "Prezzo",
-    "he": "מחיר",
-    "cat": "עסקים"
+    "it": "prosecco",
+    "he": "פרוסקו",
+    "cat": "vocab"
   },
   {
-    "it": "Sconto",
-    "he": "הנחה",
-    "cat": "עסקים"
+    "it": "limoncello",
+    "he": "לימונצ'לו",
+    "cat": "vocab"
   },
   {
-    "it": "Offerta",
-    "he": "מבצע / הצעה",
-    "cat": "עסקים"
+    "it": "grappa",
+    "he": "גרפה",
+    "cat": "vocab"
   },
   {
-    "it": "Fattura",
+    "it": "amaro",
+    "he": "אמרו",
+    "cat": "vocab"
+  },
+  {
+    "it": "cassiere",
+    "he": "קופאי",
+    "cat": "vocab"
+  },
+  {
+    "it": "cliente",
+    "he": "לקוח",
+    "cat": "vocab"
+  },
+  {
+    "it": "bancone",
+    "he": "דלפק",
+    "cat": "vocab"
+  },
+  {
+    "it": "menù",
+    "he": "תפריט",
+    "cat": "vocab"
+  },
+  {
+    "it": "conto",
+    "he": "חשבון",
+    "cat": "vocab"
+  },
+  {
+    "it": "mancia",
+    "he": "טיפ",
+    "cat": "vocab"
+  },
+  {
+    "it": "biblioteca",
+    "he": "ספרייה",
+    "cat": "vocab"
+  },
+  {
+    "it": "palestra",
+    "he": "חדר כושר",
+    "cat": "vocab"
+  },
+  {
+    "it": "piscina",
+    "he": "בריכה",
+    "cat": "vocab"
+  },
+  {
+    "it": "parrucchiere",
+    "he": "מספרה",
+    "cat": "vocab"
+  },
+  {
+    "it": "tabaccheria",
+    "he": "חנות טבק",
+    "cat": "vocab"
+  },
+  {
+    "it": "edicolante",
+    "he": "דוכן עיתונים",
+    "cat": "vocab"
+  },
+  {
+    "it": "lavanderia",
+    "he": "מכבסה",
+    "cat": "vocab"
+  },
+  {
+    "it": "panificio",
+    "he": "מאפייה",
+    "cat": "vocab"
+  },
+  {
+    "it": "macelleria",
+    "he": "קצביה",
+    "cat": "vocab"
+  },
+  {
+    "it": "pasticceria",
+    "he": "קונדיטוריה",
+    "cat": "vocab"
+  },
+  {
+    "it": "fioreria",
+    "he": "חנות פרחים",
+    "cat": "vocab"
+  },
+  {
+    "it": "libreria",
+    "he": "חנות ספרים",
+    "cat": "vocab"
+  },
+  {
+    "it": "calzoleria",
+    "he": "חנות נעליים",
+    "cat": "vocab"
+  },
+  {
+    "it": "gioielleria",
+    "he": "חנות תכשיטים",
+    "cat": "vocab"
+  },
+  {
+    "it": "orologeria",
+    "he": "חנות שעונים",
+    "cat": "vocab"
+  },
+  {
+    "it": "fotografo",
+    "he": "צלם",
+    "cat": "vocab"
+  },
+  {
+    "it": "pompiere",
+    "he": "כבאי",
+    "cat": "vocab"
+  },
+  {
+    "it": "poliziotto",
+    "he": "שוטר",
+    "cat": "vocab"
+  },
+  {
+    "it": "vigile del fuoco",
+    "he": "לוחם אש",
+    "cat": "vocab"
+  },
+  {
+    "it": "artista",
+    "he": "אמן",
+    "cat": "vocab"
+  },
+  {
+    "it": "musicista",
+    "he": "מוזיקאי",
+    "cat": "vocab"
+  },
+  {
+    "it": "cantante",
+    "he": "זמר",
+    "cat": "vocab"
+  },
+  {
+    "it": "ballerino",
+    "he": "רקדן",
+    "cat": "vocab"
+  },
+  {
+    "it": "cuoco",
+    "he": "טבח",
+    "cat": "vocab"
+  },
+  {
+    "it": "cameriere",
+    "he": "מלצר",
+    "cat": "vocab"
+  },
+  {
+    "it": "barista",
+    "he": "בטרן",
+    "cat": "vocab"
+  },
+  {
+    "it": "giudice",
+    "he": "שופט",
+    "cat": "vocab"
+  },
+  {
+    "it": "avvocato",
+    "he": "עורך דין",
+    "cat": "vocab"
+  },
+  {
+    "it": "tempo",
+    "he": "מזג אוויר",
+    "cat": "vocab"
+  },
+  {
+    "it": "fragola",
+    "he": "תות",
+    "cat": "vocab"
+  },
+  {
+    "it": "ciliegia",
+    "he": "דובדבן",
+    "cat": "vocab"
+  },
+  {
+    "it": "anguria",
+    "he": "אבטיח",
+    "cat": "vocab"
+  },
+  {
+    "it": "melone",
+    "he": "מלון",
+    "cat": "vocab"
+  },
+  {
+    "it": "pesca",
+    "he": "אפרסק",
+    "cat": "vocab"
+  },
+  {
+    "it": "albicocca",
+    "he": "משמש",
+    "cat": "vocab"
+  },
+  {
+    "it": "uva",
+    "he": "ענבים",
+    "cat": "vocab"
+  },
+  {
+    "it": "pera",
+    "he": "אגס",
+    "cat": "vocab"
+  },
+  {
+    "it": "cetriolo",
+    "he": "מלפפון",
+    "cat": "vocab"
+  },
+  {
+    "it": "carota",
+    "he": "גזר",
+    "cat": "vocab"
+  },
+  {
+    "it": "cipolla",
+    "he": "בצל",
+    "cat": "vocab"
+  },
+  {
+    "it": "aglio",
+    "he": "שום",
+    "cat": "vocab"
+  },
+  {
+    "it": "patata",
+    "he": "תפוח אדמה",
+    "cat": "vocab"
+  },
+  {
+    "it": "melanzana",
+    "he": "חציל",
+    "cat": "vocab"
+  },
+  {
+    "it": "zucchina",
+    "he": "קישוא",
+    "cat": "vocab"
+  },
+  {
+    "it": "peperone",
+    "he": "פלפל",
+    "cat": "vocab"
+  },
+  {
+    "it": "funghi",
+    "he": "פטריות",
+    "cat": "vocab"
+  },
+  {
+    "it": "spinaci",
+    "he": "תרד",
+    "cat": "vocab"
+  },
+  {
+    "it": "broccoli",
+    "he": "ברוקולי",
+    "cat": "vocab"
+  },
+  {
+    "it": "cavolfiore",
+    "he": "כרובית",
+    "cat": "vocab"
+  },
+  {
+    "it": "sedano",
+    "he": "סלרי",
+    "cat": "vocab"
+  },
+  {
+    "it": "lattuga",
+    "he": "חסה",
+    "cat": "vocab"
+  },
+  {
+    "it": "basilico",
+    "he": "בזיליקום",
+    "cat": "vocab"
+  },
+  {
+    "it": "origano",
+    "he": "אורגנו",
+    "cat": "vocab"
+  },
+  {
+    "it": "rosmarino",
+    "he": "רוזמרין",
+    "cat": "vocab"
+  },
+  {
+    "it": "prezzemolo",
+    "he": "פטרוזיליה",
+    "cat": "vocab"
+  },
+  {
+    "it": "pepe",
+    "he": "פלפל",
+    "cat": "vocab"
+  },
+  {
+    "it": "mozzarella",
+    "he": "מוצרלה",
+    "cat": "vocab"
+  },
+  {
+    "it": "parmigiano",
+    "he": "פרמזן",
+    "cat": "vocab"
+  },
+  {
+    "it": "pecorino",
+    "he": "פקורינו",
+    "cat": "vocab"
+  },
+  {
+    "it": "gorgonzola",
+    "he": "גורגונזולה",
+    "cat": "vocab"
+  },
+  {
+    "it": "prosciutto",
+    "he": "פרושוטו",
+    "cat": "vocab"
+  },
+  {
+    "it": "salame",
+    "he": "סלמי",
+    "cat": "vocab"
+  },
+  {
+    "it": "salsiccia",
+    "he": "נקניק",
+    "cat": "vocab"
+  },
+  {
+    "it": "bistecca",
+    "he": "סטייק",
+    "cat": "vocab"
+  },
+  {
+    "it": "pollo",
+    "he": "עוף",
+    "cat": "vocab"
+  },
+  {
+    "it": "agnello",
+    "he": "כבש",
+    "cat": "vocab"
+  },
+  {
+    "it": "coniglio",
+    "he": "ארנב",
+    "cat": "vocab"
+  },
+  {
+    "it": "tonno",
+    "he": "טונה",
+    "cat": "vocab"
+  },
+  {
+    "it": "salmone",
+    "he": "סלמון",
+    "cat": "vocab"
+  },
+  {
+    "it": "gamberi",
+    "he": "שרימפס",
+    "cat": "vocab"
+  },
+  {
+    "it": "vongole",
+    "he": "צדפות",
+    "cat": "vocab"
+  },
+  {
+    "it": "polipo",
+    "he": "תמנון",
+    "cat": "vocab"
+  },
+  {
+    "it": "calamari",
+    "he": "קלמרי",
+    "cat": "vocab"
+  },
+  {
+    "it": "risotto",
+    "he": "ריזוטו",
+    "cat": "vocab"
+  },
+  {
+    "it": "polenta",
+    "he": "פולנטה",
+    "cat": "vocab"
+  },
+  {
+    "it": "lasagna",
+    "he": "לזניה",
+    "cat": "vocab"
+  },
+  {
+    "it": "gnocchi",
+    "he": "ניוקי",
+    "cat": "vocab"
+  },
+  {
+    "it": "tortellini",
+    "he": "טורטליני",
+    "cat": "vocab"
+  },
+  {
+    "it": "tiramisù",
+    "he": "טירמיסו",
+    "cat": "vocab"
+  },
+  {
+    "it": "panna cotta",
+    "he": "פנה קוטה",
+    "cat": "vocab"
+  },
+  {
+    "it": "cannoli",
+    "he": "קנולי",
+    "cat": "vocab"
+  },
+  {
+    "it": "università",
+    "he": "אוניברסיטה",
+    "cat": "vocab"
+  },
+  {
+    "it": "facoltà",
+    "he": "פקולטה",
+    "cat": "vocab"
+  },
+  {
+    "it": "corso",
+    "he": "קורס",
+    "cat": "vocab"
+  },
+  {
+    "it": "lezione",
+    "he": "שיעור",
+    "cat": "vocab"
+  },
+  {
+    "it": "laurea",
+    "he": "תואר",
+    "cat": "vocab"
+  },
+  {
+    "it": "ricerca",
+    "he": "מחקר",
+    "cat": "vocab"
+  },
+  {
+    "it": "aula",
+    "he": "כיתה",
+    "cat": "vocab"
+  },
+  {
+    "it": "professore",
+    "he": "פרופסור",
+    "cat": "vocab"
+  },
+  {
+    "it": "collega",
+    "he": "קולגה",
+    "cat": "vocab"
+  },
+  {
+    "it": "capo",
+    "he": "בוס",
+    "cat": "vocab"
+  },
+  {
+    "it": "ufficio",
+    "he": "משרד",
+    "cat": "vocab"
+  },
+  {
+    "it": "riunione",
+    "he": "פגישה",
+    "cat": "vocab"
+  },
+  {
+    "it": "stipendio",
+    "he": "משכורת",
+    "cat": "vocab"
+  },
+  {
+    "it": "contratto",
+    "he": "חוזה",
+    "cat": "vocab"
+  },
+  {
+    "it": "fattura",
     "he": "חשבונית",
-    "cat": "עסקים"
+    "cat": "vocab"
   },
   {
-    "it": "Ricevuta",
-    "he": "קבלה",
-    "cat": "עסקים"
+    "it": "fornitore",
+    "he": "ספק",
+    "cat": "vocab"
   },
   {
-    "it": "Moneta",
-    "he": "מטבע",
-    "cat": "עסקים"
+    "it": "successo",
+    "he": "הצלחה",
+    "cat": "vocab"
   },
   {
-    "it": "Banconota",
-    "he": "שטר",
-    "cat": "עסקים"
+    "it": "fallimento",
+    "he": "כישלון",
+    "cat": "vocab"
   },
   {
-    "it": "Conto corrente",
-    "he": "חשבון עובר ושב",
-    "cat": "עסקים"
+    "it": "risultato",
+    "he": "תוצאה",
+    "cat": "vocab"
   },
   {
-    "it": "Bonifico",
-    "he": "העברה בנקאית",
-    "cat": "עסקים"
+    "it": "progetto",
+    "he": "פרויקט",
+    "cat": "vocab"
   },
   {
-    "it": "Carta di credito",
-    "he": "כרטיס אשראי",
-    "cat": "עסקים"
+    "it": "medico",
+    "he": "רופא",
+    "cat": "vocab"
   },
   {
-    "it": "Contanti",
-    "he": "מזומן",
-    "cat": "עסקים"
+    "it": "infermiere",
+    "he": "אחות",
+    "cat": "vocab"
   },
   {
-    "it": "Spesa",
-    "he": "הוצאה / קניות",
-    "cat": "עסקים"
+    "it": "dentista",
+    "he": "רופא שיניים",
+    "cat": "vocab"
   },
   {
-    "it": "Risparmio",
-    "he": "חיסכון",
-    "cat": "עסקים"
+    "it": "farmacista",
+    "he": "רוקח",
+    "cat": "vocab"
   },
   {
-    "it": "Investimento",
+    "it": "febbre",
+    "he": "חום",
+    "cat": "vocab"
+  },
+  {
+    "it": "tosse",
+    "he": "שיעול",
+    "cat": "vocab"
+  },
+  {
+    "it": "raffreddore",
+    "he": "צינון",
+    "cat": "vocab"
+  },
+  {
+    "it": "influenza",
+    "he": "שפעת",
+    "cat": "vocab"
+  },
+  {
+    "it": "allergia",
+    "he": "אלרגיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "infiammazione",
+    "he": "דלקת",
+    "cat": "vocab"
+  },
+  {
+    "it": "malattia",
+    "he": "מחלה",
+    "cat": "vocab"
+  },
+  {
+    "it": "sintomo",
+    "he": "תסמין",
+    "cat": "vocab"
+  },
+  {
+    "it": "dolore",
+    "he": "כאב",
+    "cat": "vocab"
+  },
+  {
+    "it": "ferita",
+    "he": "פצע",
+    "cat": "vocab"
+  },
+  {
+    "it": "frattura",
+    "he": "שבר",
+    "cat": "vocab"
+  },
+  {
+    "it": "ingessatura",
+    "he": "גבס",
+    "cat": "vocab"
+  },
+  {
+    "it": "farmaco",
+    "he": "תרופה",
+    "cat": "vocab"
+  },
+  {
+    "it": "compressa",
+    "he": "טבליה",
+    "cat": "vocab"
+  },
+  {
+    "it": "sciroppo",
+    "he": "סירופ",
+    "cat": "vocab"
+  },
+  {
+    "it": "unguento",
+    "he": "משחה",
+    "cat": "vocab"
+  },
+  {
+    "it": "termometro",
+    "he": "מד חום",
+    "cat": "vocab"
+  },
+  {
+    "it": "siringa",
+    "he": "מזרק",
+    "cat": "vocab"
+  },
+  {
+    "it": "cerotto",
+    "he": "פלסטר",
+    "cat": "vocab"
+  },
+  {
+    "it": "benda",
+    "he": "תחבושת",
+    "cat": "vocab"
+  },
+  {
+    "it": "ambulanza",
+    "he": "אמבולנס",
+    "cat": "vocab"
+  },
+  {
+    "it": "pronto soccorso",
+    "he": "מיון",
+    "cat": "vocab"
+  },
+  {
+    "it": "reparto",
+    "he": "מחלקה",
+    "cat": "vocab"
+  },
+  {
+    "it": "intervento",
+    "he": "ניתוח",
+    "cat": "vocab"
+  },
+  {
+    "it": "terapia",
+    "he": "טיפול",
+    "cat": "vocab"
+  },
+  {
+    "it": "cura",
+    "he": "ריפוי",
+    "cat": "vocab"
+  },
+  {
+    "it": "guarigione",
+    "he": "החלמה",
+    "cat": "vocab"
+  },
+  {
+    "it": "viaggio",
+    "he": "טיול",
+    "cat": "vocab"
+  },
+  {
+    "it": "vacanza",
+    "he": "חופשה",
+    "cat": "vocab"
+  },
+  {
+    "it": "turista",
+    "he": "תייר",
+    "cat": "vocab"
+  },
+  {
+    "it": "biglietto",
+    "he": "כרטיס",
+    "cat": "vocab"
+  },
+  {
+    "it": "passaporto",
+    "he": "דרכון",
+    "cat": "vocab"
+  },
+  {
+    "it": "visto",
+    "he": "ויזה",
+    "cat": "vocab"
+  },
+  {
+    "it": "dogana",
+    "he": "מכס",
+    "cat": "vocab"
+  },
+  {
+    "it": "bagaglio",
+    "he": "כבודה",
+    "cat": "vocab"
+  },
+  {
+    "it": "autobus",
+    "he": "אוטובוס",
+    "cat": "vocab"
+  },
+  {
+    "it": "tram",
+    "he": "רכבת קלה",
+    "cat": "vocab"
+  },
+  {
+    "it": "metropolitana",
+    "he": "רכבת תחתית",
+    "cat": "vocab"
+  },
+  {
+    "it": "taxi",
+    "he": "מונית",
+    "cat": "vocab"
+  },
+  {
+    "it": "treno",
+    "he": "רכבת",
+    "cat": "vocab"
+  },
+  {
+    "it": "aereo",
+    "he": "מטוס",
+    "cat": "vocab"
+  },
+  {
+    "it": "nave",
+    "he": "ספינה",
+    "cat": "vocab"
+  },
+  {
+    "it": "traghetto",
+    "he": "מעבורת",
+    "cat": "vocab"
+  },
+  {
+    "it": "noleggio",
+    "he": "השכרה",
+    "cat": "vocab"
+  },
+  {
+    "it": "parcheggio",
+    "he": "חניה",
+    "cat": "vocab"
+  },
+  {
+    "it": "autostrada",
+    "he": "כביש מהיר",
+    "cat": "vocab"
+  },
+  {
+    "it": "pedaggio",
+    "he": "אגרה",
+    "cat": "vocab"
+  },
+  {
+    "it": "sicurezza",
+    "he": "בטיחות",
+    "cat": "vocab"
+  },
+  {
+    "it": "controllo",
+    "he": "בדיקה",
+    "cat": "vocab"
+  },
+  {
+    "it": "documento",
+    "he": "מסמך",
+    "cat": "vocab"
+  },
+  {
+    "it": "modulo",
+    "he": "טופס",
+    "cat": "vocab"
+  },
+  {
+    "it": "politica",
+    "he": "מדע המדינה",
+    "cat": "vocab"
+  },
+  {
+    "it": "governo",
+    "he": "ממשלה",
+    "cat": "vocab"
+  },
+  {
+    "it": "parlamento",
+    "he": "פרלמנט",
+    "cat": "vocab"
+  },
+  {
+    "it": "legge",
+    "he": "חוק",
+    "cat": "vocab"
+  },
+  {
+    "it": "diritto",
+    "he": "משפטים",
+    "cat": "vocab"
+  },
+  {
+    "it": "cittadino",
+    "he": "אזרח",
+    "cat": "vocab"
+  },
+  {
+    "it": "elezioni",
+    "he": "בחירות",
+    "cat": "vocab"
+  },
+  {
+    "it": "partito",
+    "he": "מפלגה",
+    "cat": "vocab"
+  },
+  {
+    "it": "sindaco",
+    "he": "ראש עיר",
+    "cat": "vocab"
+  },
+  {
+    "it": "presidente",
+    "he": "נשיא",
+    "cat": "vocab"
+  },
+  {
+    "it": "ministro",
+    "he": "שר",
+    "cat": "vocab"
+  },
+  {
+    "it": "senato",
+    "he": "סנאט",
+    "cat": "vocab"
+  },
+  {
+    "it": "costituzione",
+    "he": "חוקה",
+    "cat": "vocab"
+  },
+  {
+    "it": "democrazia",
+    "he": "דמוקרטיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "repubblica",
+    "he": "רפובליקה",
+    "cat": "vocab"
+  },
+  {
+    "it": "immigrazione",
+    "he": "הגירה",
+    "cat": "vocab"
+  },
+  {
+    "it": "integrazione",
+    "he": "השתלבות",
+    "cat": "vocab"
+  },
+  {
+    "it": "cittadinanza",
+    "he": "אזרחות",
+    "cat": "vocab"
+  },
+  {
+    "it": "ambiente",
+    "he": "סביבה",
+    "cat": "vocab"
+  },
+  {
+    "it": "natura",
+    "he": "טבע",
+    "cat": "vocab"
+  },
+  {
+    "it": "ecologia",
+    "he": "אקולוגיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "inquinamento",
+    "he": "זיהום",
+    "cat": "vocab"
+  },
+  {
+    "it": "riciclo",
+    "he": "מיחזור",
+    "cat": "vocab"
+  },
+  {
+    "it": "rifiuto",
+    "he": "פסולת",
+    "cat": "vocab"
+  },
+  {
+    "it": "energia",
+    "he": "אנרגיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "sostenibile",
+    "he": "בר קיימא",
+    "cat": "vocab"
+  },
+  {
+    "it": "incontro",
+    "he": "מפגש",
+    "cat": "vocab"
+  },
+  {
+    "it": "concerto",
+    "he": "קונצרט",
+    "cat": "vocab"
+  },
+  {
+    "it": "mostra",
+    "he": "תערוכה",
+    "cat": "vocab"
+  },
+  {
+    "it": "spettacolo",
+    "he": "מופע",
+    "cat": "vocab"
+  },
+  {
+    "it": "teatro",
+    "he": "תיאטרון",
+    "cat": "vocab"
+  },
+  {
+    "it": "cinema",
+    "he": "קולנוע",
+    "cat": "vocab"
+  },
+  {
+    "it": "opera",
+    "he": "אופרה",
+    "cat": "vocab"
+  },
+  {
+    "it": "musica",
+    "he": "מוזיקה",
+    "cat": "vocab"
+  },
+  {
+    "it": "danza",
+    "he": "ריקוד",
+    "cat": "vocab"
+  },
+  {
+    "it": "festa",
+    "he": "מסיבה",
+    "cat": "vocab"
+  },
+  {
+    "it": "matrimonio",
+    "he": "חתונה",
+    "cat": "vocab"
+  },
+  {
+    "it": "anniversario",
+    "he": "יום נישואין",
+    "cat": "vocab"
+  },
+  {
+    "it": "compleanno",
+    "he": "יום הולדת",
+    "cat": "vocab"
+  },
+  {
+    "it": "capodanno",
+    "he": "ראש השנה",
+    "cat": "vocab"
+  },
+  {
+    "it": "natale",
+    "he": "חג המולד",
+    "cat": "vocab"
+  },
+  {
+    "it": "pasqua",
+    "he": "חג הפסחא",
+    "cat": "vocab"
+  },
+  {
+    "it": "ferragosto",
+    "he": "חג אמצע אוגוסט",
+    "cat": "vocab"
+  },
+  {
+    "it": "nazione",
+    "he": "אומה",
+    "cat": "vocab"
+  },
+  {
+    "it": "regione",
+    "he": "מחוז",
+    "cat": "vocab"
+  },
+  {
+    "it": "capitale",
+    "he": "עיר בירה",
+    "cat": "vocab"
+  },
+  {
+    "it": "popolo",
+    "he": "עם",
+    "cat": "vocab"
+  },
+  {
+    "it": "tradizione",
+    "he": "מסורת",
+    "cat": "vocab"
+  },
+  {
+    "it": "cultura",
+    "he": "תרבות",
+    "cat": "vocab"
+  },
+  {
+    "it": "innovazione",
+    "he": "חדשנות",
+    "cat": "vocab"
+  },
+  {
+    "it": "tecnologia",
+    "he": "טכנולוגיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "sviluppo",
+    "he": "פיתוח",
+    "cat": "vocab"
+  },
+  {
+    "it": "industria",
+    "he": "תעשייה",
+    "cat": "vocab"
+  },
+  {
+    "it": "economia",
+    "he": "כלכלה",
+    "cat": "vocab"
+  },
+  {
+    "it": "mercato",
+    "he": "שוק",
+    "cat": "vocab"
+  },
+  {
+    "it": "investimento",
     "he": "השקעה",
-    "cat": "עסקים"
+    "cat": "vocab"
   },
   {
-    "it": "Azione",
+    "it": "finanza",
+    "he": "פיננסים",
+    "cat": "vocab"
+  },
+  {
+    "it": "azione",
     "he": "מניה",
-    "cat": "עסקים"
+    "cat": "vocab"
   },
   {
-    "it": "Società",
-    "he": "חברה (עסקית)",
-    "cat": "עסקים"
+    "it": "obbligazione",
+    "he": "אג\"ח",
+    "cat": "vocab"
   },
   {
-    "it": "Filiale",
-    "he": "סניף",
-    "cat": "עסקים"
+    "it": "inflazione",
+    "he": "אינפלציה",
+    "cat": "vocab"
   },
   {
-    "it": "Ordine",
-    "he": "הזמנה",
-    "cat": "עסקים"
+    "it": "recessione",
+    "he": "מיתון",
+    "cat": "vocab"
   },
   {
-    "it": "Consegna",
-    "he": "משלוח",
-    "cat": "עסקים"
+    "it": "crescita",
+    "he": "צמיחה",
+    "cat": "vocab"
   },
   {
-    "it": "Reso",
-    "he": "החזרה",
-    "cat": "עסקים"
+    "it": "arte",
+    "he": "אמנות",
+    "cat": "vocab"
   },
   {
-    "it": "Garanzia",
-    "he": "אחריות",
-    "cat": "עסקים"
+    "it": "pittura",
+    "he": "ציור",
+    "cat": "vocab"
   },
   {
-    "it": "Rimborso",
-    "he": "החזר כספי",
-    "cat": "עסקים"
+    "it": "scultura",
+    "he": "פיסול",
+    "cat": "vocab"
   },
   {
-    "it": "Scontrino",
-    "he": "קבלה (מקופה)",
-    "cat": "עסקים"
+    "it": "architettura",
+    "he": "אדריכלות",
+    "cat": "vocab"
   },
   {
-    "it": "Reclamo",
-    "he": "תלונה",
-    "cat": "עסקים"
+    "it": "fotografia",
+    "he": "צילום",
+    "cat": "vocab"
   },
   {
-    "it": "Tassa",
-    "he": "מס",
-    "cat": "עסקים"
+    "it": "letteratura",
+    "he": "ספרות",
+    "cat": "vocab"
   },
   {
-    "it": "Sostantivo",
-    "he": "שם עצם",
-    "cat": "דקדוק"
+    "it": "poesia",
+    "he": "שירה",
+    "cat": "vocab"
   },
   {
-    "it": "Verbo",
-    "he": "פועל",
-    "cat": "דקדוק"
+    "it": "romanzo",
+    "he": "רומן",
+    "cat": "vocab"
   },
   {
-    "it": "Aggettivo",
-    "he": "שם תואר",
-    "cat": "דקדוק"
+    "it": "saggio",
+    "he": "מסה",
+    "cat": "vocab"
   },
   {
-    "it": "Avverbio",
-    "he": "תואר הפועל",
-    "cat": "דקדוק"
+    "it": "dramma",
+    "he": "דרמה",
+    "cat": "vocab"
   },
   {
-    "it": "Pronome",
-    "he": "כינוי",
-    "cat": "דקדוק"
+    "it": "commedia",
+    "he": "קומדיה",
+    "cat": "vocab"
   },
   {
-    "it": "Preposizione",
-    "he": "מילת יחס",
-    "cat": "דקדוק"
+    "it": "tragedia",
+    "he": "טרגדיה",
+    "cat": "vocab"
   },
   {
-    "it": "Articolo",
-    "he": "תווית",
-    "cat": "דקדוק"
+    "it": "regista",
+    "he": "במאי",
+    "cat": "vocab"
   },
   {
-    "it": "Singolare",
-    "he": "יחיד",
-    "cat": "דקדוק"
+    "it": "attore",
+    "he": "שחקן",
+    "cat": "vocab"
   },
   {
-    "it": "Plurale",
-    "he": "רבים",
-    "cat": "דקדוק"
+    "it": "palcoscenico",
+    "he": "במה",
+    "cat": "vocab"
   },
   {
-    "it": "Maschile",
-    "he": "זכר",
-    "cat": "דקדוק"
+    "it": "scienza",
+    "he": "מדע",
+    "cat": "vocab"
   },
   {
-    "it": "Femminile",
-    "he": "נקבה",
-    "cat": "דקדוק"
+    "it": "biologia",
+    "he": "ביולוגיה",
+    "cat": "vocab"
   },
   {
-    "it": "Presente",
-    "he": "הווה",
-    "cat": "דקדוק"
+    "it": "chimica",
+    "he": "כימיה",
+    "cat": "vocab"
   },
   {
-    "it": "Passato",
-    "he": "עבר",
-    "cat": "דקדוק"
+    "it": "fisica",
+    "he": "פיזיקה",
+    "cat": "vocab"
   },
   {
-    "it": "Futuro",
-    "he": "עתיד",
-    "cat": "דקדוק"
+    "it": "matematica",
+    "he": "מתמטיקה",
+    "cat": "vocab"
   },
   {
-    "it": "Condizionale",
-    "he": "תנאי",
-    "cat": "דקדוק"
+    "it": "astronomia",
+    "he": "אסטרונומיה",
+    "cat": "vocab"
   },
   {
-    "it": "Imperativo",
-    "he": "ציווי",
-    "cat": "דקדוק"
+    "it": "geologia",
+    "he": "גאולוגיה",
+    "cat": "vocab"
   },
   {
-    "it": "Congiuntivo",
-    "he": "מודוס משני",
-    "cat": "דקדוק"
+    "it": "laboratorio",
+    "he": "מעבדה",
+    "cat": "vocab"
   },
   {
-    "it": "Infinito",
-    "he": "שם הפועל / מקור",
-    "cat": "דקדוק"
+    "it": "esperimento",
+    "he": "ניסוי",
+    "cat": "vocab"
   },
   {
-    "it": "Gerundio",
-    "he": "גרונדיו",
-    "cat": "דקדוק"
+    "it": "teoria",
+    "he": "תיאוריה",
+    "cat": "vocab"
   },
   {
-    "it": "Participio",
-    "he": "ישום",
-    "cat": "דקדוק"
+    "it": "filosofia",
+    "he": "פילוסופיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "storia",
+    "he": "היסטוריה",
+    "cat": "vocab"
+  },
+  {
+    "it": "geografia",
+    "he": "גיאוגרפיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "psicologia",
+    "he": "פסיכולוגיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "sociologia",
+    "he": "סוציologia",
+    "cat": "vocab"
+  },
+  {
+    "it": "linguistica",
+    "he": "בלשנות",
+    "cat": "vocab"
+  },
+  {
+    "it": "filologia",
+    "he": "פילולוגיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "semiotica",
+    "he": "סמיוטיקה",
+    "cat": "vocab"
+  },
+  {
+    "it": "conoscenza",
+    "he": "ידע",
+    "cat": "vocab"
+  },
+  {
+    "it": "saggezza",
+    "he": "חוכמה",
+    "cat": "vocab"
+  },
+  {
+    "it": "esperienza",
+    "he": "ניסיון",
+    "cat": "vocab"
+  },
+  {
+    "it": "epistemologia",
+    "he": "אפיסטמולוגיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "ontologia",
+    "he": "אונטולוגיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "fenomenologia",
+    "he": "פנומנולוגיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "ermeneutica",
+    "he": "הרמנויטיקה",
+    "cat": "vocab"
+  },
+  {
+    "it": "dialettica",
+    "he": "דיאלקטיקה",
+    "cat": "vocab"
+  },
+  {
+    "it": "metafisica",
+    "he": "מטפיזיקה",
+    "cat": "vocab"
+  },
+  {
+    "it": "soggettività",
+    "he": "סובייקטיביות",
+    "cat": "vocab"
+  },
+  {
+    "it": "oggettività",
+    "he": "אובייקטיביות",
+    "cat": "vocab"
+  },
+  {
+    "it": "trascendenza",
+    "he": "טרנסצנדנטיות",
+    "cat": "vocab"
+  },
+  {
+    "it": "immanenza",
+    "he": "אימננטיות",
+    "cat": "vocab"
+  },
+  {
+    "it": "nichilismo",
+    "he": "ניהיליזם",
+    "cat": "vocab"
+  },
+  {
+    "it": "esistenzialismo",
+    "he": "אקזיסטנציאליזם",
+    "cat": "vocab"
+  },
+  {
+    "it": "strutturalismo",
+    "he": "סטרוקטורליזם",
+    "cat": "vocab"
+  },
+  {
+    "it": "postmoderno",
+    "he": "פוסטמודרני",
+    "cat": "vocab"
+  },
+  {
+    "it": "totalitarismo",
+    "he": "טוטליטריזם",
+    "cat": "vocab"
+  },
+  {
+    "it": "burocrazia",
+    "he": "ביורוקרטיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "aristocrazia",
+    "he": "אריסטוקרטיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "oligarchia",
+    "he": "אוליגרכיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "teocrazia",
+    "he": "תיאוקרטיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "capitalismo",
+    "he": "קפיטליזם",
+    "cat": "vocab"
+  },
+  {
+    "it": "socialismo",
+    "he": "סוציאליזם",
+    "cat": "vocab"
+  },
+  {
+    "it": "comunismo",
+    "he": "קומוניזם",
+    "cat": "vocab"
+  },
+  {
+    "it": "globalizzazione",
+    "he": "גלובליזציה",
+    "cat": "vocab"
+  },
+  {
+    "it": "multiculturalismo",
+    "he": "רב-תרבותיות",
+    "cat": "vocab"
+  },
+  {
+    "it": "coscienza",
+    "he": "תודעה",
+    "cat": "vocab"
+  },
+  {
+    "it": "percezione",
+    "he": "תפיסה",
+    "cat": "vocab"
+  },
+  {
+    "it": "intelletto",
+    "he": "שכל",
+    "cat": "vocab"
+  },
+  {
+    "it": "ragione",
+    "he": "הגיון",
+    "cat": "vocab"
+  },
+  {
+    "it": "volontà",
+    "he": "רצון",
+    "cat": "vocab"
+  },
+  {
+    "it": "empatia",
+    "he": "אמפתיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "utopia",
+    "he": "אוטופיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "distopia",
+    "he": "דיסטופיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "Piacerino",
+    "he": "נעים להכיר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Piacerone",
+    "he": "נעים להכיר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Madrino",
+    "he": "אמא קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Madrone",
+    "he": "אמא גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Padrino",
+    "he": "אבא קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Padrone",
+    "he": "אבא גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Sorellino",
+    "he": "אחות קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Sorellone",
+    "he": "אחות גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Fratella",
+    "he": "אח (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Fratellino",
+    "he": "אח קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Fratellone",
+    "he": "אח גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Figliino",
+    "he": "בת קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Figlione",
+    "he": "בת גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Mammino",
+    "he": "אמא קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Mammone",
+    "he": "אמא גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Papàino",
+    "he": "אבא קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Papàone",
+    "he": "אבא גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Nonnino",
+    "he": "סבתא קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Nonnone",
+    "he": "סבתא גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cuginino",
+    "he": "בת דוד קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cuginone",
+    "he": "בת דוד גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Nipotino",
+    "he": "נכד קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Nipotone",
+    "he": "נכד גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Mogliino",
+    "he": "אישה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Moglione",
+    "he": "אישה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Marita",
+    "he": "בעל (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Maritino",
+    "he": "בעל קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Maritone",
+    "he": "בעל גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Amicino",
+    "he": "חבר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Amicone",
+    "he": "חבר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Acquino",
+    "he": "מים קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Acquone",
+    "he": "מים גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Panino",
+    "he": "לחם קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Panone",
+    "he": "לחם גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Lattino",
+    "he": "חלב קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Lattone",
+    "he": "חלב גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Uova",
+    "he": "ביצה (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Uovino",
+    "he": "ביצה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Uovone",
+    "he": "ביצה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Formaggia",
+    "he": "גבינה (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Formaggiino",
+    "he": "גבינה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Formaggione",
+    "he": "גבינה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pescino",
+    "he": "דג קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pescone",
+    "he": "דג גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Carnino",
+    "he": "בשר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Carnone",
+    "he": "בשר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Fruttino",
+    "he": "פרי קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Fruttone",
+    "he": "פרי גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Verdurino",
+    "he": "ירק קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Verdurone",
+    "he": "ירק גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pastino",
+    "he": "פסטה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pastone",
+    "he": "פסטה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pizzino",
+    "he": "פיצה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pizzone",
+    "he": "פיצה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Risa",
+    "he": "אורז (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Risino",
+    "he": "אורז קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Risone",
+    "he": "אורז גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Zucchera",
+    "he": "סוכר (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Zuccherino",
+    "he": "סוכר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Zuccherone",
+    "he": "סוכר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Salino",
+    "he": "מלח קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Salone",
+    "he": "מלח גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Olia",
+    "he": "שמן (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Oliino",
+    "he": "שמן קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Olione",
+    "he": "שמן גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Aceta",
+    "he": "חומץ (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Acetino",
+    "he": "חומץ קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Acetone",
+    "he": "חומץ גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Caffèino",
+    "he": "קפה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Caffèone",
+    "he": "קפה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Vina",
+    "he": "יין (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Vinino",
+    "he": "יין קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Vinone",
+    "he": "יין גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Birrino",
+    "he": "בירה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Birrone",
+    "he": "בירה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cioccolata",
+    "he": "שוקולד (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cioccolatino",
+    "he": "שוקולד קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cioccolatone",
+    "he": "שוקולד גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Gelata",
+    "he": "גלידה (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Gelatino",
+    "he": "גלידה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Gelatone",
+    "he": "גלידה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Melino",
+    "he": "תפוח קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Bananino",
+    "he": "בננה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Bananone",
+    "he": "בננה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Aranciino",
+    "he": "תפוז קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Limonino",
+    "he": "לימון קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Limonone",
+    "he": "לימון גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pomodora",
+    "he": "עגבניה (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pomodorino",
+    "he": "עגבניה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pomodorone",
+    "he": "עגבניה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Insalatino",
+    "he": "סלט קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Insalatone",
+    "he": "סלט גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Dolcino",
+    "he": "קינוח קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Dolcone",
+    "he": "קינוח גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Colazionino",
+    "he": "ארוחת בוקר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Colazionone",
+    "he": "ארוחת בוקר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pranza",
+    "he": "ארוחת צהריים (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pranzino",
+    "he": "ארוחת צהריים קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pranzone",
+    "he": "ארוחת צהריים גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cenino",
+    "he": "ארוחת ערב קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cenone",
+    "he": "ארוחת ערב גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Camerino",
+    "he": "חדר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Camerone",
+    "he": "חדר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Casino",
+    "he": "בית קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Casone",
+    "he": "בית גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Portino",
+    "he": "דלת קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Portone",
+    "he": "דלת גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Finestrino",
+    "he": "חלון קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Finestrone",
+    "he": "חלון גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Tavola",
+    "he": "שולחן (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Tavolino",
+    "he": "שולחן קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Tavolone",
+    "he": "שולחן גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Sediino",
+    "he": "כיסא קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Sedione",
+    "he": "כיסא גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Letta",
+    "he": "מיטה (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Lettino",
+    "he": "מיטה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Lettone",
+    "he": "מיטה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Bagna",
+    "he": "חדר אמבטיה (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Bagnino",
+    "he": "חדר אמבטיה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Bagnone",
+    "he": "חדר אמבטיה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cucinino",
+    "he": "מטבח קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cucinone",
+    "he": "מטבח גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Lampadino",
+    "he": "מנורה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Lampadone",
+    "he": "מנורה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Telefona",
+    "he": "טלפון (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Telefonino",
+    "he": "טלפון קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Telefonone",
+    "he": "טלפון גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Chiavino",
+    "he": "מפתח קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Chiavone",
+    "he": "מפתח גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Specchia",
+    "he": "מראה (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Specchiino",
+    "he": "מראה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Specchione",
+    "he": "מראה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Armadia",
+    "he": "ארון (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Armadiino",
+    "he": "ארון קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Armadione",
+    "he": "ארון גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cittàino",
+    "he": "עיר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cittàone",
+    "he": "עיר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Paesino",
+    "he": "מדינה/כפר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Paesone",
+    "he": "מדינה/כפר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Piazzino",
+    "he": "כיכר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Piazzone",
+    "he": "כיכר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Musea",
+    "he": "מוזיאון (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Museino",
+    "he": "מוזיאון קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Museone",
+    "he": "מוזיאון גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Chiesino",
+    "he": "כנסייה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Chiesone",
+    "he": "כנסייה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Ospedalino",
+    "he": "בית חולים קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Ospedalone",
+    "he": "בית חולים גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Scuolino",
+    "he": "בית ספר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Scuolone",
+    "he": "בית ספר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Bancino",
+    "he": "בנק קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Farmaciino",
+    "he": "בית מרקחת קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Farmacione",
+    "he": "בית מרקחת גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Negozia",
+    "he": "חנות (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Negoziino",
+    "he": "חנות קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Negozione",
+    "he": "חנות גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Supermercata",
+    "he": "סופר (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Supermercatino",
+    "he": "סופר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Supermercatone",
+    "he": "סופר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Ristorantino",
+    "he": "מסעדה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Ristorantone",
+    "he": "מסעדה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Alberga",
+    "he": "מלון (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Albergino",
+    "he": "מלון קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Albergone",
+    "he": "מלון גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Stazionino",
+    "he": "תחנה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Stazionone",
+    "he": "תחנה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Aeroporta",
+    "he": "שדה תעופה (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Aeroportino",
+    "he": "שדה תעופה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Aeroportone",
+    "he": "שדה תעופה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Parca",
+    "he": "פארק (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Parcino",
+    "he": "פארק קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Parcone",
+    "he": "פארק גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Marino",
+    "he": "ים קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Marone",
+    "he": "ים גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Spiaggiino",
+    "he": "חוף קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Spiaggione",
+    "he": "חוף גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Montino",
+    "he": "הר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Montone",
+    "he": "הר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Giorna",
+    "he": "יום (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Giornino",
+    "he": "יום קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Giornone",
+    "he": "יום גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Nottino",
+    "he": "לילה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Nottone",
+    "he": "לילה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Minuta",
+    "he": "דקה (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Minutino",
+    "he": "דקה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Minutone",
+    "he": "דקה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Settimanino",
+    "he": "שבוע קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Settimanone",
+    "he": "שבוע גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Mesino",
+    "he": "חודש קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Mesone",
+    "he": "חודש גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Anna",
+    "he": "שנה (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Annino",
+    "he": "שנה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Annone",
+    "he": "שנה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Mattina",
+    "he": "בוקר (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Mattinino",
+    "he": "בוקר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Mattinone",
+    "he": "בוקר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pomeriggia",
+    "he": "אחר הצהריים (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pomeriggiino",
+    "he": "אחר הצהריים קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Pomeriggione",
+    "he": "אחר הצהריים גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Serino",
+    "he": "ערב קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Serone",
+    "he": "ערב גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Lunedìino",
+    "he": "יום שני קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Lunedìone",
+    "he": "יום שני גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Martedìino",
+    "he": "יום שלישי קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Martedìone",
+    "he": "יום שלישי גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Mercoledìino",
+    "he": "יום רביעי קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Mercoledìone",
+    "he": "יום רביעי גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Giovedìino",
+    "he": "יום חמישי קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Giovedìone",
+    "he": "יום חמישי גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Venerdìino",
+    "he": "יום שישי קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Venerdìone",
+    "he": "יום שישי גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Sabata",
+    "he": "שבת (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Sabatino",
+    "he": "שבת קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Sabatone",
+    "he": "שבת גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Domenicino",
+    "he": "ראשון קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Domenicone",
+    "he": "ראשון גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Gennaia",
+    "he": "ינואר (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Gennaiino",
+    "he": "ינואר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Gennaione",
+    "he": "ינואר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Febbraia",
+    "he": "פברואר (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Febbraiino",
+    "he": "פברואר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Febbraione",
+    "he": "פברואר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Marza",
+    "he": "מרץ (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Marzino",
+    "he": "מרץ קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Marzone",
+    "he": "מרץ גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Aprilino",
+    "he": "אפריל קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Aprilone",
+    "he": "אפריל גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Maggia",
+    "he": "מאי (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Maggiino",
+    "he": "מאי קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Maggione",
+    "he": "מאי גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Giugna",
+    "he": "יוני (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Giugnino",
+    "he": "יוני קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Giugnone",
+    "he": "יוני גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Luglia",
+    "he": "יולי (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Lugliino",
+    "he": "יולי קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Luglione",
+    "he": "יולי גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Agosta",
+    "he": "אוגוסט (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Agostino",
+    "he": "אוגוסט קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Agostone",
+    "he": "אוגוסט גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Settembrino",
+    "he": "ספטמבר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Settembrone",
+    "he": "ספטמבר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Ottobrino",
+    "he": "אוקטובר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Ottobrone",
+    "he": "אוקטובר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Novembrino",
+    "he": "נובמבר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Novembrone",
+    "he": "נובמבר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Dicembrino",
+    "he": "דצמבר קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Dicembrone",
+    "he": "דצמבר גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Primaverino",
+    "he": "אביב קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Primaverone",
+    "he": "אביב גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Estatino",
+    "he": "קיץ קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Estatone",
+    "he": "קיץ גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Autunna",
+    "he": "סתיו (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Autunnino",
+    "he": "סתיו קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Autunnone",
+    "he": "סתיו גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Inverna",
+    "he": "חורף (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Invernino",
+    "he": "חורף קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Invernone",
+    "he": "חורף גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Solino",
+    "he": "שמש קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Solone",
+    "he": "שמש גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Lunino",
+    "he": "ירח קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Lunone",
+    "he": "ירח גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Stellino",
+    "he": "כוכב קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Stellone",
+    "he": "כוכב גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Ciela",
+    "he": "שמיים (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cielino",
+    "he": "שמיים קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cielone",
+    "he": "שמיים גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Terrino",
+    "he": "אדמה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Terrone",
+    "he": "אדמה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Fiorino",
+    "he": "פרח קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Fiorone",
+    "he": "פרח גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Albera",
+    "he": "עץ (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Alberino",
+    "he": "עץ קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Alberone",
+    "he": "עץ גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Animalino",
+    "he": "חיה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Animalone",
+    "he": "חיה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Canino",
+    "he": "כלב קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Canone",
+    "he": "כלב גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Gatta",
+    "he": "חתול (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Gattino",
+    "he": "חתול קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Gattone",
+    "he": "חתול גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cavalla",
+    "he": "סוס (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cavallino",
+    "he": "סוס קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cavallone",
+    "he": "סוס גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Uccella",
+    "he": "ציפור (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Uccellino",
+    "he": "ציפור קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Uccellone",
+    "he": "ציפור גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Testino",
+    "he": "ראש קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Testone",
+    "he": "ראש גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Mana",
+    "he": "יד (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Manino",
+    "he": "יד קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Manone",
+    "he": "יד גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Piedino",
+    "he": "רגל קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Piedone",
+    "he": "רגל גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Occhia",
+    "he": "עין (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Occhiino",
+    "he": "עין קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Occhione",
+    "he": "עין גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Orecchia",
+    "he": "אוזן (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Orecchiino",
+    "he": "אוזן קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Orecchione",
+    "he": "אוזן גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Nasa",
+    "he": "אף (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Nasino",
+    "he": "אף קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Nasone",
+    "he": "אף גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Boccino",
+    "he": "פה קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Boccone",
+    "he": "פה גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cuorino",
+    "he": "לב קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Cuorone",
+    "he": "לב גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Braccia",
+    "he": "זרוע (נקבה)",
+    "cat": "vocab"
+  },
+  {
+    "it": "Bracciino",
+    "he": "זרוע קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Braccione",
+    "he": "זרוע גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "Gambino",
+    "he": "רגל קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "Gambone",
+    "he": "רגל גדול",
+    "cat": "vocab"
+  },
+  {
+    "it": "passeggiare",
+    "he": "לטייל",
+    "cat": "vocab"
+  },
+  {
+    "it": "cenare",
+    "he": "לסעוד",
+    "cat": "vocab"
+  },
+  {
+    "it": "pranzare",
+    "he": "לאכול צהריים",
+    "cat": "vocab"
+  },
+  {
+    "it": "fare colazione",
+    "he": "לאכול ארוחת בוקר",
+    "cat": "vocab"
+  },
+  {
+    "it": "studiare",
+    "he": "ללמוד",
+    "cat": "vocab"
+  },
+  {
+    "it": "lavorare",
+    "he": "לעבוד",
+    "cat": "vocab"
+  },
+  {
+    "it": "giocare",
+    "he": "לשחק",
+    "cat": "vocab"
+  },
+  {
+    "it": "cambiare",
+    "he": "להחליף",
+    "cat": "vocab"
+  },
+  {
+    "it": "pensare",
+    "he": "לחשוב",
+    "cat": "vocab"
+  },
+  {
+    "it": "ricordare",
+    "he": "לזכור",
+    "cat": "vocab"
+  },
+  {
+    "it": "sperare",
+    "he": "לקוות",
+    "cat": "vocab"
+  },
+  {
+    "it": "domandare",
+    "he": "לשאול",
+    "cat": "vocab"
+  },
+  {
+    "it": "rispondere",
+    "he": "לענות",
+    "cat": "vocab"
+  },
+  {
+    "it": "viaggiare",
+    "he": "לנסוע",
+    "cat": "vocab"
+  },
+  {
+    "it": "ballare",
+    "he": "לרקוד",
+    "cat": "vocab"
+  },
+  {
+    "it": "cantare",
+    "he": "לשיר",
+    "cat": "vocab"
+  },
+  {
+    "it": "camminare",
+    "he": "ללכת",
+    "cat": "vocab"
+  },
+  {
+    "it": "cucinare",
+    "he": "לבשל",
+    "cat": "vocab"
+  },
+  {
+    "it": "spendere",
+    "he": "להוציא כסף",
+    "cat": "vocab"
+  },
+  {
+    "it": "telefonare",
+    "he": "להתקשר",
+    "cat": "vocab"
+  },
+  {
+    "it": "alzarsi",
+    "he": "לקום",
+    "cat": "vocab"
+  },
+  {
+    "it": "sedersi",
+    "he": "לשבת",
+    "cat": "vocab"
+  },
+  {
+    "it": "correre",
+    "he": "לרוץ",
+    "cat": "vocab"
+  },
+  {
+    "it": "saltare",
+    "he": "לקפוץ",
+    "cat": "vocab"
+  },
+  {
+    "it": "piangere",
+    "he": "לבכות",
+    "cat": "vocab"
+  },
+  {
+    "it": "ridere",
+    "he": "לצחוק",
+    "cat": "vocab"
+  },
+  {
+    "it": "sognare",
+    "he": "לחלום",
+    "cat": "vocab"
+  },
+  {
+    "it": "spiegare",
+    "he": "להסביר",
+    "cat": "vocab"
+  },
+  {
+    "it": "chiedere",
+    "he": "לבקש",
+    "cat": "vocab"
+  },
+  {
+    "it": "offrire",
+    "he": "להציע",
+    "cat": "vocab"
+  },
+  {
+    "it": "accettare",
+    "he": "לקבל",
+    "cat": "vocab"
+  },
+  {
+    "it": "rifiutare",
+    "he": "לדחות",
+    "cat": "vocab"
+  },
+  {
+    "it": "aspettare",
+    "he": "לחכות",
+    "cat": "vocab"
+  },
+  {
+    "it": "iniziare",
+    "he": "להתחיל",
+    "cat": "vocab"
+  },
+  {
+    "it": "finire",
+    "he": "לסיים",
+    "cat": "vocab"
+  },
+  {
+    "it": "continuare",
+    "he": "להמשיך",
+    "cat": "vocab"
+  },
+  {
+    "it": "provare",
+    "he": "לנסות",
+    "cat": "vocab"
+  },
+  {
+    "it": "riuscire",
+    "he": "להצליח",
+    "cat": "vocab"
+  },
+  {
+    "it": "tentare",
+    "he": "להתנסות",
+    "cat": "vocab"
+  },
+  {
+    "it": "decidere",
+    "he": "להחליט",
+    "cat": "vocab"
+  },
+  {
+    "it": "scegliere",
+    "he": "לבחור",
+    "cat": "vocab"
+  },
+  {
+    "it": "preferire",
+    "he": "להעדיף",
+    "cat": "vocab"
+  },
+  {
+    "it": "dimenticare",
+    "he": "לשכוח",
+    "cat": "vocab"
+  },
+  {
+    "it": "capire",
+    "he": "להבין",
+    "cat": "vocab"
+  },
+  {
+    "it": "insegnare",
+    "he": "ללמד",
+    "cat": "vocab"
+  },
+  {
+    "it": "imparare",
+    "he": "ללמוד",
+    "cat": "vocab"
+  },
+  {
+    "it": "esercitare",
+    "he": "לתרגל",
+    "cat": "vocab"
+  },
+  {
+    "it": "vincere",
+    "he": "לנצח",
+    "cat": "vocab"
+  },
+  {
+    "it": "perdere",
+    "he": "להפסיד",
+    "cat": "vocab"
+  },
+  {
+    "it": "pareggiare",
+    "he": "לסיים בתיקו",
+    "cat": "vocab"
+  },
+  {
+    "it": "guidare",
+    "he": "לנהוג",
+    "cat": "vocab"
+  },
+  {
+    "it": "volare",
+    "he": "לטוס",
+    "cat": "vocab"
+  },
+  {
+    "it": "nuotare",
+    "he": "לשחות",
+    "cat": "vocab"
+  },
+  {
+    "it": "pescare",
+    "he": "לדוג",
+    "cat": "vocab"
+  },
+  {
+    "it": "dipingere",
+    "he": "לצבוע",
+    "cat": "vocab"
+  },
+  {
+    "it": "scolpire",
+    "he": "לפסל",
+    "cat": "vocab"
+  },
+  {
+    "it": "disegnare",
+    "he": "לצייר",
+    "cat": "vocab"
+  },
+  {
+    "it": "tradurre",
+    "he": "לתרגם",
+    "cat": "vocab"
+  },
+  {
+    "it": "vendere",
+    "he": "למכור",
+    "cat": "vocab"
+  },
+  {
+    "it": "affittare",
+    "he": "להשכיר",
+    "cat": "vocab"
+  },
+  {
+    "it": "prenotare",
+    "he": "להזמין",
+    "cat": "vocab"
+  },
+  {
+    "it": "cancellare",
+    "he": "לבטל",
+    "cat": "vocab"
+  },
+  {
+    "it": "ringraziare",
+    "he": "להודות",
+    "cat": "vocab"
+  },
+  {
+    "it": "scusarsi",
+    "he": "להתנצל",
+    "cat": "vocab"
+  },
+  {
+    "it": "salutare",
+    "he": "לברך",
+    "cat": "vocab"
+  },
+  {
+    "it": "abbracciare",
+    "he": "לחבק",
+    "cat": "vocab"
+  },
+  {
+    "it": "baciare",
+    "he": "לנשק",
+    "cat": "vocab"
+  },
+  {
+    "it": "stringere",
+    "he": "ללחוץ",
+    "cat": "vocab"
+  },
+  {
+    "it": "litigare",
+    "he": "לריב",
+    "cat": "vocab"
+  },
+  {
+    "it": "discutere",
+    "he": "לדון",
+    "cat": "vocab"
+  },
+  {
+    "it": "sgridare",
+    "he": "לנזוף",
+    "cat": "vocab"
+  },
+  {
+    "it": "preoccuparsi",
+    "he": "לדאוג",
+    "cat": "vocab"
+  },
+  {
+    "it": "arrabbiarsi",
+    "he": "לכעוס",
+    "cat": "vocab"
+  },
+  {
+    "it": "calmarsi",
+    "he": "להירגע",
+    "cat": "vocab"
+  },
+  {
+    "it": "annoiarsi",
+    "he": "להשתעמם",
+    "cat": "vocab"
+  },
+  {
+    "it": "divertirsi",
+    "he": "ליהנות",
+    "cat": "vocab"
+  },
+  {
+    "it": "riposarsi",
+    "he": "לנוח",
+    "cat": "vocab"
+  },
+  {
+    "it": "svegliarsi",
+    "he": "להתעורר",
+    "cat": "vocab"
+  },
+  {
+    "it": "addormentarsi",
+    "he": "להירדם",
+    "cat": "vocab"
+  },
+  {
+    "it": "sposarsi",
+    "he": "להתחתן",
+    "cat": "vocab"
+  },
+  {
+    "it": "fidanzarsi",
+    "he": "להתארס",
+    "cat": "vocab"
+  },
+  {
+    "it": "separarsi",
+    "he": "להיפרד",
+    "cat": "vocab"
+  },
+  {
+    "it": "iscriversi",
+    "he": "להירשם",
+    "cat": "vocab"
+  },
+  {
+    "it": "laurearsi",
+    "he": "לסיים תואר",
+    "cat": "vocab"
+  },
+  {
+    "it": "specializzarsi",
+    "he": "להתמחות",
+    "cat": "vocab"
+  },
+  {
+    "it": "felice",
+    "he": "שמח",
+    "cat": "vocab"
+  },
+  {
+    "it": "triste",
+    "he": "עצוב",
+    "cat": "vocab"
+  },
+  {
+    "it": "arrabbiato",
+    "he": "כועס",
+    "cat": "vocab"
+  },
+  {
+    "it": "stanco",
+    "he": "עייף",
+    "cat": "vocab"
+  },
+  {
+    "it": "contento",
+    "he": "מרוצה",
+    "cat": "vocab"
+  },
+  {
+    "it": "preoccupato",
+    "he": "מודאג",
+    "cat": "vocab"
+  },
+  {
+    "it": "calmo",
+    "he": "רגוע",
+    "cat": "vocab"
+  },
+  {
+    "it": "nervoso",
+    "he": "עצבני",
+    "cat": "vocab"
+  },
+  {
+    "it": "forte",
+    "he": "חזק",
+    "cat": "vocab"
+  },
+  {
+    "it": "debole",
+    "he": "חלש",
+    "cat": "vocab"
+  },
+  {
+    "it": "veloce",
+    "he": "מהיר",
+    "cat": "vocab"
+  },
+  {
+    "it": "lento",
+    "he": "איטי",
+    "cat": "vocab"
+  },
+  {
+    "it": "carino",
+    "he": "חמוד",
+    "cat": "vocab"
+  },
+  {
+    "it": "simpatico",
+    "he": "חביב",
+    "cat": "vocab"
+  },
+  {
+    "it": "antipatico",
+    "he": "לא חביב",
+    "cat": "vocab"
+  },
+  {
+    "it": "gentile",
+    "he": "אדיב",
+    "cat": "vocab"
+  },
+  {
+    "it": "educato",
+    "he": "מנומס",
+    "cat": "vocab"
+  },
+  {
+    "it": "maleducato",
+    "he": "חצוף",
+    "cat": "vocab"
+  },
+  {
+    "it": "onesto",
+    "he": "ישר",
+    "cat": "vocab"
+  },
+  {
+    "it": "disonesto",
+    "he": "לא ישר",
+    "cat": "vocab"
+  },
+  {
+    "it": "ricco",
+    "he": "עשיר",
+    "cat": "vocab"
+  },
+  {
+    "it": "povero",
+    "he": "עני",
+    "cat": "vocab"
+  },
+  {
+    "it": "famoso",
+    "he": "מפורסם",
+    "cat": "vocab"
+  },
+  {
+    "it": "sconosciuto",
+    "he": "לא ידוע",
+    "cat": "vocab"
+  },
+  {
+    "it": "facile",
+    "he": "קל",
+    "cat": "vocab"
+  },
+  {
+    "it": "difficile",
+    "he": "קשה",
+    "cat": "vocab"
+  },
+  {
+    "it": "semplice",
+    "he": "פשוט",
+    "cat": "vocab"
+  },
+  {
+    "it": "complicato",
+    "he": "מורכב",
+    "cat": "vocab"
+  },
+  {
+    "it": "importante",
+    "he": "חשוב",
+    "cat": "vocab"
+  },
+  {
+    "it": "inutile",
+    "he": "חסר תועלת",
+    "cat": "vocab"
+  },
+  {
+    "it": "necessario",
+    "he": "הכרחי",
+    "cat": "vocab"
+  },
+  {
+    "it": "possibile",
+    "he": "אפשרי",
+    "cat": "vocab"
+  },
+  {
+    "it": "probabile",
+    "he": "סביר",
+    "cat": "vocab"
+  },
+  {
+    "it": "certo",
+    "he": "בטוח",
+    "cat": "vocab"
+  },
+  {
+    "it": "vero",
+    "he": "אמיתי",
+    "cat": "vocab"
+  },
+  {
+    "it": "falso",
+    "he": "שקרי",
+    "cat": "vocab"
+  },
+  {
+    "it": "libero",
+    "he": "חופשי",
+    "cat": "vocab"
+  },
+  {
+    "it": "occupato",
+    "he": "עסוק",
+    "cat": "vocab"
+  },
+  {
+    "it": "pronto",
+    "he": "מוכן",
+    "cat": "vocab"
+  },
+  {
+    "it": "pulito",
+    "he": "נקי",
+    "cat": "vocab"
+  },
+  {
+    "it": "sporco",
+    "he": "מלוכלך",
+    "cat": "vocab"
+  },
+  {
+    "it": "aperto",
+    "he": "פתוח",
+    "cat": "vocab"
+  },
+  {
+    "it": "chiuso",
+    "he": "סגור",
+    "cat": "vocab"
+  },
+  {
+    "it": "acceso",
+    "he": "דולק",
+    "cat": "vocab"
+  },
+  {
+    "it": "spento",
+    "he": "כבוי",
+    "cat": "vocab"
+  },
+  {
+    "it": "sveglio",
+    "he": "ער",
+    "cat": "vocab"
+  },
+  {
+    "it": "addormentato",
+    "he": "ישן",
+    "cat": "vocab"
+  },
+  {
+    "it": "vivo",
+    "he": "חי",
+    "cat": "vocab"
+  },
+  {
+    "it": "morto",
+    "he": "מת",
+    "cat": "vocab"
+  },
+  {
+    "it": "sano",
+    "he": "בריא",
+    "cat": "vocab"
+  },
+  {
+    "it": "malato",
+    "he": "חולה",
+    "cat": "vocab"
+  },
+  {
+    "it": "bagnato",
+    "he": "רטוב",
+    "cat": "vocab"
+  },
+  {
+    "it": "asciutto",
+    "he": "יבש",
+    "cat": "vocab"
+  },
+  {
+    "it": "liscio",
+    "he": "חלק",
+    "cat": "vocab"
+  },
+  {
+    "it": "ruvido",
+    "he": "מחוספס",
+    "cat": "vocab"
+  },
+  {
+    "it": "morBido",
+    "he": "רך",
+    "cat": "vocab"
+  },
+  {
+    "it": "duro",
+    "he": "קשה",
+    "cat": "vocab"
+  },
+  {
+    "it": "pesante",
+    "he": "כבד",
+    "cat": "vocab"
+  },
+  {
+    "it": "leggero",
+    "he": "קל",
+    "cat": "vocab"
+  },
+  {
+    "it": "stretto",
+    "he": "צר",
+    "cat": "vocab"
+  },
+  {
+    "it": "largo",
+    "he": "רחב",
+    "cat": "vocab"
+  },
+  {
+    "it": "profondo",
+    "he": "עמוק",
+    "cat": "vocab"
+  },
+  {
+    "it": "superficiale",
+    "he": "שטחי",
+    "cat": "vocab"
+  },
+  {
+    "it": "assolutamente",
+    "he": "בהחלט",
+    "cat": "vocab"
+  },
+  {
+    "it": "probabilmente",
+    "he": "סביר להניח",
+    "cat": "vocab"
+  },
+  {
+    "it": "effettivamente",
+    "he": "למעשה",
+    "cat": "vocab"
+  },
+  {
+    "it": "naturalmente",
+    "he": "כמובן",
+    "cat": "vocab"
+  },
+  {
+    "it": "evidentemente",
+    "he": "ברור",
+    "cat": "vocab"
+  },
+  {
+    "it": "fortunatamente",
+    "he": "למרבה המזל",
+    "cat": "vocab"
+  },
+  {
+    "it": "sfortunatamente",
+    "he": "לרוע המזל",
+    "cat": "vocab"
+  },
+  {
+    "it": "certamente",
+    "he": "בוודאי",
+    "cat": "vocab"
+  },
+  {
+    "it": "sicuramente",
+    "he": "בטוח",
+    "cat": "vocab"
+  },
+  {
+    "it": "ovviamente",
+    "he": "ברור",
+    "cat": "vocab"
+  },
+  {
+    "it": "chiaramente",
+    "he": "בבירור",
+    "cat": "vocab"
+  },
+  {
+    "it": "generalmente",
+    "he": "באופן כללי",
+    "cat": "vocab"
+  },
+  {
+    "it": "normalmente",
+    "he": "בדרך כלל",
+    "cat": "vocab"
+  },
+  {
+    "it": "particolarmente",
+    "he": "במיוחד",
+    "cat": "vocab"
+  },
+  {
+    "it": "principalmente",
+    "he": "בעיקר",
+    "cat": "vocab"
+  },
+  {
+    "it": "solamente",
+    "he": "רק",
+    "cat": "vocab"
+  },
+  {
+    "it": "semplicemente",
+    "he": "פשוט",
+    "cat": "vocab"
+  },
+  {
+    "it": "praticamente",
+    "he": "בפועל",
+    "cat": "vocab"
+  },
+  {
+    "it": "assai",
+    "he": "מאוד",
+    "cat": "vocab"
+  },
+  {
+    "it": "piuttosto",
+    "he": "די",
+    "cat": "vocab"
+  },
+  {
+    "it": "abbastanza",
+    "he": "די",
+    "cat": "vocab"
+  },
+  {
+    "it": "appena",
+    "he": "בקושי",
+    "cat": "vocab"
+  },
+  {
+    "it": "quasi",
+    "he": "כמעט",
+    "cat": "vocab"
+  },
+  {
+    "it": "almeno",
+    "he": "לפחות",
+    "cat": "vocab"
+  },
+  {
+    "it": "inoltre",
+    "he": "בנוסף",
+    "cat": "vocab"
+  },
+  {
+    "it": "tuttavia",
+    "he": "עם זאת",
+    "cat": "vocab"
+  },
+  {
+    "it": "comunque",
+    "he": "בכל מקרה",
+    "cat": "vocab"
+  },
+  {
+    "it": "dunque",
+    "he": "לכן",
+    "cat": "vocab"
+  },
+  {
+    "it": "quindi",
+    "he": "אז",
+    "cat": "vocab"
+  },
+  {
+    "it": "aria",
+    "he": "אוויר",
+    "cat": "vocab"
+  },
+  {
+    "it": "nube",
+    "he": "ענן",
+    "cat": "vocab"
+  },
+  {
+    "it": "ghiaccio",
+    "he": "קרח",
+    "cat": "vocab"
+  },
+  {
+    "it": "fuoco",
+    "he": "אש",
+    "cat": "vocab"
+  },
+  {
+    "it": "fiamma",
+    "he": "להבה",
+    "cat": "vocab"
+  },
+  {
+    "it": "fumo",
+    "he": "עשן",
+    "cat": "vocab"
+  },
+  {
+    "it": "polvere",
+    "he": "אבק",
+    "cat": "vocab"
+  },
+  {
+    "it": "sabbia",
+    "he": "חול",
+    "cat": "vocab"
+  },
+  {
+    "it": "roccia",
+    "he": "סלע",
+    "cat": "vocab"
+  },
+  {
+    "it": "sasso",
+    "he": "אבן",
+    "cat": "vocab"
+  },
+  {
+    "it": "collina",
+    "he": "גבעה",
+    "cat": "vocab"
+  },
+  {
+    "it": "valle",
+    "he": "עמק",
+    "cat": "vocab"
+  },
+  {
+    "it": "fiume",
+    "he": "נהר",
+    "cat": "vocab"
+  },
+  {
+    "it": "ruscello",
+    "he": "נחל",
+    "cat": "vocab"
+  },
+  {
+    "it": "lago",
+    "he": "אגם",
+    "cat": "vocab"
+  },
+  {
+    "it": "cascata",
+    "he": "מפל",
+    "cat": "vocab"
+  },
+  {
+    "it": "oceano",
+    "he": "אוקינוס",
+    "cat": "vocab"
+  },
+  {
+    "it": "onda",
+    "he": "גל",
+    "cat": "vocab"
+  },
+  {
+    "it": "marea",
+    "he": "גאות",
+    "cat": "vocab"
+  },
+  {
+    "it": "costa",
+    "he": "חוף",
+    "cat": "vocab"
+  },
+  {
+    "it": "riva",
+    "he": "שפת",
+    "cat": "vocab"
+  },
+  {
+    "it": "porto",
+    "he": "נמל",
+    "cat": "vocab"
+  },
+  {
+    "it": "faro",
+    "he": "מגדלור",
+    "cat": "vocab"
+  },
+  {
+    "it": "isola",
+    "he": "אי",
+    "cat": "vocab"
+  },
+  {
+    "it": "penisola",
+    "he": "חצי אי",
+    "cat": "vocab"
+  },
+  {
+    "it": "vulcano",
+    "he": "הר געש",
+    "cat": "vocab"
+  },
+  {
+    "it": "terremoto",
+    "he": "רעידת אדמה",
+    "cat": "vocab"
+  },
+  {
+    "it": "cima",
+    "he": "פסגה",
+    "cat": "vocab"
+  },
+  {
+    "it": "base",
+    "he": "בסיס",
+    "cat": "vocab"
+  },
+  {
+    "it": "uomo",
+    "he": "גבר",
+    "cat": "vocab"
+  },
+  {
+    "it": "donna",
+    "he": "אישה",
+    "cat": "vocab"
+  },
+  {
+    "it": "ragazzo",
+    "he": "ילד",
+    "cat": "vocab"
+  },
+  {
+    "it": "ragazza",
+    "he": "ילדה",
+    "cat": "vocab"
+  },
+  {
+    "it": "signore",
+    "he": "אדון",
+    "cat": "vocab"
+  },
+  {
+    "it": "signora",
+    "he": "גברת",
+    "cat": "vocab"
+  },
+  {
+    "it": "bambino",
+    "he": "ילד",
+    "cat": "vocab"
+  },
+  {
+    "it": "bambina",
+    "he": "ילדה",
+    "cat": "vocab"
+  },
+  {
+    "it": "adolescente",
+    "he": "מתבגר",
+    "cat": "vocab"
+  },
+  {
+    "it": "adulto",
+    "he": "מבוגר",
+    "cat": "vocab"
+  },
+  {
+    "it": "anziano",
+    "he": "קשיש",
+    "cat": "vocab"
+  },
+  {
+    "it": "lavoratore",
+    "he": "עובד",
+    "cat": "vocab"
+  },
+  {
+    "it": "direttore",
+    "he": "מנהל",
+    "cat": "vocab"
+  },
+  {
+    "it": "segretario",
+    "he": "מזכיר",
+    "cat": "vocab"
+  },
+  {
+    "it": "contabile",
+    "he": "רואה חשבון",
+    "cat": "vocab"
+  },
+  {
+    "it": "consulente",
+    "he": "יועץ",
+    "cat": "vocab"
+  },
+  {
+    "it": "esperto",
+    "he": "מומחה",
+    "cat": "vocab"
+  },
+  {
+    "it": "tecnico",
+    "he": "טכנאי",
+    "cat": "vocab"
+  },
+  {
+    "it": "ingegnere",
+    "he": "מהנדס",
+    "cat": "vocab"
+  },
+  {
+    "it": "architetto",
+    "he": "אדריכל",
+    "cat": "vocab"
+  },
+  {
+    "it": "programmatore",
+    "he": "מתכנת",
+    "cat": "vocab"
+  },
+  {
+    "it": "analista",
+    "he": "אנליסט",
+    "cat": "vocab"
+  },
+  {
+    "it": "traduttore",
+    "he": "מתרגם",
+    "cat": "vocab"
+  },
+  {
+    "it": "interprete",
+    "he": "מתורגמן",
+    "cat": "vocab"
+  },
+  {
+    "it": "insegnante",
+    "he": "מורה",
+    "cat": "vocab"
+  },
+  {
+    "it": "educatore",
+    "he": "מחנך",
+    "cat": "vocab"
+  },
+  {
+    "it": "formatore",
+    "he": "מדריך",
+    "cat": "vocab"
+  },
+  {
+    "it": "tutor",
+    "he": "חונך",
+    "cat": "vocab"
+  },
+  {
+    "it": "guida",
+    "he": "מדריך",
+    "cat": "vocab"
+  },
+  {
+    "it": "giornalista",
+    "he": "עיתונאי",
+    "cat": "vocab"
+  },
+  {
+    "it": "critico",
+    "he": "מבקר",
+    "cat": "vocab"
+  },
+  {
+    "it": "biscotto",
+    "he": "עוגייה",
+    "cat": "vocab"
+  },
+  {
+    "it": "torta",
+    "he": "עוגה",
+    "cat": "vocab"
+  },
+  {
+    "it": "crostata",
+    "he": "פשטידה",
+    "cat": "vocab"
+  },
+  {
+    "it": "budino",
+    "he": "פודינג",
+    "cat": "vocab"
+  },
+  {
+    "it": "macedonia",
+    "he": "סלט פירות",
+    "cat": "vocab"
+  },
+  {
+    "it": "frullato",
+    "he": "שייק",
+    "cat": "vocab"
+  },
+  {
+    "it": "granita",
+    "he": "גרניטה",
+    "cat": "vocab"
+  },
+  {
+    "it": "sorbetto",
+    "he": "סורבה",
+    "cat": "vocab"
+  },
+  {
+    "it": "yogurt",
+    "he": "יוגורט",
+    "cat": "vocab"
+  },
+  {
+    "it": "burro",
+    "he": "חמאה",
+    "cat": "vocab"
+  },
+  {
+    "it": "panna",
+    "he": "שמנת",
+    "cat": "vocab"
+  },
+  {
+    "it": "ricotta",
+    "he": "ריקוטה",
+    "cat": "vocab"
+  },
+  {
+    "it": "carciofo",
+    "he": "ארטישוק",
+    "cat": "vocab"
+  },
+  {
+    "it": "asparago",
+    "he": "אספרגוס",
+    "cat": "vocab"
+  },
+  {
+    "it": "cavolo",
+    "he": "כרוב",
+    "cat": "vocab"
+  },
+  {
+    "it": "peperoncino",
+    "he": "פלפל חריף",
+    "cat": "vocab"
+  },
+  {
+    "it": "zenzero",
+    "he": "ג'ינג'ר",
+    "cat": "vocab"
+  },
+  {
+    "it": "cannella",
+    "he": "קינמון",
+    "cat": "vocab"
+  },
+  {
+    "it": "vaniglia",
+    "he": "וניל",
+    "cat": "vocab"
+  },
+  {
+    "it": "zafferano",
+    "he": "זעפרן",
+    "cat": "vocab"
+  },
+  {
+    "it": "caramello",
+    "he": "קרמל",
+    "cat": "vocab"
+  },
+  {
+    "it": "torrone",
+    "he": "טורון",
+    "cat": "vocab"
+  },
+  {
+    "it": "amore",
+    "he": "אהבה",
+    "cat": "vocab"
+  },
+  {
+    "it": "odio",
+    "he": "שנאה",
+    "cat": "vocab"
+  },
+  {
+    "it": "rabbia",
+    "he": "כעס",
+    "cat": "vocab"
+  },
+  {
+    "it": "paura",
+    "he": "פחד",
+    "cat": "vocab"
+  },
+  {
+    "it": "coraggio",
+    "he": "אומץ",
+    "cat": "vocab"
+  },
+  {
+    "it": "gioia",
+    "he": "שמחה",
+    "cat": "vocab"
+  },
+  {
+    "it": "felicità",
+    "he": "אושר",
+    "cat": "vocab"
+  },
+  {
+    "it": "tristezza",
+    "he": "עצב",
+    "cat": "vocab"
+  },
+  {
+    "it": "malinconia",
+    "he": "עגמומיות",
+    "cat": "vocab"
+  },
+  {
+    "it": "nostalgia",
+    "he": "נוסטלגיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "speranza",
+    "he": "תקווה",
+    "cat": "vocab"
+  },
+  {
+    "it": "disperazione",
+    "he": "ייאוש",
+    "cat": "vocab"
+  },
+  {
+    "it": "ansia",
+    "he": "חרדה",
+    "cat": "vocab"
+  },
+  {
+    "it": "terrore",
+    "he": "אימה",
+    "cat": "vocab"
+  },
+  {
+    "it": "panico",
+    "he": "בהלה",
+    "cat": "vocab"
+  },
+  {
+    "it": "stupore",
+    "he": "תדהמה",
+    "cat": "vocab"
+  },
+  {
+    "it": "meraviglia",
+    "he": "פלא",
+    "cat": "vocab"
+  },
+  {
+    "it": "sorpresa",
+    "he": "הפתעה",
+    "cat": "vocab"
+  },
+  {
+    "it": "delusione",
+    "he": "אכזבה",
+    "cat": "vocab"
+  },
+  {
+    "it": "frustrazione",
+    "he": "תסכול",
+    "cat": "vocab"
+  },
+  {
+    "it": "vergogna",
+    "he": "בושה",
+    "cat": "vocab"
+  },
+  {
+    "it": "colpa",
+    "he": "אשמה",
+    "cat": "vocab"
+  },
+  {
+    "it": "orgoglio",
+    "he": "גאווה",
+    "cat": "vocab"
+  },
+  {
+    "it": "umiltà",
+    "he": "ענווה",
+    "cat": "vocab"
+  },
+  {
+    "it": "gratitudine",
+    "he": "הכרת תודה",
+    "cat": "vocab"
+  },
+  {
+    "it": "invidia",
+    "he": "קנאה",
+    "cat": "vocab"
+  },
+  {
+    "it": "gelosia",
+    "he": "קנאה",
+    "cat": "vocab"
+  },
+  {
+    "it": "disgusto",
+    "he": "גועל",
+    "cat": "vocab"
+  },
+  {
+    "it": "noia",
+    "he": "שעמום",
+    "cat": "vocab"
+  },
+  {
+    "it": "entusiasmo",
+    "he": "התלהבות",
+    "cat": "vocab"
+  },
+  {
+    "it": "passione",
+    "he": "תשוקה",
+    "cat": "vocab"
+  },
+  {
+    "it": "interesse",
+    "he": "עניין",
+    "cat": "vocab"
+  },
+  {
+    "it": "curiosità",
+    "he": "סקרנות",
+    "cat": "vocab"
+  },
+  {
+    "it": "indifferenza",
+    "he": "אדישות",
+    "cat": "vocab"
+  },
+  {
+    "it": "apatia",
+    "he": "אפתיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "simpatia",
+    "he": "סימפטיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "compassione",
+    "he": "חמלה",
+    "cat": "vocab"
+  },
+  {
+    "it": "tenerezza",
+    "he": "רוך",
+    "cat": "vocab"
+  },
+  {
+    "it": "affetto",
+    "he": "חיבה",
+    "cat": "vocab"
+  },
+  {
+    "it": "stima",
+    "he": "הערכה",
+    "cat": "vocab"
+  },
+  {
+    "it": "rispetto",
+    "he": "כבוד",
+    "cat": "vocab"
+  },
+  {
+    "it": "ammirazione",
+    "he": "הערצה",
+    "cat": "vocab"
+  },
+  {
+    "it": "fedeltà",
+    "he": "נאמנות",
+    "cat": "vocab"
+  },
+  {
+    "it": "lealtà",
+    "he": "נאמנות",
+    "cat": "vocab"
+  },
+  {
+    "it": "onestà",
+    "he": "יושר",
+    "cat": "vocab"
+  },
+  {
+    "it": "sincerità",
+    "he": "כנות",
+    "cat": "vocab"
+  },
+  {
+    "it": "generosità",
+    "he": "נדיבות",
+    "cat": "vocab"
+  },
+  {
+    "it": "altruismo",
+    "he": "אלטרואיזם",
+    "cat": "vocab"
+  },
+  {
+    "it": "egoismo",
+    "he": "אנוכיות",
+    "cat": "vocab"
+  },
+  {
+    "it": "pigrizia",
+    "he": "עצלות",
+    "cat": "vocab"
+  },
+  {
+    "it": "pazienza",
+    "he": "סבלנות",
+    "cat": "vocab"
+  },
+  {
+    "it": "determinazione",
+    "he": "נחישות",
+    "cat": "vocab"
+  },
+  {
+    "it": "fiducia",
+    "he": "ביטחון",
+    "cat": "vocab"
+  },
+  {
+    "it": "dubbio",
+    "he": "ספק",
+    "cat": "vocab"
+  },
+  {
+    "it": "confusione",
+    "he": "בלבול",
+    "cat": "vocab"
+  },
+  {
+    "it": "calcio",
+    "he": "כדורגל",
+    "cat": "vocab"
+  },
+  {
+    "it": "pallacanestro",
+    "he": "כדורסל",
+    "cat": "vocab"
+  },
+  {
+    "it": "pallavolo",
+    "he": "כדורעף",
+    "cat": "vocab"
+  },
+  {
+    "it": "tennis",
+    "he": "טניס",
+    "cat": "vocab"
+  },
+  {
+    "it": "ciclismo",
+    "he": "אופניים",
+    "cat": "vocab"
+  },
+  {
+    "it": "nuoto",
+    "he": "שחייה",
+    "cat": "vocab"
+  },
+  {
+    "it": "atletica",
+    "he": "אתלטיקה",
+    "cat": "vocab"
+  },
+  {
+    "it": "ginnastica",
+    "he": "התעמלות",
+    "cat": "vocab"
+  },
+  {
+    "it": "scherma",
+    "he": "סיף",
+    "cat": "vocab"
+  },
+  {
+    "it": "judo",
+    "he": "ג'ודו",
+    "cat": "vocab"
+  },
+  {
+    "it": "karate",
+    "he": "קראטה",
+    "cat": "vocab"
+  },
+  {
+    "it": "vela",
+    "he": "שייט",
+    "cat": "vocab"
+  },
+  {
+    "it": "canoa",
+    "he": "קאנו",
+    "cat": "vocab"
+  },
+  {
+    "it": "surf",
+    "he": "גלישה",
+    "cat": "vocab"
+  },
+  {
+    "it": "caccia",
+    "he": "ציד",
+    "cat": "vocab"
+  },
+  {
+    "it": "sci",
+    "he": "סקי",
+    "cat": "vocab"
+  },
+  {
+    "it": "pattinaggio",
+    "he": "החלקה",
+    "cat": "vocab"
+  },
+  {
+    "it": "corsa",
+    "he": "ריצה",
+    "cat": "vocab"
+  },
+  {
+    "it": "maratona",
+    "he": "מרתון",
+    "cat": "vocab"
+  },
+  {
+    "it": "meta",
+    "he": "יעד",
+    "cat": "vocab"
+  },
+  {
+    "it": "itinerario",
+    "he": "מסלול",
+    "cat": "vocab"
+  },
+  {
+    "it": "rotta",
+    "he": "נתיב",
+    "cat": "vocab"
+  },
+  {
+    "it": "destinazione",
+    "he": "יעד",
+    "cat": "vocab"
+  },
+  {
+    "it": "partenza",
+    "he": "יציאה",
+    "cat": "vocab"
+  },
+  {
+    "it": "arrivo",
+    "he": "הגעה",
+    "cat": "vocab"
+  },
+  {
+    "it": "ritorno",
+    "he": "חזרה",
+    "cat": "vocab"
+  },
+  {
+    "it": "sosta",
+    "he": "עצירה",
+    "cat": "vocab"
+  },
+  {
+    "it": "confine",
+    "he": "גבול",
+    "cat": "vocab"
+  },
+  {
+    "it": "frontiera",
+    "he": "גבול",
+    "cat": "vocab"
+  },
+  {
+    "it": "incrocio",
+    "he": "צומת",
+    "cat": "vocab"
+  },
+  {
+    "it": "rotonda",
+    "he": "כיכר",
+    "cat": "vocab"
+  },
+  {
+    "it": "semaforo",
+    "he": "רמזור",
+    "cat": "vocab"
+  },
+  {
+    "it": "marciapiede",
+    "he": "מדרכה",
+    "cat": "vocab"
+  },
+  {
+    "it": "ponte",
+    "he": "גשר",
+    "cat": "vocab"
+  },
+  {
+    "it": "canale",
+    "he": "תעלה",
+    "cat": "vocab"
+  },
+  {
+    "it": "scatola",
+    "he": "קופסה",
+    "cat": "vocab"
+  },
+  {
+    "it": "barattolo",
+    "he": "צנצנת",
+    "cat": "vocab"
+  },
+  {
+    "it": "bottiglia",
+    "he": "בקבוק",
+    "cat": "vocab"
+  },
+  {
+    "it": "busta",
+    "he": "מעטפה",
+    "cat": "vocab"
+  },
+  {
+    "it": "foglio",
+    "he": "דף",
+    "cat": "vocab"
+  },
+  {
+    "it": "quaderno",
+    "he": "מחברת",
+    "cat": "vocab"
+  },
+  {
+    "it": "agenda",
+    "he": "יומן",
+    "cat": "vocab"
+  },
+  {
+    "it": "calendario",
+    "he": "לוח שנה",
+    "cat": "vocab"
+  },
+  {
+    "it": "diario",
+    "he": "יומן אישי",
+    "cat": "vocab"
+  },
+  {
+    "it": "mappa",
+    "he": "מפה",
+    "cat": "vocab"
+  },
+  {
+    "it": "atlante",
+    "he": "אטלס",
+    "cat": "vocab"
+  },
+  {
+    "it": "enciclopedia",
+    "he": "אנציקלופדיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "manuale",
+    "he": "מדריך",
+    "cat": "vocab"
+  },
+  {
+    "it": "opuscolo",
+    "he": "חוברת",
+    "cat": "vocab"
+  },
+  {
+    "it": "francobollo",
+    "he": "בול",
+    "cat": "vocab"
+  },
+  {
+    "it": "cartolina",
+    "he": "גלויה",
+    "cat": "vocab"
+  },
+  {
+    "it": "tablet",
+    "he": "טאבלט",
+    "cat": "vocab"
+  },
+  {
+    "it": "smartphone",
+    "he": "סמארטפון",
+    "cat": "vocab"
+  },
+  {
+    "it": "schermo",
+    "he": "מסך",
+    "cat": "vocab"
+  },
+  {
+    "it": "tastiera",
+    "he": "מקלדת",
+    "cat": "vocab"
+  },
+  {
+    "it": "mouse",
+    "he": "עכבר",
+    "cat": "vocab"
+  },
+  {
+    "it": "stampante",
+    "he": "מדפסת",
+    "cat": "vocab"
+  },
+  {
+    "it": "microfono",
+    "he": "מיקרופון",
+    "cat": "vocab"
+  },
+  {
+    "it": "cuffie",
+    "he": "אוזניות",
+    "cat": "vocab"
+  },
+  {
+    "it": "webcam",
+    "he": "מצלמת רשת",
+    "cat": "vocab"
+  },
+  {
+    "it": "modem",
+    "he": "מודם",
+    "cat": "vocab"
+  },
+  {
+    "it": "software",
+    "he": "תוכנה",
+    "cat": "vocab"
+  },
+  {
+    "it": "programma",
+    "he": "תוכנית",
+    "cat": "vocab"
+  },
+  {
+    "it": "applicazione",
+    "he": "אפליקציה",
+    "cat": "vocab"
+  },
+  {
+    "it": "sistema",
+    "he": "מערכת",
+    "cat": "vocab"
+  },
+  {
+    "it": "file",
+    "he": "קובץ",
+    "cat": "vocab"
+  },
+  {
+    "it": "database",
+    "he": "בסיס נתונים",
+    "cat": "vocab"
+  },
+  {
+    "it": "server",
+    "he": "שרת",
+    "cat": "vocab"
+  },
+  {
+    "it": "cloud",
+    "he": "ענן",
+    "cat": "vocab"
+  },
+  {
+    "it": "rete",
+    "he": "רשת",
+    "cat": "vocab"
+  },
+  {
+    "it": "browser",
+    "he": "דפדפן",
+    "cat": "vocab"
+  },
+  {
+    "it": "rossamente",
+    "he": "אדום (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "bluamente",
+    "he": "כחול (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "verdamente",
+    "he": "ירוק (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "giallamente",
+    "he": "צהוב (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "biancamente",
+    "he": "לבן (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "neramente",
+    "he": "שחור (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "arancionamente",
+    "he": "כתום (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "violamente",
+    "he": "סגול (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "rosamente",
+    "he": "ורוד (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "azzurramente",
+    "he": "תכלת (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "grandamente",
+    "he": "גדול (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "piccolamente",
+    "he": "קטן (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "buonamente",
+    "he": "טוב (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "cattivamente",
+    "he": "רע (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "bellamente",
+    "he": "יפה (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "bruttamente",
+    "he": "מכוער (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "altamente",
+    "he": "גבוה (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "bassamente",
+    "he": "נמוך (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "nuovamente",
+    "he": "חדש (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "vecchiamente",
+    "he": "ישן (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "caldamente",
+    "he": "חם (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "freddamente",
+    "he": "קר (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "giovanamente",
+    "he": "צעיר (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "vicinamente",
+    "he": "קרוב (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "lontanamente",
+    "he": "רחוק (באופן)",
+    "cat": "vocab"
+  },
+  {
+    "it": "fronte",
+    "he": "מצח",
+    "cat": "vocab"
+  },
+  {
+    "it": "mento",
+    "he": "סנטר",
+    "cat": "vocab"
+  },
+  {
+    "it": "mascella",
+    "he": "לסת",
+    "cat": "vocab"
+  },
+  {
+    "it": "guancia",
+    "he": "לחי",
+    "cat": "vocab"
+  },
+  {
+    "it": "gola",
+    "he": "גרון",
+    "cat": "vocab"
+  },
+  {
+    "it": "collo",
+    "he": "צוואר",
+    "cat": "vocab"
+  },
+  {
+    "it": "nuca",
+    "he": "עורף",
+    "cat": "vocab"
+  },
+  {
+    "it": "ascella",
+    "he": "בית שחי",
+    "cat": "vocab"
+  },
+  {
+    "it": "gomito",
+    "he": "מרפק",
+    "cat": "vocab"
+  },
+  {
+    "it": "polso",
+    "he": "פרק כף יד",
+    "cat": "vocab"
+  },
+  {
+    "it": "palmo",
+    "he": "כף יד",
+    "cat": "vocab"
+  },
+  {
+    "it": "dorso",
+    "he": "גב",
+    "cat": "vocab"
+  },
+  {
+    "it": "fianco",
+    "he": "צד",
+    "cat": "vocab"
+  },
+  {
+    "it": "coscia",
+    "he": "ירך",
+    "cat": "vocab"
+  },
+  {
+    "it": "ginocchio",
+    "he": "ברך",
+    "cat": "vocab"
+  },
+  {
+    "it": "caviglia",
+    "he": "קרסול",
+    "cat": "vocab"
+  },
+  {
+    "it": "calcagno",
+    "he": "עקב",
+    "cat": "vocab"
+  },
+  {
+    "it": "pianta",
+    "he": "כף רגל",
+    "cat": "vocab"
+  },
+  {
+    "it": "costola",
+    "he": "צלע",
+    "cat": "vocab"
+  },
+  {
+    "it": "polmone",
+    "he": "ריאה",
+    "cat": "vocab"
+  },
+  {
+    "it": "fegato",
+    "he": "כבד",
+    "cat": "vocab"
+  },
+  {
+    "it": "reni",
+    "he": "כליות",
+    "cat": "vocab"
+  },
+  {
+    "it": "stomaco",
+    "he": "קיבה",
+    "cat": "vocab"
+  },
+  {
+    "it": "intestino",
+    "he": "מעי",
+    "cat": "vocab"
+  },
+  {
+    "it": "vescica",
+    "he": "שלפוחית",
+    "cat": "vocab"
+  },
+  {
+    "it": "milza",
+    "he": "טחול",
+    "cat": "vocab"
+  },
+  {
+    "it": "pancreas",
+    "he": "לבלב",
+    "cat": "vocab"
+  },
+  {
+    "it": "tiroide",
+    "he": "בלוטת התריס",
+    "cat": "vocab"
+  },
+  {
+    "it": "libertà",
+    "he": "חופש",
+    "cat": "vocab"
+  },
+  {
+    "it": "uguaglianza",
+    "he": "שוויון",
+    "cat": "vocab"
+  },
+  {
+    "it": "fraternità",
+    "he": "אחווה",
+    "cat": "vocab"
+  },
+  {
+    "it": "giustizia",
+    "he": "צדק",
+    "cat": "vocab"
+  },
+  {
+    "it": "pace",
+    "he": "שלום",
+    "cat": "vocab"
+  },
+  {
+    "it": "guerra",
+    "he": "מלחמה",
+    "cat": "vocab"
+  },
+  {
+    "it": "violenza",
+    "he": "אלימות",
+    "cat": "vocab"
+  },
+  {
+    "it": "tolleranza",
+    "he": "סובלנות",
+    "cat": "vocab"
+  },
+  {
+    "it": "solidarietà",
+    "he": "סולידריות",
+    "cat": "vocab"
+  },
+  {
+    "it": "cooperazione",
+    "he": "שיתוף פעולה",
+    "cat": "vocab"
+  },
+  {
+    "it": "progresso",
+    "he": "קידמה",
+    "cat": "vocab"
+  },
+  {
+    "it": "civiltà",
+    "he": "ציוויליזציה",
+    "cat": "vocab"
+  },
+  {
+    "it": "umanità",
+    "he": "אנושות",
+    "cat": "vocab"
+  },
+  {
+    "it": "formica",
+    "he": "נמלה",
+    "cat": "vocab"
+  },
+  {
+    "it": "ape",
+    "he": "דבורה",
+    "cat": "vocab"
+  },
+  {
+    "it": "farfalla",
+    "he": "פרפר",
+    "cat": "vocab"
+  },
+  {
+    "it": "zanzara",
+    "he": "יתוש",
+    "cat": "vocab"
+  },
+  {
+    "it": "mosca",
+    "he": "זבוב",
+    "cat": "vocab"
+  },
+  {
+    "it": "ragno",
+    "he": "עכביש",
+    "cat": "vocab"
+  },
+  {
+    "it": "scorpione",
+    "he": "עקרב",
+    "cat": "vocab"
+  },
+  {
+    "it": "lumaca",
+    "he": "שבלול",
+    "cat": "vocab"
+  },
+  {
+    "it": "verme",
+    "he": "תולעת",
+    "cat": "vocab"
+  },
+  {
+    "it": "serpe",
+    "he": "נחש",
+    "cat": "vocab"
+  },
+  {
+    "it": "tartaruga",
+    "he": "צב",
+    "cat": "vocab"
+  },
+  {
+    "it": "coccodrillo",
+    "he": "תנין",
+    "cat": "vocab"
+  },
+  {
+    "it": "rospo",
+    "he": "קרפדה",
+    "cat": "vocab"
+  },
+  {
+    "it": "aquila",
+    "he": "נשר",
+    "cat": "vocab"
+  },
+  {
+    "it": "falco",
+    "he": "בז",
+    "cat": "vocab"
+  },
+  {
+    "it": "gufo",
+    "he": "ינשוף",
+    "cat": "vocab"
+  },
+  {
+    "it": "corvo",
+    "he": "עורב",
+    "cat": "vocab"
+  },
+  {
+    "it": "passero",
+    "he": "דרור",
+    "cat": "vocab"
+  },
+  {
+    "it": "rondine",
+    "he": "סנונית",
+    "cat": "vocab"
+  },
+  {
+    "it": "piccione",
+    "he": "יונה",
+    "cat": "vocab"
+  },
+  {
+    "it": "gabbiano",
+    "he": "שחף",
+    "cat": "vocab"
+  },
+  {
+    "it": "cigno",
+    "he": "ברבור",
+    "cat": "vocab"
+  },
+  {
+    "it": "pavone",
+    "he": "טווס",
+    "cat": "vocab"
+  },
+  {
+    "it": "comodino",
+    "he": "שידה",
+    "cat": "vocab"
+  },
+  {
+    "it": "cassettiera",
+    "he": "שידה עם מגירות",
+    "cat": "vocab"
+  },
+  {
+    "it": "scaffale",
+    "he": "מדף",
+    "cat": "vocab"
+  },
+  {
+    "it": "mensola",
+    "he": "מדף קיר",
+    "cat": "vocab"
+  },
+  {
+    "it": "appendiabiti",
+    "he": "קולב",
+    "cat": "vocab"
+  },
+  {
+    "it": "attaccapanni",
+    "he": "מתלה מעילים",
+    "cat": "vocab"
+  },
+  {
+    "it": "portaombrelli",
+    "he": "מתלה מטריות",
+    "cat": "vocab"
+  },
+  {
+    "it": "portafoto",
+    "he": "מסגרת תמונה",
+    "cat": "vocab"
+  },
+  {
+    "it": "vaso",
+    "he": "אגרטל",
+    "cat": "vocab"
+  },
+  {
+    "it": "sottobicchiere",
+    "he": "תחתית לכוס",
+    "cat": "vocab"
+  },
+  {
+    "it": "posacenere",
+    "he": "מאפרה",
+    "cat": "vocab"
+  },
+  {
+    "it": "portacenere",
+    "he": "מאפרה",
+    "cat": "vocab"
+  },
+  {
+    "it": "cestino",
+    "he": "סל קטן",
+    "cat": "vocab"
+  },
+  {
+    "it": "portariviste",
+    "he": "מתלה מגזינים",
+    "cat": "vocab"
+  },
+  {
+    "it": "attimo",
+    "he": "רגע",
+    "cat": "vocab"
+  },
+  {
+    "it": "istante",
+    "he": "רגע",
+    "cat": "vocab"
+  },
+  {
+    "it": "momento",
+    "he": "רגע",
+    "cat": "vocab"
+  },
+  {
+    "it": "periodo",
+    "he": "תקופה",
+    "cat": "vocab"
+  },
+  {
+    "it": "epoca",
+    "he": "תקופה",
+    "cat": "vocab"
+  },
+  {
+    "it": "era",
+    "he": "עידן",
+    "cat": "vocab"
+  },
+  {
+    "it": "secolo",
+    "he": "מאה",
+    "cat": "vocab"
+  },
+  {
+    "it": "millennio",
+    "he": "מילניום",
+    "cat": "vocab"
+  },
+  {
+    "it": "eternità",
+    "he": "נצח",
+    "cat": "vocab"
+  },
+  {
+    "it": "fossato",
+    "he": "תעלה",
+    "cat": "vocab"
+  },
+  {
+    "it": "palude",
+    "he": "ביצה",
+    "cat": "vocab"
+  },
+  {
+    "it": "erba",
+    "he": "דשא",
+    "cat": "vocab"
+  },
+  {
+    "it": "prato",
+    "he": "אחו",
+    "cat": "vocab"
+  },
+  {
+    "it": "campagna",
+    "he": "כפר",
+    "cat": "vocab"
+  },
+  {
+    "it": "bosco",
+    "he": "יער",
+    "cat": "vocab"
+  },
+  {
+    "it": "foresta",
+    "he": "יער",
+    "cat": "vocab"
+  },
+  {
+    "it": "siepe",
+    "he": "גדר חיה",
+    "cat": "vocab"
+  },
+  {
+    "it": "sentiero",
+    "he": "שביל",
+    "cat": "vocab"
   }
 ]

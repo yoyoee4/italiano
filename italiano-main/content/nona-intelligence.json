@@ -1,0 +1,114 @@
+{
+  "version": "2.0",
+  "personalities": {
+    "sweet": {
+      "name": "Nonna Dolce",
+      "greeting_templates": [
+        "Tesoro mio! {time_greeting}! Pronto per imparare?",
+        "Che bello vederti, piccolino! Oggi impariamo qualcosa di speciale.",
+        "Mamma mia, come sono contenta di vederti! Allora, cosa impariamo oggi?"
+      ],
+      "praise_templates": [
+        "Bravo/a! {extra}",
+        "Ecco fatto! Sapevo che ce l'avresti fatta!",
+        "Che bravo/a! La nonna è orgogliosa di te!",
+        "Benissimo! Continua così!"
+      ],
+      "correction_templates": [
+        "Quasi giusto! Solo un piccolissimo errore: {correction}. Riprova, amore mio!",
+        "Non ti preoccupare, sbagliando s'impara! Diciamo insieme: {correct}.",
+        "Eh no, non è proprio così. Ma va bene, ci riproviamo!"
+      ],
+      "cultural_tips": [
+        "Sai che in Italia {culture_fact}?",
+        "Quando ero piccola io, in Italia {culture_fact}.",
+        "Ah, questo mi ricorda {culture_fact}!"
+      ],
+      "mistake_patterns": {
+        "gender": "Attento/a al genere! In italiano si dice {correct}, non {wrong}. {explanation}",
+        "preposition": "Le preposizioni sono difficili, eh? Ricorda: si dice {correct}, non {wrong}.",
+        "verb": "I verbi sono importanti! {correct} è la forma giusta. Facciamo un altro esercizio insieme."
+      }
+    },
+    "strict": {
+      "name": "Nonna Severa",
+      "greeting_templates": [
+        "Bene, sei arrivato/a. Spero che tu abbia studiato.",
+        "Finalmente! Oggi niente scherzi, ci concentriamo.",
+        "Spero tu sia pronto/a a lavorare sodo oggi."
+      ],
+      "praise_templates": [
+        "Finalmente! Questo è il risultato che mi aspettavo.",
+        "Non male. Ma puoi fare di meglio.",
+        "Ok, questa era giusta. Continua così."
+      ],
+      "correction_templates": [
+        "NO! {correction}. Quante volte te l'ho detto? Rifacciamolo subito!",
+        "Sbagliato. Ancora una volta, da capo. {correct}.",
+        "Mamma mia, ancora questo errore? {correction}. Adesso ripeti dopo di me."
+      ],
+      "cultural_tips": [
+        "In Italia {culture_fact} e questo si deve sapere!",
+        "Come fai a non saperlo? {culture_fact}",
+        "Quando ero in Italia {culture_fact}. Impara, che ti serve!"
+      ],
+      "mistake_patterns": {
+        "gender": "ANCORA il genere?! {correct} è {gender}, non {wrong_gender}!",
+        "preposition": "Ma quante volte devo ripetere? {correct}, non {wrong}! Scrivilo 5 volte.",
+        "verb": "Il verbo {verb} si coniuga così: {correct}. Ripeti!"
+      }
+    },
+    "teacher": {
+      "name": "Maestra Nona",
+      "greeting_templates": [
+        "Benvenuto/a alla lezione di oggi! Oggi studieremo {topic}.",
+        "Pronto/a per la lezione? Oggi è importante concentrarsi su {topic}.",
+        "Cominciamo! Ripassiamo prima la lezione precedente."
+      ],
+      "praise_templates": [
+        "Ottimo! Vedo che hai studiato. {explanation}",
+        "Perfetto! Questa è la forma corretta perché {explanation}.",
+        "Eccellente! Nota che {explanation}."
+      ],
+      "correction_templates": [
+        "Attento/a alla regola: {explanation}. Quindi si dice {correct}, non {wrong}.",
+        "Errore comune. Ricorda la regola: {rule}. Riprova: {correct}.",
+        "Non esattamente. {explanation}. Facciamo un esercizio simile."
+      ],
+      "cultural_tips": [
+        "Dal punto di vista culturale, è interessante notare che {culture_fact}.",
+        "Questa parola ha una storia interessante: {culture_fact}.",
+        "Per capire meglio gli italiani, bisogna sapere che {culture_fact}."
+      ],
+      "mistake_patterns": {
+        "gender": "Regola: in italiano i nomi che finiscono in -o sono generalmente maschili, quelli in -a femminili. {correct} finisce in {ending} quindi è {gender}.",
+        "preposition": "Le preposizioni articolate si formano unendo {rule}. Esempio: {correct}.",
+        "verb": "Il verbo {verb} appartiene alla coniugazione {conjugation}. Quindi: {correct}."
+      }
+    }
+  },
+  "trigger_patterns": {
+    "low_streak": "Nonna Severa",
+    "high_streak": "Nonna Dolce",
+    "exam_mode": "Maestra Nona",
+    "beginners": "Nonna Dolce",
+    "advanced": "Maestra Nona",
+    "frustrated": "Nonna Dolce",
+    "lazy": "Nonna Severa",
+    "celebrating": "Nonna Dolce"
+  },
+  "simulation_modes": {
+    "restaurant": "Maestra Nona",
+    "cafe": "Nonna Dolce",
+    "exam": "Maestra Nona",
+    "argument": "Nonna Severa",
+    "interview": "Maestra Nona",
+    "family": "Nonna Dolce"
+  },
+  "memory": {
+    "recent_mistakes_cap": 20,
+    "personality_switch_cooldown": 3,
+    "max_tips_per_session": 5,
+    "encouragement_interval": 3
+  }
+}

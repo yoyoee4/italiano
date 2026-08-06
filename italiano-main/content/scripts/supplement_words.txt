@@ -1,0 +1,134 @@
+# Supplementary word list (3,600+ words for 5,000 total target)
+# Format: italian|hebrew|cefr|category
+addizioni = """accendere|להדליק|A2|verbs
+accettare|לקבל|A2|verbs
+accompagnare|ללוות|A2|verbs
+accorgersi|לשים לב|B1|verbs
+addormentarsi|להירדם|A2|verbs
+affittare|להשכיר|B1|verbs
+aggiungere|להוסיף|B1|verbs
+aiutare|לעזור|A1|verbs
+alzarsi|לקום|A1|verbs
+andarsene|ללכת מפה|B2|verbs
+annoiarsi|להשתעמם|B1|verbs
+apparire|להופיע|B1|verbs
+arrabbiarsi|לכעוס|A2|verbs
+arrivare|להגיע|A1|verbs
+ascoltare|להקשיב|A1|verbs
+aspettare|לחכות|A1|verbs
+aumentare|לגדול|B1|verbs
+aver bisogno|צריך|A1|verbs
+baciare|לנשק|A2|verbs
+ballare|לרקוד|A1|verbs
+bastare|להספיק|A2|verbs
+battere|להכות|B1|verbs
+bere|לשתות|A1|verbs
+brindare|להרים כוסית|B1|verbs
+cacciare|לצוד|B1|verbs
+cadere|ליפול|A2|verbs
+calcolare|לחשב|B1|verbs
+cambiare|להחליף|A2|verbs
+camminare|ללכת|A1|verbs
+cancellare|למחוק|A2|verbs
+cantare|לשיר|A1|verbs
+capire|להבין|A1|verbs
+caricare|לטעון|B1|verbs
+cenare|לסעוד|A2|verbs
+cercare|לחפש|A1|verbs
+chiamare|לקרוא|A1|verbs
+chiedere|לשאול|A1|verbs
+chiudere|לסגור|A1|verbs
+cogliere|לקטוף|B1|verbs
+cominciare|להתחיל|A1|verbs
+comprare|לקנות|A1|verbs
+conoscere|להכיר|A1|verbs
+conservare|לשמור|B1|verbs
+consigliare|לייעץ|B1|verbs
+contare|לספור|A2|verbs
+continuare|להמשיך|A1|verbs
+conversare|לשוחח|A2|verbs
+copiare|להעתיק|A2|verbs
+correre|לרוץ|A1|verbs
+crescere|לגדול|A2|verbs
+cucinare|לבשל|A1|verbs
+danzare|לרקוד|A2|verbs
+decidere|להחליט|A2|verbs
+difendere|להגן|B1|verbs
+dimenticare|לשכוח|A2|verbs
+dimostrare|להוכיח|B1|verbs
+dipingere|לצייר|A2|verbs
+dire|לומר|A1|verbs
+dirigere|לנהל|B1|verbs
+discutere|לדון|A2|verbs
+disegnare|לצייר|A2|verbs
+divertirsi|ליהנות|A2|verbs
+dividere|לחלק|B1|verbs
+domandare|לשאול|A1|verbs
+dormire|לישון|A1|verbs
+dubitare|לפקפק|B1|verbs
+durare|להחזיק מעמד|B1|verbs
+entrare|להיכנס|A1|verbs
+esagerare|להגזים|B1|verbs
+esistere|להתקיים|B1|verbs
+esprimere|להביע|B1|verbs
+essere d'accordo|להסכים|A2|verbs
+fingere|להעמיד פנים|B2|verbs
+firmare|לחתום|B1|verbs
+fissare|לקבוע|A2|verbs
+fondersi|להתמזג|C1|verbs
+formare|ליצור|A2|verbs
+frequentare|להשתתף|A2|verbs
+fuggire|לברוח|B1|verbs
+godere|ליהנות|A2|verbs
+gridare|לצרוח|A2|verbs
+guadagnare|להרוויח|B1|verbs
+guarire|להבריא|B1|verbs
+guardare|להסתכל|A1|verbs
+guidare|לנהוג|A2|verbs
+immergersi|לצלול|B1|verbs
+imparare|ללמוד|A1|verbs
+impedire|למנוע|B2|verbs
+importare|להיות חשוב|A2|verbs
+improvvisare|לאלתר|B2|verbs
+incendiare|לשרוף|C1|verbs
+incontrare|לפגוש|A1|verbs
+indicare|לסמן|A2|verbs
+informare|ליידע|B1|verbs
+ingannare|לרמות|B1|verbs
+iniziare|להתחיל|A1|verbs
+insegnare|ללמד|A1|verbs
+interessare|לעניין|A2|verbs
+interrompere|להפריע|B1|verbs
+intervistare|לראיין|B1|verbs
+introdurre|להציג|B1|verbs
+inventare|להמציא|B1|verbs
+investire|להשקיע|B1|verbs
+invitare|להזמין|A2|verbs
+iscriversi|להירשם|B1|verbs
+lasciare|להשאיר|A1|verbs
+laurearsi|לסיים תואר|B1|verbs
+lavare|לרחוץ|A1|verbs
+lavorare|לעבוד|A1|verbs
+leggere|לקרוא|A1|verbs
+litigare|לריב|A2|verbs
+mandare|לשלוח|A1|verbs
+mangiare|לאכול|A1|verbs
+manutenere|לתחזק|C1|verbs
+mentire|לשקר|A2|verbs
+meritare|להגיע|B1|verbs
+mescolare|לערבב|A2|verbs
+mettere|לשים|A1|verbs
+migliorare|לשפר|B1|verbs
+mordere|לנשוך|B1|verbs
+mostrare|להראות|A1|verbs
+muovere|להזיז|A2|verbs
+nascere|להיוולד|A2|verbs
+nascondere|להסתיר|A2|verbs
+navigare|להפליג|A2|verbs
+negare|להכחיש|B1|verbs
+noleggiare|לשכור|B1|verbs
+notare|לשים לב|A2|verbs
+nuotare|לשחות|A1|verbs
+obbedire|לציית|B1|verbs
+occuparsi|לטפל|A2|verbs
+odiare|לשנוא|A2|verbs"""
