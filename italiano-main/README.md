@@ -338,4 +338,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 **Built with ❤️ for Hebrew speakers learning Italian**
 
-*VolaLingo — לומדים איטלקית כמו שצריך* 🇮🇹
+*VolaLingo — לומדים איטלקית כמו שצריך* 🇮🇹# Updated Thu Aug  6 08:08:46 AM UTC 2026
