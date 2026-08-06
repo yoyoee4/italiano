@@ -1647,4 +1647,264 @@ input:focus,select:focus{border-color:var(--indigo)!important;box-shadow:0 0 0 3
 .correct-word-it{font-family:var(--font-it);font-size:.9rem;font-weight:700;direction:ltr;text-align:left}
 .correct-word-he{font-size:.75rem;color:var(--text2)}
 .correct-word-right{display:flex;align-items:center;gap:8px;flex-shrink:0}
+
+/* ══════════════════════════════════════════════
+   SPRINT C5 — DAILY MISSION STYLES
+   ══════════════════════════════════════════════ */
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.mission-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  margin: 0 -16px 20px;
+  box-shadow: var(--glow);
+  border-left: 4px solid var(--primary);
+  animation: slideIn 0.4s ease;
+}
+
+.mission-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.mission-card h2 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.streak-badge {
+  background: linear-gradient(135deg, #ff6b35, #f7931e);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 24px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  animation: pulse 2s infinite;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+}
+
+.nona-greeting {
+  font-style: italic;
+  color: var(--text2);
+  margin: 12px 0 16px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  padding: 12px;
+  background: var(--surface2);
+  border-radius: var(--radius-sm);
+  border-right: 3px solid var(--primary-light);
+}
+
+.mission-objectives {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.objective-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+.objective-item:active {
+  transform: scale(0.98);
+}
+
+.objective-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(88, 204, 2, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.objective-item span:not(.objective-icon):not(.objective-focus) {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: right;
+}
+
+.objective-focus {
+  font-size: 0.7rem;
+  color: var(--primary-light);
+  font-weight: 700;
+  background: rgba(88, 204, 2, 0.1);
+  padding: 4px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.mission-card .btn-primary {
+  width: 100%;
+  font-size: 1rem;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.mission-meta {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--text2);
+}
+
+.mission-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+/* Streak Calendar */
+.streak-calendar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin: 0 -16px 20px;
+}
+
+.streak-calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.streak-calendar-title {
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.streak-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.streak-day {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text2);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+
+.streak-day.completed {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  border-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(88, 204, 2, 0.3);
+}
+
+.streak-day.today {
+  border: 2px solid var(--primary-light);
+  box-shadow: 0 0 0 2px rgba(88, 204, 2, 0.2);
+}
+
+.streak-day-header {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text3);
+  text-align: center;
+  padding: 4px 0;
+}
+
+.streak-day.empty {
+  background: transparent;
+  border: none;
+}
+
+.streak-day-number {
+  font-size: 0.75rem;
+}
+
+.streak-day-icon {
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+/* Mission completed state */
+.mission-card.completed {
+  border-left-color: var(--emerald);
+  background: linear-gradient(180deg, rgba(16, 185, 129, 0.05), var(--surface));
+}
+
+.mission-card.completed h2 {
+  color: var(--emerald-light);
+}
+
+.mission-card.completed .streak-badge {
+  background: linear-gradient(135deg, var(--emerald), var(--emerald-light));
+  animation: none;
+}
+
+.mission-card.completed .btn-primary {
+  background: var(--emerald);
+}
+
+.mission-card.completed .btn-primary:active {
+  background: var(--emerald-dim);
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .mission-card {
+    margin: 0 -12px 16px;
+    padding: 16px 12px;
+    border-radius: 0;
+    border-left-width: 3px;
+  }
+  
+  .mission-meta {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .streak-calendar {
+    margin: 0 -12px 16px;
+    padding: 12px;
+    border-radius: 0;
+  }
+}
 .correct-word-count{font-size:.75rem;font-weight:700;color:var(--emerald-light);background:rgba(16,185,129,.1);padding:2px 8px;border-radius:10px}

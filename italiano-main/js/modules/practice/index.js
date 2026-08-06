@@ -136,7 +136,7 @@ function _createCompatAliases() {
 // ══════════════════════════════════════════════
 const contract = {
   // Start a practice session
-  // config: { type: 'word'|'sentence'|'quiz'|'dialogue'|'anki'|'exam'|'mixed', node?, words?, sentences?, totalQuestions? }
+  // config: { type: 'word'|'sentence'|'quiz'|'dialogue'|'anki'|'exam'|'mixed'|'daily_mission', node?, words?, sentences?, totalQuestions? }
   startLesson(config) {
     switch (config.type) {
       case 'word': return _core.startWordLesson(config.node);
@@ -146,6 +146,7 @@ const contract = {
       case 'anki': return _core.startAnki();
       case 'exam': return _core.startCILSExam(config.level);
       case 'mixed': return _core.startMixedPractice(config.isFull);
+      case 'daily_mission': return _core.startDailyMission(config);
       default: return _core.startMixedPractice(false);
     }
   },

@@ -560,6 +560,211 @@ function startMistakesReview() {
 }
 
 // ══════════════════════════════════════════════
+// DAILY MISSION (Sprint C5)
+// ══════════════════════════════════════════════
+function startDailyMission(config) {
+  // config: { exercises: [{ type, count, focus }], estimatedMinutes, xpReward, nonaPersonality }
+  const exercises = config.exercises || [];
+  if (exercises.length === 0) {
+    _toast('אין תרגילים במשימה', 'error');
+    return;
+  }
+
+  // Build exercise queue from mission config
+  const allWords = getWordsForLevel(_state.level || 'A1');
+  const exerciseQueue = [];
+  
+  exercises.forEach(ex => {
+    const count = ex.count || 1;
+    for (let i = 0; i < count; i++) {
+      exerciseQueue.push({
+        type: ex.type,
+        focus: ex.focus,
+        // We'll pick words dynamically when rendering
+        wordPool: allWords
+      });
+    }
+  });
+
+  if (exerciseQueue.length === 0) {
+    _toast('לא ניתן ליצור משימה', 'error');
+    return;
+  }
+
+  const missionNode = {
+    id: 'daily_mission',
+    name: 'המשימה היומית',
+    icon: '🎯',
+    words: allWords,
+    isDailyMission: true,
+    missionConfig: config
+  };
+
+  goPage('practice');
+  createSession({ 
+    type: 'daily_mission', 
+    node: missionNode, 
+    totalQuestions: exerciseQueue.length,
+    dailyMissionConfig: config,
+    exerciseQueue: exerciseQueue
+  });
+  
+  _renderDailyMissionPhase();
+}
+
+// Render the daily mission exercise
+function _renderDailyMissionPhase() {
+  const session = _session;
+  if (!session || session.type !== 'daily_mission' || !session.exerciseQueue) return;
+
+  const container = document.getElementById('practiceContent');
+  if (!container) return;
+
+  const currentEx = session.exerciseQueue[session.currentIndex || 0];
+  const progress = session.currentIndex + 1;
+  const total = session.totalQuestions;
+
+  container.innerHTML = `
+    <div class="daily-mission-session">
+      <div class="session-header">
+        <div class="session-progress">
+          <span>${progress}/${total}</span>
+          <div class="progress-bar"><div class="progress-fill" style="width:${(progress/total)*100}%"></div></div>
+        </div>
+        <div class="session-xp">💎 +${session.dailyMissionConfig?.xpReward || 30} XP</div>
+      </div>
+      
+      <div class="daily-exercise" id="dailyExerciseContent">
+        ${_renderDailyExercise(currentEx, progress, total)}
+      </div>
+    </div>
+  `;
+}
+
+// Render individual daily exercise
+function _renderDailyExercise(exercise, current, total) {
+  const words = exercise.wordPool || [];
+  const word = words[Math.floor(Math.random() * words.length)] || {};
+  
+  switch (exercise.type) {
+    case 'flashcard':
+      return `
+        <div class="flashcard-exercise">
+          <div class="flashcard-word" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-front">${word.target || 'מילה'}</div>
+            <div class="flashcard-back">${word.native || 'תרגום'}</div>
+          </div>
+          <div class="flashcard-actions">
+            <button class="btn btn-secondary" onclick="PracticeCore._dailyMarkKnown()">ידעתי</button>
+            <button class="btn btn-primary" onclick="PracticeCore._dailyNext()">הבא</button>
+          </div>
+        </div>
+      `;
+    case 'multiple_choice':
+      const distractors = getDistractors(words, word, 'native');
+      const options = shuffle([word.native, ...distractors]).slice(0, 4);
+      return `
+        <div class="mc-exercise">
+          <div class="mc-question">מה הפירוש של <strong>${word.target}</strong>?</div>
+          <div class="mc-options">
+            ${options.map((opt, i) => `
+              <button class="mc-option" data-val="${esc(opt)}" onclick="PracticeCore._dailyAnswerMC(this, '${esc(word.native)}')">
+                <span class="mc-letter">${String.fromCharCode(65+i)}</span>
+                <span>${opt}</span>
+              </button>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    case 'listening_mc':
+      return `
+        <div class="listening-exercise">
+          <div class="listening-prompt">האזן ובחר את התשובה הנכונה</div>
+          <button class="btn btn-primary" onclick="speak('${esc(word.target)}')" style="width:100%;margin-bottom:16px">🔊 השמע</button>
+          <div class="mc-options">
+            ${shuffle([word.native, ...getDistractors(words, word, 'native')]).slice(0, 4).map((opt, i) => `
+              <button class="mc-option" data-val="${esc(opt)}" onclick="PracticeCore._dailyAnswerMC(this, '${esc(word.native)}')">
+                <span class="mc-letter">${String.fromCharCode(65+i)}</span>
+                <span>${opt}</span>
+              </button>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    case 'speaking_pronunciation':
+      return `
+        <div class="speaking-exercise">
+          <div class="speaking-prompt">חזור אחרי נונה:</div>
+          <div class="speaking-target">${word.target}</div>
+          <div class="speaking-native">${word.native}</div>
+          <button class="btn btn-primary" onclick="speak('${esc(word.target)}')" style="width:100%;margin:16px 0">🔊 השמע דוגמה</button>
+          <button class="btn btn-secondary" onclick="startListening('it-IT', (res) => PracticeCore._dailySpeakingResult(res, '${esc(word.target)}'))" style="width:100%">🎤 הקש והחזק לדיבור</button>
+        </div>
+      `;
+    default:
+      return `<div style="text-align:center;padding:32px">סוג תרגיל לא נתמך: ${exercise.type}</div>`;
+  }
+}
+
+// Daily mission answer handlers
+function _dailyMarkKnown() {
+  _session.currentIndex = (_session.currentIndex || 0) + 1;
+  _renderDailyMissionPhase();
+}
+
+function _dailyNext() {
+  _session.currentIndex = (_session.currentIndex || 0) + 1;
+  _renderDailyMissionPhase();
+}
+
+function _dailyAnswerMC(btn, correctAnswer) {
+  const selected = btn.dataset.val;
+  const correct = selected === correctAnswer;
+  
+  document.querySelectorAll('.mc-option').forEach(b => {
+    b.disabled = true;
+    if (b.dataset.val === correctAnswer) b.classList.add('correct');
+    else if (b === btn && !correct) b.classList.add('wrong');
+  });
+  
+  if (correct) {
+    _session.score = (_session.score || 0) + 1;
+    _session.combo = (_session.combo || 0) + 1;
+    _session.maxCombo = Math.max(_session.maxCombo || 0, _session.combo);
+  } else {
+    _session.combo = 0;
+  }
+  
+  setTimeout(() => {
+    _session.currentIndex = (_session.currentIndex || 0) + 1;
+    _renderDailyMissionPhase();
+  }, 800);
+}
+
+function _dailySpeakingResult(results, target) {
+  if (!results || results.length === 0) {
+    _toast('לא נקלט קול, נסה שוב', 'warning');
+    return;
+  }
+  
+  const best = results[0];
+  const score = fuzzyMatch(best, target);
+  const correct = score >= 70;
+  
+  if (correct) {
+    _session.score = (_session.score || 0) + 1;
+    _toast(`יופי! ${score}%`, 'success');
+  } else {
+    _toast(`צריך תרגול: ${score}%`, 'warning');
+  }
+  
+  setTimeout(() => {
+    _session.currentIndex = (_session.currentIndex || 0) + 1;
+    _renderDailyMissionPhase();
+  }, 1000);
+}
+
+// ══════════════════════════════════════════════
 // PUBLIC API
 // ══════════════════════════════════════════════
 const api = {
@@ -578,6 +783,7 @@ const api = {
   startWeakWords,
   startWeakQuiz,
   startMixedPractice,
+  startDailyMission,
   render,
   showPracticeMenu,
   startRandomSentences,
